@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clip Drops — Support</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+<!-- ============================================================
+     HIER: Adsterra ODER Monetag POPUNDER/INTERSTITIAL Script einfügen
+     (Code aus eurem jeweiligen Dashboard kopieren, komplett hier reinpasten)
+     Das ist der Teil, der automatisch beim Öffnen der Seite feuert.
+     ============================================================ -->
+
+
+<!-- ============================================================
+     HIER: Google AdSense Script einfügen (falls schon freigeschaltet)
+     ============================================================ -->
+
+
+<style>
+  :root{
+    --bg:#0E0E10;
+    --card:#18181B;
+    --card-border:#2C2C33;
+    --text:#EFEFF1;
+    --muted:#ADADB8;
+    --accent:#9147FF;
+    --cta:#FF4D6D;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:'Rubik',sans-serif;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    padding:48px 16px;
+  }
+  .wrap{width:100%;max-width:440px;}
+
+  .live-row{
+    display:flex;align-items:center;gap:8px;
+    justify-content:center;margin-bottom:10px;
+  }
+  .dot{
+    width:9px;height:9px;border-radius:50%;
+    background:var(--cta);
+    animation:pulse 1.6s infinite ease-in-out;
+  }
+  @keyframes pulse{
+    0%,100%{opacity:1;transform:scale(1);}
+    50%{opacity:.35;transform:scale(0.75);}
+  }
+  .live-label{
+    font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--muted);font-weight:500;
+  }
+
+  h1{
+    font-family:'Bebas Neue',sans-serif;
+    font-size:44px;letter-spacing:.02em;
+    text-align:center;line-height:1;
+    color:var(--text);
+  }
+  h1 span{color:var(--accent);}
+
+  .tagline{
+    text-align:center;color:var(--muted);
+    font-size:14px;margin-top:8px;margin-bottom:32px;
+  }
+
+  .avatar{
+    width:72px;height:72px;border-radius:50%;
+    background:linear-gradient(135deg,var(--accent),var(--cta));
+    display:block;margin:0 auto 18px auto;
+    /* Ersetzen: <img src="dein-logo.jpg" style="width:100%;height:100%;border-radius:50%;object-fit:cover;"> */
+  }
+
+  .card{
+    display:flex;align-items:center;gap:14px;
+    background:var(--card);
+    border:1px solid var(--card-border);
+    border-radius:14px;
+    padding:16px 18px;
+    margin-bottom:12px;
+    text-decoration:none;
+    transition:transform .15s ease, border-color .15s ease;
+  }
+  .card:active{transform:scale(0.98);}
+  .card:hover{border-color:var(--accent);}
+
+  .card.primary{
+    background:linear-gradient(135deg, rgba(145,71,255,.18), rgba(255,77,109,.14));
+    border-color:var(--accent);
+  }
+
+  .icon{
+    width:38px;height:38px;flex-shrink:0;
+    display:flex;align-items:center;justify-content:center;
+    font-size:19px;background:rgba(255,255,255,.06);
+    border-radius:10px;
+  }
+
+  .card-text{flex:1;}
+  .card-title{font-weight:700;font-size:15px;color:var(--text);}
+  .card-desc{font-size:12.5px;color:var(--muted);margin-top:2px;}
+
+  footer{
+    text-align:center;margin-top:28px;
+    font-size:11px;color:var(--card-border);
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="live-row">
+    <div class="dot"></div>
+    <div class="live-label">Täglich neue Clips</div>
+  </div>
+
+  <div class="avatar"><!-- Logo-Bild hier reinsetzen, siehe Kommentar oben --></div>
+
+  <h1>DEIN<span>KANAL</span></h1>
+  <p class="tagline">Support den Kanal — kostet dich nichts</p>
+
+  <!-- ===== LINK 1: Smartlink (Adsterra/Monetag) — niedrigste Hürde ===== -->
+  <a class="card primary" href="HIER-ADSTERRA-ODER-MONETAG-SMARTLINK-EINFÜGEN" target="_blank" rel="noopener">
+    <div class="icon">⚡</div>
+    <div class="card-text">
+      <div class="card-title">Ein Klick reicht</div>
+      <div class="card-desc">Kein Anmelden, kein Aufwand — hilft dem Kanal sofort</div>
+    </div>
+  </a>
+
+  <!-- ===== LINK 2: Freecash ===== -->
+  <a class="card" href="HIER-FREECASH-REF-LINK-EINFÜGEN" target="_blank" rel="noopener">
+    <div class="icon">💰</div>
+    <div class="card-text">
+      <div class="card-title">Freecash</div>
+      <div class="card-desc">Belohnungen &amp; kleine Aufgaben, echtes Geld</div>
+    </div>
+  </a>
+
+  <!-- ===== LINK 3: Affiliate (optional) ===== -->
+  <a class="card" href="HIER-AFFILIATE-LINK-EINFÜGEN" target="_blank" rel="noopener">
+    <div class="icon">🎮</div>
+    <div class="card-text">
+      <div class="card-title">Mein Setup</div>
+      <div class="card-desc">Empfohlenes Gaming-Zubehör</div>
+    </div>
+  </a>
+
+  <footer>made with clips, hooks &amp; captions</footer>
+</div>
+</body>
+</html>
