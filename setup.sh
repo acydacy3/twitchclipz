@@ -74,6 +74,31 @@ else
   printf '  [aus]    Remotion (mit: bash werkzeuge/setup.sh --remotion)\n'
 fi
 
+# --- 6. claude-youtube Skill: 14 Sub-Skills, 9 Guides --------------------
+# Primaer als claude.ai-Skill hochgeladen (laedt automatisch je Sitzung).
+# Dieser Klon ist nur FALLBACK, falls der Skill mal nicht greift.
+if [ -d "$HOME/.claude/skills/claude-youtube" ]; then
+  ok "claude-youtube Skill"
+else
+  neu "claude-youtube wird geklont ..."
+  tmp=$(mktemp -d)
+  git clone --depth 1 https://github.com/AgriciDaniel/claude-youtube.git "$tmp" >/dev/null 2>&1 \
+    && mkdir -p "$HOME/.claude/skills" \
+    && cp -r "$tmp/skills/claude-youtube" "$HOME/.claude/skills/claude-youtube" \
+    && ok "claude-youtube bereit" || warn "claude-youtube (Klon-Fehler)"
+  rm -rf "$tmp"
+fi
+
+# --- 7. deno: JS-Runtime, damit yt-dlp die YouTube-Signatur loest --------
+# Ohne deno geben die Video-Streams 403. Aufruf: yt-dlp --js-runtimes deno
+if command -v deno >/dev/null || [ -x "$HOME/.deno/bin/deno" ]; then
+  ok "deno"
+else
+  neu "deno wird installiert ..."
+  curl -fsSL https://deno.land/install.sh | sh -s -- -y >/dev/null 2>&1 \
+    && ok "deno bereit" || warn "deno"
+fi
+
 echo
 echo "Eigene Werkzeuge:"
 printf '  videoblick.py  Video ansehen (Frames)     python3 werkzeuge/videoblick.py FILM.mp4\n'
