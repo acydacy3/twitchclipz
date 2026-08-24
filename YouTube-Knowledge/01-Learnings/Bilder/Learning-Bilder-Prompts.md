@@ -40,6 +40,17 @@ Creative Director in einem Rutsch (pro Szene: Sek-Bereich + eins von zwei):
   echte Personen** wird generiert oder nachgestellt — **nie** fremdes Nachrichtenmaterial
   (rechtlich sauber + Marke).
 
+## z_image (Higgsfield/HF) — bewährte Prompt-Formel (24.08., n=10 Lengede, „unfassbar toll")
+Reihenfolge, die konstant starke, kohärente Bilder liefert:
+1. **Hauptmotiv + Handlung zuerst**, ganzer Satz („A narrow torpedo-shaped steel rescue capsule … suspended over a borehole at a 1963 mine, workers steadying it under floodlights at night").
+2. **Licht + Palette explizit** („cold desaturated industrial palette", „harsh floodlights", „deep black shadow").
+3. **Epochen-Anker** gegen Anachronismen („1963 period accurate, no modern objects") — hält Handys/Autos/Logos raus.
+4. **Fester Stil-Suffix über die GANZE Serie** → Look-Konstanz (ein Modell, gleicher Suffix): `heavy film grain, cinematic, no text, no watermark`.
+5. **Kamera-/Stimmungswörter** wirken stark (z_image ist „stylized/fast"): „close shot", „wide cinematic", „claustrophobic", „emotional".
+6. **Inline-Negatives** reichen meist (`no text, no watermark, no modern objects`); kein separates Negativfeld nötig.
+- **Betrieb:** z_image drosselt Parallel-Submits → **max ~3 gleichzeitig** (sonst HTTP 429), in Häppchen mit `jobs_wait` pacen. Kosten 0,15 Cr/Bild. Ergebnis-URLs sind öffentlich → per `curl` direkt auf Platte (kein base64).
+- **Weiter optimieren:** je Bild EIN klarer Fokuspunkt; bei Figuren Nationalität/Alter + Medium-Shot (siehe Figur-Prompts oben); Serien immer im selben Modell halten (Koepcke-Lehre: Modellwechsel = Konstanzverlust).
+
 ## Counter Evidence / widerlegte Annahme
 Siehe [[Failure-Vertikale-Staffelung-Triptychon]]: „vertikale Staffelung
 (oben/Mitte/unten) beschreiben" erzeugt echtes 3-Panel-Triptychon. **Stattdessen**
@@ -54,6 +65,7 @@ Alle Bilder des Kanals. Engine-Wahl (Nano Banana Pro/Seedance/Z-Image): [[Decisi
 - 18.08.: Triptychon-Bug widerlegt; Figur-Prompt-Lehren (Alter, Medium-Shot, Kamera-Kürzel).
 - 24.08.: Creative-Director-Modus — Real-vs-Generieren-Entscheidung pro Szene (Nutzer-Anweisung).
 - 24.08. (Korrektur): **„Faceless" bezieht sich auf den ERSTELLER** (kein Gesicht vor der Kamera), **nicht auf den Content.** Bilder DÜRFEN/SOLLEN echte Gesichter mit Emotion zeigen — stärker als Silhouetten. Silhouette nur bewusst als Stilmittel.
+- 24.08.: **z_image-Prompt-Formel** etabliert (Motiv→Licht→Epoche→fester Stil-Suffix; max 3 parallel) — Lengede-Serie „unfassbar toll", volle Look-Konstanz über ein Modell.
 - 24.08.: **Z-Image Turbo via HuggingFace-Space = kostenlos, ABER tägliches ZeroGPU-Kontingent** (~8 Bilder/Tag auf Free, dann „ZeroGPU quota exceeded" bis Reset; HF-PRO = 25 Min/Tag). Default für Szenen-/Umgebungsbilder; higgsfield-Credits für schwierige Figuren aufsparen. **Bewährt (n=8):** rendert Gesichter UND Hände sauber; Prompt-Formel bestätigt — ganze Sätze, Kameraobjektiv (z. B. „35mm f/2.8"), Lichtrichtung, Nationalität explizit, Suffix „single continuous image, no panel borders, no text, no watermark". 9:16 = `864x1536`.
 
 ## Related

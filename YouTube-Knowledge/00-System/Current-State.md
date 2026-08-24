@@ -49,4 +49,5 @@ Diese gelten aktuell in der Produktion (Belege in den verlinkten Learnings):
 - **Fertige Videos vor Upload nach Drive/Repo sichern.** → [[Learning-Editing-Video]]
 - **Szenen: Real vs. Generieren pro Szene** (Establishing = echt/Stock, Schlüsselmoment = generieren). → [[Learning-Bilder-Prompts]]
 - **`/merken` läuft autonom**, sobald ein echtes Learning entsteht (Nutzer-Anweisung 24.08.).
+- **Feinschliff (Tags, letzte Details) macht i. d. R. der Nutzer per Hand** — Claude produziert + terminiert, Nutzer poliert.
 - **Analytics-Loop pro Video:** Tag 4–5 AVP%/CTR/Retention ziehen → Post-Mortem → nächstes Video steuern. → [[Analytics-Loop]]
