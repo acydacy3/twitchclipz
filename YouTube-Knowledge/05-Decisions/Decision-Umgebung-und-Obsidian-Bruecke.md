@@ -29,7 +29,9 @@ GitHub ist wegen 403 zu, der lokale PC ist unerreichbar.
    — er sieht den vollen Graph/Mindmap.
 2. **Für Claude → Persistenz/Retrieval:** Vault liegt im Drive-Ordner
    `Katastrophenprotokoll-Pipeline/YouTube-Knowledge`
-   (id `174lpTbSxPWTNfZwz_Npct5S8tURqZ2f7`). Ich lese/schreibe ihn über den Drive-Connector.
+   (id `1rafUqiSsVYPeMJh_1IoNfj3zeoGd5TJZ`, **kanonisch seit Aufräumen 24.08.**; die alte
+   `174lpTb…`-Kopie + ~5 Dubletten/„YouTubeKnowledgeFull" wurden getrasht). Ich lese/schreibe
+   ihn über den Drive-Connector.
 
 ## Empfehlung für echte Auto-Sync (offen, Nutzer-Entscheidung)
 **„Google Drive für Desktop"** installieren und das Obsidian-Vault in den

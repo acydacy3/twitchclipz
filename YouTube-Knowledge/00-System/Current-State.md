@@ -14,6 +14,7 @@ tags: [system, state]
 
 ## Kanal
 - *Katastrophenprotokoll* (`UC1KCzLNlgGiYsLNQ7Z0HA-g`, DE), gegründet 15.08.2026.
+- **Gemessen 24.08. (`analyse.py`):** 36 Abos, 18.742 Aufrufe, 35 Videos veröffentlicht + 1 terminiert. Wachstum 2→9→36.
 - Konto vidIQ: `kisha-ners@gmx.de`. Guthaben (19.08.): **30** (renewable 0/150,
   Add-on 30/80, refresh 15.09.2026). vidIQ nur auf Anfrage — Credits schonen.
 
@@ -21,11 +22,12 @@ tags: [system, state]
 - [[Video-01-Tham-Luang]] — veröffentlicht. 640 Aufrufe, 2 Abos. Langvideo 4,4 % Haltequote → Shorts tragen.
 - [[Video-02-San-Jose]] — fertig + terminiert (11 Shorts + Langvideo, 18.–20.08.).
 - [[Video-03-Koepcke]] — fertig, hochgeladen, terminiert 21.–24.08. (10 Shorts, 3/Tag). Titel-Score Short 1: 74/100.
-- **Video 4 Kandidat:** Lengede (deutscher Erinnerungsanker, verbindet mit V2/V3). Siehe [[Decision-Themenwahl-Koepcke-vor-Lengede]].
+- ⚠️ **Scheduled Uploads laufen 24.08. aus** → Video 4 wird JETZT gebraucht (sonst geht der Kanal dunkel).
+- **Video 4:** Skript kommt vom Nutzer → daraus gekürzte Fassung + **9–10 Shorts** + Szenen-Shotliste (Real vs. Generieren). Thema offen: Lengede (DE-Anker) vs. weiteres Einzelüberlebenden-Thema (stärkstes Muster laut Audit). Siehe [[Decision-Themenwahl-Koepcke-vor-Lengede]].
 
 ## Zugänge (Stand 19.08.)
 - **YouTube Data + Analytics API:** OAuth-Refresh-Token gültig, Uploads/Analytics/Terminierung produktiv.
-- **git push:** weiterhin **403-gesperrt** (24.08. geprüft). Persistenz = lokal committen + Drive + Datei-Handoff. Siehe [[Decision-Git-vs-Drive-Persistenz]].
+- **git push:** weiterhin **403-gesperrt** (24.08.). **Persistenz = Drive zuerst** (via MCP), dann lokaler Commit. **Ein** kanonischer Drive-Vault: `Katastrophenprotokoll-Pipeline/YouTube-Knowledge` (id `1rafU…`, Dubletten am 24.08. aufgeräumt). Obsidian-App = nur Nutzer-Fenster, nicht mein Zugang → **nicht priorisiert**. Siehe [[Decision-Git-vs-Drive-Persistenz]], [[Decision-Umgebung-und-Obsidian-Bruecke]].
 - **Netzsperre:** aufgehoben (17.08.). elevenlabs/higgsfield/youtube erreichbar.
 - **TikTok über Buffer:** @mausigermax verbunden (`acydacy3@gmail.com`).
 
@@ -35,7 +37,7 @@ tags: [system, state]
 - **claude-youtube** Skill (als claude.ai-Skill), yt-dlp (via deno), gdown.
 
 ## Aktuell wichtigste offene Punkte
-- Längen-These vs. Hook-These noch nicht sauber getrennt (n zu klein) → [[Hypothese-Hook-schlaegt-Laenge]].
+- Längen-These **aufgelöst (24.08., n=35):** Faktor 0,9 statt 7,9 → Hook schlägt Länge (auf Aufruf-Basis; **AVP%/3-s-Retention für V3 steht aus**, ~2 Tage Analytics-Lag). → [[Learning-Retention-und-Laenge]]
 - Hook-Banner mit abweichendem Text: nie belegt besser → [[Experiment-Hook-Banner-abweichender-Text]].
 - TikTok-Hashtag-Wahl stützt sich auf YouTube-Volumen (schwächster Punkt) → [[Frage-TikTok-Hashtag-Volumen]].
 
@@ -45,3 +47,5 @@ Diese gelten aktuell in der Produktion (Belege in den verlinkten Learnings):
 - **Untertitel = Stimme** (Ton-aus-Publikum). Hook-Banner optional/abweichend nur als Test. → [[Learning-Captions]], [[Learning-Storytelling-Shorts]]
 - **Jeder Titel trägt ein starkes Keyword; Aussage bis Zeichen 35 fertig.** → [[Learning-Titel]]
 - **Fertige Videos vor Upload nach Drive/Repo sichern.** → [[Learning-Editing-Video]]
+- **Szenen: Real vs. Generieren pro Szene** (Establishing = echt/Stock, Schlüsselmoment = generieren). → [[Learning-Bilder-Prompts]]
+- **`/merken` läuft autonom**, sobald ein echtes Learning entsteht (Nutzer-Anweisung 24.08.).

@@ -1,6 +1,6 @@
 ---
 type: question
-status: open
+status: resolved
 created: 2026-08-24
 updated: 2026-08-24
 tags: [question, obsidian, drive, sync]
@@ -21,7 +21,11 @@ sind lokale Kopie und Drive-Kopie **getrennt** → Drift-Gefahr.
 3. **Manuell:** Claude gibt Dateien via `SendUserFile`, Nutzer legt sie ins Vault. Kein Drift-Schutz.
 
 ## Status
-**Offen — Nutzer-Entscheidung.** Bis dahin: manueller Weg (Option 3).
+**Aufgelöst (24.08.):** Nutzer hat **„Drive für Desktop" installiert** → Option 1. Vault liegt
+als **ein** kanonischer Ordner in Drive (`Katastrophenprotokoll-Pipeline/YouTube-Knowledge`,
+id `1rafU…`); meine Drive-Schreibvorgänge synchronisieren automatisch auf den PC. Die
+Obsidian-**App** ist **nicht priorisiert** (nur Nutzer-Fenster) — der Lern-Loop läuft auch
+ohne sie über Drive.
 
 ## Related
 [[Decision-Umgebung-und-Obsidian-Bruecke]] · [[Memory-Workflow]]

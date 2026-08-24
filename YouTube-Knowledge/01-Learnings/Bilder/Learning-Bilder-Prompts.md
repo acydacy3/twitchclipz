@@ -29,6 +29,17 @@ Bild-Prompts werden **von Bild zu Bild detailreicher**. Kernregeln:
 - **Emotion nachschärfen:** „quiet dread" rendert oft benommen → „jaw tense, brow furrowed, eyes wide with fear".
 - **Negativ-Prompt-Pflichtblock:** `triptych, panels, collage, split screen, borders` + `child, adult woman` + `hands near face, holding object to face, deformed hands, extra fingers`.
 
+## Creative-Director-Modus: Real vs. Generieren (pro Szene, 24.08.)
+Bei jeder Szene **entscheiden, nicht beschreiben** — Claude liefert die Szenenliste als
+Creative Director in einem Rutsch (pro Szene: Sek-Bereich + eins von zwei):
+- **🎬 GENERIEREN** für Schlüsselmomente ohne Stock-Äquivalent (die Überlebende im Wrack,
+  der Zettel aus 700 m Tiefe, ein Gesicht im Regen) → voller, tiefer Prompt nach den Regeln oben.
+- **📹 ECHT** für Establishing-/Umgebungs-Shots (Dschungel, Höhle, Stollen, Meer) →
+  generisches Stock-/Archiv-B-Roll. Billiger, glaubwürdiger, schneller.
+- **Harte Grenze:** „Echt" = **generische Umgebung** aus Stock. Das **konkrete Ereignis /
+  echte Personen** wird generiert oder nachgestellt — **nie** fremdes Nachrichtenmaterial
+  (rechtlich sauber + Marke).
+
 ## Counter Evidence / widerlegte Annahme
 Siehe [[Failure-Vertikale-Staffelung-Triptychon]]: „vertikale Staffelung
 (oben/Mitte/unten) beschreiben" erzeugt echtes 3-Panel-Triptychon. **Stattdessen**
@@ -41,6 +52,7 @@ Alle Bilder des Kanals. Engine-Wahl (Nano Banana Pro/Seedance/Z-Image): [[Decisi
 ## History
 - 17.08.: Grundregeln (Nationalität, Anführungszeichen, Panels).
 - 18.08.: Triptychon-Bug widerlegt; Figur-Prompt-Lehren (Alter, Medium-Shot, Kamera-Kürzel).
+- 24.08.: Creative-Director-Modus — Real-vs-Generieren-Entscheidung pro Szene (Nutzer-Anweisung).
 
 ## Related
 [[Decision-Bild-Engine-Wahl]] · [[Failure-Vertikale-Staffelung-Triptychon]] · [[Learning-Editing-Video]] · [[Video-03-Koepcke]]
