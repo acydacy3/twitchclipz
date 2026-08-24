@@ -17,7 +17,7 @@ Historie. **Öffne `YouTube-Knowledge/` als Vault in Obsidian**, um Links/Graph 
 3. **Zahlen schlagen Vermutungen, immer.** `analyse.py` gewinnt gegen Notiertes.
 4. **Retrieval before Reinvention:** vor wichtigen Entscheidungen zuerst im Vault suchen (bereits Getestetes nicht wiederholen).
 5. **Ein Learning ist nicht automatisch eine Rule.** Unsicherheit sichtbar lassen (Confidence Low/Medium/High/Very High).
-6. **Erkenntnisse persistieren:** seit `git push` frei ist → committen + pushen; Google Drive nur noch Fallback.
+6. **Erkenntnisse persistieren:** `git push` ist weiterhin **403-gesperrt** → lokal committen, dann **nach Google Drive sichern + Vault als Datei an den Nutzer** (`/merken`). Push nutzen, sobald freigeschaltet. Details: `YouTube-Knowledge/05-Decisions/Decision-Git-vs-Drive-Persistenz.md`.
 
 ## So arbeitet dieses System (Kurzfassung)
 - **Ziel ist bessere Entscheidungsqualität je Produktionszyklus**, nicht mehr Output → `YouTube-Knowledge/00-System/Mission.md`.

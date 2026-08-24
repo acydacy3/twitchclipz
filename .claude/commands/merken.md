@@ -11,9 +11,10 @@ Zweck des Projekts (Nutzer-Worte): *„Learning gemerkt, Fehler gemerkt, verbess
 immer aktueller Stand ohne Befehl."* Dieser Befehl ist die Hälfte davon, die nicht
 von allein läuft.
 
-> **Neu seit 24.08.2026:** `git push` ist in dieser Umgebung frei. Das Repo kann
-> sich also **selbst** fortschreiben — der frühere Google-Drive-Umweg ist nur noch
-> **Fallback**. Siehe `YouTube-Knowledge/05-Decisions/Decision-Git-vs-Drive-Persistenz.md`.
+> **Stand 24.08.2026 (geprüft):** `git push` ist **weiter 403-gesperrt**. Lokal
+> `commit` geht, aber die Sicherung läuft über **Google Drive + Datei-Handoff**
+> (Zip des Vaults an den Nutzer). Siehe
+> `YouTube-Knowledge/05-Decisions/Decision-Git-vs-Drive-Persistenz.md`.
 
 ---
 
@@ -30,21 +31,17 @@ ggf. `CLAUDE.md`) anpassen — sonst bleibt es im Vault (Memory-Promotion).
 **Selbstprüfung:** Ist wirklich nichts Neues dazugekommen? Dann **keine künstliche
 Note** erzeugen. Qualität vor Quantität.
 
-## Schritt 2 — Persistieren (Git zuerst)
-```
-git add -A
-git commit -m "merken: <kurz was gelernt>"
-git push -u origin <aktueller-branch>
-```
-Bei Netzfehler bis zu 4× mit Backoff (2s/4s/8s/16s) wiederholen.
+## Schritt 2 — Persistieren
+1. Lokal sichern: `git add -A` + `git commit -m "merken: <kurz was gelernt>"`.
+2. `git push` **versuchen** — funktioniert er (kein 403), ist das Repo aktuell und du bist fertig.
+3. **Solange Push 403 gibt (aktueller Stand):** das Vault als **Zip** bauen und mit `SendUserFile` an den Nutzer schicken, plus nach Google Drive
+   (`Katastrophenprotokoll-Pipeline`, `1MFz5gNIBQfcXWBw8evnop_oUJ-9TnWtX`) sichern
+   (search_files nach Namen → create_file → trash_file alte ID). **Einen** Satz in
+   einfacher Sprache: ohne diese Datei gehen die Erkenntnisse verloren.
 
-## Schritt 3 — Fallback, falls Push scheitert (403 o. ä.)
-Nur dann den alten Weg gehen: `CLAUDE.md` **und** die geänderten Vault-Dateien
-nach Google Drive (`Katastrophenprotokoll-Pipeline`, `1MFz5gNIBQfcXWBw8evnop_oUJ-9TnWtX`)
-sichern (search_files nach Namen → create_file → trash_file alte ID) und die
-Dateien mit `SendUserFile` an den Nutzer schicken, mit **einem** Satz in einfacher
-Sprache. Deutlich sagen: geht die Sicherung nur über ihn, gehen die Erkenntnisse
-sonst verloren.
+> **Sonderfall Drive-Vault:** Liegt das Obsidian-Vault des Nutzers in seinem
+> Google-Drive-Ordner, schreib die geänderten Notes direkt dorthin — dann erscheinen
+> sie automatisch in seinem Obsidian, ohne Datei-Handoff.
 
 ## Schritt 4 — Kurz melden
 Zwei bis drei Sätze: was gelernt wurde, wo es jetzt steht (Vault-Note + Commit).

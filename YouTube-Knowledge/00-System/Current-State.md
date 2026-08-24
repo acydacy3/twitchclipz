@@ -25,8 +25,7 @@ tags: [system, state]
 
 ## Zugänge (Stand 19.08.)
 - **YouTube Data + Analytics API:** OAuth-Refresh-Token gültig, Uploads/Analytics/Terminierung produktiv.
-- **git push:** in dieser Umgebung **frei** (Branch-Workflow). ⚠️ Das ist neu — der frühere
-  403-Zustand (Drive-Umweg) ist damit überholt; siehe [[Decision-Git-vs-Drive-Persistenz]].
+- **git push:** weiterhin **403-gesperrt** (24.08. geprüft). Persistenz = lokal committen + Drive + Datei-Handoff. Siehe [[Decision-Git-vs-Drive-Persistenz]].
 - **Netzsperre:** aufgehoben (17.08.). elevenlabs/higgsfield/youtube erreichbar.
 - **TikTok über Buffer:** @mausigermax verbunden (`acydacy3@gmail.com`).
 

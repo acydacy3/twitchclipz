@@ -14,16 +14,21 @@ Die Ur-CLAUDE.md und die Commands `/merken` + `/neubeginn` bauen darauf, dass
 **`git push` gesperrt (403)** ist — deshalb wurde das lebende Gedächtnis nach
 **Google Drive** gesichert und der Nutzer musste die Datei manuell ins Repo laden.
 
-**Neue Evidenz (24.08.2026):** In der aktuellen Umgebung ist `git push`
-**freigeschaltet** (Branch-Workflow der Aufgabe). Damit ist die Grundannahme
-des Drive-Umwegs überholt.
+**Prüfung 24.08.2026:** `git commit` geht lokal, aber `git push` scheitert weiter
+mit **403** (`Claude doesn't have GitHub access … / Resource not accessible`).
+Die Push-Sperre besteht also **fort** — die frühere Annahme „Push frei" war falsch
+und ist hiermit korrigiert. Persistenz läuft daher weiter über Drive + Datei-Handoff.
 
-## Entscheidung
-1. **Primär:** dieses Vault + CLAUDE.md werden per `git commit` + `git push`
-   persistiert (versioniert, mit Historie → passt zu [[Knowledge-Architecture]] §3).
-2. **Fallback:** Wenn Push scheitert (403/Netz), weiter nach Drive sichern
-   (`/merken`) und Datei an den Nutzer schicken.
-3. **Fallback 2:** `SendUserFile`.
+## Entscheidung (Stand 24.08., korrigiert)
+1. **Primär (sobald Push freigeschaltet ist):** Vault + CLAUDE.md per
+   `git commit` + `git push` (versioniert, Historie → [[Knowledge-Architecture]] §3).
+   **Aktuell nicht verfügbar (403).**
+2. **Aktuell aktiv:** `commit` lokal + **nach Google Drive sichern** (`/merken`) +
+   **`SendUserFile`** an den Nutzer (Zip des Vaults). So wie schon die Ur-CLAUDE.md
+   es beschrieb — die Push-Sperre ist real.
+3. **Voraussetzung für den Wunsch „Claude nutzt Obsidian selbst":** ein gemeinsam
+   erreichbarer Ort — entweder das Vault im Google-Drive-Ordner (dieser Server
+   schreibt hinein) **oder** Claude läuft lokal auf dem PC (Desktop/zippo direkt).
 
 ## Warum
 - Guardrail #2 (Memory Must Be Persistent) ist mit Git **sauberer** erfüllt als mit manuellem Drive-Upload.

@@ -27,10 +27,10 @@ Besonders: Originalskript kommt **immer** vom Nutzer; er nutzt **keine** Kommand
 - Scheitert es an Zugangsdaten: in zwei Sätzen sagen, was einzutragen ist, weiter mit Schritt 4.
 - Läuft es: **gemessene Zahlen gewinnen** gegen alles Notierte → `Current-State.md` aktualisieren.
 
-## Schritt 4 — Nachziehen (git zuerst, Drive Fallback)
-Seit `git push` frei ist, ist das **Repo** die lebende Fassung: `git pull` auf den
-aktuellen Branch holt, was die Vorsitzung committet hat. **Nur falls** eine frühere
-Sitzung per Drive-Fallback gesichert hat (Push war gesperrt): im Drive-Ordner
+## Schritt 4 — Nachziehen (Drive/Datei, da git push 403)
+`git push` ist aktuell gesperrt → die lebende Fassung kommt per **Drive/Datei-Handoff**
+der Vorsitzung, nicht zwingend über das Repo. `git pull` auf den aktuellen Branch
+holt, was gepusht wurde (falls Push zwischenzeitlich freigeschaltet ist). Im Drive-Ordner
 `Katastrophenprotokoll-Pipeline` nach neueren `CLAUDE.md`/Vault-Dateien sehen
 (über Namen suchen). Neuer/größer → übernehmen und dem Nutzer in einem Satz sagen.
 Ältere Drive-Dateien (`REGELN.md`, `START-HIER.md`, `LEARNINGS-*.md` vom 15./16.08.)
