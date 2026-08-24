@@ -53,6 +53,8 @@ Alle Bilder des Kanals. Engine-Wahl (Nano Banana Pro/Seedance/Z-Image): [[Decisi
 - 17.08.: Grundregeln (Nationalität, Anführungszeichen, Panels).
 - 18.08.: Triptychon-Bug widerlegt; Figur-Prompt-Lehren (Alter, Medium-Shot, Kamera-Kürzel).
 - 24.08.: Creative-Director-Modus — Real-vs-Generieren-Entscheidung pro Szene (Nutzer-Anweisung).
+- 24.08. (Korrektur): **„Faceless" bezieht sich auf den ERSTELLER** (kein Gesicht vor der Kamera), **nicht auf den Content.** Bilder DÜRFEN/SOLLEN echte Gesichter mit Emotion zeigen — stärker als Silhouetten. Silhouette nur bewusst als Stilmittel.
+- 24.08.: **Z-Image Turbo via HuggingFace-Space = kostenlos, ABER tägliches ZeroGPU-Kontingent** (~8 Bilder/Tag auf Free, dann „ZeroGPU quota exceeded" bis Reset; HF-PRO = 25 Min/Tag). Default für Szenen-/Umgebungsbilder; higgsfield-Credits für schwierige Figuren aufsparen. **Bewährt (n=8):** rendert Gesichter UND Hände sauber; Prompt-Formel bestätigt — ganze Sätze, Kameraobjektiv (z. B. „35mm f/2.8"), Lichtrichtung, Nationalität explizit, Suffix „single continuous image, no panel borders, no text, no watermark". 9:16 = `864x1536`.
 
 ## Related
 [[Decision-Bild-Engine-Wahl]] · [[Failure-Vertikale-Staffelung-Triptychon]] · [[Learning-Editing-Video]] · [[Video-03-Koepcke]]
