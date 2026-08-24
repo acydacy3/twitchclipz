@@ -27,7 +27,7 @@ def creds():
     )
 
 def upload_one(yt, n, meta):
-    mp4 = BASE / "output" / f"okene_{n}.mp4"
+    mp4 = BASE / "output" / f"lengede_{n}.mp4"
     body = {
         "snippet": {
             "title": meta["title"],
@@ -60,8 +60,12 @@ def upload_one(yt, n, meta):
 def main():
     yt = build("youtube", "v3", credentials=creds())
     metas = json.load(open(BASE / "metadata.json"))
-    results = {}
+    rf = BASE / "upload_results.json"
+    results = json.load(open(rf)) if rf.exists() else {}
     for n in [f"{i:02d}" for i in range(1, 11)]:
+        if results.get(n):
+            print(f"Short {n}: schon hochgeladen ({results[n]}), skip", flush=True)
+            continue
         try:
             vid = upload_one(yt, n, metas[n])
             print(f"Short {n}: video_id={vid} publishAt={metas[n]['publish_utc']}", flush=True)
