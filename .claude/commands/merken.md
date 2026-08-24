@@ -1,5 +1,5 @@
 ---
-description: Persistiert neue Erkenntnisse ins Obsidian-Vault + Git (Drive nur Fallback)
+description: Persistiert neue Erkenntnisse → Drive-Vault (primär, da Push 403) + Git-Commit lokal
 ---
 
 # Merken
@@ -32,16 +32,19 @@ ggf. `CLAUDE.md`) anpassen — sonst bleibt es im Vault (Memory-Promotion).
 Note** erzeugen. Qualität vor Quantität.
 
 ## Schritt 2 — Persistieren
-1. Lokal sichern: `git add -A` + `git commit -m "merken: <kurz was gelernt>"`.
-2. `git push` **versuchen** — funktioniert er (kein 403), ist das Repo aktuell und du bist fertig.
-3. **Solange Push 403 gibt (aktueller Stand):** das Vault als **Zip** bauen und mit `SendUserFile` an den Nutzer schicken, plus nach Google Drive
-   (`Katastrophenprotokoll-Pipeline`, `1MFz5gNIBQfcXWBw8evnop_oUJ-9TnWtX`) sichern
-   (search_files nach Namen → create_file → trash_file alte ID). **Einen** Satz in
-   einfacher Sprache: ohne diese Datei gehen die Erkenntnisse verloren.
+1. **Drive zuerst (der Weg, der die nächste Session erreicht):** die **geänderten**
+   Notes direkt in den Drive-Vault schreiben — **ein** Vault unter
+   `Katastrophenprotokoll-Pipeline/YouTube-Knowledge`
+   (search_files nach Dateiname → bei Treffer `update_file`-Inhalt bzw. alte trashen +
+   `create_file` neu; nur die geänderten, nicht alles). Das ist mein Gehirn für n+1.
+2. Lokal sichern: `git add -A` + `git commit -m "merken: <kurz was gelernt>"` (Versionshistorie).
+3. `git push` **versuchen** — klappt er (kein 403), ist das Repo wieder primär, fertig.
+   **Solange 403:** kein Zip-Zwang; Drive (Schritt 1) trägt. Nur wenn der Nutzer es
+   ausdrücklich will, zusätzlich `SendUserFile`.
 
-> **Sonderfall Drive-Vault:** Liegt das Obsidian-Vault des Nutzers in seinem
-> Google-Drive-Ordner, schreib die geänderten Notes direkt dorthin — dann erscheinen
-> sie automatisch in seinem Obsidian, ohne Datei-Handoff.
+> **Obsidian ist optional:** Liegt das Vault des Nutzers in seinem Drive-Ordner,
+> erscheinen die Drive-Schreibvorgänge automatisch dort. Falls nicht, ist das kein
+> Blocker — Drive bleibt trotzdem der Persistenz-Träger für die nächste Session.
 
 ## Schritt 4 — Kurz melden
 Zwei bis drei Sätze: was gelernt wurde, wo es jetzt steht (Vault-Note + Commit).

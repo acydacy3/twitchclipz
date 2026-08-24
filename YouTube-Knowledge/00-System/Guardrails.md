@@ -18,7 +18,7 @@ Memory-, Experiment- und Audit-Systemen. Quelle: Nutzer-Auftrag 24.08.2026.
    Integration ändern. Keine großflächigen Refactorings ohne Begründung.
 2. **Memory Must Be Persistent.** Relevantes Wissen darf nie nur im
    Session-Kontext leben: `Session → Erkenntnis → Obsidian → zukünftige Sessions`.
-   (Persistenz-Träger ist der **Git-Vault**, seit `git push` frei ist; Drive bleibt Fallback.)
+   (Persistenz-Träger ist aktuell **Drive** via MCP, da `git push` noch 403 ist; sobald Push frei ist, trägt der Git-Vault wieder.)
 3. **Retrieval before Reinvention.** Vor wichtigen Entscheidungen zuerst
    bestehendes Wissen suchen (Learnings, Experimente, [[Failure-Memory]],
    Decisions, Konkurrenz, Agenten-Learnings, aktuelle Rules).

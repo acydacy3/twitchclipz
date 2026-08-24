@@ -37,17 +37,17 @@ suchen. Confidence + Scope + Counter-Evidence jeder gefundenen Note beachten.
 neue Erkenntnis
  → richtige Note im Vault (mit Confidence + Scope + Evidence + History)
  → prüfen: wird daraus eine Rule? → nur dann [[Current-State]]/CLAUDE.md anpassen
- → git add/commit/push  (Persistenz — seit Push frei)
- → Fallback: nach Google Drive sichern + Datei an Nutzer schicken
+ → geänderte Note nach **Drive** schreiben (via MCP) — erreicht die nächste Session
+ → git add/commit **lokal** (Versionshistorie; Push noch 403)
 ```
 
-## Persistenz-Priorität (seit `git push` frei ist)
-1. **Git** (Repo-Vault) — primärer, versionierter Persistenz-Träger. Historie inklusive.
-2. **Google Drive** — Fallback, wenn Push scheitert (403 o. ä.).
+## Persistenz-Priorität (Stand: `git push` = 403)
+1. **Google Drive** (via MCP-Drive-Tools) — **aktueller** Persistenz-Träger, der einzige Weg, der die nächste Session erreicht. Ein Vault unter `Katastrophenprotokoll-Pipeline/YouTube-Knowledge`.
+2. **Git-Commit lokal** — Versionshistorie im Container; **`git push`, sobald freigeschaltet** (dann wird das Repo wieder primär).
 3. **SendUserFile an Nutzer** — letzter Fallback (er lädt manuell hoch).
 
-Warum diese Reihenfolge neu ist: Der Drive-Umweg entstand nur wegen der
-früheren Push-Sperre. Details + Widerspruchsauflösung: [[Decision-Git-vs-Drive-Persistenz]].
+Warum Drive vorne steht: Solange Push 403 ist, verliert das Repo Änderungen beim
+nächsten Clone — nur Drive überlebt zwischen Sessions. Details: [[Decision-Git-vs-Drive-Persistenz]].
 
 ## Selbstkorrektur (wenn eine Note falsch/veraltet/zu pauschal ist)
 1. Problem markieren. 2. Evidenz prüfen. 3. Note aktualisieren (History!).
