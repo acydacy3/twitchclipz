@@ -13,9 +13,9 @@ FONT_BLACK = "/usr/share/fonts/truetype/roboto/unhinted/RobotoTTF/Roboto-Black.t
 
 # Hook-Banner nur fuer die vier "Banger"-Shorts (Pilot + Story-Peaks)
 HOOKS = {
-    "01": {"text": "12 MANN. 1 UEBERLEBENDER.", "y": 320, "size": 78},
+    "01": {"text": "12 MANN. 1 ÜBERLEBENDER.", "y": 320, "size": 78},
     "04": {"text": "LUFT, GROSS WIE EIN KOPF", "y": 320, "size": 74},
-    "06": {"text": "DIE LEICHE GRIFF ZURUECK", "y": 320, "size": 76},
+    "06": {"text": "DIE LEICHE GRIFF ZURÜCK", "y": 320, "size": 76},
     "09": {"text": "63 STUNDEN. DANN LUFT.", "y": 320, "size": 76},
 }
 
@@ -88,7 +88,7 @@ def build_config(idx):
         "teil": f"TEIL {int(n)}",
         "tmp": str(BASE / "tmp" / f"short_{n}"),
         "out": str(BASE / "output" / f"okene_{n}.mp4"),
-        "musik": {"tonart": "D", "intensitaet": 0.85, "db": -21},
+        "musik": {"tonart": "D", "intensitaet": 0.85, "db": -25},
     }
     if n in HOOKS:
         cfg["hook"] = HOOKS[n]

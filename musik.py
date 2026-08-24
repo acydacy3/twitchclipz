@@ -96,6 +96,20 @@ def bett(dauer, tonart="D", intens=1.0, seed=7):
         out += ton(t, f0 * mult, amp * lfo(t, hz, 0.0, 1.0, phase=k * 1.7),
                    detune=0.003)
 
+    # 4b. Tritonus-Drohne: leise, erzeugt Unbehagen ("gruselig")
+    tritonus = halbton(f0, 6)
+    out += ton(t, tritonus * 2, 0.028 * lfo(t, 0.02, 0.0, 1.0, phase=1.0), detune=0.002)
+
+    # 4c. Motiv: leise, wiederkehrende 4-Ton-Moll-Figur (catchy, glockig)
+    motiv_ht = [12, 10, 7, 3]
+    schritt = 0.6
+    per = len(motiv_ht) * schritt
+    freqs = np.array([halbton(f0 * 4, h) for h in motiv_ht])
+    idx = ((t % per) / schritt).astype(int) % len(motiv_ht)
+    ph_m = (t % schritt) / schritt
+    env_m = np.exp(-ph_m * 5.0)
+    out += 0.03 * intens * np.sin(2 * np.pi * freqs[idx] * t) * env_m
+
     # 5. Rauschbett: klebt die Sinusse zusammen, nimmt das Synthetische raus
     rausch = tiefpass(rng.normal(0, 1, n), 240.0)
     rausch /= (np.abs(rausch).max() + 1e-9)

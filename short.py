@@ -175,9 +175,9 @@ def build(cfg):
     cur = "[cat]"
     if teil:
         chain += (
-            f";{cur}drawbox=x=0:y=0:w={W}:h={bar_h}:color=black@0.72:t=fill,"
+            f";{cur}drawbox=x=0:y=70:w={W}:h={bar_h}:color=black@0.72:t=fill,"
             f"drawtext=text='{teil}':fontfile={cfg['font_black']}:"
-            f"fontsize=62:fontcolor=white:x=(w-text_w)/2:y=34[bar]"
+            f"fontsize=62:fontcolor=white:x=(w-text_w)/2:y=104[bar]"
         )
         cur = "[bar]"
 
@@ -192,7 +192,7 @@ def build(cfg):
         # Kastenrand. Bei 1080 Breite und 40 px Luft links und rechts
         # bleiben 1000 px. Ohne diese Rechnung lief der Text bei langen
         # Aufhaengern ueber den Rand hinaus (Teil 3, 6, 10 im 1. Lauf).
-        auto = int((1000 - 52) / (0.49 * max(len(htext), 8)))
+        auto = int((840 - 52) / (0.49 * max(len(htext), 8)))
         hsize = min(hook.get("size", 78), auto)
         chain += (
             f";{cur}drawtext=text='{htext}':fontfile={cfg['font_black']}:"
