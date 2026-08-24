@@ -33,8 +33,10 @@ kommen — nicht weil Kürze an sich gewinnt.
 - **Langform ist für diesen Kanal Gift:** Humantary 26 min → 3.222; eigenes Langvideo → 5 Aufrufe. Langvideo ≤ 5 min als Zweitschiene.
 
 ## Counter Evidence / Contradiction
+- **NEU 24.08. (n=35, stärkster Beleg bisher):** Über alle 3 Serien gemessen (`analyse.py`): bis 22 s → Ø 523 Aufrufe · über 22 s → Ø **591** · **Faktor 0,9**. Die alte „Faktor 7,9 / Kürze gewinnt"-These (Vosk n=12) ist damit **klar überholt** — Länge ist innerhalb 19–39 s **kein** eigenständiger Vorteil. Die San-José-Längenprobe (33–39 s am 20.08.) brach **nicht** ein (33s→917, 34s→915, 39s→531) → bestätigt: **Hook > Länge**. Siehe [[Experiment-SanJose-Laengen-Test-Tag3]] (abgeschlossen).
 - **TikTok kehrt es um** (siehe [[Learning-Cross-Platform-TikTok]]): Gewinner-Median ~100 s, kein einziger unter 60 s. **YouTube-Längenregel NICHT nach TikTok mitnehmen.**
 - Vorsicht Prozent-Retention: sie hängt mechanisch an der Länge (31 % von 18 s = 5,6 s). Prozent-Anstieg bei kürzeren Videos ist teils Arithmetik.
+- **Weiterhin offen:** Diese Zahlen sind **Aufrufe**, nicht AVP%/3-s-Retention. Länge vs. Hook ist damit *plausibel* getrennt (Länge fällt als Faktor weg), aber der positive Hook-Beleg braucht noch AVP-Daten (V3-Analytics lag 2–3 Tage).
 
 ## Messgröße, die es wirklich entscheidet
 Nicht Aufrufe (= Verteilungslotterie), sondern **durchschnittlich angesehener
@@ -48,7 +50,8 @@ Kraft in die ersten 3 s legen. → [[Learning-Hooks]], [[Learning-Storytelling-S
 ## History
 - **v1 (17.08.):** „unter 22 s: Faktor 7,9" (Vosk n=12).
 - **v2 (18.–19.08.):** vidIQ + Kanal-Audit zeigen: Hook schlägt Länge; 34 s-Short gewinnt. Synthese „keine toten Sekunden, Zone 19–39 s".
-- **offen:** Länge vs. Hook mit größerem n sauber trennen → [[Hypothese-Hook-schlaegt-Laenge]].
+- **v3 (24.08., n=35):** Faktor auf **0,9** gefallen — Längenvorteil verschwunden. San-José-Längenprobe hielt (917/915). „Hook > Länge" damit deutlich gestützt (Confidence high, aber auf Aufruf-Basis; AVP steht aus).
+- **offen:** positiver Hook-Beleg über **AVP%** statt Aufrufe → [[Hypothese-Hook-schlaegt-Laenge]].
 
 ## Related
 [[Learning-Hooks]] · [[Learning-Cross-Platform-TikTok]] · [[Video-02-San-Jose]] · [[Experiment-SanJose-Laengen-Test-Tag3]]
