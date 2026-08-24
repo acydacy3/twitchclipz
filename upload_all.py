@@ -6,15 +6,14 @@ from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
 from googleapiclient.errors import HttpError
 
-BASE = Path("/home/user/twitchclipz/koepcke")
+BASE = Path("/home/user/twitchclipz/okene")
 CATEGORY_ID = "22"
 TAGS = [
-    "juliane koepcke", "juliane diller", "lansa 508", "flugzeugabsturz",
-    "amazonas", "dschungel", "1971", "peru", "wahre geschichte", "doku",
-    "dokumentation", "katastrophe", "überlebende", "einzige überlebende",
-    "regenwald", "überleben", "flugzeug", "unglück", "shorts",
-    "katastrophenprotokoll", "wahre begebenheit", "amazonas absturz",
-    "peru dschungel", "flugzeug crash", "true story"
+    "harrison okene", "jascon 4", "schiffsunglück", "einziger überlebender",
+    "überlebt", "taucher", "nigeria", "luftblase", "wahre geschichte", "doku",
+    "dokumentation", "katastrophe", "meer", "tiefsee", "rettung",
+    "sättigungstaucher", "unglück", "shorts", "katastrophenprotokoll",
+    "überleben", "atlantik", "wrack", "true story", "survival"
 ]
 
 def creds():
@@ -28,7 +27,7 @@ def creds():
     )
 
 def upload_one(yt, n, meta):
-    mp4 = BASE / "output" / f"koepcke_{n}.mp4"
+    mp4 = BASE / "output" / f"okene_{n}.mp4"
     body = {
         "snippet": {
             "title": meta["title"],

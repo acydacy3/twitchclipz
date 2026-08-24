@@ -22,8 +22,8 @@ tags: [system, state]
 - [[Video-01-Tham-Luang]] — veröffentlicht. 640 Aufrufe, 2 Abos. Langvideo 4,4 % Haltequote → Shorts tragen.
 - [[Video-02-San-Jose]] — fertig + terminiert (11 Shorts + Langvideo, 18.–20.08.).
 - [[Video-03-Koepcke]] — fertig, hochgeladen, terminiert 21.–24.08. (10 Shorts, 3/Tag). Titel-Score Short 1: 74/100.
-- ⚠️ **Scheduled Uploads laufen 24.08. aus** → Video 4 wird JETZT gebraucht (sonst geht der Kanal dunkel).
-- **Video 4:** Skript kommt vom Nutzer → daraus gekürzte Fassung + **9–10 Shorts** + Szenen-Shotliste (Real vs. Generieren). Thema offen: Lengede (DE-Anker) vs. weiteres Einzelüberlebenden-Thema (stärkstes Muster laut Audit). Siehe [[Decision-Themenwahl-Koepcke-vor-Lengede]].
+- **Video 4 (Okene/Jascon-4) PRODUZIERT + terminiert (24.08.):** 10 Shorts gerendert, **9/10 geplant** (24.–27.08.); Short 10 offen wg. YouTube-Tages-Uploadlimit → Retry 25.08. Siehe [[Video-04-Okene]], [[Produktions-Runbook]].
+- **Video 5 Kandidat:** Lengede (DE-Anker) — Recherche liegt vor in [[Ideen-Pipeline]].
 
 ## Zugänge (Stand 19.08.)
 - **YouTube Data + Analytics API:** OAuth-Refresh-Token gültig, Uploads/Analytics/Terminierung produktiv.
