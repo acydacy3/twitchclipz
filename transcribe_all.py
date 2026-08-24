@@ -4,7 +4,7 @@ import sys
 from pathlib import Path
 from faster_whisper import WhisperModel
 
-BASE = Path("/home/user/twitchclipz/okene")
+BASE = Path("/home/user/twitchclipz/lengede")
 VOICES = sorted((BASE / "voiceover").glob("*.mp3"))
 
 print(f"Lade Whisper (small, DE) ...", flush=True)

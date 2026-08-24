@@ -8,15 +8,15 @@ import json
 import subprocess
 from pathlib import Path
 
-BASE = Path("/home/user/twitchclipz/okene")
+BASE = Path("/home/user/twitchclipz/lengede")
 FONT_BLACK = "/usr/share/fonts/truetype/roboto/unhinted/RobotoTTF/Roboto-Black.ttf"
 
 # Hook-Banner nur fuer die vier "Banger"-Shorts (Pilot + Story-Peaks)
 HOOKS = {
-    "01": {"text": "12 MANN. 1 ÜBERLEBENDER.", "y": 320, "size": 78},
-    "04": {"text": "LUFT, GROSS WIE EIN KOPF", "y": 320, "size": 74},
-    "06": {"text": "DIE LEICHE GRIFF ZURÜCK", "y": 320, "size": 76},
-    "09": {"text": "63 STUNDEN. DANN LUFT.", "y": 320, "size": 76},
+    "01": {"text": "129 EIN. 29 TOT.", "y": 320, "size": 78},
+    "04": {"text": "DER ALTE MANN", "y": 320, "size": 78},
+    "08": {"text": "40 CM STAHL", "y": 320, "size": 78},
+    "09": {"text": "14 TAGE. DANN LICHT.", "y": 320, "size": 76},
 }
 
 # Ausschnitts-Muster: (cx, cy, z0, z1, px, py) - verschiedene Ken-Burns
@@ -87,7 +87,7 @@ def build_config(idx):
         "font_black": FONT_BLACK,
         "teil": f"TEIL {int(n)}",
         "tmp": str(BASE / "tmp" / f"short_{n}"),
-        "out": str(BASE / "output" / f"okene_{n}.mp4"),
+        "out": str(BASE / "output" / f"lengede_{n}.mp4"),
         "musik": {"tonart": "D", "intensitaet": 0.85, "db": -25},
     }
     if n in HOOKS:

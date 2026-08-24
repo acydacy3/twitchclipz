@@ -6,14 +6,14 @@ from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
 from googleapiclient.errors import HttpError
 
-BASE = Path("/home/user/twitchclipz/okene")
+BASE = Path("/home/user/twitchclipz/lengede")
 CATEGORY_ID = "22"
 TAGS = [
-    "harrison okene", "jascon 4", "schiffsunglück", "einziger überlebender",
-    "überlebt", "taucher", "nigeria", "luftblase", "wahre geschichte", "doku",
-    "dokumentation", "katastrophe", "meer", "tiefsee", "rettung",
-    "sättigungstaucher", "unglück", "shorts", "katastrophenprotokoll",
-    "überleben", "atlantik", "wrack", "true story", "survival"
+    "wunder von lengede", "lengede", "grubenunglück", "dahlbuschbombe", "1963",
+    "bergleute", "verschüttet", "bergwerk", "rettung", "wahre geschichte", "doku",
+    "dokumentation", "katastrophe", "überleben", "unglück", "shorts",
+    "katastrophenprotokoll", "bergbau", "niedersachsen", "eisenerz", "alter mann",
+    "gerettet", "deutschland", "true story"
 ]
 
 def creds():
