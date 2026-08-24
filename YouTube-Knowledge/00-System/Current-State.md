@@ -14,7 +14,7 @@ tags: [system, state]
 
 ## Kanal
 - *Katastrophenprotokoll* (`UC1KCzLNlgGiYsLNQ7Z0HA-g`, DE), gegründet 15.08.2026.
-- **Gemessen 24.08. (`analyse.py`):** 36 Abos, 18.742 Aufrufe, 35 Videos veröffentlicht + 1 terminiert. Wachstum 2→9→36.
+- **Gemessen 24.08. (`analyse.py`):** **37 Abos**, 18.742 Aufrufe, 36 Videos. Wachstum 2→9→37. **Starke Woche:** Amazonas-Serie zieht („92 Passagiere. 1 Überlebende." 1.807; dazu 1.230/1.172/1.121/1.107).
 - Konto vidIQ: `kisha-ners@gmx.de`. Guthaben (19.08.): **30** (renewable 0/150,
   Add-on 30/80, refresh 15.09.2026). vidIQ nur auf Anfrage — Credits schonen.
 
@@ -49,3 +49,4 @@ Diese gelten aktuell in der Produktion (Belege in den verlinkten Learnings):
 - **Fertige Videos vor Upload nach Drive/Repo sichern.** → [[Learning-Editing-Video]]
 - **Szenen: Real vs. Generieren pro Szene** (Establishing = echt/Stock, Schlüsselmoment = generieren). → [[Learning-Bilder-Prompts]]
 - **`/merken` läuft autonom**, sobald ein echtes Learning entsteht (Nutzer-Anweisung 24.08.).
+- **Analytics-Loop pro Video:** Tag 4–5 AVP%/CTR/Retention ziehen → Post-Mortem → nächstes Video steuern. → [[Analytics-Loop]]

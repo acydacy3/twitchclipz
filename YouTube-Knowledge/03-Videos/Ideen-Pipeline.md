@@ -44,5 +44,13 @@ tags: [ideen, pipeline, recherche, video]
 - **Sturmflut Hamburg 1962** — starker DE-Anker, aber Massenkatastrophe → eher **Langvideo**.
 - Grimberg 1946 zu reine Tragödie (kaum Rettungsbogen).
 
+## Konkurrenz-Benchmark + Viral-Kandidaten (24.08., Outlier-Recherche)
+**Bester vergleichbarer Kanal:** *Tiefpunkt* (DE, faceless, Bild+Voiceover+Untertitel — unser Format), Frühphase (<2k Abos), aber Ø ~33k Views = viele Ausreißer. Echte 1–7-Mon-Kanäle in der Nische haben noch **keine** Viral-Hits → Tiefpunkt ist der belastbarste Beleg. Long-Form-Vorbild: *DisastersUncovered* (EN, „No AI").
+**Achtung Format-Unterschied:** Tiefpunkts Hits laufen im **„er/sie wird gleich sterben"-Format** (moderne Unglücke, clickbaitiger) — anderes Register als unser nüchterner Fascinating-Horror-Ton. **Übernahme = Strategie-Entscheidung des Nutzers** (Guardrail #9), nicht automatisch.
+**Belegte Viral-Kandidaten (vidIQ Breakout):**
+- Tijana Radonjic — Parasailing-Tod (275k, Breakout 22,4). Standbild-rekonstruierbar. Hook: „50 Meter über dem Meer öffnet eine 19-Jährige selbst ihren Gurt — 8 Sekunden später ist sie tot."
+- Cruz Velázquez — Meth an der Grenze (169k, 912 Kommentare). Empörungs-Trigger. Hook: „‚Beweis, dass es nur Saft ist' — 4 Schlücke später ist der 16-Jährige tot."
+- Ballon-Absturz Praia Grande 2025; Selfie-Tod-Serie; Airshow-Katastrophe (Ramstein 1988 als DE-Pendant, Langvideo).
+
 ## Related
-[[Learning-Bilder-Prompts]] · [[Learning-Topics-Themenwahl]] · [[Current-State]] · [[Failure-Memory]]
+[[Learning-Bilder-Prompts]] · [[Learning-Topics-Themenwahl]] · [[Analytics-Loop]] · [[Current-State]] · [[Failure-Memory]]
