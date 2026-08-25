@@ -62,6 +62,15 @@ ein Langvideo (~5 min) + täglich 2–5 Shorts; **die Shorts tragen**.
 dazu `build_configs.py`, `youtube_upload.py`, `upload_all.py`, `analyse.py`.
 Details + Werkzeug-Regel: `YouTube-Knowledge/00-System/Agent-Architecture.md`.
 
+## Zusatz-Werkzeuge — AUTONOM einsetzen (installiert, 0 Token)
+Nicht nur vorhanden, sondern **in jeder Produktion selbstständig nutzen** (Details: `YouTube-Knowledge/00-System/Werkzeuge-Installiert.md`):
+- **Animation-Upgrade Manim:** `manim -qh -r 1080,1920 tools/manim_scenes.py CrossSection` → Querschnitt/Zeitleiste/Karte als `{"clip":...}` in `short.py`. **Standard-Weg für Erklär-Animation.**
+- **SEO/Themen:** `tools/nb_suggest.py "<q>"` (YT-Keywords) · `tools/nb_trends.py "<kw>"` (Trends).
+- **Bilder:** `tools/nb_openverse.py "<q>" <dir>` (CC-Pool) · `tools/nb_upscale.py in out --cutout c.png` (schärfen/freistellen).
+- **Scratch-VO (Timing vor finaler VO):** `tools/nb_tts.py "text" out.mp3` (Piper de).
+- **Ziel messen:** `tools/nb_views90.py` (90-Tage-Views → YPP-Log).
+- **Ganze Pipeline:** Skill **`/video`**.
+
 ## Am Ende jeder Sitzung
 Neue Erkenntnisse in die passende Vault-Note (mit Confidence + Scope + Historie),
 dann `git add/commit/push`. Ablauf: `YouTube-Knowledge/00-System/Memory-Workflow.md`

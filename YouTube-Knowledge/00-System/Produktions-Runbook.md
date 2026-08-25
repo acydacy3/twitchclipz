@@ -40,3 +40,6 @@ tags: [process, produktion, runbook, pipeline]
 
 ## Related
 [[Analytics-Loop]] · [[Learning-Editing-Video]] · [[Learning-Bilder-Prompts]] · [[Video-04-Okene]] · [[Current-State]]
+
+## AUTONOME Werkzeuge (immer mitnutzen)
+- **SEO:** `tools/nb_suggest.py`/`nb_trends.py` vor Titel/Themen. - **Bilder:** `nb_fetch_broll.py` (Commons) + `tools/nb_openverse.py` (mehr CC); Schlüsselbilder generieren + `tools/nb_upscale.py` (schärfen/`--cutout` freistellen). - **Animation:** `tools/manim_scenes.py` (Manim) für Diagramme/Querschnitt → `{"clip":...}`. - **Timing:** `tools/nb_tts.py` (Piper Scratch-VO). - **Ziel:** `tools/nb_views90.py` nach Upload. Details: [[Werkzeuge-Installiert]].

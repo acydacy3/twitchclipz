@@ -41,3 +41,6 @@ Erst belegt, wenn ein Short mit Animations-Opener vs. Bild-Opener verglichen ist
 
 ## Related
 [[Learning-Hooks]] · [[Learning-Retention-und-Laenge]] · [[Learning-Editing-Video]] · [[Video-06-NuttyPutty]] · [[Experiment-Remotion-Motion-Graphics]]
+
+## Ausbaustufe: Manim (installiert 25.08.)
+Manim 0.21 ist installiert → **Standard-Weg für Erklär-Animation** (Querschnitt, Rettungs-Zeitleiste, Karte). Vorlage `tools/manim_scenes.py` (CrossSection/Timeline). Render 9:16 → als `{"clip":...}` in `short.py`. Der SVG+Playwright-Weg bleibt für schnelle 2D-Glow-Szenen; Manim für saubere Diagramme/Mechanik.
