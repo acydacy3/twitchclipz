@@ -16,7 +16,7 @@ tags: [system, state]
 
 ## Kanal
 - *Katastrophenprotokoll* (`UC1KCzLNlgGiYsLNQ7Z0HA-g`, DE), gegründet 15.08.2026.
-- **Gemessen 25.08. (`analyse.py`):** **40 Abos**, **20.321 Aufrufe**, 36 Videos. Wachstum 2→9→37→40. **Starke Woche:** Amazonas-Serie zieht („92 Passagiere. 1 Überlebende." 1.807; dazu 1.230/1.172/1.121/1.107). *(Vor Produktion neu ziehen — analyse.py schlägt diese Notiz.)*
+- **Gemessen 25.08. live (`analyse.py`):** **41 Abos**, **20.321 Aufrufe**, **39 Videos**, **17 terminiert**. Wachstum 2→9→37→41. **Starke Woche:** Amazonas-Serie zieht („92 Passagiere. 1 Überlebende." 1.821; dazu 1.261/1.240/1.181/1.151/1.135). *(Vor Produktion neu ziehen — analyse.py schlägt diese Notiz.)*
 - Konto vidIQ: `kisha-ners@gmx.de`. Guthaben (19.08.): **30** (renewable 0/150,
   Add-on 30/80, refresh 15.09.2026). vidIQ nur auf Anfrage — Credits schonen.
 
@@ -25,7 +25,7 @@ tags: [system, state]
 - [[Video-02-San-Jose]] — fertig + terminiert (11 Shorts + Langvideo, 18.–20.08.).
 - [[Video-03-Koepcke]] — fertig, hochgeladen, terminiert 21.–24.08. (10 Shorts, 3/Tag). Titel-Score Short 1: 74/100.
 - **Video 4 (Okene/Jascon-4) PRODUZIERT + terminiert (24.08.):** 10 Shorts gerendert, **9/10 geplant** (24.–27.08.); Short 10 via Trigger 25.08. Siehe [[Video-04-Okene]], [[Produktions-Runbook]].
-- **Video 5 Lengede PRODUZIERT (24.08.):** 10/10 gerendert; Upload/Schedule (28.–31.08.) via Trigger 25.08 angestoßen. Siehe [[Video-05-Lengede]]. **⚠️ Offen zu verifizieren:** Ob Okene-Short-10 + die Lengede-Uploads tatsächlich durchliefen — mit `analyse.py` (terminierte Uploads) gegenprüfen, bevor Neues terminiert wird.
+- **Video 5 Lengede FERTIG + TERMINIERT (verifiziert 25.08. via `analyse.py`):** alle **10/10 Shorts terminiert (28.–31.08.)**. Okene-Shorts ebenfalls terminiert (25.–27.08.). Trigger lief durch. Siehe [[Video-05-Lengede]].
 - **NÄCHSTER SCHRITT (26.08.): Videos 6 + 7 produzieren** — die beiden nächsten Themen stehen fest und sind recherchiert:
   1. **Nutty Putty Cave / John Edward Jones (2009)** — kopfüber im 25-cm-Spalt, ~27 h, Höhle mit ihm zubetoniert. DE ungesättigt.
   2. **Mauro Prosperi — 9 Tage Sahara (1994)** — Marathon des Sables, 291 km falsch, Suizidversuch scheitert (Blut zu dick) → rettet ihn.
