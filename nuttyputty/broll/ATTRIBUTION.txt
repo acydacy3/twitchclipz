@@ -40,3 +40,10 @@ short_10/03.jpg <- Commons 'File:Desert trees.jpg' [Category:Deserts of Utah], C
 short_05/01.jpg <- Commons 'File:A natural cave near Green River, Utah - NARA - 516938.jpg' [Category:Caves of Utah], Public domain, William Henry Jackson
 short_05/02.jpg <- Commons 'File:Blowhole Cave Entrance.jpg' [Category:Caves of Utah], CC0, Burnsdye (talk) (Uploads)
 short_05/03.jpg <- Commons 'File:False Kiva (25835486043).jpg' [Category:Caves of Utah], CC BY 2.0, Andrew Kearns from Mill Valley, United States
+short_08/03.jpg <- Commons 'File:(12 février 1925), catastrophe de Dortmund (qui s'est produite le 11 février à 20 h dans une mine, secours aux victimes) (Rol) - btv1b53143563g.jpg' [Category:Mine rescue], Public domain, Agence Rol
+short_09/01.jpg <- Commons 'File:MG 0380(1).jpg' [Category:Single Rope Technique], CC BY-SA 4.0, Medyassin85
+short_09/02.jpg <- Commons 'File:SRT caving deviation.jpg' [Category:Single Rope Technique], Public domain, Goatchurch
+short_09/03.jpg <- Commons 'File:001 Pohl Avenue 1 (8321976408).jpg' [Category:Caving], CC BY 2.0, James St. John
+short_10/01.jpg <- Commons 'File:Cow Cave Gate.jpg' [Category:Cave gates], CC BY-SA 4.0, Partonez
+short_10/02.jpg <- Commons 'File:Goa Gong1.jpg' [Category:Cave gates], CC BY-SA 4.0, DayakSibiriak
+short_10/03.jpg <- Commons 'File:08Cacahuamilpa.JPG' [Category:Cave entrances], CC BY-SA 3.0, Thelmadatter

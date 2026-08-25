@@ -7,7 +7,10 @@ ATTR = BASE/"broll"/"ATTRIBUTION.txt"
 # Negativ: Personen/Events/Nicht-Foto raus (z. B. Musiker "Nick Cave")
 BAD = re.compile(r"map|diagram|plan|logo|icon|chart|\.svg|seal|coat of arms|poster|"
                  r"band|concert|festival|singer|tour|album|award|portrait of|"
-                 r"stamp|coin|painting|drawing|statue|bust ", re.I)
+                 r"stamp|coin|painting|drawing|statue|bust |"
+                 r"banner|flag|crest|brigade|emblem|badge|"
+                 r"\bkey\b|keys|pen |pencil|mummy.?clip|carabiner.*pin|product|"
+                 r"museum|exhibit|book|cover", re.I)
 NEED = 3   # bis zu 3 Szenen pro Short
 
 # pro Short: kuratierte Kategorien (Prio) — topisch sicher

@@ -47,3 +47,8 @@ Teil des [[Schnitt-Protokoll]]. Vor jedem Schnitt Reihenfolge einhalten.
 
 ## Related
 [[Learning-Editing-Ton]] · [[Learning-Captions]] · [[Learning-Bilder-Prompts]] · [[Failure-Verlorene-Videos-nicht-gesichert]]
+
+## V6-Lehre (Nutzer 25.08.): mehr Animation + Standbilder WIRKLICH schneiden
+- **Empfehlung war Vollanimation, Ergebnis war großteils Standbild+VO** („wie immer"). **Nächstes Video: Animation deutlich ausbauen** (mehr animierte Schlüsselszenen, nicht nur Short 1). Langfristig weg von Standbild+VO.
+- **Standbilder dynamisch schneiden, nicht als Diashow.** Bei nur 2–3 Bildern über ~25 s wirkt jedes Bild ~8 s = statisch, trotz Ken-Burns. **Fix: 4–6 Bilder/Short + mehr/schnellere Schnitte** (Mehrfach-Ausschnitt pro Bild aktiver nutzen, hartes Schnitttempo), damit visuell etwas „erzählt" wird.
+- **Bild-Präzision ist zum Ende hin schwerer** (abstrakte Beats: Seil, Gedenken). Für solche Beats: sehr spezifische Kategorien (`Cave gates` für „versiegelt", `Single Rope Technique` für Seil) + Kontaktabzug-QC, sonst landen Produktfotos/Banner drin (irreführend).
