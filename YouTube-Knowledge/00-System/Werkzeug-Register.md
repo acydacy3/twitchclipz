@@ -10,6 +10,16 @@ tags: [system, werkzeuge, register, mcp, skills, connectors, produktion]
 
 > **Regel:** Bei jeder Produktion das **gesamte** Repertoire berücksichtigen und **je Bedarf** wählen — nicht nur die zuletzt genutzten. Reihenfolge: **kostenlos zuerst** (HF/Piper/Manim/Commons), Credits nur für Peak-Qualität. Stand 25.08.2026.
 
+## 0) ZUERST — Wissens-Retrieval (n+1, IMMER vor Produktion)
+Vor dem ersten Schnitt autonom das **komplette geprüfte Wissen** ziehen und anwenden — nicht nur Tools, auch die **Psychologie/Tricks**:
+- **Retention/Hooks/erste 3 s:** [[Learning-Retention-und-Laenge]] · [[Learning-Hooks]]
+- **Psychologisch catchende Schnitte / Dramaturgie / Pattern-Interrupt:** [[Learning-Storytelling-Shorts]] · [[Learning-Editing-Video]]
+- **Captions / Titel / SEO:** [[Learning-Captions]] · [[Learning-Titel]] · [[Learning-SEO]]
+- **Bilder (referenz-getrieben) / Themen / Viral:** [[Learning-Bilder-Prompts]] · [[Learning-Topics-Themenwahl]] · [[Ideen-Pipeline]]
+- **Ton/Musik · Cross-Platform · Fehler:** [[Learning-Editing-Ton]] · [[Learning-Cross-Platform-TikTok]] · [[Failure-Memory]]
+- **Leitplanken + Ziel:** [[Guardrails]] · [[Ziel-YPP-Monetarisierung]] · [[Analytics-Loop]]
+Jedes Video baut auf allen vorherigen auf; nichts vergessen, jeder Schritt täglich besser.
+
 ## A) MCP-Konnektoren (verbunden + aktiv)
 | Konnektor | Wofür in der Produktion | Kosten |
 |---|---|---|
@@ -46,6 +56,20 @@ tags: [system, werkzeuge, register, mcp, skills, connectors, produktion]
 - **Cross-Platform:** YouTube autonom (`nb_upload`), **TikTok manuell** (Buffer nur Vorbereitung).
 - **Thumbnail/Cover:** eigener Render/`canvas-design`/Canva.
 - **Analyse/Ziel:** `analyse.py` + `nb_views90.py` → [[Ziel-YPP-Monetarisierung]] loggen.
+
+## E) Claude-Plugins (aktiv)
+- **`searchfit-seo`** — gratis AI-SEO-Toolkit: Keyword-Cluster, Content-Strategie, Schema, AI-Visibility. → für Titel/Beschreibung/Themen (ergänzt `nb_suggest`/`nb_trends`/vidiq).
+- **`postiz`** — Social-Automation-CLI, 28+ Plattformen (YouTube, TikTok, Instagram, X, Reddit…). Für Cross-Platform-Planung. **TikTok bleibt manuell** (Regel) — postiz nur zur Vorbereitung/andere Plattformen.
+
+## F) Alle Claude-Skills (Katalog, je Bedarf)
+- **Produktion:** `/video`, `youtube`, `/merken`, `/neubeginn`, `dataviz`, `prompt-master`.
+- **Design/Deliverables:** `canvas-design`, `design`, `theme-factory`, `artifact-design`, `artifact-diagramming`, `artifact-capabilities`, `web-artifacts-builder`, `algorithmic-art`.
+- **Dokumente:** `pdf`, `docx`, `pptx`, `xlsx`.
+- **Code/System:** `code-review`, `simplify`, `skill-creator`, `mcp-builder`, `update-config`, `session-start-hook`, `fewer-permission-prompts`, `keybindings-help`, `run`, `init`, `security-review`, `loop`, `claude-api`, `learn`, `import-memory`, `morning`.
+- (Vollzähligkeit variiert je Konto — bei Bedarf via Skill-Liste prüfen.)
+
+## G) Repos
+- **`acydacy3/twitchclipz`** (push-Recht) — dieses Projekt. Kein weiteres Repo im Zugriff.
 
 ## Related
 [[Werkzeuge-Installiert]] · [[Werkzeug-Backlog]] · [[Agent-Architecture]] · [[Learning-Bilder-Prompts]] · [[Learning-Editing-Video]] · [[Current-State]]
