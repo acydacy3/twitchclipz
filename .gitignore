@@ -8,3 +8,6 @@ __pycache__/
 nuttyputty/animation/capture_clean.py
 nuttyputty/animation/querschnitt_clean.*
 nuttyputty/animation/clean_*.png
+nuttyputty/_s08_small.mp4
+nuttyputty/animation/frames_clean/
+nuttyputty/upload_results.json
