@@ -8,3 +8,8 @@ broll/*.png
 broll/*.mp4
 broll/wm.json
 !animation/querschnitt_demo.mp4
+_probe_tmp/
+animation/v2_*.png
+animation/v3_*.png
+animation/check_*.png
+_probe_frame.png

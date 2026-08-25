@@ -1,4 +1,4 @@
-<title>Nutty Putty – Querschnitt-Animation v2</title>
+<title>Nutty Putty – Querschnitt-Animation v3</title>
 <style>
   html,body{margin:0;height:100%;background:#000;overflow:hidden}
   #stage{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
@@ -9,28 +9,26 @@
   <defs>
     <filter id="rock" x="-5%" y="-5%" width="110%" height="110%">
       <feTurbulence type="fractalNoise" baseFrequency="0.010 0.017" numOctaves="5" seed="11" result="n"/>
-      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.30  0 0 0 0 0.18  0 0 0 0 0.10  0 0 0 0 1" result="brown"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.30 0 0 0 0 0.18 0 0 0 0 0.10 0 0 0 0 1" result="brown"/>
       <feComposite in="brown" in2="SourceGraphic" operator="in" result="tex"/>
-      <feDiffuseLighting in="n" surfaceScale="4.0" diffuseConstant="1.05" lighting-color="#f0d0a4" result="light">
-        <feDistantLight azimuth="235" elevation="52"/>
+      <feDiffuseLighting in="n" surfaceScale="4.2" diffuseConstant="1.05" lighting-color="#f0d0a4" result="light">
+        <feDistantLight azimuth="235" elevation="50"/>
       </feDiffuseLighting>
       <feComposite in="light" in2="tex" operator="in" result="lit"/>
       <feBlend in="tex" in2="lit" mode="multiply"/>
     </filter>
-    <!-- Sediment-Streifen (waagerecht gestreckte Noise) für Schichtung -->
     <filter id="strata" x="-5%" y="-5%" width="110%" height="110%">
-      <feTurbulence type="fractalNoise" baseFrequency="0.002 0.06" numOctaves="2" seed="4"/>
-      <feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.28 0"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.002 0.055" numOctaves="2" seed="4"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"/>
     </filter>
     <radialGradient id="vig" cx="50%" cy="44%" r="70%">
-      <stop offset="52%" stop-color="#000" stop-opacity="0"/>
-      <stop offset="100%" stop-color="#000" stop-opacity="0.92"/>
+      <stop offset="50%" stop-color="#000" stop-opacity="0"/><stop offset="100%" stop-color="#000" stop-opacity="0.93"/>
     </radialGradient>
     <linearGradient id="crackg" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#0b0806"/><stop offset="100%" stop-color="#000"/>
     </linearGradient>
-    <filter id="glowW" x="-150%" y="-150%" width="400%" height="400%">
-      <feGaussianBlur stdDeviation="7" result="b1"/><feGaussianBlur stdDeviation="18" result="b2"/>
+    <filter id="glowW" x="-160%" y="-160%" width="420%" height="420%">
+      <feGaussianBlur stdDeviation="6" result="b1"/><feGaussianBlur stdDeviation="15" result="b2"/>
       <feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
   </defs>
@@ -38,125 +36,131 @@
   <rect width="1080" height="1920" fill="#2a1a11" filter="url(#rock)"/>
   <rect width="1080" height="1920" filter="url(#strata)" opacity="0.5"/>
 
-  <!-- Spalt: waagerechter Kriechgang (Figuren auf der Oberkante) + senkrechter Schlitz rechts -->
-  <path id="crack" d="M -40 820
-      C 160 806, 320 830, 470 824 C 560 820, 610 812, 664 826
-      C 690 900, 700 1040, 704 1180 C 708 1300, 700 1420, 706 1560
-      C 710 1650, 700 1720, 707 1820 L 636 1820
-      C 628 1690, 642 1560, 632 1420 C 624 1300, 640 1120, 604 900
-      C 470 918, 250 902, 60 918 C -12 924, -30 880, -40 862 Z"
+  <!-- ENGER Tunnel: waagerechte Röhre (Höhe ~ Körper) -> enger senkrechter Schlitz -->
+  <path id="crack" d="M -40 786
+      C 180 780, 380 792, 560 786 C 622 783, 648 776, 678 792
+      C 700 900, 690 1120, 700 1300 C 706 1430, 698 1560, 703 1700 L 662 1700
+      C 656 1560, 664 1430, 658 1300 C 652 1120, 662 900, 636 812
+      C 470 820, 250 812, 60 820 C -8 823, -30 806, -40 800 Z"
       fill="url(#crackg)"/>
-  <path d="M -40 820 C 160 806, 320 830, 470 824 C 560 820, 610 812, 664 826"
-        fill="none" stroke="#000" stroke-opacity="0.6" stroke-width="9"/>
+  <path d="M -40 786 C 180 780, 380 792, 560 786 C 622 783, 648 776, 678 792"
+        fill="none" stroke="#000" stroke-opacity="0.6" stroke-width="8"/>
+  <path d="M -40 800 C 180 794, 380 806, 560 800 C 470 820, 250 812, 60 820 C -8 823, -30 806, -40 800 Z"
+        fill="#000" opacity="0.0"/>
 
   <g id="figFollow"></g>
   <g id="figLead"></g>
 
   <rect width="1080" height="1920" fill="url(#vig)" pointer-events="none"/>
-
-  <g id="caption">
-    <rect x="70" y="120" rx="10" width="940" height="192" fill="#ffd400" opacity="0.96"/>
+  <g><rect x="70" y="120" rx="10" width="940" height="192" fill="#ffd400" opacity="0.96"/>
     <text x="540" y="202" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="70" fill="#111">Er zwängte sich kopfüber</text>
-    <text x="540" y="280" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="70" fill="#111">in den Spalt …</text>
-  </g>
-  <g><rect x="440" y="1798" rx="14" width="200" height="72" fill="#c81e1e"/>
-    <text x="540" y="1848" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="44" fill="#fff">TEIL 1</text></g>
+    <text x="540" y="280" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="70" fill="#111">in den Spalt …</text></g>
+  <g><rect x="440" y="1782" rx="14" width="200" height="72" fill="#c81e1e"/>
+    <text x="540" y="1832" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="44" fill="#fff">TEIL 1</text></g>
 </svg>
 </div>
 <script>
 const NS="http://www.w3.org/2000/svg", DUR=9000;
 const gLead=document.getElementById("figLead"), gFollow=document.getElementById("figFollow");
-const smooth=x=>{x=Math.max(0,Math.min(1,x));return x*x*x*(x*(x*6-15)+10);}; // smootherstep
-const lerp=(a,b,u)=>a+(b-a)*u;
+const clamp=(x,a,b)=>Math.max(a,Math.min(b,x));
+const smooth=x=>{x=clamp(x,0,1);return x*x*(3-2*x);};
 
-// ---- Bewegungsplan Lead: waagerecht kriechen -> in Schlitz kippen -> senkrecht hinab -> verkeilt senkrecht ----
-// Segmente [p0,p1] mit Modus. crawl-Distanz treibt Gliedmaßen; Vorwärts kommt in LUNGES (Zug-und-Halt) -> nicht schwimmend.
+// --- Krabbel-Gang: Vortrieb in RUCKEN (Griff-Zug), vordere Hand plantet im Fels ---
+// gaitX(dist): Weltposition entlang X als lurchende Funktion der "Zug-Zahl".
+// pulls = Anzahl Griffe; jeder Griff: schnelles Heranziehen, dann kurze Rast.
+function gait(u, pulls){
+  // u in [0,1] über die ganze Kriechstrecke; liefert {adv, grip, reach}
+  const f = u*pulls;               // Zug-Uhr
+  const k = Math.floor(f);         // aktueller Zug
+  let ph = f - k;                  // Phase im Zug [0,1)
+  // Velocity-Profil: Rast (0-0.35) -> schneller Zug (0.35-0.8) -> kurze Rast (0.8-1)
+  let pull;
+  if(ph<0.35) pull=0;
+  else if(ph<0.8) pull=smooth((ph-0.35)/0.45);
+  else pull=1;
+  const adv = (k+pull)/pulls;      // monotone, gestufte Vorwärtsdistanz
+  return {adv:clamp(adv,0,1), ph, side:k%2, reach: ph<0.35?smooth(ph/0.35):0, pull};
+}
+
 function leadState(p){
-  // Krabbel-Lunge: Distanz entlang Gang, mit Ruck pro Zyklus
-  if(p<0.46){                                   // kriechen auf der Kante bis Schlitzmund (x -120 -> 675)
-    const u=smooth(p/0.46);
-    const lunge=0.5-0.5*Math.cos(u*Math.PI*7);  // 7 Züge, jeder Zug schiebt vor
-    const uu=0.82*u+0.18*lunge*(1-Math.abs(u-0.5)*1.2);
-    const x=lerp(-120,675,Math.max(0,Math.min(1,uu)));
-    const bob=Math.sin(u*Math.PI*7)*7;          // Körper-Wippen im Takt
-    return {x, y:788+bob, ang:2*Math.sin(u*Math.PI*7), crawl:1, phase:u*Math.PI*7, mode:"crawl"};
-  } else if(p<0.60){                            // Kopf voran über die Kante kippen (ang 0->90 senkrecht)
-    const u=smooth((p-0.46)/0.14);
-    return {x:lerp(675,700,u), y:lerp(788,900,u), ang:lerp(4,90,u), crawl:0.5, phase:u*4, mode:"tip"};
-  } else if(p<0.78){                            // senkrecht hinabrutschen (beschleunigt: Reibung ruckt)
-    const u=(p-0.60)/0.18, e=u*u;              // ease-in = Gleiten mit Nachrutschen
-    const slip=e + 0.02*Math.sin(u*Math.PI*9)*(1-u); // kleine Rutsch-Rucke
-    return {x:702, y:lerp(900,1300,slip), ang:lerp(90,90,u), crawl:0.15, phase:u*3, mode:"slide"};
-  } else {                                      // VERKEILT, senkrecht kopfüber, zappelt/erschöpft
-    const u=(p-0.78)/0.22;
-    const tremor=Math.sin(u*60)*2.2*(1-u) + Math.sin(u*23)*1.2;
-    const kick=(Math.sin(u*9)>0.85)? Math.sin(u*40)*10:0; // gelegentlicher Beinschlag
-    return {x:702+tremor, y:1302, ang:90, crawl:0, phase:kick*0.05, mode:"stuck", kick};
+  const X0=-110, X1=678, Y=786, pulls=8;
+  if(p<0.50){
+    const g=gait(smooth(p/0.50), pulls);
+    const x=X0+(X1-X0)*g.adv;
+    const heave=-Math.sin(g.ph*Math.PI)*4*(g.pull>0?1:0.3); // leichtes Vorschieben, kein Schweben
+    return {x, y:Y+heave, ang:2, mode:"crawl", g};
+  } else if(p<0.62){                 // kopfüber über die Kante kippen -> senkrecht
+    const u=smooth((p-0.50)/0.12);
+    return {x:678+22*u, y:786+120*u*u, ang:4+86*u, mode:"tip", g:{ph:0}};
+  } else if(p<0.80){                  // senkrecht hinabrutschen, ruckend (Reibung)
+    const u=(p-0.62)/0.18;
+    const gg=gait(u,5); const slip=gg.adv;
+    return {x:700, y:906+(1300-906)*slip, ang:90, mode:"slide", g:gg};
+  } else {                            // VERKEILT senkrecht kopfüber
+    const u=(p-0.80)/0.20;
+    const tremor=Math.sin(u*55)*2*(1-u)+Math.sin(u*19)*1;
+    const kick=(Math.sin(u*8)>0.9)?Math.sin(u*44)*9:0;
+    return {x:700+tremor, y:1300, ang:90, mode:"stuck", kick, g:{ph:0}};
   }
 }
-// Follower (Bruder, orange): kriecht hinterher, hält am Schlitzmund an und schaut
 function followState(p){
-  if(p<0.55){
-    const u=smooth(p/0.55);
-    const lunge=0.5-0.5*Math.cos(u*Math.PI*7);
-    const uu=0.82*u+0.18*lunge*(1-Math.abs(u-0.5)*1.2);
-    const x=lerp(-360,560,Math.max(0,Math.min(1,uu)));
-    return {x, y:792+Math.sin(u*Math.PI*7)*6, ang:2*Math.sin(u*Math.PI*7), crawl:1, phase:u*Math.PI*7};
+  const X0=-360, X1=548, Y=790, pulls=8;
+  if(p<0.60){
+    const g=gait(smooth(p/0.60), pulls);
+    return {x:X0+(X1-X0)*g.adv, y:Y-Math.sin(g.ph*Math.PI)*3, ang:2, mode:"crawl", g};
   }
-  const u=smooth((p-0.55)/0.2);                 // bremst am Mund ab
-  return {x:lerp(560,588,Math.min(1,u)), y:792, ang:6, crawl:1-Math.min(1,u)*0.85, phase:2+u*2, look:1};
+  const u=smooth((p-0.60)/0.18);
+  return {x:548+18*u, y:Y, ang:5, mode:"watch", g:{ph:0.5+u*0.5,pull:0}};
 }
 
-// ---- artikulierte Krabbel-Figur ----
-function limb(x1,y1,x2,y2,x3,y3,col,w){ // 2-Segment-Glied als Polyline
-  const pl=document.createElementNS(NS,"polyline");
-  pl.setAttribute("points",`${x1},${y1} ${x2},${y2} ${x3},${y3}`);
-  pl.setAttribute("fill","none");pl.setAttribute("stroke",col);
-  pl.setAttribute("stroke-width",w);pl.setAttribute("stroke-linecap","round");
-  pl.setAttribute("stroke-linejoin","round");return pl;
-}
+// --- Figur: gefüllter Glow-Körper, füllt die Röhre; Arm greift/plantet ---
 function drawFigure(host,s,col){
   host.innerHTML="";
   const g=document.createElementNS(NS,"g");
   g.setAttribute("transform",`translate(${s.x},${s.y}) rotate(${s.ang})`);
-  const w=13, R=40;                             // Körpermaß (Kopf bei +x)
-  const ph=s.phase||0, c=s.crawl||0;
-  const armSw=Math.sin(ph)*c, legSw=Math.sin(ph+Math.PI)*c;
-  // Rumpf (leicht gekrümmt)
-  const torso=document.createElementNS(NS,"path");
-  torso.setAttribute("d",`M ${R*0.7} 0 Q 0 ${-4-2*Math.cos(ph)*c} ${-R*0.75} 0`);
-  torso.setAttribute("fill","none");torso.setAttribute("stroke",col);
-  torso.setAttribute("stroke-width",w+2);torso.setAttribute("stroke-linecap","round");g.appendChild(torso);
-  // vorderer Arm (greift/zieht) + hinterer Arm
-  g.appendChild(limb(R*0.5,0,  R*0.9, 14, R*1.15+armSw*12, 30, col, w));
-  g.appendChild(limb(R*0.5,0,  R*0.85,-14, R*1.05-armSw*12,-30, col, w));
-  // vorderes Bein + hinteres Bein (schieben)
-  g.appendChild(limb(-R*0.6,0, -R*0.95, 14, -R*1.2-legSw*12, 30, col, w));
-  g.appendChild(limb(-R*0.6,0, -R*0.9,-14, -R*1.1+legSw*12,-30, col, w));
-  if(s.kick){ // Beinschlag beim Festsitzen
-    g.appendChild(limb(-R*0.6,0,-R*0.95,10,-R*1.2,10+s.kick,col,w));
-  }
-  // Kopf + Helmlicht
+  const bodyW=104, bodyH=62;                 // füllt den engen Tunnel (Höhe ~ Tunnel)
+  const gg=s.g||{ph:0};
+  // Rumpf als abgerundete Kapsel (gefüllt, Kopf bei +x)
+  const body=document.createElementNS(NS,"rect");
+  body.setAttribute("x",-bodyW*0.5);body.setAttribute("y",-bodyH*0.5);
+  body.setAttribute("width",bodyW);body.setAttribute("height",bodyH);
+  body.setAttribute("rx",bodyH*0.5);body.setAttribute("fill",col);g.appendChild(body);
+  // Kopf
   const head=document.createElementNS(NS,"circle");
-  head.setAttribute("cx",R*0.82);head.setAttribute("cy",0);head.setAttribute("r",16);head.setAttribute("fill",col);g.appendChild(head);
+  head.setAttribute("cx",bodyW*0.5-4);head.setAttribute("cy",0);head.setAttribute("r",bodyH*0.5-2);
+  head.setAttribute("fill",col);g.appendChild(head);
+  // vorderer Arm: reach (nach vorn) -> plant (bleibt) -> zieht
+  const reach=(gg.reach||0), pull=(gg.pull||0);
+  const handX = bodyW*0.5 + 26 + reach*30 - pull*10; // greift vor, zieht dann heran
+  const handY = -bodyH*0.5 + 6 - reach*10;
+  const arm=document.createElementNS(NS,"polyline");
+  arm.setAttribute("points",`${bodyW*0.35},${-bodyH*0.3} ${handX-24},${handY+18} ${handX},${handY}`);
+  arm.setAttribute("fill","none");arm.setAttribute("stroke",col);arm.setAttribute("stroke-width",15);
+  arm.setAttribute("stroke-linecap","round");arm.setAttribute("stroke-linejoin","round");g.appendChild(arm);
+  // hinteres Bein: stemmt sich beim Zug ab
+  const legPush=(pull||0);
+  const leg=document.createElementNS(NS,"polyline");
+  leg.setAttribute("points",`${-bodyW*0.4},${bodyH*0.25} ${-bodyW*0.55-legPush*14},${bodyH*0.4} ${-bodyW*0.62-legPush*22},${bodyH*0.15}`);
+  leg.setAttribute("fill","none");leg.setAttribute("stroke",col);leg.setAttribute("stroke-width",15);
+  leg.setAttribute("stroke-linecap","round");leg.setAttribute("stroke-linejoin","round");g.appendChild(leg);
+  if(s.kick){const k=document.createElementNS(NS,"polyline");
+    k.setAttribute("points",`${-bodyW*0.4},${bodyH*0.2} ${-bodyW*0.6},${bodyH*0.2+s.kick}`);
+    k.setAttribute("fill","none");k.setAttribute("stroke",col);k.setAttribute("stroke-width",15);
+    k.setAttribute("stroke-linecap","round");g.appendChild(k);}
+  // Helmlicht
   const beam=document.createElementNS(NS,"path");
-  beam.setAttribute("d",`M ${R*0.82} 0 L ${R*0.82+150} -55 L ${R*0.82+150} 55 Z`);
-  beam.setAttribute("fill",col);beam.setAttribute("opacity","0.09");g.appendChild(beam);
+  beam.setAttribute("d",`M ${bodyW*0.5} 0 L ${bodyW*0.5+140} -50 L ${bodyW*0.5+140} 50 Z`);
+  beam.setAttribute("fill",col);beam.setAttribute("opacity","0.08");g.appendChild(beam);
   host.appendChild(g);
 }
 
 function render(tMs){
   const p=(((tMs%DUR)+DUR)%DUR)/DUR;
-  // Follower zuerst (hinter Lead)
-  const f=followState(p); drawFigure(gFollow,f,"#ff8a3c");
-  gFollow.setAttribute("filter","url(#glowW)");
-  const s=leadState(p);   drawFigure(gLead,s,"#ffffff");
-  gLead.setAttribute("filter","url(#glowW)");
-  const pulse = s.mode==="stuck" ? 0.72+0.28*Math.sin(tMs/260) : 1;
-  gLead.setAttribute("opacity",pulse.toFixed(3));
+  const f=followState(p); drawFigure(gFollow,f,"#ff8a3c"); gFollow.setAttribute("filter","url(#glowW)");
+  const s=leadState(p);   drawFigure(gLead,s,"#ffffff");   gLead.setAttribute("filter","url(#glowW)");
+  gLead.setAttribute("opacity",(s.mode==="stuck"?0.74+0.26*Math.sin(tMs/260):1).toFixed(3));
 }
 window.__seek=function(ms){render(ms);};
-let start=null;
-function loop(ts){if(start===null)start=ts;render(ts-start);requestAnimationFrame(loop);}
+let start=null;function loop(ts){if(start===null)start=ts;render(ts-start);requestAnimationFrame(loop);}
 if(!window.__CAPTURE){requestAnimationFrame(loop);}else{render(0);}
 </script>
