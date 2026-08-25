@@ -52,3 +52,10 @@ Teil des [[Schnitt-Protokoll]]. Vor jedem Schnitt Reihenfolge einhalten.
 - **Empfehlung war Vollanimation, Ergebnis war großteils Standbild+VO** („wie immer"). **Nächstes Video: Animation deutlich ausbauen** (mehr animierte Schlüsselszenen, nicht nur Short 1). Langfristig weg von Standbild+VO.
 - **Standbilder dynamisch schneiden, nicht als Diashow.** Bei nur 2–3 Bildern über ~25 s wirkt jedes Bild ~8 s = statisch, trotz Ken-Burns. **Fix: 4–6 Bilder/Short + mehr/schnellere Schnitte** (Mehrfach-Ausschnitt pro Bild aktiver nutzen, hartes Schnitttempo), damit visuell etwas „erzählt" wird.
 - **Bild-Präzision ist zum Ende hin schwerer** (abstrakte Beats: Seil, Gedenken). Für solche Beats: sehr spezifische Kategorien (`Cave gates` für „versiegelt", `Single Rope Technique` für Seil) + Kontaktabzug-QC, sonst landen Produktfotos/Banner drin (irreführend).
+
+## Composite-Short: 3 Modalitäten mischen (Format-Regel, Nutzer 25.08.)
+Ein Explain-Short (oder eine Explain-Sequenz) ist EINE Shot-Liste, die frei mischt — `short.py` nimmt Bilder UND `{"clip":...}`-Videos, Karaoke+Musik laufen über alles:
+- **KI-Schlüsselbild (HF/Higgsfield):** der Schock-/Emotionsmoment ohne Foto-Äquivalent.
+- **Stock/Echt (Commons/Openverse):** reale Umgebung, Ausrüstung, Retter — Authentizität.
+- **Manim-Grafik/Animation:** das ERKLÄREN — Querschnitt/Geometrie, Karte/Route, Zeitleiste, Zahlen/Statistik, Mechanik.
+**Faustregel je Beat:** Foto möglich? → Stock. Moment ohne Foto? → KI. Erklärt Ort/Geometrie/Zeit/Zahlen? → Manim. Der Modalitätswechsel ist zugleich Pattern-Interrupt (Retention). → [[Werkzeuge-Installiert]], [[Learning-Bilder-Prompts]]
