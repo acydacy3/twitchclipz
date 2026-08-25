@@ -19,7 +19,7 @@ tags: [system, werkzeuge, pipeline, setup]
 | **YouTube-Suggest** | ✅ | `tools/nb_suggest.py "<q>"` | Keyword-Ideen für Titel/Tags (gratis) |
 | **Google Trends** | ✅ (Laufzeit ggf. gedrosselt) | `tools/nb_trends.py "<kw>"…` | Interesse + verwandte Suchen, Themen-Gap |
 | **Openverse** | ✅ | `tools/nb_openverse.py "<q>" <dir>` | breiterer CC-Bildpool (Ergänzung zu Commons) |
-| **Piper TTS (de)** | ✅ | `tools/nb_tts.py "text" out.mp3` | deutsche **Scratch-VO** zum Timen der Animation vor finaler VO |
+| **Piper TTS (de)** | ✅ | `tools/nb_tts.py "text" out.mp3` | deutsche VO — **legitim als finale Stimme** (Default gratis), nicht nur Scratch; ElevenLabs nur für Peak-Drama |
 | **rembg** | ✅ | `tools/nb_upscale.py in out --cutout cut.png` | Figuren **freistellen** → in Querschnitt-Animation compositen |
 | **Real-ESRGAN** | ⚠️ übersprungen (torch/basicsr-Konflikt) | (Fallback in `nb_upscale.py`) | Upscale → **Fallback Lanczos+Schärfen** greift automatisch |
 | **Manim** | ✅ 0.21 | `manim -qh -r 1080,1920 tools/manim_scenes.py CrossSection` | Erklär-Animation (Querschnitt/Zeitleiste/Karte) → `{"clip":...}` in `short.py` |
