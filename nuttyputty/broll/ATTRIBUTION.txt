@@ -47,3 +47,6 @@ short_09/03.jpg <- Commons 'File:001 Pohl Avenue 1 (8321976408).jpg' [Category:C
 short_10/01.jpg <- Commons 'File:Cow Cave Gate.jpg' [Category:Cave gates], CC BY-SA 4.0, Partonez
 short_10/02.jpg <- Commons 'File:Goa Gong1.jpg' [Category:Cave gates], CC BY-SA 4.0, DayakSibiriak
 short_10/03.jpg <- Commons 'File:08Cacahuamilpa.JPG' [Category:Cave entrances], CC BY-SA 3.0, Thelmadatter
+
+KI-Schlüsselbilder (HF Z-Image Turbo, gratis, faceless-Illustration – keine reale Person):
+  short_04/01.jpg, short_05/01.jpg, short_06/01.jpg, short_09/01.jpg

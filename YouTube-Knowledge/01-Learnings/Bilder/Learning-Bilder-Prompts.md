@@ -86,3 +86,8 @@ Alle Bilder des Kanals. Engine-Wahl (Nano Banana Pro/Seedance/Z-Image): [[Decisi
 - **Bewährte Kategorien:** Cave passages, Cave interiors, Caving, Cave rescue, Mine rescue, Single Rope Technique, Slot canyons, Caves of Utah, Carabiners, Climbing equipment, Memorial plaques.
 - **Standortpräzision:** „Caves of Utah" traf „natural cave near Green River, Utah" — Standort matcht. Immer lokale Kategorie mitnehmen.
 - **Resize:** `convert IN -resize 1600x2848^ -gravity center -extent 1600x2848` (short.py-Format). Attribution mitschreiben.
+
+## KORREKTUR 25.08. (Nutzer): Schlüsselmomente WERDEN generiert — nicht überspringen
+- **Fehler in V6 (behoben):** „HF gratis zuerst, Higgsfield begrenzt" wurde zu „gar nicht generieren" überinterpretiert → Schlüsselmomente mit generischem Stock ersetzt (irreführend). **HF-first ist eine Reihenfolge-Regel, KEINE Erlaubnis, das Generieren zu überspringen.**
+- **Regel:** Die 🎬-Schlüsselmomente ohne Stock-Äquivalent IMMER per HF Z-Image (gratis, ~8/Tag) generieren, dann Higgsfield. In V6 nachgezogen: kopfüber im Spalt verkeilt (S5), Bein aus dem Fels (S6), kopf-voran über die Kante (S4), Seilriss (S9). z_image-Formel + `864x1536`; faceless-Illustration (kein Porträt realer Toter — rechtlich sauber, generische Person).
+- **Bewährt (V6):** Z-Image liefert bei diesen Cave-Prompts dramatische, kohärente Bilder (nasser Fels, Helmlicht-Kegel, tiefes Schwarz) — deutlich stärker als Stock für den Kernmoment. Als **Hero-Bild (01)** in den Short, Stock als Deko dahinter.
