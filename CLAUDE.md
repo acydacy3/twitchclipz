@@ -33,7 +33,7 @@ git for-each-ref --sort=-committerdate --format='%(committerdate:short) %(refnam
 1. **Das Originalskript kommt IMMER vom Nutzer.** Kürzen/formen aus vorhandenem Material: ja. Erfinden: nein.
 2. **Der Nutzer arbeitet nicht mit der Kommandozeile** und kann **keine `.md`-Dateien öffnen** → längere Ergebnisse als **Artifact-Seite** ausliefern. (Ausnahme: das Vault liest er in Obsidian.)
 3. **Zahlen schlagen Vermutungen, immer.** `analyse.py` gewinnt gegen Notiertes.
-4. **Retrieval before Reinvention:** vor wichtigen Entscheidungen zuerst im Vault suchen (bereits Getestetes nicht wiederholen).
+4. **Retrieval before Reinvention — n+1, IMMER:** vor jeder Produktion autonom das **komplette geprüfte Learning-Paket** ziehen (SEO, Schnittstile, Retention, Viral, geprüfte Theorien, Hooks, Captions, Bilder, Musik) — jedes Video baut auf allen vorherigen auf, nichts wird vergessen, jeder Schritt wird täglich besser. Nicht ankündigen, einfach tun.
 5. **Ein Learning ist nicht automatisch eine Rule.** Unsicherheit sichtbar lassen (Confidence Low/Medium/High/Very High).
 6. **Erkenntnisse persistieren:** am Session-Ende `git add/commit/push` — **Push ist freigeschaltet**, das Repo trägt den vollen Stand (der nächste Container klont ihn). Drive nur optional. Ablauf: `/merken`.
 
