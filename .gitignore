@@ -17,3 +17,6 @@ tools/piper/
 tools/setup-tools.log
 tools/tools-status.txt
 media/
+tools/demo_*.mp4
+tools/demo_vo.mp3
+tools/manim_render.log
