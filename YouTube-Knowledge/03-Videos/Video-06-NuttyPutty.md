@@ -22,7 +22,9 @@ bergbar → Höhle **mit Beton versiegelt**, Plakette. Quelle: Nutzer-Originalsk
   Höhlen-Querschnitt mit leuchtender Figur, die kriecht und sich kopfüber verkeilt — Referenz-Stil des Nutzers.
   Deterministisch (`window.__seek(ms)`) → Chromium/Playwright Frame-Capture → ffmpeg. **Als bewegter Opener** für die ersten Sekunden (Story-Peaks TEIL 1/4/5/8/9). Siehe [[Experiment-Cheap-Animation-Querschnitt]].
 - **Bilder-Regel angewandt:** pro Short **2–6 Szenen; nur Schlüsselszene(n) KI**, Rest aus dem Netz (CC/Commons).
-- **Offen:** VO (Nutzer) → Bilder generieren + B-Roll ziehen → `build_configs`(BASE=nuttyputty)+`short.py` → terminieren (bündig 3/Tag an Lengede anschließen).
+- **Richtung: VOLL auf Animation** (Nutzer 25.08.) — Schlüsselszenen animiert (Querschnitt-Stil), Umgebung als echte B-Roll aus dem Netz; wenig/keine KI-Stills.
+- **Workflow-Regel (Effizienz):** Animierte Szenen **erst final rendern, wenn die VO da ist** — das Timing (Szenenlänge/Schnitte) kommt aus der Narration; vorher nur wiederverwendbares System/Assets/B-Roll vorbereiten, sonst doppelte Rechenzeit. Nutzer schickt VO → dann Szenen timen + rendern → terminieren (bündig 3/Tag an Lengede anschließen).
+- **Bereit:** Animations-Engine (`animation/querschnitt.html`, `capture.py`) als Vorlage für weitere Szenen; Web-Download für B-Roll steht.
 - **Copyright:** kein „Last Descent"-Film, keine Familienfotos, kein echtes Rettungsmaterial; John faceless/Silhouette.
 
 ## Related
