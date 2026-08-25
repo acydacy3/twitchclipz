@@ -29,6 +29,14 @@ Bild-Prompts werden **von Bild zu Bild detailreicher**. Kernregeln:
 - **Emotion nachschärfen:** „quiet dread" rendert oft benommen → „jaw tense, brow furrowed, eyes wide with fear".
 - **Negativ-Prompt-Pflichtblock:** `triptych, panels, collage, split screen, borders` + `child, adult woman` + `hands near face, holding object to face, deformed hands, extra fingers`.
 
+## Szenen-Budget pro Short (Nutzer-Regel 25.08.)
+- **Pro Short 2–6 Szenen.** Claude **produziert nur die Schlüsselszene(n) per KI** (der eine Moment ohne Stock-Äquivalent);
+  **der Rest wird IMMER aus dem Netz gezogen** (CC/Commons/Openverse-B-Roll, echte Umgebung). Default = Netz, KI = Ausnahme.
+- **Web-Download funktioniert autonom (25.08. getestet):** Wikimedia-Commons-API-Suche + `curl` auf `upload.wikimedia.org`
+  lädt frei lizenzierte Bilder (CC BY) direkt auf Platte; **Attribution mitschreiben** (Autor + Lizenz → Abspann/Beschreibung).
+  Commons hostet auch CC-**Videos** (webm/ogv, direkt per curl). `yt-dlp` ist NICHT vorinstalliert (pip-installierbar), aber
+  fremdes YouTube-/Nachrichtenmaterial bleibt tabu → CC-Quellen sind der saubere Weg.
+
 ## Creative-Director-Modus: Real vs. Generieren (pro Szene, 24.08.)
 Bei jeder Szene **entscheiden, nicht beschreiben** — Claude liefert die Szenenliste als
 Creative Director in einem Rutsch (pro Szene: Sek-Bereich + eins von zwei):

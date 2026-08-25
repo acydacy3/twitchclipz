@@ -1,0 +1,10 @@
+# schwere Medien nicht ins Repo (wie lengede/okene) – nur Brief/Code/Demo behalten
+animation/frames/
+bilder/
+voiceover/
+keyframes/
+broll/*.jpg
+broll/*.png
+broll/*.mp4
+broll/wm.json
+!animation/querschnitt_demo.mp4

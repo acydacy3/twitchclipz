@@ -1,0 +1,151 @@
+<title>Nutty Putty – Querschnitt-Animation</title>
+<style>
+  html,body{margin:0;height:100%;background:#000;overflow:hidden}
+  #stage{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+  svg{height:100vh;width:auto;max-width:100vw;display:block;background:#000}
+</style>
+<div id="stage">
+<svg id="svg" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <!-- Fels-Textur -->
+    <filter id="rock" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.012 0.02" numOctaves="4" seed="7" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.32  0 0 0 0 0.19  0 0 0 0 0.11  0 0 0 0 1" result="brown"/>
+      <feComposite in="brown" in2="SourceGraphic" operator="in" result="tex"/>
+      <feDiffuseLighting in="n" surfaceScale="3.2" diffuseConstant="1.05" lighting-color="#e8c8a0" result="light">
+        <feDistantLight azimuth="235" elevation="55"/>
+      </feDiffuseLighting>
+      <feComposite in="light" in2="tex" operator="in" result="lit"/>
+      <feBlend in="tex" in2="lit" mode="multiply"/>
+    </filter>
+    <radialGradient id="vig" cx="50%" cy="46%" r="72%">
+      <stop offset="55%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.9"/>
+    </radialGradient>
+    <linearGradient id="crackg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0705"/>
+      <stop offset="100%" stop-color="#000"/>
+    </linearGradient>
+    <!-- Leucht-Glow für die Figur -->
+    <filter id="glow" x="-120%" y="-120%" width="340%" height="340%">
+      <feGaussianBlur stdDeviation="9" result="b1"/>
+      <feGaussianBlur stdDeviation="20" result="b2"/>
+      <feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Fels -->
+  <rect x="0" y="0" width="1080" height="1920" fill="#2b1a10" filter="url(#rock)"/>
+  <!-- Spalt (Querschnitt): waagerechter Kriechgang oben, dann senkrechter Riss nach unten -->
+  <path id="crack" d="M -40 560
+                      C 180 520, 340 600, 520 585
+                      C 610 578, 655 560, 690 585
+                      C 705 700, 675 900, 700 1080
+                      C 712 1220, 690 1330, 705 1470
+                      C 712 1560, 700 1650, 706 1760
+                      L 640 1760
+                      C 632 1600, 648 1470, 636 1330
+                      C 626 1200, 646 980, 612 720
+                      C 470 742, 250 690, 60 720
+                      C -10 726, -30 650, -40 620 Z"
+        fill="url(#crackg)"/>
+  <!-- kleine Schattenkante am Spalt -->
+  <path d="M -40 560 C 180 520, 340 600, 520 585 C 610 578, 655 560, 690 585"
+        fill="none" stroke="#000" stroke-opacity="0.55" stroke-width="10"/>
+
+  <!-- Figur -->
+  <g id="figure" filter="url(#glow)"></g>
+
+  <rect x="0" y="0" width="1080" height="1920" fill="url(#vig)" pointer-events="none"/>
+
+  <!-- Caption oben (Referenz-Stil: gelbe Markierung) -->
+  <g id="caption">
+    <rect x="70" y="120" rx="10" width="940" height="190" fill="#ffd400" opacity="0.96"/>
+    <text x="540" y="200" text-anchor="middle" font-family="Arial Black, Arial, sans-serif"
+          font-weight="900" font-size="72" fill="#111">Er zwängte sich kopfüber</text>
+    <text x="540" y="278" text-anchor="middle" font-family="Arial Black, Arial, sans-serif"
+          font-weight="900" font-size="72" fill="#111">in den Spalt …</text>
+  </g>
+  <!-- Teil-Leiste -->
+  <g>
+    <rect x="440" y="1800" rx="14" width="200" height="72" fill="#c81e1e"/>
+    <text x="540" y="1850" text-anchor="middle" font-family="Arial Black, Arial, sans-serif"
+          font-weight="900" font-size="44" fill="#fff">TEIL 1</text>
+  </g>
+</svg>
+</div>
+<script>
+const NS="http://www.w3.org/2000/svg";
+const crack=document.getElementById("crack");
+const figG=document.getElementById("figure");
+const DUR=8000;
+
+// Bewegungspfad der Figur: Kriechgang -> Spaltmund -> hinabgleiten -> verkeilt
+// Punkte (x,y,ang in grad, phase) key-frames; interpoliert.
+const KEYS=[
+  {t:0.00, x:-60,  y:600,  ang:0,   crawl:1},
+  {t:0.28, x:300,  y:640,  ang:4,   crawl:1},
+  {t:0.44, x:600,  y:640,  ang:20,  crawl:1},   // am Spaltmund
+  {t:0.55, x:672,  y:720,  ang:110, crawl:0.4}, // kippt kopfüber hinein
+  {t:0.70, x:678,  y:1040, ang:178, crawl:0.15},// gleitet hinab
+  {t:0.80, x:676,  y:1300, ang:186, crawl:0},   // verkeilt (kopfüber ~70-90°)
+  {t:1.00, x:676,  y:1330, ang:188, crawl:0},   // festsitzend, minimales Zucken
+];
+function lerp(a,b,u){return a+(b-a)*u;}
+function sample(p){
+  p=Math.max(0,Math.min(1,p));
+  for(let i=0;i<KEYS.length-1;i++){
+    const k=KEYS[i],n=KEYS[i+1];
+    if(p<=n.t){const u=(p-k.t)/(n.t-k.t);
+      return {x:lerp(k.x,n.x,u),y:lerp(k.y,n.y,u),ang:lerp(k.ang,n.ang,u),crawl:lerp(k.crawl,n.crawl,u)};}
+  }
+  const last=KEYS[KEYS.length-1];return {x:last.x,y:last.y,ang:last.ang,crawl:0};
+}
+// Strichfigur zeichnen (Kopf + Rumpf + Gliedmaßen), Gliedmaßen wackeln = Kriechzyklus
+function drawFigure(tMs){
+  const p=tMs/DUR;
+  const s=sample(p);
+  const cyc=Math.sin(tMs/180)*s.crawl;      // Krabbel-Wackeln
+  const struggle=(p>0.8)? Math.sin(tMs/120)*3 : 0; // Zucken beim Festsitzen
+  const R=70; // Körpergröße
+  const head=18;
+  // Gelenke im lokalen Raum (Figur liegt bäuchlings, Kopf bei +x)
+  const j=[
+    // Rumpf
+    ["M",  R*0.55,0], ["L", -R*0.55,0],
+  ];
+  // Bau als Polylines: Rumpf, 2 Arme, 2 Beine, Kopf
+  function line(x1,y1,x2,y2){const l=document.createElementNS(NS,"line");
+    l.setAttribute("x1",x1);l.setAttribute("y1",y1);l.setAttribute("x2",x2);l.setAttribute("y2",y2);
+    l.setAttribute("stroke","#fff");l.setAttribute("stroke-width","13");l.setAttribute("stroke-linecap","round");return l;}
+  figG.innerHTML="";
+  const g=document.createElementNS(NS,"g");
+  g.setAttribute("transform",`translate(${s.x},${s.y}) rotate(${s.ang}) translate(${struggle},0)`);
+  // Rumpf
+  g.appendChild(line(R*0.5,0,-R*0.5,0));
+  // Arme (vorne, Richtung Kopf) – wackeln gegenläufig
+  g.appendChild(line(R*0.4,0, R*0.9, 26+cyc*16));
+  g.appendChild(line(R*0.4,0, R*0.9,-26-cyc*16));
+  // Beine (hinten)
+  g.appendChild(line(-R*0.45,0,-R*0.95, 24-cyc*16));
+  g.appendChild(line(-R*0.45,0,-R*0.95,-24+cyc*16));
+  // Kopf
+  const c=document.createElementNS(NS,"circle");
+  c.setAttribute("cx",R*0.62);c.setAttribute("cy",0);c.setAttribute("r",head);
+  c.setAttribute("fill","#fff");g.appendChild(c);
+  // Helmlicht-Kegel
+  const beam=document.createElementNS(NS,"path");
+  beam.setAttribute("d",`M ${R*0.62} 0 L ${R*0.62+140} -60 L ${R*0.62+140} 60 Z`);
+  beam.setAttribute("fill","#fff");beam.setAttribute("opacity","0.10");g.appendChild(beam);
+  figG.appendChild(g);
+  // Glow-Puls beim Festsitzen
+  const pulse = p>0.8 ? 0.75+0.25*Math.sin(tMs/300) : 1;
+  figG.setAttribute("opacity", pulse.toFixed(3));
+}
+// deterministischer Seek für Frame-Capture
+window.__seek=function(ms){drawFigure(((ms%DUR)+DUR)%DUR);};
+// Live-Loop im Browser/Artifact
+let start=null;
+function loop(ts){ if(start===null)start=ts; window.__seek(ts-start); requestAnimationFrame(loop); }
+if(!window.__CAPTURE){ requestAnimationFrame(loop); } else { window.__seek(0); }
+</script>
