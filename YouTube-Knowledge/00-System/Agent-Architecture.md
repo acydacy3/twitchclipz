@@ -67,4 +67,4 @@ deshalb Workflows + Struktur, nicht fünf kleine Agenten.
 ## Claude-Werkzeuge zum Arbeiten mit dem Vault
 - **Lesen/Suchen:** Read, Grep, Glob über `YouTube-Knowledge/`.
 - **Schreiben:** Write/Edit für neue/aktualisierte Notes.
-- **Persistieren:** geänderte Note nach **Drive** (via MCP) + `git commit` lokal; `git push`, sobald frei (noch 403). Ablauf: [[Memory-Workflow]].
+- **Persistieren:** `git commit` + `git push` (freigeschaltet) — Repo trägt alles; Drive optional. Ablauf: [[Memory-Workflow]].

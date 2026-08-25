@@ -12,4 +12,4 @@ Ungelöstes, das eine spätere Session klären sollte.
 - [[Frage-TikTok-Hashtag-Volumen]] — Hashtag-Wahl stützt sich auf YouTube-Volumen (schwächster Punkt)
 - **Gilt die git-push-Freigabe generell oder nur in dieser Umgebung?** → [[Decision-Git-vs-Drive-Persistenz]]
 - **Länge vs. Hook** sauber trennbar? → [[Hypothese-Hook-schlaegt-Laenge]]
-- **Sollen die vier Root-Skripte nach `werkzeuge/` konsolidiert werden**, sobald Push frei ist (aktuell 403)? → [[Decision-Persistente-Werkzeuge-im-Repo]]
+- **Sollen die vier Root-Skripte nach `werkzeuge/` konsolidiert werden** (Push ist frei)? → [[Decision-Persistente-Werkzeuge-im-Repo]]

@@ -12,7 +12,7 @@ tags: [decision, umgebung, obsidian, drive, persistenz]
 ## Hart verifizierte Fakten (24.08.2026)
 - **Diese Sitzung läuft auf einem entfernten Linux-Server** (`hostname vm`, `root`), **nicht** auf dem PC des Nutzers. Belegt: kein `Desktop`, kein `zippo`, keine Windows-/Mac-Laufwerke auffindbar.
 - **Es gibt KEINEN Obsidian-Connector** im Konto (verbunden: Buffer, Canva, Google Drive, ssemble, vidiq). Ich kann Obsidian **nicht** fernsteuern.
-- **`git push` = 403** (kein GitHub-Schreibzugriff für `acydacy3/twitchclipz`).
+- **`git push` = freigeschaltet (25.08.)** — GitHub-Schreibzugriff für `acydacy3/twitchclipz` aktiv (war bis 24.08. 403).
 - **Google Drive ist nur-Website** beim Nutzer (kein „Drive für Desktop") → Dateien in Drive erscheinen **nicht automatisch** auf seinem PC.
 
 ## Was daraus folgt (damit keine Session das neu durchleidet)
@@ -21,7 +21,7 @@ Markdown-Dateien. „Claude nutzt Obsidian" = Claude liest/schreibt dieselben
 Dateien an einem Ort, den es erreicht.
 
 **Erreichbare Orte von diesem Server aus:** nur **Google Drive** (Connector) —
-GitHub ist wegen 403 zu, der lokale PC ist unerreichbar.
+GitHub ist per `git push` erreichbar; der lokale PC bleibt unerreichbar.
 
 ## Funktionierender Weg (24.08. erfolgreich getestet)
 1. **Für den Nutzer → Obsidian:** Vault als **Zip** via `SendUserFile` → er entpackt

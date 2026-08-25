@@ -1,5 +1,5 @@
 ---
-description: Persistiert neue Erkenntnisse → Drive-Vault (primär, da Push 403) + Git-Commit lokal
+description: Persistiert neue Erkenntnisse → Git (commit + push, freigeschaltet); Drive optional
 ---
 
 # Merken
@@ -32,15 +32,9 @@ ggf. `CLAUDE.md`) anpassen — sonst bleibt es im Vault (Memory-Promotion).
 Note** erzeugen. Qualität vor Quantität.
 
 ## Schritt 2 — Persistieren
-1. **Drive zuerst (der Weg, der die nächste Session erreicht):** die **geänderten**
-   Notes direkt in den Drive-Vault schreiben — **ein** Vault unter
-   `Katastrophenprotokoll-Pipeline/YouTube-Knowledge`
-   (search_files nach Dateiname → bei Treffer `update_file`-Inhalt bzw. alte trashen +
-   `create_file` neu; nur die geänderten, nicht alles). Das ist mein Gehirn für n+1.
-2. Lokal sichern: `git add -A` + `git commit -m "merken: <kurz was gelernt>"` (Versionshistorie).
-3. `git push` **versuchen** — klappt er (kein 403), ist das Repo wieder primär, fertig.
-   **Solange 403:** kein Zip-Zwang; Drive (Schritt 1) trägt. Nur wenn der Nutzer es
-   ausdrücklich will, zusätzlich `SendUserFile`.
+1. **Git (der Weg zur nächsten Session):** `git add -A` + `git commit -m "merken: <kurz was gelernt>"` + **`git push`** (freigeschaltet). Der nächste Container klont den vollen Stand automatisch.
+2. **Optional Drive:** nur wenn der Nutzer die Notiz in Obsidian sehen will — geänderte Notes in den Drive-Vault (`Katastrophenprotokoll-Pipeline/YouTube-Knowledge`).
+3. **SendUserFile:** für fertige Videos (z. B. TikTok-Upload durch den Nutzer).
 
 > **Obsidian ist optional:** Liegt das Vault des Nutzers in seinem Drive-Ordner,
 > erscheinen die Drive-Schreibvorgänge automatisch dort. Falls nicht, ist das kein

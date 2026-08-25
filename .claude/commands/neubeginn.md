@@ -27,14 +27,12 @@ Besonders: Originalskript kommt **immer** vom Nutzer; er nutzt **keine** Kommand
 - Scheitert es an Zugangsdaten: in zwei Sätzen sagen, was einzutragen ist, weiter mit Schritt 4.
 - Läuft es: **gemessene Zahlen gewinnen** gegen alles Notierte → `Current-State.md` aktualisieren.
 
-## Schritt 4 — Nachziehen (Drive/Datei, da git push 403)
-`git push` ist aktuell gesperrt → die lebende Fassung kommt per **Drive/Datei-Handoff**
-der Vorsitzung, nicht zwingend über das Repo. `git pull` auf den aktuellen Branch
-holt, was gepusht wurde (falls Push zwischenzeitlich freigeschaltet ist). Im Drive-Ordner
-`Katastrophenprotokoll-Pipeline` nach neueren `CLAUDE.md`/Vault-Dateien sehen
-(über Namen suchen). Neuer/größer → übernehmen und dem Nutzer in einem Satz sagen.
-Ältere Drive-Dateien (`REGELN.md`, `START-HIER.md`, `LEARNINGS-*.md` vom 15./16.08.)
-sind **Altlast** — bei Widerspruch gilt Vault/CLAUDE.md.
+## Schritt 4 — Repo ist aktuell (git push freigeschaltet)
+`git push` funktioniert (seit 25.08.). Dieser Container hat beim Start den vollen
+Stand geklont; `git pull` holt zur Sicherheit Neueres. **Drive ist nur noch optional**
+(Nutzer-Ansicht in Obsidian, Asset-Transfer via gdown). Ältere Drive-Dateien
+(`REGELN.md`, `START-HIER.md`, `LEARNINGS-*.md` vom 15./16.08.) sind **Altlast** —
+bei Widerspruch gilt Vault/CLAUDE.md.
 
 ## Schritt 5 — Melden
 Höchstens 15 Zeilen, einfache Sprache: **Kanalstand · was zuletzt lief · was ansteht ·

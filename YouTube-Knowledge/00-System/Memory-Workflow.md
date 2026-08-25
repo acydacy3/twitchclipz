@@ -37,17 +37,16 @@ suchen. Confidence + Scope + Counter-Evidence jeder gefundenen Note beachten.
 neue Erkenntnis
  → richtige Note im Vault (mit Confidence + Scope + Evidence + History)
  → prüfen: wird daraus eine Rule? → nur dann [[Current-State]]/CLAUDE.md anpassen
- → geänderte Note nach **Drive** schreiben (via MCP) — erreicht die nächste Session
- → git add/commit **lokal** (Versionshistorie; Push noch 403)
+ → `git add/commit/push` (freigeschaltet) — erreicht die nächste Session automatisch
+ → optional: geänderte Note nach Drive (nur für Nutzer-Ansicht in Obsidian)
 ```
 
-## Persistenz-Priorität (Stand: `git push` = 403)
-1. **Google Drive** (via MCP-Drive-Tools) — **aktueller** Persistenz-Träger, der einzige Weg, der die nächste Session erreicht. Ein Vault unter `Katastrophenprotokoll-Pipeline/YouTube-Knowledge`.
-2. **Git-Commit lokal** — Versionshistorie im Container; **`git push`, sobald freigeschaltet** (dann wird das Repo wieder primär).
-3. **SendUserFile an Nutzer** — letzter Fallback (er lädt manuell hoch).
+## Persistenz-Priorität (git push freigeschaltet, 25.08.)
+1. **Git** (`commit` + `push`) — primärer, versionierter Persistenz-Träger; der nächste Container klont den vollen Stand.
+2. **Google Drive** — optional (Nutzer-Ansicht in Obsidian, Asset-Transfer via gdown).
+3. **SendUserFile an Nutzer** — für fertige Videos (z. B. TikTok).
 
-Warum Drive vorne steht: Solange Push 403 ist, verliert das Repo Änderungen beim
-nächsten Clone — nur Drive überlebt zwischen Sessions. Details: [[Decision-Git-vs-Drive-Persistenz]].
+Details/Historie: [[Decision-Git-vs-Drive-Persistenz]].
 
 ## Selbstkorrektur (wenn eine Note falsch/veraltet/zu pauschal ist)
 1. Problem markieren. 2. Evidenz prüfen. 3. Note aktualisieren (History!).

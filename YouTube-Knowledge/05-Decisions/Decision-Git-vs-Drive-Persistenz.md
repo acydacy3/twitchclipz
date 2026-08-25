@@ -16,7 +16,9 @@ Die Ur-CLAUDE.md und die Commands `/merken` + `/neubeginn` bauen darauf, dass
 
 **Prüfung 24.08.2026:** `git commit` geht lokal, aber `git push` scheitert weiter
 mit **403** (`Claude doesn't have GitHub access … / Resource not accessible`).
-Die Push-Sperre besteht also **fort** — die frühere Annahme „Push frei" war falsch
+**UPDATE 25.08.: `git push` ist FREIGESCHALTET** — die 403-Sperre ist aufgehoben; **Git ist wieder primärer Persistenz-Weg**, Drive optional. Der folgende Text dokumentiert die frühere (aufgehobene) Sperre.
+
+~~Die Push-Sperre besteht also **fort** — die frühere Annahme „Push frei" war falsch~~
 und ist hiermit korrigiert. Persistenz läuft daher weiter über Drive + Datei-Handoff.
 
 ## Entscheidung (Stand 24.08., korrigiert)
