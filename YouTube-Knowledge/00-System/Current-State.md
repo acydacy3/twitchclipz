@@ -28,7 +28,7 @@ tags: [system, state]
 
 ## Zugänge (Stand 19.08.)
 - **YouTube Data + Analytics API:** OAuth-Refresh-Token gültig, Uploads/Analytics/Terminierung produktiv.
-- **git push:** weiterhin **403-gesperrt** (24.08.). **Persistenz = Drive zuerst** (via MCP), dann lokaler Commit. **Ein** kanonischer Drive-Vault: `Katastrophenprotokoll-Pipeline/YouTube-Knowledge` (id `1rafU…`, Dubletten am 24.08. aufgeräumt). Obsidian-App = nur Nutzer-Fenster, nicht mein Zugang → **nicht priorisiert**. Siehe [[Decision-Git-vs-Drive-Persistenz]], [[Decision-Umgebung-und-Obsidian-Bruecke]].
+- **git push: FREIGESCHALTET (25.08.)** — funktioniert. **Persistenz = Git (Repo) primär**: `git commit` + `git push` am Session-Ende → nächster Container klont den vollen Stand automatisch. Drive ist damit **optional** (nur noch Nutzer-Ansicht/Asset-Transfer). Branch: `claude/implementation-guardrails-vszcn7`.
 - **Netzsperre:** aufgehoben (17.08.). elevenlabs/higgsfield/youtube erreichbar.
 - **TikTok über Buffer:** @mausigermax verbunden (`acydacy3@gmail.com`).
 
