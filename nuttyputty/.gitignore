@@ -13,3 +13,4 @@ animation/v2_*.png
 animation/v3_*.png
 animation/check_*.png
 _probe_frame.png
+__pycache__/
