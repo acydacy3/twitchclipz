@@ -12,7 +12,7 @@ tags: [system, state]
 > aktualisiert (Stand-Zahlen kommen aus `analyse.py`, nicht aus dem Gedächtnis —
 > gemessenes gewinnt gegen notiertes). Letztes Update: **2026-08-25**.
 
-> **Selbstprüfung (Session-Start):** Liegt der Vault `YouTube-Knowledge/` und `analyse.py` im Checkout und sagt `CLAUDE.md` NICHT „git push 403"? Dann bist du aktuell. Falls nein → Recovery-Schritte oben in `CLAUDE.md` („⚠️ ZUERST"). Branch-Namen wechseln je Session — der richtige Branch ist der, der **diesen Vault enthält** (25.08. konsolidiert; `main` ist veraltet, ohne Vault).
+> **Selbstprüfung (Session-Start):** Liegt der Vault `YouTube-Knowledge/` und `analyse.py` im Checkout und sagt `CLAUDE.md` NICHT „git push 403"? Dann bist du aktuell. Falls nein → Recovery-Schritte oben in `CLAUDE.md` („⚠️ ZUERST"). Branch-Namen wechseln je Session; **`main` ist jetzt AKTUELL** (25.08. voll synchronisiert) — ebenso der jeweilige `claude/…`-Branch. Der richtige Checkout ist jeder, der **diesen Vault + `tools/`** enthält.
 
 ## Nordstern-Ziel (messbar)
 - **YPP-Monetarisierung, Shorts-Pfad: 1.000 Abos + 10 Mio Shorts-Views in 90 Tagen** (vor der Feb-2027-Regel). Stand 25.08.: Abos **4,2 %**, Views **0,20 %** — Views-Soll ~111k/Tag vs. aktuell ~2k/Tag (Faktor ~55). **Fortschritt jede Session loggen** → [[Ziel-YPP-Monetarisierung]].
@@ -34,7 +34,7 @@ tags: [system, state]
 
 ## Zugänge (Stand 19.08.)
 - **YouTube Data + Analytics API:** OAuth-Refresh-Token gültig, Uploads/Analytics/Terminierung produktiv.
-- **git push: FREIGESCHALTET (25.08.)** — funktioniert. **Persistenz = Git (Repo) primär**: `git commit` + `git push` am Session-Ende → nächster Container klont den vollen Stand automatisch. Drive ist damit **optional** (nur noch Nutzer-Ansicht/Asset-Transfer). **Alle MCP-/Zugriffe freigegeben (25.08.).** Branch-Namen wechseln je Session (`claude/…`); maßgeblich ist immer der Branch, der den Vault `YouTube-Knowledge/` enthält — **`main` ist veraltet (24.08., ohne Vault)**. Empfehlung an den Nutzer: aktuellen Stand nach `main` bringen, damit neue Sessions garantiert aktuell starten.
+- **git push: FREIGESCHALTET (25.08.)** — funktioniert. **Persistenz = Git (Repo) primär**: `git commit` + `git push` am Session-Ende → nächster Container klont den vollen Stand automatisch. Drive ist damit **optional** (nur noch Nutzer-Ansicht/Asset-Transfer). **Alle MCP-/Zugriffe freigegeben (25.08.).** Branch-Namen wechseln je Session (`claude/…`); **`main` wird jede Session mitgepusht und ist aktuell** → neue Sessions starten garantiert korrekt, egal ob sie `main` oder den Feature-Branch ziehen.
 - **Netzsperre:** aufgehoben (17.08.). elevenlabs/higgsfield/youtube erreichbar.
 - **TikTok über Buffer:** @mausigermax verbunden (`acydacy3@gmail.com`).
 
