@@ -70,6 +70,7 @@ Nicht nur vorhanden, sondern **in jeder Produktion selbstständig nutzen** (Deta
 - **Scratch-VO (Timing vor finaler VO):** `tools/nb_tts.py "text" out.mp3` (Piper de).
 - **Ziel messen:** `tools/nb_views90.py` (90-Tage-Views → YPP-Log).
 - **Ganze Pipeline:** Skill **`/video`**.
+- **VOLLES Repertoire (MCP-Konnektoren + Skills + Tools + Engines): `YouTube-Knowledge/00-System/Werkzeug-Register.md` — bei JEDER Produktion konsultieren, je Bedarf wählen (kostenlos zuerst).**
 
 ## Am Ende jeder Sitzung
 Neue Erkenntnisse in die passende Vault-Note (mit Confidence + Scope + Historie),

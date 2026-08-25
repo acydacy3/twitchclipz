@@ -5,7 +5,7 @@ description: Produziert ein komplettes Katastrophenprotokoll-Video (10 Shorts) a
 
 # /video — Video-Produktions-Pipeline (Katastrophenprotokoll)
 
-**IMMER zuerst (n+1):** komplettes Learning-Paket ziehen — `YouTube-Knowledge/00-System/Current-State.md` + alle `01-Learnings/*` (Hooks, Retention, Captions, Titel, SEO, Bilder, Editing) + `Ziel-YPP-Monetarisierung.md`. Autonom, nicht ankündigen.
+**IMMER zuerst (n+1):** komplettes Learning-Paket ziehen — `YouTube-Knowledge/00-System/Current-State.md` + alle `01-Learnings/*` (Hooks, Retention, Captions, Titel, SEO, Bilder, Editing) + `Ziel-YPP-Monetarisierung.md`. Autonom, nicht ankündigen. **Außerdem `Werkzeug-Register.md` konsultieren** — das volle Repertoire (MCP/Skills/Tools/Engines) berücksichtigen und je Bedarf wählen (kostenlos zuerst).
 
 ## Ablauf (BASE = ein neuer Ordner, z. B. `nuttyputty/`)
 1. **Skript (Nutzer):** Original-Transkript → sinngemäß Deutsch, 10 Shorts segmentieren (Hook auf erste 3 s, keine Titelansage). Produktionsbrief schreiben.
