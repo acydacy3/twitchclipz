@@ -29,10 +29,7 @@ tags: [system, state]
 - [[Video-03-Koepcke]] — fertig, hochgeladen, terminiert 21.–24.08. (10 Shorts, 3/Tag). Titel-Score Short 1: 74/100.
 - **Video 4 (Okene/Jascon-4) PRODUZIERT + terminiert (24.08.):** 10 Shorts gerendert, **9/10 geplant** (24.–27.08.); Short 10 via Trigger 25.08. Siehe [[Video-04-Okene]], [[Produktions-Runbook]].
 - **Video 5 Lengede FERTIG + TERMINIERT (verifiziert 25.08. via `analyse.py`):** alle **10/10 Shorts terminiert (28.–31.08.)**. Okene-Shorts ebenfalls terminiert (25.–27.08.). Trigger lief durch. Siehe [[Video-05-Lengede]].
-- **NÄCHSTER SCHRITT (26.08.): Videos 6 + 7 produzieren** — die beiden nächsten Themen stehen fest und sind recherchiert:
-  1. **Nutty Putty Cave / John Edward Jones (2009)** — kopfüber im 25-cm-Spalt, ~27 h, Höhle mit ihm zubetoniert. DE ungesättigt.
-  2. **Mauro Prosperi — 9 Tage Sahara (1994)** — Marathon des Sables, 291 km falsch, Suizidversuch scheitert (Blut zu dick) → rettet ihn.
-  Details/Hooks/Copyright-Hinweise: [[Ideen-Pipeline]]. Vor Schnitt gegen [[Failure-Memory]] prüfen; vidIQ-Outlier-Kriterium (junger DE-Kanal, >200k) nachziehen.
+- **NÄCHSTER SCHRITT:** (1) **V6 Nutty Putty hochladen** — `python3 nuttyputty/nb_upload.py` aus Repo-Root nach YouTube-Quota-Reset (~07:00 UTC); mp4s liegen in `nuttyputty/output/` (reproduzierbar via `nb_build.py`). Danach `analyse.py`-Gegenprobe. (2) **V7 Mauro Prosperi (Sahara 1994)** produzieren — Composite-Short mit **Manim-Karte (291-km-Route) + 9-Tage-Zeitleiste**, KI-Schlüsselbildern + Stock. Skill `/video`. → [[Ideen-Pipeline]]
 - **Voller Tagesstand: [[Handoff-2026-08-24]] + [[Audit-2026-08-25]] (zuerst lesen).**
 
 ## Zugänge (Stand 19.08.)
