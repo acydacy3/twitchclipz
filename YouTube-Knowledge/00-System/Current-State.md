@@ -2,7 +2,7 @@
 type: system
 title: Current-State
 status: active
-updated: 2026-08-24
+updated: 2026-08-25
 tags: [system, state]
 ---
 
@@ -10,11 +10,13 @@ tags: [system, state]
 
 > Diese Note ist der **operative Schnappschuss**. Sie wird bei jeder Session
 > aktualisiert (Stand-Zahlen kommen aus `analyse.py`, nicht aus dem Gedächtnis —
-> gemessenes gewinnt gegen notiertes). Letztes Update: **2026-08-24**.
+> gemessenes gewinnt gegen notiertes). Letztes Update: **2026-08-25**.
+
+> **Selbstprüfung (Session-Start):** Liegt der Vault `YouTube-Knowledge/` und `analyse.py` im Checkout und sagt `CLAUDE.md` NICHT „git push 403"? Dann bist du aktuell. Falls nein → Recovery-Schritte oben in `CLAUDE.md` („⚠️ ZUERST"). Branch-Namen wechseln je Session — der richtige Branch ist der, der **diesen Vault enthält** (25.08. konsolidiert; `main` ist veraltet, ohne Vault).
 
 ## Kanal
 - *Katastrophenprotokoll* (`UC1KCzLNlgGiYsLNQ7Z0HA-g`, DE), gegründet 15.08.2026.
-- **Gemessen 24.08. (`analyse.py`):** **37 Abos**, 18.742 Aufrufe, 36 Videos. Wachstum 2→9→37. **Starke Woche:** Amazonas-Serie zieht („92 Passagiere. 1 Überlebende." 1.807; dazu 1.230/1.172/1.121/1.107).
+- **Gemessen 25.08. (`analyse.py`):** **40 Abos**, **20.321 Aufrufe**, 36 Videos. Wachstum 2→9→37→40. **Starke Woche:** Amazonas-Serie zieht („92 Passagiere. 1 Überlebende." 1.807; dazu 1.230/1.172/1.121/1.107). *(Vor Produktion neu ziehen — analyse.py schlägt diese Notiz.)*
 - Konto vidIQ: `kisha-ners@gmx.de`. Guthaben (19.08.): **30** (renewable 0/150,
   Add-on 30/80, refresh 15.09.2026). vidIQ nur auf Anfrage — Credits schonen.
 
@@ -22,13 +24,17 @@ tags: [system, state]
 - [[Video-01-Tham-Luang]] — veröffentlicht. 640 Aufrufe, 2 Abos. Langvideo 4,4 % Haltequote → Shorts tragen.
 - [[Video-02-San-Jose]] — fertig + terminiert (11 Shorts + Langvideo, 18.–20.08.).
 - [[Video-03-Koepcke]] — fertig, hochgeladen, terminiert 21.–24.08. (10 Shorts, 3/Tag). Titel-Score Short 1: 74/100.
-- **Video 4 (Okene/Jascon-4) PRODUZIERT + terminiert (24.08.):** 10 Shorts gerendert, **9/10 geplant** (24.–27.08.); Short 10 offen wg. YouTube-Tages-Uploadlimit → Retry 25.08. Siehe [[Video-04-Okene]], [[Produktions-Runbook]].
-- **Video 5 Lengede PRODUZIERT (24.08.):** 10/10 gerendert; Upload/Schedule (28.–31.08.) läuft per Trigger 25.08. Siehe [[Video-05-Lengede]].
-- **Nächste Session:** Konstrukt-Auditor (Aufgabe 2) + Tagesabschluss (Aufgabe 3) offen. **Voller Tagesstand: [[Handoff-2026-08-24]] (zuerst lesen).** Themen morgen: Nutty Putty + Prosperi ([[Ideen-Pipeline]]).
+- **Video 4 (Okene/Jascon-4) PRODUZIERT + terminiert (24.08.):** 10 Shorts gerendert, **9/10 geplant** (24.–27.08.); Short 10 via Trigger 25.08. Siehe [[Video-04-Okene]], [[Produktions-Runbook]].
+- **Video 5 Lengede PRODUZIERT (24.08.):** 10/10 gerendert; Upload/Schedule (28.–31.08.) via Trigger 25.08 angestoßen. Siehe [[Video-05-Lengede]]. **⚠️ Offen zu verifizieren:** Ob Okene-Short-10 + die Lengede-Uploads tatsächlich durchliefen — mit `analyse.py` (terminierte Uploads) gegenprüfen, bevor Neues terminiert wird.
+- **NÄCHSTER SCHRITT (26.08.): Videos 6 + 7 produzieren** — die beiden nächsten Themen stehen fest und sind recherchiert:
+  1. **Nutty Putty Cave / John Edward Jones (2009)** — kopfüber im 25-cm-Spalt, ~27 h, Höhle mit ihm zubetoniert. DE ungesättigt.
+  2. **Mauro Prosperi — 9 Tage Sahara (1994)** — Marathon des Sables, 291 km falsch, Suizidversuch scheitert (Blut zu dick) → rettet ihn.
+  Details/Hooks/Copyright-Hinweise: [[Ideen-Pipeline]]. Vor Schnitt gegen [[Failure-Memory]] prüfen; vidIQ-Outlier-Kriterium (junger DE-Kanal, >200k) nachziehen.
+- **Voller Tagesstand: [[Handoff-2026-08-24]] + [[Audit-2026-08-25]] (zuerst lesen).**
 
 ## Zugänge (Stand 19.08.)
 - **YouTube Data + Analytics API:** OAuth-Refresh-Token gültig, Uploads/Analytics/Terminierung produktiv.
-- **git push: FREIGESCHALTET (25.08.)** — funktioniert. **Persistenz = Git (Repo) primär**: `git commit` + `git push` am Session-Ende → nächster Container klont den vollen Stand automatisch. Drive ist damit **optional** (nur noch Nutzer-Ansicht/Asset-Transfer). Branch: `claude/implementation-guardrails-vszcn7`.
+- **git push: FREIGESCHALTET (25.08.)** — funktioniert. **Persistenz = Git (Repo) primär**: `git commit` + `git push` am Session-Ende → nächster Container klont den vollen Stand automatisch. Drive ist damit **optional** (nur noch Nutzer-Ansicht/Asset-Transfer). **Alle MCP-/Zugriffe freigegeben (25.08.).** Branch-Namen wechseln je Session (`claude/…`); maßgeblich ist immer der Branch, der den Vault `YouTube-Knowledge/` enthält — **`main` ist veraltet (24.08., ohne Vault)**. Empfehlung an den Nutzer: aktuellen Stand nach `main` bringen, damit neue Sessions garantiert aktuell starten.
 - **Netzsperre:** aufgehoben (17.08.). elevenlabs/higgsfield/youtube erreichbar.
 - **TikTok über Buffer:** @mausigermax verbunden (`acydacy3@gmail.com`).
 

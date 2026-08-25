@@ -11,6 +11,24 @@ Historie. **Öffne `YouTube-Knowledge/` als Vault in Obsidian**, um Links/Graph 
 
 ---
 
+## ⚠️ ZUERST: Bin ich auf dem aktuellen Stand? (30-Sekunden-Check)
+Bevor du irgendetwas tust — **eine dieser Aussagen wahr = du bist auf einem VERALTETEN Checkout**, hol erst den aktuellen Stand:
+- Der Ordner `YouTube-Knowledge/` **fehlt**, oder `analyse.py` / `lengede/` fehlen.
+- Diese Datei oder eine Note nennt „**git push 403**" oder „**Drive = Gedächtnis**" als *aktuellen* Zustand.
+
+Beides ist überholt. **Seit 25.08.2026: `git push` ist freigeschaltet, das Repo trägt den vollen Stand, das Gedächtnis liegt im Vault `YouTube-Knowledge/` (66 verlinkte Notizen).** Drive ist nur noch optionaler Asset-Transfer.
+
+**Recovery (falls veraltet):**
+```
+git fetch --all
+git for-each-ref --sort=-committerdate --format='%(committerdate:short) %(refname:short)' refs/remotes/
+```
+→ Auf den **neuesten Branch wechseln, der `YouTube-Knowledge/` enthält** (Branch-Namen wechseln je Session — entscheide nach Inhalt, nicht nach Name). `main` ist **veraltet** (Stand 24.08., ohne Vault) → nicht als Quelle nutzen.
+
+**Dann lesen (in dieser Reihenfolge):** `YouTube-Knowledge/00-System/Current-State.md` → `YouTube-Knowledge/06-Audits/Handoff-2026-08-24.md` → der jüngste `YouTube-Knowledge/06-Audits/Daily/Audit-*.md`. Damit bist du in 3 Minuten voll im Bild — ohne Rückfragen an den Nutzer.
+
+---
+
 ## Sofort wissen (die 6 wichtigsten Constraints)
 1. **Das Originalskript kommt IMMER vom Nutzer.** Kürzen/formen aus vorhandenem Material: ja. Erfinden: nein.
 2. **Der Nutzer arbeitet nicht mit der Kommandozeile** und kann **keine `.md`-Dateien öffnen** → längere Ergebnisse als **Artifact-Seite** ausliefern. (Ausnahme: das Vault liest er in Obsidian.)
