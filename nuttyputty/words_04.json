@@ -1,0 +1,344 @@
+[
+  {
+    "word": "Umdrehen",
+    "start": 0.0,
+    "end": 0.58,
+    "conf": 1.0
+  },
+  {
+    "word": "war",
+    "start": 0.58,
+    "end": 0.76,
+    "conf": 1.0
+  },
+  {
+    "word": "für",
+    "start": 0.76,
+    "end": 0.92,
+    "conf": 1.0
+  },
+  {
+    "word": "ihn",
+    "start": 0.92,
+    "end": 1.06,
+    "conf": 1.0
+  },
+  {
+    "word": "unmöglich.",
+    "start": 1.06,
+    "end": 1.76,
+    "conf": 1.0
+  },
+  {
+    "word": "Kein",
+    "start": 2.24,
+    "end": 2.42,
+    "conf": 1.0
+  },
+  {
+    "word": "Platz.",
+    "start": 2.42,
+    "end": 2.64,
+    "conf": 1.0
+  },
+  {
+    "word": "Also",
+    "start": 3.34,
+    "end": 3.64,
+    "conf": 1.0
+  },
+  {
+    "word": "schob",
+    "start": 3.64,
+    "end": 3.98,
+    "conf": 1.0
+  },
+  {
+    "word": "er",
+    "start": 3.98,
+    "end": 4.08,
+    "conf": 1.0
+  },
+  {
+    "word": "sich",
+    "start": 4.08,
+    "end": 4.22,
+    "conf": 1.0
+  },
+  {
+    "word": "vorwärts",
+    "start": 4.22,
+    "end": 4.9,
+    "conf": 1.0
+  },
+  {
+    "word": "über",
+    "start": 4.9,
+    "end": 5.08,
+    "conf": 1.0
+  },
+  {
+    "word": "eine",
+    "start": 5.08,
+    "end": 5.34,
+    "conf": 1.0
+  },
+  {
+    "word": "Felskante,",
+    "start": 5.34,
+    "end": 6.12,
+    "conf": 1.0
+  },
+  {
+    "word": "Kopfüber",
+    "start": 6.48,
+    "end": 7.0,
+    "conf": 1.0
+  },
+  {
+    "word": "in",
+    "start": 7.0,
+    "end": 7.2,
+    "conf": 1.0
+  },
+  {
+    "word": "ein",
+    "start": 7.2,
+    "end": 7.42,
+    "conf": 1.0
+  },
+  {
+    "word": "Loch,",
+    "start": 7.42,
+    "end": 7.68,
+    "conf": 1.0
+  },
+  {
+    "word": "das",
+    "start": 8.02,
+    "end": 8.14,
+    "conf": 1.0
+  },
+  {
+    "word": "nach",
+    "start": 8.14,
+    "end": 8.36,
+    "conf": 1.0
+  },
+  {
+    "word": "unten",
+    "start": 8.36,
+    "end": 8.66,
+    "conf": 1.0
+  },
+  {
+    "word": "führte.",
+    "start": 8.66,
+    "end": 9.18,
+    "conf": 1.0
+  },
+  {
+    "word": "Er",
+    "start": 9.66,
+    "end": 9.8,
+    "conf": 1.0
+  },
+  {
+    "word": "dachte",
+    "start": 9.8,
+    "end": 10.12,
+    "conf": 1.0
+  },
+  {
+    "word": "dahinter",
+    "start": 10.12,
+    "end": 10.72,
+    "conf": 1.0
+  },
+  {
+    "word": "öffne",
+    "start": 10.72,
+    "end": 11.22,
+    "conf": 1.0
+  },
+  {
+    "word": "sich",
+    "start": 11.22,
+    "end": 11.4,
+    "conf": 1.0
+  },
+  {
+    "word": "der",
+    "start": 11.4,
+    "end": 11.58,
+    "conf": 1.0
+  },
+  {
+    "word": "Raum.",
+    "start": 11.58,
+    "end": 11.94,
+    "conf": 1.0
+  },
+  {
+    "word": "Aber",
+    "start": 12.6,
+    "end": 12.86,
+    "conf": 1.0
+  },
+  {
+    "word": "vor",
+    "start": 12.86,
+    "end": 13.36,
+    "conf": 1.0
+  },
+  {
+    "word": "ihm",
+    "start": 13.36,
+    "end": 13.58,
+    "conf": 1.0
+  },
+  {
+    "word": "war",
+    "start": 13.58,
+    "end": 13.8,
+    "conf": 1.0
+  },
+  {
+    "word": "hier",
+    "start": 13.8,
+    "end": 14.0,
+    "conf": 1.0
+  },
+  {
+    "word": "noch",
+    "start": 14.0,
+    "end": 14.2,
+    "conf": 1.0
+  },
+  {
+    "word": "nie",
+    "start": 14.2,
+    "end": 14.52,
+    "conf": 1.0
+  },
+  {
+    "word": "jemand",
+    "start": 14.52,
+    "end": 14.84,
+    "conf": 1.0
+  },
+  {
+    "word": "gewesen.",
+    "start": 14.84,
+    "end": 15.24,
+    "conf": 1.0
+  },
+  {
+    "word": "John",
+    "start": 16.0,
+    "end": 16.22,
+    "conf": 1.0
+  },
+  {
+    "word": "war",
+    "start": 16.22,
+    "end": 16.46,
+    "conf": 1.0
+  },
+  {
+    "word": "in",
+    "start": 16.46,
+    "end": 16.64,
+    "conf": 1.0
+  },
+  {
+    "word": "völlig",
+    "start": 16.64,
+    "end": 16.88,
+    "conf": 1.0
+  },
+  {
+    "word": "unerforschtem",
+    "start": 16.88,
+    "end": 17.78,
+    "conf": 1.0
+  },
+  {
+    "word": "Fels.",
+    "start": 17.78,
+    "end": 18.18,
+    "conf": 1.0
+  },
+  {
+    "word": "Er",
+    "start": 18.68,
+    "end": 18.84,
+    "conf": 1.0
+  },
+  {
+    "word": "rutschte",
+    "start": 18.84,
+    "end": 19.14,
+    "conf": 1.0
+  },
+  {
+    "word": "tiefer,",
+    "start": 19.14,
+    "end": 19.56,
+    "conf": 1.0
+  },
+  {
+    "word": "fast",
+    "start": 19.66,
+    "end": 19.8,
+    "conf": 1.0
+  },
+  {
+    "word": "im",
+    "start": 19.8,
+    "end": 19.96,
+    "conf": 1.0
+  },
+  {
+    "word": "Handstand,",
+    "start": 19.96,
+    "end": 20.46,
+    "conf": 1.0
+  },
+  {
+    "word": "das",
+    "start": 20.82,
+    "end": 20.94,
+    "conf": 1.0
+  },
+  {
+    "word": "Gewicht",
+    "start": 20.94,
+    "end": 21.28,
+    "conf": 1.0
+  },
+  {
+    "word": "zog",
+    "start": 21.28,
+    "end": 21.6,
+    "conf": 1.0
+  },
+  {
+    "word": "ihn",
+    "start": 21.6,
+    "end": 21.72,
+    "conf": 1.0
+  },
+  {
+    "word": "nach",
+    "start": 21.72,
+    "end": 21.9,
+    "conf": 1.0
+  },
+  {
+    "word": "unten.",
+    "start": 21.9,
+    "end": 22.28,
+    "conf": 1.0
+  }
+]

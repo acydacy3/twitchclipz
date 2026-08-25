@@ -36,11 +36,11 @@
   <rect width="1080" height="1920" fill="#2a1a11" filter="url(#rock)"/>
   <rect width="1080" height="1920" filter="url(#strata)" opacity="0.5"/>
 
-  <!-- ENGER Tunnel: waagerechte Röhre (Höhe ~ Körper) -> enger senkrechter Schlitz -->
+  <!-- ENGER Tunnel: waagerechte Röhre (Höhe ~ Körper) -> kurzer enger senkrechter Schlitz -->
   <path id="crack" d="M -40 786
       C 180 780, 380 792, 560 786 C 622 783, 648 776, 678 792
-      C 700 900, 690 1120, 700 1300 C 706 1430, 698 1560, 703 1700 L 662 1700
-      C 656 1560, 664 1430, 658 1300 C 652 1120, 662 900, 636 812
+      C 698 880, 692 1000, 700 1120 C 704 1180, 700 1230, 703 1300 L 662 1300
+      C 658 1230, 662 1180, 658 1120 C 654 1000, 660 884, 636 812
       C 470 820, 250 812, 60 820 C -8 823, -30 806, -40 800 Z"
       fill="url(#crackg)"/>
   <path d="M -40 786 C 180 780, 380 792, 560 786 C 622 783, 648 776, 678 792"
@@ -55,9 +55,10 @@
   <g><rect x="70" y="120" rx="10" width="940" height="192" fill="#ffd400" opacity="0.96"/>
     <text x="540" y="202" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="70" fill="#111">Er zwängte sich kopfüber</text>
     <text x="540" y="280" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="70" fill="#111">in den Spalt …</text></g>
-  <g><rect x="440" y="1782" rx="14" width="200" height="72" fill="#c81e1e"/>
+  <g id="teilbar"><rect x="440" y="1782" rx="14" width="200" height="72" fill="#c81e1e"/>
     <text x="540" y="1832" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="44" fill="#fff">TEIL 1</text></g>
 </svg>
+<script>if(window.__CLEAN){var c=document.getElementById('caption');if(c)c.style.display='none';var t=document.getElementById('teilbar');if(t)t.style.display='none';}</script>
 </div>
 <script>
 const NS="http://www.w3.org/2000/svg", DUR=9000;
@@ -91,16 +92,16 @@ function leadState(p){
     return {x, y:Y+heave, ang:2, mode:"crawl", g};
   } else if(p<0.62){                 // kopfüber über die Kante kippen -> senkrecht
     const u=smooth((p-0.50)/0.12);
-    return {x:678+22*u, y:786+120*u*u, ang:4+86*u, mode:"tip", g:{ph:0}};
-  } else if(p<0.80){                  // senkrecht hinabrutschen, ruckend (Reibung)
+    return {x:678+22*u, y:786+96*u*u, ang:4+86*u, mode:"tip", g:{ph:0}};
+  } else if(p<0.80){                  // senkrecht hinabrutschen, ruckend (Reibung), kurzer Schacht
     const u=(p-0.62)/0.18;
-    const gg=gait(u,5); const slip=gg.adv;
-    return {x:700, y:906+(1300-906)*slip, ang:90, mode:"slide", g:gg};
+    const gg=gait(u,4); const slip=gg.adv;
+    return {x:700, y:882+(1150-882)*slip, ang:90, mode:"slide", g:gg};
   } else {                            // VERKEILT senkrecht kopfüber
     const u=(p-0.80)/0.20;
     const tremor=Math.sin(u*55)*2*(1-u)+Math.sin(u*19)*1;
     const kick=(Math.sin(u*8)>0.9)?Math.sin(u*44)*9:0;
-    return {x:700+tremor, y:1300, ang:90, mode:"stuck", kick, g:{ph:0}};
+    return {x:700+tremor, y:1150, ang:90, mode:"stuck", kick, g:{ph:0}};
   }
 }
 function followState(p){
@@ -113,43 +114,40 @@ function followState(p){
   return {x:548+18*u, y:Y, ang:5, mode:"watch", g:{ph:0.5+u*0.5,pull:0}};
 }
 
-// --- Figur: gefüllter Glow-Körper, füllt die Röhre; Arm greift/plantet ---
+// --- Figur: menschlicher Höhlengänger-Silhouette (Kopf/Hals/Rumpf/Glieder) ---
+function line2(x1,y1,x2,y2,x3,y3,col,w){
+  const pl=document.createElementNS(NS,"polyline");
+  pl.setAttribute("points",`${x1},${y1} ${x2},${y2} ${x3},${y3}`);
+  pl.setAttribute("fill","none");pl.setAttribute("stroke",col);pl.setAttribute("stroke-width",w);
+  pl.setAttribute("stroke-linecap","round");pl.setAttribute("stroke-linejoin","round");return pl;
+}
 function drawFigure(host,s,col){
   host.innerHTML="";
   const g=document.createElementNS(NS,"g");
   g.setAttribute("transform",`translate(${s.x},${s.y}) rotate(${s.ang})`);
-  const bodyW=104, bodyH=62;                 // füllt den engen Tunnel (Höhe ~ Tunnel)
-  const gg=s.g||{ph:0};
-  // Rumpf als abgerundete Kapsel (gefüllt, Kopf bei +x)
-  const body=document.createElementNS(NS,"rect");
-  body.setAttribute("x",-bodyW*0.5);body.setAttribute("y",-bodyH*0.5);
-  body.setAttribute("width",bodyW);body.setAttribute("height",bodyH);
-  body.setAttribute("rx",bodyH*0.5);body.setAttribute("fill",col);g.appendChild(body);
-  // Kopf
+  const gg=s.g||{ph:0}, reach=(gg.reach||0), pull=(gg.pull||0);
+  const SH=48, HIP=-46;            // Schulter (+x vorne) / Hüfte (-x hinten)
+  const tw=26;                     // Rumpfdicke
+  // Rumpf (Schulter->Hüfte), leicht gebeugt
+  const torso=document.createElementNS(NS,"path");
+  torso.setAttribute("d",`M ${SH} 0 Q 0 ${6} ${HIP} 2`);
+  torso.setAttribute("fill","none");torso.setAttribute("stroke",col);
+  torso.setAttribute("stroke-width",tw);torso.setAttribute("stroke-linecap","round");g.appendChild(torso);
+  // Hals + Kopf (klar abgesetzt, vorne)
+  g.appendChild(line2(SH,0, SH+16,-6, SH+18,-8, col, 16));
   const head=document.createElementNS(NS,"circle");
-  head.setAttribute("cx",bodyW*0.5-4);head.setAttribute("cy",0);head.setAttribute("r",bodyH*0.5-2);
-  head.setAttribute("fill",col);g.appendChild(head);
-  // vorderer Arm: reach (nach vorn) -> plant (bleibt) -> zieht
-  const reach=(gg.reach||0), pull=(gg.pull||0);
-  const handX = bodyW*0.5 + 26 + reach*30 - pull*10; // greift vor, zieht dann heran
-  const handY = -bodyH*0.5 + 6 - reach*10;
-  const arm=document.createElementNS(NS,"polyline");
-  arm.setAttribute("points",`${bodyW*0.35},${-bodyH*0.3} ${handX-24},${handY+18} ${handX},${handY}`);
-  arm.setAttribute("fill","none");arm.setAttribute("stroke",col);arm.setAttribute("stroke-width",15);
-  arm.setAttribute("stroke-linecap","round");arm.setAttribute("stroke-linejoin","round");g.appendChild(arm);
-  // hinteres Bein: stemmt sich beim Zug ab
-  const legPush=(pull||0);
-  const leg=document.createElementNS(NS,"polyline");
-  leg.setAttribute("points",`${-bodyW*0.4},${bodyH*0.25} ${-bodyW*0.55-legPush*14},${bodyH*0.4} ${-bodyW*0.62-legPush*22},${bodyH*0.15}`);
-  leg.setAttribute("fill","none");leg.setAttribute("stroke",col);leg.setAttribute("stroke-width",15);
-  leg.setAttribute("stroke-linecap","round");leg.setAttribute("stroke-linejoin","round");g.appendChild(leg);
-  if(s.kick){const k=document.createElementNS(NS,"polyline");
-    k.setAttribute("points",`${-bodyW*0.4},${bodyH*0.2} ${-bodyW*0.6},${bodyH*0.2+s.kick}`);
-    k.setAttribute("fill","none");k.setAttribute("stroke",col);k.setAttribute("stroke-width",15);
-    k.setAttribute("stroke-linecap","round");g.appendChild(k);}
+  head.setAttribute("cx",SH+34);head.setAttribute("cy",-10);head.setAttribute("r",17);head.setAttribute("fill",col);g.appendChild(head);
+  // vorderer Arm: Schulter->Ellbogen->Hand (greift vor, zieht heran)
+  const handX=SH+30+reach*26-pull*12, handY=26-reach*14;
+  g.appendChild(line2(SH-2,4, SH+14,20, handX,handY, col, 13));
+  // hinteres Bein: Hüfte->Knie->Fuß (stemmt beim Zug)
+  const footX=HIP-34-pull*20, footY=20-pull*10;
+  g.appendChild(line2(HIP,4, HIP-18,26, footX,footY, col, 14));
+  // zweites (fernes) Bein leicht versetzt für Menschlichkeit
+  g.appendChild(line2(HIP+4,2, HIP-14,20+ (s.kick||0), HIP-30,8+(s.kick||0), col, 12));
   // Helmlicht
   const beam=document.createElementNS(NS,"path");
-  beam.setAttribute("d",`M ${bodyW*0.5} 0 L ${bodyW*0.5+140} -50 L ${bodyW*0.5+140} 50 Z`);
+  beam.setAttribute("d",`M ${SH+34} -10 L ${SH+34+150} -60 L ${SH+34+150} 40 Z`);
   beam.setAttribute("fill",col);beam.setAttribute("opacity","0.08");g.appendChild(beam);
   host.appendChild(g);
 }

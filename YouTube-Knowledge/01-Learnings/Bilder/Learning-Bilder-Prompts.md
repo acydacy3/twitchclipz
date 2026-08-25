@@ -78,3 +78,11 @@ Alle Bilder des Kanals. Engine-Wahl (Nano Banana Pro/Seedance/Z-Image): [[Decisi
 
 ## Related
 [[Decision-Bild-Engine-Wahl]] · [[Failure-Vertikale-Staffelung-Triptychon]] · [[Learning-Editing-Video]] · [[Video-03-Koepcke]]
+
+## Autonome, PRÄZISE B-Roll-Suche (Nutzer-Regel 25.08.: Claude sucht alle Stock/Echt-Bilder selbst)
+- **Quelle:** Wikimedia Commons über **kuratierte Kategorien** (`list=categorymembers`), NICHT Freitextsuche.
+  Freitext zog Fehltreffer („Nick Cave"-Musiker bei „cave", Schneckenhäuser, Schlüssel). Kategorien sind topisch sicher.
+- **Trotzdem QC:** Kategorien leaken vereinzelt (Schlüssel in `Category:Carabiners`). Deshalb **immer Kontaktabzug** (`montage` aller Bilder, EIN Blick) → Ausreißer gezielt löschen + aus besserer Kategorie nachziehen. Skript: `nuttyputty/nb_fetch_broll.py` (robust: Magic-Byte-Check, Retry, Resume, Negativ-Wortfilter).
+- **Bewährte Kategorien:** Cave passages, Cave interiors, Caving, Cave rescue, Mine rescue, Single Rope Technique, Slot canyons, Caves of Utah, Carabiners, Climbing equipment, Memorial plaques.
+- **Standortpräzision:** „Caves of Utah" traf „natural cave near Green River, Utah" — Standort matcht. Immer lokale Kategorie mitnehmen.
+- **Resize:** `convert IN -resize 1600x2848^ -gravity center -extent 1600x2848` (short.py-Format). Attribution mitschreiben.

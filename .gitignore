@@ -4,3 +4,7 @@ okene_dl/
 lengede/
 koepcke/
 lengede_dl/
+__pycache__/
+nuttyputty/animation/capture_clean.py
+nuttyputty/animation/querschnitt_clean.*
+nuttyputty/animation/clean_*.png

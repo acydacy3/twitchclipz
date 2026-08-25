@@ -1,0 +1,332 @@
+[
+  {
+    "word": "Das",
+    "start": 0.0,
+    "end": 0.24,
+    "conf": 1.0
+  },
+  {
+    "word": "Seil",
+    "start": 0.24,
+    "end": 0.58,
+    "conf": 1.0
+  },
+  {
+    "word": "des",
+    "start": 0.58,
+    "end": 0.72,
+    "conf": 1.0
+  },
+  {
+    "word": "Flaschenzugs",
+    "start": 0.72,
+    "end": 1.56,
+    "conf": 1.0
+  },
+  {
+    "word": "war",
+    "start": 1.56,
+    "end": 2.12,
+    "conf": 1.0
+  },
+  {
+    "word": "an",
+    "start": 2.12,
+    "end": 2.32,
+    "conf": 1.0
+  },
+  {
+    "word": "einem",
+    "start": 2.32,
+    "end": 2.58,
+    "conf": 1.0
+  },
+  {
+    "word": "Felsbogen",
+    "start": 2.58,
+    "end": 3.32,
+    "conf": 1.0
+  },
+  {
+    "word": "befestigt.",
+    "start": 3.32,
+    "end": 4.04,
+    "conf": 1.0
+  },
+  {
+    "word": "Es",
+    "start": 4.62,
+    "end": 4.84,
+    "conf": 1.0
+  },
+  {
+    "word": "riss",
+    "start": 4.84,
+    "end": 5.18,
+    "conf": 1.0
+  },
+  {
+    "word": "und",
+    "start": 5.18,
+    "end": 5.9,
+    "conf": 1.0
+  },
+  {
+    "word": "schleuderte",
+    "start": 5.9,
+    "end": 6.42,
+    "conf": 1.0
+  },
+  {
+    "word": "Karabiner",
+    "start": 6.42,
+    "end": 7.0,
+    "conf": 1.0
+  },
+  {
+    "word": "und",
+    "start": 7.0,
+    "end": 7.2,
+    "conf": 1.0
+  },
+  {
+    "word": "Rolle",
+    "start": 7.2,
+    "end": 7.44,
+    "conf": 1.0
+  },
+  {
+    "word": "direkt",
+    "start": 7.44,
+    "end": 7.8,
+    "conf": 1.0
+  },
+  {
+    "word": "in",
+    "start": 7.8,
+    "end": 8.08,
+    "conf": 1.0
+  },
+  {
+    "word": "Reins",
+    "start": 8.08,
+    "end": 8.46,
+    "conf": 1.0
+  },
+  {
+    "word": "Gesicht.",
+    "start": 8.46,
+    "end": 8.88,
+    "conf": 1.0
+  },
+  {
+    "word": "Gehirnerschütterung,",
+    "start": 10.1,
+    "end": 10.78,
+    "conf": 1.0
+  },
+  {
+    "word": "Platzwunden,",
+    "start": 11.16,
+    "end": 11.8,
+    "conf": 1.0
+  },
+  {
+    "word": "er",
+    "start": 12.22,
+    "end": 12.32,
+    "conf": 1.0
+  },
+  {
+    "word": "musste",
+    "start": 12.32,
+    "end": 12.54,
+    "conf": 1.0
+  },
+  {
+    "word": "sofort",
+    "start": 12.54,
+    "end": 12.9,
+    "conf": 1.0
+  },
+  {
+    "word": "raus.",
+    "start": 12.9,
+    "end": 13.34,
+    "conf": 1.0
+  },
+  {
+    "word": "Und",
+    "start": 14.0,
+    "end": 14.3,
+    "conf": 1.0
+  },
+  {
+    "word": "John",
+    "start": 14.3,
+    "end": 14.64,
+    "conf": 1.0
+  },
+  {
+    "word": "rutschte",
+    "start": 14.64,
+    "end": 15.64,
+    "conf": 1.0
+  },
+  {
+    "word": "zurück",
+    "start": 15.64,
+    "end": 15.94,
+    "conf": 1.0
+  },
+  {
+    "word": "an",
+    "start": 15.94,
+    "end": 16.16,
+    "conf": 1.0
+  },
+  {
+    "word": "den",
+    "start": 16.16,
+    "end": 16.24,
+    "conf": 1.0
+  },
+  {
+    "word": "Anfang,",
+    "start": 16.24,
+    "end": 16.76,
+    "conf": 1.0
+  },
+  {
+    "word": "wieder",
+    "start": 17.14,
+    "end": 17.38,
+    "conf": 1.0
+  },
+  {
+    "word": "komplett",
+    "start": 17.38,
+    "end": 17.82,
+    "conf": 1.0
+  },
+  {
+    "word": "verkeilt,",
+    "start": 17.82,
+    "end": 18.46,
+    "conf": 1.0
+  },
+  {
+    "word": "die",
+    "start": 18.82,
+    "end": 18.92,
+    "conf": 1.0
+  },
+  {
+    "word": "Arme",
+    "start": 18.92,
+    "end": 19.26,
+    "conf": 1.0
+  },
+  {
+    "word": "ohne",
+    "start": 19.26,
+    "end": 19.56,
+    "conf": 1.0
+  },
+  {
+    "word": "Durchblutung,",
+    "start": 19.56,
+    "end": 20.42,
+    "conf": 1.0
+  },
+  {
+    "word": "die",
+    "start": 20.74,
+    "end": 20.82,
+    "conf": 1.0
+  },
+  {
+    "word": "Beine",
+    "start": 20.82,
+    "end": 21.16,
+    "conf": 1.0
+  },
+  {
+    "word": "tot.",
+    "start": 21.16,
+    "end": 21.42,
+    "conf": 1.0
+  },
+  {
+    "word": "Er",
+    "start": 22.18,
+    "end": 22.3,
+    "conf": 1.0
+  },
+  {
+    "word": "konnte",
+    "start": 22.3,
+    "end": 22.54,
+    "conf": 1.0
+  },
+  {
+    "word": "sich",
+    "start": 22.54,
+    "end": 22.78,
+    "conf": 1.0
+  },
+  {
+    "word": "in",
+    "start": 22.78,
+    "end": 22.96,
+    "conf": 1.0
+  },
+  {
+    "word": "nichts",
+    "start": 22.96,
+    "end": 23.24,
+    "conf": 1.0
+  },
+  {
+    "word": "mehr",
+    "start": 23.24,
+    "end": 23.48,
+    "conf": 1.0
+  },
+  {
+    "word": "selbst",
+    "start": 23.48,
+    "end": 23.84,
+    "conf": 1.0
+  },
+  {
+    "word": "helfen.",
+    "start": 23.84,
+    "end": 24.2,
+    "conf": 1.0
+  },
+  {
+    "word": "Das",
+    "start": 24.88,
+    "end": 25.06,
+    "conf": 1.0
+  },
+  {
+    "word": "war",
+    "start": 25.06,
+    "end": 25.3,
+    "conf": 1.0
+  },
+  {
+    "word": "der",
+    "start": 25.3,
+    "end": 25.44,
+    "conf": 1.0
+  },
+  {
+    "word": "Wendepunkt.",
+    "start": 25.44,
+    "end": 26.0,
+    "conf": 1.0
+  }
+]

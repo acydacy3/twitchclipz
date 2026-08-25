@@ -81,6 +81,18 @@ def shot_filter(i, s):
     )
 
 
+def clip_filter(i, s):
+    """Einstellung aus einem VIDEO-Clip (z. B. Animation) statt Standbild.
+    Wird auf 9:16 skaliert, auf die Slot-Dauer getrimmt, Look angeglichen."""
+    dur = s["end"] - s["start"]
+    ss = s.get("clip_start", 0.0)
+    return (
+        f"[{i}:v]trim=start={ss}:duration={dur},setpts=PTS-STARTPTS,"
+        f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},"
+        f"setsar=1,fps={FPS},vignette=PI/5,format=yuv420p[v{i}]"
+    )
+
+
 def build(cfg):
     shots = cfg["shots"]
     t0, t1 = cfg["start"], cfg["end"]
@@ -162,8 +174,12 @@ def build(cfg):
     #  die Zeitachse und war der Grund, warum sich Einstellungen wiederholten.)
     inputs, filters, labels = [], [], []
     for i, s in enumerate(shots):
-        inputs += ["-i", s["img"]]
-        filters.append(shot_filter(i, s))
+        if s.get("clip"):
+            inputs += ["-i", s["clip"]]
+            filters.append(clip_filter(i, s))
+        else:
+            inputs += ["-i", s["img"]]
+            filters.append(shot_filter(i, s))
         labels.append(f"[v{i}]")
 
     chain = ";".join(filters)

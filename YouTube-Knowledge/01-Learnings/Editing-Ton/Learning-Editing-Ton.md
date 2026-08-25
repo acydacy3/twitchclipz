@@ -34,3 +34,9 @@ Vor Export via `videocheck.py` prüfen.
 
 ## Related
 [[Learning-Editing-Video]] · [[Learning-Captions]]
+
+## Musik war in V1–V5 nie hörbar (Nutzer-Befund 25.08.) — GELÖST
+Zwei Ursachen, beide gefixt:
+1. **Pegel zu tief:** Config `musik.db = -25` → unter dem Sidechain-Ducking praktisch unhörbar. **Fix: db ≈ -16** (Musik-Bett liegt bei ~-12 dB, bei -16 dB klar präsent unter der Stimme). Gegenprobe: `ffmpeg -af volumedetect` am fertigen Short.
+2. **Falsches CWD:** `short.py` ruft `musik.py`/`karaoke.py` **relativ** auf → **Render IMMER aus Repo-Root** (`/home/user/twitchclipz`) starten, sonst bricht `musik.py` (bzw. es lief bei falschem CWD gar nicht). 
+**Regel:** Musik nach jedem Video mit volumedetect verifizieren (mean sollte ~-16…-18 dB, nicht nur Stimme).

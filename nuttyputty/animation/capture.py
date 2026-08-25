@@ -15,7 +15,7 @@ N = int(FPS * DUR_MS / 1000)
 with sync_playwright() as p:
     b = p.chromium.launch(executable_path=CHROME, args=["--no-sandbox", "--force-color-profile=srgb"])
     pg = b.new_page(viewport={"width": 1080, "height": 1920}, device_scale_factor=1)
-    pg.add_init_script("window.__CAPTURE=true;")
+    pg.add_init_script("window.__CAPTURE=true;" + ("window.__CLEAN=true;" if __import__("os").environ.get("CLEAN") else ""))
     pg.goto(HTML)
     pg.wait_for_function("typeof window.__seek === 'function'")
     for i in range(N):

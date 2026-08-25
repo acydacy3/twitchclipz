@@ -14,3 +14,11 @@ animation/v3_*.png
 animation/check_*.png
 _probe_frame.png
 __pycache__/
+output/
+tmp/
+voiceover_dl/
+configs/
+_qc/
+_qc_contact.png
+_f*.png
+skripte/

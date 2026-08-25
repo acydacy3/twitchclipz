@@ -1,0 +1,368 @@
+[
+  {
+    "word": "Josh",
+    "start": 0.0,
+    "end": 0.34,
+    "conf": 1.0
+  },
+  {
+    "word": "krocht",
+    "start": 0.34,
+    "end": 0.72,
+    "conf": 1.0
+  },
+  {
+    "word": "zurück,",
+    "start": 0.72,
+    "end": 1.04,
+    "conf": 1.0
+  },
+  {
+    "word": "diesmal",
+    "start": 1.42,
+    "end": 1.92,
+    "conf": 1.0
+  },
+  {
+    "word": "mit",
+    "start": 1.92,
+    "end": 2.14,
+    "conf": 1.0
+  },
+  {
+    "word": "den",
+    "start": 2.14,
+    "end": 2.32,
+    "conf": 1.0
+  },
+  {
+    "word": "Füßen",
+    "start": 2.32,
+    "end": 2.78,
+    "conf": 1.0
+  },
+  {
+    "word": "voran.",
+    "start": 2.78,
+    "end": 3.24,
+    "conf": 1.0
+  },
+  {
+    "word": "Über",
+    "start": 3.76,
+    "end": 4.06,
+    "conf": 1.0
+  },
+  {
+    "word": "die",
+    "start": 4.06,
+    "end": 4.2,
+    "conf": 1.0
+  },
+  {
+    "word": "Kante",
+    "start": 4.2,
+    "end": 4.66,
+    "conf": 1.0
+  },
+  {
+    "word": "sah",
+    "start": 4.66,
+    "end": 4.92,
+    "conf": 1.0
+  },
+  {
+    "word": "er",
+    "start": 4.92,
+    "end": 5.1,
+    "conf": 1.0
+  },
+  {
+    "word": "das",
+    "start": 5.1,
+    "end": 5.28,
+    "conf": 1.0
+  },
+  {
+    "word": "Ende",
+    "start": 5.28,
+    "end": 5.56,
+    "conf": 1.0
+  },
+  {
+    "word": "von",
+    "start": 5.56,
+    "end": 5.78,
+    "conf": 1.0
+  },
+  {
+    "word": "John's",
+    "start": 5.78,
+    "end": 6.18,
+    "conf": 1.0
+  },
+  {
+    "word": "Bein",
+    "start": 6.18,
+    "end": 6.42,
+    "conf": 1.0
+  },
+  {
+    "word": "aus",
+    "start": 6.42,
+    "end": 6.54,
+    "conf": 1.0
+  },
+  {
+    "word": "dem",
+    "start": 6.54,
+    "end": 6.7,
+    "conf": 1.0
+  },
+  {
+    "word": "Steinragen,",
+    "start": 6.7,
+    "end": 7.38,
+    "conf": 1.0
+  },
+  {
+    "word": "als",
+    "start": 7.84,
+    "end": 8.06,
+    "conf": 1.0
+  },
+  {
+    "word": "hätte",
+    "start": 8.06,
+    "end": 8.26,
+    "conf": 1.0
+  },
+  {
+    "word": "ihn",
+    "start": 8.26,
+    "end": 8.44,
+    "conf": 1.0
+  },
+  {
+    "word": "der",
+    "start": 8.44,
+    "end": 8.58,
+    "conf": 1.0
+  },
+  {
+    "word": "Fels",
+    "start": 8.58,
+    "end": 8.9,
+    "conf": 1.0
+  },
+  {
+    "word": "verschluckt.",
+    "start": 8.9,
+    "end": 9.44,
+    "conf": 1.0
+  },
+  {
+    "word": "Er",
+    "start": 10.0,
+    "end": 10.1,
+    "conf": 1.0
+  },
+  {
+    "word": "bekam",
+    "start": 10.1,
+    "end": 10.4,
+    "conf": 1.0
+  },
+  {
+    "word": "ein",
+    "start": 10.4,
+    "end": 10.54,
+    "conf": 1.0
+  },
+  {
+    "word": "Bein",
+    "start": 10.54,
+    "end": 10.9,
+    "conf": 1.0
+  },
+  {
+    "word": "zu",
+    "start": 10.9,
+    "end": 11.06,
+    "conf": 1.0
+  },
+  {
+    "word": "fassen,",
+    "start": 11.06,
+    "end": 11.42,
+    "conf": 1.0
+  },
+  {
+    "word": "zog,",
+    "start": 11.92,
+    "end": 12.22,
+    "conf": 1.0
+  },
+  {
+    "word": "John",
+    "start": 12.68,
+    "end": 12.94,
+    "conf": 1.0
+  },
+  {
+    "word": "drückte",
+    "start": 12.94,
+    "end": 13.4,
+    "conf": 1.0
+  },
+  {
+    "word": "von",
+    "start": 13.4,
+    "end": 13.56,
+    "conf": 1.0
+  },
+  {
+    "word": "unten.",
+    "start": 13.56,
+    "end": 13.98,
+    "conf": 1.0
+  },
+  {
+    "word": "Nichts",
+    "start": 14.78,
+    "end": 15.16,
+    "conf": 1.0
+  },
+  {
+    "word": "bewegte",
+    "start": 15.16,
+    "end": 15.62,
+    "conf": 1.0
+  },
+  {
+    "word": "sich,",
+    "start": 15.62,
+    "end": 15.82,
+    "conf": 1.0
+  },
+  {
+    "word": "beide",
+    "start": 16.24,
+    "end": 16.52,
+    "conf": 1.0
+  },
+  {
+    "word": "völlig",
+    "start": 16.52,
+    "end": 16.88,
+    "conf": 1.0
+  },
+  {
+    "word": "erschöpft.",
+    "start": 16.88,
+    "end": 17.5,
+    "conf": 1.0
+  },
+  {
+    "word": "Josh",
+    "start": 18.0,
+    "end": 18.3,
+    "conf": 1.0
+  },
+  {
+    "word": "wusste,",
+    "start": 18.3,
+    "end": 18.76,
+    "conf": 1.0
+  },
+  {
+    "word": "das",
+    "start": 19.08,
+    "end": 19.28,
+    "conf": 1.0
+  },
+  {
+    "word": "schaffen",
+    "start": 19.28,
+    "end": 19.56,
+    "conf": 1.0
+  },
+  {
+    "word": "sie",
+    "start": 19.56,
+    "end": 19.74,
+    "conf": 1.0
+  },
+  {
+    "word": "nicht",
+    "start": 19.74,
+    "end": 19.92,
+    "conf": 1.0
+  },
+  {
+    "word": "allein.",
+    "start": 19.92,
+    "end": 20.28,
+    "conf": 1.0
+  },
+  {
+    "word": "Einer",
+    "start": 20.74,
+    "end": 20.94,
+    "conf": 1.0
+  },
+  {
+    "word": "blieb",
+    "start": 20.94,
+    "end": 21.22,
+    "conf": 1.0
+  },
+  {
+    "word": "bei",
+    "start": 21.22,
+    "end": 21.32,
+    "conf": 1.0
+  },
+  {
+    "word": "John,",
+    "start": 21.32,
+    "end": 21.58,
+    "conf": 1.0
+  },
+  {
+    "word": "er",
+    "start": 21.74,
+    "end": 21.8,
+    "conf": 1.0
+  },
+  {
+    "word": "selbst",
+    "start": 21.8,
+    "end": 22.1,
+    "conf": 1.0
+  },
+  {
+    "word": "rannte",
+    "start": 22.1,
+    "end": 22.5,
+    "conf": 1.0
+  },
+  {
+    "word": "los,",
+    "start": 22.5,
+    "end": 22.72,
+    "conf": 1.0
+  },
+  {
+    "word": "Hilfe",
+    "start": 23.18,
+    "end": 23.4,
+    "conf": 1.0
+  },
+  {
+    "word": "holen.",
+    "start": 23.4,
+    "end": 23.86,
+    "conf": 1.0
+  }
+]
