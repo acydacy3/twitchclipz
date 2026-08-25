@@ -4,3 +4,39 @@ cave_mammoth_1.jpg / cave_mammoth_2.jpg
 
 passage_crawl.jpg — Wikimedia Commons "Crawling into a small passage (Cleaveland Avenue, Mammoth Cave)", CC BY 2.0 (James St. John)
 cave_entrance.jpg — Wikimedia Commons "Himesakakanachiana Limestone Cave Entrance A", CC BY-SA 4.0
+short_04/01.jpg <- Commons 'File:Domepit (vertical shaft) in Great Onyx Cave (Flint Ridge, Mammoth Cave National Park, Kentucky, USA) 2 (8315925783).jpg', CC BY 2.0, James St. John
+short_08/01.jpg <- Commons 'File:While the Marine at the right covers a cave entrance with his Browning Automatic Rifle, stretcher bearers place a Jap prisoner on a a litter. (49673128652).jpg', Public domain, Signal Corps Archive from Ireland and United State
+short_09/01.jpg <- Commons 'File:Sport Climbing Equipment.jpg', CC BY-SA 4.0, Climber.Ben.Johnson
+short_01/01.jpg <- Commons 'File:Ice formations and icicles on limestone cave at Keila-Joa.jpg', CC BY-SA 4.0, Wiki Asmah
+short_01/02.jpg <- Commons 'File:Dixon Cave (Mammoth Cave National Park, Kentucky, USA) 2 (8329376001).jpg', CC BY 2.0, James St. John
+short_02/01.jpg <- Commons 'File:Nick Cave & The Bad Seeds @ Coliseu do Porto.jpg', CC BY 2.0, Jose Sa
+short_01/03.jpg <- Commons 'File:Aladdin’s Cave @ Woodsie’s Gem Shop, Nichols Point 20250215-122118.jpg' [Category:Cave interiors], CC0, RegionVisitor90
+short_02/02.jpg <- Commons 'File:001 Pohl Avenue 1 (8321976408).jpg' [Category:Caving], CC BY 2.0, James St. John
+short_02/03.jpg <- Commons 'File:1SifoneDiaol.JPG' [Category:Caving], CC BY-SA 3.0, ?
+short_03/01.jpg <- Commons 'File:Collection Georges Pradines spéléologue.jpg' [Category:Speleology], CC BY-SA 4.0, Elisa-dN
+short_03/02.jpg <- Commons 'File:Konglomerathöhle Rohrendorf PLDC0113.jpg' [Category:Speleology], CC BY-SA 4.0, Rawuzl
+short_03/03.jpg <- Commons 'File:Matxiplaken-koba.jpg' [Category:Speleology], CC BY-SA 4.0, AdesSpeleo
+short_04/01.jpg <- Commons 'File:MG 0380(1).jpg' [Category:Single Rope Technique], CC BY-SA 4.0, Medyassin85
+short_05/01.jpg <- Commons 'File:2016-12 Coupe du Matelot - canyon 03.jpg' [Category:Slot canyons], CC BY-SA 4.0, 0x010C
+short_05/02.jpg <- Commons 'File:2016-12 Coupe du Matelot 04.jpg' [Category:Slot canyons], CC BY-SA 4.0, 0x010C
+short_05/03.jpg <- Commons 'File:2016-12 Rivière à Mars 02.jpg' [Category:Slot canyons], CC BY-SA 4.0, 0x010C
+short_06/01.jpg <- Commons 'File:Inti Machai P1010956mod.jpg' [Category:Cave rescue], CC BY-SA 4.0, JYB Devot
+short_06/02.jpg <- Commons 'File:Inti Machay Rescate P1010803mod.jpg' [Category:Cave rescue], CC BY-SA 4.0, JYB Devot
+short_06/03.jpg <- Commons 'File:Inti Machay Rescate P1010805mod.jpg' [Category:Cave rescue], CC BY-SA 4.0, JYB Devot
+short_07/01.jpg <- Commons 'File:Inti Machai P1010956mod.jpg' [Category:Cave rescue], CC BY-SA 4.0, JYB Devot
+short_07/02.jpg <- Commons 'File:Inti Machay Rescate P1010805mod.jpg' [Category:Cave rescue], CC BY-SA 4.0, JYB Devot
+short_07/03.jpg <- Commons 'File:Inti Machay Rescate P1010808mod.jpg' [Category:Cave rescue], CC BY-SA 4.0, JYB Devot
+short_08/01.jpg <- Commons 'File:(12 février 1925), catastrophe de Dortmund (qui s'est produite le 11 février à 20 h dans une mine, secours aux victimes) (Rol) - btv1b53143563g.jpg' [Category:Mine rescue], Public domain, Agence Rol
+short_08/02.jpg <- Commons 'File:(12) février 1925, catastrophe de Dortmund (qui s'est produite le 11 février à 20 h dans une mine, secours d'une victime) (Rol) - btv1b53143580z.jpg' [Category:Mine rescue], Public domain, Agence Rol
+short_08/03.jpg <- Commons 'File:131203 Houghton Mines Rescue 005 Institution banner.jpg' [Category:Mine rescue], CC BY-SA 3.0, Robertforsythe
+short_09/01.jpg <- Commons 'File:2010-365-137 Off the Hook (4617716362).jpg' [Category:Carabiners], CC BY 2.0, cogdogblog
+short_09/02.jpg <- Commons 'File:A carabiner (mummy clip) with a broken pin.jpg' [Category:Carabiners], CC BY-SA 4.0, Sima shimony
+short_09/03.jpg <- Commons 'File:Abloy keys.jpg' [Category:Carabiners], CC BY-SA 2.0, Miia Ranta
+short_10/01.jpg <- Commons 'File:Capital Reef satellite image.jpg' [Category:Deserts of Utah], Public domain, ?
+short_10/02.jpg <- Commons 'File:ConfusionR.JPG' [Category:Deserts of Utah], CC BY-SA 3.0, Qfl247 (talk) (Transferred by 
+
+Citypeek/Original 
+short_10/03.jpg <- Commons 'File:Desert trees.jpg' [Category:Deserts of Utah], CC BY-SA 4.0, SelfieCity
+short_05/01.jpg <- Commons 'File:A natural cave near Green River, Utah - NARA - 516938.jpg' [Category:Caves of Utah], Public domain, William Henry Jackson
+short_05/02.jpg <- Commons 'File:Blowhole Cave Entrance.jpg' [Category:Caves of Utah], CC0, Burnsdye (talk) (Uploads)
+short_05/03.jpg <- Commons 'File:False Kiva (25835486043).jpg' [Category:Caves of Utah], CC BY 2.0, Andrew Kearns from Mill Valley, United States
