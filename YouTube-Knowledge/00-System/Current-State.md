@@ -14,9 +14,12 @@ tags: [system, state]
 
 > **Selbstprüfung (Session-Start):** Liegt der Vault `YouTube-Knowledge/` und `analyse.py` im Checkout und sagt `CLAUDE.md` NICHT „git push 403"? Dann bist du aktuell. Falls nein → Recovery-Schritte oben in `CLAUDE.md` („⚠️ ZUERST"). Branch-Namen wechseln je Session — der richtige Branch ist der, der **diesen Vault enthält** (25.08. konsolidiert; `main` ist veraltet, ohne Vault).
 
+## Nordstern-Ziel (messbar)
+- **YPP-Monetarisierung, Shorts-Pfad: 1.000 Abos + 10 Mio Shorts-Views in 90 Tagen** (vor der Feb-2027-Regel). Stand 25.08.: Abos **4,2 %**, Views **0,20 %** — Views-Soll ~111k/Tag vs. aktuell ~2k/Tag (Faktor ~55). **Fortschritt jede Session loggen** → [[Ziel-YPP-Monetarisierung]].
+
 ## Kanal
 - *Katastrophenprotokoll* (`UC1KCzLNlgGiYsLNQ7Z0HA-g`, DE), gegründet 15.08.2026.
-- **Gemessen 25.08. live (`analyse.py`):** **41 Abos**, **20.321 Aufrufe**, **39 Videos**, **17 terminiert**. Wachstum 2→9→37→41. **Starke Woche:** Amazonas-Serie zieht („92 Passagiere. 1 Überlebende." 1.821; dazu 1.261/1.240/1.181/1.151/1.135). *(Vor Produktion neu ziehen — analyse.py schlägt diese Notiz.)*
+- **Gemessen 25.08. live (`analyse.py`):** **42 Abos**, **20.321 Aufrufe**, **40 Videos**, **19 terminiert**. Wachstum 2→9→37→41. **Starke Woche:** Amazonas-Serie zieht („92 Passagiere. 1 Überlebende." 1.821; dazu 1.261/1.240/1.181/1.151/1.135). *(Vor Produktion neu ziehen — analyse.py schlägt diese Notiz.)*
 - Konto vidIQ: `kisha-ners@gmx.de`. Guthaben (19.08.): **30** (renewable 0/150,
   Add-on 30/80, refresh 15.09.2026). vidIQ nur auf Anfrage — Credits schonen.
 

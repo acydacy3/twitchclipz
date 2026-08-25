@@ -44,6 +44,7 @@ git for-each-ref --sort=-committerdate --format='%(committerdate:short) %(refnam
 
 ## Einstiegspunkte im Vault
 - **Start / Karte:** `YouTube-Knowledge/HOME.md`
+- **Nordstern-Ziel (messbar):** `YouTube-Knowledge/00-System/Ziel-YPP-Monetarisierung.md` — YPP: 1.000 Abos + 10 Mio Shorts-Views/90 Tage. Fortschritt jede Session loggen.
 - **Aktueller Stand:** `YouTube-Knowledge/00-System/Current-State.md`
 - **Was tun bei Session-Start / -Ende:** `YouTube-Knowledge/00-System/Memory-Workflow.md`
 - **Vor jedem Schnitt:** `YouTube-Knowledge/00-System/Schnitt-Protokoll.md`
