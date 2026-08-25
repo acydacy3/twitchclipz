@@ -11,10 +11,9 @@ Zweck des Projekts (Nutzer-Worte): *„Learning gemerkt, Fehler gemerkt, verbess
 immer aktueller Stand ohne Befehl."* Dieser Befehl ist die Hälfte davon, die nicht
 von allein läuft.
 
-> **Stand 24.08.2026 (geprüft):** `git push` ist **weiter 403-gesperrt**. Lokal
-> `commit` geht, aber die Sicherung läuft über **Google Drive + Datei-Handoff**
-> (Zip des Vaults an den Nutzer). Siehe
-> `YouTube-Knowledge/05-Decisions/Decision-Git-vs-Drive-Persistenz.md`.
+> **Stand 25.08.2026:** `git push` ist **freigeschaltet** — Persistenz läuft über
+> **Git (`commit` + `push`)**; der nächste Container klont den vollen Stand. Drive optional.
+> Siehe `YouTube-Knowledge/05-Decisions/Decision-Git-vs-Drive-Persistenz.md`.
 
 ---
 

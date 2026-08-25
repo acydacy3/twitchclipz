@@ -24,7 +24,7 @@ und ist hiermit korrigiert. Persistenz läuft daher weiter über Drive + Datei-H
 ## Entscheidung (Stand 24.08., korrigiert)
 1. **Primär (sobald Push freigeschaltet ist):** Vault + CLAUDE.md per
    `git commit` + `git push` (versioniert, Historie → [[Knowledge-Architecture]] §3).
-   **Aktuell nicht verfügbar (403).**
+   **Seit 25.08. verfügbar — Git ist der Weg.**
 2. **Aktuell aktiv:** `commit` lokal + **nach Google Drive sichern** (`/merken`) +
    **`SendUserFile`** an den Nutzer (Zip des Vaults). So wie schon die Ur-CLAUDE.md
    es beschrieb — die Push-Sperre ist real.
@@ -39,7 +39,7 @@ und ist hiermit korrigiert. Persistenz läuft daher weiter über Drive + Datei-H
 
 ## Offen / zu prüfen bei nächster Session
 - Gilt die Push-Freigabe **nur in dieser (Web-/Branch-)Umgebung** oder generell?
-  Falls eine reguläre Session wieder 403 sieht → Fallback greift automatisch.
+  (Historisch — nur falls je wieder 403: Drive-Fallback. Stand 25.08.: Push frei.)
 - `/merken` + `/neubeginn` wurden entsprechend aktualisiert (git zuerst, Drive Fallback).
 
 ## Related
