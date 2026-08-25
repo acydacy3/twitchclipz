@@ -1,4 +1,4 @@
-<title>Nutty Putty – Querschnitt-Animation</title>
+<title>Nutty Putty – Querschnitt-Animation v2</title>
 <style>
   html,body{margin:0;height:100%;background:#000;overflow:hidden}
   #stage{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
@@ -7,145 +7,156 @@
 <div id="stage">
 <svg id="svg" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid meet">
   <defs>
-    <!-- Fels-Textur -->
     <filter id="rock" x="-5%" y="-5%" width="110%" height="110%">
-      <feTurbulence type="fractalNoise" baseFrequency="0.012 0.02" numOctaves="4" seed="7" result="n"/>
-      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.32  0 0 0 0 0.19  0 0 0 0 0.11  0 0 0 0 1" result="brown"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.010 0.017" numOctaves="5" seed="11" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.30  0 0 0 0 0.18  0 0 0 0 0.10  0 0 0 0 1" result="brown"/>
       <feComposite in="brown" in2="SourceGraphic" operator="in" result="tex"/>
-      <feDiffuseLighting in="n" surfaceScale="3.2" diffuseConstant="1.05" lighting-color="#e8c8a0" result="light">
-        <feDistantLight azimuth="235" elevation="55"/>
+      <feDiffuseLighting in="n" surfaceScale="4.0" diffuseConstant="1.05" lighting-color="#f0d0a4" result="light">
+        <feDistantLight azimuth="235" elevation="52"/>
       </feDiffuseLighting>
       <feComposite in="light" in2="tex" operator="in" result="lit"/>
       <feBlend in="tex" in2="lit" mode="multiply"/>
     </filter>
-    <radialGradient id="vig" cx="50%" cy="46%" r="72%">
-      <stop offset="55%" stop-color="#000" stop-opacity="0"/>
-      <stop offset="100%" stop-color="#000" stop-opacity="0.9"/>
+    <!-- Sediment-Streifen (waagerecht gestreckte Noise) für Schichtung -->
+    <filter id="strata" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.002 0.06" numOctaves="2" seed="4"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.28 0"/>
+    </filter>
+    <radialGradient id="vig" cx="50%" cy="44%" r="70%">
+      <stop offset="52%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.92"/>
     </radialGradient>
     <linearGradient id="crackg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#0a0705"/>
-      <stop offset="100%" stop-color="#000"/>
+      <stop offset="0%" stop-color="#0b0806"/><stop offset="100%" stop-color="#000"/>
     </linearGradient>
-    <!-- Leucht-Glow für die Figur -->
-    <filter id="glow" x="-120%" y="-120%" width="340%" height="340%">
-      <feGaussianBlur stdDeviation="9" result="b1"/>
-      <feGaussianBlur stdDeviation="20" result="b2"/>
+    <filter id="glowW" x="-150%" y="-150%" width="400%" height="400%">
+      <feGaussianBlur stdDeviation="7" result="b1"/><feGaussianBlur stdDeviation="18" result="b2"/>
       <feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
   </defs>
 
-  <!-- Fels -->
-  <rect x="0" y="0" width="1080" height="1920" fill="#2b1a10" filter="url(#rock)"/>
-  <!-- Spalt (Querschnitt): waagerechter Kriechgang oben, dann senkrechter Riss nach unten -->
-  <path id="crack" d="M -40 560
-                      C 180 520, 340 600, 520 585
-                      C 610 578, 655 560, 690 585
-                      C 705 700, 675 900, 700 1080
-                      C 712 1220, 690 1330, 705 1470
-                      C 712 1560, 700 1650, 706 1760
-                      L 640 1760
-                      C 632 1600, 648 1470, 636 1330
-                      C 626 1200, 646 980, 612 720
-                      C 470 742, 250 690, 60 720
-                      C -10 726, -30 650, -40 620 Z"
-        fill="url(#crackg)"/>
-  <!-- kleine Schattenkante am Spalt -->
-  <path d="M -40 560 C 180 520, 340 600, 520 585 C 610 578, 655 560, 690 585"
-        fill="none" stroke="#000" stroke-opacity="0.55" stroke-width="10"/>
+  <rect width="1080" height="1920" fill="#2a1a11" filter="url(#rock)"/>
+  <rect width="1080" height="1920" filter="url(#strata)" opacity="0.5"/>
 
-  <!-- Figur -->
-  <g id="figure" filter="url(#glow)"></g>
+  <!-- Spalt: waagerechter Kriechgang (Figuren auf der Oberkante) + senkrechter Schlitz rechts -->
+  <path id="crack" d="M -40 820
+      C 160 806, 320 830, 470 824 C 560 820, 610 812, 664 826
+      C 690 900, 700 1040, 704 1180 C 708 1300, 700 1420, 706 1560
+      C 710 1650, 700 1720, 707 1820 L 636 1820
+      C 628 1690, 642 1560, 632 1420 C 624 1300, 640 1120, 604 900
+      C 470 918, 250 902, 60 918 C -12 924, -30 880, -40 862 Z"
+      fill="url(#crackg)"/>
+  <path d="M -40 820 C 160 806, 320 830, 470 824 C 560 820, 610 812, 664 826"
+        fill="none" stroke="#000" stroke-opacity="0.6" stroke-width="9"/>
 
-  <rect x="0" y="0" width="1080" height="1920" fill="url(#vig)" pointer-events="none"/>
+  <g id="figFollow"></g>
+  <g id="figLead"></g>
 
-  <!-- Caption oben (Referenz-Stil: gelbe Markierung) -->
+  <rect width="1080" height="1920" fill="url(#vig)" pointer-events="none"/>
+
   <g id="caption">
-    <rect x="70" y="120" rx="10" width="940" height="190" fill="#ffd400" opacity="0.96"/>
-    <text x="540" y="200" text-anchor="middle" font-family="Arial Black, Arial, sans-serif"
-          font-weight="900" font-size="72" fill="#111">Er zwängte sich kopfüber</text>
-    <text x="540" y="278" text-anchor="middle" font-family="Arial Black, Arial, sans-serif"
-          font-weight="900" font-size="72" fill="#111">in den Spalt …</text>
+    <rect x="70" y="120" rx="10" width="940" height="192" fill="#ffd400" opacity="0.96"/>
+    <text x="540" y="202" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="70" fill="#111">Er zwängte sich kopfüber</text>
+    <text x="540" y="280" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="70" fill="#111">in den Spalt …</text>
   </g>
-  <!-- Teil-Leiste -->
-  <g>
-    <rect x="440" y="1800" rx="14" width="200" height="72" fill="#c81e1e"/>
-    <text x="540" y="1850" text-anchor="middle" font-family="Arial Black, Arial, sans-serif"
-          font-weight="900" font-size="44" fill="#fff">TEIL 1</text>
-  </g>
+  <g><rect x="440" y="1798" rx="14" width="200" height="72" fill="#c81e1e"/>
+    <text x="540" y="1848" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="44" fill="#fff">TEIL 1</text></g>
 </svg>
 </div>
 <script>
-const NS="http://www.w3.org/2000/svg";
-const crack=document.getElementById("crack");
-const figG=document.getElementById("figure");
-const DUR=8000;
+const NS="http://www.w3.org/2000/svg", DUR=9000;
+const gLead=document.getElementById("figLead"), gFollow=document.getElementById("figFollow");
+const smooth=x=>{x=Math.max(0,Math.min(1,x));return x*x*x*(x*(x*6-15)+10);}; // smootherstep
+const lerp=(a,b,u)=>a+(b-a)*u;
 
-// Bewegungspfad der Figur: Kriechgang -> Spaltmund -> hinabgleiten -> verkeilt
-// Punkte (x,y,ang in grad, phase) key-frames; interpoliert.
-const KEYS=[
-  {t:0.00, x:-60,  y:600,  ang:0,   crawl:1},
-  {t:0.28, x:300,  y:640,  ang:4,   crawl:1},
-  {t:0.44, x:600,  y:640,  ang:20,  crawl:1},   // am Spaltmund
-  {t:0.55, x:672,  y:720,  ang:110, crawl:0.4}, // kippt kopfüber hinein
-  {t:0.70, x:678,  y:1040, ang:178, crawl:0.15},// gleitet hinab
-  {t:0.80, x:676,  y:1300, ang:186, crawl:0},   // verkeilt (kopfüber ~70-90°)
-  {t:1.00, x:676,  y:1330, ang:188, crawl:0},   // festsitzend, minimales Zucken
-];
-function lerp(a,b,u){return a+(b-a)*u;}
-function sample(p){
-  p=Math.max(0,Math.min(1,p));
-  for(let i=0;i<KEYS.length-1;i++){
-    const k=KEYS[i],n=KEYS[i+1];
-    if(p<=n.t){const u=(p-k.t)/(n.t-k.t);
-      return {x:lerp(k.x,n.x,u),y:lerp(k.y,n.y,u),ang:lerp(k.ang,n.ang,u),crawl:lerp(k.crawl,n.crawl,u)};}
+// ---- Bewegungsplan Lead: waagerecht kriechen -> in Schlitz kippen -> senkrecht hinab -> verkeilt senkrecht ----
+// Segmente [p0,p1] mit Modus. crawl-Distanz treibt Gliedmaßen; Vorwärts kommt in LUNGES (Zug-und-Halt) -> nicht schwimmend.
+function leadState(p){
+  // Krabbel-Lunge: Distanz entlang Gang, mit Ruck pro Zyklus
+  if(p<0.46){                                   // kriechen auf der Kante bis Schlitzmund (x -120 -> 675)
+    const u=smooth(p/0.46);
+    const lunge=0.5-0.5*Math.cos(u*Math.PI*7);  // 7 Züge, jeder Zug schiebt vor
+    const uu=0.82*u+0.18*lunge*(1-Math.abs(u-0.5)*1.2);
+    const x=lerp(-120,675,Math.max(0,Math.min(1,uu)));
+    const bob=Math.sin(u*Math.PI*7)*7;          // Körper-Wippen im Takt
+    return {x, y:788+bob, ang:2*Math.sin(u*Math.PI*7), crawl:1, phase:u*Math.PI*7, mode:"crawl"};
+  } else if(p<0.60){                            // Kopf voran über die Kante kippen (ang 0->90 senkrecht)
+    const u=smooth((p-0.46)/0.14);
+    return {x:lerp(675,700,u), y:lerp(788,900,u), ang:lerp(4,90,u), crawl:0.5, phase:u*4, mode:"tip"};
+  } else if(p<0.78){                            // senkrecht hinabrutschen (beschleunigt: Reibung ruckt)
+    const u=(p-0.60)/0.18, e=u*u;              // ease-in = Gleiten mit Nachrutschen
+    const slip=e + 0.02*Math.sin(u*Math.PI*9)*(1-u); // kleine Rutsch-Rucke
+    return {x:702, y:lerp(900,1300,slip), ang:lerp(90,90,u), crawl:0.15, phase:u*3, mode:"slide"};
+  } else {                                      // VERKEILT, senkrecht kopfüber, zappelt/erschöpft
+    const u=(p-0.78)/0.22;
+    const tremor=Math.sin(u*60)*2.2*(1-u) + Math.sin(u*23)*1.2;
+    const kick=(Math.sin(u*9)>0.85)? Math.sin(u*40)*10:0; // gelegentlicher Beinschlag
+    return {x:702+tremor, y:1302, ang:90, crawl:0, phase:kick*0.05, mode:"stuck", kick};
   }
-  const last=KEYS[KEYS.length-1];return {x:last.x,y:last.y,ang:last.ang,crawl:0};
 }
-// Strichfigur zeichnen (Kopf + Rumpf + Gliedmaßen), Gliedmaßen wackeln = Kriechzyklus
-function drawFigure(tMs){
-  const p=tMs/DUR;
-  const s=sample(p);
-  const cyc=Math.sin(tMs/180)*s.crawl;      // Krabbel-Wackeln
-  const struggle=(p>0.8)? Math.sin(tMs/120)*3 : 0; // Zucken beim Festsitzen
-  const R=70; // Körpergröße
-  const head=18;
-  // Gelenke im lokalen Raum (Figur liegt bäuchlings, Kopf bei +x)
-  const j=[
-    // Rumpf
-    ["M",  R*0.55,0], ["L", -R*0.55,0],
-  ];
-  // Bau als Polylines: Rumpf, 2 Arme, 2 Beine, Kopf
-  function line(x1,y1,x2,y2){const l=document.createElementNS(NS,"line");
-    l.setAttribute("x1",x1);l.setAttribute("y1",y1);l.setAttribute("x2",x2);l.setAttribute("y2",y2);
-    l.setAttribute("stroke","#fff");l.setAttribute("stroke-width","13");l.setAttribute("stroke-linecap","round");return l;}
-  figG.innerHTML="";
+// Follower (Bruder, orange): kriecht hinterher, hält am Schlitzmund an und schaut
+function followState(p){
+  if(p<0.55){
+    const u=smooth(p/0.55);
+    const lunge=0.5-0.5*Math.cos(u*Math.PI*7);
+    const uu=0.82*u+0.18*lunge*(1-Math.abs(u-0.5)*1.2);
+    const x=lerp(-360,560,Math.max(0,Math.min(1,uu)));
+    return {x, y:792+Math.sin(u*Math.PI*7)*6, ang:2*Math.sin(u*Math.PI*7), crawl:1, phase:u*Math.PI*7};
+  }
+  const u=smooth((p-0.55)/0.2);                 // bremst am Mund ab
+  return {x:lerp(560,588,Math.min(1,u)), y:792, ang:6, crawl:1-Math.min(1,u)*0.85, phase:2+u*2, look:1};
+}
+
+// ---- artikulierte Krabbel-Figur ----
+function limb(x1,y1,x2,y2,x3,y3,col,w){ // 2-Segment-Glied als Polyline
+  const pl=document.createElementNS(NS,"polyline");
+  pl.setAttribute("points",`${x1},${y1} ${x2},${y2} ${x3},${y3}`);
+  pl.setAttribute("fill","none");pl.setAttribute("stroke",col);
+  pl.setAttribute("stroke-width",w);pl.setAttribute("stroke-linecap","round");
+  pl.setAttribute("stroke-linejoin","round");return pl;
+}
+function drawFigure(host,s,col){
+  host.innerHTML="";
   const g=document.createElementNS(NS,"g");
-  g.setAttribute("transform",`translate(${s.x},${s.y}) rotate(${s.ang}) translate(${struggle},0)`);
-  // Rumpf
-  g.appendChild(line(R*0.5,0,-R*0.5,0));
-  // Arme (vorne, Richtung Kopf) – wackeln gegenläufig
-  g.appendChild(line(R*0.4,0, R*0.9, 26+cyc*16));
-  g.appendChild(line(R*0.4,0, R*0.9,-26-cyc*16));
-  // Beine (hinten)
-  g.appendChild(line(-R*0.45,0,-R*0.95, 24-cyc*16));
-  g.appendChild(line(-R*0.45,0,-R*0.95,-24+cyc*16));
-  // Kopf
-  const c=document.createElementNS(NS,"circle");
-  c.setAttribute("cx",R*0.62);c.setAttribute("cy",0);c.setAttribute("r",head);
-  c.setAttribute("fill","#fff");g.appendChild(c);
-  // Helmlicht-Kegel
+  g.setAttribute("transform",`translate(${s.x},${s.y}) rotate(${s.ang})`);
+  const w=13, R=40;                             // Körpermaß (Kopf bei +x)
+  const ph=s.phase||0, c=s.crawl||0;
+  const armSw=Math.sin(ph)*c, legSw=Math.sin(ph+Math.PI)*c;
+  // Rumpf (leicht gekrümmt)
+  const torso=document.createElementNS(NS,"path");
+  torso.setAttribute("d",`M ${R*0.7} 0 Q 0 ${-4-2*Math.cos(ph)*c} ${-R*0.75} 0`);
+  torso.setAttribute("fill","none");torso.setAttribute("stroke",col);
+  torso.setAttribute("stroke-width",w+2);torso.setAttribute("stroke-linecap","round");g.appendChild(torso);
+  // vorderer Arm (greift/zieht) + hinterer Arm
+  g.appendChild(limb(R*0.5,0,  R*0.9, 14, R*1.15+armSw*12, 30, col, w));
+  g.appendChild(limb(R*0.5,0,  R*0.85,-14, R*1.05-armSw*12,-30, col, w));
+  // vorderes Bein + hinteres Bein (schieben)
+  g.appendChild(limb(-R*0.6,0, -R*0.95, 14, -R*1.2-legSw*12, 30, col, w));
+  g.appendChild(limb(-R*0.6,0, -R*0.9,-14, -R*1.1+legSw*12,-30, col, w));
+  if(s.kick){ // Beinschlag beim Festsitzen
+    g.appendChild(limb(-R*0.6,0,-R*0.95,10,-R*1.2,10+s.kick,col,w));
+  }
+  // Kopf + Helmlicht
+  const head=document.createElementNS(NS,"circle");
+  head.setAttribute("cx",R*0.82);head.setAttribute("cy",0);head.setAttribute("r",16);head.setAttribute("fill",col);g.appendChild(head);
   const beam=document.createElementNS(NS,"path");
-  beam.setAttribute("d",`M ${R*0.62} 0 L ${R*0.62+140} -60 L ${R*0.62+140} 60 Z`);
-  beam.setAttribute("fill","#fff");beam.setAttribute("opacity","0.10");g.appendChild(beam);
-  figG.appendChild(g);
-  // Glow-Puls beim Festsitzen
-  const pulse = p>0.8 ? 0.75+0.25*Math.sin(tMs/300) : 1;
-  figG.setAttribute("opacity", pulse.toFixed(3));
+  beam.setAttribute("d",`M ${R*0.82} 0 L ${R*0.82+150} -55 L ${R*0.82+150} 55 Z`);
+  beam.setAttribute("fill",col);beam.setAttribute("opacity","0.09");g.appendChild(beam);
+  host.appendChild(g);
 }
-// deterministischer Seek für Frame-Capture
-window.__seek=function(ms){drawFigure(((ms%DUR)+DUR)%DUR);};
-// Live-Loop im Browser/Artifact
+
+function render(tMs){
+  const p=(((tMs%DUR)+DUR)%DUR)/DUR;
+  // Follower zuerst (hinter Lead)
+  const f=followState(p); drawFigure(gFollow,f,"#ff8a3c");
+  gFollow.setAttribute("filter","url(#glowW)");
+  const s=leadState(p);   drawFigure(gLead,s,"#ffffff");
+  gLead.setAttribute("filter","url(#glowW)");
+  const pulse = s.mode==="stuck" ? 0.72+0.28*Math.sin(tMs/260) : 1;
+  gLead.setAttribute("opacity",pulse.toFixed(3));
+}
+window.__seek=function(ms){render(ms);};
 let start=null;
-function loop(ts){ if(start===null)start=ts; window.__seek(ts-start); requestAnimationFrame(loop); }
-if(!window.__CAPTURE){ requestAnimationFrame(loop); } else { window.__seek(0); }
+function loop(ts){if(start===null)start=ts;render(ts-start);requestAnimationFrame(loop);}
+if(!window.__CAPTURE){requestAnimationFrame(loop);}else{render(0);}
 </script>

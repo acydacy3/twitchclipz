@@ -9,7 +9,7 @@ FRAMES = HERE / "frames"
 FRAMES.mkdir(exist_ok=True)
 CHROME = "/opt/pw-browsers/chromium-1194/chrome-linux/chrome"
 FPS = 25
-DUR_MS = 8000
+DUR_MS = 9000
 N = int(FPS * DUR_MS / 1000)
 
 with sync_playwright() as p:
