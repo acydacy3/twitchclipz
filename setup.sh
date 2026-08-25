@@ -111,3 +111,6 @@ printf '  Apify      — kostenpflichtiger Cloud-Dienst, braucht Konto und Schlu
 printf '               Transkripte holt hoeren.py lokal und kostenlos.\n'
 printf '  Higgsfield — reiner Webdienst ohne lokales Paket. Bleibt Handarbeit.\n'
 echo "=== fertig ==="
+
+# --- Zusatz-Werkzeuge (pytrends/rembg/realesrgan/manim/piper) einmalig installieren ---
+bash /home/user/twitchclipz/tools/setup-tools.sh >/dev/null 2>&1 &

@@ -1,0 +1,34 @@
+#!/usr/bin/env python3
+"""Manim-Szenen-Vorlagen fuer Katastrophen-Erklaervideos (Querschnitt, Zeitleiste, Karte).
+Render 9:16: manim -qh -r 1080,1920 tools/manim_scenes.py CrossSection
+(braucht manim aus setup-tools.sh). Ergebnis in media/videos/... -> in short.py als {"clip":...}."""
+try:
+    from manim import *
+except Exception:
+    import sys; print("manim nicht installiert (setup-tools.sh)"); sys.exit(0)
+
+class CrossSection(Scene):
+    """Beispiel: Fels-Querschnitt mit engem Spalt + leuchtender Figur, die hinabgleitet."""
+    def construct(self):
+        self.camera.background_color = "#170f0a"
+        rock = Rectangle(width=10, height=18, fill_color="#2a1a11", fill_opacity=1, stroke_width=0)
+        self.add(rock)
+        crack = VMobject(stroke_width=0, fill_color="#050302", fill_opacity=1)
+        crack.set_points_as_corners([[-5,4,0],[1,4,0],[1.2,3,0],[1.0,-2,0],[1.3,-6,0],[0.7,-6,0],[0.5,-2,0],[0.6,3,0],[-5,3.2,0]])
+        self.add(crack)
+        fig = Dot(color=YELLOW).scale(1.6).set_glow_factor(2)
+        fig.move_to([-4.5,3.5,0])
+        self.play(fig.animate.move_to([0.9,3.4,0]), run_time=2.2, rate_func=rate_functions.ease_in_out_sine)
+        self.play(fig.animate.move_to([1.0,-5.5,0]), run_time=1.6, rate_func=rate_functions.ease_in_quad)
+        self.wait(0.6)
+
+class Timeline(Scene):
+    """Beispiel: Rettungs-Zeitleiste (Stunden/Tage) mit Markern."""
+    def construct(self):
+        self.camera.background_color = "#0e0e12"
+        line = Line([-5,0,0],[5,0,0], color=GREY_B)
+        self.play(Create(line), run_time=0.8)
+        for x,lbl in [(-4,"0 h"),(-1,"3 h"),(2,"19 h"),(4.5,"27 h")]:
+            d=Dot([x,0,0],color=RED); t=Text(lbl,font_size=34).next_to(d,UP)
+            self.play(FadeIn(d),FadeIn(t),run_time=0.4)
+        self.wait(0.5)

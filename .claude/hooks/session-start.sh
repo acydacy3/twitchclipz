@@ -70,6 +70,14 @@ fi
 echo 'export PYTHONUNBUFFERED=1' >> "${CLAUDE_ENV_FILE:-/dev/null}" 2>/dev/null || true
 echo "export VOSK_MODEL=$MODELL" >> "${CLAUDE_ENV_FILE:-/dev/null}" 2>/dev/null || true
 
+# -------------------------------------------- Zusatz-Werkzeuge (Hintergrund)
+# pytrends/rembg/realesrgan/manim/piper einmal je Container installieren.
+# Laeuft DETACHT im Hintergrund und schreibt NUR ins Log -> 0 Token im Kontext.
+# Marker $HOME/.nb_tools_ready verhindert Mehrfach-Installation.
+if [ ! -f "$HOME/.nb_tools_ready" ] && [ -f "$PROJEKT/tools/setup-tools.sh" ]; then
+  nohup bash "$PROJEKT/tools/setup-tools.sh" >/dev/null 2>&1 &
+fi
+
 # ---------------------------------------------------------------- Bericht
 # Alles ab hier landet im Sitzungskontext. Claude sieht damit sofort, was
 # geht und was nicht, statt es erst im Fehlerfall zu merken.
