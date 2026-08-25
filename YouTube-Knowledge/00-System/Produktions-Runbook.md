@@ -31,8 +31,9 @@ tags: [process, produktion, runbook, pipeline]
 - Nach jedem Batch **verifizieren** (`ffprobe` Dauer je mp4); „completed exit 0"-Notifs kommen manchmal voreilig.
 
 ## 5. Upload (nur YouTube)
-- `upload_all.py` lädt privat + `publishAt` (geplant), liest `metadata.json`.
+- `upload_all.py` lädt privat + `publishAt` (geplant), liest `metadata.json` (Publish-Zeiten werden pro Short in `metadata.json` gesetzt).
 - **YouTube-Tages-Upload-Limit ~9–10 Videos/Tag** (`uploadLimitExceeded`). Bei V4 kam Short 10 nicht mehr durch → **Rest am Folgetag** (Kontingent-Reset ~00:00 PT ≈ 07:00 UTC). **Nie `upload_all.py` erneut ganz laufen lassen** (dupliziert 01-09) — nur die fehlenden einzeln.
+- **Schedule-Kadenz = bündig 3 Shorts/Tag, durchlaufend über Geschichten hinweg (Nutzer-Regel 25.08.).** Slots: **10:30 / 14:30 / 18:00 UTC**. Der Zähler läuft nicht pro Geschichte zurück: **endet eine Short-Reihe mitten am Tag, wird der Resttag mit den ERSTEN Shorts der nächsten Geschichte auf 3 aufgefüllt** — nicht auf 2 stehen lassen und **nicht** die neue Reihe künstlich erst am Folgetag frisch starten. Beim Setzen der `publishAt`-Zeiten also einfach am letzten belegten Slot der Vorgeschichte lückenlos weiterzählen. (Auslöser: 27.08. hatte nur 2 Okene-Shorts, weil dort Okene endete — richtig wäre gewesen, den 3. Slot mit Lengede-Short 1 zu füllen.)
 
 ## 6. Bilder generieren
 - **Z-Image Turbo (HF)** gratis, aber **~8 Bilder/Tag** (ZeroGPU-Kontingent). Für den Rest higgsfield (Credits) oder Folgetag.
