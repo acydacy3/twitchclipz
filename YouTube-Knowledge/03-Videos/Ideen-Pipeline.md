@@ -52,5 +52,10 @@ tags: [ideen, pipeline, recherche, video]
 - Cruz Velázquez — Meth an der Grenze (169k, 912 Kommentare). Empörungs-Trigger. Hook: „‚Beweis, dass es nur Saft ist' — 4 Schlücke später ist der 16-Jährige tot."
 - Ballon-Absturz Praia Grande 2025; Selfie-Tod-Serie; Airshow-Katastrophe (Ramstein 1988 als DE-Pendant, Langvideo).
 
+## Themen für morgen (24.08. recherchiert, SEO-Agenten)
+- **Nutty Putty Cave / John Edward Jones (2009):** 26-j. Familienvater bleibt kopfüber in 25-cm-Spalt stecken (~120 m tief), >100 Retter/~27 h, Flaschenzug versagt → fällt zurück, stirbt kopfüber; Höhle mit ihm **zubetoniert**. Hook: „25 cm — schmaler als dein Bildschirm. 27 Stunden kopfüber." DE ungesättigt (Doku-Level), trendet 2025/26. Copyright: kein „Last Descent"-Film, keine Familienfotos; eigene Querschnitt-Grafik + KI-Reko.
+- **Mauro Prosperi — 9 Tage Sahara (1994):** Marathon des Sables, Sandsturm, **291 km falsch**, ~9–10 Tage fast ohne Wasser, Fledermausblut/Urin, Suizidversuch scheitert (Blut zu dick) → rettet ihn; Tuareg finden ihn. Hook: „Er wollte sich die Pulsadern öffnen — kein Blut floss. Zu dick. Das rettete ihn." DE teils via Galileo bekannt → nüchterne Fall-Erzählung differenziert. Alternative: Alvarenga (438 Tage Pazifik), aber sensibler.
+- **Vorbehalt:** vidIQ war ohne Credits → hartes Kriterium (junger DE-Kanal 1–7 Mon., >200k) vor Schnitt per `vidiq_outliers` nachziehen.
+
 ## Related
 [[Learning-Bilder-Prompts]] · [[Learning-Topics-Themenwahl]] · [[Analytics-Loop]] · [[Current-State]] · [[Failure-Memory]]

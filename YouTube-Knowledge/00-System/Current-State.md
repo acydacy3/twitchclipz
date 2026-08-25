@@ -23,7 +23,8 @@ tags: [system, state]
 - [[Video-02-San-Jose]] — fertig + terminiert (11 Shorts + Langvideo, 18.–20.08.).
 - [[Video-03-Koepcke]] — fertig, hochgeladen, terminiert 21.–24.08. (10 Shorts, 3/Tag). Titel-Score Short 1: 74/100.
 - **Video 4 (Okene/Jascon-4) PRODUZIERT + terminiert (24.08.):** 10 Shorts gerendert, **9/10 geplant** (24.–27.08.); Short 10 offen wg. YouTube-Tages-Uploadlimit → Retry 25.08. Siehe [[Video-04-Okene]], [[Produktions-Runbook]].
-- **Video 5 Kandidat:** Lengede (DE-Anker) — Recherche liegt vor in [[Ideen-Pipeline]].
+- **Video 5 Lengede PRODUZIERT (24.08.):** 10/10 gerendert; Upload/Schedule (28.–31.08.) läuft per Trigger 25.08. Siehe [[Video-05-Lengede]].
+- **Nächste Session:** Konstrukt-Auditor (Aufgabe 2) + Tagesabschluss (Aufgabe 3) offen. **Voller Tagesstand: [[Handoff-2026-08-24]] (zuerst lesen).** Themen morgen: Nutty Putty + Prosperi ([[Ideen-Pipeline]]).
 
 ## Zugänge (Stand 19.08.)
 - **YouTube Data + Analytics API:** OAuth-Refresh-Token gültig, Uploads/Analytics/Terminierung produktiv.
