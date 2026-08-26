@@ -41,6 +41,7 @@ tags: [system, ziel, ypp, monetarisierung, metrik, nordstern]
 | Datum | Abos | 90-Tage-Views | Views/Tag (7d) | Fortschritt Views | Fortschritt Abos | Notiz |
 |-------|------|---------------|----------------|-------------------|------------------|-------|
 | 2026-08-25 | 42 | 20.321 | ~2.000 | 0,20 % | 4,2 % | Baseline. V6 Nutty Putty terminiert (31.08–03.09). Faktor ~55 zum Views-Soll. |
+| 2026-08-26 | 42 | 23.727 | ~3.406 | 0,24 % | 4,2 % | V6 Upload komplett (10/10). 25 terminiert. Views +3.406 in 1 Tag — bestes Tageswachstum. |
 
 ## Related
 [[Current-State]] · [[Mission]] · [[Analytics-Loop]] · [[Learning-Hooks]] · [[Learning-Retention-und-Laenge]] · [[Ideen-Pipeline]]

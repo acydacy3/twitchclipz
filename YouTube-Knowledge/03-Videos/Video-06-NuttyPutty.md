@@ -1,6 +1,6 @@
 ---
 type: video
-status: in-production
+status: published
 created: 2026-08-25
 updated: 2026-08-25
 tags: [video, nuttyputty, john-jones, hoehle, shorts, animation]
@@ -27,7 +27,7 @@ bergbar → Höhle **mit Beton versiegelt**, Plakette. Quelle: Nutzer-Originalsk
 - **Animation-Opener** in Short 1 (Clip in `short.py`), Karaoke-Captions (104, Gold), **Musik hörbar (db −16)**, TEIL-Leisten, Hooks 1/5/9.
 - **Bilder:** autonom aus Commons-Kategorien, Kontaktabzug-QC (`_qc_contact.png`), Ausreißer ersetzt. Alle CC, Attribution in `broll/ATTRIBUTION.txt`.
 - **Schedule bündig:** `metadata.json` 31.08 14:30 → 03.09 14:30 (3/Tag, direkt nach Lengede-Ende 31.08 10:30).
-- **Upload OFFEN:** YouTube-Tageslimit 25.08 erschöpft → **morgen `python3 nuttyputty/nb_upload.py`** aus Repo-Root (idempotent, Container bleibt; mp4s liegen in output/). Danach analyse.py-Gegenprobe.
+- **Upload KOMPLETT (26.08.):** Alle 10/10 auf YouTube, terminiert 31.08–03.09. Video-IDs: 4GkOwMTK2wg, 3jxWF-q1PHs, tSThDXuOXLA, 76DTKtDMoco, FybNE9VLhvM, DerrzWpeMnE, vNJCFx-9lt4, VjAp7V9XoWQ, gmyUpMvDtRM, 2ybiOCFc4qQ. `analyse.py`-Gegenprobe bestätigt (25 terminiert gesamt).
 - **Reproduzierbar aus Git:** VO + Bilder + metadata + Skripte committet.
 - **Validierungs-Regel (Nutzer 25.08.):** ab nächstem Projekt vorab **Bild-Übersicht pro Short** (gelabelt S01-01…) zeigen, bis blindes Vertrauen.
 

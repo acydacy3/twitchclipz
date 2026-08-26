@@ -10,7 +10,7 @@ tags: [system, state]
 
 > Diese Note ist der **operative Schnappschuss**. Sie wird bei jeder Session
 > aktualisiert (Stand-Zahlen kommen aus `analyse.py`, nicht aus dem Gedächtnis —
-> gemessenes gewinnt gegen notiertes). Letztes Update: **2026-08-25**.
+> gemessenes gewinnt gegen notiertes). Letztes Update: **2026-08-26**.
 
 > **Selbstprüfung (Session-Start):** Liegt der Vault `YouTube-Knowledge/` und `analyse.py` im Checkout und sagt `CLAUDE.md` NICHT „git push 403"? Dann bist du aktuell. Falls nein → Recovery-Schritte oben in `CLAUDE.md` („⚠️ ZUERST"). Branch-Namen wechseln je Session; **`main` ist jetzt AKTUELL** (25.08. voll synchronisiert) — ebenso der jeweilige `claude/…`-Branch. Der richtige Checkout ist jeder, der **diesen Vault + `tools/`** enthält.
 
@@ -19,7 +19,7 @@ tags: [system, state]
 
 ## Kanal
 - *Katastrophenprotokoll* (`UC1KCzLNlgGiYsLNQ7Z0HA-g`, DE), gegründet 15.08.2026.
-- **Gemessen 25.08. live (`analyse.py`):** **42 Abos**, **20.321 Aufrufe**, **40 Videos**, **19 terminiert**. Wachstum 2→9→37→41. **Starke Woche:** Amazonas-Serie zieht („92 Passagiere. 1 Überlebende." 1.821; dazu 1.261/1.240/1.181/1.151/1.135). *(Vor Produktion neu ziehen — analyse.py schlägt diese Notiz.)*
+- **Gemessen 26.08. live (`analyse.py`):** **42 Abos**, **23.727 Aufrufe**, **41 Videos**, **25 terminiert**. Wachstum 2→9→37→41. **Starke Woche:** Amazonas-Serie zieht („92 Passagiere. 1 Überlebende." 1.821; dazu 1.261/1.240/1.181/1.151/1.135). *(Vor Produktion neu ziehen — analyse.py schlägt diese Notiz.)*
 - Konto vidIQ: `kisha-ners@gmx.de`. Guthaben (19.08.): **30** (renewable 0/150,
   Add-on 30/80, refresh 15.09.2026). vidIQ nur auf Anfrage — Credits schonen.
 
@@ -29,7 +29,8 @@ tags: [system, state]
 - [[Video-03-Koepcke]] — fertig, hochgeladen, terminiert 21.–24.08. (10 Shorts, 3/Tag). Titel-Score Short 1: 74/100.
 - **Video 4 (Okene/Jascon-4) PRODUZIERT + terminiert (24.08.):** 10 Shorts gerendert, **9/10 geplant** (24.–27.08.); Short 10 via Trigger 25.08. Siehe [[Video-04-Okene]], [[Produktions-Runbook]].
 - **Video 5 Lengede FERTIG + TERMINIERT (verifiziert 25.08. via `analyse.py`):** alle **10/10 Shorts terminiert (28.–31.08.)**. Okene-Shorts ebenfalls terminiert (25.–27.08.). Trigger lief durch. Siehe [[Video-05-Lengede]].
-- **NÄCHSTER SCHRITT:** (1) **V6 Nutty Putty hochladen** — `python3 nuttyputty/nb_upload.py` aus Repo-Root nach YouTube-Quota-Reset (~07:00 UTC); mp4s liegen in `nuttyputty/output/` (reproduzierbar via `nb_build.py`). Danach `analyse.py`-Gegenprobe. (2) **V7 Mauro Prosperi (Sahara 1994)** produzieren — Composite-Short mit **Manim-Karte (291-km-Route) + 9-Tage-Zeitleiste**, KI-Schlüsselbildern + Stock. Skill `/video`. → [[Ideen-Pipeline]]
+- **Video 6 Nutty Putty FERTIG + TERMINIERT (26.08.):** alle 10/10 Shorts hochgeladen, Schedule 31.08–03.09 (3/Tag bündig nach Lengede). Siehe [[Video-06-NuttyPutty]].
+  - **NÄCHSTER SCHRITT:** **V7 Mauro Prosperi (Sahara 1994)** produzieren — Composite-Short mit **Manim-Karte (291-km-Route) + 9-Tage-Zeitleiste**, KI-Schlüsselbildern + Stock. Skill `/video`. → [[Ideen-Pipeline]]
 - **Voller Tagesstand: [[Handoff-2026-08-24]] + [[Audit-2026-08-25]] (zuerst lesen).**
 
 ## Zugänge (Stand 19.08.)
