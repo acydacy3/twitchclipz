@@ -113,10 +113,10 @@ def build(cfg):
     m = subprocess.run(
         ["ffmpeg", "-hide_banner", "-nostats",
          "-ss", str(t0), "-to", str(t1), "-i", cfg["audio"],
-         "-af", "loudnorm=I=-14:TP=-1.5:LRA=11:print_format=json",
+         "-af", "loudnorm=I=-16:TP=-1.5:LRA=11:print_format=json",
          "-f", "null", "-"], capture_output=True, text=True).stderr
     js = json.loads(m[m.rindex("{"):m.rindex("}") + 1])
-    ln = ("loudnorm=I=-14:TP=-1.5:LRA=11:measured_I={input_i}:"
+    ln = ("loudnorm=I=-16:TP=-1.5:LRA=11:measured_I={input_i}:"
           "measured_TP={input_tp}:measured_LRA={input_lra}:"
           "measured_thresh={input_thresh}:offset={target_offset}:"
           "linear=true:print_format=summary").format(**js)
@@ -124,12 +124,10 @@ def build(cfg):
     subprocess.run([
         "ffmpeg", "-y", "-loglevel", "error",
         "-ss", str(t0), "-to", str(t1), "-i", cfg["audio"],
-        # loudnorm allein kommt nur auf -15,2 LUFS: die Rohspur liegt bei
-        # -22,4 LUFS mit -3,7 dBTP, mehr Gain wuerde die Spitzengrenze
-        # reissen. Der Limiter schafft die letzten 1,6 dB.
+        # Ziel -16 LUFS (war -14 + 1.6dB = zu laut, Nutzer-Feedback 26.08.).
         # level=false ist Pflicht - sonst zieht alimiter das Ergebnis
         # selbsttaetig auf Vollaussteuerung hoch (gemessen: +0,1 dBFS).
-        "-af", f"{ln},volume=1.6dB,"
+        "-af", f"{ln},volume=0.0dB,"
                f"alimiter=limit=0.84:level=false:attack=2:release=60,{fade}",
         "-ar", "48000", "-c:a", "aac", "-b:a", "192k", f"{tmp}/stimme.m4a"],
         check=True)
