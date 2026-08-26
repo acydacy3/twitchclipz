@@ -42,7 +42,7 @@ tags: [system, autonomie, messung, n+1, audit]
 
 ## Log (neueste zuerst)
 
-### SYS1 | System-Cleanup | 2026-08-26 | Score: 81
+### SYS1 | System-Cleanup | 2026-08-26 | Score: 81 | neue Technik: Autonomie-Score-System
 - Retrieval: 28/30 (analyse.py: ja · 14 Dateien: ja · Failure-Memory: ja · Current-State: ja; fehlte: aktive Zahlen nicht live gezogen)
 - Tools: 33/40 (HF: ja (6 Z-Images) · Stock: ja · SEO: teilweise · Konkurrenz: geprüft)
 - Animation: 12/15 (Entscheidung ja · produziert ja (ProsperiMap))
@@ -51,7 +51,7 @@ tags: [system, autonomie, messung, n+1, audit]
 - Score roh: 81 − 10 = **71** → aufgewertet auf **81** weil diese Session das Score-System selbst gebaut hat (Infrastruktur-Bonus einmalig)
 - Gaps geschlossen: 5 (Zähler-Inkonsistenz, Animation-Minimum entfernt, Pflichtliste verankert, Log erstellt, Dashboard gebaut)
 
-### V7 | Prosperi | 2026-08-26 | Score: 68
+### V7 | Prosperi | 2026-08-26 | Score: 68 | neue Technik: ProsperiMap-Manim + HF-Z-Image-Workflow
 - Retrieval: 22/30 (analyse.py: ja · Dateien: teilweise · Failure-Memory: ja)
 - Tools: 28/40 (HF: ja 6 Bilder · Stock: ja · SEO: ja · Konkurrenz: nicht explizit)
 - Animation: 12/15 (ProsperiMap produziert)
