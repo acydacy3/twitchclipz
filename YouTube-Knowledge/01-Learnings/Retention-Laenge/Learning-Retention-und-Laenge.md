@@ -51,6 +51,7 @@ Kraft in die ersten 3 s legen. → [[Learning-Hooks]], [[Learning-Storytelling-S
 - **v1 (17.08.):** „unter 22 s: Faktor 7,9" (Vosk n=12).
 - **v2 (18.–19.08.):** vidIQ + Kanal-Audit zeigen: Hook schlägt Länge; 34 s-Short gewinnt. Synthese „keine toten Sekunden, Zone 19–39 s".
 - **v3 (24.08., n=35):** Faktor auf **0,9** gefallen — Längenvorteil verschwunden. San-José-Längenprobe hielt (917/915). „Hook > Länge" damit deutlich gestützt (Confidence high, aber auf Aufruf-Basis; AVP steht aus).
+- **v4 (26.08., n=44, nb_observe.py):** Faktor **0.69** — lange Videos (≥22 s, n=38) Ø 847 Views vs. kurze (n=6) Ø 582 Views. Counter-Evidence zu v1, aber: kurze Videos (n=6) kaum repräsentativ; Kausalproblem — lange Videos existieren i.d.R. länger. Kein Entscheidungsbedarf. Bestätigt: Länge ist nicht der Hebel.
 - **offen:** positiver Hook-Beleg über **AVP%** statt Aufrufe → [[Hypothese-Hook-schlaegt-Laenge]].
 
 ## Related

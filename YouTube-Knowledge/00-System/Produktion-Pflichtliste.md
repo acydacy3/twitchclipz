@@ -14,11 +14,16 @@ tags: [system, pflicht, n+1, produktion]
 
 ---
 
-## 1. Zahlen holen (1 Befehl, ~5 s)
+## 1. Zahlen holen + Observations generieren (autonom, ~15 s)
+```bash
+python3 tools/nb_analytics_snapshot.py   # Snapshot speichern (1×/Tag)
+python3 tools/nb_observe.py              # Delta, Outlier, Experimente bewerten
+python3 analyse.py                       # Detailbericht (Uploads, Termine)
 ```
-python3 analyse.py
-```
-Ergebnis in [[Current-State]] eintragen wenn abweichend. Gemessenes schlägt Notiertes.
+- Snapshot-Delta: Views/Abos-Wachstum seit letztem Snapshot → erkennt was wächst.
+- Observation Engine: rankt Top/Under, prüft Längen- und SEO-These, meldet Experimente die Daten haben.
+- Ergebnis in [[Current-State]] eintragen wenn abweichend. Gemessenes schlägt Notiertes.
+- Neue Observation? → `python3 tools/nb_observe.py --vault` (schreibt in `07-Analytics/Observations.md`).
 
 ---
 

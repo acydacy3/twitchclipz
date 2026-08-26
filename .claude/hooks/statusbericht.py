@@ -15,7 +15,10 @@ import subprocess
 import sys
 from pathlib import Path
 
-PROJEKT = Path(os.environ.get("CLAUDE_PROJECT_DIR", "/workspace/twitchclipz"))
+# Pfad-Aufloesung: Script liegt in .claude/hooks/ → 2 Eltern = Projekt-Root
+_SCRIPT = Path(__file__).resolve()
+_ENV    = os.environ.get("CLAUDE_PROJECT_DIR", "")
+PROJEKT = (Path(_ENV) if (_ENV and Path(_ENV).is_dir()) else _SCRIPT.parent.parent.parent)
 VAULT   = PROJEKT / "YouTube-Knowledge"
 
 # ─── Bekannte Pipeline-Skripte ──────────────────────────────────────────────
@@ -216,6 +219,49 @@ def lese_autonomie_log():
     return score, label, user_prompts
 
 
+def lese_experimente():
+    """Liest aktive Experimente — gibt (bereit, aktiv) zurueck."""
+    exp_dir = VAULT / "02-Experiments" / "Active"
+    if not exp_dir.exists():
+        return [], []
+    bereit, aktiv = [], []
+    for pfad in sorted(exp_dir.glob("*.md")):
+        text = pfad.read_text(errors="ignore")
+        status_m = re.search(r"^status:\s*(\w+)", text, re.MULTILINE)
+        status = status_m.group(1) if status_m else "unknown"
+        if status not in ("active", "planned"):
+            continue
+        start_m = re.search(r"^start_date:\s*(.+)", text, re.MULTILINE)
+        start_raw = (start_m.group(1).strip() if start_m else "").strip()
+        alter = 0
+        if start_raw and start_raw not in ("", "null", "None"):
+            try:
+                import datetime as _dt
+                start = _dt.datetime.fromisoformat(start_raw)
+                alter = (_dt.datetime.now() - start).days
+            except Exception:
+                pass
+        hat_result = bool(re.search(r"^result:\s*[^\"'\s]", text, re.MULTILINE))
+        name = pfad.stem[:40]
+        if alter >= 7 and not hat_result:
+            bereit.append(name)
+        else:
+            aktiv.append(name)
+    return bereit, aktiv
+
+
+def lese_neueste_observation():
+    """Liest die juengste Zeile aus Observations.md."""
+    obs_pfad = VAULT / "07-Analytics" / "Observations.md"
+    if not obs_pfad.exists():
+        return None
+    for line in obs_pfad.read_text(errors="ignore").splitlines():
+        line = line.strip()
+        if line.startswith("- ["):
+            return line[2:80]  # Erster Treffer = neueste Observation
+    return None
+
+
 def anti_stall_check():
     """Videos seit letzter neuer Technik.
 
@@ -314,6 +360,19 @@ def main():
     except Exception:
         pass
 
+    # ── Experimente + Observations (immer sichtbar) ───────────────────────
+    try:
+        exp_bereit, exp_aktiv = lese_experimente()
+        if exp_bereit:
+            z(f"  EXPERIMENTE BEREIT: {', '.join(exp_bereit)} <- JETZT auswerten!")
+        elif exp_aktiv:
+            z(f"  Experimente aktiv: {', '.join(exp_aktiv[:3])}")
+        neueste_obs = lese_neueste_observation()
+        if neueste_obs:
+            z(f"  Letzte Observation: {neueste_obs[:90]}")
+    except Exception:
+        pass
+
     # ── Repertoire — adaptiv ──────────────────────────────────────────────
     z("=" * 68)
 
@@ -358,7 +417,7 @@ def main():
 
     # ── Vor-Produktion (immer, kompakt) ───────────────────────────────────
     z("-" * 68)
-    z("VOR PRODUKTION: analyse.py -> Pflichtliste §2 (14 Dateien) -> HF-Quota -> Konkurrenz")
+    z("VOR PRODUKTION: nb_analytics_snapshot.py -> nb_observe.py -> Pflichtliste §2 -> HF-Quota")
     z("SESSION-ENDE:   Autonomie-Log.md updaten + git push")
     z("Originalskript kommt vom Nutzer. Nutzer arbeitet nicht mit der Kommandozeile.")
     z("=" * 68)
