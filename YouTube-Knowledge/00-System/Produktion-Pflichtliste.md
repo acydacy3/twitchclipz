@@ -111,7 +111,7 @@ Starkes Competitor-Bild als Ausgangspunkt:
 
 ## 5. Manim/Remotion — Training-Pflicht (jede Reihe)
 
-**Mindestens 2 Animations-Clips pro 10-Short-Reihe.** Nicht nur 1 Opener.
+**So viele Animations-Clips pro Reihe wie sinnvoll und qualitativ gut wird — kein Limit nach oben, kein starres Minimum.** Jede Szene aktiv prüfen: Wäre hier eine Animation besser als ein Standbild?
 
 Animation-Bibliothek lesen: `YouTube-Knowledge/04-Animation/Animation-Library.md`
 
