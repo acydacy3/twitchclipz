@@ -26,7 +26,7 @@ bergbar → Höhle **mit Beton versiegelt**, Plakette. Quelle: Nutzer-Originalsk
 - **10/10 Shorts fertig** (`nuttyputty/output/nutty_01..10.mp4`), 22–38 s. Pipeline: `nb_transcribe`→`nb_fetch_broll`(Kategorien+QC)→`nb_build`→`short.py`.
 - **Animation-Opener** in Short 1 (Clip in `short.py`), Karaoke-Captions (104, Gold), **Musik hörbar (db −16)**, TEIL-Leisten, Hooks 1/5/9.
 - **Bilder:** autonom aus Commons-Kategorien, Kontaktabzug-QC (`_qc_contact.png`), Ausreißer ersetzt. Alle CC, Attribution in `broll/ATTRIBUTION.txt`.
-- **Schedule bündig:** `metadata.json` 31.08 14:30 → 03.09 14:30 (3/Tag, direkt nach Lengede-Ende 31.08 10:30).
+- **Schedule bündig (korrigiert 26.08.):** `metadata.json` 31.08 10:30 → 03.09 10:30 (3/Tag, direkt nach Lengede-Ende 30.08 18:00). Alle 20 Videos (Lengede+NP) um 1 Slot vorgezogen, um die Lücke 27.08 18:00 zu füllen.
 - **Upload KOMPLETT (26.08.):** Alle 10/10 auf YouTube, terminiert 31.08–03.09. Video-IDs: 4GkOwMTK2wg, 3jxWF-q1PHs, tSThDXuOXLA, 76DTKtDMoco, FybNE9VLhvM, DerrzWpeMnE, vNJCFx-9lt4, VjAp7V9XoWQ, gmyUpMvDtRM, 2ybiOCFc4qQ. `analyse.py`-Gegenprobe bestätigt (25 terminiert gesamt).
 - **Reproduzierbar aus Git:** VO + Bilder + metadata + Skripte committet.
 - **Validierungs-Regel (Nutzer 25.08.):** ab nächstem Projekt vorab **Bild-Übersicht pro Short** (gelabelt S01-01…) zeigen, bis blindes Vertrauen.
