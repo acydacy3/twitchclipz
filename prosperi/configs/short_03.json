@@ -1,7 +1,7 @@
 {
   "shots": [
     {
-      "img": "/home/user/twitchclipz/prosperi/broll/short_03/01.jpg",
+      "img": "/home/user/twitchclipz/prosperi/bilder/S03/01.jpg",
       "start": 0.0,
       "end": 3.0,
       "cx": 0.5,
@@ -13,9 +13,9 @@
       "drift": 10
     },
     {
-      "img": "/home/user/twitchclipz/prosperi/broll/short_03/02.jpg",
+      "img": "/home/user/twitchclipz/prosperi/broll/short_03/01.jpg",
       "start": 3.0,
-      "end": 14.34,
+      "end": 10.559999999999999,
       "cx": 0.5,
       "cy": 0.5,
       "z0": 1.04,
@@ -25,15 +25,27 @@
       "drift": 14
     },
     {
-      "img": "/home/user/twitchclipz/prosperi/broll/short_03/03.jpg",
-      "start": 14.34,
-      "end": 25.68,
+      "img": "/home/user/twitchclipz/prosperi/broll/short_03/02.jpg",
+      "start": 10.559999999999999,
+      "end": 18.119999999999997,
       "cx": 0.5,
       "cy": 0.68,
       "z0": 1.02,
       "z1": 1.14,
       "px": 0.0,
       "py": 0.05,
+      "drift": 12
+    },
+    {
+      "img": "/home/user/twitchclipz/prosperi/broll/short_03/03.jpg",
+      "start": 18.119999999999997,
+      "end": 25.68,
+      "cx": 0.5,
+      "cy": 0.32,
+      "z0": 1.02,
+      "z1": 1.14,
+      "px": 0.0,
+      "py": -0.05,
       "drift": 12
     }
   ],
