@@ -41,6 +41,7 @@ Diese 12 Dateien werden gelesen, bevor das erste Bild, der erste Satz oder das e
 | `01-Learnings/Topics/Learning-Topics-Themenwahl.md` | Nischen-Check, Sättigungsgrad |
 | `01-Learnings/Cross-Platform/Learning-Cross-Platform-TikTok.md` | TikTok manuell, Buffer-Logik |
 | `09-Failures/Failure-Memory.md` | Was nicht funktioniert hat — nicht wiederholen |
+| `04-Animation/Animation-Library.md` | Welche Animations-Klassen existieren, was kommt als nächstes |
 
 **Lesedauer: ~3 Minuten. Ersparnis durch vermiedene Fehler: unbegrenzt.**
 
@@ -75,19 +76,57 @@ Diese 12 Dateien werden gelesen, bevor das erste Bild, der erste Satz oder das e
 
 ---
 
-## 4. Konkurrenz-Referenz (bei Themen-Auswahl und Hook-Entwicklung)
-- `tools/nb_suggest.py` → Top-Videos zum Thema anschauen (Titel, Thumbnail, Länge)
-- Fascinating Horror als Stil-Referenz: nüchtern, präzise, keine Hysterie
-- Was machen Kanäle mit >500k Views auf ähnliche Themen anders?
+## 4. Konkurrenz-Referenz + Bild-Strategie (PFLICHT vor Bild-Produktion)
+
+**Schritt 1 — Top-Videos zum Thema analysieren:**
+```
+python3 tools/nb_suggest.py "<thema>"   # Top-Keywords + Videos
+```
+→ Die Top-3-Videos aufrufen, **Thumbnails + erste 10 Sekunden** ansehen:
+- Welche Bildsprache? (dunkel/hell, nah/weit, Person/Landschaft)
+- Welche Stock-Kategorien offensichtlich genutzt?
+- Was macht das Thumbnail sofort klickbar?
+
+**Schritt 2 — Referenz-Kanäle (persistent, immer prüfen):**
+- **Fascinating Horror** — Stil-Referenz: nüchtern, präzise, kein Reißerisches
+- **Bright Sun Films** — unterirdische Orte, atmosphärische Bilder
+- **Top Fives / Alltime10s** — schnelle Montage, Stock-Nutzung
+→ Was machen Views-starke Videos visuell anders als wir?
+
+**Schritt 3 — Stock-Photo-Reverse-Engineering:**
+Wenn ein Konkurrenz-Video ein starkes Bild nutzt:
+1. Was ist die Kategorie (Wikimedia, Getty, Unsplash-Stil)?
+2. Welches Keyword würde dieses Bild finden?
+3. In `nb_openverse.py` oder Commons-Suche testen.
+4. Ergebnis → [[Learning-Bilder-Prompts]] ergänzen.
+
+**Schritt 4 — KI-Prompt aus Referenz ableiten:**
+Starkes Competitor-Bild als Ausgangspunkt:
+- Motiv: was genau ist zu sehen (Figur, Landschaft, Licht)
+- Stilwörter: cinematic / documentary / 35mm / golden hour / moody
+- Nicht kopieren — abstrahieren und besser machen.
+- Prompt → Z-Image → Ergebnis in [[Learning-Bilder-Prompts]] mit Bewertung.
 
 ---
 
-## 5. Remotion/Manim — Training-Pflicht (jede Session)
-Animation ist die strategische Richtung (weg von Standbild+VO). Bei jedem Video:
-- Welche Szene könnte animiert statt fotografiert werden?
-- Manim wenn: Karte, Zeitleiste, Querschnitt, Diagramm, Route
-- Remotion wenn: komplexere Bewegung, Text-Animationen, Intro/Outro-Elemente
-- Jede neue Animation committen → Vault-Note mit Ergebnis → nächstes Video baut darauf auf
+## 5. Manim/Remotion — Training-Pflicht (jede Reihe)
+
+**Mindestens 2 Animations-Clips pro 10-Short-Reihe.** Nicht nur 1 Opener.
+
+Animation-Bibliothek lesen: `YouTube-Knowledge/04-Animation/Animation-Library.md`
+
+**Entscheidungsbaum:**
+- Gibt es eine Zahl/Statistik im Skript? → `StatCounter`
+- Gibt es eine Route/Karte? → `ProsperiMap`-Vorlage anpassen
+- Gibt es eine Tages-Abfolge? → `SurvivalDays`
+- Gibt es eine Suchaktion? → `SearchRadius`
+- Gibt es eine Tiefe (Grube/Höhle/Wasser)? → `DepthDive`
+- Gibt es einen engen Spalt/Tunnel? → `CrossSection`
+- Gibt es eine Zeitleiste (Stunden)? → `Timeline`
+
+**Pflicht:** Jede neue Reihe committet ≥1 neue Manim-Klasse. Backlog: [[Animation-Library]].
+
+Remotion: schrittweise einführen. Nächster Schritt: `tools/remotion/` Setup + erste `WordReveal`-Komponente.
 
 ---
 

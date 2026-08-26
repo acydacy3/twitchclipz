@@ -1,7 +1,21 @@
 #!/usr/bin/env python3
-"""Manim-Szenen-Vorlagen fuer Katastrophen-Erklaervideos (Querschnitt, Zeitleiste, Karte).
-Render 9:16: manim -qh -r 1080,1920 tools/manim_scenes.py CrossSection
-(braucht manim aus setup-tools.sh). Ergebnis in media/videos/... -> in short.py als {"clip":...}."""
+"""Manim-Szenen-Vorlagen fuer Katastrophen-Erklaervideos.
+
+Render 9:16: manim -qh -r 1080,1920 tools/manim_scenes.py <ClassName>
+Ergebnis in media/videos/manim_scenes/<ClassName>/...mp4 -> in short.py als {"clip":...}.
+
+ANIMATION-BIBLIOTHEK (wachst mit jedem Video):
+  CrossSection   — Querschnitt Felsspalte + Figur (Nutty Putty-Stil)
+  Timeline       — Rettungs-Zeitleiste mit Stunden-Markern
+  ProsperiMap    — Route-Karte Marokko→Algerien (V7)
+  StatCounter    — Grosse animierte Zahl (Tage, km, Meter, Grad) — UNIVERSELL
+  SurvivalDays   — Kalender-/Tages-Strip mit Ereignis-Markern — UNIVERSELL
+  SearchRadius   — Expanding Suchkreis auf Karte — UNIVERSELL
+  DepthDive      — Kamera taucht in Tiefe (Gruben, Hoehlen, Wasser) — UNIVERSELL
+
+STRATEGIE: Jede neue Videoreihe fuegt >=1 neue Klasse hinzu.
+           Mehrere Animations-Clips pro Reihe anstreben (nicht nur 1).
+           Langfristig: weg von Standbild+VO, hin zu echter Animation."""
 try:
     from manim import *
 except Exception:
@@ -119,3 +133,143 @@ class ProsperiMap(Scene):
         tl_titel = Text("10 Tage allein", font_size=30, color="#cc6633", weight=BOLD).move_to([0, tl_y - 1.1, 0])
         self.play(FadeIn(tl_titel), run_time=0.4)
         self.wait(1.0)
+
+
+class StatCounter(Scene):
+    """UNIVERSELL: Grosse animierte Zahl zaehlt hoch + Einheit darunter.
+
+    Anpassen: START, END, UNIT, LABEL, COLOR.
+    Beispiele: 9 Tage / 291 km / 47 Verschuettete / 33 Tage / 600m Tiefe.
+    Render: manim -qh -r 1080,1920 tools/manim_scenes.py StatCounter
+    """
+    # --- anpassen je Video ---
+    START = 0
+    END   = 9
+    UNIT  = "TAGE"
+    LABEL = "allein in der Sahara"
+    COLOR = "#e85c33"
+    # --------------------------
+
+    def construct(self):
+        self.camera.background_color = "#0d0a06"
+        num = Integer(self.START, color=self.COLOR).scale(5.5).move_to([0, 2.0, 0])
+        unit = Text(self.UNIT, font_size=72, color=self.COLOR, weight=BOLD).next_to(num, DOWN, buff=0.3)
+        lbl  = Text(self.LABEL, font_size=36, color="#aaaaaa").next_to(unit, DOWN, buff=0.5)
+        self.play(FadeIn(unit), FadeIn(lbl), run_time=0.5)
+        self.play(
+            ChangeDecimalToValue(num, self.END),
+            run_time=2.4,
+            rate_func=rate_functions.ease_in_out_cubic,
+        )
+        self.play(num.animate.set_color(WHITE).scale(1.08), run_time=0.3)
+        self.wait(0.8)
+
+
+class SurvivalDays(Scene):
+    """UNIVERSELL: Tag-fuer-Tag-Strip mit Ereignis-Markern.
+
+    DAYS: Liste von (Tag-Nr, Kuerzel, Farbe, Ereignis-Text).
+    Render: manim -qh -r 1080,1920 tools/manim_scenes.py SurvivalDays
+    """
+    TITLE = "10 Tage — Mauro Prosperi"
+    DAYS = [
+        (1,  "13.4", "#4488cc", "Sandsturm"),
+        (2,  "14.4", "#cc4433", "verirrt"),
+        (3,  "15.4", "#cc4433", ""),
+        (4,  "16.4", "#cc4433", "Marabout"),
+        (5,  "17.4", "#cc4433", "Fledermäuse"),
+        (6,  "18.4", "#cc4433", "Flugzeug"),
+        (7,  "19.4", "#cc4433", ""),
+        (8,  "20.4", "#cc4433", "Nomaden"),
+        (9,  "21.4", "#55cc55", "gerettet"),
+    ]
+
+    def construct(self):
+        self.camera.background_color = "#0d0a06"
+        title = Text(self.TITLE, font_size=44, color="#c8a96e", weight=BOLD).move_to([0, 8.0, 0])
+        self.play(FadeIn(title), run_time=0.5)
+
+        n = len(self.DAYS)
+        xs = [i * (8.0 / max(n - 1, 1)) - 4.0 for i in range(n)]
+        line = Line([xs[0], 0, 0], [xs[-1], 0, 0], color=GREY_B, stroke_width=2)
+        self.play(Create(line), run_time=0.6)
+
+        for i, (day, date, col, evt) in enumerate(self.DAYS):
+            x = xs[i]
+            d = Dot([x, 0, 0], color=col, radius=0.22)
+            date_t = Text(date, font_size=26, color="#aaaaaa").next_to(d, DOWN, buff=0.2)
+            day_t  = Text(f"Tag {day}", font_size=22, color=col).next_to(d, UP, buff=0.2)
+            grp = VGroup(d, date_t, day_t)
+            if evt:
+                evt_t = Text(evt, font_size=24, color=WHITE).next_to(day_t, UP, buff=0.15)
+                grp.add(evt_t)
+            self.play(FadeIn(grp), run_time=0.25)
+
+        self.wait(1.0)
+
+
+class SearchRadius(Scene):
+    """UNIVERSELL: Suchkreis waechst auf Karte — fuer Such+Rettungs-Szenen.
+
+    Anpassen: CENTER_LABEL, RADIUS_KM, COLOR.
+    Render: manim -qh -r 1080,1920 tools/manim_scenes.py SearchRadius
+    """
+    CENTER_LABEL = "letzter bekannter Standort"
+    RADIUS_KM    = 200
+    RING_COLOR   = "#cc3333"
+    BG_COLOR     = "#0d1a0d"
+
+    def construct(self):
+        self.camera.background_color = self.BG_COLOR
+        center = Dot([0, 1, 0], color=YELLOW, radius=0.18).set_glow_factor(2)
+        lbl    = Text(self.CENTER_LABEL, font_size=32, color=YELLOW).next_to(center, UP, buff=0.3)
+        self.play(FadeIn(center), FadeIn(lbl), run_time=0.5)
+
+        for r, alpha in [(1.2, 0.5), (2.4, 0.35), (3.6, 0.2)]:
+            ring = Circle(radius=r, color=self.RING_COLOR, stroke_opacity=alpha, stroke_width=3)
+            ring.move_to(center.get_center())
+            km_val = int(self.RADIUS_KM * r / 3.6)
+            km_t   = Text(f"{km_val} km", font_size=26, color=self.RING_COLOR).next_to(ring, RIGHT, buff=0.1)
+            self.play(Create(ring), FadeIn(km_t), run_time=0.7)
+
+        title = Text(f"Suchgebiet: {self.RADIUS_KM} km Radius", font_size=38,
+                     color=WHITE, weight=BOLD).move_to([0, -6.5, 0])
+        self.play(FadeIn(title), run_time=0.5)
+        self.wait(1.0)
+
+
+class DepthDive(Scene):
+    """UNIVERSELL: Kamera-Tauchgang in Tiefe — Gruben, Hoehlen, Wasser.
+
+    Anpassen: LAYERS (Tiefe, Label, Farbe).
+    Render: manim -qh -r 1080,1920 tools/manim_scenes.py DepthDive
+    """
+    TITLE = "600 Meter unter der Erde"
+    LAYERS = [
+        (0,   "Oberfläche",    "#3a5a3a"),
+        (2.2, "100 m",         "#2a3a2a"),
+        (4.4, "300 m",         "#1a2a1a"),
+        (6.8, "600 m — Mine",  "#0a1a0a"),
+    ]
+    DOT_COLOR = "#ffee88"
+
+    def construct(self):
+        self.camera.background_color = "#050805"
+        title = Text(self.TITLE, font_size=44, color="#aaaaaa", weight=BOLD).move_to([0, 8.2, 0])
+        self.play(FadeIn(title), run_time=0.4)
+
+        fig = Dot([0, 7.2, 0], color=self.DOT_COLOR, radius=0.22).set_glow_factor(2)
+        self.play(FadeIn(fig), run_time=0.3)
+
+        for depth_y, lbl_text, col in self.LAYERS:
+            y = 7.2 - depth_y * 2.0
+            layer = Rectangle(width=12, height=0.06,
+                              fill_color=col, fill_opacity=0.7, stroke_width=0).move_to([0, y, 0])
+            lbl   = Text(lbl_text, font_size=28, color="#888888").move_to([-3.5, y + 0.4, 0])
+            self.play(FadeIn(layer), FadeIn(lbl), run_time=0.4)
+            self.play(fig.animate.move_to([0, y - 0.3, 0]),
+                      run_time=0.8, rate_func=rate_functions.ease_in_out_sine)
+
+        flash = fig.copy().set_color(WHITE).scale(2)
+        self.play(Transform(fig, flash), run_time=0.4)
+        self.wait(0.8)
