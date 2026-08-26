@@ -30,7 +30,8 @@ tags: [system, state]
 - **Video 4 (Okene/Jascon-4) PRODUZIERT + terminiert (24.08.):** 10 Shorts gerendert, **9/10 geplant** (24.–27.08.); Short 10 via Trigger 25.08. Siehe [[Video-04-Okene]], [[Produktions-Runbook]].
 - **Video 5 Lengede FERTIG + TERMINIERT (verifiziert 25.08. via `analyse.py`):** alle **10/10 Shorts terminiert (28.–31.08.)**. Okene-Shorts ebenfalls terminiert (25.–27.08.). Trigger lief durch. Siehe [[Video-05-Lengede]].
 - **Video 6 Nutty Putty FERTIG + TERMINIERT (26.08.):** alle 10/10 Shorts hochgeladen, Schedule 31.08–03.09 (3/Tag bündig nach Lengede). Siehe [[Video-06-NuttyPutty]].
-  - **NÄCHSTER SCHRITT:** **V7 Mauro Prosperi (Sahara 1994)** produzieren — Composite-Short mit **Manim-Karte (291-km-Route) + 9-Tage-Zeitleiste**, KI-Schlüsselbildern + Stock. Skill `/video`. → [[Ideen-Pipeline]]
+- **Video 7 Prosperi PRODUZIERT + TEILWEISE HOCHGELADEN (26.08.):** 10 Shorts gerendert (16–25 MB je), S01–S03 terminiert (04.09.). S04–S10 upload morgen (YouTube-Tageslimit). Broll-Fix: globaler Dedup-Set, spezifische Kategorien. 4 Higgsfield-Schlüsselbilder (Abschiedsbrief, Haboob, Fledermaus-Schrein, Nomadenzelt). Manim-Karte Marokko→Algerien. Schedule: 04.09–07.09 (3/Tag). Branch: `claude/neubeginn-v7-prosperi-6mmj14`. **NÄCHSTER SCHRITT:** `python3 prosperi/nb_build.py && python3 prosperi/nb_upload.py` (neue Session, S04–S10).
+  - **DANACH:** V8 planen → [[Ideen-Pipeline]]
 - **Voller Tagesstand: [[Handoff-2026-08-24]] + [[Audit-2026-08-25]] (zuerst lesen).**
 
 ## Zugänge (Stand 19.08.)
