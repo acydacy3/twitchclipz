@@ -165,6 +165,7 @@ Remotion: schrittweise einführen. Nächster Schritt: `tools/remotion/` Setup + 
 | Experiment gestartet? | → `02-Experiments/` Note anlegen mit Hypothese |
 | Wurde eine Rule gebrochen? | → Rule überdenken oder Ausnahme dokumentieren |
 | git push? | → Pflicht. Kein Session-Ende ohne Push. |
+| **Autonomie-Score eintragen?** | → `YouTube-Knowledge/00-System/Autonomie-Log.md` updaten: A/B/C/D + Strafen + User-Prompts. Pflicht — auch wenn Score schlecht. |
 
 **Anti-Drift-Regel (gegen schleichendes Vergessen):**
 Wenn 3 Videos hintereinander **keine neue Technik** eingesetzt haben → STOPP. Nächste Session beginnt mit Recherche: Was machen Top-Kanäle, was machen wir noch nicht? Ziel: Jedes Video ist messbar besser als das vorherige in mindestens einer Dimension.

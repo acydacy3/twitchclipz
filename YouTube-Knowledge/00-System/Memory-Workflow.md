@@ -38,6 +38,7 @@ es bekannt erscheint. Confidence + Scope + Counter-Evidence jeder Note beachten.
 neue Erkenntnis
  → richtige Note im Vault (mit Confidence + Scope + Evidence + History)
  → prüfen: wird daraus eine Rule? → nur dann [[Current-State]]/CLAUDE.md anpassen
+ → [[Autonomie-Log]] updaten: A/B/C/D-Score + Strafen + User-Prompts dieser Session
  → `git add/commit/push` (freigeschaltet) — erreicht die nächste Session automatisch
  → optional: geänderte Note nach Drive (nur für Nutzer-Ansicht in Obsidian)
 ```

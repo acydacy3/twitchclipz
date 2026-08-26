@@ -148,6 +148,25 @@ def main():
     z("  -> HF Z-Image IMMER zuerst ausschoepfen (gratis, ~8/Tag)")
     z("  -> Manim/Remotion: so viele Animationen wie sinnvoll, kein Limit")
     z("  -> Konkurrenz: nb_suggest -> Top-Videos ansehen -> Prompts ableiten")
+    z("-" * 62)
+    # Letzten Autonomie-Score aus dem Log lesen
+    import re as _re
+    log_path = PROJEKT / "YouTube-Knowledge" / "00-System" / "Autonomie-Log.md"
+    _score = None
+    _label = None
+    if log_path.exists():
+        for _line in log_path.read_text().splitlines():
+            m = _re.match(r"^###\s+(\S+)\s*\|\s*(.+?)\s*\|\s*\S+\s*\|\s*Score:\s*(\d+)", _line)
+            if m:
+                _label = f"{m.group(1)} {m.group(2).strip()}"
+                _score = int(m.group(3))
+    if _score is not None:
+        _band = ("ROT <50" if _score < 50 else "AMBER 50-69" if _score < 70
+                 else "GRUEN 70-84" if _score < 85 else "BLAU 85+")
+        z(f"Autonomie-Score (letzte Session: {_label}): {_score}/100  [{_band}]")
+        z("  Ziel ≥ 90 = selbst lernend. Score-Ende: Autonomie-Log updaten!")
+    else:
+        z("Autonomie-Score: Log nicht gefunden → YouTube-Knowledge/00-System/Autonomie-Log.md")
     z("=" * 62)
     z("")
 
