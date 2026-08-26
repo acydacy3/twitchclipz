@@ -5,27 +5,14 @@ Archiv. Das eigentliche Langzeitgedächtnis liegt im **Obsidian-Vault**
 `YouTube-Knowledge/` — dort steht das Detailwissen mit Evidenz, Confidence und
 Historie. **Öffne `YouTube-Knowledge/` als Vault in Obsidian**, um Links/Graph zu nutzen.
 
-> Migration 24.08.2026: Das frühere große `CLAUDE.md` (1292 Zeilen) wurde nach
-> `YouTube-Knowledge/` überführt und liegt **verbatim** unter
-> `YouTube-Knowledge/00-System/_archive/`. Nichts ging verloren.
-
 ---
 
-## ⚠️ ZUERST: Bin ich auf dem aktuellen Stand? (30-Sekunden-Check)
-Bevor du irgendetwas tust — **eine dieser Aussagen wahr = du bist auf einem VERALTETEN Checkout**, hol erst den aktuellen Stand:
-- Der Ordner `YouTube-Knowledge/` **fehlt**, oder `analyse.py` / `lengede/` fehlen.
-- Diese Datei oder eine Note nennt „**git push 403**" oder „**Drive = Gedächtnis**" als *aktuellen* Zustand.
+## ⚠️ ZUERST: Bin ich auf dem aktuellen Stand? (15-Sekunden-Check)
+**`YouTube-Knowledge/` fehlt oder `analyse.py` fehlt?** → veraltet, `git pull origin main` holen.
 
-Beides ist überholt. **Seit 25.08.2026: `git push` ist freigeschaltet, das Repo trägt den vollen Stand, das Gedächtnis liegt im Vault `YouTube-Knowledge/` (>70 verlinkte Notizen).** Drive ist nur noch optionaler Asset-Transfer.
-
-**Recovery (falls veraltet):**
-```
-git fetch --all
-git for-each-ref --sort=-committerdate --format='%(committerdate:short) %(refname:short)' refs/remotes/
-```
-→ Auf den **neuesten Branch wechseln, der `YouTube-Knowledge/` + `tools/` enthält** (Inhalt zählt, nicht der Name). **`main` ist seit 25.08. AKTUELL** (wird jede Session mitgepusht) — als Quelle geeignet.
-
-**Dann lesen (in dieser Reihenfolge):** `YouTube-Knowledge/00-System/Current-State.md` → `YouTube-Knowledge/06-Audits/Handoff-2026-08-24.md` → der jüngste `YouTube-Knowledge/06-Audits/Daily/Audit-*.md`. Damit bist du in 3 Minuten voll im Bild — ohne Rückfragen an den Nutzer.
+**Dann lesen (2 Schritte, reicht für 99% aller Sessions):**
+1. `YouTube-Knowledge/00-System/Current-State.md` — operativer Stand, Zahlen, nächster Schritt.
+2. Gezielt retrieven was die Aufgabe braucht: `01-Learnings/`, `09-Failures/`, `05-Decisions/`. **Nicht das ganze Vault lesen.**
 
 ---
 
