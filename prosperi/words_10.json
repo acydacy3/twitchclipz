@@ -1,0 +1,524 @@
+[
+  {
+    "word": "Kindsjahr",
+    "start": 0.0,
+    "end": 0.46,
+    "conf": 1.0
+  },
+  {
+    "word": "hörte",
+    "start": 0.46,
+    "end": 0.74,
+    "conf": 1.0
+  },
+  {
+    "word": "seinen",
+    "start": 0.74,
+    "end": 0.92,
+    "conf": 1.0
+  },
+  {
+    "word": "Namen",
+    "start": 0.92,
+    "end": 1.2,
+    "conf": 1.0
+  },
+  {
+    "word": "im",
+    "start": 1.2,
+    "end": 1.34,
+    "conf": 1.0
+  },
+  {
+    "word": "Radio",
+    "start": 1.34,
+    "end": 1.8,
+    "conf": 1.0
+  },
+  {
+    "word": "in",
+    "start": 1.8,
+    "end": 2.2,
+    "conf": 1.0
+  },
+  {
+    "word": "der",
+    "start": 2.2,
+    "end": 2.3,
+    "conf": 1.0
+  },
+  {
+    "word": "Vergangenheitsform.",
+    "start": 2.3,
+    "end": 3.16,
+    "conf": 1.0
+  },
+  {
+    "word": "Als",
+    "start": 3.62,
+    "end": 3.78,
+    "conf": 1.0
+  },
+  {
+    "word": "das",
+    "start": 3.78,
+    "end": 3.98,
+    "conf": 1.0
+  },
+  {
+    "word": "Telefon",
+    "start": 3.98,
+    "end": 4.38,
+    "conf": 1.0
+  },
+  {
+    "word": "klingelte,",
+    "start": 4.38,
+    "end": 4.88,
+    "conf": 1.0
+  },
+  {
+    "word": "fragte",
+    "start": 5.12,
+    "end": 5.42,
+    "conf": 1.0
+  },
+  {
+    "word": "ihre",
+    "start": 5.42,
+    "end": 5.58,
+    "conf": 1.0
+  },
+  {
+    "word": "Mutter,",
+    "start": 5.58,
+    "end": 5.8,
+    "conf": 1.0
+  },
+  {
+    "word": "Mauro,",
+    "start": 6.26,
+    "end": 6.62,
+    "conf": 1.0
+  },
+  {
+    "word": "bist",
+    "start": 7.14,
+    "end": 7.28,
+    "conf": 1.0
+  },
+  {
+    "word": "du",
+    "start": 7.28,
+    "end": 7.44,
+    "conf": 1.0
+  },
+  {
+    "word": "am",
+    "start": 7.44,
+    "end": 7.56,
+    "conf": 1.0
+  },
+  {
+    "word": "Leben?",
+    "start": 7.56,
+    "end": 7.8,
+    "conf": 1.0
+  },
+  {
+    "word": "Sie",
+    "start": 8.38,
+    "end": 8.54,
+    "conf": 1.0
+  },
+  {
+    "word": "warf",
+    "start": 8.54,
+    "end": 8.9,
+    "conf": 1.0
+  },
+  {
+    "word": "ihr",
+    "start": 8.9,
+    "end": 9.02,
+    "conf": 1.0
+  },
+  {
+    "word": "den",
+    "start": 9.02,
+    "end": 9.14,
+    "conf": 1.0
+  },
+  {
+    "word": "Hörer",
+    "start": 9.14,
+    "end": 9.52,
+    "conf": 1.0
+  },
+  {
+    "word": "zu.",
+    "start": 9.52,
+    "end": 9.76,
+    "conf": 1.0
+  },
+  {
+    "word": "Seine",
+    "start": 10.16,
+    "end": 10.36,
+    "conf": 1.0
+  },
+  {
+    "word": "erste",
+    "start": 10.36,
+    "end": 10.6,
+    "conf": 1.0
+  },
+  {
+    "word": "Frage",
+    "start": 10.6,
+    "end": 11.02,
+    "conf": 1.0
+  },
+  {
+    "word": "habt",
+    "start": 11.02,
+    "end": 11.52,
+    "conf": 1.0
+  },
+  {
+    "word": "ihr",
+    "start": 11.52,
+    "end": 11.66,
+    "conf": 1.0
+  },
+  {
+    "word": "die",
+    "start": 11.66,
+    "end": 11.76,
+    "conf": 1.0
+  },
+  {
+    "word": "Beerdigung",
+    "start": 11.76,
+    "end": 12.14,
+    "conf": 1.0
+  },
+  {
+    "word": "schon",
+    "start": 12.14,
+    "end": 12.32,
+    "conf": 1.0
+  },
+  {
+    "word": "geplant.",
+    "start": 12.32,
+    "end": 12.78,
+    "conf": 1.0
+  },
+  {
+    "word": "Ihre",
+    "start": 13.5,
+    "end": 13.68,
+    "conf": 1.0
+  },
+  {
+    "word": "Antwort",
+    "start": 13.68,
+    "end": 14.14,
+    "conf": 1.0
+  },
+  {
+    "word": "für",
+    "start": 14.14,
+    "end": 14.52,
+    "conf": 1.0
+  },
+  {
+    "word": "eine",
+    "start": 14.52,
+    "end": 14.64,
+    "conf": 1.0
+  },
+  {
+    "word": "Beerdigung",
+    "start": 14.64,
+    "end": 15.1,
+    "conf": 1.0
+  },
+  {
+    "word": "braucht",
+    "start": 15.1,
+    "end": 15.38,
+    "conf": 1.0
+  },
+  {
+    "word": "man",
+    "start": 15.38,
+    "end": 15.56,
+    "conf": 1.0
+  },
+  {
+    "word": "eine",
+    "start": 15.56,
+    "end": 15.74,
+    "conf": 1.0
+  },
+  {
+    "word": "Leiche.",
+    "start": 15.74,
+    "end": 16.08,
+    "conf": 1.0
+  },
+  {
+    "word": "Was",
+    "start": 16.64,
+    "end": 16.78,
+    "conf": 1.0
+  },
+  {
+    "word": "hätten",
+    "start": 16.78,
+    "end": 17.0,
+    "conf": 1.0
+  },
+  {
+    "word": "wir",
+    "start": 17.0,
+    "end": 17.18,
+    "conf": 1.0
+  },
+  {
+    "word": "denn",
+    "start": 17.18,
+    "end": 17.34,
+    "conf": 1.0
+  },
+  {
+    "word": "tun",
+    "start": 17.34,
+    "end": 17.56,
+    "conf": 1.0
+  },
+  {
+    "word": "sollen?",
+    "start": 17.56,
+    "end": 17.82,
+    "conf": 1.0
+  },
+  {
+    "word": "Seine",
+    "start": 18.48,
+    "end": 18.74,
+    "conf": 1.0
+  },
+  {
+    "word": "Mutter",
+    "start": 18.74,
+    "end": 18.92,
+    "conf": 1.0
+  },
+  {
+    "word": "rannte",
+    "start": 18.92,
+    "end": 19.28,
+    "conf": 1.0
+  },
+  {
+    "word": "auf",
+    "start": 19.28,
+    "end": 19.42,
+    "conf": 1.0
+  },
+  {
+    "word": "die",
+    "start": 19.42,
+    "end": 19.54,
+    "conf": 1.0
+  },
+  {
+    "word": "Straße.",
+    "start": 19.54,
+    "end": 19.84,
+    "conf": 1.0
+  },
+  {
+    "word": "Er",
+    "start": 20.28,
+    "end": 20.36,
+    "conf": 1.0
+  },
+  {
+    "word": "lebt.",
+    "start": 20.36,
+    "end": 20.62,
+    "conf": 1.0
+  },
+  {
+    "word": "Er",
+    "start": 21.04,
+    "end": 21.4,
+    "conf": 1.0
+  },
+  {
+    "word": "lebt.",
+    "start": 21.4,
+    "end": 21.72,
+    "conf": 1.0
+  },
+  {
+    "word": "Er",
+    "start": 22.04,
+    "end": 22.2,
+    "conf": 1.0
+  },
+  {
+    "word": "wog",
+    "start": 22.2,
+    "end": 22.4,
+    "conf": 1.0
+  },
+  {
+    "word": "45",
+    "start": 22.4,
+    "end": 23.16,
+    "conf": 1.0
+  },
+  {
+    "word": "kg.",
+    "start": 23.16,
+    "end": 23.54,
+    "conf": 1.0
+  },
+  {
+    "word": "Er",
+    "start": 24.26,
+    "end": 24.5,
+    "conf": 1.0
+  },
+  {
+    "word": "hatte",
+    "start": 24.5,
+    "end": 24.7,
+    "conf": 1.0
+  },
+  {
+    "word": "überlebt.",
+    "start": 24.7,
+    "end": 25.16,
+    "conf": 1.0
+  },
+  {
+    "word": "Sie",
+    "start": 25.16,
+    "end": 25.16,
+    "conf": 1.0
+  },
+  {
+    "word": "warf",
+    "start": 25.16,
+    "end": 25.16,
+    "conf": 1.0
+  },
+  {
+    "word": "ihr",
+    "start": 25.16,
+    "end": 25.16,
+    "conf": 1.0
+  },
+  {
+    "word": "den",
+    "start": 25.16,
+    "end": 25.16,
+    "conf": 1.0
+  },
+  {
+    "word": "Hörer",
+    "start": 25.16,
+    "end": 25.16,
+    "conf": 1.0
+  },
+  {
+    "word": "zu.",
+    "start": 25.16,
+    "end": 25.16,
+    "conf": 1.0
+  },
+  {
+    "word": "Sie",
+    "start": 25.16,
+    "end": 25.16,
+    "conf": 1.0
+  },
+  {
+    "word": "warf",
+    "start": 25.16,
+    "end": 25.16,
+    "conf": 1.0
+  },
+  {
+    "word": "ihr",
+    "start": 25.16,
+    "end": 25.16,
+    "conf": 1.0
+  },
+  {
+    "word": "den",
+    "start": 25.16,
+    "end": 25.16,
+    "conf": 1.0
+  },
+  {
+    "word": "Hörer",
+    "start": 25.16,
+    "end": 25.16,
+    "conf": 1.0
+  },
+  {
+    "word": "zu.",
+    "start": 25.16,
+    "end": 25.16,
+    "conf": 1.0
+  },
+  {
+    "word": "Sie",
+    "start": 25.16,
+    "end": 25.16,
+    "conf": 1.0
+  },
+  {
+    "word": "warf",
+    "start": 25.16,
+    "end": 25.16,
+    "conf": 1.0
+  },
+  {
+    "word": "ihr",
+    "start": 25.16,
+    "end": 25.16,
+    "conf": 1.0
+  },
+  {
+    "word": "die",
+    "start": 25.16,
+    "end": 25.16,
+    "conf": 1.0
+  },
+  {
+    "word": "Beerdigung",
+    "start": 25.16,
+    "end": 25.16,
+    "conf": 1.0
+  },
+  {
+    "word": "schon",
+    "start": 25.16,
+    "end": 25.16,
+    "conf": 1.0
+  },
+  {
+    "word": "geplant.",
+    "start": 25.16,
+    "end": 25.22,
+    "conf": 1.0
+  }
+]
