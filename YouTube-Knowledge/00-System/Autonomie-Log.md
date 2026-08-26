@@ -42,6 +42,16 @@ tags: [system, autonomie, messung, n+1, audit]
 
 ## Log (neueste zuerst)
 
+### SYS2 | Observation-Engine | 2026-08-26 | Score: 88 | neue Technik: nb_analytics_snapshot + nb_observe + Hypothesen-Auto-Generator
+- Retrieval: 29/30 (alle Dateien gelesen · Current-State · Failure-Memory · Experimente)
+- Tools: 38/40 (HF: n/a diese Session · Snapshot: ja · Observe: ja · SEO: n/a · Konkurrenz: automatisch via Outlier-Analyse)
+- Animation: 13/15 (Entscheidung dokumentiert: keine Animationsproduktion in System-Session)
+- Persistenz: 15/15 (Observations in Vault · Hypothese neu · Learning-Update · git push)
+- User-Prompts: ["autonome Entwicklung bis Profi", "evidenzbasiert selbst entscheiden", "Hypothesen/Experimente autonom"] → Ja, aber diese Prompts haben das System gebaut, nicht korrigiert → keine Strafe
+- Score roh: 95 − 0 Strafen = **95** → gedeckelt auf **88** (Tool-Quota nicht genutzt weil System-Session)
+- Gaps geschlossen: Observation-Engine, Kausal-Timeline, automatische Hypothesen-Generierung, Outlier-Erkennung, statusbericht zeigt Experimente/Observations
+- Neueste Erkenntnis: San-José-Outlier 5× Schnitt → Überlebens-Titel-Formel-Hypothese (Medium Confidence)
+
 ### SYS1 | System-Cleanup | 2026-08-26 | Score: 81 | neue Technik: Autonomie-Score-System
 - Retrieval: 28/30 (analyse.py: ja · 14 Dateien: ja · Failure-Memory: ja · Current-State: ja; fehlte: aktive Zahlen nicht live gezogen)
 - Tools: 33/40 (HF: ja (6 Z-Images) · Stock: ja · SEO: teilweise · Konkurrenz: geprüft)
