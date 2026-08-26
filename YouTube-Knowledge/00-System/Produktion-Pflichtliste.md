@@ -24,7 +24,7 @@ Ergebnis in [[Current-State]] eintragen wenn abweichend. Gemessenes schlägt Not
 
 ## 2. Learnings LESEN — alle, vollständig (nicht aus dem Gedächtnis)
 
-Diese 12 Dateien werden gelesen, bevor das erste Bild, der erste Satz oder das erste Tag entsteht:
+Diese 14 Dateien werden gelesen, bevor das erste Bild, der erste Satz oder das erste Tag entsteht:
 
 | Datei | Was drin steht |
 |---|---|

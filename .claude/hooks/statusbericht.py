@@ -143,7 +143,7 @@ def main():
     z("-" * 62)
     z("VOR JEDER PRODUKTION LESEN (n+1, Pflicht):")
     z("  YouTube-Knowledge/00-System/Produktion-Pflichtliste.md")
-    z("  -> alle 13 Learnings, Werkzeug-Checklist, Konkurrenz-Referenz,")
+    z("  -> alle 14 Lern-Dateien (12 Learnings + Failure-Memory + Animation-Library),")
     z("     Animation-Library (manim_scenes.py: 7 Klassen, Backlog)")
     z("  -> HF Z-Image IMMER zuerst ausschoepfen (gratis, ~8/Tag)")
     z("  -> Manim/Remotion: so viele Animationen wie sinnvoll, kein Limit")

@@ -15,8 +15,8 @@ Session-Start
  → Statusbericht des Hooks lesen (Pipeline/Werkzeuge/Zugänge/Netz + Pflichtliste-Reminder)
  → CLAUDE.md ist geladen (Einstieg + Rules, inkl. n+1-Constraint)
  → [[Current-State]] öffnen
- → Bei Produktion: [[Produktion-Pflichtliste]] VOLLSTÄNDIG lesen (alle 13 Learnings,
-   Werkzeug-Checklist, Konkurrenz-Referenz, Animation-Library) — nicht aus Gedächtnis
+ → Bei Produktion: [[Produktion-Pflichtliste]] VOLLSTÄNDIG lesen (alle 14 Lern-Dateien:
+   12 Learnings + Failure-Memory + Animation-Library, Werkzeug-Checklist, Konkurrenz-Referenz) — nicht aus Gedächtnis
 ```
 Retrieval-Regel: Die **Pflichtliste ist das Retrieval-Protokoll für Produktion** — sie listet
 exakt welche Dateien zu lesen sind. Nichts weglassen, nichts überspringen, auch wenn

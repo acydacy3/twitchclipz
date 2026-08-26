@@ -74,7 +74,7 @@ cd tools/remotion && npm install
 
 ## Anti-Stall-Regel
 **Jede neue Videoreihe:** mindestens 1 neue Klasse committen.
-**Mindestens 2 Animations-Clips pro 10-Short-Reihe** (nicht nur 1 Opener).
+**So viele Animations-Clips wie sinnvoll und qualitativ gut wird — kein Limit, kein starres Minimum.**
 Wenn keine neue Klasse entsteht → ins Backlog schauen und etwas umsetzen.
 
 ## Related
