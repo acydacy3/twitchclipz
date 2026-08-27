@@ -14,6 +14,17 @@ tags: [system, pflicht, n+1, produktion]
 
 ---
 
+## 0a. Story-Score (bei jeder NEUEN Geschichte, vor Skript-Anforderung)
+Bewerte die Geschichte intern nach:
+- Unmögliche Prämisse (25%) · Menschliche ID (20%) · Visuell (15%) · Twist (15%) · DE-Nische (10%) · Suche (10%) · Longform (5%)
+- **Schwelle: ≥ 70 Punkte** — darunter entweder besseren Angle suchen oder Geschichte zurückstellen.
+
+## 0b. Angle-Extraktion (vor Schnitt-Beginn)
+Für die aktuelle Geschichte: **10–20 mögliche Short-Hooks** aufschreiben.
+- Jeder Hook muss alleine funktionieren — kein „Teil X".
+- Die stärksten 8–10 produzieren. Nicht alle, die möglich wären.
+- Frage per Hook: *Würde jemand, der diese Geschichte noch nie gesehen hat, genau hier stehen bleiben?*
+
 ## 0. Contrarian-Gate (IMMER VOR RENDER/UPLOAD — ~10 s)
 ```bash
 python3 tools/nb_contrarian.py <short.json>   # automatische Konfig-Prüfung

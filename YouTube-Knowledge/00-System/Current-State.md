@@ -50,6 +50,22 @@ tags: [system, state]
 - Hook-Banner mit abweichendem Text: nie belegt besser → [[Experiment-Hook-Banner-abweichender-Text]].
 - TikTok-Hashtag-Wahl stützt sich auf YouTube-Volumen (schwächster Punkt) → [[Frage-TikTok-Hashtag-Volumen]].
 
+## 5 Inhalts-Säulen (operativ ab sofort)
+1. **„Sie hätten sterben müssen"** — Person + unmögliche Situation + Zahl + Überleben
+2. **„Die Rettung war eigentlich unmöglich"** — chancenlose Rettung als Kernversprechen
+3. **„Ein Fehler löste alles aus"** — Single point of failure → Katastrophe
+4. **„Katastrophe in Echtzeit"** — Timer-Erzählung (gut für Longform)
+5. **„Der Moment, in dem alles vorbei schien"** — emotionaler Wendepunkt isoliert
+
+**Kernidentität:** Nicht „Doku über Katastrophe X", sondern „Mensch in unmöglicher Situation".
+**Angle-Extraktion:** Pro Story 20 mögliche Angles generieren → stärkste 8–10 produzieren. Jeder Short steht allein.
+**Story-Score:** Unmögliche Prämisse (25%) + Menschliche ID (20%) + Visuell (15%) + Twist (15%) + DE-Nische (10%) + Suche (10%) + Longform (5%) → Schwelle ≥ 70.
+
+## Neue Referenz-Kanäle (27.08.)
+- **Spds**: 39 Videos, 43+ Mio Views — Proof: Qualität > Quantität
+- **Der Soldat spricht**: 25 Mio Views, 319 Videos — DE-Publikum nimmt sachlich-dramatische Shorts an
+- **Tap Thrill**: Schnell wachsender DE-Storytelling-Shorts-Kanal — beobachten
+
 ## Neue Rules aus Competitor-Analyse (promoted 27.08.2026)
 - **„| Doku" aus Titeln streichen** — „Doku" in Description + Tags, NICHT im Titel. Kein Top-Performer der Konkurrenz nutzt Genre-Labels.
 - **Personennamen gezielt im Titel** wenn Person google-bar ist (Otto Warmbier…) — nicht in jeden Short-Titel der Reihe, nur wo es natürlich passt (typisch 1–2 Shorts). Bestehende Videos: kein Titel-Edit (Performance-Risiko), nur Description nachbessern wenn Name fehlt. Ab V8: von Anfang an einplanen.

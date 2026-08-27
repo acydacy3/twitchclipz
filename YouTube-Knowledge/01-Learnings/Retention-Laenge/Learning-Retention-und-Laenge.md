@@ -56,7 +56,14 @@ Externe Beobachtung (nicht Beweis): Top-Shorts bei HtSS + Scary Interesting (n=5
 
 **Was diese Daten trotzdem sagen:** Länge allein tötet nicht. Ein guter 50s-Short stirbt nicht an der Länge. Das unterstützt „Hook > Länge" — aber die Formel „40–55s ansteuern" überschreibt unsere internen Messungen NICHT.
 
-**Experiment-Vorschlag:** Ab V8 gezielt 2 Shorts mit 45–55s produzieren (gleicher Hook-Standard). A/B vs. ~25s-Shorts derselben Reihe. Erst bei klarem internen Beleg wird Zone angehoben.
+**Experiment-Vorschlag (präzisiert 27.08.):** Ab V8 drei Gruppen mit ähnlichen Themen und gleicher Hook-Qualität testen:
+- Gruppe A: 20–30s (aktueller Schwerpunkt)
+- Gruppe B: 30–45s
+- Gruppe C: 45–60s
+
+Messung: Viewed vs. Swiped Away · ⌀ Wiedergabedauer · ⌀ Wiedergabeprozentsatz · Subs/1.000 Views. Erst dann Aussage für *unseren* Kanal — nicht für Scary Interesting.
+
+**Längen-Leitfrage (Punkt-2-Bestätigung):** Jede Geschichte bekommt genau die Länge, die für einen vollständigen Spannungsbogen notwendig ist. Kein Zielwert in Sekunden.
 
 Confidence: Low (externe Daten, andere Kanäle, Survivorship Bias, kein internes A/B).
 
