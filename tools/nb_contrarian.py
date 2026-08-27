@@ -163,13 +163,15 @@ def _tage_seit(datum_str):
 
 def analysiere_hypothesen():
     """
-    Liest 07-Hypotheses/*.md.
-    Für jede Hypothese: Confidence vs. Beweis prüfen, Confounders einfordern,
-    Alternative Erklärungen vorschlagen.
+    Liest 07-Hypotheses/*.md und wertet sie gegen verfügbare Snapshot-Daten aus.
+    Kein Formular-Check — direkte Gegenthesen und Datenbewertung.
     """
     findings = []
     if not HYPO.exists():
         return findings
+
+    videos    = _lade_letzten_snapshot()
+    kanal_avg = _kanal_avg(videos)
 
     for md in sorted(HYPO.glob("*.md")):
         if "Übersicht" in md.name or "Template" in md.name:
@@ -179,141 +181,187 @@ def analysiere_hypothesen():
         name = md.stem
         conf = fm.get("confidence", "unbekannt").lower()
         conf_level = CONFIDENCE_ORDER.get(conf, 0)
-        n = _n_aus_text(text)
-        has_test_design = bool(re.search(r"##\s*(Wie testen|Test|Design)", text, re.IGNORECASE))
-        has_counter     = bool(re.search(r"counter.?evidence|gegenbewei|widerleg|contra", text, re.IGNORECASE))
-        has_confounder  = bool(re.search(r"confounder|störvariab|alternative erkl", text, re.IGNORECASE))
+        n_doc = _n_aus_text(text)
 
         issues = []
 
-        # Confidence zu hoch für verfügbare Evidenz?
-        if conf_level >= 3 and (n is None or n < N_FUER_HIGH):
-            n_str = f"n={n}" if n else "kein n dokumentiert"
+        # ── Hypothesen-spezifische Datenbewertung ──────────────
+        if "hook" in name.lower() and "laenge" in name.lower():
             issues.append(
-                f"  FRAGIL: Confidence '{conf}' erfordert n≥{N_FUER_HIGH}, "
-                f"aber {n_str} — Downgrade auf Medium?"
+                "  GEGENTHESE: 'Hook schlägt Länge' ist nicht falsifizierbar ohne "
+                "Operationalisierung von Hook-Qualität. Was ist ein 'guter Hook'? "
+                "Solange das nicht messbar ist, erklärt die Hypothese alles — und damit nichts."
             )
-        if conf_level >= 4 and (n is None or n < N_FUER_VERY_HIGH):
-            n_str = f"n={n}" if n else "kein n"
             issues.append(
-                f"  FRAGIL: Confidence 'very high' erfordert n≥{N_FUER_VERY_HIGH}, "
-                f"aber {n_str} — nicht gerechtfertigt."
+                "  DATENLAGE: Hook-Qualität und Länge wurden nie sauber getrennt. "
+                "Einzig valider Test: gleicher Hook-Text, zwei Schnittlängen (z.B. 18s vs. 35s), "
+                "AVP% Tag 4–5 vergleichen."
+            )
+            if conf_level >= 3:
+                issues.append(
+                    f"  FRAGIL: Confidence '{conf}' ohne kontrollierten Test. "
+                    "Als operative Heuristik vertretbar — nicht als bewiesene Regel behandeln."
+                )
+
+        elif "titel" in name.lower() or "formel" in name.lower() or "ueberlebens" in name.lower():
+            # Daten-Check: San-José-Views vs. Kanal-Ø
+            n_sj, avg_sj = _serien_views(videos, ["san jose", "jascon"])
+            if avg_sj > 0 and kanal_avg > 0:
+                faktor = round(avg_sj / kanal_avg, 1)
+                issues.append(
+                    f"  DATENLAGE: San-José-Serien (n={n_sj}) Ø {avg_sj} Views "
+                    f"vs. Kanal-Ø {kanal_avg}. Faktor {faktor}x"
+                )
+            else:
+                issues.append(
+                    f"  DATENLAGE: San-José-Daten nicht im Snapshot (n={n_sj})."
+                )
+            issues.append(
+                "  GEGENTHESE #1 — Alterseffekt: San José ist eine der ersten Serien. "
+                "Mehr Zeit im Index = mehr Zeit für View-Accumulation. "
+                "Kausalschluss 'Titel → Views' nicht möglich ohne Altersbereinigung."
+            )
+            issues.append(
+                "  GEGENTHESE #2 — Themeneffekt: Luftblase unter Wasser ist physikalisch "
+                "faszinierend (Okene ebenfalls Outlier). Thema schlägt möglicherweise Titel-Formel."
+            )
+            issues.append(
+                "  BELASTBARER TEST: Gleiche Themen-Kategorie, Titel-Variante A vs. B, "
+                "CTR in ersten 48 h messen — entsteht natürlich wenn V8 mit Ralston zwei "
+                "parallele Titel-Tests bekommt (unterschiedliche Shorts, gleiche Geschichte)."
             )
 
-        # Kein Test-Design trotz offener Hypothese
-        if fm.get("status", "").lower() == "open" and not has_test_design:
+        # Allgemein: Confidence vs. Stichprobe
+        if conf_level >= 3 and n_doc and n_doc < N_FUER_HIGH:
             issues.append(
-                "  FORDERUNG: Hypothese ist 'open' aber hat kein Test-Design. "
-                "Ohne kontrollierten Test bleibt sie Annahme."
+                f"  FRAGIL: n={n_doc} bei Confidence '{conf}'. "
+                f"High erfordert n≥{N_FUER_HIGH} — aktuell Heuristik, kein Beweis."
             )
 
-        # Kein Confounder-Abschnitt
-        if not has_confounder and conf_level >= 2:
-            issues.append(
-                "  FORDERUNG: Keine Confounder-Analyse. Welche alternativen "
-                "Erklärungen wurden ausgeschlossen? (Themen-Effekt? Slot? Alter des Videos?)"
-            )
-
-        # Kein Counter-Evidence
-        if not has_counter and conf_level >= 2:
-            issues.append(
-                "  FORDERUNG: Kein Counter-Evidence-Abschnitt. "
-                "Welche Daten würden diese Hypothese widerlegen?"
-            )
-
-        # Domänen-spezifische Gegenthesen
-        if "länge" in name.lower() or "retention" in name.lower():
-            issues.append(
-                "  GEGENTHESE: Ältere Videos haben mehr Zeit für View-Accumulation. "
-                "Längeneffekt und Alterseffekt nicht trennbar ohne Kohortenvergleich."
-            )
-        if "hook" in name.lower() and "länge" in text.lower():
-            issues.append(
-                "  GEGENTHESE: Hook-Qualität ist schwer operationalisierbar. "
-                "Was genau macht einen Hook besser? Ohne Messgröße ist 'Hook schlägt Länge' "
-                "nicht falsifizierbar."
-            )
-        if "titel" in name.lower() or "formel" in name.lower():
-            issues.append(
-                "  GEGENTHESE: Titlel-Erfolg könnte durch Thema getrieben sein, nicht Formel. "
-                "San José = älteres Video = mehr Zeit. Kontrollierte Variation nötig: "
-                "gleiche Themen-Kategorie, Titel A vs. B, CTR in ersten 48 h messen."
-            )
-
-        findings.append((name, conf, issues))
+        if issues:
+            findings.append((name, conf, issues))
 
     return findings
 
 
+# ── Snapshot laden ───────────────────────────────────────────────
+
+def _lade_letzten_snapshot():
+    snap_dir = VAULT / "07-Analytics" / "snapshots"
+    if not snap_dir.exists():
+        return []
+    snaps = sorted(snap_dir.glob("*.json"))
+    if not snaps:
+        return []
+    return json.loads(snaps[-1].read_text(encoding="utf-8")).get("videos", [])
+
+
+def _serien_views(videos, keywords):
+    """Gibt (n, avg_views) für Videos zurück deren Titel eines der Keywords enthält."""
+    treffer = [v for v in videos
+               if any(k.lower() in v.get("title", "").lower() for k in keywords)
+               and v.get("status") == "public" and v.get("views", 0) > 0]
+    if not treffer:
+        return 0, 0
+    avg = sum(v["views"] for v in treffer) / len(treffer)
+    return len(treffer), round(avg)
+
+
+def _kanal_avg(videos):
+    pub = [v for v in videos if v.get("status") == "public" and v.get("views", 0) > 0]
+    if not pub:
+        return 0
+    return round(sum(v["views"] for v in pub) / len(pub))
+
+
 # ── Experiment-Review ────────────────────────────────────────────
+
+# Bekannte natürliche Experimente im Kanal — werden gegen echte Snapshot-Daten
+# ausgewertet, nicht gegen Formular-Metadaten. Kein start_date nötig.
+# Format: (name, gruppen: [(label, keywords)], frage, einschraenkung)
+NATUERLICHE_EXPERIMENTE = [
+    (
+        "Animation-Opener vs. Ken-Burns",
+        [
+            ("Mit Manim/Animation", ["lengede", "nutty putty", "prosperi"]),
+            ("Nur Ken-Burns",       ["tham luang", "san jose", "okene", "koepcke"]),
+        ],
+        "Schlagen Animations-Opener (V5/V6/V7) reine Standbild-Serien (V1–V4) in Views/Short?",
+        "EINSCHRÄNKUNG: Themen-Effekt und Serienreihenfolge (ältere Serien = mehr Zeit) "
+        "können nicht getrennt werden. Konfundierung hoch. Ergebnis ist Indiz, kein Beweis.",
+    ),
+    (
+        "Überlebens-Titel vs. Chronik-Titel",
+        [
+            ("Überlebens-Frame", ["san jose", "okene", "prosperi", "nutty putty"]),
+            ("Chronik-Frame",    ["tham luang", "koepcke", "lengede"]),
+        ],
+        "Performen Serien mit Überlebens-Perspektive im Titel besser als Chronik-Erzählungen?",
+        "EINSCHRÄNKUNG: Themen-Effekt (physikalisch faszinierend vs. Standard) nicht trennbar. "
+        "Für Beweis: gleiche Themen-Kategorie, zwei Titel-Varianten, CTR Tag 1 vergleichen.",
+    ),
+]
+
+# Experimente die echte AVP%/CTR-Daten brauchen — aktuell nicht auswertbar
+NICHT_AUSWERTBAR = [
+    ("Hook-Banner-abweichender-Text",
+     "Braucht 3-s-Retention je Short (YouTube Analytics). "
+     "Wird auswertbar wenn V3-Koepcke-Daten (Tag 7+) per Analytics-API gezogen werden. "
+     "Kein Nutzer-Handlungsbedarf — Daten entstehen durch Produktion."),
+    ("Experiment-TikTok-Lange-Schnitte",
+     "TikTok-Analytics nicht in der Snapshot-Pipeline. "
+     "Wird auswertbar wenn Buffer-Insights oder manueller Export verfügbar sind."),
+    ("Experiment-Remotion-Motion-Graphics",
+     "Remotion noch nicht in Produktion eingesetzt. "
+     "Datenpfad entsteht automatisch wenn erstes Remotion-Short live geht."),
+]
+
 
 def analysiere_experimente():
     """
-    Liest 02-Experiments/Active/*.md.
-    Prüft: gestartet? Kontrolle vorhanden? Erfolgskriterien klar? Überfällig?
+    Wertet natürliche Experimente direkt gegen Snapshot-Daten aus.
+    Kein Formular, keine Metadaten-Hygiene — nur: was sagen die Zahlen?
     """
     findings = []
-    if not EXP.exists():
+    videos = _lade_letzten_snapshot()
+    if not videos:
+        findings.append(("KEIN SNAPSHOT", "?", ["  Kein Snapshot geladen — nb_analytics_snapshot.py laufen lassen."]))
         return findings
 
-    for md in sorted(EXP.glob("*.md")):
-        if "Template" in md.name:
-            continue
-        text = md.read_text(encoding="utf-8")
-        fm   = _parse_frontmatter(text)
-        name = md.stem
+    kanal_avg = _kanal_avg(videos)
+    findings.append((f"Kanal-Ø (Public, n≥1 View)", "Referenz",
+                     [f"  Kanal-Ø: {kanal_avg} Views/Short"]))
 
-        start = fm.get("start_date", "").strip()
-        tage  = _tage_seit(start) if start else None
-        has_control  = bool(fm.get("control", "").strip())
-        has_metric   = bool(re.search(r"(3-s-retention|avp%|ctr|views|klicks)", text, re.IGNORECASE))
-        has_criteria = bool(re.search(r"(erfolg|threshold|schwelle|>|≥|besser als)", text, re.IGNORECASE))
-        sample_size  = fm.get("sample_size", "").strip()
+    for name, gruppen, frage, einschraenkung in NATUERLICHE_EXPERIMENTE:
+        issues = [f"  FRAGE: {frage}"]
+        gruppe_results = []
+        for label, keywords in gruppen:
+            n, avg = _serien_views(videos, keywords)
+            gruppe_results.append((label, n, avg))
+            issues.append(f"  {label}: n={n} öffentliche Shorts, Ø {avg} Views")
 
-        issues = []
-
-        # Nicht gestartet
-        if not start:
-            issues.append(
-                "  FORDERUNG: Kein start_date — Experiment ist nicht gestartet. "
-                "Wann startet es? Oder archivieren?"
-            )
-        else:
-            issues.append(f"  INFO: Läuft seit {tage} Tagen (seit {start})")
-            if tage and tage > 21:
+        if len(gruppe_results) == 2:
+            (la, na, aa), (lb, nb, ab) = gruppe_results
+            if na >= 3 and nb >= 3 and ab > 0:
+                faktor = round(aa / ab, 2) if ab else "–"
+                richtung = "besser" if aa > ab else "schlechter"
                 issues.append(
-                    f"  ÜBERFÄLLIG: {tage} Tage ohne Auswertung — "
-                    "entweder Daten auswerten oder Experiment abschließen."
+                    f"  VORLÄUFIGES ERGEBNIS: {la} Ø {aa} vs. {lb} Ø {ab} "
+                    f"→ Faktor {faktor}× ({richtung})"
                 )
-            elif tage and tage > 7:
-                issues.append(
-                    f"  HINWEIS: {tage} Tage aktiv — Auswertung möglich, "
-                    "wenn ≥5 Videos pro Variante live sind."
-                )
+                if abs(aa - ab) < 0.2 * max(aa, ab):
+                    issues.append("  BEWERTUNG: Unterschied <20% — kein klares Signal.")
+                elif faktor > 1.5 or faktor < 0.67:
+                    issues.append("  BEWERTUNG: Deutlicher Unterschied — Hypothese prüfen.")
+            else:
+                issues.append(f"  DATENLAGE: zu wenig öffentliche Daten für Auswertung (min. 3 je Gruppe)")
+            issues.append(f"  {einschraenkung}")
 
-        # Keine Kontrollgruppe
-        if not has_control:
-            issues.append(
-                "  FORDERUNG: Keine Kontrollbedingung dokumentiert. "
-                "Ohne Kontrolle ist kein Kausalschluss möglich — nur Korrelation."
-            )
+        findings.append((name, "natürlich", issues))
 
-        # Keine klare Erfolgsmetrik
-        if not has_metric:
-            issues.append(
-                "  FORDERUNG: Keine messbare Erfolgsmetrik (3-s-Retention, AVP%, CTR). "
-                "Wie wird das Experiment entschieden?"
-            )
-
-        # Keine Stichprobengröße
-        if not sample_size:
-            issues.append(
-                "  FORDERUNG: Keine sample_size definiert. "
-                "Wie viele Videos brauchen wir pro Variante für eine Entscheidung? "
-                "(Empfehlung: min. 5 pro Arm, besser 10)"
-            )
-
-        findings.append((name, fm.get("status", "?"), issues))
+    # Nicht auswertbare Experimente
+    for name, grund in NICHT_AUSWERTBAR:
+        findings.append((name, "kein Datenpfad", [f"  DATENPFAD: {grund}"]))
 
     return findings
 
