@@ -44,6 +44,17 @@ Memory-, Experiment- und Audit-Systemen. Quelle: Nutzer-Auftrag 24.08.2026.
 10. **The Ultimate Objective.** Nicht mehr produzieren, sondern die
     **Entscheidungsqualität** je Zyklus erhöhen (siehe [[Mission]]).
 
+## Präzedenzfall — Guardrail-Verletzung 27.08.2026
+
+**Was passiert ist:** Competitor-Analyse ergab, dass HtSS/Scary Interesting Top-Shorts 44–60s lang sind. Daraus wurde fälschlicherweise eine **promoted Rule** gemacht (Short-Länge Ziel 40–55s) und in Current-State.md + Learning-Retention-und-Laenge.md als operative Guideline eingetragen — obwohl unsere interne bewiesene Zone 19–39s (n=44) nie widerlegt wurde.
+
+**Warum falsch:** Externer Survivorship-Bias (nur Gewinner sichtbar) + andere Kanal-DNA = kein Beweis für unseren Kanal. Guardrail #4 „Learning is not automatically a Rule" und #9 „Human Control Over Irreversible Changes" wurden verletzt.
+
+**Korrektur:** Competitor-Längen-Beobachtung als Low-Confidence-Hypothese herabgestuft. Interner n=44-Befund bleibt operative Grundlage. Experiment ab V8 vorgeschlagen.
+
+**Fixe Regel daraus (ab sofort):**
+> **Externe Competitor-Daten dürfen niemals eine intern gemessene und bewiesene Rule überschreiben.** Sie können als Hypothese eingetragen werden, brauchen aber ein internes A/B-Experiment und eigene Daten bevor sie zu einer Rule werden. Competitor zeigt Möglichkeit, nicht Verpflichtung.
+
 ## Anwendung in diesem Vault
 - Migration der Ur-CLAUDE.md: **verbatim archiviert** unter
   `00-System/_archive/`, keine Information gelöscht (→ #1, #6).

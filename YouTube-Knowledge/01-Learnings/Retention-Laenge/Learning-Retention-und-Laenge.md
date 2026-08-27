@@ -47,15 +47,18 @@ Short frühestens **Tag 4–5** bewerten (YT) / in den ersten 10 Tagen (TikTok).
 Beim Schnitt: Länge nicht nach Sekunden optimieren, sondern tote Sekunden killen.
 Kraft in die ersten 3 s legen. → [[Learning-Hooks]], [[Learning-Storytelling-Shorts]].
 
-## Competitor-Evidenz: Erfolgszone 44–60s (27.08.2026)
-Externe Bestätigung durch Analyse von Top-Shorts bei HtSS + Scary Interesting (n=5, 1,27–28,3 Mio Views):
+## Competitor-Hypothese: Erfolgszone 44–60s (27.08.2026) — KEIN PROMOTED RULE
+Externe Beobachtung (nicht Beweis): Top-Shorts bei HtSS + Scary Interesting (n=5, 1,27–28,3 Mio Views):
 - Scary Interesting #1: 56s (5,73 Mio), #2: 60s (1,70 Mio), #3: 57s (1,27 Mio).
 - HtSS #1: 47s (28,3 Mio), #5: 52s (5,34 Mio).
-- **Unser Kanal-Durchschnitt: ~25s — 20 Sekunden unter der belegten Erfolgszone.**
 
-Interpretation: Die Zone 19–39s war unser internes Erfahrungswert — Competitor-Daten zeigen, dass die Erfolgszone höher liegt. Nicht Länge an sich, sondern **ausreichend Raum für vollständige Narrative** (zweiter Spannungsbogen, Anagnorisis, Auflösung). Neue operative Zone: **40–55s als Ziel**, tote Sekunden weiterhin killen.
+**Status: HYPOTHESE, nicht Rule.** Grundproblem: Survivorship Bias — wir sehen nur die Gewinner. Was wir nicht wissen: wie viele 50s-Shorts bei HtSS/SI gefloppt sind. Außerdem: andere Kanal-DNA, anderes Publikum, anderes Alter. Unsere bewiesene Zone (19–39s, n=44) bleibt operative Grundlage.
 
-Confidence: High (externe Daten, 5 Datenpunkte, direkter View-Bezug).
+**Was diese Daten trotzdem sagen:** Länge allein tötet nicht. Ein guter 50s-Short stirbt nicht an der Länge. Das unterstützt „Hook > Länge" — aber die Formel „40–55s ansteuern" überschreibt unsere internen Messungen NICHT.
+
+**Experiment-Vorschlag:** Ab V8 gezielt 2 Shorts mit 45–55s produzieren (gleicher Hook-Standard). A/B vs. ~25s-Shorts derselben Reihe. Erst bei klarem internen Beleg wird Zone angehoben.
+
+Confidence: Low (externe Daten, andere Kanäle, Survivorship Bias, kein internes A/B).
 
 ## History
 - **v1 (17.08.):** „unter 22 s: Faktor 7,9" (Vosk n=12).

@@ -53,7 +53,7 @@ tags: [system, state]
 ## Neue Rules aus Competitor-Analyse (promoted 27.08.2026)
 - **„| Doku" aus Titeln streichen** — „Doku" in Description + Tags, NICHT im Titel. Kein Top-Performer der Konkurrenz nutzt Genre-Labels.
 - **Personennamen im Titel** wenn Person google-bar ist (Juliane Koepcke, Otto Warmbier…). Sofort: V03 Description + Tags mit „Juliane Koepcke" anreichern.
-- **Short-Länge Ziel: 40–55 Sekunden** (bisherige Zone 19–39s war zu kurz; Competitor-Top-Shorts: 44–60s, n=5, 1,27–28,3 Mio Views).
+- **Short-Länge: Zone 19–39s bleibt operative Grundlage (n=44, intern bewiesen).** Competitor-Beobachtung 44–60s = Hypothese/Experiment-Vorschlag, KEIN Override. Ab V8: 2 Shorts mit 45–55s als A/B-Test.
 - **Cinematische Schlüsselszene pro Short** — mindestens 1–2 Shots, die als Standbild funktionieren (YouTube wählt Shorts-Frame automatisch; Manim gratis).
 - **Longform Custom-Thumbnail: unmögliches Bild** — 3D-Visualisierung (Manim) + einmalig KI-Portrait pro Produktionszyklus (Quota: max. 1 Higgsfield/HF-Call).
 - **Rollenmodell: Scary Interesting** (0,99%/Monat Wachstum, ⌀ 1,21 Mio Views/Video — nicht HtSS, das stagniert bei 0,47%).
