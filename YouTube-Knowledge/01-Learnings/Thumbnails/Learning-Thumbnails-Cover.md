@@ -35,8 +35,20 @@ würde mit Balken landen; stärkstes Einzelbild = Cover → [[Learning-Cross-Pla
 ## Operational Implication
 Cover nur für Raster/Suche bauen; Produktions-Aufwand entsprechend gewichten.
 
+## Competitor-Befund: Cinematische Frame-Qualität (27.08.2026)
+Analyse von 8 Thumbnails (HtSS, Scary Interesting) bestätigt + ergänzt:
+
+**Scary Interesting Shorts:** 5,73 Mio Views „Road Block" + 1,27 Mio „Don't Look Back" — beide nutzen auto-gewählte Frames. YouTube wählt den stärksten Kontrast-Frame. Ihre Stärke: das Videomaterial ist cinematisch (Noir-Licht, anonyme Silhouetten, eine einzige Lichtquelle). Der Algorithmus findet dann automatisch den besten Still.
+
+**Konsequenz für unsere Produktion:** Nicht „Thumbnail-Design" verbessern (geht eh nicht bei Shorts), sondern **cinematische Szenen im Video selbst planen** — mindestens 1–2 Shots pro Short, die als Standbild funktionieren. Manim-Animationen erfüllen das gratis (Querschnitte, Zeitleisten).
+
+**HtSS Longform Custom-Thumbnails** (bearbeitbar): Formel = unmögliches Bild — Boot auf Schlangenmasse, Frau lächelt neben fallendem Flugzeug, 3D-Dummy im Wasserrutsch-Loop. Alle eigene Produktion, keine Stock-Bilder. Für uns: Manim-3D-Render als Basis, einmalig KI-Portrait für Custom-Thumbnail pro Produktionszyklus (HF/Higgsfield Quota schonen).
+
+**Confidence:** High (n=8 direkt analysierte Thumbnails).
+
 ## History
 - 17.08.: Zweiteilung + Format-Fehler; Runde 2 korrigierte „ersten Frame leer".
+- 27.08.: Competitor-Analyse ergänzt — Shorts = Frame-Qualität; Longform = unmögliches Bild.
 
 ## Related
 [[Learning-Titel]] · [[Learning-Editing-Video]] · [[Learning-Cross-Platform-TikTok]]

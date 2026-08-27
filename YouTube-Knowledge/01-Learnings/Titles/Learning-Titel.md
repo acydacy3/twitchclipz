@@ -43,9 +43,17 @@ Titelentscheidung lohnt (aber Credits schonen).
 - **Anagnorisis-Titel** — „Der Taucher griff nach der Leiche und..." (1648) — Cliffhanger in Titel + emotionaler Umkehr-Moment schlägt reine Info-Titel.
 - **Konkrete Zahl + Isolation**: „3 Tage ALLEINE in X" → 4618 Views (5× Kanal-Ø). Überleben + Zeit + Einsamkeit = stärkste Kombination bisher.
 
+## Competitor-Befund: Titelformel (27.08.2026, n=8 Top-Videos)
+- **„| Doku" streichen** — kein Top-Performer der Konkurrenz verwendet Genre-Labels. HtSS bestes Video: „She Fell 10,000 ft And Survived The Jungle". Scary Interesting: „Road Block". Keine Label. Konkretes Paradox schlägt Genre-Beschreibung.
+- **Personennamen im Titel = SEO-Anker** wenn bekannt genug (Otto Warmbier: 6,55 Mio; Juliane Koepcke sollte in unseren V03-Tags/Description). Name im Titel wenn die Person google-bar ist.
+- **Warum-Frage funktioniert** als Titelform: „Why He Didn't Survive North Korea" — gibt den Ausgang preis (er stirbt) und macht den Weg trotzdem neugierig.
+- **Doku-Keyword** weiterhin in Description + Tags benutzen (Suchwert vorhanden), aber nie mehr im Titel.
+- Confidence: High (9 vidIQ-Calls, Breakout-Scores, direkte View-Zahlen als Evidenz).
+
 ## History
 - 17.08.: Titel-Bauform + Keyword-Regel (zwei Agentenläufe).
 - 17.08. (Runde 2): Trennstrich-Anhang verworfen.
+- 27.08.: Competitor-Analyse bestätigt — „| Doku" weg, Namen rein wenn bekannt.
 
 ## Related
 [[Learning-SEO]] · [[Learning-Thumbnails-Cover]] · [[Learning-Hooks]]
