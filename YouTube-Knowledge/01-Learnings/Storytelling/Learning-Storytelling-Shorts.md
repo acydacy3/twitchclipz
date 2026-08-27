@@ -36,9 +36,19 @@ Kein Beleg, dass Banner-Abweichen je besser lief → deshalb nur Test-Status.
 Teil des [[Schnitt-Protokoll]] (Schritte 2 + 4). Pattern-Interrupt alle paar
 Sekunden; Mehrfach-Ausschnitt (ein Bild → 3–5 Einstellungen) → [[Learning-Editing-Video]].
 
+## Competitor-Befund: Cinematische Schlüsselszene (27.08.2026)
+Scary Interestings Shorts performen teilweise wegen des auto-gewählten Thumbnails (YouTube wählt besten Frame automatisch). Ihre Stärke: **das Videomaterial selbst ist cinematisch** — Noir-Licht, anonyme Silhouetten, starker Kontrast, eine einzige Lichtquelle. YouTube greift dann den besten Frame heraus.
+
+**Konsequenz für Schnitt:** Pro Short mindestens **1–2 Szenen bewusst cinematisch planen** — ein Shot, der als Standbild funktioniert. Kriterien: klarer Kontrast, erkennbare Situation, keine visuelle Überladung. Manim-Animationen erfüllen das gratis (geometrische Klarheit, eigener Look).
+
+Dies ergänzt (a) und (b) oben: die Storytelling-Struktur bleibt, aber jede Geschichte bekommt jetzt auch einen visuellen Höhepunkt-Shot.
+
+Confidence: High (n=6 direkt analysierte Top-Shorts, Frame-Qualität verifiziert).
+
 ## History
 - **v1 (17.08.):** „Aufhänger-Text sagt etwas anderes als die Stimme."
 - **v2 (19.08.):** in (a) Untertitel = Stimme + (b) optionaler Banner aufgetrennt (Nutzer-Einwand).
+- **v3 (27.08.):** Cinematische Schlüsselszene als Produktionsziel ergänzt (Competitor-Analyse Scary Interesting).
 
 ## Related
 [[Learning-Hooks]] · [[Learning-Captions]] · [[Learning-Editing-Video]] · [[Learning-Retention-und-Laenge]]

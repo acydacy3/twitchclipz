@@ -55,6 +55,7 @@ Diese 14 Dateien werden gelesen, bevor das erste Bild, der erste Satz oder das e
 | `01-Learnings/Storytelling/Learning-Storytelling-Shorts.md` | Narrationsbogen, Tempo, Cliffhanger |
 | `01-Learnings/Thumbnails/Learning-Thumbnails-Cover.md` | Cover-Regeln, Schrift, Kontrast |
 | `01-Learnings/Topics/Learning-Topics-Themenwahl.md` | Nischen-Check, Sättigungsgrad |
+| `01-Learnings/Topics/Learning-Competitor-Strategie.md` | Scary Interesting als Rollenmodell, Längenzone 40–55s, Themen-Lücken, Re-Run-Strategie |
 | `01-Learnings/Cross-Platform/Learning-Cross-Platform-TikTok.md` | TikTok manuell, Buffer-Logik |
 | `09-Failures/Failure-Memory.md` | Was nicht funktioniert hat — nicht wiederholen |
 | `04-Animation/Animation-Library.md` | Welche Animations-Klassen existieren, was kommt als nächstes |
@@ -104,10 +105,11 @@ python3 tools/nb_suggest.py "<thema>"   # Top-Keywords + Videos
 - Was macht das Thumbnail sofort klickbar?
 
 **Schritt 2 — Referenz-Kanäle (persistent, immer prüfen):**
+- **Scary Interesting** (UCNXvmGafmrtJ7VPSqjRRbwg) — **Primäres Rollenmodell.** 0,99%/Monat, ⌀ 1,21 Mio Views/Video. Rein narrativ, anonym, cinematisch. Was machen ihre besten Shorts visuell?
+- **How to Survive Show** (UCOch_vMp7AKaiGE7e6kSHfg) — **Themen-Radar.** Breakout > 5 → 4–8 Wochen DE-Fenster. Longform-Thumbnail-Formel: unmögliches Bild.
 - **Fascinating Horror** — Stil-Referenz: nüchtern, präzise, kein Reißerisches
 - **Bright Sun Films** — unterirdische Orte, atmosphärische Bilder
-- **Top Fives / Alltime10s** — schnelle Montage, Stock-Nutzung
-→ Was machen Views-starke Videos visuell anders als wir?
+→ Was machen Views-starke Videos visuell anders als wir? Welche Shots als Standbild funktionieren?
 
 **Schritt 3 — Stock-Photo-Reverse-Engineering:**
 Wenn ein Konkurrenz-Video ein starkes Bild nutzt:

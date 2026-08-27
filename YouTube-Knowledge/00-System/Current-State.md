@@ -50,6 +50,17 @@ tags: [system, state]
 - Hook-Banner mit abweichendem Text: nie belegt besser → [[Experiment-Hook-Banner-abweichender-Text]].
 - TikTok-Hashtag-Wahl stützt sich auf YouTube-Volumen (schwächster Punkt) → [[Frage-TikTok-Hashtag-Volumen]].
 
+## Neue Rules aus Competitor-Analyse (promoted 27.08.2026)
+- **„| Doku" aus Titeln streichen** — „Doku" in Description + Tags, NICHT im Titel. Kein Top-Performer der Konkurrenz nutzt Genre-Labels.
+- **Personennamen im Titel** wenn Person google-bar ist (Juliane Koepcke, Otto Warmbier…). Sofort: V03 Description + Tags mit „Juliane Koepcke" anreichern.
+- **Short-Länge Ziel: 40–55 Sekunden** (bisherige Zone 19–39s war zu kurz; Competitor-Top-Shorts: 44–60s, n=5, 1,27–28,3 Mio Views).
+- **Cinematische Schlüsselszene pro Short** — mindestens 1–2 Shots, die als Standbild funktionieren (YouTube wählt Shorts-Frame automatisch; Manim gratis).
+- **Longform Custom-Thumbnail: unmögliches Bild** — 3D-Visualisierung (Manim) + einmalig KI-Portrait pro Produktionszyklus (Quota: max. 1 Higgsfield/HF-Call).
+- **Rollenmodell: Scary Interesting** (0,99%/Monat Wachstum, ⌀ 1,21 Mio Views/Video — nicht HtSS, das stagniert bei 0,47%).
+- **HtSS als Themen-Radar** — wenn Breakout > 5 auf Englisch, 4–8 Wochen Fenster für deutschen Suchverkehr. V03 Koepcke: HtSS aktuell 477 VPH.
+- **Loveparade Duisburg → V9** (einzige deutsche Geschichte ohne deutschen Kanal, HtSS EN vorhanden).
+- **Re-Run-Strategie**: Okene-Short → Re-Run Feb 2027 (neuer Titel, gleiche Geschichte).
+
 ## Operative Kern-Rules (aus Learnings promoted, Stand jetzt)
 Diese gelten aktuell in der Produktion (Belege in den verlinkten Learnings):
 - **Hook entscheidet, nicht Sekundenzahl.** Sichere Zone 19–39 s, tote Sekunden killen. → [[Learning-Retention-und-Laenge]]
