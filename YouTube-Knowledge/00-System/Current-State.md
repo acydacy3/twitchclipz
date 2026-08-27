@@ -52,7 +52,7 @@ tags: [system, state]
 
 ## Neue Rules aus Competitor-Analyse (promoted 27.08.2026)
 - **„| Doku" aus Titeln streichen** — „Doku" in Description + Tags, NICHT im Titel. Kein Top-Performer der Konkurrenz nutzt Genre-Labels.
-- **Personennamen im Titel** wenn Person google-bar ist (Juliane Koepcke, Otto Warmbier…). Sofort: V03 Description + Tags mit „Juliane Koepcke" anreichern.
+- **Personennamen gezielt im Titel** wenn Person google-bar ist (Otto Warmbier…) — nicht in jeden Short-Titel der Reihe, nur wo es natürlich passt (typisch 1–2 Shorts). Bestehende Videos: kein Titel-Edit (Performance-Risiko), nur Description nachbessern wenn Name fehlt. Ab V8: von Anfang an einplanen.
 - **Short-Länge: Zone 19–39s bleibt operative Grundlage (n=44, intern bewiesen).** Competitor-Beobachtung 44–60s = Hypothese/Experiment-Vorschlag, KEIN Override. Ab V8: 2 Shorts mit 45–55s als A/B-Test.
 - **Cinematische Schlüsselszene pro Short** — mindestens 1–2 Shots, die als Standbild funktionieren (Manim gratis). Diese Szenen = Thumbnail-Quelle: bereits produziertes Bild + Banner-Overlay hochladen, ODER Screenshot aus dem Video. Nie extra generieren für Shorts-Thumbnail.
 - **Longform Custom-Thumbnail: unmögliches Bild** — 3D-Visualisierung (Manim) + einmalig KI-Portrait pro Produktionszyklus (Quota: max. 1 Higgsfield/HF-Call).

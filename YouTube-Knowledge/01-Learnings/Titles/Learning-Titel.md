@@ -45,7 +45,7 @@ Titelentscheidung lohnt (aber Credits schonen).
 
 ## Competitor-Befund: Titelformel (27.08.2026, n=8 Top-Videos)
 - **„| Doku" streichen** — kein Top-Performer der Konkurrenz verwendet Genre-Labels. HtSS bestes Video: „She Fell 10,000 ft And Survived The Jungle". Scary Interesting: „Road Block". Keine Label. Konkretes Paradox schlägt Genre-Beschreibung.
-- **Personennamen im Titel = SEO-Anker** wenn bekannt genug (Otto Warmbier: 6,55 Mio; Juliane Koepcke sollte in unseren V03-Tags/Description). Name im Titel wenn die Person google-bar ist.
+- **Personennamen im Titel = SEO-Anker** wenn bekannt genug (Otto Warmbier: 6,55 Mio). Scope-Präzisierung (27.08.): **Nicht in jedem Short der Reihe nötig** — nur dort wo er natürlich passt und die Aussage stärkt. Typisch: 1–2 Shorts einer Reihe tragen den Namen, der Rest nutzt den Hook. Bestehende Videos retroaktiv anpassen = Risiko (mögliche Algorithmus-Störung) → **für bereits laufende Videos überspringen, nur bei Beschreibung nachbessern wo Name noch fehlt**. Ab V8: Namen in gezielten Titeln von Anfang an einplanen.
 - **Warum-Frage funktioniert** als Titelform: „Why He Didn't Survive North Korea" — gibt den Ausgang preis (er stirbt) und macht den Weg trotzdem neugierig.
 - **Doku-Keyword** weiterhin in Description + Tags benutzen (Suchwert vorhanden), aber nie mehr im Titel.
 - Confidence: High (9 vidIQ-Calls, Breakout-Scores, direkte View-Zahlen als Evidenz).
@@ -54,6 +54,7 @@ Titelentscheidung lohnt (aber Credits schonen).
 - 17.08.: Titel-Bauform + Keyword-Regel (zwei Agentenläufe).
 - 17.08. (Runde 2): Trennstrich-Anhang verworfen.
 - 27.08.: Competitor-Analyse bestätigt — „| Doku" weg, Namen rein wenn bekannt.
+- 27.08. (Präzisierung): Personennamen nicht in jeden Short-Titel erzwingen — nur wo es natürlich passt. Retroaktiv bei laufenden Videos: Risiko → überspringen, stattdessen nur Description nachbessern. Ab V8 von Anfang an einplanen.
 
 ## Related
 [[Learning-SEO]] · [[Learning-Thumbnails-Cover]] · [[Learning-Hooks]]
