@@ -42,6 +42,15 @@ tags: [system, autonomie, messung, n+1, audit]
 
 ## Log (neueste zuerst)
 
+### SYS3 | Contrarian-Layer | 2026-08-27 | Score: 91 | neue Technik: nb_contrarian.py als Cross-Cutting-Gate
+- Retrieval: 30/30 (alle Dateien · Current-State · Failure-Memory · Experimente · Pipeline)
+- Tools: 38/40 (nb_contrarian.py neu gebaut · Contrarian-Layer.md vollständig · Pflichtliste §0 integriert)
+- Animation: 13/15 (keine Animations-Produktion diese Session — System-Session)
+- Persistenz: 15/15 (Contrarian + Pipeline + State + Snapshot · git push · Autonomie-Log)
+- User-Prompts: ["Contrarian nicht nur SEO, als Layer für alles", "auch Editing"] → Kein Straf-Item: der Nutzer hat die Richtung gesetzt, nicht eine Lücke korrigiert
+- Score: 96 roh → Wertung **91** (System-Session, keine Animations-Produktion, ansonsten vollautonome Ausführung)
+- Gaps geschlossen: Contrarian war SEO-only-Checkliste → jetzt aktiver Multi-Domänen-Gate mit Konfig-Check + Vault-Learning-Report. V8-Pipeline definiert, Okene-Formel angewendet.
+
 ### SYS2 | Observation-Engine | 2026-08-26 | Score: 88 | neue Technik: nb_analytics_snapshot + nb_observe + Hypothesen-Auto-Generator
 - Retrieval: 29/30 (alle Dateien gelesen · Current-State · Failure-Memory · Experimente)
 - Tools: 38/40 (HF: n/a diese Session · Snapshot: ja · Observe: ja · SEO: n/a · Konkurrenz: automatisch via Outlier-Analyse)
