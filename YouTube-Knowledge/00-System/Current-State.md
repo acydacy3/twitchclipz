@@ -30,7 +30,7 @@ tags: [system, state]
 - **Video 4 (Okene/Jascon-4) PRODUZIERT + terminiert (24.08.):** 10 Shorts gerendert, **9/10 geplant** (24.–27.08.); Short 10 via Trigger 25.08. Siehe [[Video-04-Okene]], [[Produktions-Runbook]].
 - **Video 5 Lengede FERTIG + TERMINIERT (verifiziert 25.08. via `analyse.py`):** alle **10/10 Shorts terminiert (28.–31.08.)**. Okene-Shorts ebenfalls terminiert (25.–27.08.). Trigger lief durch. Siehe [[Video-05-Lengede]].
 - **Video 6 Nutty Putty FERTIG + TERMINIERT (26.08.):** alle 10/10 Shorts hochgeladen, Schedule 31.08–03.09 (3/Tag bündig nach Lengede). Siehe [[Video-06-NuttyPutty]].
-- **Video 7 Prosperi PRODUZIERT, UPLOAD MORGEN (26.08.):** 10 Shorts gerendert (−16 LUFS). 4 Higgsfield + 6 Z-Image-Schlüsselbilder (S02/03/05/07/08/10 je +1 KI-Bild). Manim-Karte. Schedule 04.09–07.09 (3/Tag). Trigger `trig_01Bj4QkVKoswXMovnv73Wy37` läuft 27.08. 10:00 UTC → alle 10 hochladen. Branch: `claude/neubeginn-v7-prosperi-6mmj14`. **NÄCHSTER SCHRITT nach Upload:** V8 planen → [[Ideen-Pipeline]]
+- **Video 7 Prosperi FERTIG + TERMINIERT (27.08.):** alle 10/10 Shorts hochgeladen, Schedule **04.09–07.09** (3/Tag bündig nach Nutty Putty). S01–S10 live. Branch: `claude/neubeginn-v7-prosperi-6mmj14`. **NÄCHSTER SCHRITT: V8 planen → [[Ideen-Pipeline]]**
 - **Voller Tagesstand: [[Audit-2026-08-25]] + [[Audit-2026-08-26]].**
 
 ## Zugänge (Stand 19.08.)
