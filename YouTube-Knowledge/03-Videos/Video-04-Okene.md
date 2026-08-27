@@ -29,3 +29,31 @@ Quelle: Nutzer-Transkript (Fascinating-Horror-Video) → sinngemäß gekürzt au
 
 ## Related
 [[Produktions-Runbook]] · [[Learning-Hooks]] · [[Learning-Retention-und-Laenge]] · [[Ideen-Pipeline]] · [[Current-State]]
+
+## Post-Mortem / Analytics (27.08., nach 1–3 Tagen)
+
+**8 identifizierte Shorts, Ø 2.025 Views** — stärkste Reihe bisher (2.5× Koepcke, 7× Tham Luang).
+
+| Views | Titel |
+|------:|-------|
+| 4.618 | 3 Tage ALLEINE in einer Luftblase am Meeresgrund |
+| 2.107 | 3 Tage alleine unter Wasser: wie ist das möglich? |
+| 2.003 | Er erstickt an seiner eigenen Atemluft |
+| 1.727 | So schnell gesunken, dass kein Notruf kam |
+| 1.648 | Der Taucher griff nach der Leiche (Anagnorisis-Shot) |
+| 1.603 | Die Taucher kamen nur für die Leichen |
+| 1.457 | Warum seine Rettung ihn getötet hätte |
+| 1.040 | Eine Welle – und das Schiff war weg (S01, schwächster) |
+
+**Warum es so läuft (5 Faktoren, Evidence-basiert):**
+1. **Physikalisch unvorstellbares Premise** — Luftblase-Überleben ist kognitiv nicht intuitiv → zwingende Neugier.
+2. **Paradox-Hooks** — „Er erstickt an Atemluft" / „Rettung hätte getötet" → Widerspruch erzwingt Ansehen.
+3. **Anagnorisis-Moment** — Taucher greift nach Leiche → sie bewegt sich. Filmreifer Schock-Umkehr = virales Potential.
+4. **Kanal-Autorität** — V4 bei ~20 Abos + History → stärkeres algorithmisches Push als V1.
+5. **Erstmals sauberer 3/Tag-Schedule** ohne Lücken.
+
+**Rule-Kandidaten für V8:**
+- Thema: physikalisch unvorstellbar, in D wenig bekannt > berühmte Katastrophe
+- ≥2 Paradox-Hooks im Titel-Pool der Serie
+- Konkreter Zeitstempel im Haupttitel
+- Anagnorisis-Moment bekommt eigenen Short

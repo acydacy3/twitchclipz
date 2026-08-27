@@ -38,6 +38,11 @@ Ende der Bildunterschrift → [[Learning-Cross-Platform-TikTok]].
 [[Schnitt-Protokoll]] Schritt 3. Ein gezielter vidIQ-Titel-Score vor jeder
 Titelentscheidung lohnt (aber Credits schonen).
 
+## Okene-Evidenz (27.08., n=8 Shorts)
+- **Paradox-Hook-Formel bestätigt** (Medium→High Confidence): „Er stirbt durch X obwohl X ihn retten sollte" / „Y tut X obwohl es Y tötet" → 2003/1457 Views je Short.
+- **Anagnorisis-Titel** — „Der Taucher griff nach der Leiche und..." (1648) — Cliffhanger in Titel + emotionaler Umkehr-Moment schlägt reine Info-Titel.
+- **Konkrete Zahl + Isolation**: „3 Tage ALLEINE in X" → 4618 Views (5× Kanal-Ø). Überleben + Zeit + Einsamkeit = stärkste Kombination bisher.
+
 ## History
 - 17.08.: Titel-Bauform + Keyword-Regel (zwei Agentenläufe).
 - 17.08. (Runde 2): Trennstrich-Anhang verworfen.

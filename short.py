@@ -230,6 +230,29 @@ def build(cfg):
         )
         cur = "[ov]"
 
+    # CTA-Banner (optional) — erscheint am Ende, waehrend Stimme noch laeuft.
+    # Config-Key "cta": {"text": "Teil 2 → @Katastrophenprotokoll", "from_end": 3}
+    # Kein "folgt mir" in der VO — rein visuell, passend zum Doku-Ton.
+    cta = cfg.get("cta")
+    if cta:
+        cta_text = cta.get("text", "@Katastrophenprotokoll")
+        cta_sec  = float(cta.get("from_end", 3.0))
+        # Dauer des Videos aus der laengsten Shot-Summe schaetzen (Fallback: 30 s)
+        dur_est  = sum(s.get("dur", 3) for s in shots)
+        cta_start = max(0, dur_est - cta_sec)
+        # Kleiner, semitransparenter Balken unten — nicht aufdringlich
+        chain += (
+            f";{cur}"
+            f"drawbox=x=0:y=1760:w={W}:h=100:color=black@0.65:t=fill:"
+            f"enable='gte(t,{cta_start:.1f})',"
+            f"drawtext=text='{cta_text}':"
+            f"fontfile={cfg['font_black']}:"
+            f"fontsize=44:fontcolor=white@0.95:"
+            f"x=(w-text_w)/2:y=1790:"
+            f"enable='gte(t,{cta_start:.1f})'[cta]"
+        )
+        cur = "[cta]"
+
     chain += f";{cur}subtitles={ass}:fontsdir=/usr/share/fonts[vout]"
 
     cmd = (["ffmpeg", "-y", "-loglevel", "error"] + inputs + ["-i", aud] +
