@@ -14,6 +14,17 @@ tags: [system, pflicht, n+1, produktion]
 
 ---
 
+## 0. Contrarian-Gate (IMMER VOR RENDER/UPLOAD — ~10 s)
+```bash
+python3 tools/nb_contrarian.py <short.json>   # automatische Konfig-Prüfung
+python3 tools/nb_contrarian.py --kurz         # nur HIGH+VERY_HIGH ohne Konfig
+```
+Prüft **alle Domänen**: Ton · Hook · Captions · Titel · SEO · Bilder · Retention · Upload · Persistenz.
+Kein Video wird gerendert oder hochgeladen, bevor der Contrarian grün ist.
+Vollständiger Strategie-Audit (wöchentlich): `python3 tools/nb_contrarian.py` ohne Argumente.
+
+---
+
 ## 1. Zahlen holen + Observations generieren (autonom, ~15 s)
 ```bash
 python3 tools/nb_analytics_snapshot.py   # Snapshot speichern (1×/Tag)
