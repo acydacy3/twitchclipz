@@ -1,26 +1,30 @@
-okene/
+# ── Rohe Download-Ordner (original Quellmaterial, riesig, nicht reproduzierbar) ──
 okene_dl/
-*.log
-lengede/
-koepcke/
 lengede_dl/
+koepcke_dl/
+*_dl/
+
+# ── Gerenderte Endprodukte (reproduzierbar via nb_build.py / lang.py) ──
+*/render/*.mp4
+*/render/*.webm
+
+# ── Manim-Zwischenschritte (werden bei jedem Lauf neu erzeugt) ──
+media/
+
+# ── Python / Tool-Cache ──
 __pycache__/
+*.log
+tools/piper/
+tools/setup-tools.log
+tools/tools-status.txt
+tools/demo_*.mp4
+tools/demo_vo.mp3
+tools/manim_render.log
+
+# ── Alte Einzel-Ausnahmen (nuttyputty hat eigene .gitignore) ──
 nuttyputty/animation/capture_clean.py
 nuttyputty/animation/querschnitt_clean.*
 nuttyputty/animation/clean_*.png
 nuttyputty/_s08_small.mp4
 nuttyputty/animation/frames_clean/
 nuttyputty/upload_results.json
-
-# Zusatz-Werkzeuge: Laufzeit/Binaries (werden via tools/setup-tools.sh reinstalliert)
-tools/piper/
-tools/setup-tools.log
-tools/tools-status.txt
-media/
-tools/demo_*.mp4
-tools/demo_vo.mp3
-tools/manim_render.log
-
-# Gerenderte Videos — reproduzierbar via nb_build.py / lang.py, nicht auf main nötig
-*/render/*.mp4
-*/render/*.webm
