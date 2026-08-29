@@ -1,0 +1,96 @@
+{
+  "series": "V8-Ralston",
+  "channel_id": "UC1KCzLNlgGiYsLNQ7Z0HA-g",
+  "shorts": [
+    {
+      "id": "01",
+      "gruppe": "A",
+      "title": "Er sägte sich den Arm ab, um zu überleben",
+      "description": "Aron Ralston steckte 127 Stunden allein in einem Canyonschlitz in Utah fest — bis er eine unmögliche Entscheidung traf. #aronralston #127stunden #überleben #wahregeschichte #katastrophe #doku",
+      "tags": ["aron ralston", "127 stunden", "überleben", "wahre geschichte", "utah", "canyon", "katastrophe", "doku", "arm", "bergsteigen", "survival"],
+      "publish_at": "2026-09-08T10:30:00Z",
+      "file": "render/short_01.mp4"
+    },
+    {
+      "id": "02",
+      "gruppe": "A",
+      "title": "Ein 360-Kilo-Fels fiel auf seinen Arm",
+      "description": "Aron Ralston kletterte allein durch den Canyonlands-Nationalpark — als ein Felsblock seinen Arm einklemmte. #aronralston #canyonlands #utah #127stunden #bergsteigen #überleben",
+      "tags": ["aron ralston", "127 stunden", "felsblock", "canyonlands", "utah", "eingeklemmt", "bergsteigen", "survival", "wahre geschichte"],
+      "publish_at": "2026-09-08T14:30:00Z",
+      "file": "render/short_02.mp4"
+    },
+    {
+      "id": "03",
+      "gruppe": "A",
+      "title": "Sein einziges Werkzeug: ein billiges Taschenmesser",
+      "description": "Mit kaum Wasser und einer stumpfen Klinge: Das waren Aron Ralstons einzige Mittel gegen den Tod. #aronralston #127stunden #überleben #wahregeschichte #survival",
+      "tags": ["aron ralston", "127 stunden", "taschenmesser", "überleben", "wasser", "survival", "wahre geschichte", "doku"],
+      "publish_at": "2026-09-08T18:00:00Z",
+      "file": "render/short_03.mp4"
+    },
+    {
+      "id": "04",
+      "gruppe": "B",
+      "title": "5 Tage lang versuchte er den Stein zu bewegen",
+      "description": "Aron Ralston kratzte und meißelte 5 Tage lang mit einem Multitool am Sandstein. Nichts bewegte sich. #aronralston #127stunden #utah #survival #wahregeschichte",
+      "tags": ["aron ralston", "127 stunden", "sandstein", "utah", "survival", "5 tage", "eingesperrt", "wahre geschichte", "doku"],
+      "publish_at": "2026-09-09T10:30:00Z",
+      "file": "render/short_04.mp4"
+    },
+    {
+      "id": "05",
+      "gruppe": "B",
+      "title": "Er ritzte Geburts- und Todesdatum in den Stein",
+      "description": "Am dritten Tag gravierte Aron Ralston seinen Namen und sein voraussichtliches Todesdatum in die Felswand. #aronralston #127stunden #canyon #überleben #wahregeschichte",
+      "tags": ["aron ralston", "127 stunden", "canyon", "todesdatum", "überleben", "wahre geschichte", "utah", "survival"],
+      "publish_at": "2026-09-09T14:30:00Z",
+      "file": "render/short_05.mp4"
+    },
+    {
+      "id": "06",
+      "gruppe": "B",
+      "title": "Er filmte sein Abschiedsvideo für die Familie",
+      "description": "Aron Ralston richtete seine Kamera auf sich und nahm Abschiedsvideos für seine Familie auf. Er glaubte, er würde sterben. #aronralston #127stunden #abschiedsvideo #wahregeschichte",
+      "tags": ["aron ralston", "127 stunden", "abschied", "familie", "kamera", "video", "überleben", "wahre geschichte", "survival"],
+      "publish_at": "2026-09-09T18:00:00Z",
+      "file": "render/short_06.mp4"
+    },
+    {
+      "id": "07",
+      "gruppe": "B",
+      "title": "Vier Nächte allein im dunklen Canyon",
+      "description": "Aron Ralston verbrachte vier Nächte allein unter dem freien Sternenhimmel im Canyonschlitz — mit einem eingeklemmten Arm. #aronralston #127stunden #nacht #canyon #utah",
+      "tags": ["aron ralston", "127 stunden", "nacht", "sterne", "canyon", "utah", "allein", "survival", "wahre geschichte"],
+      "publish_at": "2026-09-10T10:30:00Z",
+      "file": "render/short_07.mp4"
+    },
+    {
+      "id": "08",
+      "gruppe": "C",
+      "title": "Aron Ralston sägte sich den eigenen Arm ab",
+      "description": "Am fünften Tag traf Aron Ralston die unmögliche Entscheidung: Er brach seinen eigenen Arm und amputierte ihn mit einem stumpfen Messer. #aronralston #127stunden #überleben #wahregeschichte #doku",
+      "tags": ["aron ralston", "127 stunden", "amputation", "arm", "utah", "überleben", "wahre geschichte", "doku", "survival", "canyon"],
+      "publish_at": "2026-09-10T14:30:00Z",
+      "file": "render/short_08.mp4"
+    },
+    {
+      "id": "09",
+      "gruppe": "C",
+      "title": "Er seilt sich mit einem Arm ab und überlebt",
+      "description": "Nach der Amputation seilt sich Aron Ralston mit einem Arm 20 Meter ab und wandert 10 km durch die Wüste bis zur Rettung. #aronralston #127stunden #rettung #überleben #wahregeschichte",
+      "tags": ["aron ralston", "127 stunden", "rettung", "abseilen", "überleben", "wüste", "utah", "wahre geschichte", "survival"],
+      "publish_at": "2026-09-10T18:00:00Z",
+      "file": "render/short_09.mp4"
+    },
+    {
+      "id": "10",
+      "gruppe": "C",
+      "title": "Aron Ralston lebt noch heute — mit Prothese",
+      "description": "Aron Ralston überlebte 127 Stunden im Canyon und klettert heute noch — mit einer Hakenprothese. Seine Geschichte wurde zum Film '127 Hours'. #aronralston #127hours #überleben #wahregeschichte #doku",
+      "tags": ["aron ralston", "127 stunden", "127 hours", "prothese", "überleben", "wahre geschichte", "doku", "utah", "canyon", "james franco"],
+      "publish_at": "2026-09-11T10:30:00Z",
+      "file": "render/short_10.mp4"
+    }
+  ]
+}

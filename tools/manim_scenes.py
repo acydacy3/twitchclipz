@@ -152,16 +152,19 @@ class StatCounter(Scene):
 
     def construct(self):
         self.camera.background_color = "#0d0a06"
-        num = Integer(self.START, color=self.COLOR).scale(5.5).move_to([0, 2.0, 0])
-        unit = Text(self.UNIT, font_size=72, color=self.COLOR, weight=BOLD).next_to(num, DOWN, buff=0.3)
-        lbl  = Text(self.LABEL, font_size=36, color="#aaaaaa").next_to(unit, DOWN, buff=0.5)
-        self.play(FadeIn(unit), FadeIn(lbl), run_time=0.5)
-        self.play(
-            ChangeDecimalToValue(num, self.END),
-            run_time=2.4,
-            rate_func=rate_functions.ease_in_out_cubic,
+        tracker = ValueTracker(self.START)
+        num = always_redraw(
+            lambda: Text(str(int(tracker.get_value())),
+                         font_size=260, color=self.COLOR,
+                         weight=BOLD).move_to([0, 2.0, 0])
         )
-        self.play(num.animate.set_color(WHITE).scale(1.08), run_time=0.3)
+        unit = Text(self.UNIT, font_size=72, color=self.COLOR, weight=BOLD).move_to([0, -1.5, 0])
+        lbl  = Text(self.LABEL, font_size=36, color="#aaaaaa").move_to([0, -3.0, 0])
+        self.play(FadeIn(unit), FadeIn(lbl), run_time=0.5)
+        self.add(num)
+        self.play(tracker.animate.set_value(self.END), run_time=2.4,
+                  rate_func=rate_functions.ease_in_out_cubic)
+        self.play(num.animate.set_color(WHITE), run_time=0.3)
         self.wait(0.8)
 
 
@@ -272,4 +275,134 @@ class DepthDive(Scene):
 
         flash = fig.copy().set_color(WHITE).scale(2)
         self.play(Transform(fig, flash), run_time=0.4)
+        self.wait(0.8)
+
+
+class RockTrap(Scene):
+    """V8 Ralston: Klemm-Situation — Querschnitt Felsblock in Schlucht mit Druckpfeilen.
+
+    Zeigt wie ein Bolderstein zwischen zwei Kanyonwaenden eingeklemmt ist,
+    und warum er sich nicht bewegen laesst (Hebelgesetz, Schwerkraft).
+    Render: manim -qh -r 1080,1920 tools/manim_scenes.py RockTrap
+    """
+    BOULDER_W   = 2.8
+    BOULDER_H   = 2.0
+    WALL_COLOR  = "#c87040"
+    ROCK_COLOR  = "#8a6040"
+    ARROW_COLOR = "#ff4444"
+    BG_COLOR    = "#0a0806"
+
+    def construct(self):
+        self.camera.background_color = self.BG_COLOR
+
+        # Canyon-Waende links + rechts
+        wall_l = Rectangle(width=2.5, height=14, fill_color=self.WALL_COLOR,
+                           fill_opacity=1, stroke_width=0).move_to([-3.5, 0, 0])
+        wall_r = Rectangle(width=2.5, height=14, fill_color=self.WALL_COLOR,
+                           fill_opacity=1, stroke_width=0).move_to([3.5, 0, 0])
+        # Textur-Linien
+        for y in [-4, -2, 0, 2, 4]:
+            l_line = Line([-4.7, y, 0], [-2.3, y + 0.3, 0],
+                          color="#b06030", stroke_width=1, stroke_opacity=0.5)
+            r_line = Line([2.3, y, 0], [4.7, y + 0.3, 0],
+                          color="#b06030", stroke_width=1, stroke_opacity=0.5)
+            self.add(l_line, r_line)
+
+        self.play(FadeIn(wall_l), FadeIn(wall_r), run_time=0.6)
+
+        # Schlucht-Boden
+        boden = Rectangle(width=2.8, height=14, fill_color="#3a2010",
+                          fill_opacity=0.8, stroke_width=0).move_to([0, -5, 0])
+        self.play(FadeIn(boden), run_time=0.3)
+
+        # Boulder faellt
+        boulder = RoundedRectangle(corner_radius=0.3,
+                                   width=self.BOULDER_W, height=self.BOULDER_H,
+                                   fill_color=self.ROCK_COLOR, fill_opacity=1,
+                                   stroke_color="#6a4020", stroke_width=3)
+        boulder.move_to([0, 8, 0])  # start oben
+        self.play(FadeIn(boulder), run_time=0.2)
+        self.play(boulder.animate.move_to([0, 2.0, 0]),
+                  run_time=1.0, rate_func=rate_functions.ease_in_bounce)
+
+        # Klemm-Effekt: Boulder wird leicht breiter als Spalt → eingeklemmt
+        self.play(boulder.animate.stretch_to_fit_width(2.85), run_time=0.3)
+
+        # Menschliche Figur (stilisiert) darunter
+        arm_dot = Dot([0, 0.5, 0], color="#ffcc88", radius=0.22).set_glow_factor(1.5)
+        arm_lbl = Text("Arm", font_size=32, color="#ffcc88").next_to(arm_dot, DOWN, buff=0.2)
+        self.play(FadeIn(arm_dot), FadeIn(arm_lbl), run_time=0.4)
+
+        # Druckpfeile: Waende druecken gegen Boulder
+        arrow_l = Arrow(start=[-1.8, 2.0, 0], end=[-1.1, 2.0, 0],
+                        color=self.ARROW_COLOR, buff=0, stroke_width=6,
+                        max_tip_length_to_length_ratio=0.3)
+        arrow_r = Arrow(start=[1.8, 2.0, 0], end=[1.1, 2.0, 0],
+                        color=self.ARROW_COLOR, buff=0, stroke_width=6,
+                        max_tip_length_to_length_ratio=0.3)
+        # Schwerkraft-Pfeil nach unten
+        arrow_g = Arrow(start=[0, 3.5, 0], end=[0, 2.8, 0],
+                        color="#ffaa44", buff=0, stroke_width=5,
+                        max_tip_length_to_length_ratio=0.4)
+        grav_lbl = Text("360 kg", font_size=28, color="#ffaa44").next_to(arrow_g, RIGHT, buff=0.1)
+
+        self.play(GrowArrow(arrow_l), GrowArrow(arrow_r), run_time=0.6)
+        self.play(GrowArrow(arrow_g), FadeIn(grav_lbl), run_time=0.5)
+
+        # Klemm-Text
+        klemm = Text("Eingeklemmt", font_size=52, color="#ff4444",
+                     weight=BOLD).move_to([0, -3.5, 0])
+        self.play(FadeIn(klemm), run_time=0.5)
+
+        # Pulse-Effekt (einmal)
+        self.play(boulder.animate.set_color("#aa5533"), run_time=0.3)
+        self.play(boulder.animate.set_color(self.ROCK_COLOR), run_time=0.3)
+        self.wait(0.5)
+
+
+class CountdownTimer(Scene):
+    """UNIVERSELL: Zeit zaehlt runter oder hoch — fuer Stunden/Minuten-Dramatik.
+
+    V8 Ralston: 127 Stunden runterwaerts.
+    Render: manim -qh -r 1080,1920 tools/manim_scenes.py CountdownTimer
+    """
+    START_H  = 127
+    END_H    = 0
+    UNIT     = "STUNDEN"
+    LABEL    = "gefangen"
+    COLOR    = "#cc3333"
+    BG_COLOR = "#0d0a06"
+    COUNT_UP = False   # True = hochzaehlen
+
+    def construct(self):
+        self.camera.background_color = self.BG_COLOR
+
+        # Rahmen
+        box = RoundedRectangle(corner_radius=0.4, width=7, height=4,
+                               stroke_color=self.COLOR, stroke_width=4,
+                               fill_color="#1a0505", fill_opacity=0.8).move_to([0, 2.5, 0])
+        self.play(FadeIn(box), run_time=0.3)
+
+        start_val = self.START_H if not self.COUNT_UP else self.END_H
+        target    = self.END_H   if not self.COUNT_UP else self.START_H
+        tracker   = ValueTracker(start_val)
+        num = always_redraw(
+            lambda: Text(str(int(tracker.get_value())),
+                         font_size=240, color=self.COLOR,
+                         weight=BOLD).move_to([0, 2.5, 0])
+        )
+        unit = Text(self.UNIT, font_size=60, color=self.COLOR,
+                    weight=BOLD).move_to([0, -0.5, 0])
+        lbl  = Text(self.LABEL, font_size=40, color="#888888").move_to([0, -2.5, 0])
+
+        self.play(FadeIn(unit), FadeIn(lbl), run_time=0.5)
+        self.add(num)
+        self.play(tracker.animate.set_value(target),
+                  run_time=2.5, rate_func=rate_functions.ease_in_out_sine)
+
+        if target == 0:
+            for _ in range(2):
+                self.play(box.animate.set_stroke(color=WHITE), run_time=0.15)
+                self.play(box.animate.set_stroke(color=self.COLOR), run_time=0.15)
+
         self.wait(0.8)

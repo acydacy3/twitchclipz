@@ -1,0 +1,45 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+Timer: 100.0000
+
+[V4+ Styles]
+Format: Name,Fontname,Fontsize,PrimaryColour,SecondaryColour,OutlineColour,BackColour,Bold,Italic,Underline,StrikeOut,ScaleX,ScaleY,Spacing,Angle,BorderStyle,Outline,Shadow,Alignment,MarginL,MarginR,MarginV,Encoding
+Style: Default,Arial,72,&H00FFFFFF,&H000000FF,&H00000000,&H80000000,-1,0,0,0,100,100,2,0,1,3,2,2,60,60,180,1
+
+[Events]
+Format: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text
+Dialogue: 0,0:00:00.00,0:00:01.16,Default,,0,0,0,,Er schrien nicht, er
+Dialogue: 0,0:00:01.16,0:00:01.92,Default,,0,0,0,,schlug nicht seinen Kopf,
+Dialogue: 0,0:00:02.46,0:00:03.72,Default,,0,0,0,,er fiel einfach rückwärts
+Dialogue: 0,0:00:03.72,0:00:04.72,Default,,0,0,0,,an die Felswand hinter
+Dialogue: 0,0:00:04.72,0:00:05.90,Default,,0,0,0,,ihn und stand wieder
+Dialogue: 0,0:00:05.90,0:00:07.36,Default,,0,0,0,,auf, mit einem Stumpf
+Dialogue: 0,0:00:07.36,0:00:08.90,Default,,0,0,0,,aus dem Blutschoss. Er
+Dialogue: 0,0:00:08.90,0:00:10.06,Default,,0,0,0,,schnürte ein Tonikwett aus
+Dialogue: 0,0:00:10.06,0:00:11.16,Default,,0,0,0,,dem Rest seines Bandanas,
+Dialogue: 0,0:00:11.58,0:00:12.62,Default,,0,0,0,,stramm genug, um die
+Dialogue: 0,0:00:12.62,0:00:15.10,Default,,0,0,0,,Atherie abzudrücken. Dann fotografierte
+Dialogue: 0,0:00:15.10,0:00:15.98,Default,,0,0,0,,er noch einmal seinen
+Dialogue: 0,0:00:15.98,0:00:17.72,Default,,0,0,0,,An, noch eingeklemmt unter
+Dialogue: 0,0:00:17.72,0:00:18.68,Default,,0,0,0,,dem Stein, der ihn
+Dialogue: 0,0:00:18.68,0:00:21.02,Default,,0,0,0,,127 Stunden festgehalten hatte.
+Dialogue: 0,0:00:21.50,0:00:22.74,Default,,0,0,0,,Godwiddens Foto nannte er
+Dialogue: 0,0:00:22.74,0:00:24.30,Default,,0,0,0,,es später. Dann begann
+Dialogue: 0,0:00:24.30,0:00:25.60,Default,,0,0,0,,er zu klettern, er
+Dialogue: 0,0:00:25.60,0:00:26.66,Default,,0,0,0,,saß sich 20 Meter
+Dialogue: 0,0:00:26.66,0:00:27.76,Default,,0,0,0,,ab, mit einer Hand
+Dialogue: 0,0:00:27.76,0:00:29.00,Default,,0,0,0,,nach fünf Tagen ohne
+Dialogue: 0,0:00:29.00,0:00:30.52,Default,,0,0,0,,richtige Naherung, er findet
+Dialogue: 0,0:00:30.52,0:00:32.28,Default,,0,0,0,,eine Wasserstelle, trinkt lange,
+Dialogue: 0,0:00:32.78,0:00:33.76,Default,,0,0,0,,dann wandert er 11
+Dialogue: 0,0:00:33.76,0:00:35.02,Default,,0,0,0,,Kilometer durch die Wiste.
+Dialogue: 0,0:00:35.64,0:00:36.66,Default,,0,0,0,,Vier Stunden nach der
+Dialogue: 0,0:00:36.66,0:00:37.92,Default,,0,0,0,,Amputation wird er von
+Dialogue: 0,0:00:37.92,0:00:39.64,Default,,0,0,0,,einem Hubschrauber entdeckt. Eine
+Dialogue: 0,0:00:39.64,0:00:41.00,Default,,0,0,0,,Familie, der er begegnet
+Dialogue: 0,0:00:41.00,0:00:42.02,Default,,0,0,0,,war, hat er Alarm
+Dialogue: 0,0:00:42.02,0:00:43.86,Default,,0,0,0,,geschlagen. Eine Stunde später
+Dialogue: 0,0:00:43.86,0:00:45.44,Default,,0,0,0,,sagten die Ärzte, wäre
+Dialogue: 0,0:00:45.44,0:00:46.42,Default,,0,0,0,,er verblutet gewesen.

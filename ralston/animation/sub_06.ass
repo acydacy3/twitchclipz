@@ -1,0 +1,36 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+Timer: 100.0000
+
+[V4+ Styles]
+Format: Name,Fontname,Fontsize,PrimaryColour,SecondaryColour,OutlineColour,BackColour,Bold,Italic,Underline,StrikeOut,ScaleX,ScaleY,Spacing,Angle,BorderStyle,Outline,Shadow,Alignment,MarginL,MarginR,MarginV,Encoding
+Style: Default,Arial,72,&H00FFFFFF,&H000000FF,&H00000000,&H80000000,-1,0,0,0,100,100,2,0,1,3,2,2,60,60,180,1
+
+[Events]
+Format: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text
+Dialogue: 0,0:00:00.00,0:00:01.36,Default,,0,0,0,,Er stellte die Videokommlerer
+Dialogue: 0,0:00:01.36,0:00:02.34,Default,,0,0,0,,auf den Fels, der
+Dialogue: 0,0:00:02.34,0:00:03.50,Default,,0,0,0,,seinen Arm gefangen hielt,
+Dialogue: 0,0:00:04.10,0:00:04.94,Default,,0,0,0,,schaute in die Linse
+Dialogue: 0,0:00:04.94,0:00:06.20,Default,,0,0,0,,und begann zu sprechen.
+Dialogue: 0,0:00:06.94,0:00:07.80,Default,,0,0,0,,Mein Name ist Aron
+Dialogue: 0,0:00:07.80,0:00:09.48,Default,,0,0,0,,Ralshton, meine Eltern sind
+Dialogue: 0,0:00:09.48,0:00:11.02,Default,,0,0,0,,Larry und Donner Ralshton
+Dialogue: 0,0:00:11.02,0:00:13.44,Default,,0,0,0,,in Engelwoth Colorado. Wer
+Dialogue: 0,0:00:13.44,0:00:14.64,Default,,0,0,0,,immer das findet, bitte
+Dialogue: 0,0:00:14.64,0:00:15.94,Default,,0,0,0,,versucht, sie zu erreichen.
+Dialogue: 0,0:00:16.70,0:00:17.94,Default,,0,0,0,,Er beschrieb, wer er
+Dialogue: 0,0:00:17.94,0:00:19.22,Default,,0,0,0,,war, er sagte seinen
+Dialogue: 0,0:00:19.22,0:00:20.74,Default,,0,0,0,,Freunden lieber wohl. Er
+Dialogue: 0,0:00:20.74,0:00:21.84,Default,,0,0,0,,sprach über Dinge, die
+Dialogue: 0,0:00:21.84,0:00:23.12,Default,,0,0,0,,er beruhte, und über
+Dialogue: 0,0:00:23.12,0:00:23.86,Default,,0,0,0,,Dinge, die er nicht
+Dialogue: 0,0:00:23.86,0:00:25.70,Default,,0,0,0,,beruhte. Er sagte, er
+Dialogue: 0,0:00:25.70,0:00:27.10,Default,,0,0,0,,sei ein Frieden. Kein
+Dialogue: 0,0:00:27.10,0:00:28.90,Default,,0,0,0,,Skript. Kein zweiter Tage.
+Dialogue: 0,0:00:28.90,0:00:30.68,Default,,0,0,0,,Das war sein Abschiedsfin,
+Dialogue: 0,0:00:31.16,0:00:31.72,Default,,0,0,0,,dann legte er die
+Dialogue: 0,0:00:31.72,0:00:33.40,Default,,0,0,0,,Kamera hin und wartete
+Dialogue: 0,0:00:33.40,0:00:34.36,Default,,0,0,0,,auf den nächsten Morgen.
