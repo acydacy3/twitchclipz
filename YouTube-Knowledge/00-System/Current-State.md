@@ -10,7 +10,7 @@ tags: [system, state]
 
 > Diese Note ist der **operative Schnappschuss**. Sie wird bei jeder Session
 > aktualisiert (Stand-Zahlen kommen aus `analyse.py`, nicht aus dem Gedächtnis —
-> gemessenes gewinnt gegen notiertes). Letztes Update: **2026-08-27**.
+> gemessenes gewinnt gegen notiertes). Letztes Update: **2026-08-27 (Session-Ende)**.
 
 > **Selbstprüfung (Session-Start):** Liegt der Vault `YouTube-Knowledge/` und `analyse.py` im Checkout und sagt `CLAUDE.md` NICHT „git push 403"? Dann bist du aktuell. Falls nein → Recovery-Schritte oben in `CLAUDE.md` („⚠️ ZUERST"). Branch-Namen wechseln je Session; **`main` ist jetzt AKTUELL** (25.08. voll synchronisiert) — ebenso der jeweilige `claude/…`-Branch. Der richtige Checkout ist jeder, der **diesen Vault + `tools/`** enthält.
 
@@ -101,3 +101,38 @@ Diese gelten aktuell in der Produktion (Belege in den verlinkten Learnings):
 - **Retrieval IMMER autonom, n+1 (Nutzer 25.08.).** Vor jedem Schnitt still alle Learnings der Vorvideos ziehen (jedes Video baut auf allen vorherigen auf) — nicht ankündigen, einfach tun.
 - **Szenen pro Short 2–6; nur Schlüsselszene(n) KI, Rest aus dem Netz (Nutzer 25.08.).** Web-Download (Wikimedia Commons/CC) läuft autonom + getestet. → [[Learning-Bilder-Prompts]]
 - **Claude kann UND soll animieren (Nutzer 25.08.) — strategische Richtung.** Nicht „billig", sondern **wachsende Qualität** (SVG+JS → Chromium/Playwright → ffmpeg; Remotion als Ausbaustufe). Animation kann Opener sein, muss aber nicht — **wo sie passt**. **Langfristiges Ziel: weg von Standbild+Voiceover, hin zu echter Animation.** → [[Experiment-Cheap-Animation-Querschnitt]]
+
+## Session-Ende-Log: 27./28.08.2026
+
+### Erledigte Aufgaben (diese Session)
+
+**Playlists erstellt (alle 5 fehlenden Reihen):**
+- V3 Koepcke `PLNjurTl75o48` — 11/11 Videos
+- V4 Okene `PLTK8wu63dmls` — 9/9 öffentliche Videos (1 private korrekt übersprungen)
+- V5 Lengede `PLc1loqPA51r4` — 10/10 Videos
+- V6 Nutty Putty `PLPOAfNkl0mRA` — 10/10 Videos
+- V7 Prosperi `PLWNMREfuPoq0` — 10/10 Videos
+
+**Titel aller scheduled/privaten Videos überarbeitet (30/30):**
+- V5 Lengede (10 Shorts), V6 Nutty Putty (10 Shorts), V7 Prosperi (10 Shorts)
+- Kein „| Doku" mehr. Paradox-Hooks, Staccato-Punkte, gezielt Personennamen eingesetzt.
+- Umlaute korrekt (Männer, stürzen, verschüttet — kein ASCII-Workaround mehr).
+
+**System-Upgrades operativ:**
+- Story-Score (Produktion-Pflichtliste §0a) — 7-Faktor-Bewertung, Schwelle ≥70
+- Angle-Extraction (§0b) — 10–20 Hooks → stärkste 8–10 produzieren
+- 5 Inhalts-Säulen als Kern-Identität (→ Current-State.md + Competitor-Learning)
+- Neue Referenzkanäle: Spds, Der Soldat spricht, Tap Thrill
+
+**Learnings korrigiert und gepusht:**
+- Learning-Competitor-Strategie.md vollständig neu geschrieben (Confidence-Fehler bei Short-Länge behoben)
+- Learning-Retention-und-Laenge.md: 3-Gruppen-Test ab V8 präzisiert
+- Learning-Titel.md: Personennamen-Regel präzisiert (selektiv, nicht retroaktiv)
+- Learning-Thumbnails-Cover.md: Shorts-Thumbnail-Regel korrigiert (Upload möglich, aber kein neues Material)
+- Guardrail permanent: „Externe Competitor-Daten dürfen niemals eine intern gemessene Rule überschreiben"
+
+### Nächste Session — sofort beginnen mit
+1. **V03 Koepcke SEO (Sofortmaßnahme):** Description + Tags ergänzen: „Juliane Koepcke", „juliane koepcke deutsch", „juliane koepcke doku" — NUR Description/Tags, KEIN Titel-Edit (Video live)
+2. **V8 Aron Ralston:** Nutzer liefert Skript → sofort produzieren (Story-Score, Angle-Extraction, Hook-Pool vorbereitet)
+3. **Längen-Experiment ab V8:** Gruppe A/B/C (20–30s / 30–45s / 45–60s) planmäßig integrieren
+4. **„Ähnliche Videos" in YouTube Studio:** Manuell für wichtigste Videos eintragen (API nicht verfügbar — Playlists sind das API-Äquivalent, Done)
