@@ -32,45 +32,47 @@ os.makedirs(RENDER, exist_ok=True)
 # imgs: Liste der Bilder (werden gleichmäßig über VO-Dauer aufgeteilt)
 # manim: Manim-Klasse (spielt am Anfang, max 38 % der VO-Dauer)
 SHORTS = {
+    # ab: "A"|"B"|None — A/B-Hook-Test. Gleiches Video, verschiedener Hook im Titel (metadata.json).
+    # Gleiche Produktions-Parameter, nur Titel-Variante unterscheidet sich → sauberes A/B.
     "01": {
         "imgs":  ["hf_s01_truck.jpg", "hf_s02_arm.jpg", "hf_s09_rappel.jpg"],
-        "manim": None, "grp": "A",
+        "manim": None, "grp": "A", "ab": None,
     },
     "02": {
         "imgs":  ["hf_s01_truck.jpg", "hf_s04_chipping.jpg", "hf_s02_arm.jpg"],
-        "manim": "CrossSection", "grp": "A",
+        "manim": "CrossSection", "grp": "A", "ab": None,
     },
     "03": {
         "imgs":  ["hf_s03_supplies.jpg", "hf_s04_chipping.jpg", "hf_s02_arm.jpg"],
-        "manim": None, "grp": "A",
+        "manim": None, "grp": "A", "ab": None,
     },
     "04": {
         "imgs":  ["hf_s04_chipping.jpg", "hf_s02_arm.jpg", "hf_s03_supplies.jpg"],
-        "manim": "StatCounter", "grp": "B",
+        "manim": "StatCounter", "grp": "B", "ab": None,
     },
     "05": {
         "imgs":  ["hf_s05_carving.jpg", "hf_s02_arm.jpg", "hf_s07_stars.jpg"],
-        "manim": "SurvivalDays", "grp": "B",
+        "manim": "SurvivalDays", "grp": "B", "ab": None,
     },
     "06": {
         "imgs":  ["hf_s06_camera.jpg", "hf_s07_stars.jpg", "hf_s02_arm.jpg"],
-        "manim": None, "grp": "B",
+        "manim": None, "grp": "B", "ab": None,
     },
     "07": {
         "imgs":  ["hf_s07_stars.jpg", "hf_s02_arm.jpg", "hf_s05_carving.jpg", "hf_s07_stars.jpg"],
-        "manim": None, "grp": "B",
+        "manim": None, "grp": "B", "ab": None,
     },
     "08": {
         "imgs":  ["hf_s02_arm.jpg", "hf_s04_chipping.jpg", "hf_s09_rappel.jpg", "hf_s02_arm.jpg"],
-        "manim": "RockTrap", "grp": "C",
+        "manim": "RockTrap", "grp": "C", "ab": None,
     },
     "09": {
         "imgs":  ["hf_s09_rappel.jpg", "hf_s02_arm.jpg", "hf_s09_rappel.jpg", "hf_s01_truck.jpg"],
-        "manim": "CountdownTimer", "grp": "C",
+        "manim": "CountdownTimer", "grp": "C", "ab": None,
     },
     "10": {
         "imgs":  ["hf_s09_rappel.jpg", "hf_s07_stars.jpg", "hf_s01_truck.jpg", "hf_s09_rappel.jpg"],
-        "manim": None, "grp": "C",
+        "manim": None, "grp": "C", "ab": None,
     },
 }
 
@@ -284,7 +286,21 @@ def render_short(num, cfg):
         f"w='trunc(t/{dur:.4f}*iw)':"
         f"h=20:"
         f"color=yellow:"
-        f"t=fill[vout];"
+        f"t=fill[vid_pb];"
+    )
+
+    # CTA-Overlay: letzte 4 Sekunden (min. ab 75% Laufzeit)
+    # "Kanal folgen" eingebrannt — kein Laufzeit-Fehler auch bei sehr kurzen Clips
+    cta_start = round(max(dur - 4.0, dur * 0.75), 4)
+    cta_end   = round(dur - 0.1, 4)
+    flt += (
+        f"[vid_pb]drawtext="
+        f"text='► Kanal folgen':"
+        f"fontsize=40:fontcolor=white@0.95:"
+        f"x=(w-text_w)/2:y=h*0.78:"
+        f"enable='between(t,{cta_start},{cta_end})':"
+        f"box=1:boxcolor=black@0.50:boxborderw=12"
+        f"[vout];"
     )
 
     # Audio: VO laut, Musik leise im Hintergrund
