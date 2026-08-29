@@ -1,6 +1,13 @@
 {
   "series": "V8-Ralston",
   "channel_id": "UC1KCzLNlgGiYsLNQ7Z0HA-g",
+  "longform": {
+    "title": "127 Stunden allein eingeklemmt: Aron Ralstons unmögliche Entscheidung",
+    "description": "Im April 2003 kletterte Aron Ralston allein durch den Canyonlands-Nationalpark in Utah — ohne dass irgendjemand wusste, wo er war. Ein 360-Kilo-Felsblock fiel auf seinen rechten Arm und klemmte ihn in einem engen Schlitz fest. Was folgte, waren 127 Stunden Überlebenskampf: kein Wasser, kein Handy-Empfang, kein Ausweg — bis Ralston eine Entscheidung traf, die kaum ein Mensch treffen könnte.\n\nDiese Dokumentation rekonstruiert jeden Tag seines Gefangenseins: die vergeblichen Versuche den Stein zu bewegen, die Abschiedsvideos für seine Familie, den psychologischen Zusammenbruch und die radikale Lösung, die sein Leben rettete.\n\nKatastrophenprotokoll — wahre Geschichten, nüchtern erzählt.\n\n#aronralston #127stunden #überleben #wahregeschichte #doku #utah #canyon #katastrophe #survival",
+    "tags": ["aron ralston", "127 stunden", "127 hours", "überleben", "wahre geschichte", "utah", "canyon", "katastrophe", "doku", "survival", "canyonlands", "amputation", "arm", "bergsteigen", "felsblock", "eingeklemmt"],
+    "publish_at": "2026-09-12T10:00:00Z",
+    "file": "render/long.mp4"
+  },
   "shorts": [
     {
       "id": "01",

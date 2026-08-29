@@ -167,6 +167,7 @@ Remotion: schrittweise einführen. Nächster Schritt: `tools/remotion/` Setup + 
 - Musik prüfen: `ffmpeg -af volumedetect` nach Render
 - git commit+push am Ende jeder Session (auch unfertige Zwischenstände)
 - [[Ziel-YPP-Monetarisierung]] Fortschritt loggen
+- **LONGFORM pro Serie** — `metadata.json` muss `"longform"` enthalten; nach Short-Upload: `python3 <serie>/nb_upload.py --longform`. Long-Form baut Watch Time + Suchtraffic und zieht Abos. **Nie vergessen — `nb_upload.py` ohne `--longform` ist unvollständig.**
 
 ---
 

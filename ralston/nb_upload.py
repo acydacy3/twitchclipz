@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""V8 Ralston — Upload aller 10 Shorts (idempotent via upload_log.json).
+"""V8 Ralston — Upload aller 10 Shorts + Longform (idempotent via upload_log.json).
 
 Aufruf (aus Repo-Root):
-    python3 ralston/nb_upload.py [--short 01]   # einzeln
-    python3 ralston/nb_upload.py --dry-run       # nur anzeigen
-    python3 ralston/nb_upload.py                 # alle
+    python3 ralston/nb_upload.py                 # alle Shorts + Longform
+    python3 ralston/nb_upload.py --short 01      # einzelner Short
+    python3 ralston/nb_upload.py --longform       # nur Longform
+    python3 ralston/nb_upload.py --dry-run        # nur anzeigen
 """
 import argparse
 import json
@@ -100,9 +101,39 @@ def upload_one(entry, dry_run=False):
         return False
 
 
+def upload_longform(entry, dry_run=False):
+    title      = entry["title"]
+    mp4        = os.path.join(BASE, entry["file"])
+    publish_at = entry["publish_at"]
+    desc       = entry["description"]
+
+    print(f"\n{'─'*55}")
+    print(f"  LONGFORM | {title[:50]}")
+    print(f"  Geplant: {publish_at}")
+    print(f"  Datei: {mp4}")
+
+    if not os.path.exists(mp4):
+        print(f"  ✗ Datei nicht gefunden! → Zuerst: python3 lang.py ralston/")
+        return False
+
+    if dry_run:
+        print("  [DRY-RUN] Würde hochladen.")
+        return True
+
+    print("  ▶ Uploading Longform…")
+    try:
+        vid_id = _upload_to_yt(mp4, title, desc, entry["tags"], publish_at)
+        print(f"  ✓ Hochgeladen: {vid_id}")
+        return vid_id
+    except Exception as e:
+        print(f"  ✗ FEHLER: {e}")
+        return False
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--short", help="Nur dieses Short (z.B. 01)")
+    parser.add_argument("--longform", action="store_true", help="Nur Longform hochladen")
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
 
@@ -110,6 +141,26 @@ def main():
         meta = json.load(f)
 
     log = load_log()
+
+    # ── Longform ─────────────────────────────────────────────────────────
+    if args.longform or (not args.short):
+        lf = meta.get("longform")
+        if lf:
+            if log.get("longform", {}).get("uploaded"):
+                print("  Longform bereits hochgeladen — überspringe")
+            else:
+                result = upload_longform(lf, dry_run=args.dry_run)
+                if result and not args.dry_run:
+                    log["longform"] = {"uploaded": True, "video_id": str(result), "ts": time.time()}
+                    save_log(log)
+                    time.sleep(3)
+        else:
+            print("  Kein 'longform'-Eintrag in metadata.json")
+
+    if args.longform:
+        return  # nur Longform gewünscht
+
+    # ── Shorts ───────────────────────────────────────────────────────────
     shorts = meta["shorts"]
 
     if args.short:
