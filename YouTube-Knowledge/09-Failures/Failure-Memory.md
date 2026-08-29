@@ -27,6 +27,31 @@ Bedingungen · Learning · Wann es doch noch gültig sein könnte · „Do not r
 - [[Failure-OCR-Behauptung-TikTok]] — unbelegte Behauptung (`disproven`/`unknown`)
 - [[Failure-Titelansage-und-Tempo]] — Dramaturgie/Takt (`disproven`)
 
+## Failure Memory auf Agentenebene (V8-Recap — 3 Failures in einer Produktion)
+
+### F-V8-A: Ein-Bild-Problem (`failed under conditions` → Rule)
+**Was**: nb_build.py v1 hatte nur 1 Bild pro Short (SHORTS-Config mit `"img"` statt `"imgs"`) — alle 10 Shorts bestanden aus EINEM einzigen Ken-Burns-Clip.
+**Ergebnis**: Alle 10 bereits hochgeladenen Shorts mussten neu gerendert und re-uploaded werden. Nutzer-Feedback: „unfassbare Enttäuschung".
+**Root Cause**: Contrarian-Regel „2-6 Shots je Short" aus `Learning-Bilder-Prompts` wurde nicht angewendet. Schritt 4 (Bilder QC) der Produktion-Pflichtliste nicht durchgeführt.
+**Fix**: SHORTS-Config auf `"imgs": [list]`, ffmpeg-Filtergraph mit N-fach concat, 4 KB-Presets wechselnd.
+**Rule (Never again)**: Multi-Shot ist **IMMER** Pflicht. SHORTS-Config hat IMMER `"imgs"` (Liste), nie `"img"` (Singular). Vor Render: Kontaktabzug mit Einzel-Frame je Bild ansehen.
+
+### F-V8-B: Karaoke-Subtitles ohne Highlight (`failed` → Rule)
+**Was**: ASS-Dateien wurden ohne `\kf`-Tags generiert — plain text, kein Karaoke-Highlight. Wörter leuchteten beim Sprechen nicht auf.
+**Root Cause**: `words_to_ass()` schrieb ganzen Chunk als Klartext statt `{\kf<cs>}Wort {\kf<cs>}Wort`.
+**Fix**: `words_to_ass()` generiert jetzt `\kf<centiseconds>` pro Wort. Style: PrimaryColour=Gelb (`&H0000FFFF`), SecondaryColour=Weiß.
+**Rule**: ASS-Karaoke **immer** mit `\kf` je Wort. Testen vor Upload via `ffplay`.
+
+### F-V8-C: Unsichtbare Progressbar (`failed` → Rule)
+**Was**: Progress-Bar war nur 10px hoch, halbdurchsichtig (`@0.85`). Auf Mobilgerät nicht sichtbar.
+**Fix**: h=20px, `color=yellow` (voll opak), `t=fill`.
+**Rule**: Progressbar immer h≥18px, kein alpha, color=yellow oder white.
+
+### F-V8-D: CrossSection-Animation (gelber Punkt) (`superseded`)
+**Was**: CrossSection (V6, V8 S02) = gelber Dot der durch einen Spalt gleitet. User: „furchbar, wieso arbeitest du nicht selbstständig mit Referenz".
+**Fix**: Vollständig neu als cinematischer Slot-Canyon-Querschnitt — Felswände, Sandsteinschichten, Arm-Silhouette, Boulder-Drop mit Impact-Flash, Labels.
+**Rule**: Animations-Klassen immer mit Beschriftung (Zahlen, Ortsname, Datum) und mindestens 3 erklärendem Grafik-Element. Keine anonymen Dots/Blobs.
+
 ## Failure Memory auf Agentenebene
 Wenn ein Agent wiederholt denselben Fehler produziert:
 ```
