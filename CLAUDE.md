@@ -8,11 +8,22 @@ Historie. **Öffne `YouTube-Knowledge/` als Vault in Obsidian**, um Links/Graph 
 ---
 
 ## ⚠️ ZUERST: Bin ich auf dem aktuellen Stand? (15-Sekunden-Check)
-**`YouTube-Knowledge/` fehlt oder `analyse.py` fehlt?** → veraltet, `git pull origin main` holen.
+
+**Vault-Stand prüfen** (JEDE Session, auch mitten in einer Serie):
+```bash
+git fetch origin main
+git log --oneline main..HEAD   # Commits die noch nicht auf main sind
+```
+- Commits auf main fehlen → `git pull origin main` holen (neuer Container-Start)
+- Commits NUR auf Feature-Branch → Vault veraltet! → am Session-Ende ZWINGEND auf main mergen (→ `Memory-Workflow.md`)
+
+**`YouTube-Knowledge/` fehlt oder `analyse.py` fehlt?** → `git pull origin main`.
 
 **Dann lesen (2 Schritte, reicht für 99% aller Sessions):**
 1. `YouTube-Knowledge/00-System/Current-State.md` — operativer Stand, Zahlen, nächster Schritt.
 2. Gezielt retrieven was die Aufgabe braucht: `01-Learnings/`, `09-Failures/`, `05-Decisions/`. **Nicht das ganze Vault lesen.**
+
+> **Persistenz-Regel:** Vault-Änderungen (`YouTube-Knowledge/`, `CLAUDE.md`, `.claude/`) IMMER auf `main` pushen — nicht nur auf den Feature-Branch. Neuer Container klont `main`. Details: `YouTube-Knowledge/00-System/Memory-Workflow.md`.
 
 ---
 
