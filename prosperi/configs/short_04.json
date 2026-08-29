@@ -1,0 +1,65 @@
+{
+  "shots": [
+    {
+      "img": "/home/user/twitchclipz/prosperi/bilder/S04/01.jpg",
+      "start": 0.0,
+      "end": 3.0,
+      "cx": 0.5,
+      "cy": 0.45,
+      "z0": 1.1,
+      "z1": 1.24,
+      "px": 0.02,
+      "py": 0.0,
+      "drift": 10
+    },
+    {
+      "img": "/home/user/twitchclipz/prosperi/broll/short_04/01.jpg",
+      "start": 3.0,
+      "end": 10.168,
+      "cx": 0.5,
+      "cy": 0.5,
+      "z0": 1.04,
+      "z1": 1.18,
+      "px": 0.0,
+      "py": 0.0,
+      "drift": 14
+    },
+    {
+      "img": "/home/user/twitchclipz/prosperi/broll/short_04/02.jpg",
+      "start": 10.168,
+      "end": 17.336,
+      "cx": 0.5,
+      "cy": 0.68,
+      "z0": 1.02,
+      "z1": 1.14,
+      "px": 0.0,
+      "py": 0.05,
+      "drift": 12
+    },
+    {
+      "img": "/home/user/twitchclipz/prosperi/broll/short_04/03.jpg",
+      "start": 17.336,
+      "end": 24.504,
+      "cx": 0.5,
+      "cy": 0.32,
+      "z0": 1.02,
+      "z1": 1.14,
+      "px": 0.0,
+      "py": -0.05,
+      "drift": 12
+    }
+  ],
+  "start": 0.0,
+  "end": 24.504,
+  "audio": "/home/user/twitchclipz/prosperi/voiceover/short_04.mp3",
+  "words": "/home/user/twitchclipz/prosperi/words_04.json",
+  "font_black": "/usr/share/fonts/truetype/roboto/unhinted/RobotoTTF/Roboto-Black.ttf",
+  "tmp": "/home/user/twitchclipz/prosperi/tmp/short_04",
+  "out": "/home/user/twitchclipz/prosperi/output/prosperi_04.mp4",
+  "musik": {
+    "tonart": "D",
+    "intensitaet": 0.8,
+    "db": -16
+  },
+  "teil": "TEIL 4"
+}

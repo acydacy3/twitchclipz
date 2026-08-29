@@ -5,37 +5,25 @@ Archiv. Das eigentliche Langzeitgedächtnis liegt im **Obsidian-Vault**
 `YouTube-Knowledge/` — dort steht das Detailwissen mit Evidenz, Confidence und
 Historie. **Öffne `YouTube-Knowledge/` als Vault in Obsidian**, um Links/Graph zu nutzen.
 
-> Migration 24.08.2026: Das frühere große `CLAUDE.md` (1292 Zeilen) wurde nach
-> `YouTube-Knowledge/` überführt und liegt **verbatim** unter
-> `YouTube-Knowledge/00-System/_archive/`. Nichts ging verloren.
+---
+
+## ⚠️ ZUERST: Bin ich auf dem aktuellen Stand? (15-Sekunden-Check)
+**`YouTube-Knowledge/` fehlt oder `analyse.py` fehlt?** → veraltet, `git pull origin main` holen.
+
+**Dann lesen (2 Schritte, reicht für 99% aller Sessions):**
+1. `YouTube-Knowledge/00-System/Current-State.md` — operativer Stand, Zahlen, nächster Schritt.
+2. Gezielt retrieven was die Aufgabe braucht: `01-Learnings/`, `09-Failures/`, `05-Decisions/`. **Nicht das ganze Vault lesen.**
 
 ---
 
-## ⚠️ ZUERST: Bin ich auf dem aktuellen Stand? (30-Sekunden-Check)
-Bevor du irgendetwas tust — **eine dieser Aussagen wahr = du bist auf einem VERALTETEN Checkout**, hol erst den aktuellen Stand:
-- Der Ordner `YouTube-Knowledge/` **fehlt**, oder `analyse.py` / `lengede/` fehlen.
-- Diese Datei oder eine Note nennt „**git push 403**" oder „**Drive = Gedächtnis**" als *aktuellen* Zustand.
+## Die 6 Kern-Constraints
 
-Beides ist überholt. **Seit 25.08.2026: `git push` ist freigeschaltet, das Repo trägt den vollen Stand, das Gedächtnis liegt im Vault `YouTube-Knowledge/` (>70 verlinkte Notizen).** Drive ist nur noch optionaler Asset-Transfer.
-
-**Recovery (falls veraltet):**
-```
-git fetch --all
-git for-each-ref --sort=-committerdate --format='%(committerdate:short) %(refname:short)' refs/remotes/
-```
-→ Auf den **neuesten Branch wechseln, der `YouTube-Knowledge/` + `tools/` enthält** (Inhalt zählt, nicht der Name). **`main` ist seit 25.08. AKTUELL** (wird jede Session mitgepusht) — als Quelle geeignet.
-
-**Dann lesen (in dieser Reihenfolge):** `YouTube-Knowledge/00-System/Current-State.md` → `YouTube-Knowledge/06-Audits/Handoff-2026-08-24.md` → der jüngste `YouTube-Knowledge/06-Audits/Daily/Audit-*.md`. Damit bist du in 3 Minuten voll im Bild — ohne Rückfragen an den Nutzer.
-
----
-
-## Sofort wissen (die 6 wichtigsten Constraints)
-1. **Das Originalskript kommt IMMER vom Nutzer.** Kürzen/formen aus vorhandenem Material: ja. Erfinden: nein.
-2. **Der Nutzer arbeitet nicht mit der Kommandozeile** und kann **keine `.md`-Dateien öffnen** → längere Ergebnisse als **Artifact-Seite** ausliefern. (Ausnahme: das Vault liest er in Obsidian.)
-3. **Zahlen schlagen Vermutungen, immer.** `analyse.py` gewinnt gegen Notiertes.
-4. **Retrieval before Reinvention — n+1, IMMER:** vor jeder Produktion autonom das **komplette geprüfte Learning-Paket** ziehen (SEO, Schnittstile, Retention, Viral, geprüfte Theorien, Hooks, Captions, Bilder, Musik) — jedes Video baut auf allen vorherigen auf, nichts wird vergessen, jeder Schritt wird täglich besser. Nicht ankündigen, einfach tun.
-5. **Ein Learning ist nicht automatisch eine Rule.** Unsicherheit sichtbar lassen (Confidence Low/Medium/High/Very High).
-6. **Erkenntnisse persistieren:** am Session-Ende `git add/commit/push` — **Push ist freigeschaltet**, das Repo trägt den vollen Stand (der nächste Container klont ihn). Drive nur optional. Ablauf: `/merken`.
+1. **Das Originalskript kommt IMMER vom Nutzer.** Kürzen/formen: ja. Erfinden: nein.
+2. **Der Nutzer arbeitet nicht mit der Kommandozeile** → Ergebnisse als **Artifact-Seite** ausliefern.
+3. **Zahlen schlagen Vermutungen.** `analyse.py` gewinnt gegen Notiertes.
+4. **n+1 — vor JEDEM Produktionsschritt:** `YouTube-Knowledge/00-System/Produktion-Pflichtliste.md` **lesen und abarbeiten** — alle 14 Lern-Dateien (12 Learnings + Failure-Memory + Animation-Library), alle Werkzeuge, Konkurrenz-Check. Nicht ankündigen, einfach tun. Der Nutzer soll HF-Quota, Manim, Remotion, Stock-Bilder, SEO **niemals selbst ansprechen müssen**.
+5. **Ein Learning ist nicht automatisch eine Rule.** Confidence sichtbar lassen (Low/Medium/High/Very High).
+6. **Erkenntnisse persistieren:** `git add/commit/push` — **Push ist freigeschaltet**. Ablauf: `/merken`.
 
 ## So arbeitet dieses System (Kurzfassung)
 - **Ziel ist bessere Entscheidungsqualität je Produktionszyklus**, nicht mehr Output → `YouTube-Knowledge/00-System/Mission.md`.

@@ -20,3 +20,7 @@ media/
 tools/demo_*.mp4
 tools/demo_vo.mp3
 tools/manim_render.log
+
+# Gerenderte Videos — reproduzierbar via nb_build.py / lang.py, nicht auf main nötig
+*/render/*.mp4
+*/render/*.webm

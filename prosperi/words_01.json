@@ -1,0 +1,320 @@
+[
+  {
+    "word": "Ein",
+    "start": 0.0,
+    "end": 0.42,
+    "conf": 1.0
+  },
+  {
+    "word": "Hubschrauber",
+    "start": 0.42,
+    "end": 0.94,
+    "conf": 1.0
+  },
+  {
+    "word": "ist",
+    "start": 0.94,
+    "end": 1.1,
+    "conf": 1.0
+  },
+  {
+    "word": "vorbeigekommen,",
+    "start": 1.1,
+    "end": 1.76,
+    "conf": 1.0
+  },
+  {
+    "word": "er",
+    "start": 2.16,
+    "end": 2.26,
+    "conf": 1.0
+  },
+  {
+    "word": "hat",
+    "start": 2.26,
+    "end": 2.42,
+    "conf": 1.0
+  },
+  {
+    "word": "ihn",
+    "start": 2.42,
+    "end": 2.52,
+    "conf": 1.0
+  },
+  {
+    "word": "nicht",
+    "start": 2.52,
+    "end": 2.68,
+    "conf": 1.0
+  },
+  {
+    "word": "gesehen,",
+    "start": 2.68,
+    "end": 3.06,
+    "conf": 1.0
+  },
+  {
+    "word": "er",
+    "start": 3.64,
+    "end": 3.72,
+    "conf": 1.0
+  },
+  {
+    "word": "verbrennt",
+    "start": 3.72,
+    "end": 4.14,
+    "conf": 1.0
+  },
+  {
+    "word": "seine",
+    "start": 4.14,
+    "end": 4.24,
+    "conf": 1.0
+  },
+  {
+    "word": "Kleider,",
+    "start": 4.24,
+    "end": 4.74,
+    "conf": 1.0
+  },
+  {
+    "word": "seinen",
+    "start": 5.02,
+    "end": 5.18,
+    "conf": 1.0
+  },
+  {
+    "word": "Schlafsack,",
+    "start": 5.18,
+    "end": 5.8,
+    "conf": 1.0
+  },
+  {
+    "word": "seine",
+    "start": 6.1,
+    "end": 6.28,
+    "conf": 1.0
+  },
+  {
+    "word": "Rucksack,",
+    "start": 6.28,
+    "end": 6.78,
+    "conf": 1.0
+  },
+  {
+    "word": "alles,",
+    "start": 7.08,
+    "end": 7.3,
+    "conf": 1.0
+  },
+  {
+    "word": "um",
+    "start": 7.64,
+    "end": 7.72,
+    "conf": 1.0
+  },
+  {
+    "word": "einen",
+    "start": 7.72,
+    "end": 7.88,
+    "conf": 1.0
+  },
+  {
+    "word": "Zeichen",
+    "start": 7.88,
+    "end": 8.26,
+    "conf": 1.0
+  },
+  {
+    "word": "zu",
+    "start": 8.26,
+    "end": 8.44,
+    "conf": 1.0
+  },
+  {
+    "word": "setzen.",
+    "start": 8.44,
+    "end": 8.66,
+    "conf": 1.0
+  },
+  {
+    "word": "Kein",
+    "start": 9.2,
+    "end": 9.46,
+    "conf": 1.0
+  },
+  {
+    "word": "Wasser.",
+    "start": 9.46,
+    "end": 9.64,
+    "conf": 1.0
+  },
+  {
+    "word": "Kein",
+    "start": 10.3,
+    "end": 10.6,
+    "conf": 1.0
+  },
+  {
+    "word": "Essen.",
+    "start": 10.6,
+    "end": 10.82,
+    "conf": 1.0
+  },
+  {
+    "word": "Seit",
+    "start": 11.36,
+    "end": 11.5,
+    "conf": 1.0
+  },
+  {
+    "word": "Tagen.",
+    "start": 11.5,
+    "end": 11.9,
+    "conf": 1.0
+  },
+  {
+    "word": "Er",
+    "start": 12.36,
+    "end": 12.44,
+    "conf": 1.0
+  },
+  {
+    "word": "schreibt",
+    "start": 12.44,
+    "end": 12.8,
+    "conf": 1.0
+  },
+  {
+    "word": "einen",
+    "start": 12.8,
+    "end": 13.0,
+    "conf": 1.0
+  },
+  {
+    "word": "Abschiedsbrief",
+    "start": 13.0,
+    "end": 13.68,
+    "conf": 1.0
+  },
+  {
+    "word": "an",
+    "start": 13.68,
+    "end": 13.78,
+    "conf": 1.0
+  },
+  {
+    "word": "seine",
+    "start": 13.78,
+    "end": 13.92,
+    "conf": 1.0
+  },
+  {
+    "word": "Frau,",
+    "start": 13.92,
+    "end": 14.18,
+    "conf": 1.0
+  },
+  {
+    "word": "seine",
+    "start": 14.68,
+    "end": 14.84,
+    "conf": 1.0
+  },
+  {
+    "word": "Augen",
+    "start": 14.84,
+    "end": 15.12,
+    "conf": 1.0
+  },
+  {
+    "word": "fallen",
+    "start": 15.12,
+    "end": 15.38,
+    "conf": 1.0
+  },
+  {
+    "word": "zu.",
+    "start": 15.38,
+    "end": 15.64,
+    "conf": 1.0
+  },
+  {
+    "word": "Am",
+    "start": 16.26,
+    "end": 16.4,
+    "conf": 1.0
+  },
+  {
+    "word": "nächsten",
+    "start": 16.4,
+    "end": 16.64,
+    "conf": 1.0
+  },
+  {
+    "word": "Morgen",
+    "start": 16.64,
+    "end": 17.06,
+    "conf": 1.0
+  },
+  {
+    "word": "wacht",
+    "start": 17.06,
+    "end": 17.36,
+    "conf": 1.0
+  },
+  {
+    "word": "er",
+    "start": 17.36,
+    "end": 17.52,
+    "conf": 1.0
+  },
+  {
+    "word": "auf,",
+    "start": 17.52,
+    "end": 17.82,
+    "conf": 1.0
+  },
+  {
+    "word": "sein",
+    "start": 18.2,
+    "end": 18.34,
+    "conf": 1.0
+  },
+  {
+    "word": "Körper",
+    "start": 18.34,
+    "end": 18.62,
+    "conf": 1.0
+  },
+  {
+    "word": "hat",
+    "start": 18.62,
+    "end": 18.88,
+    "conf": 1.0
+  },
+  {
+    "word": "sich",
+    "start": 18.88,
+    "end": 19.06,
+    "conf": 1.0
+  },
+  {
+    "word": "geweigert",
+    "start": 19.06,
+    "end": 19.6,
+    "conf": 1.0
+  },
+  {
+    "word": "zu",
+    "start": 19.6,
+    "end": 19.84,
+    "conf": 1.0
+  },
+  {
+    "word": "sterben.",
+    "start": 19.84,
+    "end": 20.18,
+    "conf": 1.0
+  }
+]

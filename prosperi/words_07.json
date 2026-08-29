@@ -1,0 +1,428 @@
+[
+  {
+    "word": "Tag",
+    "start": 0.0,
+    "end": 0.36,
+    "conf": 1.0
+  },
+  {
+    "word": "6",
+    "start": 0.36,
+    "end": 0.72,
+    "conf": 1.0
+  },
+  {
+    "word": "Ein",
+    "start": 0.72,
+    "end": 1.24,
+    "conf": 1.0
+  },
+  {
+    "word": "Flugzeug",
+    "start": 1.24,
+    "end": 1.76,
+    "conf": 1.0
+  },
+  {
+    "word": "zieht",
+    "start": 1.76,
+    "end": 2.08,
+    "conf": 1.0
+  },
+  {
+    "word": "über",
+    "start": 2.08,
+    "end": 2.22,
+    "conf": 1.0
+  },
+  {
+    "word": "ihn",
+    "start": 2.22,
+    "end": 2.34,
+    "conf": 1.0
+  },
+  {
+    "word": "hinweg.",
+    "start": 2.34,
+    "end": 2.76,
+    "conf": 1.0
+  },
+  {
+    "word": "Er",
+    "start": 3.18,
+    "end": 3.3,
+    "conf": 1.0
+  },
+  {
+    "word": "verbrennt",
+    "start": 3.3,
+    "end": 3.76,
+    "conf": 1.0
+  },
+  {
+    "word": "Rucksack",
+    "start": 3.76,
+    "end": 4.18,
+    "conf": 1.0
+  },
+  {
+    "word": "und",
+    "start": 4.18,
+    "end": 4.38,
+    "conf": 1.0
+  },
+  {
+    "word": "Schlafsack",
+    "start": 4.38,
+    "end": 4.94,
+    "conf": 1.0
+  },
+  {
+    "word": "für",
+    "start": 4.94,
+    "end": 5.1,
+    "conf": 1.0
+  },
+  {
+    "word": "Rauch,",
+    "start": 5.1,
+    "end": 5.44,
+    "conf": 1.0
+  },
+  {
+    "word": "das",
+    "start": 5.64,
+    "end": 5.74,
+    "conf": 1.0
+  },
+  {
+    "word": "Flugzeug",
+    "start": 5.74,
+    "end": 6.24,
+    "conf": 1.0
+  },
+  {
+    "word": "sieht",
+    "start": 6.24,
+    "end": 6.42,
+    "conf": 1.0
+  },
+  {
+    "word": "ihn",
+    "start": 6.42,
+    "end": 6.6,
+    "conf": 1.0
+  },
+  {
+    "word": "nicht.",
+    "start": 6.6,
+    "end": 6.84,
+    "conf": 1.0
+  },
+  {
+    "word": "Er",
+    "start": 7.22,
+    "end": 7.36,
+    "conf": 1.0
+  },
+  {
+    "word": "nimmt",
+    "start": 7.36,
+    "end": 7.54,
+    "conf": 1.0
+  },
+  {
+    "word": "ein",
+    "start": 7.54,
+    "end": 7.74,
+    "conf": 1.0
+  },
+  {
+    "word": "Stück",
+    "start": 7.74,
+    "end": 7.92,
+    "conf": 1.0
+  },
+  {
+    "word": "Kohle",
+    "start": 7.92,
+    "end": 8.38,
+    "conf": 1.0
+  },
+  {
+    "word": "und",
+    "start": 8.38,
+    "end": 8.52,
+    "conf": 1.0
+  },
+  {
+    "word": "schreibt",
+    "start": 8.52,
+    "end": 8.84,
+    "conf": 1.0
+  },
+  {
+    "word": "auf",
+    "start": 8.84,
+    "end": 9.02,
+    "conf": 1.0
+  },
+  {
+    "word": "einen",
+    "start": 9.02,
+    "end": 9.18,
+    "conf": 1.0
+  },
+  {
+    "word": "Fetzen,",
+    "start": 9.18,
+    "end": 9.56,
+    "conf": 1.0
+  },
+  {
+    "word": "vergib",
+    "start": 9.84,
+    "end": 10.08,
+    "conf": 1.0
+  },
+  {
+    "word": "mir.",
+    "start": 10.08,
+    "end": 10.28,
+    "conf": 1.0
+  },
+  {
+    "word": "Vergib",
+    "start": 10.68,
+    "end": 11.06,
+    "conf": 1.0
+  },
+  {
+    "word": "mir,",
+    "start": 11.06,
+    "end": 11.26,
+    "conf": 1.0
+  },
+  {
+    "word": "wenn",
+    "start": 11.56,
+    "end": 11.64,
+    "conf": 1.0
+  },
+  {
+    "word": "ich",
+    "start": 11.64,
+    "end": 11.76,
+    "conf": 1.0
+  },
+  {
+    "word": "dich",
+    "start": 11.76,
+    "end": 11.88,
+    "conf": 1.0
+  },
+  {
+    "word": "verletzt",
+    "start": 11.88,
+    "end": 12.3,
+    "conf": 1.0
+  },
+  {
+    "word": "habe,",
+    "start": 12.3,
+    "end": 12.54,
+    "conf": 1.0
+  },
+  {
+    "word": "wenn",
+    "start": 12.96,
+    "end": 13.06,
+    "conf": 1.0
+  },
+  {
+    "word": "ich",
+    "start": 13.06,
+    "end": 13.18,
+    "conf": 1.0
+  },
+  {
+    "word": "nicht",
+    "start": 13.18,
+    "end": 13.3,
+    "conf": 1.0
+  },
+  {
+    "word": "da",
+    "start": 13.3,
+    "end": 13.52,
+    "conf": 1.0
+  },
+  {
+    "word": "war",
+    "start": 13.52,
+    "end": 13.68,
+    "conf": 1.0
+  },
+  {
+    "word": "für",
+    "start": 13.68,
+    "end": 13.9,
+    "conf": 1.0
+  },
+  {
+    "word": "dich",
+    "start": 13.9,
+    "end": 14.08,
+    "conf": 1.0
+  },
+  {
+    "word": "und",
+    "start": 14.08,
+    "end": 14.3,
+    "conf": 1.0
+  },
+  {
+    "word": "die",
+    "start": 14.3,
+    "end": 14.42,
+    "conf": 1.0
+  },
+  {
+    "word": "Kinder.",
+    "start": 14.42,
+    "end": 14.64,
+    "conf": 1.0
+  },
+  {
+    "word": "Dann",
+    "start": 15.24,
+    "end": 15.52,
+    "conf": 1.0
+  },
+  {
+    "word": "ritzt",
+    "start": 15.52,
+    "end": 15.88,
+    "conf": 1.0
+  },
+  {
+    "word": "er",
+    "start": 15.88,
+    "end": 15.98,
+    "conf": 1.0
+  },
+  {
+    "word": "sich",
+    "start": 15.98,
+    "end": 16.08,
+    "conf": 1.0
+  },
+  {
+    "word": "die",
+    "start": 16.08,
+    "end": 16.24,
+    "conf": 1.0
+  },
+  {
+    "word": "Handgelenke",
+    "start": 16.24,
+    "end": 16.82,
+    "conf": 1.0
+  },
+  {
+    "word": "auf.",
+    "start": 16.82,
+    "end": 17.02,
+    "conf": 1.0
+  },
+  {
+    "word": "Er",
+    "start": 17.38,
+    "end": 17.52,
+    "conf": 1.0
+  },
+  {
+    "word": "setzt",
+    "start": 17.52,
+    "end": 17.7,
+    "conf": 1.0
+  },
+  {
+    "word": "sich",
+    "start": 17.7,
+    "end": 17.96,
+    "conf": 1.0
+  },
+  {
+    "word": "hin.",
+    "start": 17.96,
+    "end": 18.2,
+    "conf": 1.0
+  },
+  {
+    "word": "Er",
+    "start": 18.6,
+    "end": 18.7,
+    "conf": 1.0
+  },
+  {
+    "word": "hat",
+    "start": 18.7,
+    "end": 18.84,
+    "conf": 1.0
+  },
+  {
+    "word": "keine",
+    "start": 18.84,
+    "end": 19.04,
+    "conf": 1.0
+  },
+  {
+    "word": "Angst",
+    "start": 19.04,
+    "end": 19.32,
+    "conf": 1.0
+  },
+  {
+    "word": "vor",
+    "start": 19.32,
+    "end": 19.5,
+    "conf": 1.0
+  },
+  {
+    "word": "dem",
+    "start": 19.5,
+    "end": 19.6,
+    "conf": 1.0
+  },
+  {
+    "word": "Tod,",
+    "start": 19.6,
+    "end": 19.84,
+    "conf": 1.0
+  },
+  {
+    "word": "nur",
+    "start": 20.24,
+    "end": 20.36,
+    "conf": 1.0
+  },
+  {
+    "word": "vor",
+    "start": 20.36,
+    "end": 20.5,
+    "conf": 1.0
+  },
+  {
+    "word": "dem",
+    "start": 20.5,
+    "end": 20.62,
+    "conf": 1.0
+  },
+  {
+    "word": "Neiden.",
+    "start": 20.62,
+    "end": 20.94,
+    "conf": 1.0
+  }
+]

@@ -35,10 +35,17 @@ YouTube. TikTok-SEO ist eigenes Thema → [[Learning-Cross-Platform-TikTok]].
 ## Operational Implication
 [[Schnitt-Protokoll]] Schritt 3; .srt immer separat hochladen; Video-Tags nur für Vorkommendes.
 
+## Competitor-Befund: SEO-Gaps (27.08.2026)
+- **„Doku" in Description + Tags, NICHT im Titel.** Kein Top-Performer der Konkurrenz verwendet Genre-Label im Titel. „Doku" hat Suchwert (230k), aber gehört in das Metadata-Feld, nicht in den sichtbaren Titel.
+- **Personennamen = SEO-Anker.** Unser V03 enthält „Juliane Koepcke" nicht im Titel. YT-Autocomplete zeigt: „juliane koepcke", „juliane koepcke doku", „juliane koepcke deutsch" haben messbares Suchvolumen. **Sofortmaßnahme: V03 Description + Tags mit „Juliane Koepcke" und „Koepcke" anreichern.** Für bekannte Personen: Name in den Titel wenn Person google-bar ist.
+- **nb_suggest + nb_trends kostenlos nutzen** um vor jeder Produktion DE-Suchvolumen für Personennamen + Ereignistermini zu prüfen.
+- Confidence: High (nb_suggest direkt ausgeführt, Autocomplete-Ergebnisse verifiziert).
+
 ## History
 - 17.08.: Suchvolumen-Messung, Tag-Regel, Analytik-Denkfehler (zwei Agentenläufe).
 - 17.08. (Runde 2): Shorts-Beschreibung 50–90 statt 290 Wörter.
 - 19.08.: defaultLanguage gesetzt; Tag-Regel Video vs. Kanal präzisiert.
+- 27.08.: Koepcke-Gap identifiziert; „Doku"-Trennungsregel (Titel vs. Description/Tags) promoted.
 
 ## Related
 [[Learning-Titel]] · [[Learning-Captions]] · [[Learning-Retention-und-Laenge]] · [[Learning-Cross-Platform-TikTok]]

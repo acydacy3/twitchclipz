@@ -19,10 +19,26 @@ tags: [system, ziel, ypp, monetarisierung, metrik, nordstern]
 - **20.321 Views gesamt.** Kanal gegründet 15.08.2026 (~10 Tage alt) → **90-Tage-Views ≈ Gesamt-Views** = 20.321 → **0,20 % des 10-Mio-Ziels.**
 - 40 Videos, ~19 terminiert.
 
-## Was das quantitativ bedeutet
-- **10 Mio / 90 Tage = ~111.000 Views/Tag** im rollierenden Schnitt.
-- Aktueller Schnitt grob **~2.000 Views/Tag** (20.321 in ~10 Tagen) → **Faktor ~55** fehlt.
-- **Abo-Ziel (1.000) ist der leichtere Teil**; der 10-Mio-Views-Teil ist der Engpass → **alles auf virale Shorts-Reichweite**.
+## Was das quantitativ bedeutet (realistisch, Stand 29.08.2026)
+
+| Metrik | Ist | Soll | Faktor |
+|--------|-----|------|--------|
+| Views/Tag (7d-Schnitt) | ~1.500 | 111.000 | ×74 |
+| Abonnenten | 58 | 1.000 | ×17 |
+
+**Realistische Horizonte:**
+- **Abonnenten-Ziel (1.000):** 3–5 Monate bei konsequenter Serien-Qualität (1 viral gehendes Video reicht).
+- **10-Mio-Shorts-Views:** 9–12 Monate. Eine einzelne Serie, die viral geht (100K+ Views), kann das Tempo signifikant verschieben — aber das ist nicht planbar, nur wahrscheinlicher machbar durch Qualität + Volumen.
+- **Vor Februar 2027 einsteigen** bleibt realistisch, wenn ab Sep. 2026 monatlich 150K+ Views erreicht werden (nächste Stufe: 1 viral Short pro Serie).
+
+**Wachstums-Trigger (priorisiert):**
+1. CTR erhöhen — Thumbnail-Qualität (prüfen via YouTube Studio, Spalte "Klickrate")
+2. Sub-Conversion — CTA "Kanal folgen" (ab V8-Ralston eingebrannt, letzte 4s jedes Shorts)
+3. Long-Form pro Serie — baut Watch Time + Suchtraffic, zieht Abos nach
+4. Systematisches A/B-Testing von Hook-Typen — 2 Varianten je Serie, Titel-Unterschied
+
+**Abo-Ziel (1.000) ist der realistisch erreichbare erste Meilenstein** (ca. Q1 2027).
+Das 10-Mio-Views-Fenster öffnet sich, sobald 1–2 Shorts viral gehen (>50K Views).
 
 ## Hebel (aus den Learnings, priorisiert)
 1. **Hook / erste 3 s** — der belegte Haupthebel für Reichweite. → [[Learning-Hooks]], [[Learning-Retention-und-Laenge]]

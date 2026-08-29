@@ -1,0 +1,356 @@
+[
+  {
+    "word": "Er",
+    "start": 0.0,
+    "end": 0.18,
+    "conf": 1.0
+  },
+  {
+    "word": "wacht",
+    "start": 0.18,
+    "end": 0.44,
+    "conf": 1.0
+  },
+  {
+    "word": "auf.",
+    "start": 0.44,
+    "end": 0.64,
+    "conf": 1.0
+  },
+  {
+    "word": "Das",
+    "start": 1.14,
+    "end": 1.28,
+    "conf": 1.0
+  },
+  {
+    "word": "war",
+    "start": 1.28,
+    "end": 1.46,
+    "conf": 1.0
+  },
+  {
+    "word": "nicht",
+    "start": 1.46,
+    "end": 1.6,
+    "conf": 1.0
+  },
+  {
+    "word": "geplant.",
+    "start": 1.6,
+    "end": 1.98,
+    "conf": 1.0
+  },
+  {
+    "word": "Der",
+    "start": 2.4,
+    "end": 2.56,
+    "conf": 1.0
+  },
+  {
+    "word": "Sand",
+    "start": 2.56,
+    "end": 2.8,
+    "conf": 1.0
+  },
+  {
+    "word": "hatte",
+    "start": 2.8,
+    "end": 3.02,
+    "conf": 1.0
+  },
+  {
+    "word": "die",
+    "start": 3.02,
+    "end": 3.16,
+    "conf": 1.0
+  },
+  {
+    "word": "Wunden",
+    "start": 3.16,
+    "end": 3.4,
+    "conf": 1.0
+  },
+  {
+    "word": "verschlossen.",
+    "start": 3.4,
+    "end": 3.92,
+    "conf": 1.0
+  },
+  {
+    "word": "Er",
+    "start": 4.36,
+    "end": 4.46,
+    "conf": 1.0
+  },
+  {
+    "word": "denkt,",
+    "start": 4.46,
+    "end": 4.64,
+    "conf": 1.0
+  },
+  {
+    "word": "gleich",
+    "start": 4.96,
+    "end": 5.18,
+    "conf": 1.0
+  },
+  {
+    "word": "ist",
+    "start": 5.18,
+    "end": 5.44,
+    "conf": 1.0
+  },
+  {
+    "word": "es",
+    "start": 5.44,
+    "end": 5.56,
+    "conf": 1.0
+  },
+  {
+    "word": "noch",
+    "start": 5.56,
+    "end": 5.7,
+    "conf": 1.0
+  },
+  {
+    "word": "nicht",
+    "start": 5.7,
+    "end": 5.84,
+    "conf": 1.0
+  },
+  {
+    "word": "meine",
+    "start": 5.84,
+    "end": 6.06,
+    "conf": 1.0
+  },
+  {
+    "word": "Zeit.",
+    "start": 6.06,
+    "end": 6.32,
+    "conf": 1.0
+  },
+  {
+    "word": "Er",
+    "start": 6.86,
+    "end": 7.0,
+    "conf": 1.0
+  },
+  {
+    "word": "steht",
+    "start": 7.0,
+    "end": 7.18,
+    "conf": 1.0
+  },
+  {
+    "word": "auf.",
+    "start": 7.18,
+    "end": 7.48,
+    "conf": 1.0
+  },
+  {
+    "word": "Die",
+    "start": 8.08,
+    "end": 8.22,
+    "conf": 1.0
+  },
+  {
+    "word": "Uhr",
+    "start": 8.22,
+    "end": 8.44,
+    "conf": 1.0
+  },
+  {
+    "word": "klappert",
+    "start": 8.44,
+    "end": 8.88,
+    "conf": 1.0
+  },
+  {
+    "word": "locker",
+    "start": 8.88,
+    "end": 9.1,
+    "conf": 1.0
+  },
+  {
+    "word": "am",
+    "start": 9.1,
+    "end": 9.34,
+    "conf": 1.0
+  },
+  {
+    "word": "Handgelenk.",
+    "start": 9.34,
+    "end": 9.88,
+    "conf": 1.0
+  },
+  {
+    "word": "Er",
+    "start": 10.14,
+    "end": 10.24,
+    "conf": 1.0
+  },
+  {
+    "word": "hatte",
+    "start": 10.24,
+    "end": 10.42,
+    "conf": 1.0
+  },
+  {
+    "word": "sie",
+    "start": 10.42,
+    "end": 10.56,
+    "conf": 1.0
+  },
+  {
+    "word": "auf",
+    "start": 10.56,
+    "end": 10.72,
+    "conf": 1.0
+  },
+  {
+    "word": "Anschlag",
+    "start": 10.72,
+    "end": 11.16,
+    "conf": 1.0
+  },
+  {
+    "word": "gestellt.",
+    "start": 11.16,
+    "end": 11.46,
+    "conf": 1.0
+  },
+  {
+    "word": "Die",
+    "start": 12.22,
+    "end": 12.36,
+    "conf": 1.0
+  },
+  {
+    "word": "Knochen",
+    "start": 12.36,
+    "end": 12.74,
+    "conf": 1.0
+  },
+  {
+    "word": "seiner",
+    "start": 12.74,
+    "end": 12.94,
+    "conf": 1.0
+  },
+  {
+    "word": "Hände",
+    "start": 12.94,
+    "end": 13.2,
+    "conf": 1.0
+  },
+  {
+    "word": "zeichnen",
+    "start": 13.2,
+    "end": 13.66,
+    "conf": 1.0
+  },
+  {
+    "word": "sich",
+    "start": 13.66,
+    "end": 13.84,
+    "conf": 1.0
+  },
+  {
+    "word": "durch",
+    "start": 13.84,
+    "end": 14.0,
+    "conf": 1.0
+  },
+  {
+    "word": "die",
+    "start": 14.0,
+    "end": 14.16,
+    "conf": 1.0
+  },
+  {
+    "word": "Haut.",
+    "start": 14.16,
+    "end": 14.34,
+    "conf": 1.0
+  },
+  {
+    "word": "Er",
+    "start": 14.8,
+    "end": 14.9,
+    "conf": 1.0
+  },
+  {
+    "word": "folgt",
+    "start": 14.9,
+    "end": 15.26,
+    "conf": 1.0
+  },
+  {
+    "word": "dem",
+    "start": 15.26,
+    "end": 15.38,
+    "conf": 1.0
+  },
+  {
+    "word": "Rat",
+    "start": 15.38,
+    "end": 15.6,
+    "conf": 1.0
+  },
+  {
+    "word": "eines",
+    "start": 15.6,
+    "end": 15.84,
+    "conf": 1.0
+  },
+  {
+    "word": "Tuareknomaden,",
+    "start": 15.84,
+    "end": 16.84,
+    "conf": 1.0
+  },
+  {
+    "word": "die",
+    "start": 17.2,
+    "end": 17.32,
+    "conf": 1.0
+  },
+  {
+    "word": "in",
+    "start": 17.32,
+    "end": 17.46,
+    "conf": 1.0
+  },
+  {
+    "word": "Richtung",
+    "start": 17.46,
+    "end": 17.76,
+    "conf": 1.0
+  },
+  {
+    "word": "der",
+    "start": 17.76,
+    "end": 18.0,
+    "conf": 1.0
+  },
+  {
+    "word": "Wolken",
+    "start": 18.0,
+    "end": 18.36,
+    "conf": 1.0
+  },
+  {
+    "word": "im",
+    "start": 18.36,
+    "end": 18.48,
+    "conf": 1.0
+  },
+  {
+    "word": "Morgengrauen.",
+    "start": 18.48,
+    "end": 19.0,
+    "conf": 1.0
+  }
+]

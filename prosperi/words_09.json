@@ -1,0 +1,434 @@
+[
+  {
+    "word": "Tag",
+    "start": 0.0,
+    "end": 0.34,
+    "conf": 1.0
+  },
+  {
+    "word": "9",
+    "start": 0.34,
+    "end": 0.64,
+    "conf": 1.0
+  },
+  {
+    "word": "–",
+    "start": 0.64,
+    "end": 1.26,
+    "conf": 1.0
+  },
+  {
+    "word": "Ziegen",
+    "start": 1.26,
+    "end": 1.5,
+    "conf": 1.0
+  },
+  {
+    "word": "–",
+    "start": 1.5,
+    "end": 1.96,
+    "conf": 1.0
+  },
+  {
+    "word": "Ziegen",
+    "start": 1.96,
+    "end": 2.36,
+    "conf": 1.0
+  },
+  {
+    "word": "bedeuten",
+    "start": 2.36,
+    "end": 2.74,
+    "conf": 1.0
+  },
+  {
+    "word": "Menschen.",
+    "start": 2.74,
+    "end": 3.08,
+    "conf": 1.0
+  },
+  {
+    "word": "Er",
+    "start": 3.54,
+    "end": 3.68,
+    "conf": 1.0
+  },
+  {
+    "word": "folgt",
+    "start": 3.68,
+    "end": 4.06,
+    "conf": 1.0
+  },
+  {
+    "word": "ihnen",
+    "start": 4.06,
+    "end": 4.28,
+    "conf": 1.0
+  },
+  {
+    "word": "und",
+    "start": 4.28,
+    "end": 4.86,
+    "conf": 1.0
+  },
+  {
+    "word": "sieht",
+    "start": 4.86,
+    "end": 5.0,
+    "conf": 1.0
+  },
+  {
+    "word": "ein",
+    "start": 5.0,
+    "end": 5.18,
+    "conf": 1.0
+  },
+  {
+    "word": "kleines",
+    "start": 5.18,
+    "end": 5.48,
+    "conf": 1.0
+  },
+  {
+    "word": "Mädchen,",
+    "start": 5.48,
+    "end": 5.96,
+    "conf": 1.0
+  },
+  {
+    "word": "das",
+    "start": 6.04,
+    "end": 6.14,
+    "conf": 1.0
+  },
+  {
+    "word": "wegläuft.",
+    "start": 6.14,
+    "end": 6.7,
+    "conf": 1.0
+  },
+  {
+    "word": "Dann",
+    "start": 7.16,
+    "end": 7.3,
+    "conf": 1.0
+  },
+  {
+    "word": "zählt",
+    "start": 7.3,
+    "end": 7.7,
+    "conf": 1.0
+  },
+  {
+    "word": "er.",
+    "start": 7.7,
+    "end": 7.88,
+    "conf": 1.0
+  },
+  {
+    "word": "Raun",
+    "start": 8.38,
+    "end": 8.78,
+    "conf": 1.0
+  },
+  {
+    "word": "kommen",
+    "start": 8.78,
+    "end": 9.02,
+    "conf": 1.0
+  },
+  {
+    "word": "heraus,",
+    "start": 9.02,
+    "end": 9.42,
+    "conf": 1.0
+  },
+  {
+    "word": "geben",
+    "start": 9.88,
+    "end": 10.02,
+    "conf": 1.0
+  },
+  {
+    "word": "ihnen",
+    "start": 10.02,
+    "end": 10.22,
+    "conf": 1.0
+  },
+  {
+    "word": "Ziegenmilch.",
+    "start": 10.22,
+    "end": 10.94,
+    "conf": 1.0
+  },
+  {
+    "word": "Er",
+    "start": 11.28,
+    "end": 11.38,
+    "conf": 1.0
+  },
+  {
+    "word": "kann",
+    "start": 11.38,
+    "end": 11.56,
+    "conf": 1.0
+  },
+  {
+    "word": "sie",
+    "start": 11.56,
+    "end": 11.7,
+    "conf": 1.0
+  },
+  {
+    "word": "nicht",
+    "start": 11.7,
+    "end": 11.86,
+    "conf": 1.0
+  },
+  {
+    "word": "halten.",
+    "start": 11.86,
+    "end": 12.2,
+    "conf": 1.0
+  },
+  {
+    "word": "Später",
+    "start": 12.74,
+    "end": 13.12,
+    "conf": 1.0
+  },
+  {
+    "word": "kommt",
+    "start": 13.12,
+    "end": 13.36,
+    "conf": 1.0
+  },
+  {
+    "word": "ein",
+    "start": 13.36,
+    "end": 13.58,
+    "conf": 1.0
+  },
+  {
+    "word": "Jeb.",
+    "start": 13.58,
+    "end": 13.9,
+    "conf": 1.0
+  },
+  {
+    "word": "Zwei",
+    "start": 14.2,
+    "end": 14.44,
+    "conf": 1.0
+  },
+  {
+    "word": "Soldaten",
+    "start": 14.44,
+    "end": 14.98,
+    "conf": 1.0
+  },
+  {
+    "word": "drücken",
+    "start": 14.98,
+    "end": 15.32,
+    "conf": 1.0
+  },
+  {
+    "word": "ihn",
+    "start": 15.32,
+    "end": 15.54,
+    "conf": 1.0
+  },
+  {
+    "word": "auf",
+    "start": 15.54,
+    "end": 15.74,
+    "conf": 1.0
+  },
+  {
+    "word": "den",
+    "start": 15.74,
+    "end": 15.88,
+    "conf": 1.0
+  },
+  {
+    "word": "Boden,",
+    "start": 15.88,
+    "end": 16.14,
+    "conf": 1.0
+  },
+  {
+    "word": "binden",
+    "start": 16.48,
+    "end": 16.62,
+    "conf": 1.0
+  },
+  {
+    "word": "ihn",
+    "start": 16.62,
+    "end": 16.8,
+    "conf": 1.0
+  },
+  {
+    "word": "die",
+    "start": 16.8,
+    "end": 16.94,
+    "conf": 1.0
+  },
+  {
+    "word": "Augen.",
+    "start": 16.94,
+    "end": 17.18,
+    "conf": 1.0
+  },
+  {
+    "word": "Das",
+    "start": 17.78,
+    "end": 17.96,
+    "conf": 1.0
+  },
+  {
+    "word": "ist",
+    "start": 17.96,
+    "end": 18.14,
+    "conf": 1.0
+  },
+  {
+    "word": "sein",
+    "start": 18.14,
+    "end": 18.36,
+    "conf": 1.0
+  },
+  {
+    "word": "erster",
+    "start": 18.36,
+    "end": 18.68,
+    "conf": 1.0
+  },
+  {
+    "word": "echter",
+    "start": 18.68,
+    "end": 18.94,
+    "conf": 1.0
+  },
+  {
+    "word": "Moment",
+    "start": 18.94,
+    "end": 19.26,
+    "conf": 1.0
+  },
+  {
+    "word": "der",
+    "start": 19.26,
+    "end": 19.48,
+    "conf": 1.0
+  },
+  {
+    "word": "Angst.",
+    "start": 19.48,
+    "end": 19.66,
+    "conf": 1.0
+  },
+  {
+    "word": "In",
+    "start": 20.08,
+    "end": 20.2,
+    "conf": 1.0
+  },
+  {
+    "word": "10",
+    "start": 20.2,
+    "end": 20.46,
+    "conf": 1.0
+  },
+  {
+    "word": "Tagen",
+    "start": 20.46,
+    "end": 20.84,
+    "conf": 1.0
+  },
+  {
+    "word": "hat",
+    "start": 20.84,
+    "end": 21.02,
+    "conf": 1.0
+  },
+  {
+    "word": "er",
+    "start": 21.02,
+    "end": 21.12,
+    "conf": 1.0
+  },
+  {
+    "word": "291",
+    "start": 21.12,
+    "end": 22.72,
+    "conf": 1.0
+  },
+  {
+    "word": "Kilometer",
+    "start": 22.72,
+    "end": 23.2,
+    "conf": 1.0
+  },
+  {
+    "word": "zurückgelegt",
+    "start": 23.2,
+    "end": 23.94,
+    "conf": 1.0
+  },
+  {
+    "word": "nach",
+    "start": 23.94,
+    "end": 24.38,
+    "conf": 1.0
+  },
+  {
+    "word": "Algerien.",
+    "start": 24.38,
+    "end": 24.92,
+    "conf": 1.0
+  },
+  {
+    "word": "Zwei",
+    "start": 24.92,
+    "end": 24.92,
+    "conf": 1.0
+  },
+  {
+    "word": "Soldaten",
+    "start": 24.92,
+    "end": 24.94,
+    "conf": 1.0
+  },
+  {
+    "word": "drücken",
+    "start": 24.94,
+    "end": 24.98,
+    "conf": 1.0
+  },
+  {
+    "word": "ihn",
+    "start": 24.98,
+    "end": 24.98,
+    "conf": 1.0
+  },
+  {
+    "word": "auf",
+    "start": 24.98,
+    "end": 25.04,
+    "conf": 1.0
+  },
+  {
+    "word": "den",
+    "start": 25.04,
+    "end": 25.04,
+    "conf": 1.0
+  },
+  {
+    "word": "Boden.",
+    "start": 25.04,
+    "end": 25.04,
+    "conf": 1.0
+  }
+]

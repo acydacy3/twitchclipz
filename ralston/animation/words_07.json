@@ -1,0 +1,537 @@
+[
+  {
+    "word": "In",
+    "start": 0.0,
+    "end": 0.12
+  },
+  {
+    "word": "der",
+    "start": 0.12,
+    "end": 0.26
+  },
+  {
+    "word": "fünften",
+    "start": 0.26,
+    "end": 0.8
+  },
+  {
+    "word": "Nachtlisch",
+    "start": 0.8,
+    "end": 1.32
+  },
+  {
+    "word": "ralscht",
+    "start": 1.32,
+    "end": 1.68
+  },
+  {
+    "word": "und",
+    "start": 1.68,
+    "end": 1.8
+  },
+  {
+    "word": "los,",
+    "start": 1.8,
+    "end": 2.0
+  },
+  {
+    "word": "er",
+    "start": 2.46,
+    "end": 2.54
+  },
+  {
+    "word": "hatte",
+    "start": 2.54,
+    "end": 2.74
+  },
+  {
+    "word": "aufgehört",
+    "start": 2.74,
+    "end": 3.2
+  },
+  {
+    "word": "zu",
+    "start": 3.2,
+    "end": 3.38
+  },
+  {
+    "word": "kämpfen.",
+    "start": 3.38,
+    "end": 3.72
+  },
+  {
+    "word": "Sein",
+    "start": 4.22,
+    "end": 4.42
+  },
+  {
+    "word": "Körper",
+    "start": 4.42,
+    "end": 4.72
+  },
+  {
+    "word": "war",
+    "start": 4.72,
+    "end": 5.0
+  },
+  {
+    "word": "am",
+    "start": 5.0,
+    "end": 5.14
+  },
+  {
+    "word": "Limit,",
+    "start": 5.14,
+    "end": 5.4
+  },
+  {
+    "word": "seine",
+    "start": 5.82,
+    "end": 6.02
+  },
+  {
+    "word": "Wasser",
+    "start": 6.02,
+    "end": 6.26
+  },
+  {
+    "word": "vor",
+    "start": 6.26,
+    "end": 6.5
+  },
+  {
+    "word": "Rede",
+    "start": 6.5,
+    "end": 6.8
+  },
+  {
+    "word": "erschöpft.",
+    "start": 6.8,
+    "end": 7.22
+  },
+  {
+    "word": "Er",
+    "start": 7.64,
+    "end": 7.74
+  },
+  {
+    "word": "hatte",
+    "start": 7.74,
+    "end": 7.96
+  },
+  {
+    "word": "akzeptiert,",
+    "start": 7.96,
+    "end": 8.62
+  },
+  {
+    "word": "dass",
+    "start": 8.9,
+    "end": 9.06
+  },
+  {
+    "word": "er",
+    "start": 9.06,
+    "end": 9.24
+  },
+  {
+    "word": "sterben",
+    "start": 9.24,
+    "end": 9.56
+  },
+  {
+    "word": "würde,",
+    "start": 9.56,
+    "end": 9.78
+  },
+  {
+    "word": "dann",
+    "start": 10.22,
+    "end": 10.52
+  },
+  {
+    "word": "in",
+    "start": 10.52,
+    "end": 11.02
+  },
+  {
+    "word": "diesem",
+    "start": 11.02,
+    "end": 11.28
+  },
+  {
+    "word": "Zustand",
+    "start": 11.28,
+    "end": 11.68
+  },
+  {
+    "word": "zwischen",
+    "start": 11.68,
+    "end": 12.0
+  },
+  {
+    "word": "Wachen",
+    "start": 12.0,
+    "end": 12.38
+  },
+  {
+    "word": "und",
+    "start": 12.38,
+    "end": 12.68
+  },
+  {
+    "word": "Schlafen",
+    "start": 12.68,
+    "end": 13.18
+  },
+  {
+    "word": "sah",
+    "start": 13.18,
+    "end": 13.58
+  },
+  {
+    "word": "er",
+    "start": 13.58,
+    "end": 13.74
+  },
+  {
+    "word": "etwas.",
+    "start": 13.74,
+    "end": 14.1
+  },
+  {
+    "word": "Eine",
+    "start": 14.78,
+    "end": 15.04
+  },
+  {
+    "word": "Vision,",
+    "start": 15.04,
+    "end": 15.34
+  },
+  {
+    "word": "er",
+    "start": 15.84,
+    "end": 15.96
+  },
+  {
+    "word": "sah",
+    "start": 15.96,
+    "end": 16.12
+  },
+  {
+    "word": "sich",
+    "start": 16.12,
+    "end": 16.34
+  },
+  {
+    "word": "selbst,",
+    "start": 16.34,
+    "end": 16.8
+  },
+  {
+    "word": "ohne",
+    "start": 17.08,
+    "end": 17.14
+  },
+  {
+    "word": "rechten",
+    "start": 17.14,
+    "end": 17.54
+  },
+  {
+    "word": "unter",
+    "start": 17.54,
+    "end": 17.82
+  },
+  {
+    "word": "Arm,",
+    "start": 17.82,
+    "end": 18.1
+  },
+  {
+    "word": "wie",
+    "start": 18.4,
+    "end": 18.48
+  },
+  {
+    "word": "er",
+    "start": 18.48,
+    "end": 18.6
+  },
+  {
+    "word": "einen",
+    "start": 18.6,
+    "end": 18.78
+  },
+  {
+    "word": "kleinen,",
+    "start": 18.78,
+    "end": 19.18
+  },
+  {
+    "word": "blonden",
+    "start": 19.46,
+    "end": 19.78
+  },
+  {
+    "word": "Jungen",
+    "start": 19.78,
+    "end": 19.94
+  },
+  {
+    "word": "auf",
+    "start": 19.94,
+    "end": 20.14
+  },
+  {
+    "word": "die",
+    "start": 20.14,
+    "end": 20.28
+  },
+  {
+    "word": "Hüfte",
+    "start": 20.28,
+    "end": 20.54
+  },
+  {
+    "word": "hebt.",
+    "start": 20.54,
+    "end": 20.78
+  },
+  {
+    "word": "Er",
+    "start": 21.28,
+    "end": 21.38
+  },
+  {
+    "word": "sah",
+    "start": 21.38,
+    "end": 21.56
+  },
+  {
+    "word": "die",
+    "start": 21.56,
+    "end": 21.74
+  },
+  {
+    "word": "Augen",
+    "start": 21.74,
+    "end": 21.94
+  },
+  {
+    "word": "des",
+    "start": 21.94,
+    "end": 22.12
+  },
+  {
+    "word": "Kindes,",
+    "start": 22.12,
+    "end": 22.58
+  },
+  {
+    "word": "und",
+    "start": 22.88,
+    "end": 23.04
+  },
+  {
+    "word": "wusste",
+    "start": 23.04,
+    "end": 23.36
+  },
+  {
+    "word": "mit",
+    "start": 23.36,
+    "end": 23.52
+  },
+  {
+    "word": "einer",
+    "start": 23.52,
+    "end": 23.66
+  },
+  {
+    "word": "Klarheit,",
+    "start": 23.66,
+    "end": 24.18
+  },
+  {
+    "word": "die",
+    "start": 24.42,
+    "end": 24.56
+  },
+  {
+    "word": "er",
+    "start": 24.56,
+    "end": 24.62
+  },
+  {
+    "word": "noch",
+    "start": 24.62,
+    "end": 24.74
+  },
+  {
+    "word": "nie",
+    "start": 24.74,
+    "end": 24.88
+  },
+  {
+    "word": "gespielt",
+    "start": 24.88,
+    "end": 25.2
+  },
+  {
+    "word": "hatte.",
+    "start": 25.2,
+    "end": 25.54
+  },
+  {
+    "word": "Das",
+    "start": 25.96,
+    "end": 26.06
+  },
+  {
+    "word": "ist",
+    "start": 26.06,
+    "end": 26.2
+  },
+  {
+    "word": "mein",
+    "start": 26.2,
+    "end": 26.4
+  },
+  {
+    "word": "Sohn,",
+    "start": 26.4,
+    "end": 26.7
+  },
+  {
+    "word": "ein",
+    "start": 27.02,
+    "end": 27.18
+  },
+  {
+    "word": "Sohn,",
+    "start": 27.18,
+    "end": 27.56
+  },
+  {
+    "word": "den",
+    "start": 27.68,
+    "end": 27.74
+  },
+  {
+    "word": "er",
+    "start": 27.74,
+    "end": 27.84
+  },
+  {
+    "word": "noch",
+    "start": 27.84,
+    "end": 27.98
+  },
+  {
+    "word": "nicht",
+    "start": 27.98,
+    "end": 28.12
+  },
+  {
+    "word": "hatte.",
+    "start": 28.12,
+    "end": 28.38
+  },
+  {
+    "word": "Wenn",
+    "start": 28.38,
+    "end": 29.14
+  },
+  {
+    "word": "diese",
+    "start": 29.14,
+    "end": 29.4
+  },
+  {
+    "word": "Junge",
+    "start": 29.4,
+    "end": 29.64
+  },
+  {
+    "word": "existiert,",
+    "start": 29.64,
+    "end": 30.24
+  },
+  {
+    "word": "dann",
+    "start": 30.62,
+    "end": 30.64
+  },
+  {
+    "word": "muss",
+    "start": 30.64,
+    "end": 30.84
+  },
+  {
+    "word": "er",
+    "start": 30.84,
+    "end": 31.04
+  },
+  {
+    "word": "aus",
+    "start": 31.04,
+    "end": 31.18
+  },
+  {
+    "word": "dieser",
+    "start": 31.18,
+    "end": 31.42
+  },
+  {
+    "word": "Schlucht",
+    "start": 31.42,
+    "end": 31.72
+  },
+  {
+    "word": "heraus.",
+    "start": 31.72,
+    "end": 31.94
+  },
+  {
+    "word": "Dann",
+    "start": 32.74,
+    "end": 32.86
+  },
+  {
+    "word": "hat",
+    "start": 32.86,
+    "end": 33.02
+  },
+  {
+    "word": "er",
+    "start": 33.02,
+    "end": 33.14
+  },
+  {
+    "word": "eine",
+    "start": 33.14,
+    "end": 33.28
+  },
+  {
+    "word": "Zukunft,",
+    "start": 33.28,
+    "end": 33.68
+  },
+  {
+    "word": "er",
+    "start": 34.24,
+    "end": 34.34
+  },
+  {
+    "word": "kämpfte",
+    "start": 34.34,
+    "end": 34.76
+  },
+  {
+    "word": "weiter.",
+    "start": 34.76,
+    "end": 35.08
+  }
+]

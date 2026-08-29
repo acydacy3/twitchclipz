@@ -2,15 +2,56 @@
 type: idea-pipeline
 status: active
 created: 2026-08-24
-updated: 2026-08-24
+updated: 2026-08-27
 tags: [ideen, pipeline, recherche, video]
 ---
 
 # Video-Ideen-Pipeline (recherchiert)
 
 > Kandidaten für die nächsten Videos, per Recherche-Agent belegt (24.08.). Vor Produktion
-> gegen [[Failure-Memory]] + [[Learning-Bilder-Prompts]] prüfen. **Bereits gemacht:** Tham
-> Luang, San José, Koepcke/LANSA — nicht wiederholen.
+> gegen [[Failure-Memory]] + [[Learning-Bilder-Prompts]] prüfen.
+> **Bereits gemacht:** V1 Tham Luang · V2 San José · V3 Koepcke · V4 Okene · V5 Lengede · V6 Nutty Putty · V7 Prosperi — nicht wiederholen.
+
+---
+
+## ⭐ V8 — EMPFEHLUNG (27.08., post-Okene-Audit)
+
+**Aron Ralston — 127 Stunden (Blue John Canyon, Utah, 2003)**
+
+**Warum jetzt:** Okene-Audit zeigt: Physikalisch unvorstellbares Premise + Paradox-Hook + Anagnorisis-Moment = Formel für Outlier. Ralston erfüllt alle drei — stärker als jeder bisherige Kandidat.
+
+| Okene-Kriterium | Ralston-Entsprechung |
+|---|---|
+| Physikalisch unvorstellbar | Arm-Amputation mit stumpfem Taschenmesser in 40 min — DIY, alleine, ohne Betäubung |
+| Paradox-Hook | „Er brach sich selbst den Knochen — mit Absicht. Das war der einzige Ausweg." |
+| Anagnorisis-Moment | Tag 5: Er erkennt, dass er den Arm abschneiden MUSS — und tut es. Dieser Short ist der Kern. |
+| Zeitstempel | „127 Stunden" / „5 Tage alleine im Canyon" |
+| DE-Sättigung | James-Franco-Film bekannt, aber DE faceless/nüchtern = unbesetzt |
+
+**Hook-Pool (fertig formuliert):**
+- „Ein 360-kg-Stein klemmte seinen Arm ein. 5 Tage lang. Am 6. Tag wusste er, was er tun musste."
+- „Er schnitt sich den Unterarm ab — mit einem stumpfen Taschenmesser, in 40 Minuten, alleine."
+- „Sein Arm war tot. Sein Körper noch nicht. Er musste sich entscheiden."
+- „127 Stunden. Dann brach er sich selbst den Knochen."
+- „Der Film heißt 127 Hours. Die echte Geschichte ist brutaler."
+
+**Anagnorisis-Short (muss drin sein):** Moment, wo er erkennt, dass Warten = Tod. Er beginnt zu graben, zu graben, zu graben — und dann stoppt er. Weil er versteht.
+
+**Bilder:**
+- 🎬 Z-Image: Felsspalte (eng, rötlich), eingeklemmte Hand (stylisiert/Silhouette), Taschenmesser
+- 📹 Stock: Blue John Canyon Landschaft (öffentl. Fotos), Utah-Wüste, Helikopter-Rettung
+- Manim: `DepthDive` oder neue Szene — Querschnitt des Canyons + eingeklemmter Arm (Tiefenmessung)
+
+**Quellen:** de.wikipedia „Aron Ralston", Between a Rock and a Hard Place (Buch), BBC, Spiegel-Archiv, Geo.
+
+**Risiko:** Selbst-Amputation ist explizit — kein Blut zeigen (Silhouette/Andeutung reicht). Kein Filmausschnitt. Eigene Rekonstruktion.
+
+---
+
+**Backup V8 — falls Ralston zu explizit:**
+**Vesna Vulović (JAT-Flug 367, 1972)** — 10.160 m Absturz ohne Fallschirm, einzige Überlebende des Flugzeugs. Physikalisch unmöglich, aber belegt. DE-Bekanntheit: gering. Paradox: „Nur sie überlebte — weil sie ohnmächtig war." Kein explizites Material. Manim: Höhenkarte + Aufprallwinkel.
+
+---
 
 ## Kandidat A — Harrison Okene (Jascon-4, 2013) · Unterwasser/Wrack
 - **Kern:** Schlepper kentert 26.05.2013 vor Nigeria, sinkt auf ~30 m. Koch Okene (29) überlebt

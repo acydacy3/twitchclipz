@@ -1,0 +1,30 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+Timer: 100.0000
+
+[V4+ Styles]
+Format: Name,Fontname,Fontsize,PrimaryColour,SecondaryColour,OutlineColour,BackColour,Bold,Italic,Underline,StrikeOut,ScaleX,ScaleY,Spacing,Angle,BorderStyle,Outline,Shadow,Alignment,MarginL,MarginR,MarginV,Encoding
+Style: Default,Arial,76,&H0000FFFF,&H00FFFFFF,&H00000000,&H99000000,-1,0,0,0,100,100,1,0,1,4,2,2,60,60,220,1
+
+[Events]
+Format: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text
+Dialogue: 0,0:00:00.00,0:00:01.86,Default,,0,0,0,,{\kf36}Um {\kf44}14 {\kf92}.45 {\kf14}Uhr
+Dialogue: 0,0:00:01.86,0:00:03.38,Default,,0,0,0,,{\kf28}trat {\kf39}Aron {\kf62}Rallsturm {\kf21}auf
+Dialogue: 0,0:00:03.38,0:00:04.88,Default,,0,0,0,,{\kf22}einen {\kf35}Losen {\kf67}Sandsteinblock {\kf24}in
+Dialogue: 0,0:00:04.88,0:00:06.16,Default,,0,0,0,,{\kf12}der {\kf33}engen {\kf29}Felsschu. {\kf14}Er
+Dialogue: 0,0:00:06.16,0:00:07.38,Default,,0,0,0,,{\kf24}hörte {\kf11}ihn {\kf42}knacken, {\kf8}dann
+Dialogue: 0,0:00:07.38,0:00:08.58,Default,,0,0,0,,{\kf25}viel {\kf32}er, {\kf10}nur {\kf27}etwa
+Dialogue: 0,0:00:08.58,0:00:10.06,Default,,0,0,0,,{\kf30}60 {\kf45}cm {\kf46}nach {\kf25}unten.
+Dialogue: 0,0:00:10.62,0:00:11.58,Default,,0,0,0,,{\kf18}Aber {\kf21}als {\kf9}er {\kf46}aufkam,
+Dialogue: 0,0:00:11.98,0:00:12.58,Default,,0,0,0,,{\kf5}war {\kf16}sein {\kf18}Recht {\kf19}der
+Dialogue: 0,0:00:12.58,0:00:14.46,Default,,0,0,0,,{\kf35}Unterarm {\kf67}eingeklemmt. {\kf25}Zwischen {\kf18}der
+Dialogue: 0,0:00:14.46,0:00:16.24,Default,,0,0,0,,{\kf53}Felswand {\kf30}und {\kf17}einem {\kf75}360
+Dialogue: 0,0:00:16.24,0:00:18.48,Default,,0,0,0,,{\kf90}-Tilogramm {\kf35}schweren {\kf26}Brocken. {\kf12}Er
+Dialogue: 0,0:00:18.48,0:00:20.50,Default,,0,0,0,,{\kf30}zog, {\kf18}er {\kf31}zerte, {\kf12}er
+Dialogue: 0,0:00:20.50,0:00:22.40,Default,,0,0,0,,{\kf39}präste, {\kf9}er {\kf62}versuchte, {\kf7}den
+Dialogue: 0,0:00:22.40,0:00:23.90,Default,,0,0,0,,{\kf20}Stein {\kf21}zu {\kf32}kippen. {\kf21}Nichts
+Dialogue: 0,0:00:23.90,0:00:25.56,Default,,0,0,0,,{\kf44}bewegte {\kf21}sich, {\kf16}ein {\kf32}Loser
+Dialogue: 0,0:00:25.56,0:00:27.12,Default,,0,0,0,,{\kf26}Fels. {\kf12}Das {\kf17}war {\kf28}alles,
+Dialogue: 0,0:00:27.38,0:00:28.20,Default,,0,0,0,,{\kf8}was {\kf9}es {\kf44}gebraucht {\kf19}hatte.

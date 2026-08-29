@@ -1,0 +1,71 @@
+{
+  "shots": [
+    {
+      "img": "/home/user/twitchclipz/prosperi/bilder/S07/01.jpg",
+      "start": 0.0,
+      "end": 3.0,
+      "cx": 0.5,
+      "cy": 0.45,
+      "z0": 1.1,
+      "z1": 1.24,
+      "px": 0.02,
+      "py": 0.0,
+      "drift": 10
+    },
+    {
+      "img": "/home/user/twitchclipz/prosperi/broll/short_07/01.jpg",
+      "start": 3.0,
+      "end": 9.120000000000001,
+      "cx": 0.5,
+      "cy": 0.5,
+      "z0": 1.04,
+      "z1": 1.18,
+      "px": 0.0,
+      "py": 0.0,
+      "drift": 14
+    },
+    {
+      "img": "/home/user/twitchclipz/prosperi/broll/short_07/02.jpg",
+      "start": 9.120000000000001,
+      "end": 15.240000000000002,
+      "cx": 0.5,
+      "cy": 0.68,
+      "z0": 1.02,
+      "z1": 1.14,
+      "px": 0.0,
+      "py": 0.05,
+      "drift": 12
+    },
+    {
+      "img": "/home/user/twitchclipz/prosperi/broll/short_07/03.jpg",
+      "start": 15.240000000000002,
+      "end": 21.36,
+      "cx": 0.5,
+      "cy": 0.32,
+      "z0": 1.02,
+      "z1": 1.14,
+      "px": 0.0,
+      "py": -0.05,
+      "drift": 12
+    }
+  ],
+  "start": 0.0,
+  "end": 21.36,
+  "audio": "/home/user/twitchclipz/prosperi/voiceover/short_07.mp3",
+  "words": "/home/user/twitchclipz/prosperi/words_07.json",
+  "font_black": "/usr/share/fonts/truetype/roboto/unhinted/RobotoTTF/Roboto-Black.ttf",
+  "tmp": "/home/user/twitchclipz/prosperi/tmp/short_07",
+  "out": "/home/user/twitchclipz/prosperi/output/prosperi_07.mp4",
+  "musik": {
+    "tonart": "D",
+    "intensitaet": 0.8,
+    "db": -16
+  },
+  "teil": "TEIL 7",
+  "hook": {
+    "text": "ER RITZTE SICH DIE HANDGELENKE.",
+    "y": 330,
+    "size": 56
+  },
+  "hook_until": 3.2
+}

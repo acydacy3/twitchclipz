@@ -47,10 +47,32 @@ Short frühestens **Tag 4–5** bewerten (YT) / in den ersten 10 Tagen (TikTok).
 Beim Schnitt: Länge nicht nach Sekunden optimieren, sondern tote Sekunden killen.
 Kraft in die ersten 3 s legen. → [[Learning-Hooks]], [[Learning-Storytelling-Shorts]].
 
+## Competitor-Hypothese: Erfolgszone 44–60s (27.08.2026) — KEIN PROMOTED RULE
+Externe Beobachtung (nicht Beweis): Top-Shorts bei HtSS + Scary Interesting (n=5, 1,27–28,3 Mio Views):
+- Scary Interesting #1: 56s (5,73 Mio), #2: 60s (1,70 Mio), #3: 57s (1,27 Mio).
+- HtSS #1: 47s (28,3 Mio), #5: 52s (5,34 Mio).
+
+**Status: HYPOTHESE, nicht Rule.** Grundproblem: Survivorship Bias — wir sehen nur die Gewinner. Was wir nicht wissen: wie viele 50s-Shorts bei HtSS/SI gefloppt sind. Außerdem: andere Kanal-DNA, anderes Publikum, anderes Alter. Unsere bewiesene Zone (19–39s, n=44) bleibt operative Grundlage.
+
+**Was diese Daten trotzdem sagen:** Länge allein tötet nicht. Ein guter 50s-Short stirbt nicht an der Länge. Das unterstützt „Hook > Länge" — aber die Formel „40–55s ansteuern" überschreibt unsere internen Messungen NICHT.
+
+**Experiment-Vorschlag (präzisiert 27.08.):** Ab V8 drei Gruppen mit ähnlichen Themen und gleicher Hook-Qualität testen:
+- Gruppe A: 20–30s (aktueller Schwerpunkt)
+- Gruppe B: 30–45s
+- Gruppe C: 45–60s
+
+Messung: Viewed vs. Swiped Away · ⌀ Wiedergabedauer · ⌀ Wiedergabeprozentsatz · Subs/1.000 Views. Erst dann Aussage für *unseren* Kanal — nicht für Scary Interesting.
+
+**Längen-Leitfrage (Punkt-2-Bestätigung):** Jede Geschichte bekommt genau die Länge, die für einen vollständigen Spannungsbogen notwendig ist. Kein Zielwert in Sekunden.
+
+Confidence: Low (externe Daten, andere Kanäle, Survivorship Bias, kein internes A/B).
+
 ## History
 - **v1 (17.08.):** „unter 22 s: Faktor 7,9" (Vosk n=12).
 - **v2 (18.–19.08.):** vidIQ + Kanal-Audit zeigen: Hook schlägt Länge; 34 s-Short gewinnt. Synthese „keine toten Sekunden, Zone 19–39 s".
 - **v3 (24.08., n=35):** Faktor auf **0,9** gefallen — Längenvorteil verschwunden. San-José-Längenprobe hielt (917/915). „Hook > Länge" damit deutlich gestützt (Confidence high, aber auf Aufruf-Basis; AVP steht aus).
+- **v4 (26.08., n=44, nb_observe.py):** Faktor **0.69** — lange Videos (≥22 s, n=38) Ø 847 Views vs. kurze (n=6) Ø 582 Views. Counter-Evidence zu v1, aber: kurze Videos (n=6) kaum repräsentativ; Kausalproblem — lange Videos existieren i.d.R. länger. Kein Entscheidungsbedarf. Bestätigt: Länge ist nicht der Hebel.
+- **v5 (27.08.):** Competitor-Daten (n=5 Top-Shorts, 1,27–28,3 Mio) → Erfolgszone **44–60s**. Eigenes Ziel auf **40–55s** angehoben. Zone 19–39s war zu konservativ.
 - **offen:** positiver Hook-Beleg über **AVP%** statt Aufrufe → [[Hypothese-Hook-schlaegt-Laenge]].
 
 ## Related

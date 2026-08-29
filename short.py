@@ -113,10 +113,10 @@ def build(cfg):
     m = subprocess.run(
         ["ffmpeg", "-hide_banner", "-nostats",
          "-ss", str(t0), "-to", str(t1), "-i", cfg["audio"],
-         "-af", "loudnorm=I=-14:TP=-1.5:LRA=11:print_format=json",
+         "-af", "loudnorm=I=-16:TP=-1.5:LRA=11:print_format=json",
          "-f", "null", "-"], capture_output=True, text=True).stderr
     js = json.loads(m[m.rindex("{"):m.rindex("}") + 1])
-    ln = ("loudnorm=I=-14:TP=-1.5:LRA=11:measured_I={input_i}:"
+    ln = ("loudnorm=I=-16:TP=-1.5:LRA=11:measured_I={input_i}:"
           "measured_TP={input_tp}:measured_LRA={input_lra}:"
           "measured_thresh={input_thresh}:offset={target_offset}:"
           "linear=true:print_format=summary").format(**js)
@@ -124,12 +124,10 @@ def build(cfg):
     subprocess.run([
         "ffmpeg", "-y", "-loglevel", "error",
         "-ss", str(t0), "-to", str(t1), "-i", cfg["audio"],
-        # loudnorm allein kommt nur auf -15,2 LUFS: die Rohspur liegt bei
-        # -22,4 LUFS mit -3,7 dBTP, mehr Gain wuerde die Spitzengrenze
-        # reissen. Der Limiter schafft die letzten 1,6 dB.
+        # Ziel -16 LUFS (war -14 + 1.6dB = zu laut, Nutzer-Feedback 26.08.).
         # level=false ist Pflicht - sonst zieht alimiter das Ergebnis
         # selbsttaetig auf Vollaussteuerung hoch (gemessen: +0,1 dBFS).
-        "-af", f"{ln},volume=1.6dB,"
+        "-af", f"{ln},volume=0.0dB,"
                f"alimiter=limit=0.84:level=false:attack=2:release=60,{fade}",
         "-ar", "48000", "-c:a", "aac", "-b:a", "192k", f"{tmp}/stimme.m4a"],
         check=True)
@@ -231,6 +229,29 @@ def build(cfg):
             f"enable='lt(t,{cfg.get('hook_until',3.2)})'[ov]"
         )
         cur = "[ov]"
+
+    # CTA-Banner (optional) — erscheint am Ende, waehrend Stimme noch laeuft.
+    # Config-Key "cta": {"text": "Teil 2 → @Katastrophenprotokoll", "from_end": 3}
+    # Kein "folgt mir" in der VO — rein visuell, passend zum Doku-Ton.
+    cta = cfg.get("cta")
+    if cta:
+        cta_text = cta.get("text", "@Katastrophenprotokoll")
+        cta_sec  = float(cta.get("from_end", 3.0))
+        # Dauer des Videos aus der laengsten Shot-Summe schaetzen (Fallback: 30 s)
+        dur_est  = sum(s.get("dur", 3) for s in shots)
+        cta_start = max(0, dur_est - cta_sec)
+        # Kleiner, semitransparenter Balken unten — nicht aufdringlich
+        chain += (
+            f";{cur}"
+            f"drawbox=x=0:y=1760:w={W}:h=100:color=black@0.65:t=fill:"
+            f"enable='gte(t,{cta_start:.1f})',"
+            f"drawtext=text='{cta_text}':"
+            f"fontfile={cfg['font_black']}:"
+            f"fontsize=44:fontcolor=white@0.95:"
+            f"x=(w-text_w)/2:y=1790:"
+            f"enable='gte(t,{cta_start:.1f})'[cta]"
+        )
+        cur = "[cta]"
 
     chain += f";{cur}subtitles={ass}:fontsdir=/usr/share/fonts[vout]"
 

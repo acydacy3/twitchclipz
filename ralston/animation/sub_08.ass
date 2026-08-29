@@ -1,0 +1,44 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+Timer: 100.0000
+
+[V4+ Styles]
+Format: Name,Fontname,Fontsize,PrimaryColour,SecondaryColour,OutlineColour,BackColour,Bold,Italic,Underline,StrikeOut,ScaleX,ScaleY,Spacing,Angle,BorderStyle,Outline,Shadow,Alignment,MarginL,MarginR,MarginV,Encoding
+Style: Default,Arial,76,&H0000FFFF,&H00FFFFFF,&H00000000,&H99000000,-1,0,0,0,100,100,1,0,1,4,2,2,60,60,220,1
+
+[Events]
+Format: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text
+Dialogue: 0,0:00:00.00,0:00:00.98,Default,,0,0,0,,{\kf16}5 {\kf34}Tage {\kf21}lang {\kf26}hatte
+Dialogue: 0,0:00:00.98,0:00:02.50,Default,,0,0,0,,{\kf41}Rallsturm {\kf44}versucht, {\kf11}durch {\kf18}den
+Dialogue: 0,0:00:02.50,0:00:03.94,Default,,0,0,0,,{\kf27}Knochen {\kf22}zu {\kf37}schneiden. {\kf8}Das
+Dialogue: 0,0:00:03.94,0:00:05.12,Default,,0,0,0,,{\kf39}Messer {\kf16}war {\kf17}zu {\kf44}stumpf,
+Dialogue: 0,0:00:05.34,0:00:06.32,Default,,0,0,0,,{\kf29}erschafft {\kf14}es {\kf20}nicht {\kf33}mal,
+Dialogue: 0,0:00:06.62,0:00:07.92,Default,,0,0,0,,{\kf12}die {\kf16}Haut {\kf31}richtig {\kf70}aufzuritzen.
+Dialogue: 0,0:00:08.38,0:00:09.64,Default,,0,0,0,,{\kf9}Dann, {\kf11}am {\kf17}6. {\kf36}Morgen,
+Dialogue: 0,0:00:10.00,0:00:10.90,Default,,0,0,0,,{\kf6}in {\kf17}einem {\kf27}Moment {\kf38}Bura
+Dialogue: 0,0:00:10.90,0:00:12.08,Default,,0,0,0,,{\kf37}Wut, {\kf14}presst {\kf9}er {\kf22}seinen
+Dialogue: 0,0:00:12.08,0:00:13.12,Default,,0,0,0,,{\kf22}Arm {\kf17}gegen {\kf21}den {\kf41}Felsen
+Dialogue: 0,0:00:13.12,0:00:14.86,Default,,0,0,0,,{\kf40}und {\kf38}spürte {\kf33}etwas. {\kf8}Die
+Dialogue: 0,0:00:14.86,0:00:16.32,Default,,0,0,0,,{\kf38}Knochen {\kf27}buggen {\kf16}sich. {\kf10}Er
+Dialogue: 0,0:00:16.32,0:00:17.82,Default,,0,0,0,,{\kf35}presse {\kf30}weiter, {\kf8}bog {\kf19}den
+Dialogue: 0,0:00:17.82,0:00:19.28,Default,,0,0,0,,{\kf21}Arm {\kf35}weiter {\kf62}und {\kf26}dann
+Dialogue: 0,0:00:19.28,0:00:20.74,Default,,0,0,0,,{\kf35}knack, {\kf12}der {\kf32}erste {\kf21}unter
+Dialogue: 0,0:00:20.74,0:00:22.04,Default,,0,0,0,,{\kf24}Arm {\kf33}Knochen {\kf25}brach, {\kf7}er
+Dialogue: 0,0:00:22.04,0:00:24.12,Default,,0,0,0,,{\kf24}bog {\kf33}weiter. {\kf25}Knack, {\kf17}der
+Dialogue: 0,0:00:24.12,0:00:26.20,Default,,0,0,0,,{\kf25}zweite. {\kf45}Rallsturm {\kf33}beschreibt {\kf30}diesen
+Dialogue: 0,0:00:26.20,0:00:27.88,Default,,0,0,0,,{\kf26}Moment {\kf25}als {\kf51}Euphorie, {\kf17}als
+Dialogue: 0,0:00:27.88,0:00:29.34,Default,,0,0,0,,{\kf24}die {\kf61}intensivste {\kf36}Freude {\kf23}seines
+Dialogue: 0,0:00:29.34,0:00:30.86,Default,,0,0,0,,{\kf32}Lebens. {\kf67}Er {\kf37}krifft {\kf14}zum
+Dialogue: 0,0:00:30.86,0:00:32.52,Default,,0,0,0,,{\kf33}Messer, {\kf12}schnitt {\kf23}durch {\kf34}Szene,
+Dialogue: 0,0:00:33.14,0:00:35.44,Default,,0,0,0,,{\kf21}durch {\kf39}Muskel, {\kf25}durch {\kf71}Blutgefäße,
+Dialogue: 0,0:00:35.86,0:00:36.66,Default,,0,0,0,,{\kf14}dann {\kf28}kam {\kf24}er {\kf13}an
+Dialogue: 0,0:00:36.66,0:00:38.02,Default,,0,0,0,,{\kf14}den {\kf38}Nerf, {\kf6}er {\kf38}beschreibt
+Dialogue: 0,0:00:38.02,0:00:39.00,Default,,0,0,0,,{\kf13}es {\kf18}als {\kf39}tausend {\kf25}Mal
+Dialogue: 0,0:00:39.00,0:00:40.36,Default,,0,0,0,,{\kf39}schlimmer {\kf14}als {\kf35}alles, {\kf15}was
+Dialogue: 0,0:00:40.36,0:00:41.26,Default,,0,0,0,,{\kf14}er {\kf14}je {\kf46}gespürt {\kf15}hatte.
+Dialogue: 0,0:00:41.72,0:00:42.62,Default,,0,0,0,,{\kf16}Aber {\kf14}er {\kf23}schnitt {\kf35}weiter,
+Dialogue: 0,0:00:43.02,0:00:44.90,Default,,0,0,0,,{\kf50}65 {\kf51}Minuten, {\kf10}bis {\kf17}der
+Dialogue: 0,0:00:44.90,0:00:46.04,Default,,0,0,0,,{\kf16}Arm {\kf19}ab {\kf20}war, {\kf11}dann
+Dialogue: 0,0:00:46.04,0:00:47.76,Default,,0,0,0,,{\kf25}fiel {\kf16}er {\kf60}rückwärts, {\kf29}frei.

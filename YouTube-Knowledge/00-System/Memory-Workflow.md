@@ -12,14 +12,15 @@ Verwandt: [[Knowledge-Architecture]], [[Agent-Architecture]], [[Audit-System]].
 ## Session-Start
 ```
 Session-Start
- → Statusbericht des Hooks lesen (Pipeline/Werkzeuge/Zugänge/Netz)
- → CLAUDE.md ist geladen (Einstieg + Rules)
+ → Statusbericht des Hooks lesen (Pipeline/Werkzeuge/Zugänge/Netz + Pflichtliste-Reminder)
+ → CLAUDE.md ist geladen (Einstieg + Rules, inkl. n+1-Constraint)
  → [[Current-State]] öffnen
- → relevantes Wissen GEZIELT retrieven (nicht das ganze Vault)
+ → Bei Produktion: [[Produktion-Pflichtliste]] VOLLSTÄNDIG lesen (alle 14 Lern-Dateien:
+   12 Learnings + Failure-Memory + Animation-Library, Werkzeug-Checklist, Konkurrenz-Referenz) — nicht aus Gedächtnis
 ```
-Retrieval-Regel: erst überlegen, **welches** Wissen die Aufgabe braucht, dann
-gezielt in `01-Learnings/`, `02-Experiments/`, `09-Failures/`, `05-Decisions/`
-suchen. Confidence + Scope + Counter-Evidence jeder gefundenen Note beachten.
+Retrieval-Regel: Die **Pflichtliste ist das Retrieval-Protokoll für Produktion** — sie listet
+exakt welche Dateien zu lesen sind. Nichts weglassen, nichts überspringen, auch wenn
+es bekannt erscheint. Confidence + Scope + Counter-Evidence jeder Note beachten.
 
 ## Während der Arbeit
 - Vor jeder wichtigen Entscheidung: [[Knowledge-Architecture]] §5 (Retrieval) +
@@ -37,6 +38,7 @@ suchen. Confidence + Scope + Counter-Evidence jeder gefundenen Note beachten.
 neue Erkenntnis
  → richtige Note im Vault (mit Confidence + Scope + Evidence + History)
  → prüfen: wird daraus eine Rule? → nur dann [[Current-State]]/CLAUDE.md anpassen
+ → [[Autonomie-Log]] updaten: A/B/C/D-Score + Strafen + User-Prompts dieser Session
  → `git add/commit/push` (freigeschaltet) — erreicht die nächste Session automatisch
  → optional: geänderte Note nach Drive (nur für Nutzer-Ansicht in Obsidian)
 ```
