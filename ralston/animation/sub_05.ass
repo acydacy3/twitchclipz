@@ -6,31 +6,31 @@ Timer: 100.0000
 
 [V4+ Styles]
 Format: Name,Fontname,Fontsize,PrimaryColour,SecondaryColour,OutlineColour,BackColour,Bold,Italic,Underline,StrikeOut,ScaleX,ScaleY,Spacing,Angle,BorderStyle,Outline,Shadow,Alignment,MarginL,MarginR,MarginV,Encoding
-Style: Default,Arial,72,&H00FFFFFF,&H000000FF,&H00000000,&H80000000,-1,0,0,0,100,100,2,0,1,3,2,2,60,60,180,1
+Style: Default,Arial,76,&H0000FFFF,&H00FFFFFF,&H00000000,&H99000000,-1,0,0,0,100,100,1,0,1,4,2,2,60,60,220,1
 
 [Events]
 Format: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text
-Dialogue: 0,0:00:00.00,0:00:01.86,Default,,0,0,0,,Tag drei, Ralsdum konnte
-Dialogue: 0,0:00:01.86,0:00:03.52,Default,,0,0,0,,seine Körpertemperaturen nicht mehr
-Dialogue: 0,0:00:03.52,0:00:04.96,Default,,0,0,0,,erhalten, die Nächte in
-Dialogue: 0,0:00:04.96,0:00:06.40,Default,,0,0,0,,der Schluchzanten unter Nullgrad,
-Dialogue: 0,0:00:06.88,0:00:08.46,Default,,0,0,0,,tagsüber direkte Wüsten Sonne,
-Dialogue: 0,0:00:08.90,0:00:10.72,Default,,0,0,0,,erschwankte zwischen Schüttelfrost und
-Dialogue: 0,0:00:10.72,0:00:12.60,Default,,0,0,0,,Hitzekollabs, die Wasserflasche war
-Dialogue: 0,0:00:12.60,0:00:13.86,Default,,0,0,0,,schon lange leer. Er
-Dialogue: 0,0:00:13.86,0:00:15.02,Default,,0,0,0,,fing an, seinen eigenen
-Dialogue: 0,0:00:15.02,0:00:16.50,Default,,0,0,0,,Orin zu trinken, erst
-Dialogue: 0,0:00:16.50,0:00:17.76,Default,,0,0,0,,wieder stand er, dann
-Dialogue: 0,0:00:17.76,0:00:18.68,Default,,0,0,0,,hatte er keine Wahlen
-Dialogue: 0,0:00:18.68,0:00:20.26,Default,,0,0,0,,mehr. Er sprach ab
-Dialogue: 0,0:00:20.26,0:00:21.40,Default,,0,0,0,,Skizworte in die kleine
-Dialogue: 0,0:00:21.40,0:00:23.24,Default,,0,0,0,,Videokamera, an seine Eltern,
-Dialogue: 0,0:00:23.94,0:00:25.60,Default,,0,0,0,,an seine Schwäste. Dann
-Dialogue: 0,0:00:25.60,0:00:26.50,Default,,0,0,0,,nahm er das Messer
-Dialogue: 0,0:00:26.50,0:00:27.80,Default,,0,0,0,,und ritzte vier Dinge
-Dialogue: 0,0:00:27.80,0:00:28.68,Default,,0,0,0,,in den Fähl über
-Dialogue: 0,0:00:28.68,0:00:30.26,Default,,0,0,0,,seine Schulter, seinen Namen,
-Dialogue: 0,0:00:30.76,0:00:32.40,Default,,0,0,0,,seinen Geburtstattung und sein
-Dialogue: 0,0:00:32.40,0:00:34.48,Default,,0,0,0,,Todestartung, er glaubte, dass
-Dialogue: 0,0:00:34.48,0:00:35.24,Default,,0,0,0,,er in Frieden damit
-Dialogue: 0,0:00:35.24,0:00:35.48,Default,,0,0,0,,war.
+Dialogue: 0,0:00:00.00,0:00:01.86,Default,,0,0,0,,{\kf36}Tag {\kf30}drei, {\kf40}Ralsdum {\kf26}konnte
+Dialogue: 0,0:00:01.86,0:00:03.52,Default,,0,0,0,,{\kf32}seine {\kf107}Körpertemperaturen {\kf8}nicht {\kf18}mehr
+Dialogue: 0,0:00:03.52,0:00:04.96,Default,,0,0,0,,{\kf35}erhalten, {\kf8}die {\kf37}Nächte {\kf12}in
+Dialogue: 0,0:00:04.96,0:00:06.40,Default,,0,0,0,,{\kf12}der {\kf58}Schluchzanten {\kf32}unter {\kf41}Nullgrad,
+Dialogue: 0,0:00:06.88,0:00:08.46,Default,,0,0,0,,{\kf41}tagsüber {\kf56}direkte {\kf28}Wüsten {\kf32}Sonne,
+Dialogue: 0,0:00:08.90,0:00:10.72,Default,,0,0,0,,{\kf48}erschwankte {\kf27}zwischen {\kf67}Schüttelfrost {\kf38}und
+Dialogue: 0,0:00:10.72,0:00:12.60,Default,,0,0,0,,{\kf61}Hitzekollabs, {\kf6}die {\kf62}Wasserflasche {\kf13}war
+Dialogue: 0,0:00:12.60,0:00:13.86,Default,,0,0,0,,{\kf14}schon {\kf22}lange {\kf17}leer. {\kf8}Er
+Dialogue: 0,0:00:13.86,0:00:15.02,Default,,0,0,0,,{\kf12}fing {\kf25}an, {\kf15}seinen {\kf40}eigenen
+Dialogue: 0,0:00:15.02,0:00:16.50,Default,,0,0,0,,{\kf25}Orin {\kf18}zu {\kf31}trinken, {\kf17}erst
+Dialogue: 0,0:00:16.50,0:00:17.76,Default,,0,0,0,,{\kf23}wieder {\kf18}stand {\kf25}er, {\kf8}dann
+Dialogue: 0,0:00:17.76,0:00:18.68,Default,,0,0,0,,{\kf16}hatte {\kf17}er {\kf23}keine {\kf33}Wahlen
+Dialogue: 0,0:00:18.68,0:00:20.26,Default,,0,0,0,,{\kf17}mehr. {\kf10}Er {\kf32}sprach {\kf26}ab
+Dialogue: 0,0:00:20.26,0:00:21.40,Default,,0,0,0,,{\kf55}Skizworte {\kf23}in {\kf10}die {\kf23}kleine
+Dialogue: 0,0:00:21.40,0:00:23.24,Default,,0,0,0,,{\kf76}Videokamera, {\kf9}an {\kf24}seine {\kf27}Eltern,
+Dialogue: 0,0:00:23.94,0:00:25.60,Default,,0,0,0,,{\kf13}an {\kf24}seine {\kf37}Schwäste. {\kf90}Dann
+Dialogue: 0,0:00:25.60,0:00:26.50,Default,,0,0,0,,{\kf27}nahm {\kf8}er {\kf19}das {\kf33}Messer
+Dialogue: 0,0:00:26.50,0:00:27.80,Default,,0,0,0,,{\kf50}und {\kf39}ritzte {\kf17}vier {\kf22}Dinge
+Dialogue: 0,0:00:27.80,0:00:28.68,Default,,0,0,0,,{\kf16}in {\kf11}den {\kf36}Fähl {\kf23}über
+Dialogue: 0,0:00:28.68,0:00:30.26,Default,,0,0,0,,{\kf19}seine {\kf35}Schulter, {\kf16}seinen {\kf30}Namen,
+Dialogue: 0,0:00:30.76,0:00:32.40,Default,,0,0,0,,{\kf13}seinen {\kf72}Geburtstattung {\kf53}und {\kf24}sein
+Dialogue: 0,0:00:32.40,0:00:34.48,Default,,0,0,0,,{\kf80}Todestartung, {\kf11}er {\kf42}glaubte, {\kf9}dass
+Dialogue: 0,0:00:34.48,0:00:35.24,Default,,0,0,0,,{\kf16}er {\kf7}in {\kf38}Frieden {\kf14}damit
+Dialogue: 0,0:00:35.24,0:00:35.48,Default,,0,0,0,,{\kf23}war.

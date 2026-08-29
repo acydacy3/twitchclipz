@@ -6,40 +6,40 @@ Timer: 100.0000
 
 [V4+ Styles]
 Format: Name,Fontname,Fontsize,PrimaryColour,SecondaryColour,OutlineColour,BackColour,Bold,Italic,Underline,StrikeOut,ScaleX,ScaleY,Spacing,Angle,BorderStyle,Outline,Shadow,Alignment,MarginL,MarginR,MarginV,Encoding
-Style: Default,Arial,72,&H00FFFFFF,&H000000FF,&H00000000,&H80000000,-1,0,0,0,100,100,2,0,1,3,2,2,60,60,180,1
+Style: Default,Arial,76,&H0000FFFF,&H00FFFFFF,&H00000000,&H99000000,-1,0,0,0,100,100,1,0,1,4,2,2,60,60,220,1
 
 [Events]
 Format: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text
-Dialogue: 0,0:00:00.00,0:00:01.16,Default,,0,0,0,,Er schrien nicht, er
-Dialogue: 0,0:00:01.16,0:00:01.92,Default,,0,0,0,,schlug nicht seinen Kopf,
-Dialogue: 0,0:00:02.46,0:00:03.72,Default,,0,0,0,,er fiel einfach rückwärts
-Dialogue: 0,0:00:03.72,0:00:04.72,Default,,0,0,0,,an die Felswand hinter
-Dialogue: 0,0:00:04.72,0:00:05.90,Default,,0,0,0,,ihn und stand wieder
-Dialogue: 0,0:00:05.90,0:00:07.36,Default,,0,0,0,,auf, mit einem Stumpf
-Dialogue: 0,0:00:07.36,0:00:08.90,Default,,0,0,0,,aus dem Blutschoss. Er
-Dialogue: 0,0:00:08.90,0:00:10.06,Default,,0,0,0,,schnürte ein Tonikwett aus
-Dialogue: 0,0:00:10.06,0:00:11.16,Default,,0,0,0,,dem Rest seines Bandanas,
-Dialogue: 0,0:00:11.58,0:00:12.62,Default,,0,0,0,,stramm genug, um die
-Dialogue: 0,0:00:12.62,0:00:15.10,Default,,0,0,0,,Atherie abzudrücken. Dann fotografierte
-Dialogue: 0,0:00:15.10,0:00:15.98,Default,,0,0,0,,er noch einmal seinen
-Dialogue: 0,0:00:15.98,0:00:17.72,Default,,0,0,0,,An, noch eingeklemmt unter
-Dialogue: 0,0:00:17.72,0:00:18.68,Default,,0,0,0,,dem Stein, der ihn
-Dialogue: 0,0:00:18.68,0:00:21.02,Default,,0,0,0,,127 Stunden festgehalten hatte.
-Dialogue: 0,0:00:21.50,0:00:22.74,Default,,0,0,0,,Godwiddens Foto nannte er
-Dialogue: 0,0:00:22.74,0:00:24.30,Default,,0,0,0,,es später. Dann begann
-Dialogue: 0,0:00:24.30,0:00:25.60,Default,,0,0,0,,er zu klettern, er
-Dialogue: 0,0:00:25.60,0:00:26.66,Default,,0,0,0,,saß sich 20 Meter
-Dialogue: 0,0:00:26.66,0:00:27.76,Default,,0,0,0,,ab, mit einer Hand
-Dialogue: 0,0:00:27.76,0:00:29.00,Default,,0,0,0,,nach fünf Tagen ohne
-Dialogue: 0,0:00:29.00,0:00:30.52,Default,,0,0,0,,richtige Naherung, er findet
-Dialogue: 0,0:00:30.52,0:00:32.28,Default,,0,0,0,,eine Wasserstelle, trinkt lange,
-Dialogue: 0,0:00:32.78,0:00:33.76,Default,,0,0,0,,dann wandert er 11
-Dialogue: 0,0:00:33.76,0:00:35.02,Default,,0,0,0,,Kilometer durch die Wiste.
-Dialogue: 0,0:00:35.64,0:00:36.66,Default,,0,0,0,,Vier Stunden nach der
-Dialogue: 0,0:00:36.66,0:00:37.92,Default,,0,0,0,,Amputation wird er von
-Dialogue: 0,0:00:37.92,0:00:39.64,Default,,0,0,0,,einem Hubschrauber entdeckt. Eine
-Dialogue: 0,0:00:39.64,0:00:41.00,Default,,0,0,0,,Familie, der er begegnet
-Dialogue: 0,0:00:41.00,0:00:42.02,Default,,0,0,0,,war, hat er Alarm
-Dialogue: 0,0:00:42.02,0:00:43.86,Default,,0,0,0,,geschlagen. Eine Stunde später
-Dialogue: 0,0:00:43.86,0:00:45.44,Default,,0,0,0,,sagten die Ärzte, wäre
-Dialogue: 0,0:00:45.44,0:00:46.42,Default,,0,0,0,,er verblutet gewesen.
+Dialogue: 0,0:00:00.00,0:00:01.16,Default,,0,0,0,,{\kf14}Er {\kf30}schrien {\kf15}nicht, {\kf11}er
+Dialogue: 0,0:00:01.16,0:00:01.92,Default,,0,0,0,,{\kf20}schlug {\kf13}nicht {\kf21}seinen {\kf19}Kopf,
+Dialogue: 0,0:00:02.46,0:00:03.72,Default,,0,0,0,,{\kf8}er {\kf23}fiel {\kf36}einfach {\kf58}rückwärts
+Dialogue: 0,0:00:03.72,0:00:04.72,Default,,0,0,0,,{\kf25}an {\kf10}die {\kf36}Felswand {\kf27}hinter
+Dialogue: 0,0:00:04.72,0:00:05.90,Default,,0,0,0,,{\kf12}ihn {\kf54}und {\kf20}stand {\kf32}wieder
+Dialogue: 0,0:00:05.90,0:00:07.36,Default,,0,0,0,,{\kf23}auf, {\kf13}mit {\kf22}einem {\kf46}Stumpf
+Dialogue: 0,0:00:07.36,0:00:08.90,Default,,0,0,0,,{\kf33}aus {\kf16}dem {\kf41}Blutschoss. {\kf8}Er
+Dialogue: 0,0:00:08.90,0:00:10.06,Default,,0,0,0,,{\kf40}schnürte {\kf16}ein {\kf37}Tonikwett {\kf22}aus
+Dialogue: 0,0:00:10.06,0:00:11.16,Default,,0,0,0,,{\kf13}dem {\kf18}Rest {\kf29}seines {\kf48}Bandanas,
+Dialogue: 0,0:00:11.58,0:00:12.62,Default,,0,0,0,,{\kf17}stramm {\kf30}genug, {\kf6}um {\kf13}die
+Dialogue: 0,0:00:12.62,0:00:15.10,Default,,0,0,0,,{\kf41}Atherie {\kf64}abzudrücken. {\kf14}Dann {\kf69}fotografierte
+Dialogue: 0,0:00:15.10,0:00:15.98,Default,,0,0,0,,{\kf17}er {\kf10}noch {\kf33}einmal {\kf25}seinen
+Dialogue: 0,0:00:15.98,0:00:17.72,Default,,0,0,0,,{\kf19}An, {\kf12}noch {\kf67}eingeklemmt {\kf25}unter
+Dialogue: 0,0:00:17.72,0:00:18.68,Default,,0,0,0,,{\kf17}dem {\kf22}Stein, {\kf13}der {\kf12}ihn
+Dialogue: 0,0:00:18.68,0:00:21.02,Default,,0,0,0,,{\kf78}127 {\kf55}Stunden {\kf58}festgehalten {\kf41}hatte.
+Dialogue: 0,0:00:21.50,0:00:22.74,Default,,0,0,0,,{\kf51}Godwiddens {\kf17}Foto {\kf37}nannte {\kf16}er
+Dialogue: 0,0:00:22.74,0:00:24.30,Default,,0,0,0,,{\kf16}es {\kf20}später. {\kf23}Dann {\kf28}begann
+Dialogue: 0,0:00:24.30,0:00:25.60,Default,,0,0,0,,{\kf19}er {\kf16}zu {\kf32}klettern, {\kf14}er
+Dialogue: 0,0:00:25.60,0:00:26.66,Default,,0,0,0,,{\kf7}saß {\kf30}sich {\kf39}20 {\kf28}Meter
+Dialogue: 0,0:00:26.66,0:00:27.76,Default,,0,0,0,,{\kf28}ab, {\kf8}mit {\kf21}einer {\kf22}Hand
+Dialogue: 0,0:00:27.76,0:00:29.00,Default,,0,0,0,,{\kf37}nach {\kf25}fünf {\kf36}Tagen {\kf23}ohne
+Dialogue: 0,0:00:29.00,0:00:30.52,Default,,0,0,0,,{\kf33}richtige {\kf46}Naherung, {\kf8}er {\kf25}findet
+Dialogue: 0,0:00:30.52,0:00:32.28,Default,,0,0,0,,{\kf19}eine {\kf54}Wasserstelle, {\kf28}trinkt {\kf7}lange,
+Dialogue: 0,0:00:32.78,0:00:33.76,Default,,0,0,0,,{\kf11}dann {\kf34}wandert {\kf17}er {\kf33}11
+Dialogue: 0,0:00:33.76,0:00:35.02,Default,,0,0,0,,{\kf58}Kilometer {\kf25}durch {\kf15}die {\kf26}Wiste.
+Dialogue: 0,0:00:35.64,0:00:36.66,Default,,0,0,0,,{\kf25}Vier {\kf21}Stunden {\kf35}nach {\kf17}der
+Dialogue: 0,0:00:36.66,0:00:37.92,Default,,0,0,0,,{\kf58}Amputation {\kf37}wird {\kf16}er {\kf14}von
+Dialogue: 0,0:00:37.92,0:00:39.64,Default,,0,0,0,,{\kf19}einem {\kf50}Hubschrauber {\kf42}entdeckt. {\kf17}Eine
+Dialogue: 0,0:00:39.64,0:00:41.00,Default,,0,0,0,,{\kf46}Familie, {\kf33}der {\kf10}er {\kf46}begegnet
+Dialogue: 0,0:00:41.00,0:00:42.02,Default,,0,0,0,,{\kf25}war, {\kf6}hat {\kf11}er {\kf26}Alarm
+Dialogue: 0,0:00:42.02,0:00:43.86,Default,,0,0,0,,{\kf37}geschlagen. {\kf17}Eine {\kf25}Stunde {\kf50}später
+Dialogue: 0,0:00:43.86,0:00:45.44,Default,,0,0,0,,{\kf64}sagten {\kf10}die {\kf46}Ärzte, {\kf17}wäre
+Dialogue: 0,0:00:45.44,0:00:46.42,Default,,0,0,0,,{\kf26}er {\kf35}verblutet {\kf35}gewesen.

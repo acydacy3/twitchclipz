@@ -6,23 +6,23 @@ Timer: 100.0000
 
 [V4+ Styles]
 Format: Name,Fontname,Fontsize,PrimaryColour,SecondaryColour,OutlineColour,BackColour,Bold,Italic,Underline,StrikeOut,ScaleX,ScaleY,Spacing,Angle,BorderStyle,Outline,Shadow,Alignment,MarginL,MarginR,MarginV,Encoding
-Style: Default,Arial,72,&H00FFFFFF,&H000000FF,&H00000000,&H80000000,-1,0,0,0,100,100,2,0,1,3,2,2,60,60,180,1
+Style: Default,Arial,76,&H0000FFFF,&H00FFFFFF,&H00000000,&H99000000,-1,0,0,0,100,100,1,0,1,4,2,2,60,60,220,1
 
 [Events]
 Format: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text
-Dialogue: 0,0:00:00.00,0:00:01.00,Default,,0,0,0,,Er parkte das Auto
-Dialogue: 0,0:00:01.00,0:00:02.34,Default,,0,0,0,,an einer Schotterstrasse in
-Dialogue: 0,0:00:02.34,0:00:04.04,Default,,0,0,0,,der Wüste Uthas, schlief
-Dialogue: 0,0:00:04.04,0:00:05.50,Default,,0,0,0,,darin über Nacht. Am
-Dialogue: 0,0:00:05.50,0:00:06.62,Default,,0,0,0,,nächsten Morgen schnöte er
-Dialogue: 0,0:00:06.62,0:00:07.34,Default,,0,0,0,,die Wand der Schuhe
-Dialogue: 0,0:00:07.34,0:00:09.12,Default,,0,0,0,,und sagte niemandem, wohin
-Dialogue: 0,0:00:09.12,0:00:10.20,Default,,0,0,0,,er ging, er dachte,
-Dialogue: 0,0:00:10.62,0:00:11.28,Default,,0,0,0,,ich bin in wenigen
-Dialogue: 0,0:00:11.28,0:00:12.90,Default,,0,0,0,,Stunden zurück. Kein Wort,
-Dialogue: 0,0:00:13.40,0:00:15.34,Default,,0,0,0,,keine Notiz, niemand wusste,
-Dialogue: 0,0:00:15.58,0:00:16.74,Default,,0,0,0,,wo er war. Der
-Dialogue: 0,0:00:16.74,0:00:19.58,Default,,0,0,0,,26. April 2003, Blue
-Dialogue: 0,0:00:19.58,0:00:21.06,Default,,0,0,0,,Jones Canyon, das war
-Dialogue: 0,0:00:21.06,0:00:22.12,Default,,0,0,0,,der letzte Moment seines
-Dialogue: 0,0:00:22.12,0:00:22.66,Default,,0,0,0,,alten Lebens.
+Dialogue: 0,0:00:00.00,0:00:01.00,Default,,0,0,0,,{\kf12}Er {\kf36}parkte {\kf16}das {\kf36}Auto
+Dialogue: 0,0:00:01.00,0:00:02.34,Default,,0,0,0,,{\kf17}an {\kf16}einer {\kf88}Schotterstrasse {\kf11}in
+Dialogue: 0,0:00:02.34,0:00:04.04,Default,,0,0,0,,{\kf8}der {\kf28}Wüste {\kf46}Uthas, {\kf20}schlief
+Dialogue: 0,0:00:04.04,0:00:05.50,Default,,0,0,0,,{\kf25}darin {\kf18}über {\kf27}Nacht. {\kf8}Am
+Dialogue: 0,0:00:05.50,0:00:06.62,Default,,0,0,0,,{\kf24}nächsten {\kf31}Morgen {\kf44}schnöte {\kf12}er
+Dialogue: 0,0:00:06.62,0:00:07.34,Default,,0,0,0,,{\kf12}die {\kf13}Wand {\kf16}der {\kf29}Schuhe
+Dialogue: 0,0:00:07.34,0:00:09.12,Default,,0,0,0,,{\kf40}und {\kf16}sagte {\kf69}niemandem, {\kf31}wohin
+Dialogue: 0,0:00:09.12,0:00:10.20,Default,,0,0,0,,{\kf12}er {\kf14}ging, {\kf11}er {\kf16}dachte,
+Dialogue: 0,0:00:10.62,0:00:11.28,Default,,0,0,0,,{\kf10}ich {\kf13}bin {\kf10}in {\kf31}wenigen
+Dialogue: 0,0:00:11.28,0:00:12.90,Default,,0,0,0,,{\kf20}Stunden {\kf48}zurück. {\kf24}Kein {\kf17}Wort,
+Dialogue: 0,0:00:13.40,0:00:15.34,Default,,0,0,0,,{\kf27}keine {\kf38}Notiz, {\kf16}niemand {\kf50}wusste,
+Dialogue: 0,0:00:15.58,0:00:16.74,Default,,0,0,0,,{\kf11}wo {\kf16}er {\kf16}war. {\kf9}Der
+Dialogue: 0,0:00:16.74,0:00:19.58,Default,,0,0,0,,{\kf30}26. {\kf26}April {\kf91}2003, {\kf13}Blue
+Dialogue: 0,0:00:19.58,0:00:21.06,Default,,0,0,0,,{\kf24}Jones {\kf39}Canyon, {\kf9}das {\kf17}war
+Dialogue: 0,0:00:21.06,0:00:22.12,Default,,0,0,0,,{\kf14}der {\kf30}letzte {\kf32}Moment {\kf30}seines
+Dialogue: 0,0:00:22.12,0:00:22.66,Default,,0,0,0,,{\kf25}alten {\kf28}Lebens.

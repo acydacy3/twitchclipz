@@ -6,34 +6,34 @@ Timer: 100.0000
 
 [V4+ Styles]
 Format: Name,Fontname,Fontsize,PrimaryColour,SecondaryColour,OutlineColour,BackColour,Bold,Italic,Underline,StrikeOut,ScaleX,ScaleY,Spacing,Angle,BorderStyle,Outline,Shadow,Alignment,MarginL,MarginR,MarginV,Encoding
-Style: Default,Arial,72,&H00FFFFFF,&H000000FF,&H00000000,&H80000000,-1,0,0,0,100,100,2,0,1,3,2,2,60,60,180,1
+Style: Default,Arial,76,&H0000FFFF,&H00FFFFFF,&H00000000,&H99000000,-1,0,0,0,100,100,1,0,1,4,2,2,60,60,220,1
 
 [Events]
 Format: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text
-Dialogue: 0,0:00:00.00,0:00:01.32,Default,,0,0,0,,In der fünften Nachtlisch
-Dialogue: 0,0:00:01.32,0:00:02.54,Default,,0,0,0,,ralscht und los, er
-Dialogue: 0,0:00:02.54,0:00:03.72,Default,,0,0,0,,hatte aufgehört zu kämpfen.
-Dialogue: 0,0:00:04.22,0:00:05.14,Default,,0,0,0,,Sein Körper war am
-Dialogue: 0,0:00:05.14,0:00:06.50,Default,,0,0,0,,Limit, seine Wasser vor
-Dialogue: 0,0:00:06.50,0:00:07.96,Default,,0,0,0,,Rede erschöpft. Er hatte
-Dialogue: 0,0:00:07.96,0:00:09.56,Default,,0,0,0,,akzeptiert, dass er sterben
-Dialogue: 0,0:00:09.56,0:00:11.28,Default,,0,0,0,,würde, dann in diesem
-Dialogue: 0,0:00:11.28,0:00:12.68,Default,,0,0,0,,Zustand zwischen Wachen und
-Dialogue: 0,0:00:12.68,0:00:14.10,Default,,0,0,0,,Schlafen sah er etwas.
-Dialogue: 0,0:00:14.78,0:00:16.12,Default,,0,0,0,,Eine Vision, er sah
-Dialogue: 0,0:00:16.12,0:00:17.54,Default,,0,0,0,,sich selbst, ohne rechten
-Dialogue: 0,0:00:17.54,0:00:18.60,Default,,0,0,0,,unter Arm, wie er
-Dialogue: 0,0:00:18.60,0:00:19.94,Default,,0,0,0,,einen kleinen, blonden Jungen
-Dialogue: 0,0:00:19.94,0:00:20.78,Default,,0,0,0,,auf die Hüfte hebt.
-Dialogue: 0,0:00:21.28,0:00:21.94,Default,,0,0,0,,Er sah die Augen
-Dialogue: 0,0:00:21.94,0:00:23.36,Default,,0,0,0,,des Kindes, und wusste
-Dialogue: 0,0:00:23.36,0:00:24.56,Default,,0,0,0,,mit einer Klarheit, die
-Dialogue: 0,0:00:24.56,0:00:25.20,Default,,0,0,0,,er noch nie gespielt
-Dialogue: 0,0:00:25.20,0:00:26.40,Default,,0,0,0,,hatte. Das ist mein
-Dialogue: 0,0:00:26.40,0:00:27.74,Default,,0,0,0,,Sohn, ein Sohn, den
-Dialogue: 0,0:00:27.74,0:00:28.38,Default,,0,0,0,,er noch nicht hatte.
-Dialogue: 0,0:00:28.38,0:00:30.24,Default,,0,0,0,,Wenn diese Junge existiert,
-Dialogue: 0,0:00:30.62,0:00:31.18,Default,,0,0,0,,dann muss er aus
-Dialogue: 0,0:00:31.18,0:00:32.86,Default,,0,0,0,,dieser Schlucht heraus. Dann
-Dialogue: 0,0:00:32.86,0:00:33.68,Default,,0,0,0,,hat er eine Zukunft,
-Dialogue: 0,0:00:34.24,0:00:35.08,Default,,0,0,0,,er kämpfte weiter.
+Dialogue: 0,0:00:00.00,0:00:01.32,Default,,0,0,0,,{\kf12}In {\kf14}der {\kf54}fünften {\kf52}Nachtlisch
+Dialogue: 0,0:00:01.32,0:00:02.54,Default,,0,0,0,,{\kf35}ralscht {\kf12}und {\kf19}los, {\kf8}er
+Dialogue: 0,0:00:02.54,0:00:03.72,Default,,0,0,0,,{\kf20}hatte {\kf46}aufgehört {\kf17}zu {\kf34}kämpfen.
+Dialogue: 0,0:00:04.22,0:00:05.14,Default,,0,0,0,,{\kf20}Sein {\kf29}Körper {\kf28}war {\kf13}am
+Dialogue: 0,0:00:05.14,0:00:06.50,Default,,0,0,0,,{\kf26}Limit, {\kf19}seine {\kf24}Wasser {\kf24}vor
+Dialogue: 0,0:00:06.50,0:00:07.96,Default,,0,0,0,,{\kf29}Rede {\kf41}erschöpft. {\kf10}Er {\kf21}hatte
+Dialogue: 0,0:00:07.96,0:00:09.56,Default,,0,0,0,,{\kf65}akzeptiert, {\kf16}dass {\kf17}er {\kf32}sterben
+Dialogue: 0,0:00:09.56,0:00:11.28,Default,,0,0,0,,{\kf21}würde, {\kf29}dann {\kf50}in {\kf25}diesem
+Dialogue: 0,0:00:11.28,0:00:12.68,Default,,0,0,0,,{\kf40}Zustand {\kf32}zwischen {\kf38}Wachen {\kf29}und
+Dialogue: 0,0:00:12.68,0:00:14.10,Default,,0,0,0,,{\kf50}Schlafen {\kf40}sah {\kf16}er {\kf35}etwas.
+Dialogue: 0,0:00:14.78,0:00:16.12,Default,,0,0,0,,{\kf25}Eine {\kf30}Vision, {\kf12}er {\kf16}sah
+Dialogue: 0,0:00:16.12,0:00:17.54,Default,,0,0,0,,{\kf21}sich {\kf46}selbst, {\kf6}ohne {\kf39}rechten
+Dialogue: 0,0:00:17.54,0:00:18.60,Default,,0,0,0,,{\kf28}unter {\kf28}Arm, {\kf8}wie {\kf12}er
+Dialogue: 0,0:00:18.60,0:00:19.94,Default,,0,0,0,,{\kf17}einen {\kf39}kleinen, {\kf32}blonden {\kf16}Jungen
+Dialogue: 0,0:00:19.94,0:00:20.78,Default,,0,0,0,,{\kf19}auf {\kf14}die {\kf25}Hüfte {\kf24}hebt.
+Dialogue: 0,0:00:21.28,0:00:21.94,Default,,0,0,0,,{\kf9}Er {\kf17}sah {\kf17}die {\kf20}Augen
+Dialogue: 0,0:00:21.94,0:00:23.36,Default,,0,0,0,,{\kf17}des {\kf45}Kindes, {\kf16}und {\kf32}wusste
+Dialogue: 0,0:00:23.36,0:00:24.56,Default,,0,0,0,,{\kf16}mit {\kf14}einer {\kf51}Klarheit, {\kf13}die
+Dialogue: 0,0:00:24.56,0:00:25.20,Default,,0,0,0,,{\kf6}er {\kf11}noch {\kf14}nie {\kf32}gespielt
+Dialogue: 0,0:00:25.20,0:00:26.40,Default,,0,0,0,,{\kf33}hatte. {\kf9}Das {\kf14}ist {\kf19}mein
+Dialogue: 0,0:00:26.40,0:00:27.74,Default,,0,0,0,,{\kf30}Sohn, {\kf16}ein {\kf37}Sohn, {\kf5}den
+Dialogue: 0,0:00:27.74,0:00:28.38,Default,,0,0,0,,{\kf10}er {\kf14}noch {\kf14}nicht {\kf25}hatte.
+Dialogue: 0,0:00:28.38,0:00:30.24,Default,,0,0,0,,{\kf76}Wenn {\kf25}diese {\kf24}Junge {\kf59}existiert,
+Dialogue: 0,0:00:30.62,0:00:31.18,Default,,0,0,0,,{\kf1}dann {\kf19}muss {\kf19}er {\kf14}aus
+Dialogue: 0,0:00:31.18,0:00:32.86,Default,,0,0,0,,{\kf24}dieser {\kf29}Schlucht {\kf22}heraus. {\kf11}Dann
+Dialogue: 0,0:00:32.86,0:00:33.68,Default,,0,0,0,,{\kf16}hat {\kf11}er {\kf14}eine {\kf39}Zukunft,
+Dialogue: 0,0:00:34.24,0:00:35.08,Default,,0,0,0,,{\kf10}er {\kf41}kämpfte {\kf32}weiter.

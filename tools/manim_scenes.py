@@ -22,19 +22,111 @@ except Exception:
     import sys; print("manim nicht installiert (setup-tools.sh)"); sys.exit(0)
 
 class CrossSection(Scene):
-    """Beispiel: Fels-Querschnitt mit engem Spalt + leuchtender Figur, die hinabgleitet."""
+    """Slot-Canyon-Querschnitt: Felsblock fällt auf eingeklemmten Arm.
+    V8 Ralston S02 — cinematic, dark, beschriftet.
+    Render 9:16: manim -qh -r 1080,1920 tools/manim_scenes.py CrossSection"""
     def construct(self):
-        self.camera.background_color = "#170f0a"
-        rock = Rectangle(width=10, height=18, fill_color="#2a1a11", fill_opacity=1, stroke_width=0)
-        self.add(rock)
-        crack = VMobject(stroke_width=0, fill_color="#050302", fill_opacity=1)
-        crack.set_points_as_corners([[-5,4,0],[1,4,0],[1.2,3,0],[1.0,-2,0],[1.3,-6,0],[0.7,-6,0],[0.5,-2,0],[0.6,3,0],[-5,3.2,0]])
-        self.add(crack)
-        fig = Dot(color=YELLOW).scale(1.6).set_glow_factor(2)
-        fig.move_to([-4.5,3.5,0])
-        self.play(fig.animate.move_to([0.9,3.4,0]), run_time=2.2, rate_func=rate_functions.ease_in_out_sine)
-        self.play(fig.animate.move_to([1.0,-5.5,0]), run_time=1.6, rate_func=rate_functions.ease_in_quad)
-        self.wait(0.6)
+        self.camera.background_color = "#0c0806"
+
+        # ── Hintergrund-Gestein (voller Frame) ────────────────────────────
+        bg = Rectangle(width=12, height=22,
+                       fill_color="#1a1008", fill_opacity=1, stroke_width=0)
+        self.add(bg)
+
+        # ── Sandstein-Schichten (horizontale Streifen) ────────────────────
+        layer_colors = ["#3d2410", "#2e1c0c", "#3a2212", "#261408", "#321e0e"]
+        for i, col in enumerate(layer_colors):
+            y = 6.0 - i * 2.8
+            bar = Rectangle(width=12, height=2.6,
+                            fill_color=col, fill_opacity=0.7, stroke_width=0)
+            bar.move_to([0, y, 0])
+            self.add(bar)
+
+        # ── Linke und rechte Felswand (enger Spalt) ───────────────────────
+        wall_l = Rectangle(width=4.0, height=22,
+                           fill_color="#241510", fill_opacity=1, stroke_width=0)
+        wall_l.move_to([-4.8, 0, 0])
+
+        wall_r = Rectangle(width=4.0, height=22,
+                           fill_color="#1e1208", fill_opacity=1, stroke_width=0)
+        wall_r.move_to([4.8, 0, 0])
+
+        # Rissstruktur an den Innenkanten
+        crack_l = Line([-2.8, 10, 0], [-2.8, -10, 0],
+                       color="#0a0502", stroke_width=6)
+        crack_r = Line([2.8, 10, 0], [2.8, -10, 0],
+                       color="#0a0502", stroke_width=6)
+
+        self.add(wall_l, wall_r, crack_l, crack_r)
+
+        # ── Felsbrocken (oben im Spalt) ───────────────────────────────────
+        boulder_w, boulder_h = 5.2, 3.0
+        boulder = Rectangle(width=boulder_w, height=boulder_h,
+                            fill_color="#4a3020", fill_opacity=1,
+                            stroke_color="#6a4830", stroke_width=3)
+        boulder.move_to([0, 9.0, 0])
+
+        boulder_lbl = Text("360 kg", font_size=62, color="#e8c080", weight=BOLD)
+        boulder_lbl.move_to(boulder.get_center())
+
+        self.add(boulder, boulder_lbl)
+
+        # ── Arm-Silhouette (im Spalt, eingeklemmt) ────────────────────────
+        arm = RoundedRectangle(corner_radius=0.35,
+                               width=5.4, height=1.1,
+                               fill_color="#c87050", fill_opacity=0.9,
+                               stroke_color="#e89070", stroke_width=2)
+        arm.move_to([0, -1.0, 0])
+
+        arm_lbl = Text("Unterarm", font_size=46, color="#ffddcc")
+        arm_lbl.next_to(arm, RIGHT, buff=0.2)
+
+        self.add(arm, arm_lbl)
+
+        # ── Druckpfeile links/rechts auf den Arm ─────────────────────────
+        arr_l = Arrow(start=[-3.8, -1.0, 0], end=[-2.9, -1.0, 0],
+                      color="#cc4422", stroke_width=8, buff=0)
+        arr_r = Arrow(start=[3.8, -1.0, 0], end=[2.9, -1.0, 0],
+                      color="#cc4422", stroke_width=8, buff=0)
+
+        # ── Titel oben ────────────────────────────────────────────────────
+        title = Text("BLUE JOHN CANYON", font_size=44, color="#c8a060",
+                     weight=BOLD).move_to([0, -6.5, 0])
+        sub   = Text("Utah, 26. April 2003", font_size=36,
+                     color="#aa8850").move_to([0, -7.5, 0])
+
+        # ── Animation ────────────────────────────────────────────────────
+        # 1) Szene einblenden
+        self.play(FadeIn(boulder, shift=DOWN * 0.3),
+                  FadeIn(boulder_lbl),
+                  run_time=0.7)
+        self.play(FadeIn(arm), FadeIn(arm_lbl), run_time=0.5)
+
+        # 2) Boulder stürzt ab
+        self.play(
+            boulder.animate.move_to([0, -0.4, 0]),
+            boulder_lbl.animate.move_to([0, -0.4, 0]),
+            run_time=1.4,
+            rate_func=rate_functions.ease_in_cubic,
+        )
+
+        # 3) Impact-Flash + Druckpfeile
+        self.play(
+            Flash(arm.get_center(), color=YELLOW, line_length=0.5,
+                  flash_radius=1.2, num_lines=10),
+            FadeIn(arr_l), FadeIn(arr_r),
+            run_time=0.5,
+        )
+
+        # 4) Arm rot färben (Schmerz)
+        self.play(
+            arm.animate.set_fill(color="#cc2200", opacity=1.0),
+            run_time=0.6,
+        )
+
+        # 5) Beschriftung einblenden
+        self.play(FadeIn(title), FadeIn(sub), run_time=0.8)
+        self.wait(0.5)
 
 class Timeline(Scene):
     """Beispiel: Rettungs-Zeitleiste (Stunden/Tage) mit Markern."""
