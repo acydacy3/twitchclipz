@@ -2,7 +2,7 @@
 type: system
 title: Current-State
 status: active
-updated: 2026-08-25
+updated: 2026-08-29
 tags: [system, state]
 ---
 
@@ -31,7 +31,7 @@ tags: [system, state]
 - **Video 5 Lengede FERTIG + TERMINIERT (verifiziert 25.08. via `analyse.py`):** alle **10/10 Shorts terminiert (28.–31.08.)**. Okene-Shorts ebenfalls terminiert (25.–27.08.). Trigger lief durch. Siehe [[Video-05-Lengede]].
 - **Video 6 Nutty Putty FERTIG + TERMINIERT (26.08.):** alle 10/10 Shorts hochgeladen, Schedule 31.08–03.09 (3/Tag bündig nach Lengede). Siehe [[Video-06-NuttyPutty]].
 - **Video 7 Prosperi FERTIG + TERMINIERT (27.08.):** alle 10/10 Shorts hochgeladen, Schedule **04.09–07.09** (3/Tag bündig nach Nutty Putty). S01–S10 live. Branch: `claude/neubeginn-v7-prosperi-6mmj14`.
-- **V8-Pipeline BEREIT (27.08.):** Aron Ralston (127 Stunden) als Primärkandidat definiert — Okene-Formel: Paradox-Hook + Anagnorisis + konkreter Zeitstempel. Hook-Pool fertig, Bilder-Strategie, Risiko-Analyse. Backup: Vesna Vulović. → [[Ideen-Pipeline]] **NÄCHSTER SCHRITT: Nutzer liefert V8-Skript.**
+- **Video 8 Ralston FERTIG + TERMINIERT (29.08.):** Aron Ralston / 127 Stunden. 10 Shorts hochgeladen, Schedule **08.09–11.09** (3/Tag bündig nach Prosperi). Längen-Experiment A/B/C: S01-03 (20-29s), S04-07 (33-36s), S08-10 (45-48s). 8 HF Z-Image Bilder, 2 neue Manim-Klassen (RockTrap, CountdownTimer), Progress-Bar in jedem Short. Branch: `claude/neubeginn-ralston-j8fqtw`. Nächste Geschichte: **V9 Loveparade Duisburg 2010** (DE, unbesetzt, hoher Story-Score).
 - **Voller Tagesstand: [[Audit-2026-08-25]] + [[Audit-2026-08-26]].**
 
 ## Zugänge (Stand 19.08.)

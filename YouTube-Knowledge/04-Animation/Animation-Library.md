@@ -20,10 +20,12 @@ tags: [animation, manim, remotion, library, training]
 | `CrossSection` | Felsspalte + Figur gleitet hinab | V6 (Nutty Putty) | V6 S01 Opener |
 | `Timeline` | Generische Stunden-Zeitleiste | V6 | noch nicht produktiv |
 | `ProsperiMap` | Routenkarte Marokko→Algerien | V7 (Prosperi) | V7 S09 Opener |
-| `StatCounter` | Große animierte Zahl zählt hoch | V8+ | — |
-| `SurvivalDays` | Tag-für-Tag-Strip mit Events | V8+ | — |
+| `StatCounter` | Große animierte Zahl zählt hoch | V8+ | V8 S04 |
+| `SurvivalDays` | Tag-für-Tag-Strip mit Events | V8+ | V8 S05 |
 | `SearchRadius` | Expanding Suchkreis auf Karte | V8+ | — |
 | `DepthDive` | Kamera taucht in Tiefe | V8+ | — |
+| `RockTrap` | Querschnitt Felsblock eingeklemmt + Druckpfeile | V8 | V8 S08 |
+| `CountdownTimer` | Countdown runter/hoch in Stunden (Text, kein LaTeX) | V8 | V8 S09 |
 
 ### Render-Befehl
 ```bash
@@ -68,7 +70,7 @@ cd tools/remotion && npm install
 | `MineshaftCross` | Grubenquerschnitt mit Etagen | Manim, mittel |
 | `WordReveal` | Schlagwort baut sich Buchstabe für Buchstabe auf | Remotion, einfach |
 | `SplitScreen` | Vorher/Nachher nebeneinander | Remotion, mittel |
-| `CountdownTimer` | Verbleibende Zeit zählt runter | Manim, einfach |
+| `CountdownTimer` | ~~Verbleibende Zeit zählt runter~~ — **IMPLEMENTIERT V8** | — |
 
 ---
 
