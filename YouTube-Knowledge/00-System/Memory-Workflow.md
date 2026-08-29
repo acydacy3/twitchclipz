@@ -39,14 +39,43 @@ neue Erkenntnis
  → richtige Note im Vault (mit Confidence + Scope + Evidence + History)
  → prüfen: wird daraus eine Rule? → nur dann [[Current-State]]/CLAUDE.md anpassen
  → [[Autonomie-Log]] updaten: A/B/C/D-Score + Strafen + User-Prompts dieser Session
- → `git add/commit/push` (freigeschaltet) — erreicht die nächste Session automatisch
+ → git add/commit → IMMER auf Feature-Branch UND auf main mergen + pushen (siehe unten)
  → optional: geänderte Note nach Drive (nur für Nutzer-Ansicht in Obsidian)
 ```
 
+## ⚠️ PFLICHT: Vault-Änderungen IMMER auf main pushen
+
+**Neue Container klonen `main`.** Vault-Änderungen nur auf einem Feature-Branch sind für
+den nächsten Container unsichtbar — sie gehen verloren.
+
+**Ablauf am Session-Ende (Reihenfolge einhalten):**
+```bash
+# 1. Auf Feature-Branch committen (wie bisher)
+git add -A && git commit -m "..."
+git push origin <feature-branch>
+
+# 2. IMMER auf main mergen und pushen
+git checkout main
+git pull origin main          # Stand holen
+git merge --no-ff <feature-branch> -m "merge: Vault + [Serie] → main"
+git push origin main
+
+# 3. Zurück auf Feature-Branch
+git checkout <feature-branch>
+```
+
+**Was NICHT auf main gehört:**
+- `*/render/*.mp4` — in .gitignore, via nb_build.py reproduzierbar
+- Temporäre Zwischenstände die noch kaputt sind
+
+**Kontrolle:** `git log --oneline main | head -3` → neuester Commit auf main soll
+dem aktuellen Vault-Stand entsprechen.
+
 ## Persistenz-Priorität (git push freigeschaltet, 25.08.)
-1. **Git** (`commit` + `push`) — primärer, versionierter Persistenz-Träger; der nächste Container klont den vollen Stand.
-2. **Google Drive** — optional (Nutzer-Ansicht in Obsidian, Asset-Transfer via gdown).
-3. **SendUserFile an Nutzer** — für fertige Videos (z. B. TikTok).
+1. **Git `main`** — primärer, versionierter Persistenz-Träger; neuer Container klont main → voller Stand.
+2. **Git Feature-Branch** — für laufende Arbeit, MUSS am Session-Ende in main einfließen.
+3. **Google Drive** — optional (Nutzer-Ansicht in Obsidian, Asset-Transfer via gdown).
+4. **SendUserFile an Nutzer** — für fertige Videos (z. B. TikTok).
 
 Details/Historie: [[Decision-Git-vs-Drive-Persistenz]].
 
