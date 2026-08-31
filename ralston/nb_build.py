@@ -22,8 +22,11 @@ ROOT     = os.path.dirname(BASE)
 BROLL    = os.path.join(BASE, "bilder", "broll")
 VO_DIR   = os.path.join(BASE, "voiceover")
 ANIM_DIR = os.path.join(BASE, "animation")
+SKRIPT   = os.path.join(BASE, "skript")   # vom Nutzer geliefertes Skript je Short
 RENDER   = os.path.join(BASE, "render")
 MEDIA    = os.path.join(ROOT, "media", "videos", "manim_scenes")
+
+sys.path.insert(0, ROOT)  # align.py (Repo-Root)
 
 os.makedirs(ANIM_DIR, exist_ok=True)
 os.makedirs(RENDER, exist_ok=True)
@@ -187,6 +190,35 @@ Format: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text
         f.write("\n".join(lines))
 
 
+def captions(num, vo_path, words_path):
+    """Caption-Wörter je Short. REGEL (Anti-V8): Der Text kommt aus dem vom
+    Nutzer gelieferten Skript (skript/short_XX.txt), das Timing aus dem Audio
+    (align.py). ASR entscheidet NIE die Wörter — es verstümmelt Namen/Begriffe
+    (Ralston→Rallsturm, Prothese→Protesse). Ohne Skript: ASR-Fallback mit lauter
+    Warnung, weil die Captions dann ungeprüft/fehleranfällig sind (§0d-QC Pflicht).
+    """
+    import re as _re
+    words = transcribe_vo(vo_path, words_path)   # nur fürs Timing
+    skript_path = os.path.join(SKRIPT, f"short_{num}.txt")
+    if os.path.exists(skript_path) and words:
+        import align as _align
+        text = open(skript_path, encoding="utf-8").read()
+        if "\n" in text:
+            text = text.split("\n", 1)[1]        # Titelzeile weg
+        toks, ends = [], []
+        for m in _re.finditer(_align.TOKEN_RE, text):
+            toks.append(m.group())
+            ends.append(bool(_re.match(r"\s*[.!?:]", text[m.end():m.end()+3])))
+        fixed = _align.align(words, toks, ends)
+        json.dump(fixed, open(words_path, "w", encoding="utf-8"),
+                  ensure_ascii=False, indent=1)
+        print(f"  ✓ Captions aus Skript (skript/short_{num}.txt) + Audio-Timing")
+        return fixed
+    print(f"  ⚠ KEIN Skript skript/short_{num}.txt — ASR-Fallback! "
+          f"Captions ungeprüft, §0d-QC (videoblick.py) vor Upload PFLICHT.")
+    return words
+
+
 def render_short(num, cfg):
     vo_path    = os.path.join(VO_DIR,   f"short_{num}.mp3")
     wav_path   = os.path.join(ANIM_DIR, f"musik_{num}.wav")
@@ -207,7 +239,7 @@ def render_short(num, cfg):
 
     generate_musik(wav_path, dur + 1.0)
 
-    words = transcribe_vo(vo_path, words_path)
+    words = captions(num, vo_path, words_path)
     # ASS immer neu generieren (korrekte \\kf-Karaoke)
     if words:
         words_to_ass(words, ass_path)
