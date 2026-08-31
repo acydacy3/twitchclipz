@@ -130,14 +130,19 @@ Diese 15 Dateien (13 Learnings + Failure-Memory + Animation-Library) werden gele
 
 ## 4. Konkurrenz-Referenz + Bild-Strategie (PFLICHT vor Bild-Produktion)
 
+> **REGEL (Nutzer 31.08.): Jede Analyse/Recherche erfasst IMMER das VISUELLE — Bildsprache, Schnittstil, Hook, Beat-Struktur, Caption-Stil, Audio — nie nur Metadaten (Views/Titel/Tags).** Metadaten sagen WAS läuft, nicht WARUM. Werkzeuge: `vidiq_watch_shortform_content` (szenenweise Analyse eines Shorts, ~10 Cr) · `videoblick.py` (Frames ansehen) · `hoeren.py`. Ergebnis-Standard + kopierbares Bauprinzip: [[Short-Konzept-Blueprint]] — vor jeder Produktion lesen.
+
 **Schritt 1 — Top-Videos zum Thema analysieren:**
 ```
-python3 tools/nb_suggest.py "<thema>"   # Top-Keywords + Videos
+python3 tools/nb_suggest.py "<thema>"    # YouTube-Suche/Suggest (gratis)
+python3 tools/nb_trends.py "<a>" "<b>"   # Google-Trends-Momentum (gratis)
 ```
-→ Die Top-3-Videos aufrufen, **Thumbnails + erste 10 Sekunden** ansehen:
-- Welche Bildsprache? (dunkel/hell, nah/weit, Person/Landschaft)
-- Welche Stock-Kategorien offensichtlich genutzt?
-- Was macht das Thumbnail sofort klickbar?
+→ Die Top-Videos **visuell** analysieren (nicht nur Titel lesen):
+- Hook: erste 2s — Bewegung oder Standbild? Welcher Schock-Satz? Caption-Einblendung?
+- Schnitt: Szenenlänge, Kamerabewegung, Anteil Bewegtbild vs Standbild.
+- Struktur: Beats bis Payoff, Cliffhanger-Pause, Realitäts-Beweis am Ende?
+- Bildsprache, Caption-Stil/Farbe/Position, Audio (Score/SFX).
+→ Abgleich mit [[Short-Konzept-Blueprint]]: Was übernehmen, was widerspricht der nüchternen Marke?
 
 **Schritt 2 — Referenz-Kanäle (persistent, immer prüfen):**
 - **Scary Interesting** (UCNXvmGafmrtJ7VPSqjRRbwg) — **Primäres Rollenmodell.** 0,99%/Monat, ⌀ 1,21 Mio Views/Video. Rein narrativ, anonym, cinematisch. Was machen ihre besten Shorts visuell?

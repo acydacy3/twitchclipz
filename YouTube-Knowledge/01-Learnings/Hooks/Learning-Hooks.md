@@ -35,6 +35,7 @@ Gilt für Shorts UND Langvideo-Anfang dieses Kanals. Diagnose Video 1: „die er
 ## History
 - **v1 (17.08.):** „Aufhänger-Text sagt etwas anderes als die Stimme" (Doppelinfo verschenkt Kanal).
 - **v2 (19.08., Nutzer-Einwand, bestätigt):** Regel warf zwei Texte zusammen. Untertitel = Stimme (nicht rütteln); nur der optionale Banner darf abweichen. Kein Beleg, dass Abweichen je besser lief.
+- **31.08. RULE (Confidence Medium-High): Hook = BEWEGUNG in Sekunde 1, kein ruhiges Establishing.** Szenen-Analyse zweier >400k-Hits: beide öffnen mit einer bewegten 3D-Szene der Gefahr (Mann in Abflussrohr gerissen / Baby im Schacht) + Wort-für-Wort-Caption in Großbuchstaben + Schock-Satz. Unser üblicher Opener (ruhige Establishing-Landschaft) verliert den Swipe-Stopp. → Hook-Shot bewegt (Wan2.1-I2V/Manim), Gefahr sofort sichtbar, Unmöglichkeit im ersten Satz. Danach früh ein **Querschnitt/Karte mit Zahl** (räumliche Unmöglichkeit). Quelle: [[Short-Konzept-Blueprint]].
 
 ## Related
 [[Learning-Retention-und-Laenge]] · [[Learning-Captions]] · [[Learning-Storytelling-Shorts]] · [[Learning-Titel]]
