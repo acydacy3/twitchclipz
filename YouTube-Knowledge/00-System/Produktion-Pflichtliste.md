@@ -45,6 +45,7 @@ Gegen die [[Failure-Memory]]-Checkliste prüfen (jede Zeile bewusst abhaken):
 - [ ] **≥1 bewegter Schlüssel-Shot** im Short (I2V/Remotion/Manim), nicht nur Ken-Burns?
 - [ ] Progressbar sichtbar (≥18 px, gelb, kein Alpha)?
 - [ ] Karaoke-Highlight `\kf` läuft wortweise mit?
+- [ ] **Caption-Text = Nutzer-Skript, Eigennamen KORREKT** (keine ASR-Verstümmelung wie „Rallsturm"/„jemes Franco")? Captions kommen aus `skript/short_XX.txt` via `align.py`, nie aus roher ASR (F-V8-E). Stichprobe lesen.
 - [ ] Multi-Shot (mehrere Bilder/Beat), kein statisches Einzelbild?
 - [ ] Animationen tragen Label + ≥3 Elemente (kein nackter Dot)?
 - [ ] CTA „Kanal folgen" in den letzten 4 s sichtbar?
