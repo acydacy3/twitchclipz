@@ -10,27 +10,27 @@ Style: Default,Arial,76,&H0000FFFF,&H00FFFFFF,&H00000000,&H99000000,-1,0,0,0,100
 
 [Events]
 Format: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text
-Dialogue: 0,0:00:00.00,0:00:01.86,Default,,0,0,0,,{\kf36}Tag {\kf30}drei, {\kf40}Ralsdum {\kf26}konnte
-Dialogue: 0,0:00:01.86,0:00:03.52,Default,,0,0,0,,{\kf32}seine {\kf107}Körpertemperaturen {\kf8}nicht {\kf18}mehr
-Dialogue: 0,0:00:03.52,0:00:04.96,Default,,0,0,0,,{\kf35}erhalten, {\kf8}die {\kf37}Nächte {\kf12}in
-Dialogue: 0,0:00:04.96,0:00:06.40,Default,,0,0,0,,{\kf12}der {\kf58}Schluchzanten {\kf32}unter {\kf41}Nullgrad,
-Dialogue: 0,0:00:06.88,0:00:08.46,Default,,0,0,0,,{\kf41}tagsüber {\kf56}direkte {\kf28}Wüsten {\kf32}Sonne,
-Dialogue: 0,0:00:08.90,0:00:10.72,Default,,0,0,0,,{\kf48}erschwankte {\kf27}zwischen {\kf67}Schüttelfrost {\kf38}und
-Dialogue: 0,0:00:10.72,0:00:12.60,Default,,0,0,0,,{\kf61}Hitzekollabs, {\kf6}die {\kf62}Wasserflasche {\kf13}war
-Dialogue: 0,0:00:12.60,0:00:13.86,Default,,0,0,0,,{\kf14}schon {\kf22}lange {\kf17}leer. {\kf8}Er
-Dialogue: 0,0:00:13.86,0:00:15.02,Default,,0,0,0,,{\kf12}fing {\kf25}an, {\kf15}seinen {\kf40}eigenen
-Dialogue: 0,0:00:15.02,0:00:16.50,Default,,0,0,0,,{\kf25}Orin {\kf18}zu {\kf31}trinken, {\kf17}erst
-Dialogue: 0,0:00:16.50,0:00:17.76,Default,,0,0,0,,{\kf23}wieder {\kf18}stand {\kf25}er, {\kf8}dann
-Dialogue: 0,0:00:17.76,0:00:18.68,Default,,0,0,0,,{\kf16}hatte {\kf17}er {\kf23}keine {\kf33}Wahlen
-Dialogue: 0,0:00:18.68,0:00:20.26,Default,,0,0,0,,{\kf17}mehr. {\kf10}Er {\kf32}sprach {\kf26}ab
-Dialogue: 0,0:00:20.26,0:00:21.40,Default,,0,0,0,,{\kf55}Skizworte {\kf23}in {\kf10}die {\kf23}kleine
-Dialogue: 0,0:00:21.40,0:00:23.24,Default,,0,0,0,,{\kf76}Videokamera, {\kf9}an {\kf24}seine {\kf27}Eltern,
-Dialogue: 0,0:00:23.94,0:00:25.60,Default,,0,0,0,,{\kf13}an {\kf24}seine {\kf37}Schwäste. {\kf90}Dann
-Dialogue: 0,0:00:25.60,0:00:26.50,Default,,0,0,0,,{\kf27}nahm {\kf8}er {\kf19}das {\kf33}Messer
-Dialogue: 0,0:00:26.50,0:00:27.80,Default,,0,0,0,,{\kf50}und {\kf39}ritzte {\kf17}vier {\kf22}Dinge
-Dialogue: 0,0:00:27.80,0:00:28.68,Default,,0,0,0,,{\kf16}in {\kf11}den {\kf36}Fähl {\kf23}über
-Dialogue: 0,0:00:28.68,0:00:30.26,Default,,0,0,0,,{\kf19}seine {\kf35}Schulter, {\kf16}seinen {\kf30}Namen,
-Dialogue: 0,0:00:30.76,0:00:32.40,Default,,0,0,0,,{\kf13}seinen {\kf72}Geburtstattung {\kf53}und {\kf24}sein
-Dialogue: 0,0:00:32.40,0:00:34.48,Default,,0,0,0,,{\kf80}Todestartung, {\kf11}er {\kf42}glaubte, {\kf9}dass
-Dialogue: 0,0:00:34.48,0:00:35.24,Default,,0,0,0,,{\kf16}er {\kf7}in {\kf38}Frieden {\kf14}damit
-Dialogue: 0,0:00:35.24,0:00:35.48,Default,,0,0,0,,{\kf23}war.
+Dialogue: 0,0:00:00.00,0:00:02.00,Default,,0,0,0,,{\kf44}Tag {\kf60}drei {\kf41}Ralston {\kf24}konnte
+Dialogue: 0,0:00:02.00,0:00:03.68,Default,,0,0,0,,{\kf25}seine {\kf96}Körpertemperatur {\kf21}nicht {\kf24}mehr
+Dialogue: 0,0:00:03.68,0:00:05.02,Default,,0,0,0,,{\kf29}halten {\kf16}Die {\kf33}Nächte {\kf9}in
+Dialogue: 0,0:00:05.02,0:00:06.06,Default,,0,0,0,,{\kf18}der {\kf25}Schlucht {\kf36}sanken {\kf23}unter
+Dialogue: 0,0:00:06.06,0:00:07.92,Default,,0,0,0,,{\kf30}null {\kf21}Grad {\kf51}tagsüber {\kf41}direkte
+Dialogue: 0,0:00:07.92,0:00:09.74,Default,,0,0,0,,{\kf85}Wüstensonne {\kf17}Er {\kf40}schwankte {\kf27}zwischen
+Dialogue: 0,0:00:09.74,0:00:11.94,Default,,0,0,0,,{\kf69}Schüttelfrost {\kf33}und {\kf70}Hitzekollaps {\kf17}Die
+Dialogue: 0,0:00:11.94,0:00:13.02,Default,,0,0,0,,{\kf56}Wasserflasche {\kf17}war {\kf14}schon {\kf19}lange
+Dialogue: 0,0:00:13.02,0:00:14.50,Default,,0,0,0,,{\kf24}leer {\kf12}Er {\kf19}fing {\kf40}an
+Dialogue: 0,0:00:14.60,0:00:15.58,Default,,0,0,0,,{\kf14}seinen {\kf37}eigenen {\kf26}Urin {\kf19}zu
+Dialogue: 0,0:00:15.58,0:00:17.48,Default,,0,0,0,,{\kf40}trinken {\kf22}Erst {\kf41}widerstand {\kf44}er
+Dialogue: 0,0:00:17.66,0:00:18.48,Default,,0,0,0,,{\kf16}dann {\kf19}hatte {\kf19}er {\kf26}keine
+Dialogue: 0,0:00:18.48,0:00:20.22,Default,,0,0,0,,{\kf21}Wahl {\kf32}mehr {\kf22}Er {\kf41}sprach
+Dialogue: 0,0:00:20.22,0:00:21.52,Default,,0,0,0,,{\kf72}Abschiedsworte {\kf19}in {\kf14}die {\kf23}kleine
+Dialogue: 0,0:00:21.52,0:00:23.40,Default,,0,0,0,,{\kf76}Videokamera {\kf12}an {\kf23}seine {\kf35}Eltern
+Dialogue: 0,0:00:24.04,0:00:25.66,Default,,0,0,0,,{\kf14}an {\kf19}seine {\kf54}Schwester {\kf19}Dann
+Dialogue: 0,0:00:25.66,0:00:26.70,Default,,0,0,0,,{\kf23}nahm {\kf14}er {\kf22}das {\kf43}Messer
+Dialogue: 0,0:00:26.70,0:00:27.86,Default,,0,0,0,,{\kf37}und {\kf38}ritzte {\kf16}vier {\kf23}Dinge
+Dialogue: 0,0:00:27.86,0:00:28.80,Default,,0,0,0,,{\kf19}in {\kf22}den {\kf25}Fels {\kf26}über
+Dialogue: 0,0:00:28.80,0:00:30.52,Default,,0,0,0,,{\kf16}seiner {\kf80}Schulter {\kf19}seinen {\kf35}Namen
+Dialogue: 0,0:00:30.86,0:00:32.48,Default,,0,0,0,,{\kf16}sein {\kf92}Geburtsdatum {\kf17}und {\kf11}sein
+Dialogue: 0,0:00:32.48,0:00:34.60,Default,,0,0,0,,{\kf102}Todesdatum {\kf24}Er {\kf53}glaubte {\kf14}dass
+Dialogue: 0,0:00:34.60,0:00:35.34,Default,,0,0,0,,{\kf14}er {\kf17}in {\kf23}Frieden {\kf18}damit
+Dialogue: 0,0:00:35.34,0:00:35.56,Default,,0,0,0,,{\kf21}war

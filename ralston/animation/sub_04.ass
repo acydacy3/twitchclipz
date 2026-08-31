@@ -10,25 +10,25 @@ Style: Default,Arial,76,&H0000FFFF,&H00FFFFFF,&H00000000,&H99000000,-1,0,0,0,100
 
 [Events]
 Format: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text
-Dialogue: 0,0:00:00.00,0:00:01.48,Default,,0,0,0,,{\kf62}Ralsdund {\kf31}versucht {\kf24}er {\kf30}alles.
-Dialogue: 0,0:00:01.96,0:00:03.02,Default,,0,0,0,,{\kf10}Er {\kf46}meiselte {\kf29}Stunden {\kf20}lang
-Dialogue: 0,0:00:03.02,0:00:04.04,Default,,0,0,0,,{\kf14}mit {\kf11}dem {\kf60}Taschenmesser {\kf16}am
-Dialogue: 0,0:00:04.04,0:00:05.54,Default,,0,0,0,,{\kf28}Fels, {\kf24}millimeter {\kf31}für {\kf28}millimeter.
-Dialogue: 0,0:00:06.26,0:00:07.58,Default,,0,0,0,,{\kf10}Nach {\kf39}15 {\kf52}Stunden {\kf29}war
-Dialogue: 0,0:00:07.58,0:00:08.98,Default,,0,0,0,,{\kf12}der {\kf31}Fels {\kf24}kaum {\kf72}angekratzt.
-Dialogue: 0,0:00:09.34,0:00:10.12,Default,,0,0,0,,{\kf12}Dann {\kf27}baute {\kf19}er {\kf17}ein
-Dialogue: 0,0:00:10.12,0:00:11.38,Default,,0,0,0,,{\kf56}Flaschenzug {\kf17}aus {\kf16}dem {\kf36}Seil,
-Dialogue: 0,0:00:11.46,0:00:12.00,Default,,0,0,0,,{\kf15}das {\kf14}er {\kf9}aber {\kf14}sich
-Dialogue: 0,0:00:12.00,0:00:13.12,Default,,0,0,0,,{\kf24}hatte. {\kf6}Er {\kf25}zog {\kf17}mit
-Dialogue: 0,0:00:13.12,0:00:14.82,Default,,0,0,0,,{\kf18}seiner {\kf50}gesamten {\kf63}Körperkraft {\kf38}gegen
-Dialogue: 0,0:00:14.82,0:00:17.54,Default,,0,0,0,,{\kf83}360 {\kf50}kg, {\kf19}mit {\kf30}einer
-Dialogue: 0,0:00:17.54,0:00:19.26,Default,,0,0,0,,{\kf22}Hand. {\kf19}Der {\kf32}Stein {\kf44}bewegte
-Dialogue: 0,0:00:19.26,0:00:20.80,Default,,0,0,0,,{\kf19}sich {\kf21}kein {\kf46}Millimeter. {\kf14}Mit
-Dialogue: 0,0:00:20.80,0:00:22.24,Default,,0,0,0,,{\kf25}jedem {\kf42}Versuch {\kf62}verbrauchte {\kf13}er
-Dialogue: 0,0:00:22.24,0:00:23.10,Default,,0,0,0,,{\kf36}Energie, {\kf10}die {\kf5}er {\kf10}nicht
-Dialogue: 0,0:00:23.10,0:00:24.52,Default,,0,0,0,,{\kf27}hatte. {\kf7}Er {\kf14}war {\kf35}komplett
-Dialogue: 0,0:00:24.52,0:00:26.80,Default,,0,0,0,,{\kf30}allein. {\kf14}In {\kf24}einer {\kf85}Innenfelsslucht,
-Dialogue: 0,0:00:27.32,0:00:28.70,Default,,0,0,0,,{\kf19}mit {\kf66}Lebensmitteln {\kf19}für {\kf32}Stunden,
-Dialogue: 0,0:00:28.70,0:00:30.78,Default,,0,0,0,,{\kf64}und {\kf14}er {\kf94}begreifen, {\kf22}dass
-Dialogue: 0,0:00:30.78,0:00:31.78,Default,,0,0,0,,{\kf14}er {\kf17}hier {\kf32}vielleicht {\kf35}nicht
-Dialogue: 0,0:00:31.78,0:00:32.56,Default,,0,0,0,,{\kf32}lebend {\kf46}herausgehen.
+Dialogue: 0,0:00:00.00,0:00:02.14,Default,,0,0,0,,{\kf70}Ralston {\kf54}versuchte {\kf32}alles {\kf12}Er
+Dialogue: 0,0:00:02.14,0:00:03.46,Default,,0,0,0,,{\kf46}meißelte {\kf50}stundenlang {\kf14}mit {\kf21}dem
+Dialogue: 0,0:00:03.46,0:00:05.20,Default,,0,0,0,,{\kf48}Taschenmesser {\kf23}am {\kf30}Fels {\kf28}Millimeter
+Dialogue: 0,0:00:05.20,0:00:06.92,Default,,0,0,0,,{\kf13}für {\kf50}Millimeter {\kf25}Nach {\kf40}15
+Dialogue: 0,0:00:06.92,0:00:08.14,Default,,0,0,0,,{\kf48}Stunden {\kf23}war {\kf16}der {\kf34}Fels
+Dialogue: 0,0:00:08.14,0:00:09.82,Default,,0,0,0,,{\kf25}kaum {\kf82}angekratzt {\kf15}Dann {\kf28}baute
+Dialogue: 0,0:00:09.82,0:00:10.96,Default,,0,0,0,,{\kf17}er {\kf25}einen {\kf51}Flaschenzug {\kf18}aus
+Dialogue: 0,0:00:10.96,0:00:11.86,Default,,0,0,0,,{\kf17}dem {\kf39}Seil {\kf16}das {\kf16}er
+Dialogue: 0,0:00:11.86,0:00:12.80,Default,,0,0,0,,{\kf8}bei {\kf12}sich {\kf27}hatte {\kf18}Er
+Dialogue: 0,0:00:12.80,0:00:13.88,Default,,0,0,0,,{\kf23}zog {\kf20}mit {\kf16}seiner {\kf48}gesamten
+Dialogue: 0,0:00:13.88,0:00:17.14,Default,,0,0,0,,{\kf73}Körperkraft {\kf34}gegen {\kf97}360 {\kf120}Kilogramm
+Dialogue: 0,0:00:17.14,0:00:18.64,Default,,0,0,0,,{\kf21}mit {\kf24}einer {\kf29}Hand {\kf26}Der
+Dialogue: 0,0:00:18.64,0:00:19.78,Default,,0,0,0,,{\kf25}Stein {\kf46}bewegte {\kf21}sich {\kf20}kein
+Dialogue: 0,0:00:19.78,0:00:21.64,Default,,0,0,0,,{\kf53}Millimeter {\kf28}Mit {\kf23}jedem {\kf44}Versuch
+Dialogue: 0,0:00:21.64,0:00:22.96,Default,,0,0,0,,{\kf50}verbrauchte {\kf16}er {\kf46}Energie {\kf12}die
+Dialogue: 0,0:00:22.96,0:00:24.04,Default,,0,0,0,,{\kf9}er {\kf26}nicht {\kf21}hatte {\kf14}Er
+Dialogue: 0,0:00:24.04,0:00:25.80,Default,,0,0,0,,{\kf19}war {\kf38}komplett {\kf39}allein {\kf17}in
+Dialogue: 0,0:00:25.80,0:00:27.66,Default,,0,0,0,,{\kf19}einer {\kf63}engen {\kf62}Felsschlucht {\kf16}mit
+Dialogue: 0,0:00:27.66,0:00:29.40,Default,,0,0,0,,{\kf64}Lebensmitteln {\kf17}für {\kf35}Stunden {\kf25}und
+Dialogue: 0,0:00:29.40,0:00:30.66,Default,,0,0,0,,{\kf17}er {\kf26}begann {\kf16}zu {\kf66}begreifen
+Dialogue: 0,0:00:30.82,0:00:31.70,Default,,0,0,0,,{\kf5}dass {\kf16}er {\kf24}hier {\kf41}vielleicht
+Dialogue: 0,0:00:31.70,0:00:32.74,Default,,0,0,0,,{\kf26}nicht {\kf17}lebend {\kf29}herauskommen {\kf30}würde

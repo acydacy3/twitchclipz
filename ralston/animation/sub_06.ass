@@ -10,27 +10,27 @@ Style: Default,Arial,76,&H0000FFFF,&H00FFFFFF,&H00000000,&H99000000,-1,0,0,0,100
 
 [Events]
 Format: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text
-Dialogue: 0,0:00:00.00,0:00:01.36,Default,,0,0,0,,{\kf16}Er {\kf40}stellte {\kf12}die {\kf68}Videokommlerer
-Dialogue: 0,0:00:01.36,0:00:02.34,Default,,0,0,0,,{\kf19}auf {\kf11}den {\kf32}Fels, {\kf9}der
-Dialogue: 0,0:00:02.34,0:00:03.50,Default,,0,0,0,,{\kf22}seinen {\kf23}Arm {\kf32}gefangen {\kf37}hielt,
-Dialogue: 0,0:00:04.10,0:00:04.94,Default,,0,0,0,,{\kf26}schaute {\kf17}in {\kf12}die {\kf28}Linse
-Dialogue: 0,0:00:04.94,0:00:06.20,Default,,0,0,0,,{\kf46}und {\kf27}begann {\kf20}zu {\kf32}sprechen.
-Dialogue: 0,0:00:06.94,0:00:07.80,Default,,0,0,0,,{\kf11}Mein {\kf26}Name {\kf23}ist {\kf24}Aron
-Dialogue: 0,0:00:07.80,0:00:09.48,Default,,0,0,0,,{\kf52}Ralshton, {\kf16}meine {\kf30}Eltern {\kf25}sind
-Dialogue: 0,0:00:09.48,0:00:11.02,Default,,0,0,0,,{\kf29}Larry {\kf38}und {\kf35}Donner {\kf50}Ralshton
-Dialogue: 0,0:00:11.02,0:00:13.44,Default,,0,0,0,,{\kf38}in {\kf53}Engelwoth {\kf70}Colorado. {\kf17}Wer
-Dialogue: 0,0:00:13.44,0:00:14.64,Default,,0,0,0,,{\kf25}immer {\kf18}das {\kf27}findet, {\kf10}bitte
-Dialogue: 0,0:00:14.64,0:00:15.94,Default,,0,0,0,,{\kf51}versucht, {\kf6}sie {\kf14}zu {\kf29}erreichen.
-Dialogue: 0,0:00:16.70,0:00:17.94,Default,,0,0,0,,{\kf10}Er {\kf41}beschrieb, {\kf21}wer {\kf22}er
-Dialogue: 0,0:00:17.94,0:00:19.22,Default,,0,0,0,,{\kf16}war, {\kf10}er {\kf28}sagte {\kf25}seinen
-Dialogue: 0,0:00:19.22,0:00:20.74,Default,,0,0,0,,{\kf40}Freunden {\kf21}lieber {\kf26}wohl. {\kf7}Er
-Dialogue: 0,0:00:20.74,0:00:21.84,Default,,0,0,0,,{\kf28}sprach {\kf24}über {\kf19}Dinge, {\kf10}die
-Dialogue: 0,0:00:21.84,0:00:23.12,Default,,0,0,0,,{\kf8}er {\kf39}beruhte, {\kf17}und {\kf22}über
-Dialogue: 0,0:00:23.12,0:00:23.86,Default,,0,0,0,,{\kf19}Dinge, {\kf14}die {\kf7}er {\kf16}nicht
-Dialogue: 0,0:00:23.86,0:00:25.70,Default,,0,0,0,,{\kf50}beruhte. {\kf7}Er {\kf44}sagte, {\kf12}er
-Dialogue: 0,0:00:25.70,0:00:27.10,Default,,0,0,0,,{\kf14}sei {\kf10}ein {\kf41}Frieden. {\kf26}Kein
-Dialogue: 0,0:00:27.10,0:00:28.90,Default,,0,0,0,,{\kf41}Skript. {\kf23}Kein {\kf35}zweiter {\kf33}Tage.
-Dialogue: 0,0:00:28.90,0:00:30.68,Default,,0,0,0,,{\kf83}Das {\kf20}war {\kf19}sein {\kf53}Abschiedsfin,
-Dialogue: 0,0:00:31.16,0:00:31.72,Default,,0,0,0,,{\kf12}dann {\kf27}legte {\kf6}er {\kf9}die
-Dialogue: 0,0:00:31.72,0:00:33.40,Default,,0,0,0,,{\kf26}Kamera {\kf31}hin {\kf70}und {\kf39}wartete
-Dialogue: 0,0:00:33.40,0:00:34.36,Default,,0,0,0,,{\kf16}auf {\kf11}den {\kf32}nächsten {\kf35}Morgen.
+Dialogue: 0,0:00:00.00,0:00:01.44,Default,,0,0,0,,{\kf22}Er {\kf38}stellte {\kf20}die {\kf63}Videokamera
+Dialogue: 0,0:00:01.44,0:00:02.42,Default,,0,0,0,,{\kf19}auf {\kf22}den {\kf32}Fels {\kf16}der
+Dialogue: 0,0:00:02.42,0:00:03.86,Default,,0,0,0,,{\kf20}seinen {\kf27}Arm {\kf35}gefangen {\kf60}hielt
+Dialogue: 0,0:00:04.20,0:00:05.02,Default,,0,0,0,,{\kf24}schaute {\kf15}in {\kf16}die {\kf25}Linse
+Dialogue: 0,0:00:05.02,0:00:06.38,Default,,0,0,0,,{\kf46}und {\kf31}begann {\kf25}zu {\kf32}sprechen
+Dialogue: 0,0:00:06.98,0:00:07.92,Default,,0,0,0,,{\kf13}Mein {\kf29}Name {\kf25}ist {\kf24}Aron
+Dialogue: 0,0:00:07.92,0:00:09.62,Default,,0,0,0,,{\kf48}Ralston {\kf13}meine {\kf33}Eltern {\kf25}sind
+Dialogue: 0,0:00:09.62,0:00:11.14,Default,,0,0,0,,{\kf34}Larry {\kf35}und {\kf27}Donna {\kf54}Ralston
+Dialogue: 0,0:00:11.14,0:00:13.56,Default,,0,0,0,,{\kf37}in {\kf66}Englewood {\kf43}Colorado {\kf20}Wer
+Dialogue: 0,0:00:13.56,0:00:14.76,Default,,0,0,0,,{\kf24}immer {\kf19}das {\kf38}findet {\kf6}bitte
+Dialogue: 0,0:00:14.76,0:00:16.14,Default,,0,0,0,,{\kf56}versucht {\kf9}sie {\kf24}zu {\kf33}erreichen
+Dialogue: 0,0:00:16.70,0:00:18.06,Default,,0,0,0,,{\kf22}Er {\kf53}beschrieb {\kf10}wer {\kf21}er
+Dialogue: 0,0:00:18.06,0:00:19.28,Default,,0,0,0,,{\kf17}war {\kf26}Er {\kf19}sagte {\kf24}seinen
+Dialogue: 0,0:00:19.28,0:00:21.16,Default,,0,0,0,,{\kf41}Freunden {\kf53}Lebewohl {\kf21}Er {\kf28}sprach
+Dialogue: 0,0:00:21.16,0:00:22.04,Default,,0,0,0,,{\kf17}über {\kf32}Dinge {\kf14}die {\kf17}er
+Dialogue: 0,0:00:22.04,0:00:23.50,Default,,0,0,0,,{\kf48}bereute {\kf17}und {\kf16}über {\kf30}Dinge
+Dialogue: 0,0:00:23.52,0:00:24.52,Default,,0,0,0,,{\kf12}die {\kf16}er {\kf19}nicht {\kf51}bereute
+Dialogue: 0,0:00:24.78,0:00:25.94,Default,,0,0,0,,{\kf19}Er {\kf44}sagte {\kf16}er {\kf16}sei
+Dialogue: 0,0:00:25.94,0:00:27.90,Default,,0,0,0,,{\kf17}in {\kf66}Frieden {\kf27}Kein {\kf69}Skript
+Dialogue: 0,0:00:28.14,0:00:29.82,Default,,0,0,0,,{\kf14}kein {\kf43}zweiter {\kf24}Take {\kf85}Das
+Dialogue: 0,0:00:29.82,0:00:31.36,Default,,0,0,0,,{\kf19}war {\kf14}sein {\kf69}Abschiedsfilm {\kf9}Dann
+Dialogue: 0,0:00:31.36,0:00:32.12,Default,,0,0,0,,{\kf24}legte {\kf11}er {\kf16}die {\kf23}Kamera
+Dialogue: 0,0:00:32.12,0:00:33.66,Default,,0,0,0,,{\kf44}hin {\kf51}und {\kf44}wartete {\kf13}auf
+Dialogue: 0,0:00:33.66,0:00:34.44,Default,,0,0,0,,{\kf12}den {\kf32}nächsten {\kf33}Morgen

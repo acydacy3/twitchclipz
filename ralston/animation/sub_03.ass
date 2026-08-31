@@ -10,14 +10,14 @@ Style: Default,Arial,76,&H0000FFFF,&H00FFFFFF,&H00000000,&H99000000,-1,0,0,0,100
 
 [Events]
 Format: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text
-Dialogue: 0,0:00:00.00,0:00:02.46,Default,,0,0,0,,{\kf26}zwei {\kf48}Burritos, {\kf50}300 {\kf65}Milliliter
-Dialogue: 0,0:00:02.46,0:00:04.74,Default,,0,0,0,,{\kf29}Wasser, {\kf14}einige {\kf60}Süßigkeiten {\kf66}und
-Dialogue: 0,0:00:04.74,0:00:06.64,Default,,0,0,0,,{\kf16}ein {\kf33}billiges {\kf54}Taschennesse. {\kf13}Das
-Dialogue: 0,0:00:06.64,0:00:07.66,Default,,0,0,0,,{\kf22}war {\kf33}alles, {\kf13}was {\kf10}er
-Dialogue: 0,0:00:07.66,0:00:08.94,Default,,0,0,0,,{\kf21}dabei {\kf28}hatte. {\kf9}Er {\kf16}war
-Dialogue: 0,0:00:08.94,0:00:10.28,Default,,0,0,0,,{\kf46}30 {\kf41}Meter {\kf27}unter {\kf17}der
-Dialogue: 0,0:00:10.28,0:00:12.18,Default,,0,0,0,,{\kf70}Erdoberfläche, {\kf8}die {\kf30}nächste {\kf37}Straße,
-Dialogue: 0,0:00:12.70,0:00:14.60,Default,,0,0,0,,{\kf33}30 {\kf50}Kilometer {\kf56}entfernt, {\kf17}kein
-Dialogue: 0,0:00:14.60,0:00:16.60,Default,,0,0,0,,{\kf82}Funksignal, {\kf15}niemand {\kf28}würde {\kf26}suchen
-Dialogue: 0,0:00:16.60,0:00:19.02,Default,,0,0,0,,{\kf47}kommen, {\kf7}nicht {\kf44}heute, {\kf28}vielleicht
-Dialogue: 0,0:00:19.02,0:00:19.86,Default,,0,0,0,,{\kf28}nicht {\kf21}mal {\kf33}morgen.
+Dialogue: 0,0:00:00.00,0:00:02.54,Default,,0,0,0,,{\kf38}Zwei {\kf62}Burritos {\kf39}300 {\kf56}Milliliter
+Dialogue: 0,0:00:02.54,0:00:04.82,Default,,0,0,0,,{\kf37}Wasser {\kf14}einige {\kf65}Süßigkeiten {\kf52}und
+Dialogue: 0,0:00:04.82,0:00:06.78,Default,,0,0,0,,{\kf16}ein {\kf39}billiges {\kf60}Taschenmesser {\kf22}Das
+Dialogue: 0,0:00:06.78,0:00:07.78,Default,,0,0,0,,{\kf25}war {\kf28}alles {\kf16}was {\kf20}er
+Dialogue: 0,0:00:07.78,0:00:09.08,Default,,0,0,0,,{\kf21}dabei {\kf30}hatte {\kf14}Er {\kf25}war
+Dialogue: 0,0:00:09.08,0:00:10.38,Default,,0,0,0,,{\kf48}30 {\kf37}Meter {\kf25}unter {\kf18}der
+Dialogue: 0,0:00:10.38,0:00:12.46,Default,,0,0,0,,{\kf77}Erdoberfläche {\kf9}Die {\kf27}nächste {\kf52}Straße
+Dialogue: 0,0:00:12.88,0:00:14.78,Default,,0,0,0,,{\kf29}30 {\kf46}Kilometer {\kf69}entfernt {\kf24}Kein
+Dialogue: 0,0:00:14.78,0:00:16.84,Default,,0,0,0,,{\kf96}Funksignal {\kf21}niemand {\kf28}würde {\kf33}suchen
+Dialogue: 0,0:00:16.84,0:00:19.18,Default,,0,0,0,,{\kf33}kommen {\kf24}Nicht {\kf37}heute {\kf30}vielleicht
+Dialogue: 0,0:00:19.18,0:00:19.94,Default,,0,0,0,,{\kf26}nicht {\kf19}mal {\kf30}morgen
