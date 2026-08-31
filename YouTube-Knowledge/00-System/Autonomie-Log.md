@@ -42,6 +42,16 @@ tags: [system, autonomie, messung, n+1, audit]
 
 ## Log (neueste zuerst)
 
+### SYS4 | General-Überholung + V8-Ralston-Caption-Fix | 2026-08-31 | Score: 82 | neue Technik: §0d Selbst-Wahrnehmungs-QC (videoblick.py + hoeren.py) live im Ernstfall
+- Retrieval: 28/30 (Vollaudit des Konstrukts, alle System-Dateien + Learnings + align.py gelesen)
+- Tools: 39/40 (videoblick.py + hoeren.py erstmals als Pflicht-QC · align.py reaktiviert · faster-whisper · YouTube-API delete/list/upload · alle autonom)
+- Animation: 13/15 (Re-Render nutzte vorhandene Manim; keine neue Klasse)
+- Persistenz: 15/15 (mehrere main-Merges, Regel jetzt in /merken+/neubeginn+Hook verankert)
+- User-Prompts (echte Korrekturen, je −10): ["du hättest vorher Audit machen sollen" (handelte vor Analyse), "container kopiert kein Skript" (Skript-Persistenz-Fehldeutung)] → −20; die Überholungs-Richtung selbst war Nutzer-Auftrag, keine Strafe
+- Score roh: 95 − 20 (2 echte Korrekturen) = **82** (Amber-Grün-Grenze — starke Autonomie, aber zwei Denkfehler vom Nutzer gefangen)
+- Gaps geschlossen: §0d fing im ersten Ernstfall die flächendeckend falschen ASR-Captions VOR Upload (F-V8-E); §0c erzwingt Fähigkeits-Integration je Reihe; Persistenz-Regel systemweit konsistent; .gitignore + Zähl-Inkonsistenzen bereinigt; Skript→align.py als Caption-Standard codiert
+- Offen: Longform-Video ungerendert; §0c-Integration für nächste echte Reihe noch offen
+
 ### SYS3 | Contrarian-Layer | 2026-08-27 | Score: 91 | neue Technik: nb_contrarian.py als Cross-Cutting-Gate
 - Retrieval: 30/30 (alle Dateien · Current-State · Failure-Memory · Experimente · Pipeline)
 - Tools: 38/40 (nb_contrarian.py neu gebaut · Contrarian-Layer.md vollständig · Pflichtliste §0 integriert)

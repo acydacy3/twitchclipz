@@ -2,7 +2,7 @@
 type: system
 title: Current-State
 status: active
-updated: 2026-08-29
+updated: 2026-08-31
 tags: [system, state]
 ---
 
@@ -10,16 +10,16 @@ tags: [system, state]
 
 > Diese Note ist der **operative Schnappschuss**. Sie wird bei jeder Session
 > aktualisiert (Stand-Zahlen kommen aus `analyse.py`, nicht aus dem Gedächtnis —
-> gemessenes gewinnt gegen notiertes). Letztes Update: **2026-08-29 (Audit)**.
+> gemessenes gewinnt gegen notiertes). Letztes Update: **2026-08-31 (Tagesabschluss)**.
 
 > **Selbstprüfung (Session-Start):** Liegen `YouTube-Knowledge/` und `analyse.py` im Checkout? Dann bist du aktuell. Falls nein → `git pull origin main` (Recovery-Schritte in `CLAUDE.md`, „⚠️ ZUERST"). **`main` trägt immer den vollen Vault-Stand** — jede Session mergt am Ende auf `main` (`/merken` Schritt 2). Branch-Namen wechseln je Session; der richtige Checkout ist jeder, der **diesen Vault + `tools/`** enthält.
 
 ## Nordstern-Ziel (messbar)
-- **YPP-Monetarisierung, Shorts-Pfad: 1.000 Abos + 10 Mio Shorts-Views in 90 Tagen** (vor der Feb-2027-Regel). Stand 29.08.: Abos **5,8 %** (58/1.000), Views **0,45 %** (44.639/10 Mio). Realistischer Horizont: Abos 3–5 Monate, 10-Mio-Views 9–12 Monate. **Fortschritt jede Session loggen** → [[Ziel-YPP-Monetarisierung]].
+- **YPP-Monetarisierung, Shorts-Pfad: 1.000 Abos + 10 Mio Shorts-Views in 90 Tagen** (vor der Feb-2027-Regel). Stand 31.08. (analyse.py): Abos **6,3 %** (63/1.000), Views **0,53 %** (53.229/10 Mio). Wachstum: +21 Abos, +32.900 Views seit 25.08. Realistischer Horizont: Abos 3–5 Monate, 10-Mio-Views 9–12 Monate. **Fortschritt jede Session loggen** → [[Ziel-YPP-Monetarisierung]].
 
 ## Kanal
 - *Katastrophenprotokoll* (`UC1KCzLNlgGiYsLNQ7Z0HA-g`, DE), gegründet 15.08.2026.
-- **Gemessen 27.08. (nb_analytics_snapshot.py):** **45 Abos**, **30.751 Aufrufe** (+1.631 in 24 h!), **44 Videos**. Wachstum 2→9→37→41→45. *(Vor Produktion neu ziehen — analyse.py schlägt diese Notiz.)*
+- **Gemessen 31.08. (analyse.py):** **63 Abos**, **53.229 Aufrufe**, **57 Videos**, **29 terminiert**. Wachstum Abos: 42(25.08)→58(29.08)→63(31.08). *(Vor Produktion neu ziehen — analyse.py schlägt diese Notiz.)*
 - Konto vidIQ: `kisha-ners@gmx.de`. Guthaben (19.08.): **30** (renewable 0/150,
   Add-on 30/80, refresh 15.09.2026). vidIQ nur auf Anfrage — Credits schonen.
 
@@ -31,7 +31,13 @@ tags: [system, state]
 - **Video 5 Lengede FERTIG + TERMINIERT (verifiziert 25.08. via `analyse.py`):** alle **10/10 Shorts terminiert (28.–31.08.)**. Okene-Shorts ebenfalls terminiert (25.–27.08.). Trigger lief durch. Siehe [[Video-05-Lengede]].
 - **Video 6 Nutty Putty FERTIG + TERMINIERT (26.08.):** alle 10/10 Shorts hochgeladen, Schedule 31.08–03.09 (3/Tag bündig nach Lengede). Siehe [[Video-06-NuttyPutty]].
 - **Video 7 Prosperi FERTIG + TERMINIERT (27.08.):** alle 10/10 Shorts hochgeladen, Schedule **04.09–07.09** (3/Tag bündig nach Nutty Putty). S01–S10 live. Branch: `claude/neubeginn-v7-prosperi-6mmj14`.
-- **Video 8 Ralston FERTIG v2 (29.08., Re-Render nach Qualitäts-Review):** Aron Ralston / 127 Stunden. 10 Shorts NEU gerendert (v2), upload_log.json geleert → **alte YT-Videos (IDs: C_bcDVvpF-w…hPA-JCeutF0) in YouTube Studio löschen, dann `python3 ralston/nb_upload.py` ausführen**. Schedule 08.09–11.09 bleibt. Korrekturen in v2: Multi-Shot (3-4 Bilder/Short statt 1), Karaoke-Highlight (\\kf-Tags, Wörter leuchten gelb), Progressbar sichtbar (h=20px, voll opak), CrossSection-Animation komplett neu (cinematic Slot-Canyon-Querschnitt, nicht mehr gelber Punkt). **Lesson (nie wieder vergessen):** Produktion-Pflichtliste zuerst lesen, Multi-Shot-Regel automatisch einhalten, ASS-Karaoke immer mit \\kf. Branch: `claude/neubeginn-ralston-j8fqtw`. Nächste Geschichte: **V9 Loveparade Duisburg 2010**. **Nächste Technik: Image-to-Video via `mcp__huggingface__dynamic_space` (CogVideoX/Wan2.1-I2V, kostenlos)**.
+- **Video 8 Ralston ABGESCHLOSSEN + HOCHGELADEN (31.08.):** Aron Ralston / 127 Stunden, 10 Shorts terminiert 08.–11.09. Diese Session neu gerendert mit **Caption-Fix (F-V8-E)**: Captions kamen aus ASR → „Aron Rallsturm", „jemes Franco", „Protesse"; jetzt aus dem Skript via `align.py`. **§0d-Selbst-QC (videoblick.py + hoeren.py) hat die Fehler VOR Upload gefangen** — erster Ernstfall des Riegels, bestanden. Alte 10 YT-Videos gelöscht, 10 neue hoch (IDs neu in `ralston/upload_log.json`). Multi-Shot/Karaoke/Progressbar/CTA verifiziert. **Offen: Longform `render/long.mp4` noch nicht gebaut** (`python3 lang.py ralston/` → `nb_upload.py --longform`).
+- **Nächste Geschichte: V9 Loveparade Duisburg 2010.** Nächste kostenlose Technik (Capability-Gate §0c): Image-to-Video via HF (Wan2.1-I2V) ODER Remotion real einsetzen. Nutzer liefert Skript frisch.
+
+## Aktuell wichtigste offene Punkte (Stand 31.08.)
+1. **Ralston-Longform bauen + hochladen** — einziger offener Rest der V8-Reihe.
+2. **V9 Loveparade** — auf Nutzer-Skript warten, dann §0a–§0d durchziehen (Capability-Gate: ≥1 neue Gratis-Technik).
+3. **Analytics-Loop V8** — ab ~Tag 4 nach Publish (12.09.) CTR/Retention der Ralston-Shorts ziehen, gegen Okene-Benchmark (beste Serie) prüfen.
 - **Voller Tagesstand: [[Audit-2026-08-25]] + [[Audit-2026-08-26]].**
 
 ## Zugänge (Stand 19.08.)
@@ -45,7 +51,7 @@ tags: [system, state]
 - **Bild-Engines:** Nano Banana Pro + Seedance (Figur/Hero), Z-Image (Landschaft, 0,15 Cr.). Siehe [[Decision-Bild-Engine-Wahl]].
 - **claude-youtube** Skill (als claude.ai-Skill), yt-dlp (via deno), gdown.
 
-## Aktuell wichtigste offene Punkte
+## Offene Experiment-/Analytics-Fragen
 - Längen-These **aufgelöst (24.08., n=35):** Faktor 0,9 statt 7,9 → Hook schlägt Länge (auf Aufruf-Basis; **AVP%/3-s-Retention für V3 steht aus**, ~2 Tage Analytics-Lag). → [[Learning-Retention-und-Laenge]]
 - Hook-Banner mit abweichendem Text: nie belegt besser → [[Experiment-Hook-Banner-abweichender-Text]].
 - TikTok-Hashtag-Wahl stützt sich auf YouTube-Volumen (schwächster Punkt) → [[Frage-TikTok-Hashtag-Volumen]].
