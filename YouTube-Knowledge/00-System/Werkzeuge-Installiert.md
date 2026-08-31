@@ -8,6 +8,8 @@ tags: [system, werkzeuge, pipeline, setup]
 
 # Zusatz-Werkzeuge — installiert & in der Pipeline verdrahtet (25.08.2026)
 
+> **Rolle:** Die **Setup-/Installations-Ebene** (setup-tools.sh-Mechanik, Versionen, bekannte Konflikte). Das **volle Repertoire zur Auswahl** steht in [[Werkzeug-Register]], die offenen Vorschläge in [[Werkzeug-Backlog]].
+
 ## Persistenz-Mechanik (0 Token pro Session)
 - **`tools/setup-tools.sh`** installiert alles idempotent (Marker `~/.nb_tools_ready`).
 - Eingehängt in **`setup.sh`** (Container-Build) UND in **`.claude/hooks/session-start.sh`** (Hintergrund, `nohup … >/dev/null`, marker-gesichert). → läuft je frischem Container **einmal**, schreibt nur ins Log, **kostet keinen Kontext/Token**.

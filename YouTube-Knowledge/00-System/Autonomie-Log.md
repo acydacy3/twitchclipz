@@ -17,7 +17,7 @@ tags: [system, autonomie, messung, n+1, audit]
 
 | Kategorie | Max | Kriterien |
 |---|---|---|
-| **A. Retrieval** | 30 | `analyse.py` ran (5) · 15 Pflicht-Dateien gelesen, nicht aus Gedächtnis (15) · Current-State konsultiert (5) · Failure-Memory geprüft (5) |
+| **A. Retrieval** | 30 | `analyse.py` ran (5) · alle §2-Pflicht-Dateien gelesen, nicht aus Gedächtnis (15) · Current-State konsultiert (5) · Failure-Memory geprüft (5) |
 | **B. Tool-Autonomie** | 40 | HF Z-Image proaktiv genutzt ohne Aufforderung (10) · Stock-Bilder autonom gesourct (10) · SEO-Tools ran (nb_suggest/trends) (10) · Konkurrenz-Referenz geprüft (10) |
 | **C. Animation** | 15 | Animation-Entscheidung dokumentiert (5) · Animation produziert (10) ODER stichhaltige Begründung warum nicht (5) |
 | **D. Persistenz** | 15 | Neues Learning/Observation notiert (5) · git commit+push (5) · YPP-Fortschritt geloggt (5) |

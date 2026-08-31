@@ -9,7 +9,7 @@ tags: [process, produktion, runbook, pipeline]
 
 # Produktions-Runbook — ein Video von A bis Z (erprobt an V4 Okene)
 
-> Damit die nächste Folge NICHT alle Fallen neu entdeckt. Reihenfolge + die konkreten Stolpersteine.
+> **Detail-Ebene zur [[Produktion-Pflichtliste]]** (= kanonischer Prozess). Hier: konkrete Pipeline-Mechanik + Stolpersteine. Der Gesamt-Ablauf steht in der Pflichtliste.
 
 ## 0. Assets vom Drive holen (der teure Teil)
 - MCP-Download zieht base64 in den Chat → **viel zu teuer**. Stattdessen **`gdown --folder <url>`** (lädt direkt auf Platte).
@@ -42,4 +42,4 @@ tags: [process, produktion, runbook, pipeline]
 [[Analytics-Loop]] · [[Learning-Editing-Video]] · [[Learning-Bilder-Prompts]] · [[Video-04-Okene]] · [[Current-State]]
 
 ## AUTONOME Werkzeuge (immer mitnutzen)
-- **SEO:** `tools/nb_suggest.py`/`nb_trends.py` vor Titel/Themen. - **Bilder:** `nb_fetch_broll.py` (Commons) + `tools/nb_openverse.py` (mehr CC); Schlüsselbilder generieren + `tools/nb_upscale.py` (schärfen/`--cutout` freistellen). - **Animation:** `tools/manim_scenes.py` (Manim) für Diagramme/Querschnitt → `{"clip":...}`. - **Timing:** `tools/nb_tts.py` (Piper Scratch-VO). - **Ziel:** `tools/nb_views90.py` nach Upload. Details: [[Werkzeuge-Installiert]].
+- **SEO:** `tools/nb_suggest.py`/`nb_trends.py` vor Titel/Themen. - **Bilder:** `nb_fetch_broll.py` (Commons) + `tools/nb_openverse.py` (mehr CC); Schlüsselbilder generieren + `tools/nb_upscale.py` (schärfen/`--cutout` freistellen). - **Animation:** `tools/manim_scenes.py` (Manim) für Diagramme/Querschnitt → `{"clip":...}`. - **Timing:** `tools/nb_tts.py` (Piper Scratch-VO). - **Ziel:** `tools/nb_views90.py` nach Upload. Volles Repertoire: [[Werkzeug-Register]].

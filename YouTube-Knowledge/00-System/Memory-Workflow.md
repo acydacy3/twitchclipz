@@ -15,8 +15,8 @@ Session-Start
  → Statusbericht des Hooks lesen (Pipeline/Werkzeuge/Zugänge/Netz + Pflichtliste-Reminder)
  → CLAUDE.md ist geladen (Einstieg + Rules, inkl. n+1-Constraint)
  → [[Current-State]] öffnen
- → Bei Produktion: [[Produktion-Pflichtliste]] VOLLSTÄNDIG lesen (alle 15 Pflicht-Dateien:
-   13 Learnings + Failure-Memory + Animation-Library, Werkzeug-Checklist, Konkurrenz-Referenz) — nicht aus Gedächtnis
+ → Bei Produktion: [[Produktion-Pflichtliste]] VOLLSTÄNDIG lesen (alle in §2 gelisteten Pflicht-Dateien:
+   Learnings + Failure-Memory + Animation-Library, Werkzeug-Checklist, Konkurrenz-Referenz) — nicht aus Gedächtnis
 ```
 Retrieval-Regel: Die **Pflichtliste ist das Retrieval-Protokoll für Produktion** — sie listet
 exakt welche Dateien zu lesen sind. Nichts weglassen, nichts überspringen, auch wenn
@@ -40,7 +40,7 @@ neue Erkenntnis
  → prüfen: wird daraus eine Rule? → nur dann [[Current-State]]/CLAUDE.md anpassen
  → [[Autonomie-Log]] updaten: A/B/C/D-Score + Strafen + User-Prompts dieser Session
  → git add/commit → IMMER auf Feature-Branch UND auf main mergen + pushen (siehe unten)
- → optional: geänderte Note nach Drive (nur für Nutzer-Ansicht in Obsidian)
+ → optional: geänderte Note nach Drive (nur für Nutzer-Ansicht)
 ```
 
 ## ⚠️ PFLICHT: Vault-Änderungen IMMER auf main pushen
@@ -74,7 +74,7 @@ dem aktuellen Vault-Stand entsprechen.
 ## Persistenz-Priorität (git push freigeschaltet, 25.08.)
 1. **Git `main`** — primärer, versionierter Persistenz-Träger; neuer Container klont main → voller Stand.
 2. **Git Feature-Branch** — für laufende Arbeit, MUSS am Session-Ende in main einfließen.
-3. **Google Drive** — optional (Nutzer-Ansicht in Obsidian, Asset-Transfer via gdown).
+3. **Google Drive** — optional (Nutzer-Ansicht, Asset-Transfer via gdown).
 4. **SendUserFile an Nutzer** — für fertige Videos (z. B. TikTok).
 
 Details/Historie: [[Decision-Git-vs-Drive-Persistenz]].

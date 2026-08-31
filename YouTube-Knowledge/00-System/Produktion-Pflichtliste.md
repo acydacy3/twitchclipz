@@ -8,9 +8,8 @@ tags: [system, pflicht, n+1, produktion]
 
 # Vor jedem Produktionsschritt — Pflichtliste (n+1)
 
-> **Diese Datei IMMER lesen, bevor ein Video produziert, geschnitten, getextet oder hochgeladen wird.**
-> Kein Schritt wird übersprungen. Kein Werkzeug wird ausgelassen, weil der Nutzer es nicht erwähnte.
-> Autonome Ausführung ist Pflicht, nicht Option.
+> **⭐ DIES IST DER KANONISCHE PRODUKTIONSPROZESS.** Immer lesen, bevor ein Video produziert, geschnitten, getextet oder hochgeladen wird. Kein Schritt übersprungen, kein Werkzeug ausgelassen. Autonome Ausführung ist Pflicht, nicht Option.
+> **Zwei Detail-Ebenen darunter** (keine konkurrierenden Prozesse): [[Produktions-Runbook]] = konkrete Pipeline-Mechanik (gdown, Render-Cap, Upload-Limit, Schedule) · [[Schnitt-Protokoll]] = Schnitt-/Caption-Detailspecs. Der Ablauf/Prozess selbst steht HIER.
 
 ---
 
@@ -78,7 +77,7 @@ python3 analyse.py                       # Detailbericht (Uploads, Termine)
 
 ## 2. Learnings LESEN — alle, vollständig (nicht aus dem Gedächtnis)
 
-Diese 15 Dateien (13 Learnings + Failure-Memory + Animation-Library) werden gelesen, bevor das erste Bild, der erste Satz oder das erste Tag entsteht:
+**Diese Tabelle IST die vollständige Pflicht-Leseliste** (keine feste Zahl — wächst mit neuen Learnings). Alle werden gelesen, bevor das erste Bild, der erste Satz oder das erste Tag entsteht:
 
 | Datei | Was drin steht |
 |---|---|
@@ -91,6 +90,7 @@ Diese 15 Dateien (13 Learnings + Failure-Memory + Animation-Library) werden gele
 | `01-Learnings/Editing-Ton/Learning-Editing-Ton.md` | LUFS-Ziel, Musik-db, Ducking |
 | `01-Learnings/Editing-Video/Learning-Editing-Video.md` | Render-Reihenfolge, Bildquellen, Backup |
 | `01-Learnings/Storytelling/Learning-Storytelling-Shorts.md` | Narrationsbogen, Tempo, Cliffhanger |
+| `01-Learnings/Storytelling/Short-Konzept-Blueprint.md` | Kopierbares Bauprinzip viraler Hits: Beats, Bewegtbild, Hook |
 | `01-Learnings/Thumbnails/Learning-Thumbnails-Cover.md` | Cover-Regeln, Schrift, Kontrast |
 | `01-Learnings/Topics/Learning-Topics-Themenwahl.md` | Nischen-Check, Sättigungsgrad |
 | `01-Learnings/Topics/Learning-Competitor-Strategie.md` | Scary Interesting als Rollenmodell, Längenzone 40–55s, Themen-Lücken, Re-Run-Strategie |

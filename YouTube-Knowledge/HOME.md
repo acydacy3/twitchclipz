@@ -7,11 +7,15 @@ tags: [moc, home]
 
 # 🏠 YouTube-Knowledge — Langzeitgedächtnis des Kanals
 
+> **⏱️ NEU HIER? 60-Sekunden-Einstieg:**
+> 1. [[Current-State]] — aktueller Kanalstand, was zuletzt lief, was ansteht.
+> 2. [[Produktion-Pflichtliste]] — **DER kanonische Produktionsprozess** (Gates §0a–§0d + Ablauf §1–§7).
+> 3. Für die Aufgabe gezielt retrieven: `01-Learnings/` · [[Failure-Memory]] · `05-Decisions/`.
+> Persistenz: alles am Session-Ende auf `main` mergen ([[Memory-Workflow]]).
+
 > Dies ist das **persistente Gedächtnis** des Kanals *Katastrophenprotokoll*.
-> Es überlebt jede Claude-Session. Bevor eine wichtige Entscheidung getroffen
-> wird, wird hier **zuerst gesucht** (Retrieval before Reinvention).
-> Öffne diesen Ordner als **Vault in Obsidian** — dann sind alle `[[Links]]`
-> und der Graph nutzbar.
+> Es überlebt jede Claude-Session. Vor jeder wichtigen Entscheidung wird hier **zuerst gesucht** (Retrieval before Reinvention).
+> Reiner Markdown-Ordner — navigiert über `[[Wikilinks]]` und `Grep`/`Read`.
 
 ## Wie dieses Gedächtnis funktioniert (in 4 Sätzen)
 1. **Nicht jede Erfahrung ist ein Learning.** Wir trennen Observation → Hypothese → Experiment → Result → Learning → Rule. Siehe [[Knowledge-Architecture]].
@@ -72,5 +76,5 @@ rechtfertigt (bislang tut das keiner). Siehe [[Agent-Architecture]]:
 
 ## ⚠️ Nie vergessen (Kern-Constraints des Nutzers)
 - **Das Originalskript kommt IMMER vom Nutzer.** Kürzen/formen: ja. Erfinden: nein.
-- **Der Nutzer arbeitet nicht mit der Kommandozeile** und kann **keine `.md`-Dateien öffnen** → längere Ergebnisse als **Artifact-Seite**, nicht als Textdatei. (Obsidian ist die Ausnahme: dort liest er das Vault.)
+- **Der Nutzer arbeitet nicht mit der Kommandozeile** und kann **keine `.md`-Dateien öffnen** → längere Ergebnisse als **Artifact-Seite**, nicht als Textdatei.
 - **Zahlen schlagen Vermutungen, immer.**

@@ -1,9 +1,9 @@
 # Katastrophenprotokoll — Operating Context
 
 Diese Datei lädt automatisch zu Sitzungsbeginn. Sie ist der **Einstieg**, kein
-Archiv. Das eigentliche Langzeitgedächtnis liegt im **Obsidian-Vault**
-`YouTube-Knowledge/` — dort steht das Detailwissen mit Evidenz, Confidence und
-Historie. **Öffne `YouTube-Knowledge/` als Vault in Obsidian**, um Links/Graph zu nutzen.
+Archiv. Das eigentliche Langzeitgedächtnis liegt im **Vault**
+`YouTube-Knowledge/` — reiner Markdown-Ordner mit Detailwissen (Evidenz, Confidence,
+Historie), navigiert über `[[Wikilinks]]` und `Grep`/`Read`.
 
 ---
 
@@ -32,7 +32,7 @@ git log --oneline main..HEAD   # Commits die noch nicht auf main sind
 1. **Das Originalskript kommt IMMER vom Nutzer.** Kürzen/formen: ja. Erfinden: nein.
 2. **Der Nutzer arbeitet nicht mit der Kommandozeile** → Ergebnisse als **Artifact-Seite** ausliefern.
 3. **Zahlen schlagen Vermutungen.** `analyse.py` gewinnt gegen Notiertes.
-4. **n+1 — vor JEDEM Produktionsschritt:** `YouTube-Knowledge/00-System/Produktion-Pflichtliste.md` **lesen und abarbeiten** — alle 15 Pflicht-Dateien (13 Learnings + Failure-Memory + Animation-Library), alle Werkzeuge, Konkurrenz-Check. Nicht ankündigen, einfach tun. Der Nutzer soll HF-Quota, Manim, Remotion, Stock-Bilder, SEO **niemals selbst ansprechen müssen**. **Selbst-Fortschritt ist Pflicht:** jede Reihe integriert autonom **≥1 neue kostenlose Fähigkeit** (Capability-Gate §0c) und **prüft das fertige Rendern per Selbst-QC — ansehen (`videoblick.py`) + hören (`hoeren.py`) — vor jedem Upload** (§0d). Ohne diese zwei Riegel wiederholt sich V8 (Werkzeug war da, wurde nicht genutzt / Ergebnis nie geprüft).
+4. **n+1 — vor JEDEM Produktionsschritt:** `YouTube-Knowledge/00-System/Produktion-Pflichtliste.md` **lesen und abarbeiten** — alle in Pflichtliste §2 gelisteten Pflicht-Dateien (Learnings + Failure-Memory + Animation-Library), alle Werkzeuge, Konkurrenz-Check. Nicht ankündigen, einfach tun. Der Nutzer soll HF-Quota, Manim, Remotion, Stock-Bilder, SEO **niemals selbst ansprechen müssen**. **Selbst-Fortschritt ist Pflicht:** jede Reihe integriert autonom **≥1 neue kostenlose Fähigkeit** (Capability-Gate §0c) und **prüft das fertige Rendern per Selbst-QC — ansehen (`videoblick.py`) + hören (`hoeren.py`) — vor jedem Upload** (§0d). Ohne diese zwei Riegel wiederholt sich V8 (Werkzeug war da, wurde nicht genutzt / Ergebnis nie geprüft).
    - **STEHENDE REGEL (31.08., bis zum nächsten Learning): Bewegtbild-Pflicht für Hook & Retention.** Jeder Short öffnet mit **Bewegung in Sekunde 1** und nutzt das **volle kostenlose Bewegtbild-Repertoire** (Manim · **Remotion** · **Wan2.1-I2V** · SVG) — nie reine Standbild-Diashow. ≥1 bewegter Schlüssel-Shot je Short, blockierend im §0d-QC. Autonom — der Nutzer spricht das nie an. Details: [[Short-Konzept-Blueprint]], Pflichtliste §5.
 5. **Ein Learning ist nicht automatisch eine Rule.** Confidence sichtbar lassen (Low/Medium/High/Very High).
 6. **Erkenntnisse persistieren:** `git add/commit/push` — **Push ist freigeschaltet**. Ablauf: `/merken`.
