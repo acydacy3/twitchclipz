@@ -30,6 +30,7 @@ Kanal: Abos, Gesamt-Aufrufe, Traffic-Quellen (For-You vs. Suche vs. Kanal).
 2. **Learnings fortschreiben** — Confidence neu bewerten, Widersprüche via `History` bewahren (nicht überschreiben).
 3. **Konkrete Anweisung fürs nächste Video** ableiten: welche **Hook-Bauform**, welche **Länge**, welches **Thema-Muster** (Gewinner wiederholen, Verlierer meiden).
 4. Bei Bedarf `Current-State` Kern-Rules anpassen; `/merken` autonom.
+5. **CTR-Check (Studio-Screenshot, da API-los):** Nutzer liefert „Aufrufe nach Videos" (28 T). Extrahieren + in [[CTR-Benchmark-2026-08]] loggen. Flaggen nach Schwellen: **CTR <0,5 % @ ≥1.500 Imp = Titel/Cover-Leck** (überarbeiten) · **CTR >3 % = Gewinner-Pattern** (replizieren) · **+Abos ≥3 = Sub-Konverter** (Story-Typ doppeln).
 
 ## Aktueller Stand (24.08., n=36)
 - Gewinner-Hook = **Zahlen-/Kontrast-Kalt-Einstieg** („92 Passagiere. 1 Überlebende." 1.807).

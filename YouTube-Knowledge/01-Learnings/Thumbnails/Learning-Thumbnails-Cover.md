@@ -55,6 +55,7 @@ Analyse von 8 Thumbnails (HtSS, Scary Interesting) bestätigt + ergänzt:
 - 17.08.: Zweiteilung + Format-Fehler; Runde 2 korrigierte „ersten Frame leer".
 - 27.08.: Competitor-Analyse ergänzt — Shorts = Frame-Qualität; Longform = unmögliches Bild.
 - 27.08. (Korrektur): Custom-Thumbnail-Upload für Shorts bestätigt möglich. Rule präzisiert: Quelle = bereits produzierte Szene + Banner ODER Screenshot; niemals extra generieren.
+- **31.08. CTR-Monitoring (High):** Eigene Daten — Kanal-⌀ CTR 1,5 % (niedrig). ~5 Videos verbrennen Reichweite: hohe Impressionen (2–3,7k), CTR <0,5 %. Ursache: schwaches erstes Bild/Cover + wirrer Titel. **Schwelle: CTR <0,5 % bei ≥1.500 Impressionen = Cover/erstes-Bild überarbeiten** (starkes Schlüsselbild, klarer Kontrast, kein wirres Motiv). Je Analytics-Zyklus prüfen → [[CTR-Benchmark-2026-08]], [[Analytics-Loop]].
 
 ## Related
 [[Learning-Titel]] · [[Learning-Editing-Video]] · [[Learning-Cross-Platform-TikTok]]
