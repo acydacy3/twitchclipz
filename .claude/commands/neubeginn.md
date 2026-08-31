@@ -27,12 +27,15 @@ Besonders: Originalskript kommt **immer** vom Nutzer; er nutzt **keine** Kommand
 - Scheitert es an Zugangsdaten: in zwei Sätzen sagen, was einzutragen ist, weiter mit Schritt 4.
 - Läuft es: **gemessene Zahlen gewinnen** gegen alles Notierte → `Current-State.md` aktualisieren.
 
-## Schritt 4 — Repo ist aktuell (git push freigeschaltet)
-`git push` funktioniert (seit 25.08.). Dieser Container hat beim Start den vollen
-Stand geklont; `git pull` holt zur Sicherheit Neueres. **Drive ist nur noch optional**
-(Nutzer-Ansicht in Obsidian, Asset-Transfer via gdown). Ältere Drive-Dateien
-(`REGELN.md`, `START-HIER.md`, `LEARNINGS-*.md` vom 15./16.08.) sind **Altlast** —
-bei Widerspruch gilt Vault/CLAUDE.md.
+## Schritt 4 — Repo-Stand prüfen (main ist die Wahrheit)
+Neue Container klonen `main`. Prüfe den Stand:
+```bash
+git fetch origin main
+git log --oneline main..HEAD   # Commits die noch NICHT auf main sind
+```
+- Commits auf main fehlen lokal → `git pull origin main` (frischer Container).
+- Commits NUR auf Feature-Branch → Vault veraltet gegenüber deiner Arbeit → am Session-Ende ZWINGEND auf main mergen (`/merken` Schritt 2).
+Drive ist optional (Nutzer-Ansicht in Obsidian). Bei Widerspruch gilt Vault/CLAUDE.md.
 
 ## Schritt 5 — Melden
 Höchstens 15 Zeilen, einfache Sprache: **Kanalstand · was zuletzt lief · was ansteht ·

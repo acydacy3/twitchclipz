@@ -51,7 +51,7 @@ python3 analyse.py                       # Detailbericht (Uploads, Termine)
 
 ## 2. Learnings LESEN — alle, vollständig (nicht aus dem Gedächtnis)
 
-Diese 14 Dateien werden gelesen, bevor das erste Bild, der erste Satz oder das erste Tag entsteht:
+Diese 15 Dateien (13 Learnings + Failure-Memory + Animation-Library) werden gelesen, bevor das erste Bild, der erste Satz oder das erste Tag entsteht:
 
 | Datei | Was drin steht |
 |---|---|
