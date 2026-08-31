@@ -98,5 +98,26 @@ tags: [ideen, pipeline, recherche, video]
 - **Mauro Prosperi — 9 Tage Sahara (1994):** Marathon des Sables, Sandsturm, **291 km falsch**, ~9–10 Tage fast ohne Wasser, Fledermausblut/Urin, Suizidversuch scheitert (Blut zu dick) → rettet ihn; Tuareg finden ihn. Hook: „Er wollte sich die Pulsadern öffnen — kein Blut floss. Zu dick. Das rettete ihn." DE teils via Galileo bekannt → nüchterne Fall-Erzählung differenziert. Alternative: Alvarenga (438 Tage Pazifik), aber sensibler.
 - **Vorbehalt:** vidIQ war ohne Credits → hartes Kriterium (junger DE-Kanal 1–7 Mon., >200k) vor Schnitt per `vidiq_outliers` nachziehen.
 
+## ⚔️ SCHLACHTPLAN — nächste 10 Videos (31.08.2026, nach Junge-Ausbrecher-Recherche)
+
+Basis: [[Junge-Ausbrecher-2026-08]]. Regeln angewandt: Achse körperliche Unmöglichkeit/Isolation (Okene-Muster, alle 10), Titel-Open-Loop „…dann [Cliffhanger]" + Emoji (belegt: NovaFactZero 2,2M/434k), DE-Lücke, ≥1 bewegter Schlüssel-Shot je Video (I2V/Remotion, §0c), Personenname nur wo google-bar, Story-Score ≥70.
+
+| # | Geschichte | Säule | Warum jetzt (Beleg) | Hook-Angle (erste 3s) | Länge | Titel-Entwurf | Kern-Tags | Score |
+|---|---|---|---|---|---|---|---|---|
+| 1 | **Loveparade Duisburg 2010** | Ein Fehler löste alles aus | DE-Anker, kein DE-Faceless-Kanal (Moat); emotional maximal → **Breakout #1** | „Um 16:00 wollten Zehntausende hinein. Es gab nur einen Weg." | 30–45s | Loveparade 2010: Der Tunnel wurde zur Falle — dann… 😱 | loveparade, duisburg 2010, katastrophe, wahre geschichte | 90 |
+| 2 | **Anden-Absturz 1972** (Society of the Snow) | Sie hätten sterben müssen | Film 2023 → aktive Suche; Isolation+Tabu → **Breakout #2** | „72 Tage im Schnee. Was sie taten, um zu überleben, änderte alles." | 45–55s | 72 Tage im Schnee gefangen — dann trafen sie DIESE Entscheidung 😳 | anden 1972, society of the snow, überleben, flugzeugabsturz | 95 |
+| 3 | **Joe Simpson** (Touching the Void) | Rettung war unmöglich | Bergsteiger-Klassiker, DE nüchtern unbesetzt; google-bar | „Sein Partner musste das Seil durchschneiden. Er fiel in die Dunkelheit." | 30–45s | Sein Freund schnitt das Seil durch — dann… ❄️ | joe simpson, touching the void, bergsteigen, überleben | 92 |
+| 4 | **Beck Weathers** (Everest 1996) | Sie hätten sterben müssen | „Into Thin Air" bekannt, DE leer; blind zurückgekrochen | „Man erklärte ihn zweimal für tot. Dann stand er auf." | 30–45s | Zweimal für tot erklärt am Everest — dann geschah DAS 😱 | beck weathers, everest 1996, into thin air, überleben | 87 |
+| 5 | **Poon Lim** (133 Tage Floß) | Physisch unvorstellbar | Ozean-Isolation (Okene-Achse), Weltrekord; DE unbesetzt | „133 Tage allein auf einem Floß mitten im Atlantik." | 25–39s | 133 Tage allein auf dem Ozean — wie überlebt man das? 🌊 | poon lim, überleben ozean, floß, wahre geschichte | 82 |
+| 6 | **Vesna Vulović** (10 km Sturz) | Physisch unvorstellbar | Guinness-Rekord, paradox, google-bar; extrem teilbar | „Sie fiel 10.000 Meter ohne Fallschirm. Sie lebte." | 20–30s | Sie stürzte 10 km ohne Fallschirm — und überlebte? 😳 | vesna vulovic, flugzeugabsturz, überleben, rekord | 88 |
+| 7 | **Yossi Ghinsberg** (3 Wochen Amazonas) | Rettung war unmöglich | Film „Jungle" (Radcliffe) → Suchnachfrage; Isolation | „Allein im Amazonas. Kein Weg zurück, keine Nahrung, keine Karte." | 30–45s | 3 Wochen allein im Amazonas verloren — dann… 🌿 | yossi ghinsberg, jungle, amazonas, überleben | 88 |
+| 8 | **José Alvarenga** (438 Tage Pazifik) | Physisch unvorstellbar | Längste Solo-See-Überlebung; Ozean-Achse; DE unbesetzt | „438 Tage abgetrieben. Er landete an einem anderen Kontinent." | 30–45s | 438 Tage auf dem Pazifik abgetrieben — dann… 🌊 | jose alvarenga, pazifik, überleben, schiffbruch | 88 |
+| 9 | **Ada Blackjack** (Arktis 1921) | Sie hätten sterben müssen | Einzige Überlebende, Frau lernt jagen; Isolation; DE leer | „Vier gingen. Nur sie kam zurück — und lernte zu überleben." | 30–45s | 4 Menschen, 1 Überlebende in der Arktis — wie? ❄️ | ada blackjack, arktis, wrangel, überleben | 83 |
+| 10 | **Anna Bågenholm** (80 min klinisch tot) | Physisch unvorstellbar | Kältester überlebender Mensch, medizinisches Paradox; google-bar | „Ihr Herz stand 80 Minuten still. Dann kam sie zurück." | 20–30s | 80 Minuten klinisch tot im Eis — dann… 🫀 | anna bagenholm, unterkühlung, klinisch tot, medizin | 85 |
+
+**Produktions-Reihenfolge (Begründung):** Start mit **1 Loveparade** (DE-Breakout, Moat maximal ausspielen), dann **2 Anden** (film-getriebene Suche, weltweit teilbar) — beide bewusst als Ausbruch-Versuch. Danach 3–4 (Berg-Cluster, gemeinsame Bildwelt = effizient), 5/8 (Ozean-Cluster), 6/10 (kurz+paradox, für Rewatch-Loop-Test), 7 (Dschungel, neues Setting), 9 (Arktis). **Ausbruch-Kandidaten: #1 Loveparade + #2 Anden.**
+
+**Visuelle Pflicht je Produktion:** ≥1 bewegter Schlüssel-Shot (Wan2.1-I2V/Remotion), Bewegung in Sekunde 1, einheitliche LUT. Details [[Junge-Ausbrecher-2026-08]].
+
 ## Related
-[[Learning-Bilder-Prompts]] · [[Learning-Topics-Themenwahl]] · [[Analytics-Loop]] · [[Current-State]] · [[Failure-Memory]]
+[[Junge-Ausbrecher-2026-08]] · [[Learning-Bilder-Prompts]] · [[Learning-Topics-Themenwahl]] · [[Learning-Titel]] · [[Analytics-Loop]] · [[Current-State]] · [[Failure-Memory]]
