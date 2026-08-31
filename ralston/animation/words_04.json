@@ -1,432 +1,530 @@
 [
-  {
-    "word": "Ralsdund",
-    "start": 0.0,
-    "end": 0.62
-  },
-  {
-    "word": "versucht",
-    "start": 0.62,
-    "end": 0.94
-  },
-  {
-    "word": "er",
-    "start": 0.94,
-    "end": 1.18
-  },
-  {
-    "word": "alles.",
-    "start": 1.18,
-    "end": 1.48
-  },
-  {
-    "word": "Er",
-    "start": 1.96,
-    "end": 2.06
-  },
-  {
-    "word": "meiselte",
-    "start": 2.06,
-    "end": 2.52
-  },
-  {
-    "word": "Stunden",
-    "start": 2.52,
-    "end": 2.82
-  },
-  {
-    "word": "lang",
-    "start": 2.82,
-    "end": 3.02
-  },
-  {
-    "word": "mit",
-    "start": 3.02,
-    "end": 3.16
-  },
-  {
-    "word": "dem",
-    "start": 3.16,
-    "end": 3.28
-  },
-  {
-    "word": "Taschenmesser",
-    "start": 3.28,
-    "end": 3.88
-  },
-  {
-    "word": "am",
-    "start": 3.88,
-    "end": 4.04
-  },
-  {
-    "word": "Fels,",
-    "start": 4.04,
-    "end": 4.32
-  },
-  {
-    "word": "millimeter",
-    "start": 4.7,
-    "end": 4.94
-  },
-  {
-    "word": "für",
-    "start": 4.94,
-    "end": 5.26
-  },
-  {
-    "word": "millimeter.",
-    "start": 5.26,
-    "end": 5.54
-  },
-  {
-    "word": "Nach",
-    "start": 6.26,
-    "end": 6.36
-  },
-  {
-    "word": "15",
-    "start": 6.36,
-    "end": 6.76
-  },
-  {
-    "word": "Stunden",
-    "start": 6.76,
-    "end": 7.28
-  },
-  {
-    "word": "war",
-    "start": 7.28,
-    "end": 7.58
-  },
-  {
-    "word": "der",
-    "start": 7.58,
-    "end": 7.7
-  },
-  {
-    "word": "Fels",
-    "start": 7.7,
-    "end": 8.02
-  },
-  {
-    "word": "kaum",
-    "start": 8.02,
-    "end": 8.26
-  },
-  {
-    "word": "angekratzt.",
-    "start": 8.26,
-    "end": 8.98
-  },
-  {
-    "word": "Dann",
-    "start": 9.34,
-    "end": 9.46
-  },
-  {
-    "word": "baute",
-    "start": 9.46,
-    "end": 9.74
-  },
-  {
-    "word": "er",
-    "start": 9.74,
-    "end": 9.94
-  },
-  {
-    "word": "ein",
-    "start": 9.94,
-    "end": 10.12
-  },
-  {
-    "word": "Flaschenzug",
-    "start": 10.12,
-    "end": 10.68
-  },
-  {
-    "word": "aus",
-    "start": 10.68,
-    "end": 10.86
-  },
-  {
-    "word": "dem",
-    "start": 10.86,
-    "end": 11.02
-  },
-  {
-    "word": "Seil,",
-    "start": 11.02,
-    "end": 11.38
-  },
-  {
-    "word": "das",
-    "start": 11.46,
-    "end": 11.62
-  },
-  {
-    "word": "er",
-    "start": 11.62,
-    "end": 11.76
-  },
-  {
-    "word": "aber",
-    "start": 11.76,
-    "end": 11.86
-  },
-  {
-    "word": "sich",
-    "start": 11.86,
-    "end": 12.0
-  },
-  {
-    "word": "hatte.",
-    "start": 12.0,
-    "end": 12.24
-  },
-  {
-    "word": "Er",
-    "start": 12.62,
-    "end": 12.68
-  },
-  {
-    "word": "zog",
-    "start": 12.68,
-    "end": 12.94
-  },
-  {
-    "word": "mit",
-    "start": 12.94,
-    "end": 13.12
-  },
-  {
-    "word": "seiner",
-    "start": 13.12,
-    "end": 13.3
-  },
-  {
-    "word": "gesamten",
-    "start": 13.3,
-    "end": 13.8
-  },
-  {
-    "word": "Körperkraft",
-    "start": 13.8,
-    "end": 14.44
-  },
-  {
-    "word": "gegen",
-    "start": 14.44,
-    "end": 14.82
-  },
-  {
-    "word": "360",
-    "start": 14.82,
-    "end": 15.66
-  },
-  {
-    "word": "kg,",
-    "start": 15.66,
-    "end": 16.16
-  },
-  {
-    "word": "mit",
-    "start": 17.04,
-    "end": 17.24
-  },
-  {
-    "word": "einer",
-    "start": 17.24,
-    "end": 17.54
-  },
-  {
-    "word": "Hand.",
-    "start": 17.54,
-    "end": 17.76
-  },
-  {
-    "word": "Der",
-    "start": 18.3,
-    "end": 18.5
-  },
-  {
-    "word": "Stein",
-    "start": 18.5,
-    "end": 18.82
-  },
-  {
-    "word": "bewegte",
-    "start": 18.82,
-    "end": 19.26
-  },
-  {
-    "word": "sich",
-    "start": 19.26,
-    "end": 19.46
-  },
-  {
-    "word": "kein",
-    "start": 19.46,
-    "end": 19.68
-  },
-  {
-    "word": "Millimeter.",
-    "start": 19.68,
-    "end": 20.14
-  },
-  {
-    "word": "Mit",
-    "start": 20.66,
-    "end": 20.8
-  },
-  {
-    "word": "jedem",
-    "start": 20.8,
-    "end": 21.06
-  },
-  {
-    "word": "Versuch",
-    "start": 21.06,
-    "end": 21.48
-  },
-  {
-    "word": "verbrauchte",
-    "start": 21.48,
-    "end": 22.1
-  },
-  {
-    "word": "er",
-    "start": 22.1,
-    "end": 22.24
-  },
-  {
-    "word": "Energie,",
-    "start": 22.24,
-    "end": 22.6
-  },
-  {
-    "word": "die",
-    "start": 22.84,
-    "end": 22.94
-  },
-  {
-    "word": "er",
-    "start": 22.94,
-    "end": 23.0
-  },
-  {
-    "word": "nicht",
-    "start": 23.0,
-    "end": 23.1
-  },
-  {
-    "word": "hatte.",
-    "start": 23.1,
-    "end": 23.38
-  },
-  {
-    "word": "Er",
-    "start": 23.94,
-    "end": 24.02
-  },
-  {
-    "word": "war",
-    "start": 24.02,
-    "end": 24.16
-  },
-  {
-    "word": "komplett",
-    "start": 24.16,
-    "end": 24.52
-  },
-  {
-    "word": "allein.",
-    "start": 24.52,
-    "end": 24.82
-  },
-  {
-    "word": "In",
-    "start": 25.56,
-    "end": 25.7
-  },
-  {
-    "word": "einer",
-    "start": 25.7,
-    "end": 25.94
-  },
-  {
-    "word": "Innenfelsslucht,",
-    "start": 25.94,
-    "end": 26.8
-  },
-  {
-    "word": "mit",
-    "start": 27.32,
-    "end": 27.52
-  },
-  {
-    "word": "Lebensmitteln",
-    "start": 27.52,
-    "end": 28.18
-  },
-  {
-    "word": "für",
-    "start": 28.18,
-    "end": 28.38
-  },
-  {
-    "word": "Stunden,",
-    "start": 28.38,
-    "end": 28.7
-  },
-  {
-    "word": "und",
-    "start": 28.7,
-    "end": 29.34
-  },
-  {
-    "word": "er",
-    "start": 29.34,
-    "end": 29.48
-  },
-  {
-    "word": "begreifen,",
-    "start": 29.48,
-    "end": 30.42
-  },
-  {
-    "word": "dass",
-    "start": 30.56,
-    "end": 30.78
-  },
-  {
-    "word": "er",
-    "start": 30.78,
-    "end": 30.92
-  },
-  {
-    "word": "hier",
-    "start": 30.92,
-    "end": 31.1
-  },
-  {
-    "word": "vielleicht",
-    "start": 31.1,
-    "end": 31.42
-  },
-  {
-    "word": "nicht",
-    "start": 31.42,
-    "end": 31.78
-  },
-  {
-    "word": "lebend",
-    "start": 31.78,
-    "end": 32.1
-  },
-  {
-    "word": "herausgehen.",
-    "start": 32.1,
-    "end": 32.56
-  }
+ {
+  "word": "Ralston",
+  "start": 0.0,
+  "end": 0.7,
+  "eos": false
+ },
+ {
+  "word": "versuchte",
+  "start": 0.7,
+  "end": 1.24,
+  "eos": false
+ },
+ {
+  "word": "alles",
+  "start": 1.24,
+  "end": 1.56,
+  "eos": true
+ },
+ {
+  "word": "Er",
+  "start": 2.02,
+  "end": 2.14,
+  "eos": false
+ },
+ {
+  "word": "meißelte",
+  "start": 2.14,
+  "end": 2.6,
+  "eos": false
+ },
+ {
+  "word": "stundenlang",
+  "start": 2.6,
+  "end": 3.1,
+  "eos": false
+ },
+ {
+  "word": "mit",
+  "start": 3.1,
+  "end": 3.24,
+  "eos": false
+ },
+ {
+  "word": "dem",
+  "start": 3.24,
+  "end": 3.46,
+  "eos": false
+ },
+ {
+  "word": "Taschenmesser",
+  "start": 3.46,
+  "end": 3.94,
+  "eos": false
+ },
+ {
+  "word": "am",
+  "start": 3.94,
+  "end": 4.18,
+  "eos": false
+ },
+ {
+  "word": "Fels",
+  "start": 4.18,
+  "end": 4.48,
+  "eos": false
+ },
+ {
+  "word": "Millimeter",
+  "start": 4.92,
+  "end": 5.2,
+  "eos": false
+ },
+ {
+  "word": "für",
+  "start": 5.2,
+  "end": 5.34,
+  "eos": false
+ },
+ {
+  "word": "Millimeter",
+  "start": 5.34,
+  "end": 5.84,
+  "eos": true
+ },
+ {
+  "word": "Nach",
+  "start": 6.26,
+  "end": 6.52,
+  "eos": false
+ },
+ {
+  "word": "15",
+  "start": 6.52,
+  "end": 6.92,
+  "eos": false
+ },
+ {
+  "word": "Stunden",
+  "start": 6.92,
+  "end": 7.4,
+  "eos": false
+ },
+ {
+  "word": "war",
+  "start": 7.4,
+  "end": 7.64,
+  "eos": false
+ },
+ {
+  "word": "der",
+  "start": 7.64,
+  "end": 7.8,
+  "eos": false
+ },
+ {
+  "word": "Fels",
+  "start": 7.8,
+  "end": 8.14,
+  "eos": false
+ },
+ {
+  "word": "kaum",
+  "start": 8.14,
+  "end": 8.4,
+  "eos": false
+ },
+ {
+  "word": "angekratzt",
+  "start": 8.4,
+  "end": 9.22,
+  "eos": true
+ },
+ {
+  "word": "Dann",
+  "start": 9.38,
+  "end": 9.54,
+  "eos": false
+ },
+ {
+  "word": "baute",
+  "start": 9.54,
+  "end": 9.82,
+  "eos": false
+ },
+ {
+  "word": "er",
+  "start": 9.82,
+  "end": 10.0,
+  "eos": false
+ },
+ {
+  "word": "einen",
+  "start": 10.0,
+  "end": 10.26,
+  "eos": false
+ },
+ {
+  "word": "Flaschenzug",
+  "start": 10.26,
+  "end": 10.78,
+  "eos": false
+ },
+ {
+  "word": "aus",
+  "start": 10.78,
+  "end": 10.96,
+  "eos": false
+ },
+ {
+  "word": "dem",
+  "start": 10.96,
+  "end": 11.14,
+  "eos": false
+ },
+ {
+  "word": "Seil",
+  "start": 11.14,
+  "end": 11.54,
+  "eos": false
+ },
+ {
+  "word": "das",
+  "start": 11.54,
+  "end": 11.7,
+  "eos": false
+ },
+ {
+  "word": "er",
+  "start": 11.7,
+  "end": 11.86,
+  "eos": false
+ },
+ {
+  "word": "bei",
+  "start": 11.86,
+  "end": 11.94,
+  "eos": false
+ },
+ {
+  "word": "sich",
+  "start": 11.94,
+  "end": 12.06,
+  "eos": false
+ },
+ {
+  "word": "hatte",
+  "start": 12.06,
+  "end": 12.34,
+  "eos": true
+ },
+ {
+  "word": "Er",
+  "start": 12.62,
+  "end": 12.8,
+  "eos": false
+ },
+ {
+  "word": "zog",
+  "start": 12.8,
+  "end": 13.04,
+  "eos": false
+ },
+ {
+  "word": "mit",
+  "start": 13.04,
+  "end": 13.24,
+  "eos": false
+ },
+ {
+  "word": "seiner",
+  "start": 13.24,
+  "end": 13.4,
+  "eos": false
+ },
+ {
+  "word": "gesamten",
+  "start": 13.4,
+  "end": 13.88,
+  "eos": false
+ },
+ {
+  "word": "Körperkraft",
+  "start": 13.88,
+  "end": 14.62,
+  "eos": false
+ },
+ {
+  "word": "gegen",
+  "start": 14.62,
+  "end": 14.96,
+  "eos": false
+ },
+ {
+  "word": "360",
+  "start": 14.96,
+  "end": 15.94,
+  "eos": false
+ },
+ {
+  "word": "Kilogramm",
+  "start": 15.94,
+  "end": 17.14,
+  "eos": false
+ },
+ {
+  "word": "mit",
+  "start": 17.14,
+  "end": 17.36,
+  "eos": false
+ },
+ {
+  "word": "einer",
+  "start": 17.36,
+  "end": 17.6,
+  "eos": false
+ },
+ {
+  "word": "Hand",
+  "start": 17.6,
+  "end": 17.9,
+  "eos": true
+ },
+ {
+  "word": "Der",
+  "start": 18.38,
+  "end": 18.64,
+  "eos": false
+ },
+ {
+  "word": "Stein",
+  "start": 18.64,
+  "end": 18.9,
+  "eos": false
+ },
+ {
+  "word": "bewegte",
+  "start": 18.9,
+  "end": 19.36,
+  "eos": false
+ },
+ {
+  "word": "sich",
+  "start": 19.36,
+  "end": 19.58,
+  "eos": false
+ },
+ {
+  "word": "kein",
+  "start": 19.58,
+  "end": 19.78,
+  "eos": false
+ },
+ {
+  "word": "Millimeter",
+  "start": 19.78,
+  "end": 20.32,
+  "eos": true
+ },
+ {
+  "word": "Mit",
+  "start": 20.68,
+  "end": 20.96,
+  "eos": false
+ },
+ {
+  "word": "jedem",
+  "start": 20.96,
+  "end": 21.2,
+  "eos": false
+ },
+ {
+  "word": "Versuch",
+  "start": 21.2,
+  "end": 21.64,
+  "eos": false
+ },
+ {
+  "word": "verbrauchte",
+  "start": 21.64,
+  "end": 22.14,
+  "eos": false
+ },
+ {
+  "word": "er",
+  "start": 22.14,
+  "end": 22.3,
+  "eos": false
+ },
+ {
+  "word": "Energie",
+  "start": 22.3,
+  "end": 22.76,
+  "eos": false
+ },
+ {
+  "word": "die",
+  "start": 22.84,
+  "end": 22.96,
+  "eos": false
+ },
+ {
+  "word": "er",
+  "start": 22.96,
+  "end": 23.06,
+  "eos": false
+ },
+ {
+  "word": "nicht",
+  "start": 23.06,
+  "end": 23.32,
+  "eos": false
+ },
+ {
+  "word": "hatte",
+  "start": 23.32,
+  "end": 23.54,
+  "eos": true
+ },
+ {
+  "word": "Er",
+  "start": 23.9,
+  "end": 24.04,
+  "eos": false
+ },
+ {
+  "word": "war",
+  "start": 24.04,
+  "end": 24.24,
+  "eos": false
+ },
+ {
+  "word": "komplett",
+  "start": 24.24,
+  "end": 24.62,
+  "eos": false
+ },
+ {
+  "word": "allein",
+  "start": 24.62,
+  "end": 25.02,
+  "eos": false
+ },
+ {
+  "word": "in",
+  "start": 25.62,
+  "end": 25.8,
+  "eos": false
+ },
+ {
+  "word": "einer",
+  "start": 25.8,
+  "end": 26.0,
+  "eos": false
+ },
+ {
+  "word": "engen",
+  "start": 26.0,
+  "end": 26.630000000000003,
+  "eos": false
+ },
+ {
+  "word": "Felsschlucht",
+  "start": 26.630000000000003,
+  "end": 27.26,
+  "eos": false
+ },
+ {
+  "word": "mit",
+  "start": 27.5,
+  "end": 27.66,
+  "eos": false
+ },
+ {
+  "word": "Lebensmitteln",
+  "start": 27.66,
+  "end": 28.3,
+  "eos": false
+ },
+ {
+  "word": "für",
+  "start": 28.3,
+  "end": 28.48,
+  "eos": false
+ },
+ {
+  "word": "Stunden",
+  "start": 28.48,
+  "end": 28.84,
+  "eos": false
+ },
+ {
+  "word": "und",
+  "start": 29.14,
+  "end": 29.4,
+  "eos": false
+ },
+ {
+  "word": "er",
+  "start": 29.4,
+  "end": 29.58,
+  "eos": false
+ },
+ {
+  "word": "begann",
+  "start": 29.58,
+  "end": 29.84,
+  "eos": false
+ },
+ {
+  "word": "zu",
+  "start": 29.84,
+  "end": 30.0,
+  "eos": false
+ },
+ {
+  "word": "begreifen",
+  "start": 30.0,
+  "end": 30.66,
+  "eos": false
+ },
+ {
+  "word": "dass",
+  "start": 30.82,
+  "end": 30.88,
+  "eos": false
+ },
+ {
+  "word": "er",
+  "start": 30.88,
+  "end": 31.04,
+  "eos": false
+ },
+ {
+  "word": "hier",
+  "start": 31.04,
+  "end": 31.28,
+  "eos": false
+ },
+ {
+  "word": "vielleicht",
+  "start": 31.28,
+  "end": 31.7,
+  "eos": false
+ },
+ {
+  "word": "nicht",
+  "start": 31.7,
+  "end": 31.96,
+  "eos": false
+ },
+ {
+  "word": "lebend",
+  "start": 31.96,
+  "end": 32.14,
+  "eos": false
+ },
+ {
+  "word": "herauskommen",
+  "start": 32.14,
+  "end": 32.44,
+  "eos": false
+ },
+ {
+  "word": "würde",
+  "start": 32.44,
+  "end": 32.74,
+  "eos": true
+ }
 ]

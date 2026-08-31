@@ -1,617 +1,722 @@
 [
-  {
-    "word": "Aron",
-    "start": 0.0,
-    "end": 0.4
-  },
-  {
-    "word": "Raalstund",
-    "start": 0.4,
-    "end": 0.84
-  },
-  {
-    "word": "verlor",
-    "start": 0.84,
-    "end": 1.12
-  },
-  {
-    "word": "seinen",
-    "start": 1.12,
-    "end": 1.44
-  },
-  {
-    "word": "Rechten",
-    "start": 1.44,
-    "end": 1.74
-  },
-  {
-    "word": "unter",
-    "start": 1.74,
-    "end": 2.04
-  },
-  {
-    "word": "Arm,",
-    "start": 2.04,
-    "end": 2.26
-  },
-  {
-    "word": "und",
-    "start": 2.68,
-    "end": 2.8
-  },
-  {
-    "word": "gewann",
-    "start": 2.8,
-    "end": 3.06
-  },
-  {
-    "word": "etwas,",
-    "start": 3.06,
-    "end": 3.48
-  },
-  {
-    "word": "das",
-    "start": 3.72,
-    "end": 3.8
-  },
-  {
-    "word": "er",
-    "start": 3.8,
-    "end": 3.96
-  },
-  {
-    "word": "vorher",
-    "start": 3.96,
-    "end": 4.18
-  },
-  {
-    "word": "nicht",
-    "start": 4.18,
-    "end": 4.42
-  },
-  {
-    "word": "kannte,",
-    "start": 4.42,
-    "end": 4.84
-  },
-  {
-    "word": "sein",
-    "start": 5.16,
-    "end": 5.22
-  },
-  {
-    "word": "eigenes",
-    "start": 5.22,
-    "end": 5.62
-  },
-  {
-    "word": "Leben.",
-    "start": 5.62,
-    "end": 5.86
-  },
-  {
-    "word": "Er",
-    "start": 6.28,
-    "end": 6.38
-  },
-  {
-    "word": "schrieb",
-    "start": 6.38,
-    "end": 6.62
-  },
-  {
-    "word": "ein",
-    "start": 6.62,
-    "end": 6.84
-  },
-  {
-    "word": "Buch",
-    "start": 6.84,
-    "end": 7.04
-  },
-  {
-    "word": "über",
-    "start": 7.04,
-    "end": 7.34
-  },
-  {
-    "word": "die",
-    "start": 7.34,
-    "end": 7.44
-  },
-  {
-    "word": "127",
-    "start": 7.44,
-    "end": 8.22
-  },
-  {
-    "word": "Stunden",
-    "start": 8.22,
-    "end": 8.78
-  },
-  {
-    "word": "in",
-    "start": 8.78,
-    "end": 9.0
-  },
-  {
-    "word": "der",
-    "start": 9.0,
-    "end": 9.12
-  },
-  {
-    "word": "Schlucht.",
-    "start": 9.12,
-    "end": 9.42
-  },
-  {
-    "word": "Es",
-    "start": 9.82,
-    "end": 9.94
-  },
-  {
-    "word": "wurde",
-    "start": 9.94,
-    "end": 10.12
-  },
-  {
-    "word": "ein",
-    "start": 10.12,
-    "end": 10.28
-  },
-  {
-    "word": "biszeller.",
-    "start": 10.28,
-    "end": 10.66
-  },
-  {
-    "word": "Dann",
-    "start": 11.36,
-    "end": 11.44
-  },
-  {
-    "word": "die",
-    "start": 11.44,
-    "end": 11.6
-  },
-  {
-    "word": "Beule",
-    "start": 11.6,
-    "end": 11.88
-  },
-  {
-    "word": "verfindet",
-    "start": 11.88,
-    "end": 12.42
-  },
-  {
-    "word": "es",
-    "start": 12.42,
-    "end": 12.64
-  },
-  {
-    "word": "mit",
-    "start": 12.64,
-    "end": 12.92
-  },
-  {
-    "word": "jemes",
-    "start": 12.92,
-    "end": 13.26
-  },
-  {
-    "word": "Franco",
-    "start": 13.26,
-    "end": 13.58
-  },
-  {
-    "word": "in",
-    "start": 13.58,
-    "end": 13.8
-  },
-  {
-    "word": "der",
-    "start": 13.8,
-    "end": 13.9
-  },
-  {
-    "word": "Hauptrolle.",
-    "start": 13.9,
-    "end": 14.32
-  },
-  {
-    "word": "Der",
-    "start": 14.96,
-    "end": 15.18
-  },
-  {
-    "word": "Film",
-    "start": 15.18,
-    "end": 15.46
-  },
-  {
-    "word": "heißt",
-    "start": 15.46,
-    "end": 15.72
-  },
-  {
-    "word": "127",
-    "start": 15.72,
-    "end": 16.56
-  },
-  {
-    "word": "Stunden.",
-    "start": 16.56,
-    "end": 17.22
-  },
-  {
-    "word": "Raalstend",
-    "start": 17.68,
-    "end": 18.06
-  },
-  {
-    "word": "ist",
-    "start": 18.06,
-    "end": 18.22
-  },
-  {
-    "word": "heute",
-    "start": 18.22,
-    "end": 18.44
-  },
-  {
-    "word": "Motivationsretner,",
-    "start": 18.44,
-    "end": 19.64
-  },
-  {
-    "word": "Ingenieur",
-    "start": 19.96,
-    "end": 20.38
-  },
-  {
-    "word": "und",
-    "start": 20.38,
-    "end": 20.62
-  },
-  {
-    "word": "immer",
-    "start": 20.62,
-    "end": 20.8
-  },
-  {
-    "word": "noch",
-    "start": 20.8,
-    "end": 21.0
-  },
-  {
-    "word": "Bergsteiger",
-    "start": 21.0,
-    "end": 21.66
-  },
-  {
-    "word": "mit",
-    "start": 21.66,
-    "end": 22.0
-  },
-  {
-    "word": "einer",
-    "start": 22.0,
-    "end": 22.2
-  },
-  {
-    "word": "Protesse.",
-    "start": 22.2,
-    "end": 22.66
-  },
-  {
-    "word": "Er",
-    "start": 23.12,
-    "end": 23.28
-  },
-  {
-    "word": "klettert",
-    "start": 23.28,
-    "end": 23.68
-  },
-  {
-    "word": "noch",
-    "start": 23.68,
-    "end": 23.76
-  },
-  {
-    "word": "immer,",
-    "start": 23.76,
-    "end": 24.04
-  },
-  {
-    "word": "und",
-    "start": 24.56,
-    "end": 24.68
-  },
-  {
-    "word": "der",
-    "start": 24.68,
-    "end": 24.78
-  },
-  {
-    "word": "Junge",
-    "start": 24.78,
-    "end": 25.0
-  },
-  {
-    "word": "aus",
-    "start": 25.0,
-    "end": 25.14
-  },
-  {
-    "word": "seiner",
-    "start": 25.14,
-    "end": 25.34
-  },
-  {
-    "word": "Vision",
-    "start": 25.34,
-    "end": 25.72
-  },
-  {
-    "word": "in",
-    "start": 25.72,
-    "end": 25.98
-  },
-  {
-    "word": "der",
-    "start": 25.98,
-    "end": 26.12
-  },
-  {
-    "word": "fünften",
-    "start": 26.12,
-    "end": 26.52
-  },
-  {
-    "word": "Nacht",
-    "start": 26.52,
-    "end": 26.86
-  },
-  {
-    "word": "erexistiert.",
-    "start": 26.86,
-    "end": 27.8
-  },
-  {
-    "word": "Sein",
-    "start": 28.2,
-    "end": 28.5
-  },
-  {
-    "word": "Sohn,",
-    "start": 28.5,
-    "end": 28.86
-  },
-  {
-    "word": "Leo.",
-    "start": 29.02,
-    "end": 29.24
-  },
-  {
-    "word": "Raalstund",
-    "start": 29.840000000000003,
-    "end": 30.26
-  },
-  {
-    "word": "sagt,",
-    "start": 30.26,
-    "end": 30.64
-  },
-  {
-    "word": "der",
-    "start": 30.9,
-    "end": 30.92
-  },
-  {
-    "word": "Moment,",
-    "start": 30.92,
-    "end": 31.18
-  },
-  {
-    "word": "in",
-    "start": 31.58,
-    "end": 31.58
-  },
-  {
-    "word": "dem",
-    "start": 31.58,
-    "end": 31.7
-  },
-  {
-    "word": "Elio",
-    "start": 31.7,
-    "end": 32.0
-  },
-  {
-    "word": "zum",
-    "start": 32.0,
-    "end": 32.2
-  },
-  {
-    "word": "ersten",
-    "start": 32.2,
-    "end": 32.52
-  },
-  {
-    "word": "Mal",
-    "start": 32.52,
-    "end": 32.72
-  },
-  {
-    "word": "auf",
-    "start": 32.72,
-    "end": 32.92
-  },
-  {
-    "word": "die",
-    "start": 32.92,
-    "end": 33.06
-  },
-  {
-    "word": "Hüfte",
-    "start": 33.06,
-    "end": 33.34
-  },
-  {
-    "word": "hoch,",
-    "start": 33.34,
-    "end": 33.54
-  },
-  {
-    "word": "mit",
-    "start": 33.88,
-    "end": 33.94
-  },
-  {
-    "word": "dem",
-    "start": 33.94,
-    "end": 34.1
-  },
-  {
-    "word": "Stumpf",
-    "start": 34.1,
-    "end": 34.42
-  },
-  {
-    "word": "seines",
-    "start": 34.42,
-    "end": 34.7
-  },
-  {
-    "word": "Armes,",
-    "start": 34.7,
-    "end": 35.18
-  },
-  {
-    "word": "war",
-    "start": 35.42,
-    "end": 35.48
-  },
-  {
-    "word": "exakt",
-    "start": 35.48,
-    "end": 35.88
-  },
-  {
-    "word": "wie",
-    "start": 35.88,
-    "end": 36.04
-  },
-  {
-    "word": "in",
-    "start": 36.04,
-    "end": 36.08
-  },
-  {
-    "word": "der",
-    "start": 36.08,
-    "end": 36.18
-  },
-  {
-    "word": "Vision.",
-    "start": 36.18,
-    "end": 36.5
-  },
-  {
-    "word": "Die",
-    "start": 37.18,
-    "end": 37.32
-  },
-  {
-    "word": "127",
-    "start": 37.32,
-    "end": 38.26
-  },
-  {
-    "word": "Stunden",
-    "start": 38.26,
-    "end": 38.98
-  },
-  {
-    "word": "im",
-    "start": 38.98,
-    "end": 39.2
-  },
-  {
-    "word": "Blut",
-    "start": 39.2,
-    "end": 39.44
-  },
-  {
-    "word": "schon",
-    "start": 39.44,
-    "end": 39.62
-  },
-  {
-    "word": "könne",
-    "start": 39.62,
-    "end": 39.96
-  },
-  {
-    "word": "ich",
-    "start": 39.96,
-    "end": 40.02
-  },
-  {
-    "word": "ohnehin,",
-    "start": 40.02,
-    "end": 40.32
-  },
-  {
-    "word": "der",
-    "start": 40.52,
-    "end": 40.6
-  },
-  {
-    "word": "definierende",
-    "start": 40.6,
-    "end": 41.32
-  },
-  {
-    "word": "Moment",
-    "start": 41.32,
-    "end": 41.6
-  },
-  {
-    "word": "seines",
-    "start": 41.6,
-    "end": 41.98
-  },
-  {
-    "word": "Lebens.",
-    "start": 41.98,
-    "end": 42.26
-  },
-  {
-    "word": "Nicht",
-    "start": 42.88,
-    "end": 43.16
-  },
-  {
-    "word": "das",
-    "start": 43.16,
-    "end": 43.4
-  },
-  {
-    "word": "Ende,",
-    "start": 43.4,
-    "end": 43.72
-  },
-  {
-    "word": "der",
-    "start": 44.14,
-    "end": 44.24
-  },
-  {
-    "word": "Anfang.",
-    "start": 44.24,
-    "end": 44.56
-  }
+ {
+  "word": "Aron",
+  "start": 0.0,
+  "end": 0.5,
+  "eos": false
+ },
+ {
+  "word": "Ralston",
+  "start": 0.5,
+  "end": 0.88,
+  "eos": false
+ },
+ {
+  "word": "verlor",
+  "start": 0.88,
+  "end": 1.26,
+  "eos": false
+ },
+ {
+  "word": "seinen",
+  "start": 1.26,
+  "end": 1.46,
+  "eos": false
+ },
+ {
+  "word": "rechten",
+  "start": 1.46,
+  "end": 1.84,
+  "eos": false
+ },
+ {
+  "word": "Unterarm",
+  "start": 1.84,
+  "end": 2.38,
+  "eos": false
+ },
+ {
+  "word": "und",
+  "start": 2.38,
+  "end": 2.88,
+  "eos": false
+ },
+ {
+  "word": "gewann",
+  "start": 2.88,
+  "end": 3.24,
+  "eos": false
+ },
+ {
+  "word": "etwas",
+  "start": 3.24,
+  "end": 3.66,
+  "eos": false
+ },
+ {
+  "word": "das",
+  "start": 3.68,
+  "end": 3.88,
+  "eos": false
+ },
+ {
+  "word": "er",
+  "start": 3.88,
+  "end": 4.04,
+  "eos": false
+ },
+ {
+  "word": "vorher",
+  "start": 4.04,
+  "end": 4.34,
+  "eos": false
+ },
+ {
+  "word": "nicht",
+  "start": 4.34,
+  "end": 4.62,
+  "eos": false
+ },
+ {
+  "word": "kannte",
+  "start": 4.62,
+  "end": 4.98,
+  "eos": true
+ },
+ {
+  "word": "sein",
+  "start": 5.2,
+  "end": 5.3,
+  "eos": false
+ },
+ {
+  "word": "eigenes",
+  "start": 5.3,
+  "end": 5.74,
+  "eos": false
+ },
+ {
+  "word": "Leben",
+  "start": 5.74,
+  "end": 5.98,
+  "eos": true
+ },
+ {
+  "word": "Er",
+  "start": 6.34,
+  "end": 6.46,
+  "eos": false
+ },
+ {
+  "word": "schrieb",
+  "start": 6.46,
+  "end": 6.72,
+  "eos": false
+ },
+ {
+  "word": "ein",
+  "start": 6.72,
+  "end": 7.02,
+  "eos": false
+ },
+ {
+  "word": "Buch",
+  "start": 7.02,
+  "end": 7.18,
+  "eos": false
+ },
+ {
+  "word": "über",
+  "start": 7.18,
+  "end": 7.42,
+  "eos": false
+ },
+ {
+  "word": "die",
+  "start": 7.42,
+  "end": 7.6,
+  "eos": false
+ },
+ {
+  "word": "127",
+  "start": 7.6,
+  "end": 8.28,
+  "eos": false
+ },
+ {
+  "word": "Stunden",
+  "start": 8.28,
+  "end": 8.88,
+  "eos": false
+ },
+ {
+  "word": "in",
+  "start": 8.88,
+  "end": 9.08,
+  "eos": false
+ },
+ {
+  "word": "der",
+  "start": 9.08,
+  "end": 9.22,
+  "eos": false
+ },
+ {
+  "word": "Schlucht",
+  "start": 9.22,
+  "end": 9.56,
+  "eos": true
+ },
+ {
+  "word": "Es",
+  "start": 9.82,
+  "end": 10.0,
+  "eos": false
+ },
+ {
+  "word": "wurde",
+  "start": 10.0,
+  "end": 10.22,
+  "eos": false
+ },
+ {
+  "word": "ein",
+  "start": 10.22,
+  "end": 10.42,
+  "eos": false
+ },
+ {
+  "word": "Bestseller",
+  "start": 10.42,
+  "end": 11.190000000000001,
+  "eos": true
+ },
+ {
+  "word": "Dann",
+  "start": 11.190000000000001,
+  "end": 11.96,
+  "eos": false
+ },
+ {
+  "word": "verfilmte",
+  "start": 11.96,
+  "end": 12.46,
+  "eos": false
+ },
+ {
+  "word": "Hollywood",
+  "start": 12.46,
+  "end": 12.46,
+  "eos": false
+ },
+ {
+  "word": "es",
+  "start": 12.46,
+  "end": 12.82,
+  "eos": false
+ },
+ {
+  "word": "mit",
+  "start": 12.82,
+  "end": 13.04,
+  "eos": false
+ },
+ {
+  "word": "James",
+  "start": 13.04,
+  "end": 13.26,
+  "eos": false
+ },
+ {
+  "word": "Franco",
+  "start": 13.26,
+  "end": 13.7,
+  "eos": false
+ },
+ {
+  "word": "in",
+  "start": 13.7,
+  "end": 13.86,
+  "eos": false
+ },
+ {
+  "word": "der",
+  "start": 13.86,
+  "end": 13.96,
+  "eos": false
+ },
+ {
+  "word": "Hauptrolle",
+  "start": 13.96,
+  "end": 14.52,
+  "eos": true
+ },
+ {
+  "word": "Der",
+  "start": 15.1,
+  "end": 15.26,
+  "eos": false
+ },
+ {
+  "word": "Film",
+  "start": 15.26,
+  "end": 15.54,
+  "eos": false
+ },
+ {
+  "word": "heißt",
+  "start": 15.54,
+  "end": 15.86,
+  "eos": false
+ },
+ {
+  "word": "127",
+  "start": 15.86,
+  "end": 16.76,
+  "eos": false
+ },
+ {
+  "word": "Stunden",
+  "start": 16.76,
+  "end": 17.34,
+  "eos": true
+ },
+ {
+  "word": "Ralston",
+  "start": 17.78,
+  "end": 18.12,
+  "eos": false
+ },
+ {
+  "word": "ist",
+  "start": 18.12,
+  "end": 18.3,
+  "eos": false
+ },
+ {
+  "word": "heute",
+  "start": 18.3,
+  "end": 18.66,
+  "eos": false
+ },
+ {
+  "word": "Motivationsredner",
+  "start": 18.66,
+  "end": 19.76,
+  "eos": false
+ },
+ {
+  "word": "Ingenieur",
+  "start": 20.08,
+  "end": 20.5,
+  "eos": false
+ },
+ {
+  "word": "und",
+  "start": 20.5,
+  "end": 20.7,
+  "eos": false
+ },
+ {
+  "word": "immer",
+  "start": 20.7,
+  "end": 20.9,
+  "eos": false
+ },
+ {
+  "word": "noch",
+  "start": 20.9,
+  "end": 21.08,
+  "eos": false
+ },
+ {
+  "word": "Bergsteiger",
+  "start": 21.08,
+  "end": 21.82,
+  "eos": false
+ },
+ {
+  "word": "mit",
+  "start": 21.82,
+  "end": 22.1,
+  "eos": false
+ },
+ {
+  "word": "einer",
+  "start": 22.1,
+  "end": 22.3,
+  "eos": false
+ },
+ {
+  "word": "Prothese",
+  "start": 22.3,
+  "end": 22.8,
+  "eos": true
+ },
+ {
+  "word": "Er",
+  "start": 23.18,
+  "end": 23.38,
+  "eos": false
+ },
+ {
+  "word": "klettert",
+  "start": 23.38,
+  "end": 23.72,
+  "eos": false
+ },
+ {
+  "word": "noch",
+  "start": 23.72,
+  "end": 23.94,
+  "eos": false
+ },
+ {
+  "word": "immer",
+  "start": 23.94,
+  "end": 24.18,
+  "eos": true
+ },
+ {
+  "word": "Und",
+  "start": 24.18,
+  "end": 24.68,
+  "eos": false
+ },
+ {
+  "word": "der",
+  "start": 24.68,
+  "end": 24.86,
+  "eos": false
+ },
+ {
+  "word": "Junge",
+  "start": 24.86,
+  "end": 25.08,
+  "eos": false
+ },
+ {
+  "word": "aus",
+  "start": 25.08,
+  "end": 25.22,
+  "eos": false
+ },
+ {
+  "word": "seiner",
+  "start": 25.22,
+  "end": 25.46,
+  "eos": false
+ },
+ {
+  "word": "Vision",
+  "start": 25.46,
+  "end": 25.9,
+  "eos": false
+ },
+ {
+  "word": "in",
+  "start": 25.9,
+  "end": 26.06,
+  "eos": false
+ },
+ {
+  "word": "der",
+  "start": 26.06,
+  "end": 26.26,
+  "eos": false
+ },
+ {
+  "word": "fünften",
+  "start": 26.26,
+  "end": 26.62,
+  "eos": false
+ },
+ {
+  "word": "Nacht",
+  "start": 26.62,
+  "end": 27.08,
+  "eos": false
+ },
+ {
+  "word": "existiert",
+  "start": 27.48,
+  "end": 27.96,
+  "eos": true
+ },
+ {
+  "word": "Sein",
+  "start": 28.36,
+  "end": 28.6,
+  "eos": false
+ },
+ {
+  "word": "Sohn",
+  "start": 28.6,
+  "end": 28.98,
+  "eos": false
+ },
+ {
+  "word": "Leo",
+  "start": 29.22,
+  "end": 29.42,
+  "eos": true
+ },
+ {
+  "word": "Ralston",
+  "start": 29.42,
+  "end": 30.34,
+  "eos": false
+ },
+ {
+  "word": "sagt",
+  "start": 30.34,
+  "end": 30.72,
+  "eos": false
+ },
+ {
+  "word": "der",
+  "start": 30.88,
+  "end": 30.96,
+  "eos": false
+ },
+ {
+  "word": "Moment",
+  "start": 30.96,
+  "end": 31.38,
+  "eos": false
+ },
+ {
+  "word": "in",
+  "start": 31.58,
+  "end": 31.62,
+  "eos": false
+ },
+ {
+  "word": "dem",
+  "start": 31.62,
+  "end": 31.78,
+  "eos": false
+ },
+ {
+  "word": "Leo",
+  "start": 31.78,
+  "end": 32.1,
+  "eos": false
+ },
+ {
+  "word": "zum",
+  "start": 32.1,
+  "end": 32.34,
+  "eos": false
+ },
+ {
+  "word": "ersten",
+  "start": 32.34,
+  "end": 32.58,
+  "eos": false
+ },
+ {
+  "word": "Mal",
+  "start": 32.58,
+  "end": 32.86,
+  "eos": false
+ },
+ {
+  "word": "auf",
+  "start": 32.86,
+  "end": 33.06,
+  "eos": false
+ },
+ {
+  "word": "die",
+  "start": 33.06,
+  "end": 33.12,
+  "eos": false
+ },
+ {
+  "word": "Hüfte",
+  "start": 33.12,
+  "end": 33.44,
+  "eos": false
+ },
+ {
+  "word": "gehoben",
+  "start": 33.44,
+  "end": 33.56,
+  "eos": false
+ },
+ {
+  "word": "wurde",
+  "start": 33.56,
+  "end": 33.68,
+  "eos": false
+ },
+ {
+  "word": "mit",
+  "start": 33.92,
+  "end": 34.02,
+  "eos": false
+ },
+ {
+  "word": "dem",
+  "start": 34.02,
+  "end": 34.24,
+  "eos": false
+ },
+ {
+  "word": "Stumpf",
+  "start": 34.24,
+  "end": 34.54,
+  "eos": false
+ },
+ {
+  "word": "seines",
+  "start": 34.54,
+  "end": 34.84,
+  "eos": false
+ },
+ {
+  "word": "Armes",
+  "start": 34.84,
+  "end": 35.24,
+  "eos": false
+ },
+ {
+  "word": "war",
+  "start": 35.46,
+  "end": 35.62,
+  "eos": false
+ },
+ {
+  "word": "exakt",
+  "start": 35.62,
+  "end": 35.96,
+  "eos": false
+ },
+ {
+  "word": "wie",
+  "start": 35.96,
+  "end": 36.06,
+  "eos": false
+ },
+ {
+  "word": "in",
+  "start": 36.06,
+  "end": 36.18,
+  "eos": false
+ },
+ {
+  "word": "der",
+  "start": 36.18,
+  "end": 36.28,
+  "eos": false
+ },
+ {
+  "word": "Vision",
+  "start": 36.28,
+  "end": 36.64,
+  "eos": true
+ },
+ {
+  "word": "Die",
+  "start": 37.26,
+  "end": 37.46,
+  "eos": false
+ },
+ {
+  "word": "127",
+  "start": 37.46,
+  "end": 38.52,
+  "eos": false
+ },
+ {
+  "word": "Stunden",
+  "start": 38.52,
+  "end": 39.1,
+  "eos": false
+ },
+ {
+  "word": "im",
+  "start": 39.1,
+  "end": 39.36,
+  "eos": false
+ },
+ {
+  "word": "Blue",
+  "start": 39.36,
+  "end": 39.7,
+  "eos": false
+ },
+ {
+  "word": "John",
+  "start": 39.7,
+  "end": 40.04,
+  "eos": false
+ },
+ {
+  "word": "Canyon",
+  "start": 40.04,
+  "end": 40.38,
+  "eos": false
+ },
+ {
+  "word": "der",
+  "start": 40.58,
+  "end": 40.84,
+  "eos": false
+ },
+ {
+  "word": "definierende",
+  "start": 40.84,
+  "end": 41.4,
+  "eos": false
+ },
+ {
+  "word": "Moment",
+  "start": 41.4,
+  "end": 41.78,
+  "eos": false
+ },
+ {
+  "word": "seines",
+  "start": 41.78,
+  "end": 42.12,
+  "eos": false
+ },
+ {
+  "word": "Lebens",
+  "start": 42.12,
+  "end": 42.42,
+  "eos": true
+ },
+ {
+  "word": "Nicht",
+  "start": 43.08,
+  "end": 43.32,
+  "eos": false
+ },
+ {
+  "word": "das",
+  "start": 43.32,
+  "end": 43.54,
+  "eos": false
+ },
+ {
+  "word": "Ende",
+  "start": 43.54,
+  "end": 43.82,
+  "eos": true
+ },
+ {
+  "word": "Der",
+  "start": 44.18,
+  "end": 44.32,
+  "eos": false
+ },
+ {
+  "word": "Anfang",
+  "start": 44.32,
+  "end": 44.72,
+  "eos": true
+ }
 ]

@@ -1,642 +1,758 @@
 [
-  {
-    "word": "5",
-    "start": 0.0,
-    "end": 0.16
-  },
-  {
-    "word": "Tage",
-    "start": 0.16,
-    "end": 0.5
-  },
-  {
-    "word": "lang",
-    "start": 0.5,
-    "end": 0.72
-  },
-  {
-    "word": "hatte",
-    "start": 0.72,
-    "end": 0.98
-  },
-  {
-    "word": "Rallsturm",
-    "start": 0.98,
-    "end": 1.4
-  },
-  {
-    "word": "versucht,",
-    "start": 1.4,
-    "end": 1.84
-  },
-  {
-    "word": "durch",
-    "start": 2.2,
-    "end": 2.32
-  },
-  {
-    "word": "den",
-    "start": 2.32,
-    "end": 2.5
-  },
-  {
-    "word": "Knochen",
-    "start": 2.5,
-    "end": 2.78
-  },
-  {
-    "word": "zu",
-    "start": 2.78,
-    "end": 3.0
-  },
-  {
-    "word": "schneiden.",
-    "start": 3.0,
-    "end": 3.38
-  },
-  {
-    "word": "Das",
-    "start": 3.86,
-    "end": 3.94
-  },
-  {
-    "word": "Messer",
-    "start": 3.94,
-    "end": 4.34
-  },
-  {
-    "word": "war",
-    "start": 4.34,
-    "end": 4.5
-  },
-  {
-    "word": "zu",
-    "start": 4.5,
-    "end": 4.68
-  },
-  {
-    "word": "stumpf,",
-    "start": 4.68,
-    "end": 5.12
-  },
-  {
-    "word": "erschafft",
-    "start": 5.34,
-    "end": 5.64
-  },
-  {
-    "word": "es",
-    "start": 5.64,
-    "end": 5.78
-  },
-  {
-    "word": "nicht",
-    "start": 5.78,
-    "end": 5.98
-  },
-  {
-    "word": "mal,",
-    "start": 5.98,
-    "end": 6.32
-  },
-  {
-    "word": "die",
-    "start": 6.62,
-    "end": 6.74
-  },
-  {
-    "word": "Haut",
-    "start": 6.74,
-    "end": 6.9
-  },
-  {
-    "word": "richtig",
-    "start": 6.9,
-    "end": 7.22
-  },
-  {
-    "word": "aufzuritzen.",
-    "start": 7.22,
-    "end": 7.92
-  },
-  {
-    "word": "Dann,",
-    "start": 8.38,
-    "end": 8.48
-  },
-  {
-    "word": "am",
-    "start": 8.74,
-    "end": 8.86
-  },
-  {
-    "word": "6.",
-    "start": 8.86,
-    "end": 9.04
-  },
-  {
-    "word": "Morgen,",
-    "start": 9.28,
-    "end": 9.64
-  },
-  {
-    "word": "in",
-    "start": 10.0,
-    "end": 10.06
-  },
-  {
-    "word": "einem",
-    "start": 10.06,
-    "end": 10.24
-  },
-  {
-    "word": "Moment",
-    "start": 10.24,
-    "end": 10.52
-  },
-  {
-    "word": "Bura",
-    "start": 10.52,
-    "end": 10.9
-  },
-  {
-    "word": "Wut,",
-    "start": 10.9,
-    "end": 11.28
-  },
-  {
-    "word": "presst",
-    "start": 11.62,
-    "end": 11.76
-  },
-  {
-    "word": "er",
-    "start": 11.76,
-    "end": 11.86
-  },
-  {
-    "word": "seinen",
-    "start": 11.86,
-    "end": 12.08
-  },
-  {
-    "word": "Arm",
-    "start": 12.08,
-    "end": 12.3
-  },
-  {
-    "word": "gegen",
-    "start": 12.3,
-    "end": 12.48
-  },
-  {
-    "word": "den",
-    "start": 12.48,
-    "end": 12.7
-  },
-  {
-    "word": "Felsen",
-    "start": 12.7,
-    "end": 13.12
-  },
-  {
-    "word": "und",
-    "start": 13.12,
-    "end": 13.52
-  },
-  {
-    "word": "spürte",
-    "start": 13.52,
-    "end": 13.9
-  },
-  {
-    "word": "etwas.",
-    "start": 13.9,
-    "end": 14.24
-  },
-  {
-    "word": "Die",
-    "start": 14.78,
-    "end": 14.86
-  },
-  {
-    "word": "Knochen",
-    "start": 14.86,
-    "end": 15.24
-  },
-  {
-    "word": "buggen",
-    "start": 15.24,
-    "end": 15.52
-  },
-  {
-    "word": "sich.",
-    "start": 15.52,
-    "end": 15.68
-  },
-  {
-    "word": "Er",
-    "start": 16.22,
-    "end": 16.32
-  },
-  {
-    "word": "presse",
-    "start": 16.32,
-    "end": 16.68
-  },
-  {
-    "word": "weiter,",
-    "start": 16.68,
-    "end": 16.98
-  },
-  {
-    "word": "bog",
-    "start": 17.54,
-    "end": 17.62
-  },
-  {
-    "word": "den",
-    "start": 17.62,
-    "end": 17.82
-  },
-  {
-    "word": "Arm",
-    "start": 17.82,
-    "end": 18.04
-  },
-  {
-    "word": "weiter",
-    "start": 18.04,
-    "end": 18.4
-  },
-  {
-    "word": "und",
-    "start": 18.4,
-    "end": 19.02
-  },
-  {
-    "word": "dann",
-    "start": 19.02,
-    "end": 19.28
-  },
-  {
-    "word": "knack,",
-    "start": 19.28,
-    "end": 19.64
-  },
-  {
-    "word": "der",
-    "start": 20.08,
-    "end": 20.2
-  },
-  {
-    "word": "erste",
-    "start": 20.2,
-    "end": 20.52
-  },
-  {
-    "word": "unter",
-    "start": 20.52,
-    "end": 20.74
-  },
-  {
-    "word": "Arm",
-    "start": 20.74,
-    "end": 20.98
-  },
-  {
-    "word": "Knochen",
-    "start": 20.98,
-    "end": 21.32
-  },
-  {
-    "word": "brach,",
-    "start": 21.32,
-    "end": 21.58
-  },
-  {
-    "word": "er",
-    "start": 21.96,
-    "end": 22.04
-  },
-  {
-    "word": "bog",
-    "start": 22.04,
-    "end": 22.28
-  },
-  {
-    "word": "weiter.",
-    "start": 22.28,
-    "end": 22.62
-  },
-  {
-    "word": "Knack,",
-    "start": 23.28,
-    "end": 23.54
-  },
-  {
-    "word": "der",
-    "start": 23.94,
-    "end": 24.12
-  },
-  {
-    "word": "zweite.",
-    "start": 24.12,
-    "end": 24.38
-  },
-  {
-    "word": "Rallsturm",
-    "start": 25.1,
-    "end": 25.56
-  },
-  {
-    "word": "beschreibt",
-    "start": 25.56,
-    "end": 25.9
-  },
-  {
-    "word": "diesen",
-    "start": 25.9,
-    "end": 26.2
-  },
-  {
-    "word": "Moment",
-    "start": 26.2,
-    "end": 26.46
-  },
-  {
-    "word": "als",
-    "start": 26.46,
-    "end": 26.72
-  },
-  {
-    "word": "Euphorie,",
-    "start": 26.72,
-    "end": 27.24
-  },
-  {
-    "word": "als",
-    "start": 27.7,
-    "end": 27.88
-  },
-  {
-    "word": "die",
-    "start": 27.88,
-    "end": 28.12
-  },
-  {
-    "word": "intensivste",
-    "start": 28.12,
-    "end": 28.74
-  },
-  {
-    "word": "Freude",
-    "start": 28.74,
-    "end": 29.1
-  },
-  {
-    "word": "seines",
-    "start": 29.1,
-    "end": 29.34
-  },
-  {
-    "word": "Lebens.",
-    "start": 29.34,
-    "end": 29.66
-  },
-  {
-    "word": "Er",
-    "start": 29.66,
-    "end": 30.34
-  },
-  {
-    "word": "krifft",
-    "start": 30.34,
-    "end": 30.72
-  },
-  {
-    "word": "zum",
-    "start": 30.72,
-    "end": 30.86
-  },
-  {
-    "word": "Messer,",
-    "start": 30.86,
-    "end": 31.2
-  },
-  {
-    "word": "schnitt",
-    "start": 31.82,
-    "end": 31.94
-  },
-  {
-    "word": "durch",
-    "start": 31.94,
-    "end": 32.18
-  },
-  {
-    "word": "Szene,",
-    "start": 32.18,
-    "end": 32.52
-  },
-  {
-    "word": "durch",
-    "start": 33.14,
-    "end": 33.36
-  },
-  {
-    "word": "Muskel,",
-    "start": 33.36,
-    "end": 33.76
-  },
-  {
-    "word": "durch",
-    "start": 34.46,
-    "end": 34.72
-  },
-  {
-    "word": "Blutgefäße,",
-    "start": 34.72,
-    "end": 35.44
-  },
-  {
-    "word": "dann",
-    "start": 35.86,
-    "end": 36.0
-  },
-  {
-    "word": "kam",
-    "start": 36.0,
-    "end": 36.28
-  },
-  {
-    "word": "er",
-    "start": 36.28,
-    "end": 36.52
-  },
-  {
-    "word": "an",
-    "start": 36.52,
-    "end": 36.66
-  },
-  {
-    "word": "den",
-    "start": 36.66,
-    "end": 36.8
-  },
-  {
-    "word": "Nerf,",
-    "start": 36.8,
-    "end": 37.18
-  },
-  {
-    "word": "er",
-    "start": 37.58,
-    "end": 37.64
-  },
-  {
-    "word": "beschreibt",
-    "start": 37.64,
-    "end": 38.02
-  },
-  {
-    "word": "es",
-    "start": 38.02,
-    "end": 38.16
-  },
-  {
-    "word": "als",
-    "start": 38.16,
-    "end": 38.34
-  },
-  {
-    "word": "tausend",
-    "start": 38.34,
-    "end": 38.74
-  },
-  {
-    "word": "Mal",
-    "start": 38.74,
-    "end": 39.0
-  },
-  {
-    "word": "schlimmer",
-    "start": 39.0,
-    "end": 39.4
-  },
-  {
-    "word": "als",
-    "start": 39.4,
-    "end": 39.54
-  },
-  {
-    "word": "alles,",
-    "start": 39.54,
-    "end": 39.9
-  },
-  {
-    "word": "was",
-    "start": 40.2,
-    "end": 40.36
-  },
-  {
-    "word": "er",
-    "start": 40.36,
-    "end": 40.5
-  },
-  {
-    "word": "je",
-    "start": 40.5,
-    "end": 40.64
-  },
-  {
-    "word": "gespürt",
-    "start": 40.64,
-    "end": 41.1
-  },
-  {
-    "word": "hatte.",
-    "start": 41.1,
-    "end": 41.26
-  },
-  {
-    "word": "Aber",
-    "start": 41.72,
-    "end": 41.88
-  },
-  {
-    "word": "er",
-    "start": 41.88,
-    "end": 42.02
-  },
-  {
-    "word": "schnitt",
-    "start": 42.02,
-    "end": 42.26
-  },
-  {
-    "word": "weiter,",
-    "start": 42.26,
-    "end": 42.62
-  },
-  {
-    "word": "65",
-    "start": 43.02,
-    "end": 43.52
-  },
-  {
-    "word": "Minuten,",
-    "start": 43.52,
-    "end": 44.04
-  },
-  {
-    "word": "bis",
-    "start": 44.62,
-    "end": 44.72
-  },
-  {
-    "word": "der",
-    "start": 44.72,
-    "end": 44.9
-  },
-  {
-    "word": "Arm",
-    "start": 44.9,
-    "end": 45.06
-  },
-  {
-    "word": "ab",
-    "start": 45.06,
-    "end": 45.26
-  },
-  {
-    "word": "war,",
-    "start": 45.26,
-    "end": 45.46
-  },
-  {
-    "word": "dann",
-    "start": 45.92,
-    "end": 46.04
-  },
-  {
-    "word": "fiel",
-    "start": 46.04,
-    "end": 46.3
-  },
-  {
-    "word": "er",
-    "start": 46.3,
-    "end": 46.46
-  },
-  {
-    "word": "rückwärts,",
-    "start": 46.46,
-    "end": 47.06
-  },
-  {
-    "word": "frei.",
-    "start": 47.46,
-    "end": 47.76
-  }
+ {
+  "word": "Fünf",
+  "start": 0.0,
+  "end": 0.36,
+  "eos": false
+ },
+ {
+  "word": "Tage",
+  "start": 0.36,
+  "end": 0.66,
+  "eos": false
+ },
+ {
+  "word": "lang",
+  "start": 0.66,
+  "end": 0.86,
+  "eos": false
+ },
+ {
+  "word": "hatte",
+  "start": 0.86,
+  "end": 1.08,
+  "eos": false
+ },
+ {
+  "word": "Ralston",
+  "start": 1.08,
+  "end": 1.48,
+  "eos": false
+ },
+ {
+  "word": "versucht",
+  "start": 1.48,
+  "end": 2.06,
+  "eos": false
+ },
+ {
+  "word": "durch",
+  "start": 2.2,
+  "end": 2.44,
+  "eos": false
+ },
+ {
+  "word": "den",
+  "start": 2.44,
+  "end": 2.66,
+  "eos": false
+ },
+ {
+  "word": "Knochen",
+  "start": 2.66,
+  "end": 2.88,
+  "eos": false
+ },
+ {
+  "word": "zu",
+  "start": 2.88,
+  "end": 3.12,
+  "eos": false
+ },
+ {
+  "word": "schneiden",
+  "start": 3.12,
+  "end": 3.74,
+  "eos": true
+ },
+ {
+  "word": "Das",
+  "start": 3.86,
+  "end": 4.08,
+  "eos": false
+ },
+ {
+  "word": "Messer",
+  "start": 4.08,
+  "end": 4.38,
+  "eos": false
+ },
+ {
+  "word": "war",
+  "start": 4.38,
+  "end": 4.58,
+  "eos": false
+ },
+ {
+  "word": "zu",
+  "start": 4.58,
+  "end": 4.88,
+  "eos": false
+ },
+ {
+  "word": "stumpf",
+  "start": 4.88,
+  "end": 5.3,
+  "eos": false
+ },
+ {
+  "word": "er",
+  "start": 5.34,
+  "end": 5.54,
+  "eos": false
+ },
+ {
+  "word": "schaffte",
+  "start": 5.54,
+  "end": 5.78,
+  "eos": false
+ },
+ {
+  "word": "es",
+  "start": 5.78,
+  "end": 5.94,
+  "eos": false
+ },
+ {
+  "word": "nicht",
+  "start": 5.94,
+  "end": 6.2,
+  "eos": false
+ },
+ {
+  "word": "mal",
+  "start": 6.2,
+  "end": 6.52,
+  "eos": false
+ },
+ {
+  "word": "die",
+  "start": 6.64,
+  "end": 6.84,
+  "eos": false
+ },
+ {
+  "word": "Haut",
+  "start": 6.84,
+  "end": 7.02,
+  "eos": false
+ },
+ {
+  "word": "richtig",
+  "start": 7.02,
+  "end": 7.34,
+  "eos": false
+ },
+ {
+  "word": "aufzuritzen",
+  "start": 7.34,
+  "end": 8.08,
+  "eos": true
+ },
+ {
+  "word": "Dann",
+  "start": 8.38,
+  "end": 8.68,
+  "eos": false
+ },
+ {
+  "word": "am",
+  "start": 8.78,
+  "end": 8.94,
+  "eos": false
+ },
+ {
+  "word": "sechsten",
+  "start": 8.94,
+  "end": 9.36,
+  "eos": false
+ },
+ {
+  "word": "Morgen",
+  "start": 9.36,
+  "end": 9.74,
+  "eos": false
+ },
+ {
+  "word": "in",
+  "start": 10.1,
+  "end": 10.18,
+  "eos": false
+ },
+ {
+  "word": "einem",
+  "start": 10.18,
+  "end": 10.34,
+  "eos": false
+ },
+ {
+  "word": "Moment",
+  "start": 10.34,
+  "end": 10.66,
+  "eos": false
+ },
+ {
+  "word": "purer",
+  "start": 10.66,
+  "end": 11.06,
+  "eos": false
+ },
+ {
+  "word": "Wut",
+  "start": 11.06,
+  "end": 11.44,
+  "eos": false
+ },
+ {
+  "word": "presste",
+  "start": 11.6,
+  "end": 11.8,
+  "eos": false
+ },
+ {
+  "word": "er",
+  "start": 11.8,
+  "end": 11.96,
+  "eos": false
+ },
+ {
+  "word": "seinen",
+  "start": 11.96,
+  "end": 12.14,
+  "eos": false
+ },
+ {
+  "word": "Arm",
+  "start": 12.14,
+  "end": 12.36,
+  "eos": false
+ },
+ {
+  "word": "gegen",
+  "start": 12.36,
+  "end": 12.62,
+  "eos": false
+ },
+ {
+  "word": "den",
+  "start": 12.62,
+  "end": 12.8,
+  "eos": false
+ },
+ {
+  "word": "Felsen",
+  "start": 12.8,
+  "end": 13.42,
+  "eos": false
+ },
+ {
+  "word": "und",
+  "start": 13.42,
+  "end": 13.64,
+  "eos": false
+ },
+ {
+  "word": "spürte",
+  "start": 13.64,
+  "end": 14.04,
+  "eos": false
+ },
+ {
+  "word": "etwas",
+  "start": 14.04,
+  "end": 14.36,
+  "eos": true
+ },
+ {
+  "word": "Die",
+  "start": 14.74,
+  "end": 15.02,
+  "eos": false
+ },
+ {
+  "word": "Knochen",
+  "start": 15.02,
+  "end": 15.32,
+  "eos": false
+ },
+ {
+  "word": "bogen",
+  "start": 15.32,
+  "end": 15.58,
+  "eos": false
+ },
+ {
+  "word": "sich",
+  "start": 15.58,
+  "end": 15.88,
+  "eos": true
+ },
+ {
+  "word": "Er",
+  "start": 16.2,
+  "end": 16.48,
+  "eos": false
+ },
+ {
+  "word": "presste",
+  "start": 16.48,
+  "end": 16.78,
+  "eos": false
+ },
+ {
+  "word": "weiter",
+  "start": 16.78,
+  "end": 17.2,
+  "eos": false
+ },
+ {
+  "word": "bog",
+  "start": 17.58,
+  "end": 17.74,
+  "eos": false
+ },
+ {
+  "word": "den",
+  "start": 17.74,
+  "end": 17.92,
+  "eos": false
+ },
+ {
+  "word": "Arm",
+  "start": 17.92,
+  "end": 18.16,
+  "eos": false
+ },
+ {
+  "word": "weiter",
+  "start": 18.16,
+  "end": 18.58,
+  "eos": false
+ },
+ {
+  "word": "und",
+  "start": 18.94,
+  "end": 19.2,
+  "eos": false
+ },
+ {
+  "word": "dann",
+  "start": 19.2,
+  "end": 19.48,
+  "eos": true
+ },
+ {
+  "word": "knack",
+  "start": 19.64,
+  "end": 19.86,
+  "eos": true
+ },
+ {
+  "word": "Der",
+  "start": 20.1,
+  "end": 20.36,
+  "eos": false
+ },
+ {
+  "word": "erste",
+  "start": 20.36,
+  "end": 20.62,
+  "eos": false
+ },
+ {
+  "word": "Unterarmknochen",
+  "start": 20.62,
+  "end": 21.4,
+  "eos": false
+ },
+ {
+  "word": "brach",
+  "start": 21.4,
+  "end": 21.82,
+  "eos": true
+ },
+ {
+  "word": "Er",
+  "start": 21.9,
+  "end": 22.12,
+  "eos": false
+ },
+ {
+  "word": "bog",
+  "start": 22.12,
+  "end": 22.32,
+  "eos": false
+ },
+ {
+  "word": "weiter",
+  "start": 22.32,
+  "end": 22.86,
+  "eos": false
+ },
+ {
+  "word": "knack",
+  "start": 23.32,
+  "end": 23.76,
+  "eos": false
+ },
+ {
+  "word": "der",
+  "start": 24.12,
+  "end": 24.32,
+  "eos": false
+ },
+ {
+  "word": "zweite",
+  "start": 24.32,
+  "end": 24.66,
+  "eos": true
+ },
+ {
+  "word": "Ralston",
+  "start": 25.12,
+  "end": 25.66,
+  "eos": false
+ },
+ {
+  "word": "beschreibt",
+  "start": 25.66,
+  "end": 26.0,
+  "eos": false
+ },
+ {
+  "word": "diesen",
+  "start": 26.0,
+  "end": 26.26,
+  "eos": false
+ },
+ {
+  "word": "Moment",
+  "start": 26.26,
+  "end": 26.62,
+  "eos": false
+ },
+ {
+  "word": "als",
+  "start": 26.62,
+  "end": 26.82,
+  "eos": false
+ },
+ {
+  "word": "Euphorie",
+  "start": 26.82,
+  "end": 27.36,
+  "eos": false
+ },
+ {
+  "word": "als",
+  "start": 27.82,
+  "end": 28.04,
+  "eos": false
+ },
+ {
+  "word": "die",
+  "start": 28.04,
+  "end": 28.22,
+  "eos": false
+ },
+ {
+  "word": "intensivste",
+  "start": 28.22,
+  "end": 28.84,
+  "eos": false
+ },
+ {
+  "word": "Freude",
+  "start": 28.84,
+  "end": 29.18,
+  "eos": false
+ },
+ {
+  "word": "seines",
+  "start": 29.18,
+  "end": 29.48,
+  "eos": false
+ },
+ {
+  "word": "Lebens",
+  "start": 29.48,
+  "end": 29.82,
+  "eos": true
+ },
+ {
+  "word": "Er",
+  "start": 30.26,
+  "end": 30.5,
+  "eos": false
+ },
+ {
+  "word": "griff",
+  "start": 30.5,
+  "end": 30.72,
+  "eos": false
+ },
+ {
+  "word": "zum",
+  "start": 30.72,
+  "end": 30.92,
+  "eos": false
+ },
+ {
+  "word": "Messer",
+  "start": 30.92,
+  "end": 31.68,
+  "eos": true
+ },
+ {
+  "word": "Schnitt",
+  "start": 31.9,
+  "end": 32.08,
+  "eos": false
+ },
+ {
+  "word": "durch",
+  "start": 32.08,
+  "end": 32.3,
+  "eos": false
+ },
+ {
+  "word": "Sehne",
+  "start": 32.3,
+  "end": 33.06,
+  "eos": true
+ },
+ {
+  "word": "Durch",
+  "start": 33.32,
+  "end": 33.52,
+  "eos": false
+ },
+ {
+  "word": "Muskel",
+  "start": 33.52,
+  "end": 34.16,
+  "eos": true
+ },
+ {
+  "word": "Durch",
+  "start": 34.66,
+  "end": 34.84,
+  "eos": false
+ },
+ {
+  "word": "Blutgefäße",
+  "start": 34.84,
+  "end": 35.6,
+  "eos": true
+ },
+ {
+  "word": "Dann",
+  "start": 35.9,
+  "end": 36.14,
+  "eos": false
+ },
+ {
+  "word": "kam",
+  "start": 36.14,
+  "end": 36.4,
+  "eos": false
+ },
+ {
+  "word": "er",
+  "start": 36.4,
+  "end": 36.58,
+  "eos": false
+ },
+ {
+  "word": "an",
+  "start": 36.58,
+  "end": 36.76,
+  "eos": false
+ },
+ {
+  "word": "den",
+  "start": 36.76,
+  "end": 36.96,
+  "eos": false
+ },
+ {
+  "word": "Nerv",
+  "start": 36.96,
+  "end": 37.22,
+  "eos": true
+ },
+ {
+  "word": "Er",
+  "start": 37.56,
+  "end": 37.74,
+  "eos": false
+ },
+ {
+  "word": "beschreibt",
+  "start": 37.74,
+  "end": 38.08,
+  "eos": false
+ },
+ {
+  "word": "es",
+  "start": 38.08,
+  "end": 38.28,
+  "eos": false
+ },
+ {
+  "word": "als",
+  "start": 38.28,
+  "end": 38.44,
+  "eos": false
+ },
+ {
+  "word": "tausendmal",
+  "start": 38.44,
+  "end": 39.1,
+  "eos": false
+ },
+ {
+  "word": "schlimmer",
+  "start": 39.1,
+  "end": 39.5,
+  "eos": false
+ },
+ {
+  "word": "als",
+  "start": 39.5,
+  "end": 39.76,
+  "eos": false
+ },
+ {
+  "word": "alles",
+  "start": 39.76,
+  "end": 40.04,
+  "eos": false
+ },
+ {
+  "word": "was",
+  "start": 40.28,
+  "end": 40.44,
+  "eos": false
+ },
+ {
+  "word": "er",
+  "start": 40.44,
+  "end": 40.58,
+  "eos": false
+ },
+ {
+  "word": "je",
+  "start": 40.58,
+  "end": 40.74,
+  "eos": false
+ },
+ {
+  "word": "gespürt",
+  "start": 40.74,
+  "end": 41.16,
+  "eos": false
+ },
+ {
+  "word": "hatte",
+  "start": 41.16,
+  "end": 41.34,
+  "eos": true
+ },
+ {
+  "word": "Aber",
+  "start": 41.78,
+  "end": 41.94,
+  "eos": false
+ },
+ {
+  "word": "er",
+  "start": 41.94,
+  "end": 42.12,
+  "eos": false
+ },
+ {
+  "word": "schnitt",
+  "start": 42.12,
+  "end": 42.34,
+  "eos": false
+ },
+ {
+  "word": "weiter",
+  "start": 42.34,
+  "end": 42.78,
+  "eos": true
+ },
+ {
+  "word": "65",
+  "start": 43.06,
+  "end": 43.72,
+  "eos": false
+ },
+ {
+  "word": "Minuten",
+  "start": 43.72,
+  "end": 44.4,
+  "eos": false
+ },
+ {
+  "word": "bis",
+  "start": 44.7,
+  "end": 44.78,
+  "eos": false
+ },
+ {
+  "word": "der",
+  "start": 44.78,
+  "end": 45.02,
+  "eos": false
+ },
+ {
+  "word": "Arm",
+  "start": 45.02,
+  "end": 45.16,
+  "eos": false
+ },
+ {
+  "word": "ab",
+  "start": 45.16,
+  "end": 45.4,
+  "eos": false
+ },
+ {
+  "word": "war",
+  "start": 45.4,
+  "end": 45.64,
+  "eos": true
+ },
+ {
+  "word": "Dann",
+  "start": 45.94,
+  "end": 46.16,
+  "eos": false
+ },
+ {
+  "word": "fiel",
+  "start": 46.16,
+  "end": 46.38,
+  "eos": false
+ },
+ {
+  "word": "er",
+  "start": 46.38,
+  "end": 46.6,
+  "eos": false
+ },
+ {
+  "word": "rückwärts",
+  "start": 46.6,
+  "end": 47.56,
+  "eos": true
+ },
+ {
+  "word": "Frei",
+  "start": 47.74,
+  "end": 47.88,
+  "eos": true
+ }
 ]
