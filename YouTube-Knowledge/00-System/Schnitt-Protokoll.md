@@ -9,6 +9,8 @@ tags: [system, protokoll, schnitt, rules]
 
 # Schnitt-Protokoll — vor JEDEM Video-/Short-Schnitt
 
+> **Detail-Ebene zur [[Produktion-Pflichtliste]]** (= kanonischer Prozess). Hier: Schnitt-/Caption-Detailspecs. Der Gesamt-Ablauf + die Gates stehen in der Pflichtliste.
+
 Verbindliche Reihenfolge (Nutzer-Regel, 19.08.). Zweck: an alle Audit-/Analyse-
 Erkenntnisse erinnern, kostenlos aktuell halten, keine Limits/Credits verschwenden.
 

@@ -1,9 +1,7 @@
-# YouTube-Knowledge — Obsidian-Vault
+# YouTube-Knowledge — Vault
 
 Das persistente Langzeitgedächtnis des Kanals *Katastrophenprotokoll*.
-
-**In Obsidian öffnen:** diesen Ordner (`YouTube-Knowledge/`) als Vault öffnen —
-dann funktionieren `[[Wikilinks]]`, Tags und der Graph.
+Reiner Markdown-Ordner — navigiert über `[[Wikilinks]]`, Tags und `Grep`/`Read`.
 
 **Startpunkt:** [HOME.md](HOME.md) — die Karte des gesamten Wissens.
 

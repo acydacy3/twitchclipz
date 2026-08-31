@@ -41,12 +41,8 @@ Note** erzeugen. Qualität vor Quantität.
    git checkout <feature-branch>
    ```
    Kontrolle: `git log --oneline main | head -3` → neuester Commit = aktueller Vault-Stand. Details: [[Memory-Workflow]].
-3. **Optional Drive:** nur wenn der Nutzer die Notiz in Obsidian sehen will — geänderte Notes in den Drive-Vault (`Katastrophenprotokoll-Pipeline/YouTube-Knowledge`).
+3. **Optional Drive:** nur wenn der Nutzer die Notiz ansehen will — geänderte Notes in den Drive-Vault (`Katastrophenprotokoll-Pipeline/YouTube-Knowledge`).
 4. **SendUserFile:** für fertige Videos (z. B. TikTok-Upload durch den Nutzer).
-
-> **Obsidian ist optional:** Liegt das Vault des Nutzers in seinem Drive-Ordner,
-> erscheinen die Drive-Schreibvorgänge automatisch dort. Falls nicht, ist das kein
-> Blocker — Drive bleibt trotzdem der Persistenz-Träger für die nächste Session.
 
 ## Schritt 3 — Kurz melden
 Zwei bis drei Sätze: was gelernt wurde, wo es jetzt steht (Vault-Note + Commit).

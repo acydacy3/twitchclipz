@@ -19,12 +19,14 @@ tags: [system, ziel, ypp, monetarisierung, metrik, nordstern]
 - **20.321 Views gesamt.** Kanal gegründet 15.08.2026 (~10 Tage alt) → **90-Tage-Views ≈ Gesamt-Views** = 20.321 → **0,20 % des 10-Mio-Ziels.**
 - 40 Videos, ~19 terminiert.
 
-## Was das quantitativ bedeutet (realistisch, Stand 29.08.2026)
+## Was das quantitativ bedeutet (realistisch, Stand 31.08.2026)
 
-| Metrik | Ist | Soll | Faktor |
+> Aktuelle Ist-Zahlen immer aus [[Current-State]] (analyse.py). Snapshot hier:
+
+| Metrik | Ist (31.08.) | Soll | Faktor |
 |--------|-----|------|--------|
-| Views/Tag (7d-Schnitt) | ~1.500 | 111.000 | ×74 |
-| Abonnenten | 58 | 1.000 | ×17 |
+| Views/Tag (7d-Schnitt) | ~4.300 | 111.000 | ×26 |
+| Abonnenten | 63 | 1.000 | ×16 |
 
 **Realistische Horizonte:**
 - **Abonnenten-Ziel (1.000):** 3–5 Monate bei konsequenter Serien-Qualität (1 viral gehendes Video reicht).

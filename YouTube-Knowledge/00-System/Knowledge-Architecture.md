@@ -61,7 +61,7 @@ Wissens. (Deckt sich mit der alten `~~durchgestrichen~~`-Regel der Ur-CLAUDE.md.
 ```
 Raw Observation → Experiment/Evidence → Learning → Validated Learning → Operational Rule → CLAUDE.md
 ```
-- **Vault (Obsidian)** = Wissen, Gründe, Evidenz, Entscheidungen, Historie (dieses Verzeichnis).
+- **Vault** = Wissen, Gründe, Evidenz, Entscheidungen, Historie (dieses Verzeichnis).
 - **CLAUDE.md** = nur ausreichend belastbares, für die unmittelbare Arbeit nötiges Wissen + Verweis hierher. Klein halten.
 - **Git** = was tatsächlich technisch geändert wurde (Commits). Beschreibt **nicht** das Warum — das steht hier.
 

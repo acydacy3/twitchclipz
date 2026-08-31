@@ -33,7 +33,6 @@ tags: [system, werkzeuge, backlog, kostenlos, github, n+1]
 
 ## Konnektoren
 - Keine kritische Lücke (Drive, Buffer/TikTok, ElevenLabs, Higgsfield, HuggingFace, vidiq, Canva, ssemble, github, claude-remote vorhanden).
-- **Obsidian bewusst NICHT** → [[Decision-Obsidian-nicht-noetig]].
 
 ## Regel
 Ein Punkt gilt erst als ✅, wenn er in einer echten Produktion eingesetzt UND das Ergebnis per §0d-QC bestätigt wurde. Vorschlagen ohne Integrieren zählt nicht.

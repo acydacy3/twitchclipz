@@ -17,7 +17,7 @@ Memory-, Experiment- und Audit-Systemen. Quelle: Nutzer-Auftrag 24.08.2026.
    analysieren. Bestehendes nur bei nachgewiesenem Nutzen oder nötiger
    Integration ändern. Keine großflächigen Refactorings ohne Begründung.
 2. **Memory Must Be Persistent.** Relevantes Wissen darf nie nur im
-   Session-Kontext leben: `Session → Erkenntnis → Obsidian → zukünftige Sessions`.
+   Session-Kontext leben: `Session → Erkenntnis → Vault → zukünftige Sessions`.
    (Persistenz-Träger ist der **Git-Vault**: `commit` + `push` (seit 25.08. freigeschaltet); Drive optional.)
 3. **Retrieval before Reinvention.** Vor wichtigen Entscheidungen zuerst
    bestehendes Wissen suchen (Learnings, Experimente, [[Failure-Memory]],
@@ -29,7 +29,7 @@ Memory-, Experiment- und Audit-Systemen. Quelle: Nutzer-Auftrag 24.08.2026.
 6. **Preserve Contradictions.** Widerspricht neue Evidenz einem Learning:
    nicht löschen/überschreiben, sondern Re-Evaluation dokumentieren
    (siehe [[Knowledge-Architecture]] §3).
-7. **Separate Memory From Code.** Obsidian = Wissen/Gründe/Evidenz/Entscheidungen.
+7. **Separate Memory From Code.** Vault = Wissen/Gründe/Evidenz/Entscheidungen.
    Git = tatsächliche technische Änderungen. Nicht unnötig vermischen.
 8. **Minimal Complexity.** Vor jedem neuen Agent/Skill/Service/MCP prüfen:
    nötig? existiert schon? kann ein bestehender Agent das? erhöht es Lern-/

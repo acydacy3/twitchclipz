@@ -89,7 +89,7 @@ REGELN = [
     "Bilder: global Dedup-Set pro Produktion, alle auf 1600x2848",
     "Broll autonom sourcing: Commons-Kategorien + Openverse (Nutzer sucht nie selbst)",
     "Schnitt buerdig 3/Tag, Slots 10:30/14:30/18:00 UTC, kein Reihen-Bruch",
-    "Obsidian: NICHT einfuehren (kein Connector, Direktzugriff besser)",
+    "Captions aus Nutzer-Skript via align.py, NIE aus roher ASR (F-V8-E)",
     "Analytics-Loop: Tag 4-5 AVP%/CTR ziehen -> Post-Mortem -> naechstes Video steuern",
 ]
 
@@ -385,7 +385,7 @@ def main():
         z(f"  Tools: {', '.join(n for n, _ in tools)}")
         mk = auto_scan_manim()
         z(f"  Manim ({len(mk)}): {', '.join(mk)}")
-        z("  Regeln: alle in Pflichtliste §2 (15 Dateien) — bei Produktion lesen")
+        z("  Regeln: alle in Pflichtliste §2 gelistet — bei Produktion lesen")
     else:
         # Score < 85: Volle Ausgabe — jede Information direkt im Kontext
         z("VOLLSTAENDIGES REPERTOIRE — autonom nutzen, nie ankuendigen:")
@@ -411,7 +411,7 @@ def main():
         z("  Baum: Zahl->StatCounter  Route->Map  Tage->SurvivalDays")
         z("        Suche->SearchRadius  Tiefe->DepthDive  Tunnel->CrossSection")
 
-        z("\nKERN-REGELN (destilliert — ERINNERUNG, ersetzt NICHT das Lesen der 15 Pflicht-Dateien):")
+        z("\nKERN-REGELN (destilliert — ERINNERUNG, ersetzt NICHT das Lesen der §2-Pflicht-Dateien):")
         for i, r in enumerate(REGELN, 1):
             z(f"  {i:>2}. {r}")
 
