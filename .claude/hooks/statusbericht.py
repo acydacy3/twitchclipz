@@ -80,10 +80,10 @@ TOOL_BESCHR = {
 # NICHT 'go read 14 files' — das sind die aktuellen Regeln selbst.
 # Update wenn eine Rule sich aendert (selten).
 REGELN = [
-    "Hook entscheidet, nicht Sekundenzahl  |  sichere Zone 19-39 s, tote Sek. sofort killen",
+    "Hook: Sekunde 1 = BEWEGUNG (Bewegtshot/Animation, kein Standbild-Establishing)  |  Zone 19-39 s",
     "Untertitel = Stimme des Publikums  |  Hook-Banner nur als Test",
     "Keyword stark in Titel, Aussage fertig bis Zeichen 35",
-    "Schluessel-Szene GENERIEREN (HF Z-Image), Establishing = echt/Stock",
+    "Bewegtbild-PFLICHT: >=1 bewegter Schluessel-Shot je Short (Manim/Remotion/Wan2.1-I2V), nie reine Diashow",
     "Musik -16 LUFS  |  db=-16 hoerig verifizieren (volumedetect nach Render)",
     "TikTok NIE automatisch  |  Claude liefert, Nutzer laedt hoch",
     "Bilder: global Dedup-Set pro Produktion, alle auf 1600x2848",

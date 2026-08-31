@@ -41,6 +41,8 @@ python3 videoblick.py render/short_XX.mp4   # in Einzelbilder zerlegen → mit R
 python3 hoeren.py render/short_XX.mp4        # Tonspur/VO HÖREN → gegen Skript abgleichen
 ```
 Gegen die [[Failure-Memory]]-Checkliste prüfen (jede Zeile bewusst abhaken):
+- [ ] **BEWEGUNG in Sekunde 1** (bewegter Schlüssel-Shot/Animation, kein ruhiges Standbild-Establishing)? → Anti-Diashow, Hook/Retention. [[Short-Konzept-Blueprint]]
+- [ ] **≥1 bewegter Schlüssel-Shot** im Short (I2V/Remotion/Manim), nicht nur Ken-Burns?
 - [ ] Progressbar sichtbar (≥18 px, gelb, kein Alpha)?
 - [ ] Karaoke-Highlight `\kf` läuft wortweise mit?
 - [ ] Multi-Shot (mehrere Bilder/Beat), kein statisches Einzelbild?
@@ -167,9 +169,15 @@ Starkes Competitor-Bild als Ausgangspunkt:
 
 ---
 
-## 5. Manim/Remotion — Training-Pflicht (jede Reihe)
+## 5. Bewegtbild-PFLICHT — Hook & Retention (jede Reihe, autonom, ohne Nachfrage)
 
-**So viele Animations-Clips pro Reihe wie sinnvoll und qualitativ gut wird — kein Limit nach oben, kein starres Minimum.** Jede Szene aktiv prüfen: Wäre hier eine Animation besser als ein Standbild?
+> **STEHENDE REGEL (Nutzer 31.08., gilt bis zum nächsten Learning):** Bewegung schlägt Standbild-Diashow für Hook + Anfangs-Retention (belegt: virale Hits fahren ~90 % Bewegtbild, öffnen mit Bewegung — [[Short-Konzept-Blueprint]]). Der Nutzer muss das **nie** ansprechen. Bei JEDER Produktion:
+> 1. **Sekunde 1 = Bewegung.** Der Hook-Shot ist bewegt (I2V/Remotion/Manim), nie ruhiges Establishing-Standbild. Blockierend im §0d-QC.
+> 2. **Volles Bewegtbild-Repertoire prüfen — kostenlos zuerst:** **Manim** (Querschnitt/Karte/Zahl/Zeit) · **Remotion** (getemplatete Motion-Graphics, WordReveal, Lower-Thirds — endlich einsetzen) · **Wan2.1-I2V über HF** (Standbild→Bewegtszene, gratis) · **Ken-Burns** nur als Minimum, nicht als Standard · SVG+Playwright+ffmpeg für Einfaches. Higgsfield-Video nur wenn gratis nicht reicht.
+> 3. **≥1 bewegter Schlüssel-Shot pro Short** (der Fels kippt, die Welle bricht, der Arm löst sich, der Querschnitt zoomt). Rein statische Shorts sind ab jetzt ein QC-Fehler.
+> 4. Neue Bewegtbild-Technik erstmals genutzt → §0c-Gate: in [[Werkzeug-Backlog]] abhaken.
+
+**Animations-Clips pro Reihe: so viele wie sinnvoll und qualitativ gut — kein Limit nach oben.** Jede Szene aktiv prüfen: Bewegung besser als Standbild? (Standard-Antwort ab jetzt: ja, wo es die Szene trägt.)
 
 Animation-Bibliothek lesen: `YouTube-Knowledge/04-Animation/Animation-Library.md`
 
