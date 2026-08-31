@@ -1,1 +1,52 @@
-{}
+{
+  "01": {
+    "uploaded": true,
+    "video_id": "vHooyn3KUkE",
+    "ts": 1788171627.764733
+  },
+  "02": {
+    "uploaded": true,
+    "video_id": "WPf61egTpuw",
+    "ts": 1788171633.4785771
+  },
+  "03": {
+    "uploaded": true,
+    "video_id": "yKx2qZ2QuQM",
+    "ts": 1788171639.0387878
+  },
+  "04": {
+    "uploaded": true,
+    "video_id": "uBrbU2JtAcU",
+    "ts": 1788171644.552204
+  },
+  "05": {
+    "uploaded": true,
+    "video_id": "rXF75PoAWck",
+    "ts": 1788171650.2670953
+  },
+  "06": {
+    "uploaded": true,
+    "video_id": "5TZuAQWSx8s",
+    "ts": 1788171655.706635
+  },
+  "07": {
+    "uploaded": true,
+    "video_id": "SC9JpBzpoTE",
+    "ts": 1788171661.2160387
+  },
+  "08": {
+    "uploaded": true,
+    "video_id": "CGIvMRzDd3U",
+    "ts": 1788171666.5764322
+  },
+  "09": {
+    "uploaded": true,
+    "video_id": "dqj3AlK5vE0",
+    "ts": 1788171672.639159
+  },
+  "10": {
+    "uploaded": true,
+    "video_id": "KL2ax7WQb2Q",
+    "ts": 1788171678.0565214
+  }
+}
