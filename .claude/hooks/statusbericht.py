@@ -385,7 +385,7 @@ def main():
         z(f"  Tools: {', '.join(n for n, _ in tools)}")
         mk = auto_scan_manim()
         z(f"  Manim ({len(mk)}): {', '.join(mk)}")
-        z("  Regeln: alle in Pflichtliste §2 (14 Dateien) — bei Produktion lesen")
+        z("  Regeln: alle in Pflichtliste §2 (15 Dateien) — bei Produktion lesen")
     else:
         # Score < 85: Volle Ausgabe — jede Information direkt im Kontext
         z("VOLLSTAENDIGES REPERTOIRE — autonom nutzen, nie ankuendigen:")
@@ -411,14 +411,14 @@ def main():
         z("  Baum: Zahl->StatCounter  Route->Map  Tage->SurvivalDays")
         z("        Suche->SearchRadius  Tiefe->DepthDive  Tunnel->CrossSection")
 
-        z("\nKERN-REGELN (destilliert — ersetzt Lesen der 14 Lern-Dateien):")
+        z("\nKERN-REGELN (destilliert — ERINNERUNG, ersetzt NICHT das Lesen der 15 Pflicht-Dateien):")
         for i, r in enumerate(REGELN, 1):
             z(f"  {i:>2}. {r}")
 
     # ── Vor-Produktion (immer, kompakt) ───────────────────────────────────
     z("-" * 68)
     z("VOR PRODUKTION: nb_analytics_snapshot.py -> nb_observe.py -> Pflichtliste §2 -> HF-Quota")
-    z("SESSION-ENDE:   Autonomie-Log.md updaten + git push")
+    z("SESSION-ENDE:   Autonomie-Log updaten + commit + auf main mergen + push (main = naechster Container)")
     z("Originalskript kommt vom Nutzer. Nutzer arbeitet nicht mit der Kommandozeile.")
     z("=" * 68)
     z("")

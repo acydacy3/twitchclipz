@@ -7,6 +7,8 @@ tags: [moc, competitors]
 
 # Konkurrenzbeobachtung
 
+> **Primäre Strategie-Autorität:** [[Learning-Competitor-Strategie]] (Tier-Kanäle, 5 Inhalts-Säulen, Story-Score, Re-Run). Diese Note hier ist die **Beobachtungs-Chronik** — das abgeleitete System steht dort.
+
 **Wichtig:** Konkurrenzverhalten ist **Evidenz, aber kein Beweis**, dass eine
 Methode für uns funktioniert ([[Guardrails]] #3, [[Knowledge-Architecture]]).
 Jede Beobachtung: beobachtetes Verhalten · Beispiel · Muster · mögliche Strategie ·

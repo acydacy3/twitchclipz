@@ -10,12 +10,12 @@ tags: [system, state]
 
 > Diese Note ist der **operative Schnappschuss**. Sie wird bei jeder Session
 > aktualisiert (Stand-Zahlen kommen aus `analyse.py`, nicht aus dem Gedächtnis —
-> gemessenes gewinnt gegen notiertes). Letztes Update: **2026-08-27 (Session-Ende)**.
+> gemessenes gewinnt gegen notiertes). Letztes Update: **2026-08-29 (Audit)**.
 
-> **Selbstprüfung (Session-Start):** Liegt der Vault `YouTube-Knowledge/` und `analyse.py` im Checkout und sagt `CLAUDE.md` NICHT „git push 403"? Dann bist du aktuell. Falls nein → Recovery-Schritte oben in `CLAUDE.md` („⚠️ ZUERST"). Branch-Namen wechseln je Session; **`main` ist jetzt AKTUELL** (25.08. voll synchronisiert) — ebenso der jeweilige `claude/…`-Branch. Der richtige Checkout ist jeder, der **diesen Vault + `tools/`** enthält.
+> **Selbstprüfung (Session-Start):** Liegen `YouTube-Knowledge/` und `analyse.py` im Checkout? Dann bist du aktuell. Falls nein → `git pull origin main` (Recovery-Schritte in `CLAUDE.md`, „⚠️ ZUERST"). **`main` trägt immer den vollen Vault-Stand** — jede Session mergt am Ende auf `main` (`/merken` Schritt 2). Branch-Namen wechseln je Session; der richtige Checkout ist jeder, der **diesen Vault + `tools/`** enthält.
 
 ## Nordstern-Ziel (messbar)
-- **YPP-Monetarisierung, Shorts-Pfad: 1.000 Abos + 10 Mio Shorts-Views in 90 Tagen** (vor der Feb-2027-Regel). Stand 25.08.: Abos **4,2 %**, Views **0,20 %** — Views-Soll ~111k/Tag vs. aktuell ~2k/Tag (Faktor ~55). **Fortschritt jede Session loggen** → [[Ziel-YPP-Monetarisierung]].
+- **YPP-Monetarisierung, Shorts-Pfad: 1.000 Abos + 10 Mio Shorts-Views in 90 Tagen** (vor der Feb-2027-Regel). Stand 29.08.: Abos **5,8 %** (58/1.000), Views **0,45 %** (44.639/10 Mio). Realistischer Horizont: Abos 3–5 Monate, 10-Mio-Views 9–12 Monate. **Fortschritt jede Session loggen** → [[Ziel-YPP-Monetarisierung]].
 
 ## Kanal
 - *Katastrophenprotokoll* (`UC1KCzLNlgGiYsLNQ7Z0HA-g`, DE), gegründet 15.08.2026.
@@ -92,7 +92,7 @@ Diese gelten aktuell in der Produktion (Belege in den verlinkten Learnings):
 - **HF Z-Image gratis ZUERST (~8/Tag), dann Higgsfield z_image (0,15 Cr).** Reihenfolge Pflicht.
 - **Animation als Video-Clip in der Pipeline:** `short.py` nimmt jetzt `{"clip":...}`-Shots (Animation-Opener + Karaoke). Banner ok für Retention.
 - **analyse.py + Retrieval macht Claude autonom/kostenlos mit allen Zugriffen; n+1 ist IMMER die Regel** — jedes Video/jeder Schritt wird täglich besser, nichts wird vergessen.
-- **Vor JEDER Produktion:** `YouTube-Knowledge/00-System/Produktion-Pflichtliste.md` vollständig lesen — alle 13 Learnings (inkl. Animation-Library), Werkzeug-Checklist, Konkurrenz-Referenz. Kein Schritt vorher.
+- **Vor JEDER Produktion:** `YouTube-Knowledge/00-System/Produktion-Pflichtliste.md` vollständig lesen — alle 15 Pflicht-Dateien (13 Learnings + Failure-Memory + Animation-Library), Werkzeug-Checklist, Konkurrenz-Referenz. Kein Schritt vorher.
 - **Obsidian: NICHT einführen (25.08. getestet).** Kein Connector vorhanden; brächte Claude nichts (Direktzugriff via Dateisystem/Grep ist besser). Vault bleibt reines Markdown. → [[Decision-Obsidian-nicht-noetig]]
 - **Bild-Übersicht pro Short zur Validierung (Nutzer 25.08.):** ab jedem Projekt vorab Kontaktabzug (S01-01…) zeigen, bis der Nutzer blind vertraut.
 - **Werkzeuge AUTONOM einsetzen (nicht nur installiert, Nutzer 25.08.):** `tools/nb_suggest|trends|openverse|tts|upscale|views90.py` + **Manim** (`tools/manim_scenes.py`) als Standard-Weg für Erklär-Animation (Querschnitt/Zeitleiste/Karte). Ganze Pipeline: `/video`. **Volles Repertoire (MCP+Skills+Tools+Engines) → [[Werkzeug-Register]] bei jeder Produktion konsultieren.** → [[Werkzeuge-Installiert]]

@@ -30,15 +30,24 @@ ggf. `CLAUDE.md`) anpassen — sonst bleibt es im Vault (Memory-Promotion).
 **Selbstprüfung:** Ist wirklich nichts Neues dazugekommen? Dann **keine künstliche
 Note** erzeugen. Qualität vor Quantität.
 
-## Schritt 2 — Persistieren
-1. **Git (der Weg zur nächsten Session):** `git add -A` + `git commit -m "merken: <kurz was gelernt>"` + **`git push`** (freigeschaltet). Der nächste Container klont den vollen Stand automatisch.
-2. **Optional Drive:** nur wenn der Nutzer die Notiz in Obsidian sehen will — geänderte Notes in den Drive-Vault (`Katastrophenprotokoll-Pipeline/YouTube-Knowledge`).
-3. **SendUserFile:** für fertige Videos (z. B. TikTok-Upload durch den Nutzer).
+## Schritt 2 — Persistieren (ZWINGEND auf `main`)
+> **Neue Container klonen `main`.** Ein Push nur auf den Feature-Branch erreicht die nächste Session NICHT. Deshalb IMMER auf `main` mergen.
+1. **Auf Feature-Branch committen:** `git add -A` + `git commit -m "merken: <kurz was gelernt>"` + `git push origin <feature-branch>`.
+2. **Auf `main` mergen (der eigentliche Weg zur nächsten Session):**
+   ```bash
+   git checkout main && git pull origin main
+   git merge --no-ff <feature-branch> -m "merge: Vault → main"
+   git push origin main
+   git checkout <feature-branch>
+   ```
+   Kontrolle: `git log --oneline main | head -3` → neuester Commit = aktueller Vault-Stand. Details: [[Memory-Workflow]].
+3. **Optional Drive:** nur wenn der Nutzer die Notiz in Obsidian sehen will — geänderte Notes in den Drive-Vault (`Katastrophenprotokoll-Pipeline/YouTube-Knowledge`).
+4. **SendUserFile:** für fertige Videos (z. B. TikTok-Upload durch den Nutzer).
 
 > **Obsidian ist optional:** Liegt das Vault des Nutzers in seinem Drive-Ordner,
 > erscheinen die Drive-Schreibvorgänge automatisch dort. Falls nicht, ist das kein
 > Blocker — Drive bleibt trotzdem der Persistenz-Träger für die nächste Session.
 
-## Schritt 4 — Kurz melden
+## Schritt 3 — Kurz melden
 Zwei bis drei Sätze: was gelernt wurde, wo es jetzt steht (Vault-Note + Commit).
 Keine Aufzählung deiner Arbeitsschritte.

@@ -6,7 +6,7 @@ description: Produziert ein komplettes Katastrophenprotokoll-Video (10 Shorts) a
 # /video — Video-Produktions-Pipeline (Katastrophenprotokoll)
 
 **SCHRITT 0 — PFLICHT, NICHT ÜBERSPRINGEN:**
-`YouTube-Knowledge/00-System/Produktion-Pflichtliste.md` **vollständig lesen und abarbeiten** bevor irgendetwas anderes passiert. Alle 12 Learning-Dateien lesen (nicht aus dem Gedächtnis — physisch lesen), Werkzeug-Checklist abarbeiten, Konkurrenz-Referenz prüfen. Nicht ankündigen, einfach tun.
+`YouTube-Knowledge/00-System/Produktion-Pflichtliste.md` **vollständig lesen und abarbeiten** bevor irgendetwas anderes passiert. Alle 15 Pflicht-Dateien lesen — 13 Learnings + Failure-Memory + Animation-Library (nicht aus dem Gedächtnis — physisch lesen), Werkzeug-Checklist abarbeiten, Konkurrenz-Referenz prüfen. Nicht ankündigen, einfach tun.
 
 ## Ablauf (BASE = ein neuer Ordner, z. B. `nuttyputty/`)
 1. **Skript (Nutzer):** Original-Transkript → sinngemäß Deutsch, 10 Shorts segmentieren (Hook auf erste 3 s, keine Titelansage). Produktionsbrief schreiben.

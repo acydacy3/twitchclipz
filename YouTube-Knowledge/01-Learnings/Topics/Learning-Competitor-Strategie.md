@@ -149,4 +149,4 @@ HtSS: „Rabies" 2022 (777k) → 2025 (507k, Breakout 73) — identisches Thema,
 - 27.08. (Update): Confidence für Short-Länge korrigiert (war fälschlich „High", jetzt „Low"). Neue Kanäle ergänzt: Spds, DE-Konkurrenz, Tap Thrill, Der Soldat spricht. 5 Inhalts-Säulen ergänzt. Angle-Extraction-Prinzip, Story-Score, Dark-Records-Blaupause, Loveparade-Narrativansatz aus zweiter Analyse-Quelle integriert.
 
 ## Related
-[[Learning-Retention-und-Laenge]] · [[Learning-Titel]] · [[Learning-Storytelling-Shorts]] · [[Learning-Topics-Themenwahl]] · [[Ideen-Pipeline]]
+[[Learning-Retention-und-Laenge]] · [[Learning-Titel]] · [[Learning-Storytelling-Shorts]] · [[Learning-Topics-Themenwahl]] · [[Ideen-Pipeline]] · [[Competitors-Übersicht]]
