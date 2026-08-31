@@ -32,7 +32,7 @@ git log --oneline main..HEAD   # Commits die noch nicht auf main sind
 1. **Das Originalskript kommt IMMER vom Nutzer.** Kürzen/formen: ja. Erfinden: nein.
 2. **Der Nutzer arbeitet nicht mit der Kommandozeile** → Ergebnisse als **Artifact-Seite** ausliefern.
 3. **Zahlen schlagen Vermutungen.** `analyse.py` gewinnt gegen Notiertes.
-4. **n+1 — vor JEDEM Produktionsschritt:** `YouTube-Knowledge/00-System/Produktion-Pflichtliste.md` **lesen und abarbeiten** — alle 15 Pflicht-Dateien (13 Learnings + Failure-Memory + Animation-Library), alle Werkzeuge, Konkurrenz-Check. Nicht ankündigen, einfach tun. Der Nutzer soll HF-Quota, Manim, Remotion, Stock-Bilder, SEO **niemals selbst ansprechen müssen**.
+4. **n+1 — vor JEDEM Produktionsschritt:** `YouTube-Knowledge/00-System/Produktion-Pflichtliste.md` **lesen und abarbeiten** — alle 15 Pflicht-Dateien (13 Learnings + Failure-Memory + Animation-Library), alle Werkzeuge, Konkurrenz-Check. Nicht ankündigen, einfach tun. Der Nutzer soll HF-Quota, Manim, Remotion, Stock-Bilder, SEO **niemals selbst ansprechen müssen**. **Selbst-Fortschritt ist Pflicht:** jede Reihe integriert autonom **≥1 neue kostenlose Fähigkeit** (Capability-Gate §0c) und **prüft das fertige Rendern per Selbst-QC — ansehen (`videoblick.py`) + hören (`hoeren.py`) — vor jedem Upload** (§0d). Ohne diese zwei Riegel wiederholt sich V8 (Werkzeug war da, wurde nicht genutzt / Ergebnis nie geprüft).
 5. **Ein Learning ist nicht automatisch eine Rule.** Confidence sichtbar lassen (Low/Medium/High/Very High).
 6. **Erkenntnisse persistieren:** `git add/commit/push` — **Push ist freigeschaltet**. Ablauf: `/merken`.
 

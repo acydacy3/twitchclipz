@@ -9,6 +9,8 @@ tags: [system, werkzeuge, register, mcp, skills, connectors, produktion]
 # Werkzeug-Register — das VOLLE Repertoire (bei Produktion immer konsultieren)
 
 > **Regel:** Bei jeder Produktion das **gesamte** Repertoire berücksichtigen und **je Bedarf** wählen — nicht nur die zuletzt genutzten. Reihenfolge: **kostenlos zuerst** (HF/Piper/Manim/Commons), Credits nur für Peak-Qualität. Stand 25.08.2026.
+>
+> **Register ist Katalog, nicht Kür:** Das [[Produktion-Pflichtliste]]-**Capability-Gate §0c** erzwingt, dass jede Reihe hieraus ≥1 **neue kostenlose** Fähigkeit real integriert (offene Punkte: [[Werkzeug-Backlog]]). Und **§0d** erzwingt Selbst-QC (ansehen + hören) vor Upload. Beides ist der Riegel gegen V8 (hatte Werkzeug, nutzte es nicht).
 
 ## 0) ZUERST — Wissens-Retrieval (n+1, IMMER vor Produktion)
 Vor dem ersten Schnitt autonom das **komplette geprüfte Wissen** ziehen und anwenden — nicht nur Tools, auch die **Psychologie/Tricks**:

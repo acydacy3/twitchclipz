@@ -2,7 +2,7 @@
 type: system
 title: Produktion-Pflichtliste
 status: active
-updated: 2026-08-26
+updated: 2026-08-31
 tags: [system, pflicht, n+1, produktion]
 ---
 
@@ -24,6 +24,30 @@ Für die aktuelle Geschichte: **10–20 mögliche Short-Hooks** aufschreiben.
 - Jeder Hook muss alleine funktionieren — kein „Teil X".
 - Die stärksten 8–10 produzieren. Nicht alle, die möglich wären.
 - Frage per Hook: *Würde jemand, der diese Geschichte noch nie gesehen hat, genau hier stehen bleiben?*
+
+## 0c. Capability-Integration-Gate (n+1 — PFLICHT je Reihe, autonom)
+> **Warum:** V8 scheiterte nicht an fehlenden Werkzeugen, sondern daran, dass vorhandene nicht genutzt wurden. Dieses Gate erzwingt Fortschritt statt Stillstand. Das System schlägt selbstständig kostenlose Fähigkeiten vor und integriert sie — der Nutzer muss HF/Manim/Remotion/Canva/vidiq/SEO nie selbst ansprechen.
+1. **Scannen** (30 s, kostenlos): [[Werkzeug-Register]] + Live-Repertoire (MCP-Konnektoren, Skills, Plugins, `tools/`). Startbericht listet den aktuellen Stand.
+2. **Vorschlagen:** Welche **kostenlose** Fähigkeit, die im letzten Zyklus NICHT genutzt wurde, hebt dieses Video messbar (Retention, CTR, Watch-Time, Produktionsqualität)? Reihenfolge: **gratis zuerst** (HF Z-Image · Manim · Remotion · Openverse/Commons · Piper · searchfit-seo · Canva-Free), Credits nur für Peak.
+3. **Integrieren:** Mindestens **eine** neue kostenlose Fähigkeit pro Reihe real einsetzen — nicht ankündigen, tun. Wenn wirklich keine passt: in einem Satz begründen (echte Ausnahme, kein Default).
+4. **Persistieren:** Entscheidung + Ergebnis in [[Werkzeug-Backlog]] (erledigt/offen) und [[Autonomie-Log]] eintragen. Neue Fähigkeit erstmals genutzt → [[Werkzeuge-Installiert]] + [[Werkzeug-Register]] updaten.
+> Verknüpft mit Anti-Stall §7: 3 Reihen ohne neue Fähigkeit = harter STOPP.
+
+## 0d. Selbst-Wahrnehmungs-QC (PFLICHT vor Upload — der Anti-V8-Riegel)
+> **Der eigentliche V8-Fehler:** unsichtbare Progressbar, Karaoke ohne Highlight, Einzelbild statt Multi-Shot, Dot-Animation ohne Kontext — alle **hochgeladen, weil das Ergebnis nie angesehen/gehört wurde.** Ein Werkzeug allein reicht nicht; das Rendern muss geprüft werden.
+Vor JEDEM Upload, für **mindestens 2 Stichproben-Shorts** (immer #01 + der komplexeste):
+```bash
+python3 videoblick.py render/short_XX.mp4   # in Einzelbilder zerlegen → mit Read ANSEHEN
+python3 hoeren.py render/short_XX.mp4        # Tonspur/VO HÖREN → gegen Skript abgleichen
+```
+Gegen die [[Failure-Memory]]-Checkliste prüfen (jede Zeile bewusst abhaken):
+- [ ] Progressbar sichtbar (≥18 px, gelb, kein Alpha)?
+- [ ] Karaoke-Highlight `\kf` läuft wortweise mit?
+- [ ] Multi-Shot (mehrere Bilder/Beat), kein statisches Einzelbild?
+- [ ] Animationen tragen Label + ≥3 Elemente (kein nackter Dot)?
+- [ ] CTA „Kanal folgen" in den letzten 4 s sichtbar?
+- [ ] VO verständlich, −16 LUFS, Musik hörbar aber nicht drüber?
+**Ein Fehler → nicht hochladen, neu rendern.** Kein Upload ohne diesen Blick.
 
 ## 0. Contrarian-Gate (IMMER VOR RENDER/UPLOAD — ~10 s)
 ```bash
