@@ -58,6 +58,7 @@ Das 10-Mio-Views-Fenster öffnet sich, sobald 1–2 Shorts viral gehen (>50K Vie
 |-------|------|---------------|----------------|-------------------|------------------|-------|
 | 2026-08-25 | 42 | 20.321 | ~2.000 | 0,20 % | 4,2 % | Baseline. V6 Nutty Putty terminiert (31.08–03.09). Faktor ~55 zum Views-Soll. |
 | 2026-08-26 | 42 | 23.727 | ~3.406 | 0,24 % | 4,2 % | V6 Upload komplett (10/10). 25 terminiert. Views +3.406 in 1 Tag — bestes Tageswachstum. |
+| 2026-08-31 | 63 | 53.229 | ~4.300 | 0,53 % | 6,3 % | V8 Ralston Caption-Fix + Re-Upload (10 alte gelöscht, 10 neu). §0d fing ASR-Fehler. 29 terminiert. Abos +21 seit 25.08. |
 
 ## Related
 [[Current-State]] · [[Mission]] · [[Analytics-Loop]] · [[Learning-Hooks]] · [[Learning-Retention-und-Laenge]] · [[Ideen-Pipeline]]
