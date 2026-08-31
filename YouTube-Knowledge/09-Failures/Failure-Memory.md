@@ -52,6 +52,12 @@ Bedingungen · Learning · Wann es doch noch gültig sein könnte · „Do not r
 **Fix**: Vollständig neu als cinematischer Slot-Canyon-Querschnitt — Felswände, Sandsteinschichten, Arm-Silhouette, Boulder-Drop mit Impact-Flash, Labels.
 **Rule**: Animations-Klassen immer mit Beschriftung (Zahlen, Ortsname, Datum) und mindestens 3 erklärendem Grafik-Element. Keine anonymen Dots/Blobs.
 
+### F-V8-E: Captions aus ASR statt aus dem Skript (`fixed`, 31.08.2026)
+**Was**: Die Karaoke-Captions wurden aus der Spracherkennung der Tonspur (Vosk/Whisper) erzeugt — nicht aus dem Nutzer-Skript. Ergebnis: eingebrannte Fehler in fast jedem Short — „Aron Ralston" → „Rallsturm/Ralsdum/Raalstund", „Prothese" → „Protesse", „James Franco" → „jemes Franco", „Tourniquet" → „Tonikwett", „Bestseller" → „biszeller". Wäre ungeprüft hochgegangen; **§0d-Selbst-QC (videoblick.py) hat es vor dem Upload gefangen**.
+**Root Cause**: Pipeline nutzte ASR für die WÖRTER. ASR rät und verstümmelt Namen/Fachbegriffe. Der korrekte Text existiert längst — im Skript (Constraint #1). Das vorhandene `align.py` (Text vom Skript, Timing vom Audio) war da, wurde aber übergangen — dasselbe V8-Muster wie A–D (Werkzeug vorhanden, nicht genutzt).
+**Fix**: `nb_build.py` → neue `captions()`-Funktion: Wenn `skript/short_XX.txt` existiert, kommen die Wörter aus dem Skript, `align.py` mappt sie auf die Audio-Zeitstempel. ASR liefert nur noch Timing. Ohne Skript: lauter Warn-Fallback. 10 Shorts neu gerendert + §0d-verifiziert + neu hochgeladen (alte gelöscht).
+**Rule**: **Caption-Text kommt IMMER aus dem vom Nutzer gelieferten Skript, nie aus ASR.** ASR nur fürs Timing (align.py). Gilt für jede Reihe, jede Pipeline. Skript wird je Video frisch vom Nutzer geliefert (nicht im Repo persistiert).
+
 ## Failure Memory auf Agentenebene
 Wenn ein Agent wiederholt denselben Fehler produziert:
 ```
