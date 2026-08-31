@@ -55,6 +55,7 @@ Titelentscheidung lohnt (aber Credits schonen).
 - 17.08. (Runde 2): Trennstrich-Anhang verworfen.
 - 27.08.: Competitor-Analyse bestätigt — „| Doku" weg, Namen rein wenn bekannt.
 - 27.08. (Präzisierung): Personennamen nicht in jeden Short-Titel erzwingen — nur wo es natürlich passt. Retroaktiv bei laufenden Videos: Risiko → überspringen, stattdessen nur Description nachbessern. Ab V8 von Anfang an einplanen.
+- **31.08. RULE (Confidence Medium-High): Titel-Open-Loop statt Auflösung.** Belegt bei jungen Ausbrechern: „Sucked Into a Drain Pipe… **Then This Happened** 😱" (434k), „Slept in a Dumpster… Then the Garbage Truck Came" (2,2M). Der Titel verrät den AUSGANG NICHT — er öffnet eine Schleife. Unsere alten Titel schließen ab („Er sägte sich den Arm ab, um zu überleben") → Spoiler. Formel: `[Person/Setup] [Unmöglichkeit] — dann… [Emoji]` oder `[Extremzahl] — wie überlebt man das?`. Keyword trotzdem vorn (SEO). Dezentes Emoji (😱🌊❄️). Quelle: [[Junge-Ausbrecher-2026-08]], [[Short-Konzept-Blueprint]].
 
 ## Related
 [[Learning-SEO]] · [[Learning-Thumbnails-Cover]] · [[Learning-Hooks]]
