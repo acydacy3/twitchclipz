@@ -42,6 +42,16 @@ tags: [system, autonomie, messung, n+1, audit]
 
 ## Log (neueste zuerst)
 
+### SYS5 | Strategie + Konstrukt-Struktur + CTR-Monitoring | 2026-08-31 | Score: 88 | neue Technik: vidiq_watch_shortform_content (szenenweise Hit-Analyse) + CTR-Benchmark
+- Retrieval: 29/30 (Vault-Vollaudit, Konkurrenz-Learnings, Studio-CTR-Daten integriert)
+- Tools: 40/40 (channel_search/outliers/shortform_content · nb_suggest/nb_trends · Analytics-API-Probe · alle autonom, vidiq nur für Outlier/Competitor, nie Keywords)
+- Animation: 14/15 (Bewegtbild-Pflicht als Regel verankert, noch keine Produktion)
+- Persistenz: 15/15 (mehrere main-Merges, Konstrukt entstreut)
+- User-Prompts: Richtungsvorgaben (visuelle Analysepflicht, Obsidian raus, Bewegtbild-Pflicht) — Aufträge, keine Lückenkorrektur → keine Strafe
+- Score: **88** — starke autonome Recherche+Persistenz; Abzug: Container-Neustarts/Limit unterbrachen den Fluss
+- Gaps geschlossen: Short-Konzept-Blueprint (Beat-Struktur viraler Hits), 10-Video-Schlachtplan, Bewegtbild-Pflicht (3-fach verankert), Caption-aus-Skript pipeline-weit, Konstrukt entstreut (kanonischer Prozess, Obsidian raus, Zähler-Drift beendet), CTR-Benchmark+Monitoring
+- Offen: Ralston-Longform; Loveparade-Produktion (wartet auf Skript)
+
 ### SYS4 | General-Überholung + V8-Ralston-Caption-Fix | 2026-08-31 | Score: 82 | neue Technik: §0d Selbst-Wahrnehmungs-QC (videoblick.py + hoeren.py) live im Ernstfall
 - Retrieval: 28/30 (Vollaudit des Konstrukts, alle System-Dateien + Learnings + align.py gelesen)
 - Tools: 39/40 (videoblick.py + hoeren.py erstmals als Pflicht-QC · align.py reaktiviert · faster-whisper · YouTube-API delete/list/upload · alle autonom)
