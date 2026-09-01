@@ -40,6 +40,16 @@ tags: [system, state]
 3. **Analytics-Loop V8** — ab ~Tag 4 nach Publish (12.09.) CTR/Retention der Ralston-Shorts ziehen, gegen Okene-Benchmark (beste Serie) prüfen.
 - **Voller Tagesstand: [[Audit-2026-08-25]] + [[Audit-2026-08-26]].**
 
+## ⭐ Stehende Regeln seit 31.08. (für nächste Produktion — Loveparade)
+Diese gelten ab jetzt automatisch, ohne Nutzer-Nachfrage:
+- **Bewegtbild-Pflicht:** jeder Short öffnet mit **Bewegung in Sekunde 1**, ≥1 bewegter Schlüssel-Shot (Manim/Remotion/Wan2.1-I2V). Blockierend im §0d-QC. → [[Short-Konzept-Blueprint]]
+- **Captions IMMER aus Skript** via `align.py`, nie roh-ASR (F-V8-E). `nb_build.py captions()` erledigt das; Skript als `<serie>/skript/short_XX.txt` ablegen.
+- **Titel-Open-Loop** („…dann [Cliffhanger]"), Confidence HIGH (CTR-Beleg). → [[Learning-Titel]], [[CTR-Benchmark-2026-08]]
+- **§0d Selbst-QC** (videoblick + hoeren) vor JEDEM Upload · **§0c** ≥1 neue Gratis-Fähigkeit je Reihe.
+- **Konkurrenz-/Analyse-Pflicht:** immer visuell (Bild/Schnitt/Hook), nie nur Metadaten.
+- **Kanonischer Prozess:** [[Produktion-Pflichtliste]] (Detail: [[Produktions-Runbook]] · [[Schnitt-Protokoll]]).
+- **Nächste 10 Videos:** [[Ideen-Pipeline]] §Schlachtplan (Loveparade + Anden = Breakout-Versuche).
+
 ## Zugänge (Stand 19.08.)
 - **YouTube Data + Analytics API:** OAuth-Refresh-Token gültig, Uploads/Analytics/Terminierung produktiv.
 - **git push: FREIGESCHALTET (25.08.)** — funktioniert. **Persistenz = Git (Repo) primär**: `git commit` + `git push` am Session-Ende → nächster Container klont den vollen Stand automatisch. Drive ist damit **optional** (nur noch Nutzer-Ansicht/Asset-Transfer). **Alle MCP-/Zugriffe freigegeben (25.08.).** Branch-Namen wechseln je Session (`claude/…`); **`main` wird jede Session mitgepusht und ist aktuell** → neue Sessions starten garantiert korrekt, egal ob sie `main` oder den Feature-Branch ziehen.
