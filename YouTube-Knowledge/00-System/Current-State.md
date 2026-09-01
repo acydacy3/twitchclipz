@@ -19,7 +19,7 @@ tags: [system, state]
 
 ## Kanal
 - *Katastrophenprotokoll* (`UC1KCzLNlgGiYsLNQ7Z0HA-g`, DE), gegründet 15.08.2026.
-- **Gemessen 31.08. (analyse.py):** **63 Abos**, **53.229 Aufrufe**, **57 Videos**, **29 terminiert**. Wachstum Abos: 42(25.08)→58(29.08)→63(31.08). *(Vor Produktion neu ziehen — analyse.py schlägt diese Notiz.)*
+- **Gemessen 01.09. (analyse.py):** **68 Abos**, **57.783 Aufrufe**, **60 Videos**, **26 terminiert**. Wachstum Abos: 42(25.08)→58(29.08)→63(31.08)→68(01.09). *(Vor Produktion neu ziehen — analyse.py schlägt diese Notiz.)*
 - Konto vidIQ: `kisha-ners@gmx.de`. Guthaben (19.08.): **30** (renewable 0/150,
   Add-on 30/80, refresh 15.09.2026). vidIQ nur auf Anfrage — Credits schonen.
 
