@@ -46,7 +46,7 @@ Diese gelten ab jetzt automatisch, ohne Nutzer-Nachfrage:
 - **Captions IMMER aus Skript** via `align.py`, nie roh-ASR (F-V8-E). `nb_build.py captions()` erledigt das; Skript als `<serie>/skript/short_XX.txt` ablegen.
 - **Titel-Open-Loop** („…dann [Cliffhanger]"), Confidence HIGH (CTR-Beleg). → [[Learning-Titel]], [[CTR-Benchmark-2026-08]]
 - **§0d Selbst-QC** (videoblick + hoeren) vor JEDEM Upload · **§0c** ≥1 neue Gratis-Fähigkeit je Reihe.
-- **Konkurrenz-/Analyse-Pflicht:** immer visuell (Bild/Schnitt/Hook), nie nur Metadaten.
+- **Konkurrenz-/Analyse-Pflicht:** immer visuell (Bild/Schnitt/Hook), nie nur Metadaten. **Gekoppelt ans Asset-Sourcing (Nutzer 01.09.):** beim Stock-/Bild-Suchen je Thema zusätzlich themen-spezifische Konkurrenten UND **Evergreens** ansehen (echte Frames+Ton via `watch`/`videoblick`/`hoeren`) und Schnitt/Bildsprache adaptieren. → Pflichtliste §4 Schritt 1.
 - **Kanonischer Prozess:** [[Produktion-Pflichtliste]] (Detail: [[Produktions-Runbook]] · [[Schnitt-Protokoll]]).
 - **Nächste 10 Videos:** [[Ideen-Pipeline]] §Schlachtplan (Loveparade + Anden = Breakout-Versuche).
 

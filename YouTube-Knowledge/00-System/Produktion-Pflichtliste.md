@@ -135,12 +135,13 @@ python3 analyse.py                       # Detailbericht (Uploads, Termine)
 
 > **REGEL (Nutzer 31.08.): Jede Analyse/Recherche erfasst IMMER das VISUELLE — Bildsprache, Schnittstil, Hook, Beat-Struktur, Caption-Stil, Audio — nie nur Metadaten (Views/Titel/Tags).** Metadaten sagen WAS läuft, nicht WARUM. Werkzeuge: `vidiq_watch_shortform_content` (szenenweise Analyse eines Shorts, ~10 Cr) · `videoblick.py` (Frames ansehen) · `hoeren.py`. Ergebnis-Standard + kopierbares Bauprinzip: [[Short-Konzept-Blueprint]] — vor jeder Produktion lesen.
 
-**Schritt 1 — Top-Videos zum Thema analysieren:**
+**Schritt 1 — Top-Videos UND Evergreens zum Thema analysieren:**
+> **REGEL (Nutzer 01.09.): Themen-spezifische Konkurrenz + Evergreens sind PFLICHT — und zwar gekoppelt an den Moment, in dem du Assets/Stock-Bilder suchst.** Bevor/während du Bilder für einen Short sourc(e)st, sieh dir zum konkreten Thema (hier: Loveparade / Massenpanik / Menschenmengen-Katastrophe) an: (a) die aktuellen Top-Shorts UND (b) **Evergreens** — zeitlose Dauerläufer, die seit Jahren Views ziehen (oft die besten Bildsprache-/Schnitt-Vorlagen). Lass dich von **Schnitt, Bildsprache, Kamerabewegung, Reveal-Timing** inspirieren — nicht von Metadaten. Nutze `watch`/`videoblick.py`/`hoeren.py`, um echte Frames + Ton zu sehen. Ziel: unsere Shots sollen visuell mit den Besten mithalten, in nüchterner Marke.
 ```
 python3 tools/nb_suggest.py "<thema>"    # YouTube-Suche/Suggest (gratis)
 python3 tools/nb_trends.py "<a>" "<b>"   # Google-Trends-Momentum (gratis)
 ```
-→ Die Top-Videos **visuell** analysieren (nicht nur Titel lesen):
+→ Die Top-Videos **und Evergreens visuell** analysieren (nicht nur Titel lesen):
 - Hook: erste 2s — Bewegung oder Standbild? Welcher Schock-Satz? Caption-Einblendung?
 - Schnitt: Szenenlänge, Kamerabewegung, Anteil Bewegtbild vs Standbild.
 - Struktur: Beats bis Payoff, Cliffhanger-Pause, Realitäts-Beweis am Ende?
