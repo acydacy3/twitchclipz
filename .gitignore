@@ -11,6 +11,21 @@ koepcke_dl/
 # ── Manim-Zwischenschritte (werden bei jedem Lauf neu erzeugt) ──
 media/
 
+# ── Vendored Video-Engines: Abhängigkeiten NIE committen (per-Container installiert) ──
+# Code + Rezepte + Templates liegen im Repo; deps holt tools/nb_install_video_engines.sh
+node_modules/
+.venv/
+tools/vendor/**/node_modules/
+tools/vendor/**/.venv/
+.claude/skills/**/node_modules/
+.claude/skills/**/.venv/
+# Render-/Session-Ausgaben der Engines (reproduzierbar)
+**/out/
+**/render.mp4
+**/render.webm
+edit/
+.env
+
 # ── Python / Tool-Cache ──
 __pycache__/
 *.log

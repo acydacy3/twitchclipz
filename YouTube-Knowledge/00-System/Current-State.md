@@ -60,6 +60,7 @@ Diese gelten ab jetzt automatisch, ohne Nutzer-Nachfrage:
 - **Whisper** (`faster-whisper small-de int8`) = Standard-Transkription; Vosk nur Offline-Fallback. Siehe [[Decision-Whisper-statt-Vosk]].
 - **Bild-Engines:** Nano Banana Pro + Seedance (Figur/Hero), Z-Image (Landschaft, 0,15 Cr.). Siehe [[Decision-Bild-Engine-Wahl]].
 - **claude-youtube** Skill (als claude.ai-Skill), yt-dlp (via deno), gdown.
+- **NEU (01.09.) Video-Engines vendored → weg von Standbild, hin zu Animation/Schnitt:** Skills **`video-shotcraft`** (Remotion-Motion-Design, echter Render getestet), **`video-use`** (Schnitt/Grade/Overlay per Gespräch, gratis-Transkript via faster-whisper), **`watch`** (ansehen+hören für QC/Konkurrenz) + Tool **OpenMontage** (Remotion/HyperFrames). Deps im frischen Container: `bash tools/nb_install_video_engines.sh <core|shotcraft|video-use|watch|openmontage|all>`. Voll dokumentiert: [[Werkzeug-Register]] §H. Diese Engines bedienen die Bewegtbild-Pflicht + §0c-Capability-Gate. `open-design` bewusst nicht vendored (GUI-App).
 
 ## Offene Experiment-/Analytics-Fragen
 - Längen-These **aufgelöst (24.08., n=35):** Faktor 0,9 statt 7,9 → Hook schlägt Länge (auf Aufruf-Basis; **AVP%/3-s-Retention für V3 steht aus**, ~2 Tage Analytics-Lag). → [[Learning-Retention-und-Laenge]]
