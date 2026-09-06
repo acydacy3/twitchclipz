@@ -7,6 +7,9 @@ koepcke_dl/
 # ── Gerenderte Endprodukte (reproduzierbar via nb_build.py / lang.py) ──
 */render/*.mp4
 */render/*.webm
+*/output/*.mp4
+*/tmp/
+*/_lang/
 
 # ── Manim-Zwischenschritte (werden bei jedem Lauf neu erzeugt) ──
 media/

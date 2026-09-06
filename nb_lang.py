@@ -95,24 +95,48 @@ def find_words(serie, nn):
     return None
 
 
+EXT = (".jpg", ".jpeg", ".png", ".webp")
+
+
+def _imgs_in(d):
+    if not os.path.isdir(d):
+        return []
+    return sorted(os.path.join(d, f) for f in os.listdir(d)
+                  if f.lower().endswith(EXT))
+
+
 def find_images(serie, nn):
-    """Hero-Bild(er) + broll je Short — gibt möglichst VIELE verschiedene
-    Kompositionen zurück, damit jeder Shot ein eigenes Bild bekommt (nicht
-    4 Crops desselben Bildes)."""
+    """Hero + broll je Short — deckt die verschiedenen Serien-Layouts ab:
+      prosperi: bilder/SNN/ + broll/short_NN/
+      nuttyputty/lengede: bilder/short_NN/*.jpg
+      ralston: bilder/broll/*sNN*  (Szenennummer im Dateinamen)
+    Gibt möglichst VIELE verschiedene Kompositionen zurück (1 Bild pro Shot)."""
+    n = int(nn)
     imgs = []
-    d = f"{serie}/bilder/S{nn}"
-    if os.path.isdir(d):
-        imgs += sorted(os.path.join(d, f) for f in os.listdir(d)
-                       if f.lower().endswith((".jpg", ".png")))
-    else:
-        alt = f"{serie}/bilder/bild{nn}.jpg"
-        if os.path.exists(alt):
-            imgs.append(alt)
-    bd = f"{serie}/broll/short_{nn}"
-    if os.path.isdir(bd):
-        imgs += sorted(os.path.join(bd, f) for f in os.listdir(bd)
-                       if f.lower().endswith((".jpg", ".png")))
-    return imgs
+    imgs += _imgs_in(f"{serie}/bilder/S{nn}")
+    imgs += _imgs_in(f"{serie}/bilder/short_{nn}")
+    imgs += _imgs_in(f"{serie}/broll/short_{nn}")
+    alt = f"{serie}/bilder/bild{nn}.jpg"
+    if os.path.exists(alt):
+        imgs.append(alt)
+    # ralston-Stil: Dateiname trägt die Szene (hf_s03_*, ref_05_*)
+    for base in (f"{serie}/bilder/broll", f"{serie}/bilder", f"{serie}/broll"):
+        if os.path.isdir(base):
+            for f in sorted(os.listdir(base)):
+                low = f.lower()
+                if low.endswith(EXT) and (f"s{n:02d}" in low or f"s{n}_" in low
+                                          or f"_{n:02d}_" in low or f"_{n:02d}." in low):
+                    imgs.append(os.path.join(base, f))
+    # Dubletten raus: gleicher Dateistamm (hf_s01_truck.jpg == .webp) nur einmal,
+    # .jpg bevorzugt vor .webp
+    imgs.sort(key=lambda p: (os.path.splitext(p)[0], 0 if p.lower().endswith(".jpg") else 1))
+    seen, out = set(), []
+    for p in imgs:
+        stem = os.path.splitext(os.path.realpath(p))[0]
+        if stem not in seen:
+            seen.add(stem)
+            out.append(p)
+    return out
 
 
 # Crops MOTIV-zentriert: 9:16→16:9 zeigt nur ~31 % Bildhöhe, daher eng um die
@@ -207,13 +231,21 @@ def bauen(serie, order, gap, shot_len):
         "[mx]alimiter=limit=0.84:level=false:attack=2:release=60[aout]",
         "-map", "[aout]", "-ar", "48000", "-c:a", "aac", "-b:a", "192k", mix])
 
+    # Gesamt-Bildpool als Fallback für Segmente ohne eigenes Bild
+    pool = []
+    for s in segs:
+        pool += s["imgs"]
+    if not pool:
+        sys.exit("Keine Bilder in der Serie gefunden.")
+
     # 5) Einstellungen: je Segment mehrere Ken-Burns-Shots aus seinen Bildern
     shots = []
     ci = 0
-    for s in segs:
+    for si, s in enumerate(segs):
         if not s["imgs"]:
-            print(f"  ! keine Bilder für Short {s['nn']}")
-            continue
+            # Fallback: rotierender Ausschnitt aus dem Gesamtpool (nie leer lassen)
+            s["imgs"] = [pool[(si + k) % len(pool)] for k in range(2)]
+            print(f"  ~ Short {s['nn']}: keine eigenen Bilder → Fallback aus Pool")
         n_shots = max(1, int(math.ceil(s["dur"] / shot_len)))
         seg_start = s["offset"]
         sub = s["dur"] / n_shots
