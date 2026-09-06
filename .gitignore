@@ -47,3 +47,6 @@ nuttyputty/_s08_small.mp4
 nuttyputty/animation/frames_clean/
 nuttyputty/upload_results.json
 */animation/_words_vosk_backup/
+
+# Motion-Composition Render-Assets (Kopien, per Build-Schritt)
+**/template/public/kp/
