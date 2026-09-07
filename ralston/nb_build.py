@@ -38,16 +38,16 @@ SHORTS = {
     # ab: "A"|"B"|None — A/B-Hook-Test. Gleiches Video, verschiedener Hook im Titel (metadata.json).
     # Gleiche Produktions-Parameter, nur Titel-Variante unterscheidet sich → sauberes A/B.
     "01": {
-        "imgs":  ["hf_s01_truck.jpg", "hf_s02_arm.jpg", "hf_s09_rappel.jpg"],
-        "manim": None, "grp": "A", "ab": None,
+        "imgs":  ["hf_s01_truck.jpg", "hf_s09_rappel.jpg", "hf_s04_chipping.jpg", "hf_s02_arm.jpg"],
+        "manim": "RalstonNiemandWeiss", "grp": "A", "ab": None,
     },
     "02": {
         "imgs":  ["hf_s01_truck.jpg", "hf_s04_chipping.jpg", "hf_s02_arm.jpg"],
         "manim": "CrossSection", "grp": "A", "ab": None,
     },
     "03": {
-        "imgs":  ["hf_s03_supplies.jpg", "hf_s04_chipping.jpg", "hf_s02_arm.jpg"],
-        "manim": None, "grp": "A", "ab": None,
+        "imgs":  ["hf_s03_supplies.jpg", "hf_s04_chipping.jpg", "hf_s07_stars.jpg", "hf_s02_arm.jpg"],
+        "manim": "RalstonTiefe", "grp": "A", "ab": None,
     },
     "04": {
         "imgs":  ["hf_s04_chipping.jpg", "hf_s02_arm.jpg", "hf_s03_supplies.jpg"],
@@ -58,12 +58,12 @@ SHORTS = {
         "manim": "SurvivalDays", "grp": "B", "ab": None,
     },
     "06": {
-        "imgs":  ["hf_s06_camera.jpg", "hf_s07_stars.jpg", "hf_s02_arm.jpg"],
-        "manim": None, "grp": "B", "ab": None,
+        "imgs":  ["hf_s06_camera.jpg", "hf_s02_arm.jpg", "hf_s05_carving.jpg", "hf_s07_stars.jpg"],
+        "manim": "RalstonAbschied", "grp": "B", "ab": None,
     },
     "07": {
-        "imgs":  ["hf_s07_stars.jpg", "hf_s02_arm.jpg", "hf_s05_carving.jpg", "hf_s07_stars.jpg"],
-        "manim": None, "grp": "B", "ab": None,
+        "imgs":  ["hf_s07_stars.jpg", "hf_s02_arm.jpg", "hf_s05_carving.jpg", "hf_s09_rappel.jpg"],
+        "manim": "RalstonFuenfteNacht", "grp": "B", "ab": None,
     },
     "08": {
         "imgs":  ["hf_s02_arm.jpg", "hf_s04_chipping.jpg", "hf_s09_rappel.jpg", "hf_s02_arm.jpg"],
@@ -74,8 +74,8 @@ SHORTS = {
         "manim": "CountdownTimer", "grp": "C", "ab": None,
     },
     "10": {
-        "imgs":  ["hf_s09_rappel.jpg", "hf_s07_stars.jpg", "hf_s01_truck.jpg", "hf_s09_rappel.jpg"],
-        "manim": None, "grp": "C", "ab": None,
+        "imgs":  ["hf_s09_rappel.jpg", "hf_s05_carving.jpg", "hf_s01_truck.jpg", "hf_s04_chipping.jpg"],
+        "manim": "StundenBogen", "grp": "C", "ab": None,
     },
 }
 
@@ -203,16 +203,33 @@ def captions(num, vo_path, words_path):
     if os.path.exists(skript_path) and words:
         import align as _align
         text = open(skript_path, encoding="utf-8").read()
-        if "\n" in text:
-            text = text.split("\n", 1)[1]        # Titelzeile weg
+        # Titelzeile NUR wegschneiden, wenn es wirklich eine ist ("short_01").
+        # Vorher wurde blind die erste Zeile entfernt — bei einem Skript ohne
+        # Titelzeile war das der gesamte Text. Ergebnis: leere Wortliste,
+        # kein Untertitel im Video, und trotzdem die Meldung "Captions aus
+        # Skript". Ein Fehler, der sich als Erfolg meldet, ist der schlimmste.
+        _zeilen = text.split("\n", 1)
+        if len(_zeilen) > 1 and _re.fullmatch(r"short_\d+\s*", _zeilen[0]):
+            text = _zeilen[1]
         toks, ends = [], []
         for m in _re.finditer(_align.TOKEN_RE, text):
             toks.append(m.group())
             ends.append(bool(_re.match(r"\s*[.!?:]", text[m.end():m.end()+3])))
+        if not toks:
+            raise SystemExit(
+                f"  ✗ ABBRUCH: skript/short_{num}.txt enthaelt keine Woerter.\n"
+                f"    Ohne Skripttext gaebe es keine Untertitel — und der Render\n"
+                f"    saehe trotzdem fertig aus. Lieber hier anhalten.")
         fixed = _align.align(words, toks, ends)
+        if len(fixed) < max(5, len(toks) // 3):
+            raise SystemExit(
+                f"  ✗ ABBRUCH: Abgleich Skript<->Audio ergab nur {len(fixed)} "
+                f"von {len(toks)} Woertern.\n    Das wuerde ein Video ohne "
+                f"brauchbare Untertitel erzeugen.")
         json.dump(fixed, open(words_path, "w", encoding="utf-8"),
                   ensure_ascii=False, indent=1)
-        print(f"  ✓ Captions aus Skript (skript/short_{num}.txt) + Audio-Timing")
+        print(f"  ✓ Captions aus Skript (skript/short_{num}.txt) + Audio-Timing"
+              f"  [{len(fixed)} Woerter]")
         return fixed
     print(f"  ⚠ KEIN Skript skript/short_{num}.txt — ASR-Fallback! "
           f"Captions ungeprüft, §0d-QC (videoblick.py) vor Upload PFLICHT.")

@@ -51,23 +51,81 @@ Gegen die [[Failure-Memory]]-Checkliste prüfen (jede Zeile bewusst abhaken):
 - [ ] VO verständlich, −16 LUFS, Musik hörbar aber nicht drüber?
 **Ein Fehler → nicht hochladen, neu rendern.** Kein Upload ohne diesen Blick.
 
-## 0. Contrarian-Gate (IMMER VOR RENDER/UPLOAD — ~10 s)
+## 0. HARTE GATES (erzwungen, nicht abzuhaken) — seit 07.09.2026
+
+> **Diese Abschnitte sind KEINE Checkliste mehr.** Sie werden von Programmen
+> durchgesetzt. Der `PreToolUse`-Riegel (`.claude/hooks/pre-tool-use.py`) hält
+> jeden Render- und Upload-Befehl an, dessen Serie das Gate nicht besteht.
+> Warum: bis zum 06.09. hatte **keine einzige** Produktionsregel einen
+> Prüfpunkt im Code — alle galten, alle wurden gebrochen. → [[Decision-Harte-Gates-statt-Prosa]]
+
+**0-A · Skript aufnehmen (einmal je Serie, bevor irgendetwas gebaut wird):**
 ```bash
-python3 tools/nb_contrarian.py <short.json>   # automatische Konfig-Prüfung
-python3 tools/nb_contrarian.py --kurz         # nur HIGH+VERY_HIGH ohne Konfig
+python3 tools/kp_skript.py <serie> --aus <die-datei-die-der-nutzer-schickte>
 ```
-Prüft **alle Domänen**: Ton · Hook · Captions · Titel · SEO · Bilder · Retention · Upload · Persistenz.
-Kein Video wird gerendert oder hochgeladen, bevor der Contrarian grün ist.
-Vollständiger Strategie-Audit (wöchentlich): `python3 tools/nb_contrarian.py` ohne Argumente.
+Legt `<serie>/skript/short_XX.txt` + `QUELLE.json` (sha256 je Short) an.
+**Ohne diesen Nachweis blockiert das Gate.** Ein Ordnername beweist nicht, dass
+ein Text vom Nutzer kommt — bei V7 stand dort die Spracherkennung (F-V9-A).
+
+**0-B · Vorher-Gate (vor jedem Render):**
+```bash
+python3 tools/kp_gate.py <serie>
+```
+Prüft Herkunft · Caption-Wörter gegen das Skript · echte Bewegung · Musikpegel.
+Exit 1 = blockiert. Der Riegel ruft es von selbst auf — hier steht es, damit du
+den Befund vorher lesen kannst.
+
+**0-C · Nachher-Gate (vor jedem Upload):**
+```bash
+python3 tools/kp_gate.py <serie> --nachher
+```
+Prüft das **fertige Video**: Länge gegen Voiceover, Untertitel-Abdeckung, und ob
+im Untertitel-Band überhaupt Schrift im Bild ist. Ein Vorher-Gate kann das nicht
+sehen — am 07.09. entstanden fünf Videos ganz ohne Untertitel, während der Build
+„✓ Captions aus Skript" meldete (F-V9-D).
+
+**0-D · Terminierte Shorts austauschen:**
+```bash
+python3 tools/kp_ersetzen.py <serie> --shorts 01,03 [--wirklich]
+```
+Nachher-Gate → hochladen → bestätigen → **erst dann** löschen. Öffentliche
+Videos werden nie angefasst. Ohne `--wirklich` nur Probelauf.
+
+**0-E · Selbst ansehen und hören (bleibt Pflicht, ersetzt kein Gate):**
+```bash
+python3 videoblick.py <serie>/render/short_XX.mp4
+python3 hoeren.py    <serie>/render/short_XX.mp4    # schreibt *.gehoert.txt
+```
+Mindestens Short 01 + den komplexesten. Die Gates fangen das Messbare; der Blick
+fängt das, was sich nicht messen lässt (Bildwirkung, Rhythmus, Tonfall).
+
+**0-F · Contrarian (wissenschaftlicher Teil, weiterhin nützlich):**
+```bash
+python3 tools/nb_contrarian.py --wissenschaft   # Hypothesen/Experimente peer-reviewen
+```
+> **Achtung, dokumentierter Irrtum:** Der Produktions-Teil von
+> `nb_contrarian.py` hält **nichts** auf — er gibt Exit 0 auch bei „FEHLER
+> (blockierend)", wird von keinem Skript aufgerufen, und sein Caption-Test prüft
+> nur, ob ein Konfig-Schlüssel existiert. An der Prosperi-Konfiguration mit
+> „Marathon des Apples" meldete er „✓ Captions ✓" (F-V9-C). Für Produktion gilt
+> `kp_gate.py`.
 
 ---
 
 ## 1. Zahlen holen + Observations generieren (autonom, ~15 s)
 ```bash
+python3 tools/kp_metrik.py --snapshot    # PFLICHT taeglich — sonst wird die Serie unmessbar
 python3 tools/nb_analytics_snapshot.py   # Snapshot speichern (1×/Tag)
 python3 tools/nb_observe.py              # Delta, Outlier, Experimente bewerten
 python3 analyse.py                       # Detailbericht (Uploads, Termine)
 ```
+- **`kp_metrik.py` zeigt AVP% je Serie** — den Anteil des Shorts, der wirklich
+  gesehen wird. Das ist die einzige Zahl, die NICHT mit dem Alter wächst, also
+  der einzige faire Serienvergleich. Aufrufe allein täuschen: ältere Serien
+  gewinnen automatisch.
+- **Ein Tag ohne Snapshot ist ein dauerhaft verlorener Messpunkt.** V5 Lengede
+  und V6 Nutty Putty (20 Videos) sind für immer unbewertbar, weil die Snapshots
+  am 29.08. aufhörten. Kein Nachholen möglich.
 - Snapshot-Delta: Views/Abos-Wachstum seit letztem Snapshot → erkennt was wächst.
 - Observation Engine: rankt Top/Under, prüft Längen- und SEO-These, meldet Experimente die Daten haben.
 - Ergebnis in [[Current-State]] eintragen wenn abweichend. Gemessenes schlägt Notiertes.

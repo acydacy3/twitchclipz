@@ -1,7 +1,7 @@
 ---
 type: analytics
 title: Observations
-updated: 2026-08-26
+updated: 2026-09-07
 tags: [analytics, observations, auto, kausal]
 ---
 
@@ -28,6 +28,41 @@ Observation (gemessen) → Muster erkannt → Hypothese formuliert
 
 ---
 
+## 2026-09-07
+
+- [2026-09-07] **AVP% erstmals gezogen — die Zahl war die ganze Zeit verfügbar.**
+  Die YouTube-Analytics-API liefert `averageViewPercentage` je Video über
+  `reports().query(dimensions="video")`. Der Vault notiert seit dem 24.08.
+  „AVP%/3-s-Retention steht aus" — es war ein einziger API-Aufruf.
+  Werte (Median je Serie): V1 76,4 · V2 61,7 · V3 71,9 · V4 64,2 · V5 64,9 ·
+  V6 **53,6** · V7 69,3 (erst 3/10 wegen Analytics-Lag). `[Muster]`
+  **Bedeutung:** AVP% wächst nicht mit dem Alter — anders als Aufrufe. Damit ist
+  es die erste Zahl, mit der sich Serien überhaupt fair vergleichen lassen.
+  V6 Nutty Putty liegt bei 53,6 % und damit nahe an dem Bereich, ab dem ein
+  Short laut Shorts-Benchmarks 2026 die Verteilung im Feed verliert (~50 %).
+
+- [2026-09-07] **Der Selbst-Score ist gegenläufig zur Qualität.** Autonomie-Score
+  V4→SYS5: 48 → 55 → 62 → 68 → 81 → 88 → 91 → 82 → 88. AVP% im selben Zeitraum:
+  64 → 65 → 54. Die fünf höchsten Scores stammen aus Sitzungen ohne ein
+  einziges produziertes Video. `[bestätigt]` → [[Autonomie-Log]] stillgelegt.
+
+- [2026-09-07] **Zwei Serien sind dauerhaft unbewertbar.** Altersbereinigte
+  Aufrufe (Video-Alter 2–3 Tage) existieren nur für V3 (1.212), V4 (1.702) und
+  V7 (993) — für V5 und V6 wurde zum passenden Zeitpunkt kein Snapshot gezogen
+  (letzter Snapshot: 29.08.). 20 Videos ohne Ergebnis, nicht nachholbar.
+  `[beobachtet]` **Konsequenz:** täglicher Snapshot ist Pflicht, nicht Kür —
+  `python3 tools/kp_metrik.py --snapshot`.
+
+- [2026-09-07] **Prosperi-Einbruch ist NICHT sauber auf die Captions
+  zurückzuführen.** Die Aufrufe der Serie streuen extrem (5 bis 1.205), aber
+  die niedrigen Werte betreffen überwiegend die jüngsten Videos (1 Tag alt).
+  Eine Ausnahme bleibt erklärungsbedürftig: Short 02 (26 Aufrufe) gegen zwei
+  Geschwister vom selben Tag (998 und 1.205). Recency erklärt das nicht.
+  `[beobachtet]` — **keine Kausalaussage.** Für einen Beleg fehlt der
+  altersgleiche Vergleich, den die fehlenden Snapshots unmöglich machen.
+
+---
+
 ## 2026-08-26
 
 - [2026-08-26] COUNTER-EVIDENCE Längenthese: Lange Videos (≥22 s, n=38) zeigen Ø 847 Views vs. kurze (n=6) Ø 582 Views — Faktor 1.5× zugunsten Langer. Widerspricht bisheriger Annahme. `[beobachtet]` Kausalproblem: lange Videos existieren länger → mehr Zeit zum Wachsen. Erst belegt wenn gleich alte kurze vs. lange verglichen werden.
@@ -47,6 +82,9 @@ Observation (gemessen) → Muster erkannt → Hypothese formuliert
 | 2026-08-18 | V2 San José: Überlebens-Titel-Formel | 2104–4205 Views (Sprung) | [Muster] |
 | 2026-08-25 | Manim CrossSection (V6 Nutty Putty) eingeführt | AVP% noch nicht gemessen | [beobachtet] |
 | 2026-08-26 | ProsperiMap Manim (V7) produziert | Noch nicht veröffentlicht | [beobachtet] |
+| 2026-08-31 | Bewegtbild-Pflicht als Regel eingeführt (15:17 Uhr) | 0 Videos bis 06.09.; Ralston (10:17 gerendert) blieb zu 50 % Standbild | [bestätigt] |
+| 2026-09-07 | Harte Gates + PreToolUse-Riegel eingeführt | Fing sofort 29 Verstöße in Prosperi + 5 Standbild-Shorts in Ralston | [beobachtet] |
+| 2026-09-07 | Manim-Bühne im Hochformat korrigiert (F-V9-E) | Alle Animationen füllen erstmals das Bild | [beobachtet] |
 
 *Diese Tabelle wächst mit jeder Session. Nach 5+ Einträgen: Muster suchen → Hypothese.*
 

@@ -2,7 +2,7 @@
 type: system
 title: Current-State
 status: active
-updated: 2026-08-31
+updated: 2026-09-07
 tags: [system, state]
 ---
 
@@ -13,6 +13,64 @@ tags: [system, state]
 > gemessenes gewinnt gegen notiertes). Letztes Update: **2026-08-31 (Tagesabschluss)**.
 
 > **Selbstprüfung (Session-Start):** Liegen `YouTube-Knowledge/` und `analyse.py` im Checkout? Dann bist du aktuell. Falls nein → `git pull origin main` (Recovery-Schritte in `CLAUDE.md`, „⚠️ ZUERST"). **`main` trägt immer den vollen Vault-Stand** — jede Session mergt am Ende auf `main` (`/merken` Schritt 2). Branch-Namen wechseln je Session; der richtige Checkout ist jeder, der **diesen Vault + `tools/`** enthält.
+
+## ⚠️ GENERALÜBERHOLUNG 07.09.2026 — was sich geändert hat
+
+**Befund:** Das n+1 scheiterte nicht an fehlendem Wissen. Das Wissen war
+vollständig und richtig. Es fehlte an **jeder** Stelle ein Mechanismus, der
+eine Regel erzwingt. Null von fünf Produktionsregeln hatten einen Prüfpunkt im
+Code — alle fünf wurden gebrochen, während sie galten.
+Vollständig: [[Decision-Harte-Gates-statt-Prosa]] · [[Failure-Memory]] F-V9-A…E.
+
+**Gemessen am 07.09. (`tools/kp_metrik.py`):** 71 Abos · 59.453 Aufrufe · 86 Videos.
+AVP% je Serie (Anteil des Shorts, der gesehen wird — wächst NICHT mit dem Alter):
+
+| Serie | AVP% | Aufrufe@2–3 Tage |
+|---|---|---|
+| V1 Tham Luang | 76,4 | nie gemessen |
+| V3 Koepcke | 71,9 | 1.212 |
+| V4 Okene | 64,2 | 1.702 |
+| V5 Lengede | 64,9 | **nie gemessen** |
+| V6 Nutty Putty | **53,6** | **nie gemessen** |
+| V7 Prosperi | 69,3 *(erst 3/10)* | 993 |
+
+**Der gesehene Anteil fällt** (76 → 54), während der Autonomie-Score von 48 auf
+88 stieg. V5 und V6 (20 Videos) sind **dauerhaft unbewertbar**, weil die
+Snapshots am 29.08. aufhörten — nicht nachholbar.
+
+**Was jetzt erzwungen wird (kein Abhaken mehr):**
+- `tools/kp_gate.py <serie>` — Herkunft · Captions gegen Skript · Bewegung · Ton
+- `tools/kp_gate.py <serie> --nachher` — prüft das **fertige Video** (Untertitel im Bild)
+- `.claude/hooks/pre-tool-use.py` — hält Render/Upload physisch an (Exit 2)
+- `tools/kp_skript.py` — Skript-Herkunft per sha256 (`QUELLE.json`)
+- `tools/kp_metrik.py` — Zahlen aus der Analytics-API statt Selbst-Score
+- `tools/kp_ersetzen.py` — terminierte Shorts sicher austauschen
+- `tools/tests/test_pre_tool_use.py` — 12/12, der Riegel sperrt UND lässt durch
+
+**Was am 07.09. behoben wurde:**
+- V8 Ralston: 5 von 10 terminierten Shorts (01, 03, 06, 07, 10) waren reine
+  Standbild-Diashows trotz Bewegtbild-Pflicht seit 31.08. → neu gerendert mit
+  je einer Manim-Szene in Sekunde 1 + 4 Bildern, neu hochgeladen, alte gelöscht,
+  Termine unverändert (08.–11.09.). Neue IDs in `ralston/upload_log.json`.
+- Neue Manim-Klassen: `RalstonNiemandWeiss`, `RalstonTiefe`, `RalstonAbschied`,
+  `RalstonFuenfteNacht` + **neu** `StundenBogen` (§0c erfüllt).
+- **Alle** Manim-Szenen liefen bisher in einer ~3× zu großen Bühne (F-V9-E) →
+  im Hochformat jetzt `frame_height=16`, `frame_width=9`.
+- `hoeren.py` schreibt `*.gehoert.txt` statt `short_XX.txt` — ASR kann nie mehr
+  wie ein Nutzer-Skript aussehen.
+
+**⚠️ OFFEN — Nutzer-Entscheidung nötig:**
+- **Alle 10 Prosperi-Shorts sind LIVE mit falschen Captions** („Marathon des
+  Apples", „Hartrigt Bauer", „Kincea"/„Kindsjahr" statt „Cinzia", „Jeb" statt
+  „Jeep"). Ersetzen bedeutet: Aufrufe und Alter gehen verloren. **Nicht
+  angefasst** — deine Entscheidung.
+- `nb_contrarian.py` Produktions-Teil ist wirkungslos (F-V9-C). Vorschlag:
+  wissenschaftlichen Teil behalten, Produktions-Teil auf `kp_gate.py` verweisen
+  lassen. **Nichts gelöscht** (Guardrail #1/#9).
+- V8 Short 07 heißt „Vier Nächte allein im dunklen Canyon", das Skript sagt „in
+  der fünften Nacht". Titel nicht geändert — Titel sind deine Domäne.
+
+---
 
 ## Nordstern-Ziel (messbar)
 - **YPP-Monetarisierung, Shorts-Pfad: 1.000 Abos + 10 Mio Shorts-Views in 90 Tagen** (vor der Feb-2027-Regel). Stand 31.08. (analyse.py): Abos **6,3 %** (63/1.000), Views **0,53 %** (53.229/10 Mio). Wachstum: +21 Abos, +32.900 Views seit 25.08. Realistischer Horizont: Abos 3–5 Monate, 10-Mio-Views 9–12 Monate. **Fortschritt jede Session loggen** → [[Ziel-YPP-Monetarisierung]].

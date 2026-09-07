@@ -21,6 +21,18 @@ try:
 except Exception:
     import sys; print("manim nicht installiert (setup-tools.sh)"); sys.exit(0)
 
+# ── Bildbuehne fuer Hochformat (07.09.2026) ────────────────────────────────
+# Manim leitet die Buehnenhoehe aus dem Seitenverhaeltnis ab. Bei -r 1080,1920
+# ergab das eine Buehne von rund 25 Einheiten Hoehe -- alle Szenen hier sind
+# aber fuer rund 16 Einheiten geschrieben (Titel bei y=8.2, Achsen bei x=+-5).
+# Folge: jeder Inhalt sass winzig in der Bildmitte, umgeben von Leere. Das
+# betraf JEDE bisher produzierte Animation, nicht nur einzelne.
+# Hier wird die Buehne fest auf 9 x 16 Einheiten gesetzt -- exakt das Mass,
+# fuer das die Szenen geschrieben sind.
+if config.pixel_height > config.pixel_width:          # nur im Hochformat
+    config.frame_height = 16.0
+    config.frame_width = 9.0
+
 class CrossSection(Scene):
     """Slot-Canyon-Querschnitt: Felsblock fällt auf eingeklemmten Arm.
     V8 Ralston S02 — cinematic, dark, beschriftet.
@@ -129,14 +141,33 @@ class CrossSection(Scene):
         self.wait(0.5)
 
 class Timeline(Scene):
-    """Beispiel: Rettungs-Zeitleiste (Stunden/Tage) mit Markern."""
+    """Zeitleiste (Stunden/Tage) mit Markern.
+
+    Anpassen: TITLE, MARKS = [(x, "Label", "Ereignis")]. Ohne Ereignis-Text
+    bleibt der Marker unbeschriftet -- aber ein Marker ohne Label ist laut
+    Failure-Memory F-V8-D ein Fehler, also moeglichst immer beschriften.
+    """
+    TITLE = None
+    MARKS = [(-4, "0 h", ""), (-1, "3 h", ""), (2, "19 h", ""), (4.5, "27 h", "")]
+    BG_COLOR = "#0e0e12"
+    DOT_COLOR = RED
+
     def construct(self):
-        self.camera.background_color = "#0e0e12"
-        line = Line([-5,0,0],[5,0,0], color=GREY_B)
+        self.camera.background_color = self.BG_COLOR
+        if self.TITLE:
+            self.play(FadeIn(Text(self.TITLE, font_size=44, color="#c8a96e",
+                                  weight=BOLD).move_to([0, 8.0, 0])), run_time=0.5)
+        line = Line([-5, 0, 0], [5, 0, 0], color=GREY_B)
         self.play(Create(line), run_time=0.8)
-        for x,lbl in [(-4,"0 h"),(-1,"3 h"),(2,"19 h"),(4.5,"27 h")]:
-            d=Dot([x,0,0],color=RED); t=Text(lbl,font_size=34).next_to(d,UP)
-            self.play(FadeIn(d),FadeIn(t),run_time=0.4)
+        for eintrag in self.MARKS:
+            x, lbl = eintrag[0], eintrag[1]
+            evt = eintrag[2] if len(eintrag) > 2 else ""
+            d = Dot([x, 0, 0], color=self.DOT_COLOR, radius=0.2)
+            t = Text(lbl, font_size=34, color="#dddddd").next_to(d, DOWN, buff=0.25)
+            grp = VGroup(d, t)
+            if evt:
+                grp.add(Text(evt, font_size=26, color=WHITE).next_to(d, UP, buff=0.25))
+            self.play(FadeIn(grp), run_time=0.4)
         self.wait(0.5)
 
 
@@ -313,6 +344,7 @@ class SearchRadius(Scene):
     RADIUS_KM    = 200
     RING_COLOR   = "#cc3333"
     BG_COLOR     = "#0d1a0d"
+    TITLE        = None   # None = "Suchgebiet: X km Radius"
 
     def construct(self):
         self.camera.background_color = self.BG_COLOR
@@ -327,8 +359,8 @@ class SearchRadius(Scene):
             km_t   = Text(f"{km_val} km", font_size=26, color=self.RING_COLOR).next_to(ring, RIGHT, buff=0.1)
             self.play(Create(ring), FadeIn(km_t), run_time=0.7)
 
-        title = Text(f"Suchgebiet: {self.RADIUS_KM} km Radius", font_size=38,
-                     color=WHITE, weight=BOLD).move_to([0, -6.5, 0])
+        title = Text(self.TITLE or f"Suchgebiet: {self.RADIUS_KM} km Radius",
+                     font_size=38, color=WHITE, weight=BOLD).move_to([0, -6.5, 0])
         self.play(FadeIn(title), run_time=0.5)
         self.wait(1.0)
 
@@ -497,4 +529,340 @@ class CountdownTimer(Scene):
                 self.play(box.animate.set_stroke(color=WHITE), run_time=0.15)
                 self.play(box.animate.set_stroke(color=self.COLOR), run_time=0.15)
 
+        self.wait(0.8)
+
+
+# ═══════════════════════════════════════════════════════════════════════════
+# V8 Ralston — reihen-spezifische Auspraegungen (07.09.2026)
+#
+# Angelegt, weil kp_gate.py aufdeckte: 5 der 10 Ralston-Shorts (01, 03, 06,
+# 07, 10) waren reine Ken-Burns-Standbilder — die Bewegtbild-Pflicht vom
+# 31.08. war bei ihnen nie umgesetzt. Die Bewegung ist hier nicht Dekoration:
+# jede Szene zeigt genau die Groesse, die der gesprochene Text nennt.
+# ═══════════════════════════════════════════════════════════════════════════
+
+# ── Gemeinsame Grundlage der V8-Szenen ─────────────────────────────────────
+# Buehne im Hochformat: x von -4.5 bis 4.5, y von -8 bis 8.
+# Das untere Drittel (y < -3.0) bleibt FREI — dort liegen die Karaoke-Captions.
+# Alles Erklaerende gehoert nach oben.
+
+SAND_HELL = "#c8925a"
+SAND      = "#8a5326"
+SAND_TIEF = "#3d2410"
+FELS_BG   = "#0d0a06"
+LICHT     = "#e0b060"
+
+
+def _felswand(links, oben_x, unten_x, hoehe=16.0, farbe=SAND_TIEF, opak=1.0):
+    """Eine Schluchtwand als Flaeche — enger werdend nach unten.
+
+    Kein Ornament: die Enge IST die Geschichte. Ein Punkt vor schwarzem
+    Hintergrund erzaehlt sie nicht (Failure-Memory F-V8-D).
+    """
+    rand = -4.6 if links else 4.6
+    pts = [[rand, hoehe / 2, 0], [oben_x, hoehe / 2, 0],
+           [unten_x, -hoehe / 2, 0], [rand, -hoehe / 2, 0]]
+    return Polygon(*pts, fill_color=farbe, fill_opacity=opak,
+                   stroke_color=SAND, stroke_width=2, stroke_opacity=0.5)
+
+
+class RalstonNiemandWeiss(Scene):
+    """S01 — 'Kein Wort, keine Notiz. Niemand wusste, wo er war.'
+
+    Die Ringe wachsen, aber der Zaehler bleibt auf null. Das ist die Aussage
+    des Shorts: es gab kein Suchgebiet, weil niemand suchte.
+    """
+
+    def construct(self):
+        self.camera.background_color = FELS_BG
+
+        boden = Rectangle(width=9.2, height=9, fill_color="#1a1208",
+                          fill_opacity=1, stroke_width=0).move_to([0, 1.5, 0])
+        self.add(boden)
+
+        datum = Text("26. APRIL 2003", font_size=40, color=SAND_HELL,
+                     weight=BOLD).move_to([0, 7.0, 0])
+        self.play(FadeIn(datum), run_time=0.4)
+
+        # Auto am Rand, Schlucht in der Mitte — die Strecke dazwischen
+        auto = VGroup(
+            RoundedRectangle(width=0.9, height=0.42, corner_radius=0.08,
+                             fill_color="#aa9977", fill_opacity=1, stroke_width=0),
+            Text("Auto", font_size=26, color="#aa9977"),
+        )
+        auto[1].next_to(auto[0], UP, buff=0.15)
+        auto.move_to([-2.9, 4.4, 0])
+
+        schlucht = Dot([0.6, 1.6, 0], color=LICHT, radius=0.22)
+        schlucht_t = Text("Blue John Canyon", font_size=30, color=LICHT,
+                          weight=BOLD).next_to(schlucht, UP, buff=0.3)
+
+        weg = DashedLine(auto[0].get_center(), schlucht.get_center(),
+                         color="#6b4a28", stroke_width=3, dash_length=0.16)
+
+        self.play(FadeIn(auto), run_time=0.4)
+        self.play(Create(weg), run_time=0.6)
+        self.play(FadeIn(schlucht), FadeIn(schlucht_t), run_time=0.4)
+
+        # Ringe: Beschriftung UNTER dem Ring, nicht rechts daneben —
+        # nebeneinander ueberlagerten sich die km-Angaben.
+        for r, km, deck in [(1.1, 10, 0.7), (1.9, 20, 0.5), (2.7, 30, 0.35)]:
+            ring = Circle(radius=r, color=SAND, stroke_width=4,
+                          stroke_opacity=deck).move_to(schlucht.get_center())
+            t = Text(f"{km} km", font_size=26, color=SAND_HELL).move_to(
+                schlucht.get_center() + DOWN * (r - 0.02))
+            self.play(Create(ring), FadeIn(t), run_time=0.55)
+
+        # Der Zaehler, der auf null bleibt
+        null = Text("0", font_size=140, color="#cc4433",
+                    weight=BOLD).move_to([0, -3.0, 0])
+        unter = Text("Menschen wussten davon", font_size=32,
+                     color="#cc4433").next_to(null, DOWN, buff=0.25)
+        self.play(FadeIn(null, scale=1.3), run_time=0.5)
+        self.play(FadeIn(unter), run_time=0.4)
+        self.wait(0.9)
+
+
+class RalstonTiefe(Scene):
+    """S03 — '30 Meter unter der Erdoberfläche. Nächste Straße 30 Kilometer.'
+
+    Die Schlucht wird nach unten enger, waehrend die Figur faellt. Rechts
+    laeuft eine Tiefenskala mit. Am Ende steht, was er dabeihatte.
+    """
+
+    def construct(self):
+        self.camera.background_color = "#050403"
+
+        self.add(_felswand(True, -2.4, -0.75), _felswand(False, 2.4, 0.75))
+        himmel = Rectangle(width=4.6, height=1.2, fill_color="#5a7a9a",
+                           fill_opacity=0.35, stroke_width=0).move_to([0, 7.4, 0])
+        self.add(himmel)
+
+        titel = VGroup(
+            Text("30 METER", font_size=56, color=SAND_HELL, weight=BOLD),
+            Text("unter der Oberfläche", font_size=25, color="#9a7a55"),
+        ).arrange(DOWN, buff=0.18).move_to([0, 6.6, 0])
+        self.play(FadeIn(titel), run_time=0.4)
+
+        skala = Line([3.6, 6.0, 0], [3.6, -2.2, 0], color=SAND,
+                     stroke_width=3, stroke_opacity=0.6)
+        self.play(Create(skala), run_time=0.5)
+
+        fig = VGroup(
+            Circle(radius=0.13, fill_color=LICHT, fill_opacity=1, stroke_width=0),
+            Line([0, -0.13, 0], [0, -0.55, 0], color=LICHT, stroke_width=5),
+        ).move_to([0, 6.0, 0])
+        self.play(FadeIn(fig), run_time=0.3)
+
+        for meter, y in [(0, 6.0), (10, 3.4), (20, 0.8), (30, -1.8)]:
+            strich = Line([3.35, y, 0], [3.85, y, 0], color=SAND_HELL, stroke_width=4)
+            lbl = Text(f"{meter} m", font_size=28,
+                       color=SAND_HELL if meter == 30 else "#9a7a55",
+                       weight=BOLD if meter == 30 else NORMAL)
+            lbl.next_to(strich, LEFT, buff=0.2)
+            self.play(FadeIn(strich), FadeIn(lbl),
+                      fig.animate.move_to([0, y, 0]),
+                      run_time=0.55, rate_func=rate_functions.ease_in_out_sine)
+
+        habe = VGroup(
+            Text("2 Burritos", font_size=28, color="#bbaa99"),
+            Text("300 ml Wasser", font_size=28, color="#bbaa99"),
+            Text("1 Taschenmesser", font_size=28, color="#cc4433", weight=BOLD),
+        ).arrange(DOWN, buff=0.28).move_to([-1.4, -0.6, 0])
+        self.play(LaggedStart(*[FadeIn(z, shift=RIGHT * 0.25) for z in habe],
+                              lag_ratio=0.3), run_time=1.0)
+        self.wait(0.8)
+
+
+class RalstonAbschied(Scene):
+    """S06 — der Abschiedsfilm. Eine senkrechte 127-Stunden-Leiste.
+
+    Senkrecht, weil das Bild senkrecht ist: eine liegende Zeitleiste
+    verschenkt im Hochformat die Haelfte der Flaeche.
+    """
+
+    MARKEN = [
+        (0,   "0 h",   "eingeklemmt",   "#cc4433"),
+        (24,  "24 h",  "",              SAND),
+        (72,  "72 h",  "Wasser leer",   SAND_HELL),
+        (96,  "96 h",  "Abschiedsfilm", LICHT),
+        (127, "127 h", "",              SAND),
+    ]
+
+    def construct(self):
+        self.camera.background_color = FELS_BG
+        self.add(_felswand(True, -3.2, -2.6, farbe="#150e07"),
+                 _felswand(False, 3.2, 2.6, farbe="#150e07"))
+
+        titel = Text("127 STUNDEN", font_size=44, color=SAND_HELL,
+                     weight=BOLD).move_to([0, 7.0, 0])
+        self.play(FadeIn(titel), run_time=0.4)
+
+        oben, unten = 5.6, -2.4
+        achse = Line([-1.9, oben, 0], [-1.9, unten, 0], color=SAND,
+                     stroke_width=4, stroke_opacity=0.7)
+        self.play(Create(achse), run_time=0.7)
+
+        for stunde, lbl, ereignis, farbe in self.MARKEN:
+            y = oben - (stunde / 127.0) * (oben - unten)
+            gross = bool(ereignis)
+            punkt = Dot([-1.9, y, 0], color=farbe, radius=0.2 if gross else 0.13)
+            stunden_t = Text(lbl, font_size=28, color=farbe).next_to(
+                punkt, LEFT, buff=0.25)
+            grp = VGroup(punkt, stunden_t)
+            if ereignis:
+                grp.add(Text(ereignis, font_size=30, color=farbe,
+                             weight=BOLD).next_to(punkt, RIGHT, buff=0.3))
+            self.play(FadeIn(grp), run_time=0.45)
+
+        # Kamera auf dem Fels — das Bild des Shorts
+        kamera = VGroup(
+            RoundedRectangle(width=1.15, height=0.7, corner_radius=0.1,
+                             fill_color="#2a2a2e", fill_opacity=1,
+                             stroke_color="#666", stroke_width=2),
+            Circle(radius=0.2, fill_color="#111", fill_opacity=1,
+                   stroke_color=LICHT, stroke_width=3),
+            Dot(radius=0.07, color="#cc4433"),
+        )
+        kamera[1].move_to(kamera[0].get_center() + LEFT * 0.15)
+        kamera[2].move_to(kamera[0].get_corner(UR) + LEFT * 0.18 + DOWN * 0.16)
+        kamera.move_to([1.2, 3.0, 0])
+        self.play(FadeIn(kamera, shift=UP * 0.3), run_time=0.5)
+        for _ in range(2):                       # Aufnahme laeuft
+            self.play(kamera[2].animate.set_opacity(0.15), run_time=0.28)
+            self.play(kamera[2].animate.set_opacity(1.0), run_time=0.28)
+        self.wait(0.6)
+
+
+class RalstonFuenfteNacht(Scene):
+    """S07 — 'In der fünften Nacht ließ Ralston los.'
+
+    Fuenf Naechte als fuenf Balken. Vier fuellen sich dunkel, der fuenfte
+    hell — dort kippt die Geschichte.
+    """
+
+    NAECHTE = [("Nacht 1", "eingeklemmt"), ("Nacht 2", ""),
+               ("Nacht 3", "Wasser knapp"), ("Nacht 4", "Abschiedsfilm"),
+               ("Nacht 5", "die Vision")]
+
+    def construct(self):
+        self.camera.background_color = "#06070c"
+
+        titel = Text("5 NÄCHTE IM CANYON", font_size=40, color="#8a9ab0",
+                     weight=BOLD).move_to([0, 7.0, 0])
+        self.play(FadeIn(titel), run_time=0.4)
+
+        oben, unten = 5.2, -1.6
+        breite, luecke = 1.25, 0.35
+        gesamt = len(self.NAECHTE) * breite + 4 * luecke
+        x0 = -gesamt / 2 + breite / 2
+
+        for i, (name, ereignis) in enumerate(self.NAECHTE):
+            x = x0 + i * (breite + luecke)
+            letzte = i == len(self.NAECHTE) - 1
+            farbe = LICHT if letzte else "#26303f"
+
+            rahmen = Rectangle(width=breite, height=oben - unten,
+                               stroke_color="#3a4658", stroke_width=2,
+                               fill_opacity=0).move_to([x, (oben + unten) / 2, 0])
+            self.add(rahmen)
+
+            fuellung = Rectangle(width=breite, height=0.01, fill_color=farbe,
+                                 fill_opacity=0.9 if letzte else 0.55,
+                                 stroke_width=0).move_to([x, unten, 0])
+            self.add(fuellung)
+            ziel = Rectangle(width=breite, height=oben - unten,
+                             fill_color=farbe,
+                             fill_opacity=0.9 if letzte else 0.55,
+                             stroke_width=0).move_to([x, (oben + unten) / 2, 0])
+            self.play(Transform(fuellung, ziel), run_time=0.5,
+                      rate_func=rate_functions.ease_out_sine)
+
+            lbl = Text(name, font_size=25, color="#8a9ab0" if not letzte else LICHT,
+                       weight=BOLD if letzte else NORMAL)
+            lbl.next_to(rahmen, DOWN, buff=0.22)
+            self.play(FadeIn(lbl), run_time=0.2)
+            if ereignis:
+                ev = Text(ereignis, font_size=22,
+                          color="#c8d2e0" if not letzte else LICHT)
+                ev.rotate(PI / 2).move_to(rahmen.get_center())
+                self.play(FadeIn(ev), run_time=0.25)
+
+        schluss = Text("Er sah seinen Sohn.", font_size=46, color=WHITE,
+                       weight=BOLD).move_to([0, -3.1, 0])
+        self.play(FadeIn(schluss), run_time=0.5)
+        self.wait(0.8)
+
+
+class StundenBogen(Scene):
+    """NEU (V8, 07.09.2026) — S10: die 127 Stunden schliessen sich, und
+    danach geht es weiter. 'Nicht das Ende. Der Anfang.'
+
+    Ein Bogen fuellt sich auf 127 Stunden, blitzt auf und oeffnet sich dann
+    nach vorn in eine Linie mit drei beschrifteten Marken. Bewusst nuechtern:
+    keine Effekte ohne Aussage, jede Form traegt eine Beschriftung
+    (Failure-Memory F-V8-D: keine anonymen Punkte).
+
+    Render: manim -qh -r 1080,1920 tools/manim_scenes.py StundenBogen
+    """
+    STUNDEN = 127
+    DANACH = [("Buch", "#b8763a"), ("Film", "#c8925a"), ("Sohn Leo", "#e0b060")]
+    BG_COLOR = "#0d0a06"
+
+    def construct(self):
+        self.camera.background_color = self.BG_COLOR
+
+        titel = Text("127 STUNDEN", font_size=52, color="#c8a96e",
+                     weight=BOLD).move_to([0, 7.6, 0])
+        self.play(FadeIn(titel), run_time=0.4)
+
+        # ── Der Bogen fuellt sich ──────────────────────────────────────────
+        spur = Circle(radius=3.3, color="#332214", stroke_width=20)
+        spur.move_to([0, 3.0, 0])
+        self.add(spur)
+
+        bogen = Arc(radius=3.3, start_angle=PI / 2, angle=-0.001,
+                    color="#e0b060", stroke_width=20).move_arc_center_to([0, 3.0, 0])
+        # Zaehler bewusst als Text, nicht als Integer/DecimalNumber: die
+        # rendern ueber LaTeX, und LaTeX ist im Container nicht installiert.
+        # Ein Werkzeug, das nur auf einer Maschine laeuft, ist kein Werkzeug.
+        fortschritt = ValueTracker(0.0)
+        zaehler = always_redraw(lambda: Text(
+            f"{int(fortschritt.get_value() * self.STUNDEN)}",
+            font_size=100, color=WHITE, weight=BOLD).move_to([0, 3.2, 0]))
+        einheit = Text("Stunden", font_size=34,
+                       color="#998877").move_to([0, 1.7, 0])
+        bogen.add_updater(lambda m: m.become(
+            Arc(radius=3.3, start_angle=PI / 2,
+                angle=-max(TAU * fortschritt.get_value(), 0.001),
+                color="#e0b060", stroke_width=20
+                ).move_arc_center_to([0, 3.0, 0])))
+        self.add(bogen, zaehler, einheit)
+
+        self.play(fortschritt.animate.set_value(1.0), run_time=2.4,
+                  rate_func=rate_functions.ease_in_out_sine)
+        bogen.clear_updaters()
+        zaehler.clear_updaters()
+
+        # ── Der Moment, in dem es kippt ────────────────────────────────────
+        blitz = Circle(radius=3.3, color=WHITE, stroke_width=24)
+        blitz.move_to([0, 3.0, 0])
+        self.play(FadeIn(blitz, scale=1.15), run_time=0.2)
+        self.play(FadeOut(blitz), run_time=0.25)
+
+        # ── ... und danach geht es weiter ──────────────────────────────────
+        linie = Line([-4.2, -2.2, 0], [4.2, -2.2, 0],
+                     color="#554433", stroke_width=4)
+        self.play(Create(linie), run_time=0.6)
+
+        for i, (text, farbe) in enumerate(self.DANACH):
+            x = -2.6 + i * 2.6
+            marke = Dot([x, -2.2, 0], color=farbe, radius=0.2)
+            beschriftung = Text(text, font_size=32, color=farbe,
+                                weight=BOLD).next_to(marke, DOWN, buff=0.35)
+            self.play(FadeIn(marke), FadeIn(beschriftung), run_time=0.45)
+
+        schluss = Text("Nicht das Ende.", font_size=44, color=WHITE,
+                       weight=BOLD).move_to([0, -6.4, 0])
+        self.play(FadeIn(schluss), run_time=0.5)
         self.wait(0.8)

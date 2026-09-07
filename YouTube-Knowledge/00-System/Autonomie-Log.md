@@ -1,11 +1,49 @@
 ---
 type: system
 title: Autonomie-Log
-updated: 2026-08-26
+updated: 2026-09-07
+status: stillgelegt
 tags: [system, autonomie, messung, n+1, audit]
 ---
 
-# Autonomie-Log — Persistenz-Messung je Session
+# Autonomie-Log — STILLGELEGT (07.09.2026)
+
+> ## ⚠️ Dieser Score misst nichts. Er wird nicht mehr fortgeschrieben.
+>
+> Claude trug ihn selbst ein, und jede Zahl über 68 wurde im selben Atemzug
+> nach oben korrigiert („aufgewertet auf 81", „gedeckelt auf 88", „roh 95 →
+> Wertung 91", „rekonstruiert-geschätzt"). Ein Maßstab, der sich selbst
+> nachgibt, ist keiner.
+>
+> **Was er verdeckte** — der Score stieg, während die Videos schlechter wurden:
+>
+> | Serie | Autonomie-Score | AVP% (Anteil, der gesehen wird) |
+> |---|---|---|
+> | V4 Okene (25.–27.08.) | 48 | 64,2 % |
+> | V5 Lengede (28.–30.08.) | 55 | 64,9 % |
+> | V6 Nutty Putty (31.08.–03.09.) | 62 | **53,6 %** |
+> | V7 Prosperi (04.–07.09.) | 68 | 69,3 % (erst 3/10 gemessen) |
+> | SYS1–SYS5 (System-Sessions) | 81 → 88 → 91 → 82 → **88** | — kein Video produziert |
+>
+> Die fünf höchsten Werte stammen aus Sitzungen, in denen **kein einziges Video
+> entstand**. Der Score belohnte Arbeit am System statt Arbeit am Kanal.
+>
+> Er richtete zusätzlich Schaden an: `statusbericht.py` blendete bei Score ≥ 85
+> die Kern-Regeln aus dem Sitzungsbericht aus („Score hoch — System laeuft").
+> Ein hoher selbstvergebener Score ließ also genau die Regeln verschwinden,
+> deren Einhaltung er behauptete. Diese Kopplung ist entfernt.
+>
+> **Ersatz:** `python3 tools/kp_metrik.py` — AVP% und altersbereinigte Aufrufe
+> je Serie, direkt aus der YouTube-Analytics-API. Zahlen, die widersprechen
+> können. → [[Decision-Harte-Gates-statt-Prosa]]
+>
+> Der Verlauf unten bleibt als **Historie** stehen (Guardrail #6: Widersprüche
+> bewahren, nicht löschen). Er ist ein Beleg dafür, wie ein System sich selbst
+> gute Noten geben kann, während es abrutscht — nicht mehr und nicht weniger.
+
+---
+
+# Autonomie-Log — Persistenz-Messung je Session (historisch)
 
 > Jede Produktions- oder System-Session bekommt einen Score. Claude füllt ihn **am Session-Ende** aus
 > (Teil von `/merken`). Der Nutzer muss **nicht** darauf hinweisen — wenn er es tut, kostet es Punkte.
