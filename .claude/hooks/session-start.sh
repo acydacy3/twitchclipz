@@ -78,10 +78,33 @@ if [ ! -f "$HOME/.nb_tools_ready" ] && [ -f "$PROJEKT/tools/setup-tools.sh" ]; t
   nohup bash "$PROJEKT/tools/setup-tools.sh" >/dev/null 2>&1 &
 fi
 
+# ------------------------------------------------- Taeglicher Messpunkt
+# Laeuft DETACHT im Hintergrund und schreibt nur in eine Datei -> 0 Token.
+#
+# Warum automatisch und nicht als Erinnerung: Der Snapshot war als Pflicht
+# in der Pflichtliste notiert und lief trotzdem nur dreimal (26., 27., 29.08.).
+# Dadurch sind V5 Lengede und V6 Nutty Putty -- 20 Videos -- dauerhaft
+# unbewertbar geworden. Das ist der einzige Schaden aus dem Befund vom
+# 07.09., der sich NICHT nachtraeglich reparieren laesst. Eine Regel, die
+# taeglich ausgefuehrt werden muss, darf nicht an Disziplin haengen.
+HEUTE="$(date +%F)"
+SNAP="$PROJEKT/YouTube-Knowledge/07-Analytics/snapshots/$HEUTE.json"
+if [ ! -f "$SNAP" ]; then
+  nohup python3 "$PROJEKT/tools/kp_metrik.py" --snapshot \
+    > "$PROJEKT/.claude/messpunkt.log" 2>&1 &
+fi
+
 # ---------------------------------------------------------------- Bericht
 # Alles ab hier landet im Sitzungskontext. Claude sieht damit sofort, was
 # geht und was nicht, statt es erst im Fehlerfall zu merken.
 python3 "$PROJEKT/.claude/hooks/statusbericht.py" 2>/dev/null || \
   echo "Statusbericht nicht ausfuehrbar — .claude/hooks/statusbericht.py fehlt."
+
+# ------------------------------------------------- Der naechste Schritt
+# Der Ablauf wird aus dem tatsaechlichen Zustand abgeleitet, nicht aus einer
+# Notiz. Damit steht in jedem frischen Container von selbst da, was zu tun
+# ist -- der Nutzer muss nichts mehr ansprechen.
+timeout 240 python3 "$PROJEKT/tools/kp.py" status 2>/dev/null || \
+  echo "Ablauf-Status nicht ermittelbar — python3 tools/kp.py status"
 
 exit 0

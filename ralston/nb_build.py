@@ -42,7 +42,7 @@ SHORTS = {
         "manim": "RalstonNiemandWeiss", "grp": "A", "ab": None,
     },
     "02": {
-        "imgs":  ["hf_s01_truck.jpg", "hf_s04_chipping.jpg", "hf_s02_arm.jpg"],
+        "imgs":  ["hf_s01_truck.jpg", "hf_s04_chipping.jpg", "hf_s02_arm.jpg", "hf_s09_rappel.jpg"],
         "manim": "CrossSection", "grp": "A", "ab": None,
     },
     "03": {
@@ -50,12 +50,12 @@ SHORTS = {
         "manim": "RalstonTiefe", "grp": "A", "ab": None,
     },
     "04": {
-        "imgs":  ["hf_s04_chipping.jpg", "hf_s02_arm.jpg", "hf_s03_supplies.jpg"],
-        "manim": "StatCounter", "grp": "B", "ab": None,
+        "imgs":  ["hf_s04_chipping.jpg", "hf_s02_arm.jpg", "hf_s03_supplies.jpg", "hf_s05_carving.jpg"],
+        "manim": "RalstonMeissel", "grp": "B", "ab": None,
     },
     "05": {
-        "imgs":  ["hf_s05_carving.jpg", "hf_s02_arm.jpg", "hf_s07_stars.jpg"],
-        "manim": "SurvivalDays", "grp": "B", "ab": None,
+        "imgs":  ["hf_s05_carving.jpg", "hf_s07_stars.jpg", "hf_s02_arm.jpg", "hf_s06_camera.jpg"],
+        "manim": "RalstonInschrift", "grp": "B", "ab": None,
     },
     "06": {
         "imgs":  ["hf_s06_camera.jpg", "hf_s02_arm.jpg", "hf_s05_carving.jpg", "hf_s07_stars.jpg"],
@@ -66,11 +66,11 @@ SHORTS = {
         "manim": "RalstonFuenfteNacht", "grp": "B", "ab": None,
     },
     "08": {
-        "imgs":  ["hf_s02_arm.jpg", "hf_s04_chipping.jpg", "hf_s09_rappel.jpg", "hf_s02_arm.jpg"],
-        "manim": "RockTrap", "grp": "C", "ab": None,
+        "imgs":  ["hf_s02_arm.jpg", "hf_s04_chipping.jpg", "hf_s09_rappel.jpg", "hf_s01_truck.jpg"],
+        "manim": "Ralston65Minuten", "grp": "C", "ab": None,
     },
     "09": {
-        "imgs":  ["hf_s09_rappel.jpg", "hf_s02_arm.jpg", "hf_s09_rappel.jpg", "hf_s01_truck.jpg"],
+        "imgs":  ["hf_s09_rappel.jpg", "hf_s02_arm.jpg", "hf_s01_truck.jpg", "hf_s07_stars.jpg"],
         "manim": "CountdownTimer", "grp": "C", "ab": None,
     },
     "10": {
@@ -352,10 +352,19 @@ def render_short(num, cfg):
         f"[vout];"
     )
 
-    # Audio: VO laut, Musik leise im Hintergrund
+    # Audio: VO laut, Musik leise im Hintergrund, dann auf Zielpegel bringen.
+    #
+    # Zwei Fehler steckten hier (gefunden 07.09.2026 durch Regel R18):
+    #   1. amix teilt die Pegel standardmaessig durch die Anzahl der Eingaenge
+    #      -- die Stimme verlor dadurch rund 6 dB. normalize=0 schaltet das ab.
+    #   2. Danach wurde nirgends auf einen Zielpegel normalisiert. Ergebnis:
+    #      alle Shorts lagen bei ~-22 LUFS. YouTube normalisiert auf ~-14 und
+    #      dreht dabei nur HERUNTER, nie herauf -- der ganze Kanal lief also
+    #      rund 8 dB zu leise, ueber alle bisherigen Videos hinweg.
     flt += (
         f"[{mus_idx}:a]volume=0.12[mus];"
-        "[0:a][mus]amix=inputs=2:duration=first:dropout_transition=2[aout]"
+        "[0:a][mus]amix=inputs=2:duration=first:dropout_transition=2:normalize=0[mixed];"
+        "[mixed]loudnorm=I=-14:TP=-1.5:LRA=11[aout]"
     )
 
     cmd = (

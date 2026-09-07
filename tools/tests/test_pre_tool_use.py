@@ -52,6 +52,10 @@ def main():
         ("grep -n SHORTS ralston/nb_build.py",        DURCH, "Build-Datei durchsuchen"),
         ("sed -n '30,130p' ralston/nb_build.py",      DURCH, "Build-Datei ausschnittweise lesen"),
         ("python3 tools/kp_gate.py ralston",          DURCH, "Gate selbst aufrufen"),
+        # Here-Dokument: der Rumpf ist Datentext, kein Befehl. Der Riegel
+        # blockierte hier einmal das blosse SCHREIBEN einer Doku-Tabelle.
+        ("cat > doku.md <<'EOF'\n| 4 | Rendern | python3 x/nb_build.py |\nEOF",
+         DURCH, "Render-Befehl nur als Text schreiben"),
     ]
     for s in gruen:
         faelle += [(f"python3 {s}/nb_build.py", DURCH, f"Render der gruenen Serie {s}")]

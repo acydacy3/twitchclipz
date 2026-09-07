@@ -4,13 +4,20 @@
 YouTube kann eine hochgeladene Videodatei nicht ersetzen. Ein neu gerenderter
 Short muss deshalb neu hochgeladen und der alte geloescht werden.
 
-Reihenfolge ist bewusst so und nicht anders:
+Reihenfolge JE SHORT -- bewusst so und nicht anders:
     1. kp_gate.py --nachher   das FERTIGE Video pruefen
     2. hochladen              mit denselben Metadaten + Terminierung
     3. pruefen                laesst sich das neue Video abrufen?
     4. erst dann loeschen     das alte
-So bleibt bei einem Abbruch immer eine Fassung stehen. Erst loeschen und dann
-hochladen wuerde bei jedem Netzfehler eine Luecke im Sendeplan hinterlassen.
+    5. Protokoll schreiben    sofort, nicht am Ende
+
+Warum je Short und nicht erst alle hochladen: Am 07.09.2026 lief ein Austausch
+von zehn Shorts nach dem fuenften in YouTubes Tageslimit
+("uploadLimitExceeded"). Weil erst am Ende geloescht werden sollte, standen
+danach fuenf Dubletten im Sendeplan -- zwei Videos auf demselben Termin.
+Nichts ging verloren, aber es musste von Hand aufgeraeumt werden.
+Je Short abgeschlossen heisst: ein Abbruch hinterlaesst einen sauberen
+Zwischenstand, und `upload_log.json` sagt jederzeit die Wahrheit.
 
     python3 tools/kp_ersetzen.py <serie> --shorts 01,03,06 [--wirklich]
 
@@ -20,6 +27,7 @@ und terminierte.
 """
 
 import argparse
+import datetime as dt
 import json
 import os
 import subprocess
@@ -137,38 +145,55 @@ def main():
                     f"(\"{v['snippet']['title'][:50]}\").\n"
                     f"Veroeffentlichte Videos werden hier nicht ersetzt.")
 
-    neu_ids = {}
-    for n, mp4, _ in plan:
+    heute = dt.date.today().isoformat()
+    fertig, offen = [], []
+
+    for n, mp4, alt in plan:
         print(f"\nShort {n} — hochladen …")
-        neu_ids[n] = hochladen(yt, mp4, meta[n])
-        print(f"  neu: {neu_ids[n]}")
-
-    # ── 3. pruefen, bevor irgendetwas geloescht wird ──────────────────────
-    r = yt.videos().list(part="status", id=",".join(neu_ids.values())).execute()
-    da = {v["id"] for v in r.get("items", [])}
-    fehlt = [i for i in neu_ids.values() if i not in da]
-    if fehlt:
-        raise SystemExit(
-            f"ABBRUCH vor dem Loeschen: neue Videos nicht abrufbar: {fehlt}\n"
-            f"Die alten Videos bleiben unangetastet.")
-    print(f"\nAlle {len(neu_ids)} neuen Videos bestaetigt.")
-
-    # ── 4. jetzt erst die alten entfernen ─────────────────────────────────
-    for n, _, alt in plan:
-        if not alt:
-            continue
         try:
-            yt.videos().delete(id=alt).execute()
-            print(f"  Short {n}: altes Video {alt} geloescht")
+            neu = hochladen(yt, mp4, meta[n])
         except Exception as e:
-            print(f"  Short {n}: Loeschen von {alt} fehlgeschlagen — {e}")
+            offen.append(n)
+            print(f"  Upload fehlgeschlagen: {e}")
+            if "uploadLimitExceeded" in str(e):
+                print("  -> YouTube-Tageslimit erreicht. Der Rest folgt morgen;\n"
+                      "     bereits ausgetauschte Shorts sind sauber abgeschlossen.")
+                break
+            print("  -> abgebrochen, nichts geloescht.")
+            break
+        print(f"  neu: {neu}")
 
-    for n, neu in neu_ids.items():
-        log[n] = {"uploaded": True, "video_id": neu, "ersetzt_am": "2026-09-07",
-                  "vorher": log.get(n, {}).get("video_id")}
-    json.dump(log, open(log_pfad, "w", encoding="utf-8"),
-              ensure_ascii=False, indent=1)
-    print(f"\n{log_pfad} aktualisiert.")
+        # Bestaetigen, BEVOR das alte faellt.
+        da = {v["id"] for v in
+              yt.videos().list(part="id", id=neu).execute().get("items", [])}
+        if neu not in da:
+            offen.append(n)
+            print(f"  Neues Video {neu} nicht abrufbar — altes bleibt stehen.")
+            break
+
+        if alt:
+            try:
+                yt.videos().delete(id=alt).execute()
+                print(f"  altes Video {alt} geloescht")
+            except Exception as e:
+                print(f"  Loeschen von {alt} fehlgeschlagen — {e}")
+
+        # Sofort protokollieren: nach jedem Short stimmt die Datei.
+        log[n] = {"uploaded": True, "video_id": neu, "ersetzt_am": heute,
+                  "vorher": alt}
+        json.dump(log, open(log_pfad, "w", encoding="utf-8"),
+                  ensure_ascii=False, indent=1)
+        fertig.append(n)
+
+    print(f"\n{len(fertig)} von {len(plan)} Shorts ausgetauscht: "
+          f"{', '.join(fertig) or '—'}")
+    rest = [n for n, _, _ in plan if n not in fertig]
+    if rest:
+        print(f"OFFEN: {', '.join(rest)}")
+        print(f"Erneut aufrufen: python3 tools/kp_ersetzen.py {serie} "
+              f"--shorts {','.join(rest)} --wirklich")
+        return 1
+    print(f"{log_pfad} aktualisiert.")
     return 0
 
 
