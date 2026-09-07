@@ -59,6 +59,27 @@ Snapshots am 29.08. aufhörten — nicht nachholbar.
 - `hoeren.py` schreibt `*.gehoert.txt` statt `short_XX.txt` — ASR kann nie mehr
   wie ein Nutzer-Skript aussehen.
 
+**Zweite Runde am 07.09. (nach dem ersten Durchgang):**
+- **Regel-Register gebaut** (`tools/kp_regeln.py`): 22 von 24 Regeln haben
+  einen Prüfpunkt. Erzeugt [[Regel-Register]]. Eine Regel ohne Prüffunktion
+  erscheint überall als UNGEDECKT — Prosa zählt nicht mehr als Durchsetzung.
+- **Ablauf-Dirigent** (`tools/kp.py`): leitet aus dem echten Zustand ab, was
+  als Nächstes dran ist. Läuft automatisch beim Sitzungsstart.
+- **Tages-Snapshot läuft automatisch** im Session-Hook — der Schaden aus
+  Befund 4 kann sich nicht wiederholen.
+- **Shorts 04 und 05 trugen Prosperis Geschichte** („allein in der Sahara",
+  „10 Tage — Mauro Prosperi") — universelle Manim-Klassen mit fremden
+  Vorgabewerten (F-V9-F). Ersetzt durch `RalstonMeissel`, `RalstonInschrift`,
+  `Ralston65Minuten`.
+- **Der ganze Kanal lief 8 dB zu leise** (−22 statt −14 LUFS, F-V9-G).
+  Gefunden von der neu gebauten Regel R18, nicht durch Hinhören.
+  Tonkette korrigiert, alle 10 Ralston-Shorts liegen jetzt bei −15 LUFS.
+- **Alle 10 Ralston-Shorts neu gerendert.** 01–05 ausgetauscht,
+  **06–10 offen** (YouTube-Tageslimit) — als `austausch_offen` im
+  `upload_log.json` vermerkt, `kp.py status` meldet es von selbst.
+- Zwei Messfehler in meinen eigenen Prüfwerkzeugen gefunden und behoben
+  (F-V9-H): falsche Helligkeitsschwelle, unterdrückte ffmpeg-Ausgabe.
+
 **⚠️ OFFEN — Nutzer-Entscheidung nötig:**
 - **Alle 10 Prosperi-Shorts sind LIVE mit falschen Captions** („Marathon des
   Apples", „Hartrigt Bauer", „Kincea"/„Kindsjahr" statt „Cinzia", „Jeb" statt

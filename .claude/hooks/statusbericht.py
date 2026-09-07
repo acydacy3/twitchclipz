@@ -277,6 +277,27 @@ def lese_neueste_observation():
     return None
 
 
+def regel_deckung():
+    """Wie viele Produktionsregeln haben einen echten Pruefpunkt?
+
+    Diese Zeile ist der Ersatz fuer den alten Selbst-Score. Sie kann nicht
+    geschoent werden: sie zaehlt Funktionen im Code, nicht Absichten. Legt
+    jemand eine neue Regel als Prosa an, sinkt die Zahl sofort sichtbar.
+    """
+    try:
+        sys.path.insert(0, str(PROJEKT / "tools"))
+        import kp_regeln as R
+        g, n = R.deckung()
+        offen = [r["id"] + " " + r["titel"] for r in R.REGELN if not r["pruefung"]]
+        zeilen = [f"  Regeln: {g}/{n} erzwungen ({g/n:.0%})"
+                  f"  ->  YouTube-Knowledge/00-System/Regel-Register.md"]
+        if offen:
+            zeilen.append(f"  ohne Pruefpunkt: {', '.join(offen)}")
+        return zeilen
+    except Exception as e:
+        return [f"  Regel-Register nicht lesbar ({e}) — python3 tools/kp_regeln.py"]
+
+
 def gemessener_stand():
     """Die Zahlen, die NICHT von Claude selbst kommen.
 
@@ -406,6 +427,8 @@ def main():
     # ── Autonomie-Score (immer sichtbar) ──────────────────────────────────
     z("-" * 68)
     for zeile in gemessener_stand():
+        z(zeile)
+    for zeile in regel_deckung():
         z(zeile)
     if score is not None:
         z(f"  (Selbst-Score {score} aus Autonomie-Log.md — selbst vergeben, "

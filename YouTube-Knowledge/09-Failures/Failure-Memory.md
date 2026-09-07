@@ -134,6 +134,95 @@ in der Bildmitte, umgeben von Leere.
 **Rule**: Vor dem Einsetzen einer Animation ein Kontaktabzug ansehen
 (`videoblick.py` oder ffmpeg-`tile`) — nicht nur prüfen, ob eine Datei entstand.
 
+### F-V9-F: Universelle Klassen mit fremden Vorgabewerten (`root cause` → Rule)
+
+**Was**: Die Manim-Klassen `StatCounter` und `SurvivalDays` sind universell
+gebaut und tragen Beispielwerte aus V7 Prosperi. Ralston Short 04 und 05
+benutzten sie, ohne die Werte anzupassen. Im Bild stand:
+„**0 TAGE allein in der Sahara**" und „**10 Tage — Mauro Prosperi**" —
+in einem Video über Aron Ralston in einer Schlucht in Utah.
+**Ergebnis**: Zwei terminierte Shorts trugen die Geschichte eines anderen
+Menschen. Sie wären am 09. und 10.09. so erschienen.
+**Root Cause**: Eine universelle Klasse ohne reihen-spezifische Ausprägung ist
+eine Falle: sie rendert fehlerfrei und zeigt trotzdem das Falsche. Kein Gate
+kann Inhalt gegen Geschichte prüfen — nur der Blick ins Bild fängt das.
+**Fix**: Reihen-spezifische Unterklassen `RalstonMeissel` (15 Stunden
+gemeißelt) und `RalstonInschrift` (Name, Geburts- und Todesdatum im Fels).
+`Ralston65Minuten` ersetzt `RockTrap` für Short 08.
+**Rule**: **Jede Reihe legt eigene Unterklassen an.** Eine universelle Klasse
+wird nie direkt in einem Short verwendet — ihre Vorgabewerte gehören einer
+anderen Geschichte. Vor dem Einsetzen einen Kontaktabzug ansehen.
+
+### F-V9-G: Der ganze Kanal lief 8 dB zu leise (`fixed`, 07.09.2026)
+
+**Was**: Alle gerenderten Shorts lagen bei **−22 LUFS**. YouTube normalisiert
+auf etwa −14 und dreht dabei **nur herunter, nie herauf**. Der Kanal war damit
+über alle bisherigen Videos hinweg deutlich leiser als jedes Konkurrenzvideo
+im selben Feed.
+**Root Cause**: Zwei Fehler in der Tonkette von `nb_build.py`:
+1. `amix=inputs=2` teilt die Pegel standardmäßig durch die Anzahl der
+   Eingänge — die Stimme verlor dadurch rund 6 dB.
+2. Danach wurde nirgends auf einen Zielpegel normalisiert.
+**Wie gefunden**: Nicht durch Hinhören, sondern durch die neu eingebaute
+Regel R18, die die Lautheit am fertigen Video misst. Sie schlug beim ersten
+Lauf bei allen zehn Shorts an.
+**Fix**: `amix=…:normalize=0` + `loudnorm=I=-14:TP=-1.5:LRA=11`.
+Ergebnis: −15,0 bis −15,7 LUFS über alle zehn Shorts.
+**Rule**: **Lautheit wird gemessen, nicht geschätzt.** Zielband −20 bis −11
+LUFS (R18). Gilt für jede Reihe und jedes Longform.
+**Offen**: Alle bereits veröffentlichten Videos (V1–V7) sind zu leise. Nicht
+korrigierbar ohne Neu-Upload — Entscheidung beim Nutzer.
+
+### F-V9-H: Die Messung selbst war falsch kalibriert (`fixed`, 07.09.2026)
+
+**Was**: Die Animations-QC meldete `RockTrap` als „nutzt nur 14 % der
+Bildbreite". Die Szene war in Ordnung — die Schwelle war falsch. Gemessen
+wurde ab Helligkeit 150; die orangen Felswände liegen bei etwa 133 und fielen
+komplett durch das Raster, sodass nur noch die Schrift gemessen wurde.
+**Gegenprobe**: Bei Schwelle 130 nutzt RockTrap 67 % der Breite. Der dunkelste
+Szenen-Hintergrund erreicht 48 — 130 trennt also sicher.
+**Zweiter Fall am selben Tag**: Die Untertitel-Messung lief zunächst mit
+`ffmpeg -v error`, was genau die `metadata`-Ausgabe unterdrückt, die gemessen
+werden sollte. Sie meldete deshalb immer 0 — also „keine Untertitel", egal was
+im Bild stand.
+**Rule**: **Jede neue Messung wird gegen einen bekannten guten UND einen
+bekannten schlechten Fall geprüft, bevor man ihr glaubt.** Die Kalibrierung
+gehört als Kommentar neben den Schwellwert, nicht in eine Notiz. Eine Messung,
+die immer dasselbe sagt, misst nichts.
+
+### F-V9-I: Der Riegel blockierte das Schreiben von Dokumentation (`fixed`)
+
+**Was**: Der PreToolUse-Riegel prüft den Befehlstext auf Render-/Upload-Aufrufe.
+Er blockierte dadurch einen Aufruf, der lediglich eine Tabelle **schrieb**, in
+der ein Render-Befehl als Beispiel vorkam — und anschließend sogar seine eigene
+Reparatur, weil auch die den Beispieltext enthielt.
+**Doppelter Befund**: Das war zugleich der Beweis, dass der Riegel nicht
+umgangen werden kann, und ein echter Fehlalarm.
+**Fix**: Der Rumpf jedes Here-Dokuments wird vor der Prüfung entfernt.
+Regressionsfall in `tools/tests/test_pre_tool_use.py`.
+**Rule**: **Ein Riegel mit Fehlalarmen wird abgeschaltet und schützt danach gar
+nichts mehr.** Jede Verschärfung braucht einen Testfall, der beweist, dass
+normales Arbeiten weiter durchläuft.
+
+### F-V9-J: Alle hochladen, dann alle löschen — Dubletten nach Abbruch (`fixed`)
+
+**Was**: `kp_ersetzen.py` lud erst alle zehn Shorts hoch und löschte danach
+alle alten. Nach dem fünften Upload griff YouTubes Tageslimit
+(`uploadLimitExceeded`). Weil noch nichts gelöscht war, standen anschließend
+**fünf Dubletten im Sendeplan** — zwei Videos auf demselben Termin.
+**Was gut lief**: Nichts ging verloren. Die Reihenfolge „erst hochladen,
+bestätigen, dann löschen" hat gehalten — hätte das Werkzeug zuerst gelöscht,
+wären fünf Sendeplätze leer geblieben.
+**Root Cause**: Der Zustand „neu gerendert, aber noch nicht drüben" existierte
+nirgends. Das System wusste nach dem Abbruch nicht, dass etwas offen war.
+**Fix**: Austausch läuft je Short vollständig durch (hochladen → bestätigen →
+löschen → protokollieren) und schreibt `upload_log.json` nach **jedem** Short.
+Offene Austausche tragen dort `austausch_offen: true`; `tools/kp.py status`
+meldet sie als Schritt 7b und nennt den Befehl.
+**Rule**: **Ein mehrteiliger Vorgang wird je Teil abgeschlossen, nicht je
+Phase.** Und: jeder Zwischenzustand, der eine Handlung erfordert, muss auf der
+Platte stehen — nicht im Gedächtnis der Sitzung.
+
 ## Failure Memory auf Agentenebene
 Wenn ein Agent wiederholt denselben Fehler produziert:
 ```

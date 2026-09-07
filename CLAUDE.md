@@ -27,11 +27,82 @@ git log --oneline main..HEAD   # Commits die noch nicht auf main sind
 
 ---
 
+## ⛔ Regeln sind ab 07.09.2026 erzwungen, nicht aufgeschrieben
+
+**Der Befund:** Fünf Produktionsregeln galten schriftlich, keine einzige hatte
+einen Prüfpunkt im Code. Alle fünf wurden gebrochen, während sie galten —
+10 Shorts gingen mit falschen Untertiteln live, 5 terminierte Shorts waren
+Standbild-Diashows, zwei Serien sind dauerhaft unbewertbar, und der ganze
+Kanal lief 8 dB zu leise. Vollständig: [[Decision-Harte-Gates-statt-Prosa]] ·
+[[Failure-Memory]] F-V9-A…E · [[Regel-Register]].
+
+**Der Ablauf steht nicht mehr in einer Liste — er läuft:**
+
+```
+python3 tools/kp.py status      ← sagt, was JETZT dran ist. Zuerst ausführen.
+python3 tools/kp.py schritte    ← die Reihenfolge mit Befehlen
+```
+
+`kp.py` liest den tatsächlichen Zustand von Platte und API. Es glaubt keiner
+Notiz — auch dieser nicht. Der Sitzungsstart ruft es automatisch auf, in jedem
+frischen Container. **Der Nutzer muss nichts mehr ansprechen.**
+
+**Die Reihenfolge — jeder Schritt prüft seinen Vorgänger:**
+
+| # | Schritt | Werkzeug |
+|---|---|---|
+| 1 | Messen | `tools/kp_metrik.py --snapshot` *(läuft automatisch beim Start)* |
+| 2 | Skript aufnehmen | `tools/kp_skript.py <serie> --aus <datei-vom-nutzer>` |
+| 3 | Vorher-Gate | `tools/kp_gate.py <serie>` |
+| 4 | Rendern | das Build-Skript der Serie |
+| 5 | Animationen messen | `tools/kp_anim_qc.py` |
+| 6 | Nachher-Gate | `tools/kp_gate.py <serie> --nachher` |
+| 7 | Ausliefern | Upload-Skript der Serie · `tools/kp_ersetzen.py` |
+| 8 | Longform | `nb_lang.py <serie>` |
+
+**Der Riegel** (`.claude/hooks/pre-tool-use.py`) hält Render und Upload mit
+Exit-Code 2 an, solange das Gate rot ist, und blockiert jeden automatischen
+TikTok-Post. Er ist nicht überredbar — deshalb muss niemand mehr daran denken.
+
+**Alle Regeln stehen in `tools/kp_regeln.py`** und werden nach
+`YouTube-Knowledge/00-System/Regel-Register.md` erzeugt. Eine Regel ohne Feld
+`pruefung` erscheint überall als UNGEDECKT — im Gate, im Sitzungsbericht und
+in der Notiz. **Neue Regel = neue Zeile dort, mit Prüffunktion.** Prosa in
+einer Notiz zählt nicht mehr als Durchsetzung.
+
+---
+
+## 📌 Stehende Anweisung: Befunde werden festgeschrieben, nicht berichtet
+
+> Nutzer, 07.09.2026: *„Solange alle Analysen, Diagnosen, Korrekturen und
+> Lösungen für immer so notiert werden, dass ich sie nicht erwähnen muss, ist
+> alles gut. Du sollst immer so vorgehen, mit der Intention."*
+
+Ein Befund, der nur im Chat steht, ist mit dem Container weg. Deshalb gilt für
+**jede** Analyse, Diagnose, Korrektur und Lösung — ohne Nachfrage, ohne
+Ankündigung:
+
+| Was entsteht | Wohin es gehört | Warum dorthin |
+|---|---|---|
+| Fehler / Ursache | `09-Failures/Failure-Memory.md` mit ID, Beleg, Root Cause, Fix, Rule | damit er nur einmal bezahlt wird |
+| Regel daraus | `tools/kp_regeln.py` **mit Prüffunktion** | sonst ist sie wieder Prosa |
+| Grundsatzentscheidung | `05-Decisions/` mit Confidence, Scope, History | damit das Warum überlebt |
+| Gemessene Zahl | `07-Analytics/Observations.md` + Snapshot | damit sie widersprechen kann |
+| Kalibrierung / Schwellwert | als Kommentar **im Code neben dem Wert** | eine Messung ist so gut wie ihre Kalibrierung |
+| Geänderter Ablauf | `CLAUDE.md` + `Produktion-Pflichtliste.md` | damit die nächste Sitzung ihn findet |
+
+Dann `git commit` **und Merge auf `main`** — ein neuer Container klont `main`.
+Ablauf: `/merken`. **Regel R25 prüft, ob Code ohne Gedächtnis geändert wurde.**
+
+---
+
 ## Die 6 Kern-Constraints
 
 1. **Das Originalskript kommt IMMER vom Nutzer.** Kürzen/formen: ja. Erfinden: nein.
 2. **Der Nutzer arbeitet nicht mit der Kommandozeile** → Ergebnisse als **Artifact-Seite** ausliefern.
-3. **Zahlen schlagen Vermutungen.** `analyse.py` gewinnt gegen Notiertes.
+3. **Zahlen schlagen Vermutungen.** `tools/kp_metrik.py` gewinnt gegen Notiertes —
+   **AVP% (gesehener Anteil je Short) ist die einzige altersunabhängige
+   Qualitätszahl.** Der alte Autonomie-Score war selbst vergeben und ist stillgelegt.
 4. **n+1 — vor JEDEM Produktionsschritt:** `YouTube-Knowledge/00-System/Produktion-Pflichtliste.md` **lesen und abarbeiten** — alle in Pflichtliste §2 gelisteten Pflicht-Dateien (Learnings + Failure-Memory + Animation-Library), alle Werkzeuge, Konkurrenz-Check. Nicht ankündigen, einfach tun. Der Nutzer soll HF-Quota, Manim, Remotion, Stock-Bilder, SEO **niemals selbst ansprechen müssen**. **Selbst-Fortschritt ist Pflicht:** jede Reihe integriert autonom **≥1 neue kostenlose Fähigkeit** (Capability-Gate §0c) und **prüft das fertige Rendern per Selbst-QC — ansehen (`videoblick.py`) + hören (`hoeren.py`) — vor jedem Upload** (§0d). Ohne diese zwei Riegel wiederholt sich V8 (Werkzeug war da, wurde nicht genutzt / Ergebnis nie geprüft).
    - **STEHENDE REGEL (verschärft 06.09.): Bewegtbild in JEDEM Short — Standbild-Diashow ausnahmslos raus.** Nicht mehr „≥1 Schlüssel-Shot", sondern **echte Bewegung in jedem Short und möglichst jedem Shot**: Bewegung in Sekunde 1 + durchgehend bewegte Shots. Genutzt wird das **volle Engine-Repertoire**: **video-shotcraft** (Remotion-Motion/Kinetic-Typo/2.5D-Kamerafahrten/Beat-Cuts), **OpenMontage HyperFrames (GSAP)** für bewegte Erklär-Shots, **video-use** für Schnitt/Grade/Overlay, dazu Manim/Wan2.1-I2V/SVG. **Ken-Burns-Zoom über Standbilder zählt NICHT als „bewegt".** Blockierend im §0d-QC. **Das muss geübt werden, bis es in jedem Short sitzt** (Nutzer 06.09.: „das muss langsam sitzen, weg vom Standbild"). Autonom — der Nutzer spricht das nie an. Details: [[Short-Konzept-Blueprint]], Pflichtliste §5, [[Werkzeug-Register]] §H.
 5. **Ein Learning ist nicht automatisch eine Rule.** Confidence sichtbar lassen (Low/Medium/High/Very High).

@@ -866,3 +866,145 @@ class StundenBogen(Scene):
                        weight=BOLD).move_to([0, -6.4, 0])
         self.play(FadeIn(schluss), run_time=0.5)
         self.wait(0.8)
+
+
+# ═══════════════════════════════════════════════════════════════════════════
+# V8 Ralston, zweite Haelfte (07.09.2026)
+#
+# Angelegt, weil die Animations-QC zeigte: Short 04 und 05 liefen mit den
+# VORGABEWERTEN der universellen Klassen — im Bild stand "0 TAGE allein in der
+# Sahara" und "10 Tage — Mauro Prosperi". Das ist Mauro Prosperis Geschichte
+# in einem Video ueber Aron Ralston in einer Schlucht in Utah. Die Klassen
+# waren richtig gebaut und nie auf die Reihe angepasst worden.
+#
+# Lehre: eine universelle Klasse ohne reihen-spezifische Auspraegung ist eine
+# Falle. Deshalb traegt ab jetzt jede Reihe ihre eigenen Unterklassen.
+# ═══════════════════════════════════════════════════════════════════════════
+
+class RalstonMeissel(StatCounter):
+    """S04 — 'Nach 15 Stunden war der Fels kaum angekratzt.'"""
+    START = 0
+    END   = 15
+    UNIT  = "STUNDEN"
+    LABEL = "gemeißelt — kein Millimeter"
+    COLOR = "#e0b060"
+
+
+class RalstonInschrift(Scene):
+    """S05 — 'Er ritzte vier Dinge in den Fels: seinen Namen, sein
+    Geburtsdatum und sein Todesdatum.'
+
+    Das staerkste Bild der ganzen Reihe. Nuechtern umgesetzt: die Zeilen
+    erscheinen, als wuerden sie eingeritzt, ohne Effekt und ohne Musikgeste.
+    Das Todesdatum kommt zuletzt und bleibt stehen.
+    """
+
+    ZEILEN = [("ARON RALSTON", 54), ("27. OKT 1975", 40), ("APRIL 2003", 40)]
+
+    def construct(self):
+        self.camera.background_color = "#0a0705"
+
+        # Felswand als Flaeche mit Schichtung — kein leerer Hintergrund
+        wand = Rectangle(width=9.2, height=16.4, fill_color="#2e1c0c",
+                         fill_opacity=1, stroke_width=0)
+        self.add(wand)
+        for i in range(9):
+            y = 7.0 - i * 1.7
+            self.add(Line([-4.6, y, 0], [4.6, y + 0.22, 0], color="#3d2410",
+                          stroke_width=3, stroke_opacity=0.55))
+
+        kopf = Text("TAG 3", font_size=34, color="#8a6a45",
+                    weight=BOLD).move_to([0, 6.6, 0])
+        self.play(FadeIn(kopf), run_time=0.4)
+
+        unter = Text("unter null Grad · Wasser leer", font_size=26,
+                     color="#7a6047").move_to([0, 5.7, 0])
+        self.play(FadeIn(unter), run_time=0.4)
+
+        y = 3.0
+        for text, groesse in self.ZEILEN:
+            zeile = Text(text, font_size=groesse, color="#d8c4a0",
+                         weight=BOLD).move_to([0, y, 0])
+            # Ritzen: die Zeile wird von links nach rechts freigelegt
+            self.play(Write(zeile), run_time=0.85)
+            self.add(Line(zeile.get_corner(DL) + DOWN * 0.18,
+                          zeile.get_corner(DR) + DOWN * 0.18,
+                          color="#6b4a28", stroke_width=2, stroke_opacity=0.7))
+            y -= 1.9
+
+        schluss = Text("Er hielt es für sein Grab.", font_size=34, color="#c8a96e",
+                       weight=BOLD).move_to([0, -3.0, 0])
+        self.play(FadeIn(schluss), run_time=0.6)
+        self.wait(0.9)
+
+
+class Ralston65Minuten(Scene):
+    """S08 — 'Er griff zum Messer. 65 Minuten, bis der Arm ab war.'
+
+    Ersetzt RockTrap fuer diesen Short. RockTrap zeigte einen gelben Punkt
+    namens "Arm" zwischen zwei Balken und nutzte 14 % der Bildbreite — beides
+    ist genau das, was Failure-Memory F-V8-D verbietet.
+
+    Hier laeuft ein Balken ueber 65 Minuten mit drei benannten Marken. Nichts
+    Blutiges: die Zahlen tragen die Szene.
+    """
+
+    MARKEN = [(0, "Knochen 1"), (12, "Knochen 2"), (65, "frei")]
+
+    def construct(self):
+        self.camera.background_color = "#0a0705"
+
+        titel = Text("65 MINUTEN", font_size=58, color="#cc4433",
+                     weight=BOLD).move_to([0, 6.4, 0])
+        unter = Text("mit einem stumpfen Taschenmesser", font_size=26,
+                     color="#8a6a55").move_to([0, 5.4, 0])
+        self.play(FadeIn(titel), FadeIn(unter), run_time=0.5)
+
+        links, rechts, y = -3.6, 3.6, 1.6
+        spur = Rectangle(width=rechts - links, height=0.85, fill_color="#241610",
+                         fill_opacity=1, stroke_color="#4a2c1c",
+                         stroke_width=2).move_to([0, y, 0])
+        self.add(spur)
+
+        fortschritt = ValueTracker(0.0)
+
+        def balken():
+            b = max(fortschritt.get_value() * (rechts - links), 0.02)
+            r = Rectangle(width=b, height=0.85, fill_color="#cc4433",
+                          fill_opacity=0.9, stroke_width=0)
+            r.move_to([links + b / 2, y, 0])
+            return r
+
+        self.add(always_redraw(balken))
+
+        minute = always_redraw(lambda: Text(
+            f"{int(fortschritt.get_value() * 65)} min", font_size=40,
+            color=WHITE, weight=BOLD).move_to([0, 3.1, 0]))
+        self.add(minute)
+
+        vorher = 0.0
+        for i, (m, name) in enumerate(self.MARKEN):
+            ziel = m / 65.0
+            self.play(fortschritt.animate.set_value(ziel),
+                      run_time=max(0.5, (ziel - vorher) * 3.2),
+                      rate_func=rate_functions.linear)
+            vorher = ziel
+            x = links + ziel * (rechts - links)
+            marke = Line([x, y - 0.62, 0], [x, y + 0.62, 0],
+                         color="#e0b060", stroke_width=4)
+            lbl = Text(name, font_size=28, color="#e0b060", weight=BOLD)
+            # Marken bei 0 und 12 min liegen dicht beieinander -> abwechselnd
+            # ueber und unter den Balken setzen, sonst ueberlagern sich die
+            # Beschriftungen (die Animations-QC hat genau das gemessen).
+            lbl.next_to(marke, DOWN if i % 2 == 0 else UP, buff=0.3)
+            # ... und in den Bildrand klemmen, sonst laeuft "Knochen 1" links
+            # aus dem Bild. Die Buehne ist 9 Einheiten breit: x von -4.5 bis 4.5.
+            halb = lbl.width / 2 + 0.15
+            lbl.move_to([min(max(x, -4.5 + halb), 4.5 - halb),
+                         lbl.get_center()[1], 0])
+            self.play(FadeIn(marke), FadeIn(lbl), run_time=0.4)
+
+        schluss = Text("Dann fiel er rückwärts. Frei.", font_size=36, color=WHITE,
+                       weight=BOLD).move_to([0, -2.6, 0])
+        self.play(FadeIn(schluss), run_time=0.6)
+        self.wait(0.8)

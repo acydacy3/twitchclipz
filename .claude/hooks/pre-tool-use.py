@@ -45,6 +45,32 @@ SERIE_ALS_ARG = re.compile(
     r"\b(?:nb_lang|lang|serie|short)\.py\s+(?:--\S+\s+)*([A-Za-z0-9_-]+)/?")
 
 
+def ohne_heredoc(cmd):
+    """Text in Here-Dokumenten ist Daten, kein Befehl.
+
+    Gefunden am 07.09.2026: Dieser Riegel blockierte einen Aufruf, der lediglich
+    eine Dokumentationstabelle SCHRIEB, in der ein Render-Befehl als Beispiel
+    vorkam. Er blockierte danach sogar seine eigene Reparatur, weil auch die
+    den Beispieltext enthielt -- ein sauberer Beweis, dass er nicht ueberredbar
+    ist, und zugleich ein Fehlalarm. Ein Riegel mit Fehlalarmen wird
+    abgeschaltet und schuetzt danach gar nichts mehr. Deshalb wird der Rumpf
+    jedes Here-Dokuments vor der Pruefung entfernt.
+    """
+    raus, im_dok, ende = [], False, None
+    for z in cmd.split("\n"):
+        if im_dok:
+            if z.strip() == ende:
+                im_dok, ende = False, None
+            continue
+        m = re.search(r"<<-?\s*['\"]?([A-Za-z_][A-Za-z0-9_]*)['\"]?", z)
+        if m:
+            im_dok, ende = True, m.group(1)
+            raus.append(z[:m.start()])
+            continue
+        raus.append(z)
+    return "\n".join(raus)
+
+
 def serie_finden(cmd):
     m = SERIE_IM_PFAD.search(cmd)
     if m:
@@ -60,17 +86,43 @@ def blockieren(text):
     sys.exit(2)
 
 
+# R23 — TikTok wird NIE automatisch bespielt.
+# Beleg: automatisch terminiert = 1 View je Video, vom Nutzer selbst
+# hochgeladen = Tausende. Bis heute war das eine Zeile im Vault. Jetzt haelt
+# der Riegel jeden Buffer-Post an, der auf einen TikTok-Kanal zielt.
+TIKTOK = re.compile(r"tiktok", re.I)
+
+
+def pruefe_tiktok(daten):
+    werkzeug = daten.get("tool_name", "")
+    if not werkzeug.startswith("mcp__Buffer__"):
+        return
+    if "create_post" not in werkzeug and "update_post" not in werkzeug:
+        return
+    roh = json.dumps(daten.get("tool_input") or {}, ensure_ascii=False)
+    if TIKTOK.search(roh):
+        blockieren(
+            "KP-GATE (R23): Buffer-Post auf einen TikTok-Kanal angehalten.\n"
+            "TikTok wird NIE automatisch bespielt — automatisch terminiert "
+            "brachte 1 View je Video, vom Nutzer selbst hochgeladen Tausende.\n"
+            "Richtiger Weg: die fertigen Shorts an den Nutzer geben "
+            "(SendUserFile), er laedt sie selbst hoch.")
+
+
 def main():
     try:
         daten = json.load(sys.stdin)
     except Exception:
         sys.exit(0)          # nichts Verwertbares -> nicht im Weg stehen
 
+    pruefe_tiktok(daten)
+
     if daten.get("tool_name") != "Bash":
         sys.exit(0)
     cmd = (daten.get("tool_input") or {}).get("command", "")
     if not cmd:
         sys.exit(0)
+    cmd = ohne_heredoc(cmd)
 
     ist_render = bool(RENDER.search(cmd))
     ist_upload = bool(UPLOAD.search(cmd))

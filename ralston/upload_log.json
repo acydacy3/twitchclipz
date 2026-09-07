@@ -1,57 +1,80 @@
 {
  "01": {
   "uploaded": true,
-  "video_id": "gDPyTWusWi4",
+  "video_id": "5DSEeoDsa98",
   "ersetzt_am": "2026-09-07",
-  "vorher": "vHooyn3KUkE"
+  "vorher": "gDPyTWusWi4",
+  "grund": "Bewegtbild + Untertitel + Lautheit -14 LUFS"
  },
  "02": {
   "uploaded": true,
-  "video_id": "WPf61egTpuw",
-  "ts": 1788171633.4785771
+  "video_id": "jPR4v9xR4Ds",
+  "ersetzt_am": "2026-09-07",
+  "vorher": "WPf61egTpuw",
+  "grund": "Bewegtbild + Untertitel + Lautheit -14 LUFS"
  },
  "03": {
   "uploaded": true,
-  "video_id": "bAS8twTG8KQ",
+  "video_id": "oRYDV_OMhKg",
   "ersetzt_am": "2026-09-07",
-  "vorher": "yKx2qZ2QuQM"
+  "vorher": "bAS8twTG8KQ",
+  "grund": "Bewegtbild + Untertitel + Lautheit -14 LUFS"
  },
  "04": {
   "uploaded": true,
-  "video_id": "uBrbU2JtAcU",
-  "ts": 1788171644.552204
+  "video_id": "ng931szXmHg",
+  "ersetzt_am": "2026-09-07",
+  "vorher": "uBrbU2JtAcU",
+  "grund": "Bewegtbild + Untertitel + Lautheit -14 LUFS"
  },
  "05": {
   "uploaded": true,
-  "video_id": "rXF75PoAWck",
-  "ts": 1788171650.2670953
+  "video_id": "4X9t6Rn4_Kg",
+  "ersetzt_am": "2026-09-07",
+  "vorher": "rXF75PoAWck",
+  "grund": "Bewegtbild + Untertitel + Lautheit -14 LUFS"
  },
  "06": {
   "uploaded": true,
   "video_id": "jGTS7tVOnvA",
   "ersetzt_am": "2026-09-07",
-  "vorher": "5TZuAQWSx8s"
+  "vorher": "5TZuAQWSx8s",
+  "austausch_offen": true,
+  "austausch_grund": "neu gerendert am 07.09. (Lautheit -14 LUFS, korrigierte Manim-Buehne); Austausch am 07.09. in YouTubes Tageslimit gelaufen",
+  "austausch_befehl": "python3 tools/kp_ersetzen.py ralston --shorts 06,07,08,09,10 --wirklich"
  },
  "07": {
   "uploaded": true,
   "video_id": "DjcO1ms6NI0",
   "ersetzt_am": "2026-09-07",
-  "vorher": "SC9JpBzpoTE"
+  "vorher": "SC9JpBzpoTE",
+  "austausch_offen": true,
+  "austausch_grund": "neu gerendert am 07.09. (Lautheit -14 LUFS, korrigierte Manim-Buehne); Austausch am 07.09. in YouTubes Tageslimit gelaufen",
+  "austausch_befehl": "python3 tools/kp_ersetzen.py ralston --shorts 06,07,08,09,10 --wirklich"
  },
  "08": {
   "uploaded": true,
   "video_id": "CGIvMRzDd3U",
-  "ts": 1788171666.5764322
+  "ts": 1788171666.5764322,
+  "austausch_offen": true,
+  "austausch_grund": "neu gerendert am 07.09. (Lautheit -14 LUFS, korrigierte Manim-Buehne); Austausch am 07.09. in YouTubes Tageslimit gelaufen",
+  "austausch_befehl": "python3 tools/kp_ersetzen.py ralston --shorts 06,07,08,09,10 --wirklich"
  },
  "09": {
   "uploaded": true,
   "video_id": "dqj3AlK5vE0",
-  "ts": 1788171672.639159
+  "ts": 1788171672.639159,
+  "austausch_offen": true,
+  "austausch_grund": "neu gerendert am 07.09. (Lautheit -14 LUFS, korrigierte Manim-Buehne); Austausch am 07.09. in YouTubes Tageslimit gelaufen",
+  "austausch_befehl": "python3 tools/kp_ersetzen.py ralston --shorts 06,07,08,09,10 --wirklich"
  },
  "10": {
   "uploaded": true,
   "video_id": "M9drzSWvRI4",
   "ersetzt_am": "2026-09-07",
-  "vorher": "KL2ax7WQb2Q"
+  "vorher": "KL2ax7WQb2Q",
+  "austausch_offen": true,
+  "austausch_grund": "neu gerendert am 07.09. (Lautheit -14 LUFS, korrigierte Manim-Buehne); Austausch am 07.09. in YouTubes Tageslimit gelaufen",
+  "austausch_befehl": "python3 tools/kp_ersetzen.py ralston --shorts 06,07,08,09,10 --wirklich"
  }
 }
