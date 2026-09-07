@@ -1,0 +1,76 @@
+{
+ "serie": "ralston",
+ "shorts": {
+  "01": {
+   "sha256": "d3468cb51c6fc9bdc1f0ce1f0dbefd7f6b1829edf54fe23a092d2eae4b61a631",
+   "zeichen": 354,
+   "geliefert_am": "2026-09-07",
+   "quelle": "../../../tmp/claude-0/-home-user-twitchclipz/a45f3b40-7cd6-55ba-8df4-195d763dd5ae/scratchpad/ralston_lieferung.json",
+   "vertrauen": "repo-historisch"
+  },
+  "02": {
+   "sha256": "cf068266e37122033933d959842282d18488da842e730da93226f828a55e96f0",
+   "zeichen": 425,
+   "geliefert_am": "2026-09-07",
+   "quelle": "../../../tmp/claude-0/-home-user-twitchclipz/a45f3b40-7cd6-55ba-8df4-195d763dd5ae/scratchpad/ralston_lieferung.json",
+   "vertrauen": "repo-historisch"
+  },
+  "03": {
+   "sha256": "8667df3bf1307f481ecd9d8b0081be6a87e8078dfcacbcb04104fa4500f44d00",
+   "zeichen": 295,
+   "geliefert_am": "2026-09-07",
+   "quelle": "../../../tmp/claude-0/-home-user-twitchclipz/a45f3b40-7cd6-55ba-8df4-195d763dd5ae/scratchpad/ralston_lieferung.json",
+   "vertrauen": "repo-historisch"
+  },
+  "04": {
+   "sha256": "5ac9bec68162905d2d4cebc35fd1a5c16ce0e8cea409f65ad20639ee8a230747",
+   "zeichen": 568,
+   "geliefert_am": "2026-09-07",
+   "quelle": "../../../tmp/claude-0/-home-user-twitchclipz/a45f3b40-7cd6-55ba-8df4-195d763dd5ae/scratchpad/ralston_lieferung.json",
+   "vertrauen": "repo-historisch"
+  },
+  "05": {
+   "sha256": "abe3a2e1d1e86966ae4ffe46e97269c4d9342bde88ff36a2f71ea7e012044f66",
+   "zeichen": 600,
+   "geliefert_am": "2026-09-07",
+   "quelle": "../../../tmp/claude-0/-home-user-twitchclipz/a45f3b40-7cd6-55ba-8df4-195d763dd5ae/scratchpad/ralston_lieferung.json",
+   "vertrauen": "repo-historisch"
+  },
+  "06": {
+   "sha256": "dd8f963cf169802c79c5fd80386944d097638c6b15ff796895576fd1fa393dd0",
+   "zeichen": 558,
+   "geliefert_am": "2026-09-07",
+   "quelle": "../../../tmp/claude-0/-home-user-twitchclipz/a45f3b40-7cd6-55ba-8df4-195d763dd5ae/scratchpad/ralston_lieferung.json",
+   "vertrauen": "repo-historisch"
+  },
+  "07": {
+   "sha256": "c73f0408b4d9588c935ac4e37ae20546fc9548a7332c15095d58643f811e1449",
+   "zeichen": 609,
+   "geliefert_am": "2026-09-07",
+   "quelle": "../../../tmp/claude-0/-home-user-twitchclipz/a45f3b40-7cd6-55ba-8df4-195d763dd5ae/scratchpad/ralston_lieferung.json",
+   "vertrauen": "repo-historisch"
+  },
+  "08": {
+   "sha256": "83d6a3f010fe3db8f128dc053fd6d03d1b7af5e908bd29f367f0d2aa18346e75",
+   "zeichen": 761,
+   "geliefert_am": "2026-09-07",
+   "quelle": "../../../tmp/claude-0/-home-user-twitchclipz/a45f3b40-7cd6-55ba-8df4-195d763dd5ae/scratchpad/ralston_lieferung.json",
+   "vertrauen": "repo-historisch"
+  },
+  "09": {
+   "sha256": "8e74bf68e72c7d5ef3494cf06dd55c9f06a5ef2074fde469edebb63b80a18323",
+   "zeichen": 820,
+   "geliefert_am": "2026-09-07",
+   "quelle": "../../../tmp/claude-0/-home-user-twitchclipz/a45f3b40-7cd6-55ba-8df4-195d763dd5ae/scratchpad/ralston_lieferung.json",
+   "vertrauen": "repo-historisch"
+  },
+  "10": {
+   "sha256": "6b81f00c170ddab8ac27a044a36b4d4375b9d8213312ad597e48dd278e02d52d",
+   "zeichen": 726,
+   "geliefert_am": "2026-09-07",
+   "quelle": "../../../tmp/claude-0/-home-user-twitchclipz/a45f3b40-7cd6-55ba-8df4-195d763dd5ae/scratchpad/ralston_lieferung.json",
+   "vertrauen": "repo-historisch"
+  }
+ },
+ "aktualisiert": "2026-09-07"
+}

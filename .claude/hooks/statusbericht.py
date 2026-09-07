@@ -220,11 +220,20 @@ def lese_autonomie_log():
 
 
 def lese_experimente():
-    """Liest aktive Experimente — gibt (bereit, aktiv) zurueck."""
+    """Liest Experimente — gibt (bereit, laufend, nie_gestartet) zurueck.
+
+    Aenderung 07.09.: Frueher wurde das Alter aus start_date berechnet. Ist
+    start_date leer, ergab das Alter 0 — das Experiment landete fuer immer im
+    Topf "laeuft" und konnte NIE ueberfaellig werden. Genau so war es: alle
+    vier Experimente hatten ein leeres start_date, der Bericht meldete
+    wochenlang "Experimente aktiv" fuer Experimente, die nie begonnen hatten.
+    Ein Experiment ohne Startdatum laeuft nicht — es steht still, und das
+    muss sichtbar sein.
+    """
     exp_dir = VAULT / "02-Experiments" / "Active"
     if not exp_dir.exists():
-        return [], []
-    bereit, aktiv = [], []
+        return [], [], []
+    bereit, laufend, nie_gestartet = [], [], []
     for pfad in sorted(exp_dir.glob("*.md")):
         text = pfad.read_text(errors="ignore")
         status_m = re.search(r"^status:\s*(\w+)", text, re.MULTILINE)
@@ -233,21 +242,27 @@ def lese_experimente():
             continue
         start_m = re.search(r"^start_date:\s*(.+)", text, re.MULTILINE)
         start_raw = (start_m.group(1).strip() if start_m else "").strip()
-        alter = 0
-        if start_raw and start_raw not in ("", "null", "None"):
-            try:
-                import datetime as _dt
-                start = _dt.datetime.fromisoformat(start_raw)
-                alter = (_dt.datetime.now() - start).days
-            except Exception:
-                pass
-        hat_result = bool(re.search(r"^result:\s*[^\"'\s]", text, re.MULTILINE))
         name = pfad.stem[:40]
+
+        if not start_raw or start_raw in ("null", "None"):
+            nie_gestartet.append(name)
+            continue
+
+        alter = 0
+        try:
+            import datetime as _dt
+            start = _dt.datetime.fromisoformat(start_raw)
+            alter = (_dt.datetime.now() - start).days
+        except Exception:
+            nie_gestartet.append(name)   # unlesbares Datum = kein Startbeleg
+            continue
+
+        hat_result = bool(re.search(r"^result:\s*[^\"'\s]", text, re.MULTILINE))
         if alter >= 7 and not hat_result:
-            bereit.append(name)
+            bereit.append(f"{name} ({alter}T)")
         else:
-            aktiv.append(name)
-    return bereit, aktiv
+            laufend.append(name)
+    return bereit, laufend, nie_gestartet
 
 
 def lese_neueste_observation():
@@ -260,6 +275,48 @@ def lese_neueste_observation():
         if line.startswith("- ["):
             return line[2:80]  # Erster Treffer = neueste Observation
     return None
+
+
+def gemessener_stand():
+    """Die Zahlen, die NICHT von Claude selbst kommen.
+
+    Ersetzt die Zeile "Score: 88/100 [BLAU — nahe Ziel!]". Dieser Score stand
+    in Autonomie-Log.md, wo Claude ihn selbst eintrug. Er stieg von 48 auf 88,
+    waehrend der gesehene Anteil je Short von 76 % auf 54 % fiel. Eine Zahl,
+    die man sich selbst gibt, kann nicht widersprechen.
+
+    Gelesen wird der letzte gespeicherte Snapshot -- ohne Netzabruf, damit der
+    Sitzungsstart nicht haengt. Frische Zahlen: tools/kp_metrik.py.
+    """
+    import datetime as _dt
+    import json as _json
+    zeilen = []
+    snap_dir = VAULT / "07-Analytics" / "snapshots"
+    snaps = sorted(snap_dir.glob("*.json")) if snap_dir.is_dir() else []
+    if not snaps:
+        zeilen.append("  Kanalstand: kein Snapshot vorhanden "
+                      "-> python3 tools/kp_metrik.py --snapshot")
+        return zeilen
+    try:
+        d = _json.loads(snaps[-1].read_text(errors="ignore"))
+    except Exception:
+        return ["  Kanalstand: Snapshot unlesbar."]
+
+    datum = d.get("snapshot_date", "?")
+    alter = "?"
+    try:
+        alter = (_dt.date.today() - _dt.date.fromisoformat(datum)).days
+    except Exception:
+        pass
+    zeilen.append(f"  Gemessen ({datum}): {d.get('subscribers','?')} Abos · "
+                  f"{d.get('total_views','?')} Aufrufe · "
+                  f"{d.get('video_count','?')} Videos")
+    if isinstance(alter, int) and alter >= 2:
+        zeilen.append(f"  ACHTUNG: Snapshot ist {alter} Tage alt. Ohne taegliche "
+                      f"Snapshots sind Serien nicht mehr vergleichbar")
+        zeilen.append(f"  (V5 und V6 sind genau so dauerhaft unmessbar geworden) "
+                      f"-> tools/kp_metrik.py --snapshot")
+    return zeilen
 
 
 def anti_stall_check():
@@ -279,14 +336,17 @@ def anti_stall_check():
             continue
         session_id = m.group(1)
         rest       = m.group(2)
-        # Hat diese Session eine neue Technik? -> Stopp
+        # Aenderung 07.09.: Eine System-Session (SYS) setzt den Anti-Stall
+        # NICHT mehr zurueck. Vorher genuegte ein "neue Technik"-Eintrag in
+        # einer reinen Meta-Session, um "Anti-Stall: OK" zu melden -- und
+        # genau das stand dort, waehrend vom 31.08. bis 06.09. kein einziges
+        # Video entstand. Der Zaehler soll Produktion messen, nicht Betrieb.
+        if session_id.startswith("SYS"):
+            continue
         tm = re.search(r"neue Technik:\s*(.+?)(?:\s*\|.*)?$", rest)
         if tm:
             letzte_technik = tm.group(1).strip()[:40]
-            break  # Neueste Technik gefunden — alles davor zaehlt nicht
-        # Kein Video? (SYS-Eintrag ohne neue Technik) -> uebergehen
-        if session_id.startswith("SYS"):
-            continue
+            break
         videos_seit_technik += 1
     return videos_seit_technik, letzte_technik or "unbekannt"
 
@@ -311,11 +371,16 @@ def main():
     infra_ok = not fehlend and not fehlt_w and not fehlt_p and modell.is_dir()
     yt_ok    = len(gesetzt) == len(ZUGANG)
 
-    # ── Score lesen — bestimmt Detailtiefe ────────────────────────────────
+    # ── Detailtiefe ist NICHT mehr an den Selbst-Score gekoppelt ─────────
+    # Vorher: Score >= 85 -> "kompakt" -> die Kern-Regeln verschwanden aus dem
+    # Bericht. Der Score wurde aber von Claude selbst eingetragen. Ein hoher
+    # selbstvergebener Score liess also genau die Regeln ausblenden, deren
+    # Einhaltung er behauptete. Am 07.09. stand dort 88/100, waehrend fuenf
+    # terminierte Shorts reine Standbild-Diashows waren und alle zehn
+    # Prosperi-Shorts falsche Untertitel trugen.
+    # Regeln stehen ab jetzt IMMER im Bericht.
     score, label, user_prompts = lese_autonomie_log()
-    score_val = score or 0
-    # Hoch (≥85) → kompakt. Mittel (70-84) → Gaps zeigen. Niedrig → voll
-    detail = "kompakt" if score_val >= 85 else ("mittel" if score_val >= 70 else "voll")
+    detail = "voll"
 
     z("")
     z("=" * 68)
@@ -340,15 +405,11 @@ def main():
 
     # ── Autonomie-Score (immer sichtbar) ──────────────────────────────────
     z("-" * 68)
+    for zeile in gemessener_stand():
+        z(zeile)
     if score is not None:
-        band = ("ROT" if score_val < 50 else "AMBER" if score_val < 70
-                else "GRUEN" if score_val < 85 else "BLAU — nahe Ziel!")
-        z(f"  Score: {score_val}/100 [{band}]  ({label})  Ziel: 90+")
-        if user_prompts:
-            z(f"  Gaps letzte Session: {', '.join(user_prompts[:5])}")
-            z(f"  -> Diese Session: Gaps oben ZUERST autonom schliessen!")
-    else:
-        z("  Score: noch kein Eintrag — Autonomie-Log.md anlegen nach erster Produktion")
+        z(f"  (Selbst-Score {score} aus Autonomie-Log.md — selbst vergeben, "
+          f"misst nichts. Nur Historie.)")
 
     # Anti-Stall (immer, einzeilig)
     try:
@@ -362,11 +423,14 @@ def main():
 
     # ── Experimente + Observations (immer sichtbar) ───────────────────────
     try:
-        exp_bereit, exp_aktiv = lese_experimente()
+        exp_bereit, exp_laufend, exp_nie = lese_experimente()
         if exp_bereit:
             z(f"  EXPERIMENTE BEREIT: {', '.join(exp_bereit)} <- JETZT auswerten!")
-        elif exp_aktiv:
-            z(f"  Experimente aktiv: {', '.join(exp_aktiv[:3])}")
+        if exp_nie:
+            z(f"  NIE GESTARTET ({len(exp_nie)}): {', '.join(e[:34] for e in exp_nie[:3])}")
+            z(f"  -> ohne start_date laeuft kein Experiment. Starten oder schliessen.")
+        if exp_laufend:
+            z(f"  Experimente laufen: {', '.join(exp_laufend[:3])}")
         neueste_obs = lese_neueste_observation()
         if neueste_obs:
             z(f"  Letzte Observation: {neueste_obs[:90]}")

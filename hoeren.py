@@ -75,8 +75,15 @@ def main():
             text.append(s.text.strip())
             print(f"[{s.start:7.2f} - {s.end:7.2f}] {s.text.strip()}")
 
-        basis = a.ausgabe or os.path.splitext(os.path.basename(
-            a.quelle if tmp is None else "transkript"))[0]
+        # Endung ".gehoert.txt" ist Absicht, nicht Kosmetik: dies ist
+        # SPRACHERKENNUNG, kein Skript. Vorher hiess die Datei "short_01.txt"
+        # und landete im aktuellen Verzeichnis -- genau der Dateiname, den die
+        # Regel "Captions IMMER aus Skript" fuer die Wahrheitsquelle haelt.
+        # Ein Aufruf aus einem skript/-Ordner heraus haette das Nutzer-Skript
+        # durch ASR-Text ersetzt, und nichts haette es gemeldet. Bei V7
+        # Prosperi ist genau das passiert (prosperi/nb_transcribe.py).
+        basis = a.ausgabe or os.path.splitext(
+            a.quelle if tmp is None else "transkript")[0] + ".gehoert"
         with open(basis + ".txt", "w", encoding="utf-8") as f:
             f.write(" ".join(text))
         print(f"\nGeschrieben: {basis}.txt", file=sys.stderr)

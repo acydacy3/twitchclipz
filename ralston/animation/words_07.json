@@ -2,625 +2,625 @@
  {
   "word": "In",
   "start": 0.0,
-  "end": 0.18,
+  "end": 0.12,
   "eos": false
  },
  {
   "word": "der",
-  "start": 0.18,
-  "end": 0.44,
+  "start": 0.12,
+  "end": 0.26,
   "eos": false
  },
  {
   "word": "fünften",
-  "start": 0.44,
-  "end": 0.88,
+  "start": 0.26,
+  "end": 0.8,
   "eos": false
  },
  {
   "word": "Nacht",
-  "start": 0.88,
-  "end": 1.14,
+  "start": 0.8,
+  "end": 1.1333333333333333,
   "eos": false
  },
  {
   "word": "ließ",
-  "start": 1.14,
-  "end": 1.4,
+  "start": 1.1333333333333333,
+  "end": 1.4666666666666668,
   "eos": false
  },
  {
   "word": "Ralston",
-  "start": 1.4,
-  "end": 1.82,
+  "start": 1.4666666666666668,
+  "end": 1.8,
   "eos": false
  },
  {
   "word": "los",
-  "start": 1.82,
-  "end": 2.18,
+  "start": 1.8,
+  "end": 2.0,
   "eos": true
  },
  {
   "word": "Er",
-  "start": 2.48,
-  "end": 2.62,
+  "start": 2.46,
+  "end": 2.54,
   "eos": false
  },
  {
   "word": "hatte",
-  "start": 2.62,
-  "end": 2.84,
+  "start": 2.54,
+  "end": 2.74,
   "eos": false
  },
  {
   "word": "aufgehört",
-  "start": 2.84,
-  "end": 3.26,
+  "start": 2.74,
+  "end": 3.2,
   "eos": false
  },
  {
   "word": "zu",
-  "start": 3.26,
-  "end": 3.46,
+  "start": 3.2,
+  "end": 3.38,
   "eos": false
  },
  {
   "word": "kämpfen",
-  "start": 3.46,
-  "end": 3.88,
+  "start": 3.38,
+  "end": 3.72,
   "eos": false
  },
  {
   "word": "sein",
-  "start": 4.32,
-  "end": 4.46,
+  "start": 4.22,
+  "end": 4.42,
   "eos": false
  },
  {
   "word": "Körper",
-  "start": 4.46,
-  "end": 4.86,
+  "start": 4.42,
+  "end": 4.72,
   "eos": false
  },
  {
   "word": "war",
-  "start": 4.86,
-  "end": 5.1,
+  "start": 4.72,
+  "end": 5.0,
   "eos": false
  },
  {
   "word": "am",
-  "start": 5.1,
-  "end": 5.2,
+  "start": 5.0,
+  "end": 5.14,
   "eos": false
  },
  {
   "word": "Limit",
-  "start": 5.2,
-  "end": 5.78,
+  "start": 5.14,
+  "end": 5.4,
   "eos": false
  },
  {
   "word": "seine",
-  "start": 5.96,
-  "end": 6.1,
+  "start": 5.82,
+  "end": 6.02,
   "eos": false
  },
  {
   "word": "Wasservorräte",
-  "start": 6.1,
-  "end": 6.86,
+  "start": 6.02,
+  "end": 6.8,
   "eos": false
  },
  {
   "word": "erschöpft",
-  "start": 6.86,
-  "end": 7.38,
+  "start": 6.8,
+  "end": 7.22,
   "eos": true
  },
  {
   "word": "Er",
   "start": 7.64,
-  "end": 7.82,
+  "end": 7.74,
   "eos": false
  },
  {
   "word": "hatte",
-  "start": 7.82,
-  "end": 8.08,
+  "start": 7.74,
+  "end": 7.96,
   "eos": false
  },
  {
   "word": "akzeptiert",
-  "start": 8.08,
-  "end": 8.84,
+  "start": 7.96,
+  "end": 8.62,
   "eos": false
  },
  {
   "word": "dass",
-  "start": 9.1,
-  "end": 9.22,
+  "start": 8.9,
+  "end": 9.06,
   "eos": false
  },
  {
   "word": "er",
-  "start": 9.22,
-  "end": 9.36,
+  "start": 9.06,
+  "end": 9.24,
   "eos": false
  },
  {
   "word": "sterben",
-  "start": 9.36,
-  "end": 9.64,
+  "start": 9.24,
+  "end": 9.56,
   "eos": false
  },
  {
   "word": "würde",
-  "start": 9.64,
-  "end": 9.92,
+  "start": 9.56,
+  "end": 9.78,
   "eos": true
  },
  {
   "word": "Dann",
-  "start": 10.32,
-  "end": 10.66,
+  "start": 10.22,
+  "end": 10.52,
   "eos": false
  },
  {
   "word": "in",
-  "start": 11.02,
-  "end": 11.16,
+  "start": 10.52,
+  "end": 11.02,
   "eos": false
  },
  {
   "word": "diesem",
-  "start": 11.16,
-  "end": 11.36,
+  "start": 11.02,
+  "end": 11.28,
   "eos": false
  },
  {
   "word": "Zustand",
-  "start": 11.36,
-  "end": 11.84,
+  "start": 11.28,
+  "end": 11.68,
   "eos": false
  },
  {
   "word": "zwischen",
-  "start": 11.84,
-  "end": 12.2,
+  "start": 11.68,
+  "end": 12.0,
   "eos": false
  },
  {
   "word": "Wachen",
-  "start": 12.2,
-  "end": 12.52,
+  "start": 12.0,
+  "end": 12.38,
   "eos": false
  },
  {
   "word": "und",
-  "start": 12.52,
-  "end": 12.8,
+  "start": 12.38,
+  "end": 12.68,
   "eos": false
  },
  {
   "word": "Schlafen",
-  "start": 12.8,
-  "end": 13.44,
+  "start": 12.68,
+  "end": 13.18,
   "eos": false
  },
  {
   "word": "sah",
-  "start": 13.58,
-  "end": 13.66,
+  "start": 13.18,
+  "end": 13.58,
   "eos": false
  },
  {
   "word": "er",
-  "start": 13.66,
-  "end": 13.86,
+  "start": 13.58,
+  "end": 13.74,
   "eos": false
  },
  {
   "word": "etwas",
-  "start": 13.86,
-  "end": 14.22,
+  "start": 13.74,
+  "end": 14.1,
   "eos": true
  },
  {
   "word": "Eine",
-  "start": 14.84,
-  "end": 15.12,
+  "start": 14.78,
+  "end": 15.04,
   "eos": false
  },
  {
   "word": "Vision",
-  "start": 15.12,
-  "end": 15.56,
+  "start": 15.04,
+  "end": 15.34,
   "eos": true
  },
  {
   "word": "Er",
-  "start": 15.86,
-  "end": 16.0,
+  "start": 15.84,
+  "end": 15.96,
   "eos": false
  },
  {
   "word": "sah",
-  "start": 16.0,
-  "end": 16.22,
+  "start": 15.96,
+  "end": 16.12,
   "eos": false
  },
  {
   "word": "sich",
-  "start": 16.22,
-  "end": 16.54,
+  "start": 16.12,
+  "end": 16.34,
   "eos": false
  },
  {
   "word": "selbst",
-  "start": 16.54,
-  "end": 16.96,
+  "start": 16.34,
+  "end": 16.8,
   "eos": false
  },
  {
   "word": "ohne",
-  "start": 17.16,
-  "end": 17.32,
+  "start": 17.08,
+  "end": 17.14,
   "eos": false
  },
  {
   "word": "rechten",
-  "start": 17.32,
-  "end": 17.66,
+  "start": 17.14,
+  "end": 17.54,
   "eos": false
  },
  {
   "word": "Unterarm",
-  "start": 17.66,
-  "end": 18.16,
+  "start": 17.54,
+  "end": 18.1,
   "eos": false
  },
  {
   "word": "wie",
-  "start": 18.38,
-  "end": 18.56,
+  "start": 18.4,
+  "end": 18.48,
   "eos": false
  },
  {
   "word": "er",
-  "start": 18.56,
-  "end": 18.7,
+  "start": 18.48,
+  "end": 18.6,
   "eos": false
  },
  {
   "word": "einen",
-  "start": 18.7,
-  "end": 18.86,
+  "start": 18.6,
+  "end": 18.78,
   "eos": false
  },
  {
   "word": "kleinen",
-  "start": 18.86,
-  "end": 19.4,
+  "start": 18.78,
+  "end": 19.18,
   "eos": false
  },
  {
   "word": "blonden",
-  "start": 19.54,
-  "end": 19.8,
+  "start": 19.46,
+  "end": 19.78,
   "eos": false
  },
  {
   "word": "Jungen",
-  "start": 19.8,
-  "end": 20.02,
+  "start": 19.78,
+  "end": 19.94,
   "eos": false
  },
  {
   "word": "auf",
-  "start": 20.02,
-  "end": 20.22,
+  "start": 19.94,
+  "end": 20.14,
   "eos": false
  },
  {
   "word": "die",
-  "start": 20.22,
-  "end": 20.38,
+  "start": 20.14,
+  "end": 20.28,
   "eos": false
  },
  {
   "word": "Hüfte",
-  "start": 20.38,
-  "end": 20.62,
+  "start": 20.28,
+  "end": 20.54,
   "eos": false
  },
  {
   "word": "hebt",
-  "start": 20.62,
-  "end": 20.9,
+  "start": 20.54,
+  "end": 20.78,
   "eos": true
  },
  {
   "word": "Er",
   "start": 21.28,
-  "end": 21.46,
+  "end": 21.38,
   "eos": false
  },
  {
   "word": "sah",
-  "start": 21.46,
-  "end": 21.66,
+  "start": 21.38,
+  "end": 21.56,
   "eos": false
  },
  {
   "word": "die",
-  "start": 21.66,
-  "end": 21.84,
+  "start": 21.56,
+  "end": 21.74,
   "eos": false
  },
  {
   "word": "Augen",
-  "start": 21.84,
-  "end": 22.0,
+  "start": 21.74,
+  "end": 21.94,
   "eos": false
  },
  {
   "word": "des",
-  "start": 22.0,
-  "end": 22.2,
+  "start": 21.94,
+  "end": 22.12,
   "eos": false
  },
  {
   "word": "Kindes",
-  "start": 22.2,
-  "end": 22.8,
+  "start": 22.12,
+  "end": 22.58,
   "eos": false
  },
  {
   "word": "und",
-  "start": 22.8,
-  "end": 23.12,
+  "start": 22.88,
+  "end": 23.04,
   "eos": false
  },
  {
   "word": "wusste",
-  "start": 23.12,
-  "end": 23.44,
+  "start": 23.04,
+  "end": 23.36,
   "eos": false
  },
  {
   "word": "mit",
-  "start": 23.44,
-  "end": 23.58,
+  "start": 23.36,
+  "end": 23.52,
   "eos": false
  },
  {
   "word": "einer",
-  "start": 23.58,
-  "end": 23.82,
+  "start": 23.52,
+  "end": 23.66,
   "eos": false
  },
  {
   "word": "Klarheit",
-  "start": 23.82,
-  "end": 24.38,
+  "start": 23.66,
+  "end": 24.18,
   "eos": false
  },
  {
   "word": "die",
-  "start": 24.48,
-  "end": 24.58,
+  "start": 24.42,
+  "end": 24.56,
   "eos": false
  },
  {
   "word": "er",
-  "start": 24.58,
-  "end": 24.66,
+  "start": 24.56,
+  "end": 24.62,
   "eos": false
  },
  {
   "word": "noch",
-  "start": 24.66,
-  "end": 24.84,
+  "start": 24.62,
+  "end": 24.74,
   "eos": false
  },
  {
   "word": "nie",
-  "start": 24.84,
-  "end": 25.02,
+  "start": 24.74,
+  "end": 24.88,
   "eos": false
  },
  {
   "word": "gespürt",
-  "start": 25.02,
-  "end": 25.38,
+  "start": 24.88,
+  "end": 25.2,
   "eos": false
  },
  {
   "word": "hatte",
-  "start": 25.38,
-  "end": 25.64,
+  "start": 25.2,
+  "end": 25.54,
   "eos": true
  },
  {
   "word": "das",
-  "start": 25.94,
-  "end": 26.14,
+  "start": 25.96,
+  "end": 26.06,
   "eos": false
  },
  {
   "word": "ist",
-  "start": 26.14,
-  "end": 26.34,
+  "start": 26.06,
+  "end": 26.2,
   "eos": false
  },
  {
   "word": "mein",
-  "start": 26.34,
-  "end": 26.5,
+  "start": 26.2,
+  "end": 26.4,
   "eos": false
  },
  {
   "word": "Sohn",
-  "start": 26.5,
-  "end": 26.94,
+  "start": 26.4,
+  "end": 26.7,
   "eos": true
  },
  {
   "word": "Ein",
-  "start": 27.08,
-  "end": 27.3,
+  "start": 27.02,
+  "end": 27.18,
   "eos": false
  },
  {
   "word": "Sohn",
-  "start": 27.3,
-  "end": 27.68,
+  "start": 27.18,
+  "end": 27.56,
   "eos": false
  },
  {
   "word": "den",
-  "start": 27.72,
-  "end": 27.8,
+  "start": 27.68,
+  "end": 27.74,
   "eos": false
  },
  {
   "word": "er",
-  "start": 27.8,
-  "end": 27.9,
+  "start": 27.74,
+  "end": 27.84,
   "eos": false
  },
  {
   "word": "noch",
-  "start": 27.9,
-  "end": 28.08,
+  "start": 27.84,
+  "end": 27.98,
   "eos": false
  },
  {
   "word": "nicht",
-  "start": 28.08,
-  "end": 28.3,
+  "start": 27.98,
+  "end": 28.12,
   "eos": false
  },
  {
   "word": "hatte",
-  "start": 28.3,
-  "end": 28.54,
+  "start": 28.12,
+  "end": 28.38,
   "eos": true
  },
  {
   "word": "Wenn",
-  "start": 28.54,
-  "end": 29.22,
+  "start": 28.38,
+  "end": 29.14,
   "eos": false
  },
  {
   "word": "dieser",
-  "start": 29.22,
-  "end": 29.48,
+  "start": 29.14,
+  "end": 29.4,
   "eos": false
  },
  {
   "word": "Junge",
-  "start": 29.48,
-  "end": 29.78,
+  "start": 29.4,
+  "end": 29.64,
   "eos": false
  },
  {
   "word": "existiert",
-  "start": 29.78,
-  "end": 30.44,
+  "start": 29.64,
+  "end": 30.24,
   "eos": false
  },
  {
   "word": "dann",
-  "start": 30.68,
-  "end": 30.76,
+  "start": 30.62,
+  "end": 30.64,
   "eos": false
  },
  {
   "word": "muss",
-  "start": 30.76,
-  "end": 30.94,
+  "start": 30.64,
+  "end": 30.84,
   "eos": false
  },
  {
   "word": "er",
-  "start": 30.94,
-  "end": 31.12,
+  "start": 30.84,
+  "end": 31.04,
   "eos": false
  },
  {
   "word": "aus",
-  "start": 31.12,
-  "end": 31.26,
+  "start": 31.04,
+  "end": 31.18,
   "eos": false
  },
  {
   "word": "dieser",
-  "start": 31.26,
-  "end": 31.48,
+  "start": 31.18,
+  "end": 31.42,
   "eos": false
  },
  {
   "word": "Schlucht",
-  "start": 31.48,
-  "end": 31.82,
+  "start": 31.42,
+  "end": 31.72,
   "eos": false
  },
  {
   "word": "heraus",
-  "start": 31.82,
-  "end": 32.12,
+  "start": 31.72,
+  "end": 31.94,
   "eos": true
  },
  {
   "word": "Dann",
-  "start": 32.76,
-  "end": 32.94,
+  "start": 32.74,
+  "end": 32.86,
   "eos": false
  },
  {
   "word": "hat",
-  "start": 32.94,
-  "end": 33.06,
+  "start": 32.86,
+  "end": 33.02,
   "eos": false
  },
  {
   "word": "er",
-  "start": 33.06,
-  "end": 33.22,
+  "start": 33.02,
+  "end": 33.14,
   "eos": false
  },
  {
   "word": "eine",
-  "start": 33.22,
-  "end": 33.4,
+  "start": 33.14,
+  "end": 33.28,
   "eos": false
  },
  {
   "word": "Zukunft",
-  "start": 33.4,
-  "end": 33.9,
+  "start": 33.28,
+  "end": 33.68,
   "eos": true
  },
  {
   "word": "Er",
   "start": 34.24,
-  "end": 34.46,
+  "end": 34.34,
   "eos": false
  },
  {
   "word": "kämpfte",
-  "start": 34.46,
-  "end": 34.84,
+  "start": 34.34,
+  "end": 34.76,
   "eos": false
  },
  {
   "word": "weiter",
-  "start": 34.84,
-  "end": 35.14,
+  "start": 34.76,
+  "end": 35.08,
   "eos": true
  }
 ]
