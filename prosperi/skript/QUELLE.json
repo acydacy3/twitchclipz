@@ -1,0 +1,76 @@
+{
+ "serie": "prosperi",
+ "shorts": {
+  "01": {
+   "sha256": "6c38c65523b96b58518a802d753a14972991979c2e14ed67c0441b0b61765949",
+   "zeichen": 345,
+   "geliefert_am": "2026-09-08",
+   "quelle": "../../../tmp/claude-0/-home-user-twitchclipz/a45f3b40-7cd6-55ba-8df4-195d763dd5ae/scratchpad/prosperi_skript.json",
+   "vertrauen": "repo-historisch"
+  },
+  "02": {
+   "sha256": "1d765b9bf5f3e26436a2c037198e3aaceb22e210150be2c00806edec18a1ae37",
+   "zeichen": 329,
+   "geliefert_am": "2026-09-08",
+   "quelle": "../../../tmp/claude-0/-home-user-twitchclipz/a45f3b40-7cd6-55ba-8df4-195d763dd5ae/scratchpad/prosperi_skript.json",
+   "vertrauen": "repo-historisch"
+  },
+  "03": {
+   "sha256": "f32b667e119ffd96e98966def5debe89860fd14639179d07863d2629854851af",
+   "zeichen": 361,
+   "geliefert_am": "2026-09-08",
+   "quelle": "../../../tmp/claude-0/-home-user-twitchclipz/a45f3b40-7cd6-55ba-8df4-195d763dd5ae/scratchpad/prosperi_skript.json",
+   "vertrauen": "repo-historisch"
+  },
+  "04": {
+   "sha256": "b4a5e86f588ccf1e27d51d281c3aa1f514e8a2aca169b5d0f019bf54ec75c645",
+   "zeichen": 339,
+   "geliefert_am": "2026-09-08",
+   "quelle": "../../../tmp/claude-0/-home-user-twitchclipz/a45f3b40-7cd6-55ba-8df4-195d763dd5ae/scratchpad/prosperi_skript.json",
+   "vertrauen": "repo-historisch"
+  },
+  "05": {
+   "sha256": "a9eee5ae6580904e3063a975b176a62b92ba09f5c83f76d7900121e714a803ed",
+   "zeichen": 319,
+   "geliefert_am": "2026-09-08",
+   "quelle": "../../../tmp/claude-0/-home-user-twitchclipz/a45f3b40-7cd6-55ba-8df4-195d763dd5ae/scratchpad/prosperi_skript.json",
+   "vertrauen": "repo-historisch"
+  },
+  "06": {
+   "sha256": "2fa2c3a60231d303d23cece2afae024b5b3a16f162f4450b5cad56de02d8aeaa",
+   "zeichen": 337,
+   "geliefert_am": "2026-09-08",
+   "quelle": "../../../tmp/claude-0/-home-user-twitchclipz/a45f3b40-7cd6-55ba-8df4-195d763dd5ae/scratchpad/prosperi_skript.json",
+   "vertrauen": "repo-historisch"
+  },
+  "07": {
+   "sha256": "2911d0058c247de90049b8cc5d70eec7d5821c9c6c81d759ecee05c6afec055b",
+   "zeichen": 395,
+   "geliefert_am": "2026-09-08",
+   "quelle": "../../../tmp/claude-0/-home-user-twitchclipz/a45f3b40-7cd6-55ba-8df4-195d763dd5ae/scratchpad/prosperi_skript.json",
+   "vertrauen": "repo-historisch"
+  },
+  "08": {
+   "sha256": "885884184306326da55885f2097d6d3096330ecfbfc226ea903ef3c98c39b20a",
+   "zeichen": 355,
+   "geliefert_am": "2026-09-08",
+   "quelle": "../../../tmp/claude-0/-home-user-twitchclipz/a45f3b40-7cd6-55ba-8df4-195d763dd5ae/scratchpad/prosperi_skript.json",
+   "vertrauen": "repo-historisch"
+  },
+  "09": {
+   "sha256": "2007a44adbe68b1d0f9a934c1e1b769e8e3770e4cc34c9b5111f885f06546bb5",
+   "zeichen": 385,
+   "geliefert_am": "2026-09-08",
+   "quelle": "../../../tmp/claude-0/-home-user-twitchclipz/a45f3b40-7cd6-55ba-8df4-195d763dd5ae/scratchpad/prosperi_skript.json",
+   "vertrauen": "repo-historisch"
+  },
+  "10": {
+   "sha256": "f43fa995d92477507f7d76ca65b8dcccf290a9cd27790969a821f34afdc7bb90",
+   "zeichen": 405,
+   "geliefert_am": "2026-09-08",
+   "quelle": "../../../tmp/claude-0/-home-user-twitchclipz/a45f3b40-7cd6-55ba-8df4-195d763dd5ae/scratchpad/prosperi_skript.json",
+   "vertrauen": "repo-historisch"
+  }
+ },
+ "aktualisiert": "2026-09-08"
+}

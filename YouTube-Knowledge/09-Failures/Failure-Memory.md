@@ -223,6 +223,69 @@ meldet sie als Schritt 7b und nennt den Befehl.
 Phase.** Und: jeder Zwischenzustand, der eine Handlung erfordert, muss auf der
 Platte stehen — nicht im Gedächtnis der Sitzung.
 
+### F-V9-K: Die Regel galt für die Shorts und lief am Langvideo vorbei (`fixed`)
+
+**Was**: Regel R24 („kein Fremdmaterial im Schnitt") prüft die Shot-Konfiguration
+der Shorts. `nb_lang.py` sucht sich seine Bilder aber selbst — über einen
+Dateinamen-Treffer `_01.` bis `_04.` — und zog dabei
+`ralston/bilder/broll/ref_01.jpg` bis `ref_04.jpg` heran: **echte Pressefotos
+von Aron Ralston**, die nur Vorlage für die Bildgenerierung waren.
+**Root Cause**: Die Regel existierte an einer Stelle, die Umgehung an der
+nächsten. Genau das Muster, das dem Befund vom 07.09. zugrunde liegt — nur
+eine Ebene höher.
+**Fix**: `ist_fremdmaterial()` in `tools/kp_regeln.py` ist jetzt die **einzige**
+Stelle, an der das entschieden wird. Sowohl R24 als auch `nb_lang.py` und
+`kp_drive_holen.py` rufen sie auf.
+**Rule**: **Eine Regel gehört in genau eine Funktion, und jeder Erzeuger ruft
+sie auf.** Zwei Orte mit derselben Absicht laufen früher oder später
+auseinander — und man merkt es erst im fertigen Video.
+
+### F-V9-L: Auch V6 Nutty Putty trägt ASR-Fehler in den Captions (`root cause`)
+
+**Was**: Beim Aufnehmen der Skripte für die Langvideos stellte sich heraus:
+nicht nur V7 Prosperi, auch **V6 Nutty Putty** hat verstümmelte Caption-Wörter
+(„zwenkt" statt „zwängt"). 9 von 10 Shorts wichen vom Skript ab.
+**Woher das Skript kam**: Aus `nuttyputty/PRODUKTIONSBRIEF.md`, wo das vom
+Nutzer gelieferte Skript je Short unter „**VO:**" steht. Es war die ganze Zeit
+da — nur nutzte es niemand als Wahrheitsquelle.
+**Fix**: Neues Werkzeug `tools/kp_captions.py` setzt die Caption-Wörter
+serienunabhängig aus dem Skript neu (Timing bleibt aus der ASR, Text kommt aus
+dem Skript, `align.py` führt beides zusammen). Die alten Listen bleiben als
+`*.asr.json` daneben stehen. Beide Serien stimmen jetzt zu 100 % mit ihrem
+Skript überein.
+**Das ist das Werkzeug, das Commit `1587675` am 31.08. versprochen hat**
+(„Caption-aus-Skript pipeline-weit erzwungen") und das nie existierte: jener
+Commit änderte nur zwei Markdown-Dateien.
+**Offen**: Die bereits veröffentlichten Shorts von V6 und V7 tragen die Fehler
+eingebrannt. Nur durch Neu-Render und Austausch behebbar — kostet Aufrufe und
+Alter der Videos. Nutzer-Entscheidung.
+
+### F-V9-M: Eigene YouTube-Videos sind aus dem Container nicht ladbar (`failed under conditions`)
+
+**Was**: Für Serien ohne lokales Material war der naheliegende Weg, die
+veröffentlichten Shorts zu laden und zu einem Querformat-Langvideo zu montieren.
+`yt-dlp` antwortet: *„Sign in to confirm you're not a bot."*
+**Bedingung**: Betrifft Downloads aus dem Rechenzentrum, auch für **eigene**
+Videos. Mit Browser-Cookies ginge es; die gibt es hier nicht.
+**Ausweg, der funktioniert**: Das Material lag im Google Drive des Nutzers.
+`gdown` kommt an die Dateien heran. Neues Werkzeug `tools/kp_drive_holen.py`
+holt Voiceover und Bilder in die Ordnerstruktur, die `nb_lang.py` erwartet —
+und überspringt dabei Fremdmaterial nach derselben R24-Definition.
+**Rule**: **Der Container ist eine Wegwerfumgebung, Drive ist das Materiallager.**
+Fehlt lokales Material, zuerst dort suchen — nicht bei YouTube.
+**Nebenbefund**: Im Okene-Ordner lagen ein Getty- und ein AP-Pressefoto. Beide
+wurden von R24 zurückgehalten. Ohne die Regel wären sie im Langvideo gelandet.
+
+### F-V9-N: ffmpeg-Fehler waren nicht lesbar (`fixed`)
+
+**Was**: `nb_lang.py` rief ffmpeg mit `-loglevel error` und `check=True` auf,
+ohne stderr einzufangen. Bei einem Abbruch bekam man den kompletten Befehl als
+Python-Traceback zu sehen — mehrere tausend Zeichen — aber **nicht die eine
+ffmpeg-Zeile, die sagt warum**. Debuggen war Raten.
+**Fix**: `sh()` fängt stderr ein und gibt im Fehlerfall die letzten zwölf
+Zeilen aus.
+**Rule**: Ein Werkzeug, das abbricht, muss den Grund zeigen, nicht den Befehl.
+
 ## Failure Memory auf Agentenebene
 Wenn ein Agent wiederholt denselben Fehler produziert:
 ```

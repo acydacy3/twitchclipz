@@ -50,3 +50,9 @@ nuttyputty/upload_results.json
 
 # Motion-Composition Render-Assets (Kopien, per Build-Schritt)
 **/template/public/kp/
+
+# Aus Drive geholtes Serien-Material (Quelle: Google Drive des Nutzers,
+# per tools/kp_drive_holen.py; gehoert nicht ins Repo, siehe F-V9-M)
+okene/voiceover/
+okene/bilder/
+lengede/voiceover/

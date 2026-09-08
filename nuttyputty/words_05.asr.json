@@ -1,0 +1,314 @@
+[
+  {
+    "word": "Das",
+    "start": 0.0,
+    "end": 0.28,
+    "conf": 1.0
+  },
+  {
+    "word": "Loch",
+    "start": 0.28,
+    "end": 0.52,
+    "conf": 1.0
+  },
+  {
+    "word": "war",
+    "start": 0.52,
+    "end": 0.78,
+    "conf": 1.0
+  },
+  {
+    "word": "18",
+    "start": 0.78,
+    "end": 1.22,
+    "conf": 1.0
+  },
+  {
+    "word": "mal",
+    "start": 1.22,
+    "end": 1.48,
+    "conf": 1.0
+  },
+  {
+    "word": "10",
+    "start": 1.48,
+    "end": 1.78,
+    "conf": 1.0
+  },
+  {
+    "word": "Zentimeter.",
+    "start": 1.78,
+    "end": 2.54,
+    "conf": 1.0
+  },
+  {
+    "word": "John",
+    "start": 3.18,
+    "end": 3.52,
+    "conf": 1.0
+  },
+  {
+    "word": "steckte",
+    "start": 3.52,
+    "end": 3.92,
+    "conf": 1.0
+  },
+  {
+    "word": "Kopf",
+    "start": 3.92,
+    "end": 4.14,
+    "conf": 1.0
+  },
+  {
+    "word": "über,",
+    "start": 4.14,
+    "end": 4.52,
+    "conf": 1.0
+  },
+  {
+    "word": "in",
+    "start": 4.94,
+    "end": 5.14,
+    "conf": 1.0
+  },
+  {
+    "word": "einem",
+    "start": 5.14,
+    "end": 5.34,
+    "conf": 1.0
+  },
+  {
+    "word": "Winkel",
+    "start": 5.34,
+    "end": 5.74,
+    "conf": 1.0
+  },
+  {
+    "word": "von",
+    "start": 5.74,
+    "end": 5.9,
+    "conf": 1.0
+  },
+  {
+    "word": "70",
+    "start": 5.9,
+    "end": 6.3,
+    "conf": 1.0
+  },
+  {
+    "word": "Grad.",
+    "start": 6.3,
+    "end": 6.68,
+    "conf": 1.0
+  },
+  {
+    "word": "Ein",
+    "start": 7.48,
+    "end": 7.74,
+    "conf": 1.0
+  },
+  {
+    "word": "Arm",
+    "start": 7.74,
+    "end": 8.08,
+    "conf": 1.0
+  },
+  {
+    "word": "unter",
+    "start": 8.08,
+    "end": 8.34,
+    "conf": 1.0
+  },
+  {
+    "word": "der",
+    "start": 8.34,
+    "end": 8.52,
+    "conf": 1.0
+  },
+  {
+    "word": "Brust,",
+    "start": 8.52,
+    "end": 9.02,
+    "conf": 1.0
+  },
+  {
+    "word": "der",
+    "start": 9.22,
+    "end": 9.38,
+    "conf": 1.0
+  },
+  {
+    "word": "andere",
+    "start": 9.38,
+    "end": 9.76,
+    "conf": 1.0
+  },
+  {
+    "word": "am",
+    "start": 9.76,
+    "end": 9.98,
+    "conf": 1.0
+  },
+  {
+    "word": "Fels,",
+    "start": 9.98,
+    "end": 10.42,
+    "conf": 1.0
+  },
+  {
+    "word": "beide",
+    "start": 10.98,
+    "end": 11.34,
+    "conf": 1.0
+  },
+  {
+    "word": "nutzlos",
+    "start": 11.34,
+    "end": 11.96,
+    "conf": 1.0
+  },
+  {
+    "word": "eingeklemmt.",
+    "start": 11.96,
+    "end": 12.84,
+    "conf": 1.0
+  },
+  {
+    "word": "Jeder",
+    "start": 13.3,
+    "end": 13.54,
+    "conf": 1.0
+  },
+  {
+    "word": "Versuch,",
+    "start": 13.54,
+    "end": 14.06,
+    "conf": 1.0
+  },
+  {
+    "word": "sich",
+    "start": 14.14,
+    "end": 14.28,
+    "conf": 1.0
+  },
+  {
+    "word": "hoch",
+    "start": 14.28,
+    "end": 14.52,
+    "conf": 1.0
+  },
+  {
+    "word": "zu",
+    "start": 14.52,
+    "end": 14.74,
+    "conf": 1.0
+  },
+  {
+    "word": "drücken,",
+    "start": 14.74,
+    "end": 15.1,
+    "conf": 1.0
+  },
+  {
+    "word": "keilte",
+    "start": 15.46,
+    "end": 15.84,
+    "conf": 1.0
+  },
+  {
+    "word": "ihn",
+    "start": 15.84,
+    "end": 16.02,
+    "conf": 1.0
+  },
+  {
+    "word": "nur",
+    "start": 16.02,
+    "end": 16.18,
+    "conf": 1.0
+  },
+  {
+    "word": "tiefer.",
+    "start": 16.18,
+    "end": 16.66,
+    "conf": 1.0
+  },
+  {
+    "word": "Nur",
+    "start": 17.3,
+    "end": 17.46,
+    "conf": 1.0
+  },
+  {
+    "word": "seine",
+    "start": 17.46,
+    "end": 17.7,
+    "conf": 1.0
+  },
+  {
+    "word": "Unterschenkel",
+    "start": 17.7,
+    "end": 18.42,
+    "conf": 1.0
+  },
+  {
+    "word": "ragten",
+    "start": 18.42,
+    "end": 18.82,
+    "conf": 1.0
+  },
+  {
+    "word": "noch",
+    "start": 18.82,
+    "end": 18.96,
+    "conf": 1.0
+  },
+  {
+    "word": "frei",
+    "start": 18.96,
+    "end": 19.3,
+    "conf": 1.0
+  },
+  {
+    "word": "in",
+    "start": 19.3,
+    "end": 19.48,
+    "conf": 1.0
+  },
+  {
+    "word": "die",
+    "start": 19.48,
+    "end": 19.6,
+    "conf": 1.0
+  },
+  {
+    "word": "Röhre.",
+    "start": 19.6,
+    "end": 20.04,
+    "conf": 1.0
+  },
+  {
+    "word": "Er",
+    "start": 20.48,
+    "end": 20.62,
+    "conf": 1.0
+  },
+  {
+    "word": "rief",
+    "start": 20.62,
+    "end": 20.84,
+    "conf": 1.0
+  },
+  {
+    "word": "nach",
+    "start": 20.84,
+    "end": 20.98,
+    "conf": 1.0
+  },
+  {
+    "word": "Josh.",
+    "start": 20.98,
+    "end": 21.24,
+    "conf": 1.0
+  }
+]
