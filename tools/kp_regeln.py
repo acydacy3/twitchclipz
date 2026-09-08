@@ -564,6 +564,25 @@ def p_lautheit(m):
                   f"Short {m.num}: {lufs:.1f} LUFS — ausserhalb {lo}…{hi}", hart=False, stelle=v)
 
 
+def ist_fremdmaterial(dateiname):
+    """Darf dieses Bild NICHT ins Sendematerial?
+
+    Konvention im Repo:
+        hf_*    selbst erzeugt (Z-Image/Higgsfield)  -> erlaubt
+        ref_*   fremde Vorlage fuer die Generierung  -> NIE ins Video
+
+    Diese Funktion ist die einzige Stelle, an der das entschieden wird. Sowohl
+    die Regel R24 als auch der Longform-Bauer nb_lang.py rufen sie auf. Der
+    Grund fuer die Zusammenlegung: nb_lang.py suchte sich seine Bilder selbst
+    und zog dabei ref_01 bis ref_04 heran -- echte Pressefotos von Aron
+    Ralston. Die Regel galt fuer die Shorts und lief am Langvideo vorbei.
+    Genau dieses Muster -- Regel an einer Stelle, Umgehung an der naechsten --
+    ist der Kern des Befundes vom 07.09.
+    """
+    name = os.path.basename(str(dateiname or "")).lower()
+    return name.startswith("ref_") or "presse" in name or "getty" in name
+
+
 def p_fremdmaterial(m):
     """Referenzfotos duerfen nie im Video landen.
 
@@ -578,11 +597,9 @@ def p_fremdmaterial(m):
     cp, cfg = m.config
     if cfg is None:
         return Befund("R24", "Fremdmaterial", True, f"Short {m.num}: keine Konfig", hart=False)
-    verdaechtig = []
-    for s in cfg.get("shots", []):
-        name = os.path.basename(str(s.get("img") or ""))
-        if name.startswith("ref_") or "presse" in name.lower():
-            verdaechtig.append(name)
+    verdaechtig = [os.path.basename(str(s.get("img")))
+                   for s in cfg.get("shots", [])
+                   if s.get("img") and ist_fremdmaterial(s["img"])]
     if verdaechtig:
         return Befund("R24", "Fremdmaterial", False,
                       f"Short {m.num}: Referenz-/Fremdmaterial im Schnitt: "
@@ -700,6 +717,77 @@ def p_gedaechtnis(_m=None):
     return Befund("R25", "Gedaechtnis", True, "keine offenen Code-Aenderungen")
 
 
+# ═══════════════════════════════════════════ Pruefungen LANGVIDEO
+
+def _longform_datei(serie):
+    return erste_datei(os.path.join(serie, "render", "long.mp4"),
+                       os.path.join(serie, "output", "long.mp4"))
+
+
+def p_longform_laenge(m):
+    """R26 — ein Langvideo muss lang sein.
+
+    Die beiden vorhandenen Langvideos des Kanals sind 5:39 und 4:29 lang und
+    haben 13 bzw. 64 Aufrufe. Zu kurz geratene Zusammenschnitte sind weder
+    Short noch Longform und bedienen keinen der beiden Feeds.
+    """
+    serie = m.serie if hasattr(m, "serie") else str(m)
+    v = _longform_datei(serie)
+    if not v:
+        return Befund("R26", "Langvideo-Laenge", False,
+                      f"{serie}: kein render/long.mp4", hart=False,
+                      stelle=f"bauen: python3 nb_lang.py {os.path.basename(serie)}")
+    d = sh_dauer(v)
+    if d < 180:
+        return Befund("R26", "Langvideo-Laenge", False,
+                      f"{serie}: nur {int(d)//60}:{int(d)%60:02d} — unter 3 Minuten",
+                      stelle=v)
+    return Befund("R26", "Langvideo-Laenge", True,
+                  f"{serie}: {int(d)//60}:{int(d)%60:02d}")
+
+
+def p_longform_format(m):
+    """R27 — Querformat, sonst konkurriert das Langvideo mit dem Shorts-Feed."""
+    serie = m.serie if hasattr(m, "serie") else str(m)
+    v = _longform_datei(serie)
+    if not v:
+        return Befund("R27", "Langvideo-Format", True, f"{serie}: kein Langvideo",
+                      hart=False)
+    r = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0",
+                        "-show_entries", "stream=width,height", "-of", "csv=p=0", v],
+                       capture_output=True, text=True).stdout.strip()
+    try:
+        w, h = (int(x) for x in r.split(",")[:2])
+    except Exception:
+        return Befund("R27", "Langvideo-Format", False,
+                      f"{serie}: Bildmasse nicht lesbar", stelle=v)
+    if w <= h:
+        return Befund("R27", "Langvideo-Format", False,
+                      f"{serie}: {w}x{h} ist Hochformat — YouTube wertet das als Short",
+                      stelle=v)
+    return Befund("R27", "Langvideo-Format", True, f"{serie}: {w}x{h}")
+
+
+def p_longform_ton(m):
+    """R28 — dieselbe Lautheit wie die Shorts (F-V9-G)."""
+    serie = m.serie if hasattr(m, "serie") else str(m)
+    v = _longform_datei(serie)
+    if not v:
+        return Befund("R28", "Langvideo-Ton", True, f"{serie}: kein Langvideo",
+                      hart=False)
+    r = subprocess.run(["ffmpeg", "-v", "info", "-i", v, "-af", "ebur128=peak=true",
+                        "-f", "null", "-"], capture_output=True, text=True)
+    mm = re.findall(r"^\s+I:\s+(-?[\d.]+)\s+LUFS", r.stderr, re.M)
+    if not mm:
+        return Befund("R28", "Langvideo-Ton", True, f"{serie}: nicht messbar", hart=False)
+    lufs = float(mm[-1])
+    lo, hi = LUFS_ZIEL
+    if lo <= lufs <= hi:
+        return Befund("R28", "Langvideo-Ton", True, f"{serie}: {lufs:.1f} LUFS")
+    return Befund("R28", "Langvideo-Ton", False,
+                  f"{serie}: {lufs:.1f} LUFS — ausserhalb {lo}…{hi}", stelle=v)
+
+
 # ═══════════════════════════════════════════════ Das Register
 
 # phase: "vorher"  = vor dem Render, aus Skript/Konfig/Metadaten
@@ -771,6 +859,16 @@ REGELN = [
                "Code aendert sich nie ohne Vault.",
          herkunft="Stehende Anweisung des Nutzers 07.09.2026: „damit ich sie nicht "
                   "erwaehnen muss\""),
+    dict(id="R26", phase="langform", titel="Langvideo-Laenge", pruefung=p_longform_laenge,
+         regel="Ein Langvideo ist mindestens 3 Minuten lang.",
+         herkunft="6 von 8 Serien hatten am 07.09. gar keines; die zwei vorhandenen "
+                  "sind 4:29 und 5:39 lang"),
+    dict(id="R27", phase="langform", titel="Langvideo-Format", pruefung=p_longform_format,
+         regel="Ein Langvideo ist Querformat — Hochformat wertet YouTube als Short.",
+         herkunft="Longform bedient den Suchtraffic, nicht den Shorts-Feed"),
+    dict(id="R28", phase="langform", titel="Langvideo-Ton", pruefung=p_longform_ton,
+         regel="Langvideo im selben Lautheitsband wie die Shorts (-20 bis -11 LUFS).",
+         herkunft="F-V9-G — der ganze Kanal lief bei -22 LUFS"),
     # ── Regeln ohne Pruefpunkt: ehrlich als ungedeckt gefuehrt ────────────
     dict(id="R21", phase="vorher", titel="Untertitel=Stimme", pruefung=None,
          regel="Untertitel spiegeln die gesprochene Stimme, kein abweichender Text.",
@@ -822,6 +920,8 @@ def markdown():
          "Blockiert per `kp_gate.py <serie>`."),
         ("nachher", "Am fertigen Video", "Gemessen an der Datei, nicht an der Absicht. "
          "Blockiert per `kp_gate.py <serie> --nachher`."),
+        ("langform", "Am Langvideo", "Gemessen an <serie>/render/long.mp4. "
+         "Blockiert per `kp_gate.py <serie> --langform`."),
         ("dauerhaft", "Systemzustand", "Unabhaengig von einer einzelnen Serie."),
     ]:
         z += [f"## {ueberschrift}", "", f"*{erklaerung}*", "",
@@ -873,7 +973,7 @@ def main():
     print(f"  REGEL-REGISTER  —  {g} von {n} Regeln erzwungen ({g/n:.0%})")
     print("=" * 74)
     for phase, titel in [("vorher", "VOR DEM RENDER"), ("nachher", "AM FERTIGEN VIDEO"),
-                         ("dauerhaft", "SYSTEMZUSTAND")]:
+                         ("langform", "AM LANGVIDEO"), ("dauerhaft", "SYSTEMZUSTAND")]:
         print(f"\n{titel}")
         for r in [x for x in REGELN if x["phase"] == phase]:
             zeichen = "erzwungen" if r["pruefung"] else "UNGEDECKT"

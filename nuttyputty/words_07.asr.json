@@ -1,0 +1,380 @@
+[
+  {
+    "word": "Die",
+    "start": 0.0,
+    "end": 0.22,
+    "conf": 1.0
+  },
+  {
+    "word": "erste",
+    "start": 0.22,
+    "end": 0.42,
+    "conf": 1.0
+  },
+  {
+    "word": "Retterin,",
+    "start": 0.42,
+    "end": 1.02,
+    "conf": 1.0
+  },
+  {
+    "word": "Susi,",
+    "start": 1.42,
+    "end": 1.84,
+    "conf": 1.0
+  },
+  {
+    "word": "war",
+    "start": 2.14,
+    "end": 2.32,
+    "conf": 1.0
+  },
+  {
+    "word": "1",
+    "start": 2.32,
+    "end": 2.82,
+    "conf": 1.0
+  },
+  {
+    "word": ",60",
+    "start": 2.82,
+    "end": 3.64,
+    "conf": 1.0
+  },
+  {
+    "word": "Meter,",
+    "start": 3.64,
+    "end": 4.34,
+    "conf": 1.0
+  },
+  {
+    "word": "klein",
+    "start": 4.8,
+    "end": 5.06,
+    "conf": 1.0
+  },
+  {
+    "word": "genug",
+    "start": 5.06,
+    "end": 5.36,
+    "conf": 1.0
+  },
+  {
+    "word": "für",
+    "start": 5.36,
+    "end": 5.6,
+    "conf": 1.0
+  },
+  {
+    "word": "den",
+    "start": 5.6,
+    "end": 5.74,
+    "conf": 1.0
+  },
+  {
+    "word": "Korkenzieher,",
+    "start": 5.74,
+    "end": 6.54,
+    "conf": 1.0
+  },
+  {
+    "word": "Seile",
+    "start": 6.84,
+    "end": 7.24,
+    "conf": 1.0
+  },
+  {
+    "word": "an",
+    "start": 7.24,
+    "end": 7.4,
+    "conf": 1.0
+  },
+  {
+    "word": "den",
+    "start": 7.4,
+    "end": 7.52,
+    "conf": 1.0
+  },
+  {
+    "word": "Knöcheln",
+    "start": 7.52,
+    "end": 7.96,
+    "conf": 1.0
+  },
+  {
+    "word": "zur",
+    "start": 7.96,
+    "end": 8.12,
+    "conf": 1.0
+  },
+  {
+    "word": "Sicherung.",
+    "start": 8.12,
+    "end": 8.64,
+    "conf": 1.0
+  },
+  {
+    "word": "Sie",
+    "start": 9.2,
+    "end": 9.46,
+    "conf": 1.0
+  },
+  {
+    "word": "legte",
+    "start": 9.46,
+    "end": 9.9,
+    "conf": 1.0
+  },
+  {
+    "word": "Gurte",
+    "start": 9.9,
+    "end": 10.3,
+    "conf": 1.0
+  },
+  {
+    "word": "um",
+    "start": 10.3,
+    "end": 10.48,
+    "conf": 1.0
+  },
+  {
+    "word": "Johns",
+    "start": 10.48,
+    "end": 10.78,
+    "conf": 1.0
+  },
+  {
+    "word": "Beine.",
+    "start": 10.78,
+    "end": 11.32,
+    "conf": 1.0
+  },
+  {
+    "word": "Aber",
+    "start": 11.96,
+    "end": 12.18,
+    "conf": 1.0
+  },
+  {
+    "word": "die",
+    "start": 12.18,
+    "end": 12.52,
+    "conf": 1.0
+  },
+  {
+    "word": "Reibung",
+    "start": 12.52,
+    "end": 12.98,
+    "conf": 1.0
+  },
+  {
+    "word": "im",
+    "start": 12.98,
+    "end": 13.14,
+    "conf": 1.0
+  },
+  {
+    "word": "Fels",
+    "start": 13.14,
+    "end": 13.46,
+    "conf": 1.0
+  },
+  {
+    "word": "fraß",
+    "start": 13.46,
+    "end": 13.98,
+    "conf": 1.0
+  },
+  {
+    "word": "jeden",
+    "start": 13.98,
+    "end": 14.22,
+    "conf": 1.0
+  },
+  {
+    "word": "Zug",
+    "start": 14.22,
+    "end": 14.56,
+    "conf": 1.0
+  },
+  {
+    "word": "auf",
+    "start": 14.56,
+    "end": 15.02,
+    "conf": 1.0
+  },
+  {
+    "word": "und",
+    "start": 15.02,
+    "end": 15.5,
+    "conf": 1.0
+  },
+  {
+    "word": "die",
+    "start": 15.5,
+    "end": 15.66,
+    "conf": 1.0
+  },
+  {
+    "word": "Zeit",
+    "start": 15.66,
+    "end": 15.98,
+    "conf": 1.0
+  },
+  {
+    "word": "arbeitete",
+    "start": 15.98,
+    "end": 16.78,
+    "conf": 1.0
+  },
+  {
+    "word": "gegen",
+    "start": 16.78,
+    "end": 17.04,
+    "conf": 1.0
+  },
+  {
+    "word": "ihn.",
+    "start": 17.04,
+    "end": 17.32,
+    "conf": 1.0
+  },
+  {
+    "word": "Der",
+    "start": 17.96,
+    "end": 18.16,
+    "conf": 1.0
+  },
+  {
+    "word": "Körper",
+    "start": 18.16,
+    "end": 18.5,
+    "conf": 1.0
+  },
+  {
+    "word": "ist",
+    "start": 18.5,
+    "end": 18.78,
+    "conf": 1.0
+  },
+  {
+    "word": "nicht",
+    "start": 18.78,
+    "end": 19.04,
+    "conf": 1.0
+  },
+  {
+    "word": "dafür",
+    "start": 19.04,
+    "end": 19.46,
+    "conf": 1.0
+  },
+  {
+    "word": "gebaut,",
+    "start": 19.46,
+    "end": 19.9,
+    "conf": 1.0
+  },
+  {
+    "word": "Kopf",
+    "start": 20.18,
+    "end": 20.36,
+    "conf": 1.0
+  },
+  {
+    "word": "überzuhängen.",
+    "start": 20.36,
+    "end": 21.12,
+    "conf": 1.0
+  },
+  {
+    "word": "Nach",
+    "start": 21.66,
+    "end": 21.86,
+    "conf": 1.0
+  },
+  {
+    "word": "Stunden",
+    "start": 21.86,
+    "end": 22.24,
+    "conf": 1.0
+  },
+  {
+    "word": "staut",
+    "start": 22.24,
+    "end": 22.64,
+    "conf": 1.0
+  },
+  {
+    "word": "sich",
+    "start": 22.64,
+    "end": 22.84,
+    "conf": 1.0
+  },
+  {
+    "word": "Blut,",
+    "start": 22.84,
+    "end": 23.28,
+    "conf": 1.0
+  },
+  {
+    "word": "Flüssigkeit",
+    "start": 23.72,
+    "end": 24.26,
+    "conf": 1.0
+  },
+  {
+    "word": "sammelt",
+    "start": 24.26,
+    "end": 24.68,
+    "conf": 1.0
+  },
+  {
+    "word": "sich",
+    "start": 24.68,
+    "end": 24.84,
+    "conf": 1.0
+  },
+  {
+    "word": "in",
+    "start": 24.84,
+    "end": 24.96,
+    "conf": 1.0
+  },
+  {
+    "word": "der",
+    "start": 24.96,
+    "end": 25.08,
+    "conf": 1.0
+  },
+  {
+    "word": "Lunge,",
+    "start": 25.08,
+    "end": 25.3,
+    "conf": 1.0
+  },
+  {
+    "word": "jede",
+    "start": 25.86,
+    "end": 26.08,
+    "conf": 1.0
+  },
+  {
+    "word": "Atemzug",
+    "start": 26.08,
+    "end": 26.8,
+    "conf": 1.0
+  },
+  {
+    "word": "wird",
+    "start": 26.8,
+    "end": 27.46,
+    "conf": 1.0
+  },
+  {
+    "word": "schwerer.",
+    "start": 27.46,
+    "end": 28.08,
+    "conf": 1.0
+  }
+]

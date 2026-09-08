@@ -10,6 +10,7 @@ dass es auffiel — genau so blieben fuenf Regeln monatelang wirkungslos.
     python3 tools/kp_gate.py <serie>              vor dem Render
     python3 tools/kp_gate.py <serie> --nachher    am fertigen Video
     python3 tools/kp_gate.py <serie> --short 03   ein einzelner Short
+    python3 tools/kp_gate.py <serie> --langform   das Langvideo der Serie
     python3 tools/kp_gate.py --system             nur der Systemzustand
     python3 tools/kp_gate.py <serie> --json       maschinenlesbar
 
@@ -63,6 +64,8 @@ def main():
     ap.add_argument("--short", help="nur dieser Short, z. B. 03")
     ap.add_argument("--nachher", action="store_true",
                     help="das FERTIGE Video pruefen statt der Absicht")
+    ap.add_argument("--langform", action="store_true",
+                    help="das Langvideo der Serie pruefen (render/long.mp4)")
     ap.add_argument("--system", action="store_true", help="nur den Systemzustand pruefen")
     ap.add_argument("--json", action="store_true")
     a = ap.parse_args()
@@ -93,8 +96,17 @@ def main():
         print(f"Keine Shorts in '{serie}' gefunden.", file=sys.stderr)
         return 2
 
-    phase = "nachher" if a.nachher else "vorher"
-    alle = {n: pruefe_short(serie, n, phase) for n in nums}
+    if a.langform:
+        # Die Langvideo-Regeln gelten je SERIE, nicht je Short.
+        class _S:
+            pass
+        traeger = _S()
+        traeger.serie = serie
+        alle = {"long": [r["pruefung"](traeger) for r in R.regeln_der_phase("langform")]}
+        phase = "langform"
+    else:
+        phase = "nachher" if a.nachher else "vorher"
+        alle = {n: pruefe_short(serie, n, phase) for n in nums}
     verstoesse = [(n, b) for n, bs in alle.items() for b in bs if not b.ok and b.hart]
     warnungen = [(n, b) for n, bs in alle.items() for b in bs if not b.ok and not b.hart]
 
@@ -107,12 +119,13 @@ def main():
 
     g, ges = R.deckung()
     print("=" * 74)
-    print(f"  KP-GATE {'NACHHER' if a.nachher else 'VORHER '} —  {serie}  "
-          f"({len(nums)} Shorts, {g}/{ges} Regeln erzwungen)")
+    wo = "LANGFORM" if a.langform else ("NACHHER" if a.nachher else "VORHER ")
+    print(f"  KP-GATE {wo} —  {serie}  "
+          f"({len(alle)} Einheit(en), {g}/{ges} Regeln erzwungen)")
     print("=" * 74)
-    for n in nums:
-        print(f"\nShort {n}")
-        for b in alle[n]:
+    for n, befunde in alle.items():
+        print(f"\n{'Langvideo' if n == 'long' else 'Short ' + n}")
+        for b in befunde:
             print(b)
 
     print("\n" + "=" * 74)

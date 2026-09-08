@@ -1,0 +1,326 @@
+[
+  {
+    "word": "Er",
+    "start": 0.0,
+    "end": 0.3,
+    "conf": 1.0
+  },
+  {
+    "word": "heißt",
+    "start": 0.3,
+    "end": 0.56,
+    "conf": 1.0
+  },
+  {
+    "word": "Mauro",
+    "start": 0.56,
+    "end": 0.98,
+    "conf": 1.0
+  },
+  {
+    "word": "Prosperi,",
+    "start": 0.98,
+    "end": 1.62,
+    "conf": 1.0
+  },
+  {
+    "word": "Polizist",
+    "start": 2.0,
+    "end": 2.6,
+    "conf": 1.0
+  },
+  {
+    "word": "in",
+    "start": 2.6,
+    "end": 2.76,
+    "conf": 1.0
+  },
+  {
+    "word": "Rom,",
+    "start": 2.76,
+    "end": 3.0,
+    "conf": 1.0
+  },
+  {
+    "word": "Pentatlet,",
+    "start": 3.36,
+    "end": 3.88,
+    "conf": 1.0
+  },
+  {
+    "word": "39",
+    "start": 4.18,
+    "end": 4.56,
+    "conf": 1.0
+  },
+  {
+    "word": "Jahre",
+    "start": 4.56,
+    "end": 5.4,
+    "conf": 1.0
+  },
+  {
+    "word": "alt.",
+    "start": 5.4,
+    "end": 5.78,
+    "conf": 1.0
+  },
+  {
+    "word": "Seine",
+    "start": 6.28,
+    "end": 6.5,
+    "conf": 1.0
+  },
+  {
+    "word": "Frau",
+    "start": 6.5,
+    "end": 6.7,
+    "conf": 1.0
+  },
+  {
+    "word": "Kincea",
+    "start": 6.7,
+    "end": 7.24,
+    "conf": 1.0
+  },
+  {
+    "word": "lernte",
+    "start": 7.24,
+    "end": 7.58,
+    "conf": 1.0
+  },
+  {
+    "word": "er",
+    "start": 7.58,
+    "end": 7.76,
+    "conf": 1.0
+  },
+  {
+    "word": "bei",
+    "start": 7.76,
+    "end": 7.9,
+    "conf": 1.0
+  },
+  {
+    "word": "einem",
+    "start": 7.9,
+    "end": 8.06,
+    "conf": 1.0
+  },
+  {
+    "word": "Sportwettkampf",
+    "start": 8.06,
+    "end": 8.8,
+    "conf": 1.0
+  },
+  {
+    "word": "kennen,",
+    "start": 8.8,
+    "end": 9.04,
+    "conf": 1.0
+  },
+  {
+    "word": "sie",
+    "start": 9.36,
+    "end": 9.44,
+    "conf": 1.0
+  },
+  {
+    "word": "sagte,",
+    "start": 9.44,
+    "end": 9.78,
+    "conf": 1.0
+  },
+  {
+    "word": "er",
+    "start": 10.1,
+    "end": 10.2,
+    "conf": 1.0
+  },
+  {
+    "word": "sah",
+    "start": 10.2,
+    "end": 10.4,
+    "conf": 1.0
+  },
+  {
+    "word": "aus",
+    "start": 10.4,
+    "end": 10.6,
+    "conf": 1.0
+  },
+  {
+    "word": "wie",
+    "start": 10.6,
+    "end": 10.74,
+    "conf": 1.0
+  },
+  {
+    "word": "ein",
+    "start": 10.74,
+    "end": 10.88,
+    "conf": 1.0
+  },
+  {
+    "word": "Ritter.",
+    "start": 10.88,
+    "end": 11.08,
+    "conf": 1.0
+  },
+  {
+    "word": "Sechs",
+    "start": 11.6,
+    "end": 11.86,
+    "conf": 1.0
+  },
+  {
+    "word": "Monate",
+    "start": 11.86,
+    "end": 12.1,
+    "conf": 1.0
+  },
+  {
+    "word": "später",
+    "start": 12.1,
+    "end": 12.58,
+    "conf": 1.0
+  },
+  {
+    "word": "waren",
+    "start": 12.58,
+    "end": 12.92,
+    "conf": 1.0
+  },
+  {
+    "word": "sie",
+    "start": 12.92,
+    "end": 13.14,
+    "conf": 1.0
+  },
+  {
+    "word": "verheiratet.",
+    "start": 13.14,
+    "end": 13.78,
+    "conf": 1.0
+  },
+  {
+    "word": "Drei",
+    "start": 14.12,
+    "end": 14.42,
+    "conf": 1.0
+  },
+  {
+    "word": "Kinder.",
+    "start": 14.42,
+    "end": 14.76,
+    "conf": 1.0
+  },
+  {
+    "word": "Sein",
+    "start": 15.26,
+    "end": 15.48,
+    "conf": 1.0
+  },
+  {
+    "word": "enger",
+    "start": 15.48,
+    "end": 15.76,
+    "conf": 1.0
+  },
+  {
+    "word": "Freund",
+    "start": 15.76,
+    "end": 16.06,
+    "conf": 1.0
+  },
+  {
+    "word": "Giovanni",
+    "start": 16.06,
+    "end": 16.52,
+    "conf": 1.0
+  },
+  {
+    "word": "let",
+    "start": 16.52,
+    "end": 16.7,
+    "conf": 1.0
+  },
+  {
+    "word": "ihn",
+    "start": 16.7,
+    "end": 16.88,
+    "conf": 1.0
+  },
+  {
+    "word": "ein,",
+    "start": 16.88,
+    "end": 17.16,
+    "conf": 1.0
+  },
+  {
+    "word": "Marathon",
+    "start": 17.56,
+    "end": 17.9,
+    "conf": 1.0
+  },
+  {
+    "word": "des",
+    "start": 17.9,
+    "end": 18.08,
+    "conf": 1.0
+  },
+  {
+    "word": "Sables",
+    "start": 18.08,
+    "end": 18.4,
+    "conf": 1.0
+  },
+  {
+    "word": "Morocco.",
+    "start": 18.4,
+    "end": 18.78,
+    "conf": 1.0
+  },
+  {
+    "word": "Er",
+    "start": 19.38,
+    "end": 19.56,
+    "conf": 1.0
+  },
+  {
+    "word": "sagt",
+    "start": 19.56,
+    "end": 19.8,
+    "conf": 1.0
+  },
+  {
+    "word": "ja.",
+    "start": 19.8,
+    "end": 20.06,
+    "conf": 1.0
+  },
+  {
+    "word": "Kincea",
+    "start": 20.56,
+    "end": 21.08,
+    "conf": 1.0
+  },
+  {
+    "word": "fragt",
+    "start": 21.08,
+    "end": 21.52,
+    "conf": 1.0
+  },
+  {
+    "word": "er",
+    "start": 21.52,
+    "end": 21.58,
+    "conf": 1.0
+  },
+  {
+    "word": "nicht.",
+    "start": 21.58,
+    "end": 21.74,
+    "conf": 1.0
+  }
+]

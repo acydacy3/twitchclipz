@@ -1,0 +1,338 @@
+[
+  {
+    "word": "Am",
+    "start": 0.0,
+    "end": 0.22,
+    "conf": 1.0
+  },
+  {
+    "word": "Nachmittag",
+    "start": 0.22,
+    "end": 0.82,
+    "conf": 1.0
+  },
+  {
+    "word": "hört",
+    "start": 0.82,
+    "end": 1.0,
+    "conf": 1.0
+  },
+  {
+    "word": "er",
+    "start": 1.0,
+    "end": 1.2,
+    "conf": 1.0
+  },
+  {
+    "word": "Rotor",
+    "start": 1.2,
+    "end": 1.48,
+    "conf": 1.0
+  },
+  {
+    "word": "Geräusche.",
+    "start": 1.48,
+    "end": 1.92,
+    "conf": 1.0
+  },
+  {
+    "word": "Er",
+    "start": 2.4,
+    "end": 2.52,
+    "conf": 1.0
+  },
+  {
+    "word": "zieht",
+    "start": 2.52,
+    "end": 2.76,
+    "conf": 1.0
+  },
+  {
+    "word": "die",
+    "start": 2.76,
+    "end": 2.86,
+    "conf": 1.0
+  },
+  {
+    "word": "Leuchttrakete",
+    "start": 2.86,
+    "end": 3.54,
+    "conf": 1.0
+  },
+  {
+    "word": "aus",
+    "start": 3.54,
+    "end": 3.7,
+    "conf": 1.0
+  },
+  {
+    "word": "dem",
+    "start": 3.7,
+    "end": 3.84,
+    "conf": 1.0
+  },
+  {
+    "word": "Rucksack,",
+    "start": 3.84,
+    "end": 4.34,
+    "conf": 1.0
+  },
+  {
+    "word": "so",
+    "start": 4.58,
+    "end": 4.7,
+    "conf": 1.0
+  },
+  {
+    "word": "klein",
+    "start": 4.7,
+    "end": 4.96,
+    "conf": 1.0
+  },
+  {
+    "word": "wie",
+    "start": 4.96,
+    "end": 5.12,
+    "conf": 1.0
+  },
+  {
+    "word": "ein",
+    "start": 5.12,
+    "end": 5.28,
+    "conf": 1.0
+  },
+  {
+    "word": "Kugelschreiber.",
+    "start": 5.28,
+    "end": 5.96,
+    "conf": 1.0
+  },
+  {
+    "word": "Er",
+    "start": 6.32,
+    "end": 6.48,
+    "conf": 1.0
+  },
+  {
+    "word": "zündet",
+    "start": 6.48,
+    "end": 6.84,
+    "conf": 1.0
+  },
+  {
+    "word": "sie.",
+    "start": 6.84,
+    "end": 7.0,
+    "conf": 1.0
+  },
+  {
+    "word": "Der",
+    "start": 7.62,
+    "end": 7.82,
+    "conf": 1.0
+  },
+  {
+    "word": "Hubschrauber",
+    "start": 7.82,
+    "end": 8.4,
+    "conf": 1.0
+  },
+  {
+    "word": "dreht",
+    "start": 8.4,
+    "end": 8.68,
+    "conf": 1.0
+  },
+  {
+    "word": "nichts",
+    "start": 8.68,
+    "end": 8.82,
+    "conf": 1.0
+  },
+  {
+    "word": "ab.",
+    "start": 8.82,
+    "end": 9.08,
+    "conf": 1.0
+  },
+  {
+    "word": "Er",
+    "start": 9.48,
+    "end": 9.58,
+    "conf": 1.0
+  },
+  {
+    "word": "schaut",
+    "start": 9.58,
+    "end": 9.82,
+    "conf": 1.0
+  },
+  {
+    "word": "ihn",
+    "start": 9.82,
+    "end": 10.06,
+    "conf": 1.0
+  },
+  {
+    "word": "nach,",
+    "start": 10.06,
+    "end": 10.38,
+    "conf": 1.0
+  },
+  {
+    "word": "bis",
+    "start": 10.66,
+    "end": 10.8,
+    "conf": 1.0
+  },
+  {
+    "word": "er",
+    "start": 10.8,
+    "end": 10.96,
+    "conf": 1.0
+  },
+  {
+    "word": "nur",
+    "start": 10.96,
+    "end": 11.1,
+    "conf": 1.0
+  },
+  {
+    "word": "noch",
+    "start": 11.1,
+    "end": 11.22,
+    "conf": 1.0
+  },
+  {
+    "word": "ein",
+    "start": 11.22,
+    "end": 11.38,
+    "conf": 1.0
+  },
+  {
+    "word": "Punkt",
+    "start": 11.38,
+    "end": 11.56,
+    "conf": 1.0
+  },
+  {
+    "word": "ist.",
+    "start": 11.56,
+    "end": 11.86,
+    "conf": 1.0
+  },
+  {
+    "word": "Dann",
+    "start": 12.3,
+    "end": 12.44,
+    "conf": 1.0
+  },
+  {
+    "word": "ruft",
+    "start": 12.44,
+    "end": 12.68,
+    "conf": 1.0
+  },
+  {
+    "word": "er",
+    "start": 12.68,
+    "end": 12.78,
+    "conf": 1.0
+  },
+  {
+    "word": "in",
+    "start": 12.78,
+    "end": 12.88,
+    "conf": 1.0
+  },
+  {
+    "word": "die",
+    "start": 12.88,
+    "end": 12.96,
+    "conf": 1.0
+  },
+  {
+    "word": "Stille.",
+    "start": 12.96,
+    "end": 13.26,
+    "conf": 1.0
+  },
+  {
+    "word": "Warum",
+    "start": 13.68,
+    "end": 13.86,
+    "conf": 1.0
+  },
+  {
+    "word": "verlässt",
+    "start": 13.86,
+    "end": 14.24,
+    "conf": 1.0
+  },
+  {
+    "word": "du",
+    "start": 14.24,
+    "end": 14.32,
+    "conf": 1.0
+  },
+  {
+    "word": "mich?",
+    "start": 14.32,
+    "end": 14.44,
+    "conf": 1.0
+  },
+  {
+    "word": "Die",
+    "start": 14.94,
+    "end": 15.06,
+    "conf": 1.0
+  },
+  {
+    "word": "Giovanni",
+    "start": 15.06,
+    "end": 15.36,
+    "conf": 1.0
+  },
+  {
+    "word": "wartet",
+    "start": 15.36,
+    "end": 15.74,
+    "conf": 1.0
+  },
+  {
+    "word": "am",
+    "start": 15.74,
+    "end": 15.9,
+    "conf": 1.0
+  },
+  {
+    "word": "Zielstrich.",
+    "start": 15.9,
+    "end": 16.54,
+    "conf": 1.0
+  },
+  {
+    "word": "Er",
+    "start": 16.88,
+    "end": 17.0,
+    "conf": 1.0
+  },
+  {
+    "word": "wartet",
+    "start": 17.0,
+    "end": 17.34,
+    "conf": 1.0
+  },
+  {
+    "word": "und",
+    "start": 17.34,
+    "end": 17.54,
+    "conf": 1.0
+  },
+  {
+    "word": "wartet.",
+    "start": 17.54,
+    "end": 17.92,
+    "conf": 1.0
+  }
+]

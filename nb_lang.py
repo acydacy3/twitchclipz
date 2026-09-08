@@ -26,12 +26,33 @@ import os
 import subprocess
 import sys
 
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "tools"))
+try:
+    from kp_regeln import ist_fremdmaterial
+except Exception:                       # Werkzeug fehlt -> lieber streng sein
+    def ist_fremdmaterial(name):
+        n = os.path.basename(str(name or "")).lower()
+        return n.startswith("ref_") or "presse" in n
+
 W, H = 1920, 1080
 FPS = 30
 
 
 def sh(cmd, **kw):
-    return subprocess.run(cmd, check=True, **kw)
+    """ffmpeg-Fehler sichtbar machen.
+
+    Vorher lief jeder Aufruf mit -loglevel error und check=True: bei einem
+    Abbruch bekam man den kompletten Befehl als Python-Traceback zu sehen,
+    aber nicht die eine ffmpeg-Zeile, die sagt WARUM. Debuggen war damit
+    Raten. Jetzt wird stderr eingefangen und im Fehlerfall ausgegeben.
+    """
+    r = subprocess.run(cmd, capture_output=True, text=True, **kw)
+    if r.returncode != 0:
+        print("\n--- ffmpeg meldet ---", file=sys.stderr)
+        for zeile in (r.stderr or "").strip().splitlines()[-12:]:
+            print("   " + zeile, file=sys.stderr)
+        raise subprocess.CalledProcessError(r.returncode, cmd, r.stdout, r.stderr)
+    return r
 
 
 def probe_dur(path):
@@ -129,6 +150,10 @@ def find_images(serie, nn):
                     imgs.append(os.path.join(base, f))
     # Dubletten raus: gleicher Dateistamm (hf_s01_truck.jpg == .webp) nur einmal,
     # .jpg bevorzugt vor .webp
+    # Fremdmaterial raus, BEVOR dedupliziert wird. nb_lang.py zog hier
+    # ref_01..ref_04 heran -- echte Pressefotos, die nur Vorlage fuer die
+    # Bildgenerierung waren. Regel R24 deckte nur die Shorts ab.
+    imgs = [p for p in imgs if not ist_fremdmaterial(p)]
     imgs.sort(key=lambda p: (os.path.splitext(p)[0], 0 if p.lower().endswith(".jpg") else 1))
     seen, out = set(), []
     for p in imgs:
