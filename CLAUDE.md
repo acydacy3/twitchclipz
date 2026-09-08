@@ -138,7 +138,9 @@ Details + Werkzeug-Regel: `YouTube-Knowledge/00-System/Agent-Architecture.md`.
 Nicht nur vorhanden, sondern **in jeder Produktion selbstständig nutzen** (Details: `YouTube-Knowledge/00-System/Werkzeuge-Installiert.md`):
 - **Animation-Upgrade Manim:** `manim -qh -r 1080,1920 tools/manim_scenes.py CrossSection` → Querschnitt/Zeitleiste/Karte als `{"clip":...}` in `short.py`. **Standard-Weg für Erklär-Animation.**
 - **SEO/Themen:** `tools/nb_suggest.py "<q>"` (YT-Keywords) · `tools/nb_trends.py "<kw>"` (Trends).
-- **Bilder:** `tools/nb_openverse.py "<q>" <dir>` (CC-Pool) · `tools/nb_upscale.py in out --cutout c.png` (schärfen/freistellen).
+- **Bilder:** `tools/nb_commons.py "<Kategorie>" <dir>` (Wikimedia-Commons-Kategorien, echte Fotos) · `tools/nb_openverse.py "<q>" <dir>` (CC-Pool) · Z-Image über den HF-Konnektor (gratis) · `tools/nb_upscale.py in out --cutout c.png` (schärfen/freistellen).
+  Beide Bildwerkzeuge schreiben `HERKUNFT.json` (Lizenz, Urheber, Quelle) neben die Bilder und brechen mit Fehler ab, wenn sie **nichts** liefern — bis 08.09.2026 meldete `nb_openverse.py` monatelang „0 Bilder" als Ergebnis (F-V9-R).
+- **Themenfremdes Bild gefunden?** Nicht löschen — in `<serie>/bilder/AUSSORTIERT.json` mit **Grund** eintragen. `nb_lang.py` und das Regel-Register werten das aus (`bild_ausgeschlossen()`), die Datei ist bewusst nicht gitignoriert. Kein Riegel kann messen, *wovon* ein Bild handelt — der Kontaktabzug vor dem Upload ist der einzige Prüfpunkt dafür (F-V9-T).
 - **Scratch-VO (Timing vor finaler VO):** `tools/nb_tts.py "text" out.mp3` (Piper de).
 - **Ziel messen:** `tools/nb_views90.py` (90-Tage-Views → YPP-Log).
 - **Ganze Pipeline:** Skill **`/video`**.

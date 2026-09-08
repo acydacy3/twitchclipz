@@ -82,6 +82,31 @@ Snapshots am 29.08. aufhörten — nicht nachholbar.
 - Zwei Messfehler in meinen eigenen Prüfwerkzeugen gefunden und behoben
   (F-V9-H): falsche Helligkeitsschwelle, unterdrückte ffmpeg-Ausgabe.
 
+**Bildherkunft (08.09.):** `nb_openverse.py` war seit jeher wirkungslos und
+meldete das nicht (F-V9-R) — repariert, meldet jetzt Fehler mit Exit-Code.
+Neu: `tools/nb_commons.py` für Wikimedia-Commons-Kategorien; die Regel nannte
+diese Quelle seit Wochen, das Werkzeug fehlte (F-V9-S). Beide schreiben
+`HERKUNFT.json` mit Lizenz und Urheber neben die Bilder.
+
+**Themenfremde Bilder (08.09.):** Acht Bilder im Nutty-Putty-Langvideo hatten
+keinen Bezug zum Stoff, bei grünem Gate (F-V9-T). Neuer Mechanismus:
+`<serie>/bilder/AUSSORTIERT.json` (Bild → Grund, nichts wird gelöscht),
+ausgewertet von `bild_ausgeschlossen()` in `kp_regeln.py`, aufgerufen von
+`nb_lang.py`. Die beiden Entscheidungsdateien sind ausdrücklich **nicht**
+gitignoriert — sonst wäre die Entscheidung im nächsten Container weg.
+
+**Langvideos (08.09.):** Der Kanal hatte **2 bei 86 Videos**. Neu gebaut und
+hochgeladen: **Ralston** `m5YYT5FNrgk` (5:51, terminiert 12.09.) und
+**Prosperi** `DgYMVuBmzCM` (3:42, terminiert 13.09.). Nutty Putty, Lengede und
+Okene sind gebaut oder bereit (Metadaten angelegt, Termine 14.–16.09.);
+Lengede und Okene **ohne Untertitel**, weil für sie kein belegtes Skript
+existiert. San José: nur die fertigen Shorts vorhanden → nur Montage aufs
+Querformat möglich, sichtbar schwächer.
+
+Werkzeuge dafür: `tools/kp_longform.py` (ein Uploader für alle Serien),
+`tools/kp_drive_holen.py` (Material aus Drive), `tools/kp_captions.py`
+(Captions serienweit aus dem Skript), `nb_lang.py --ohne-captions`.
+
 **⚠️ OFFEN — Nutzer-Entscheidung nötig:**
 - **Alle 10 Prosperi-Shorts sind LIVE mit falschen Captions** („Marathon des
   Apples", „Hartrigt Bauer", „Kincea"/„Kindsjahr" statt „Cinzia", „Jeb" statt

@@ -1,6 +1,15 @@
+# Bildmaterial bleibt draussen (gross, nicht reproduzierbar).
+# AUSSORTIERT.json und HERKUNFT.json bleiben DRIN: das sind
+# Entscheidungen und Belege, keine Medien. Waeren sie ignoriert,
+# haette der naechste Container die aussortierten Bilder wieder
+# im Video -- der Fehler, gegen den sie geschrieben wurden.
 # schwere Medien nicht ins Repo (wie lengede/okene) – nur Brief/Code/Demo behalten
 animation/frames/
-bilder/
+bilder/**
+!bilder/**/
+!bilder/AUSSORTIERT.json
+!bilder/HERKUNFT.json
+!bilder/**/HERKUNFT.json
 voiceover/
 keyframes/
 broll/*.jpg

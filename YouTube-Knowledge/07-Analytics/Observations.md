@@ -28,6 +28,52 @@ Observation (gemessen) → Muster erkannt → Hypothese formuliert
 
 ---
 
+## 2026-09-08 (Bildherkunft)
+
+- [2026-09-08] **Das autonome Bildwerkzeug hat noch nie ein Bild geliefert.**
+  `nb_openverse.py` gab bei jedem Aufruf „Openverse: 0 Bilder" zurück, mit
+  Exit-Code 0. Ursache war die Dateiendung `.raw` beim Zwischenspeichern.
+  `[bestätigt]` → F-V9-R. **Konsequenz für die Deutung älterer Sessions:**
+  Wo im Log steht, Bilder seien „per Openverse beschafft" worden, ist das
+  falsch — sie kamen anderswoher.
+
+- [2026-09-08] **Acht von dreißig Bildern im Nutty-Putty-Langvideo hatten
+  keinen Bezug zum Stoff** (Zeltlager mit lachenden Menschen, historische
+  Soldatenfotos, ein Straßen-Schrein), und alle vier Longform-Regeln waren
+  grün. `[bestätigt]` → F-V9-T.
+  **Methodische Lehre, zum zweiten Mal an einem Tag** (nach F-V9-O): Ein Gate
+  misst, was eine Datei *ist*, nie, was sie *zeigt*. Der Kontaktabzug vor dem
+  Upload ist deshalb kein Zusatzschritt, sondern der einzige Prüfpunkt für
+  Bildinhalt, den es gibt.
+
+---
+
+## 2026-09-08 (Langvideos)
+
+- [2026-09-08] **Der Kanal hatte 2 Langvideos bei 86 Videos.** Tham Luang
+  (5:39, 13 Aufrufe) und Koepcke (4:29, 64 Aufrufe) — beide aus dem August.
+  Sechs Serien hatten keines. Heute kamen Ralston (5:51, terminiert 12.09.) und
+  Prosperi (3:42, terminiert 13.09.) dazu. `[beobachtet]`
+  **Erwartung ausdrücklich offen:** Ob Langvideos auf diesem Kanal tragen, ist
+  unbelegt. Die zwei vorhandenen haben 13 und 64 Aufrufe — das ist wenig, aber
+  bei n=2 und ohne AVP-Daten keine Aussage. Frühestens ab Tag 4–5 nach dem
+  12.09. bewertbar, dann gegen die Shorts derselben Serie.
+
+- [2026-09-08] **Der Longform-Bauer lieferte Videos aus einem einzigen Bild.**
+  5:55 Laufzeit, 62 geplante Einstellungen, **0 Bildwechsel**. Die drei
+  Longform-Regeln (Länge, Format, Lautheit) gingen alle grün durch.
+  `[bestätigt]` → F-V9-O, neue Regel R29 zählt jetzt die Schnitte.
+  **Methodische Lehre:** Regeln, die Dateieigenschaften messen, sagen nichts
+  darüber, ob ein Video etwas zeigt. Für jede Eigenschaft, die ein Zuschauer
+  sofort sieht, braucht es eine eigene Messung — oder einen Blick.
+
+- [2026-09-08] **Alle zehn Prosperi-Short-Titel tragen „| Doku".** Die Regel
+  dagegen gilt seit dem 27.08. (Competitor-Analyse: kein Top-Performer nutzt
+  Genre-Labels) und wurde bei V7 nie angewandt. Aufgefallen erst, als das Gate
+  die Titel prüfte. `[beobachtet]` — Titel sind Nutzer-Domäne, nicht geändert.
+
+---
+
 ## 2026-09-08
 
 - [2026-09-08] **V7 Prosperi korrigiert sich nach unten: AVP 69,3 % → 61,7 %.**
