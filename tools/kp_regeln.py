@@ -837,28 +837,28 @@ REGELN = [
     dict(id="R02", phase="vorher", titel="Captions=Skript", pruefung=p_captions,
          regel="Caption-Woerter kommen aus dem Nutzer-Skript, ASR nur fuers Timing.",
          herkunft="F-V8-E / F-V9-A — „Marathon des Apples\" statt „Sables\", live in 10 Shorts"),
-    dict(id="R03", phase="vorher", titel="Hook bewegt", pruefung=p_hook_bewegt,
+    dict(id="R03", phase="vorher", bauart="shorts", titel="Hook bewegt", pruefung=p_hook_bewegt,
          regel="Sekunde 1 ist bewegt. Ken-Burns ueber ein Standbild zaehlt nicht.",
          herkunft="Short-Konzept-Blueprint 31.08. — virale Hits fahren ~90 % Bewegtbild"),
-    dict(id="R04", phase="vorher", titel="Bewegtshot", pruefung=p_bewegtshot,
+    dict(id="R04", phase="vorher", bauart="shorts", titel="Bewegtshot", pruefung=p_bewegtshot,
          regel="Mindestens ein echter Bewegtshot je Short (Manim/Remotion/I2V).",
          herkunft="Bewegtbild-Pflicht 31.08. — 5 von 10 Ralston-Shorts verletzten sie unbemerkt"),
-    dict(id="R05", phase="vorher", titel="Multi-Shot", pruefung=p_multishot,
+    dict(id="R05", phase="vorher", bauart="shorts", titel="Multi-Shot", pruefung=p_multishot,
          regel="Mindestens 2 Bilder je Short, nie ein einzelnes Standbild.",
          herkunft="F-V8-A — alle 10 Shorts bestanden aus EINEM Ken-Burns-Clip"),
-    dict(id="R06", phase="vorher", titel="Musikpegel", pruefung=p_musik,
+    dict(id="R06", phase="vorher", bauart="shorts", titel="Musikpegel", pruefung=p_musik,
          regel="Musikbett db >= -18 (Ziel -16), sonst unhoerbar.",
          herkunft="Nutzer-Befund 25.08. — V1-V5 hatten ein unhoerbares Bett"),
-    dict(id="R07", phase="vorher", titel="Bild-Dedup", pruefung=p_bild_dedup,
+    dict(id="R07", phase="vorher", bauart="shorts", titel="Bild-Dedup", pruefung=p_bild_dedup,
          regel="Kein Bild zweimal direkt hintereinander im selben Short.",
          herkunft="Learning-Bilder-Prompts — globaler Dedup-Set je Produktion"),
-    dict(id="R08", phase="vorher", titel="Titel", pruefung=p_titel,
+    dict(id="R08", phase="vorher", bauart="shorts", titel="Titel", pruefung=p_titel,
          regel="Titel hoechstens 60 Zeichen, Aussage bis Zeichen 35 fertig.",
          herkunft="Learning-Titel — CTR-Beleg"),
-    dict(id="R09", phase="vorher", titel="Titel sauber", pruefung=p_titel_sauber,
+    dict(id="R09", phase="vorher", bauart="shorts", titel="Titel sauber", pruefung=p_titel_sauber,
          regel="Kein Genre-Label („| Doku\") und kein Emoji im Titel.",
          herkunft="Competitor-Analyse 27.08. — kein Top-Performer nutzt Genre-Labels"),
-    dict(id="R11", phase="vorher", titel="Laengenzone", pruefung=p_laenge,
+    dict(id="R11", phase="vorher", bauart="shorts", titel="Laengenzone", pruefung=p_laenge,
          regel="Zielzone 19-49 s (intern belegt 19-39, A/B bis 49).",
          herkunft="Learning-Retention — n=44 intern belegt; Competitor-Zone nur Hypothese"),
     dict(id="R12", phase="vorher", titel="Longform", pruefung=p_longform,
@@ -930,8 +930,26 @@ REGELN = [
 NACH_ID = {r["id"]: r for r in REGELN}
 
 
-def regeln_der_phase(phase):
-    return [r for r in REGELN if r["phase"] == phase and r["pruefung"]]
+def regeln_der_phase(phase, bauart=None):
+    """Regeln einer Phase, optional auf eine Bauart eingegrenzt.
+
+    Warum es die Bauart gibt: Am 08.09.2026 blockierte das Gate den Bau eines
+    LANGVIDEOS, weil die SHORTS derselben Serie die Bewegtbild- und
+    Titel-Regeln verletzen. Diese Shorts waren laengst veroeffentlicht und
+    wurden gar nicht angefasst — der Longform-Bauer nutzt nur Voiceover und
+    Bilder. Das war ein Fehlalarm, und Fehlalarme sind das, woran Riegel
+    sterben: man schaltet sie ab, und danach schuetzen sie nichts mehr.
+
+    Eine Regel ohne `bauart` gilt weiterhin fuer alles. Nur wer ausdruecklich
+    "shorts" traegt, wird beim Longform-Bau uebersprungen. Das ist eine
+    Praezisierung des Geltungsbereichs, keine Aufweichung: keine Regel
+    verliert ihre Wirkung dort, wo sie hingehoert.
+    """
+    treffer = [r for r in REGELN if r["phase"] == phase and r["pruefung"]]
+    if bauart:
+        treffer = [r for r in treffer
+                   if r.get("bauart") in (None, bauart)]
+    return treffer
 
 
 def deckung():
@@ -969,7 +987,8 @@ def markdown():
               "| ID | Regel | Prüfpunkt | Entstanden aus |", "|---|---|---|---|"]
         for r in [x for x in REGELN if x["phase"] == phase]:
             p = f"`{r['pruefung'].__name__}()`" if r["pruefung"] else "**— ungedeckt**"
-            z.append(f"| {r['id']} | {r['regel']} | {p} | {r['herkunft']} |")
+            bereich = {"shorts": " *(nur Shorts)*"}.get(r.get("bauart"), "")
+            z.append(f"| {r['id']} | {r['regel']}{bereich} | {p} | {r['herkunft']} |")
         z.append("")
     offen = [r for r in REGELN if not r["pruefung"]]
     if offen:

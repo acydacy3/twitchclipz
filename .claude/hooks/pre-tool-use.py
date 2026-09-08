@@ -35,6 +35,10 @@ REPO = os.environ.get("CLAUDE_PROJECT_DIR") or \
 _AUSFUEHREN = r"(?:python3?|py|uv\s+run)\s+(?:-\w+\s+)*"
 RENDER = re.compile(
     _AUSFUEHREN + r"\S*\b(?:nb_build|short|serie|nb_lang|lang)\.py\b")
+# Ein Longform-Bau wird gegen die Longform-Regeln geprueft, nicht gegen die
+# Shorts-Regeln: er nutzt Voiceover und Bilder, nicht die Shot-Konfiguration
+# der (laengst veroeffentlichten) Shorts.
+LONGFORM = re.compile(_AUSFUEHREN + r"\S*\b(?:nb_lang|lang)\.py\b")
 UPLOAD = re.compile(
     _AUSFUEHREN + r"\S*\b(?:nb_upload|upload_all|youtube_upload)\.py\b")
 
@@ -142,9 +146,12 @@ def main():
     if not os.path.exists(gate):
         sys.exit(0)          # Gate nicht installiert -> alte Welt, nicht blocken
 
+    befehl = [sys.executable, gate, serie]
+    if LONGFORM.search(cmd):
+        befehl += ["--fuer", "longform"]
     try:
-        p = subprocess.run([sys.executable, gate, serie],
-                           cwd=REPO, capture_output=True, text=True, timeout=120)
+        p = subprocess.run(befehl, cwd=REPO, capture_output=True, text=True,
+                           timeout=120)
     except subprocess.TimeoutExpired:
         blockieren("KP-GATE: Pruefung ueberschritt 120 s und wurde abgebrochen. "
                    "Kein Render/Upload ohne bestandene Pruefung. "

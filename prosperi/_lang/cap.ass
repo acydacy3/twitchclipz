@@ -13,599 +13,588 @@ Style: Cap,Roboto Black,76,&H00FFFFFF,&H00000000,&HA0000000,-1,0,1,7,5,2,140,140
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 
-Dialogue: 0,0:00:00.00,0:00:00.40,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Ein{\c&H00FFFFFF\fscx100\fscy100} Hubschrauber ist\Nvorbeigekommen, er hat ihn nicht\Ngesehen,
-Dialogue: 0,0:00:00.42,0:00:00.92,Cap,,0,0,0,,Ein {\c&H0047D4FF\fscx118\fscy118}Hubschrauber{\c&H00FFFFFF\fscx100\fscy100} ist\Nvorbeigekommen, er hat ihn nicht\Ngesehen,
-Dialogue: 0,0:00:00.94,0:00:01.08,Cap,,0,0,0,,Ein Hubschrauber {\c&H0047D4FF\fscx118\fscy118}ist{\c&H00FFFFFF\fscx100\fscy100}\Nvorbeigekommen, er hat ihn nicht\Ngesehen,
-Dialogue: 0,0:00:01.10,0:00:02.14,Cap,,0,0,0,,Ein Hubschrauber ist\N{\c&H0047D4FF\fscx118\fscy118}vorbeigekommen,{\c&H00FFFFFF\fscx100\fscy100} er hat ihn nicht\Ngesehen,
-Dialogue: 0,0:00:02.16,0:00:02.24,Cap,,0,0,0,,Ein Hubschrauber ist\Nvorbeigekommen, {\c&H0047D4FF\fscx118\fscy118}er{\c&H00FFFFFF\fscx100\fscy100} hat ihn nicht\Ngesehen,
-Dialogue: 0,0:00:02.26,0:00:02.40,Cap,,0,0,0,,Ein Hubschrauber ist\Nvorbeigekommen, er {\c&H0047D4FF\fscx118\fscy118}hat{\c&H00FFFFFF\fscx100\fscy100} ihn nicht\Ngesehen,
-Dialogue: 0,0:00:02.42,0:00:02.50,Cap,,0,0,0,,Ein Hubschrauber ist\Nvorbeigekommen, er hat {\c&H0047D4FF\fscx118\fscy118}ihn{\c&H00FFFFFF\fscx100\fscy100} nicht\Ngesehen,
-Dialogue: 0,0:00:02.52,0:00:02.66,Cap,,0,0,0,,Ein Hubschrauber ist\Nvorbeigekommen, er hat ihn {\c&H0047D4FF\fscx118\fscy118}nicht{\c&H00FFFFFF\fscx100\fscy100}\Ngesehen,
-Dialogue: 0,0:00:02.68,0:00:03.26,Cap,,0,0,0,,Ein Hubschrauber ist\Nvorbeigekommen, er hat ihn nicht\N{\c&H0047D4FF\fscx118\fscy118}gesehen,{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:00:03.64,0:00:03.70,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}er{\c&H00FFFFFF\fscx100\fscy100} verbrennt seine Kleider,\Nseinen Schlafsack, seine\NRucksack,
-Dialogue: 0,0:00:03.72,0:00:04.12,Cap,,0,0,0,,er {\c&H0047D4FF\fscx118\fscy118}verbrennt{\c&H00FFFFFF\fscx100\fscy100} seine Kleider,\Nseinen Schlafsack, seine\NRucksack,
-Dialogue: 0,0:00:04.14,0:00:04.22,Cap,,0,0,0,,er verbrennt {\c&H0047D4FF\fscx118\fscy118}seine{\c&H00FFFFFF\fscx100\fscy100} Kleider,\Nseinen Schlafsack, seine\NRucksack,
-Dialogue: 0,0:00:04.24,0:00:05.00,Cap,,0,0,0,,er verbrennt seine {\c&H0047D4FF\fscx118\fscy118}Kleider,{\c&H00FFFFFF\fscx100\fscy100}\Nseinen Schlafsack, seine\NRucksack,
-Dialogue: 0,0:00:05.02,0:00:05.16,Cap,,0,0,0,,er verbrennt seine Kleider,\N{\c&H0047D4FF\fscx118\fscy118}seinen{\c&H00FFFFFF\fscx100\fscy100} Schlafsack, seine\NRucksack,
-Dialogue: 0,0:00:05.18,0:00:06.08,Cap,,0,0,0,,er verbrennt seine Kleider,\Nseinen {\c&H0047D4FF\fscx118\fscy118}Schlafsack,{\c&H00FFFFFF\fscx100\fscy100} seine\NRucksack,
-Dialogue: 0,0:00:06.10,0:00:06.26,Cap,,0,0,0,,er verbrennt seine Kleider,\Nseinen Schlafsack, {\c&H0047D4FF\fscx118\fscy118}seine{\c&H00FFFFFF\fscx100\fscy100}\NRucksack,
-Dialogue: 0,0:00:06.28,0:00:06.98,Cap,,0,0,0,,er verbrennt seine Kleider,\Nseinen Schlafsack, seine\N{\c&H0047D4FF\fscx118\fscy118}Rucksack,{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:00:07.08,0:00:07.62,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}alles,{\c&H00FFFFFF\fscx100\fscy100} um einen Zeichen zu\Nsetzen. Kein Wasser.
-Dialogue: 0,0:00:07.64,0:00:07.70,Cap,,0,0,0,,alles, {\c&H0047D4FF\fscx118\fscy118}um{\c&H00FFFFFF\fscx100\fscy100} einen Zeichen zu\Nsetzen. Kein Wasser.
-Dialogue: 0,0:00:07.72,0:00:07.86,Cap,,0,0,0,,alles, um {\c&H0047D4FF\fscx118\fscy118}einen{\c&H00FFFFFF\fscx100\fscy100} Zeichen zu\Nsetzen. Kein Wasser.
-Dialogue: 0,0:00:07.88,0:00:08.24,Cap,,0,0,0,,alles, um einen {\c&H0047D4FF\fscx118\fscy118}Zeichen{\c&H00FFFFFF\fscx100\fscy100} zu\Nsetzen. Kein Wasser.
-Dialogue: 0,0:00:08.26,0:00:08.42,Cap,,0,0,0,,alles, um einen Zeichen {\c&H0047D4FF\fscx118\fscy118}zu{\c&H00FFFFFF\fscx100\fscy100}\Nsetzen. Kein Wasser.
-Dialogue: 0,0:00:08.44,0:00:09.18,Cap,,0,0,0,,alles, um einen Zeichen zu\N{\c&H0047D4FF\fscx118\fscy118}setzen.{\c&H00FFFFFF\fscx100\fscy100} Kein Wasser.
-Dialogue: 0,0:00:09.20,0:00:09.44,Cap,,0,0,0,,alles, um einen Zeichen zu\Nsetzen. {\c&H0047D4FF\fscx118\fscy118}Kein{\c&H00FFFFFF\fscx100\fscy100} Wasser.
-Dialogue: 0,0:00:09.46,0:00:09.84,Cap,,0,0,0,,alles, um einen Zeichen zu\Nsetzen. Kein {\c&H0047D4FF\fscx118\fscy118}Wasser.{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:00:10.30,0:00:10.58,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Kein{\c&H00FFFFFF\fscx100\fscy100} Essen. Seit Tagen. Er\Nschreibt einen Abschiedsbrief\Nan seine
-Dialogue: 0,0:00:10.60,0:00:11.34,Cap,,0,0,0,,Kein {\c&H0047D4FF\fscx118\fscy118}Essen.{\c&H00FFFFFF\fscx100\fscy100} Seit Tagen. Er\Nschreibt einen Abschiedsbrief\Nan seine
-Dialogue: 0,0:00:11.36,0:00:11.48,Cap,,0,0,0,,Kein Essen. {\c&H0047D4FF\fscx118\fscy118}Seit{\c&H00FFFFFF\fscx100\fscy100} Tagen. Er\Nschreibt einen Abschiedsbrief\Nan seine
-Dialogue: 0,0:00:11.50,0:00:12.34,Cap,,0,0,0,,Kein Essen. Seit {\c&H0047D4FF\fscx118\fscy118}Tagen.{\c&H00FFFFFF\fscx100\fscy100} Er\Nschreibt einen Abschiedsbrief\Nan seine
-Dialogue: 0,0:00:12.36,0:00:12.42,Cap,,0,0,0,,Kein Essen. Seit Tagen. {\c&H0047D4FF\fscx118\fscy118}Er{\c&H00FFFFFF\fscx100\fscy100}\Nschreibt einen Abschiedsbrief\Nan seine
-Dialogue: 0,0:00:12.44,0:00:12.78,Cap,,0,0,0,,Kein Essen. Seit Tagen. Er\N{\c&H0047D4FF\fscx118\fscy118}schreibt{\c&H00FFFFFF\fscx100\fscy100} einen Abschiedsbrief\Nan seine
-Dialogue: 0,0:00:12.80,0:00:12.98,Cap,,0,0,0,,Kein Essen. Seit Tagen. Er\Nschreibt {\c&H0047D4FF\fscx118\fscy118}einen{\c&H00FFFFFF\fscx100\fscy100} Abschiedsbrief\Nan seine
-Dialogue: 0,0:00:13.00,0:00:13.66,Cap,,0,0,0,,Kein Essen. Seit Tagen. Er\Nschreibt einen {\c&H0047D4FF\fscx118\fscy118}Abschiedsbrief{\c&H00FFFFFF\fscx100\fscy100}\Nan seine
-Dialogue: 0,0:00:13.68,0:00:13.76,Cap,,0,0,0,,Kein Essen. Seit Tagen. Er\Nschreibt einen Abschiedsbrief\N{\c&H0047D4FF\fscx118\fscy118}an{\c&H00FFFFFF\fscx100\fscy100} seine
-Dialogue: 0,0:00:13.78,0:00:13.90,Cap,,0,0,0,,Kein Essen. Seit Tagen. Er\Nschreibt einen Abschiedsbrief\Nan {\c&H0047D4FF\fscx118\fscy118}seine{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:00:13.92,0:00:14.66,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Frau,{\c&H00FFFFFF\fscx100\fscy100} seine Augen fallen zu.
-Dialogue: 0,0:00:14.68,0:00:14.82,Cap,,0,0,0,,Frau, {\c&H0047D4FF\fscx118\fscy118}seine{\c&H00FFFFFF\fscx100\fscy100} Augen fallen zu.
-Dialogue: 0,0:00:14.84,0:00:15.10,Cap,,0,0,0,,Frau, seine {\c&H0047D4FF\fscx118\fscy118}Augen{\c&H00FFFFFF\fscx100\fscy100} fallen zu.
-Dialogue: 0,0:00:15.12,0:00:15.36,Cap,,0,0,0,,Frau, seine Augen {\c&H0047D4FF\fscx118\fscy118}fallen{\c&H00FFFFFF\fscx100\fscy100} zu.
-Dialogue: 0,0:00:15.38,0:00:15.84,Cap,,0,0,0,,Frau, seine Augen fallen {\c&H0047D4FF\fscx118\fscy118}zu.{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:00:16.26,0:00:16.38,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Am{\c&H00FFFFFF\fscx100\fscy100} nächsten Morgen wacht er\Nauf, sein Körper hat sich
-Dialogue: 0,0:00:16.40,0:00:16.62,Cap,,0,0,0,,Am {\c&H0047D4FF\fscx118\fscy118}nächsten{\c&H00FFFFFF\fscx100\fscy100} Morgen wacht er\Nauf, sein Körper hat sich
-Dialogue: 0,0:00:16.64,0:00:17.04,Cap,,0,0,0,,Am nächsten {\c&H0047D4FF\fscx118\fscy118}Morgen{\c&H00FFFFFF\fscx100\fscy100} wacht er\Nauf, sein Körper hat sich
-Dialogue: 0,0:00:17.06,0:00:17.34,Cap,,0,0,0,,Am nächsten Morgen {\c&H0047D4FF\fscx118\fscy118}wacht{\c&H00FFFFFF\fscx100\fscy100} er\Nauf, sein Körper hat sich
-Dialogue: 0,0:00:17.36,0:00:17.50,Cap,,0,0,0,,Am nächsten Morgen wacht {\c&H0047D4FF\fscx118\fscy118}er{\c&H00FFFFFF\fscx100\fscy100}\Nauf, sein Körper hat sich
-Dialogue: 0,0:00:17.52,0:00:18.18,Cap,,0,0,0,,Am nächsten Morgen wacht er\N{\c&H0047D4FF\fscx118\fscy118}auf,{\c&H00FFFFFF\fscx100\fscy100} sein Körper hat sich
-Dialogue: 0,0:00:18.20,0:00:18.32,Cap,,0,0,0,,Am nächsten Morgen wacht er\Nauf, {\c&H0047D4FF\fscx118\fscy118}sein{\c&H00FFFFFF\fscx100\fscy100} Körper hat sich
-Dialogue: 0,0:00:18.34,0:00:18.60,Cap,,0,0,0,,Am nächsten Morgen wacht er\Nauf, sein {\c&H0047D4FF\fscx118\fscy118}Körper{\c&H00FFFFFF\fscx100\fscy100} hat sich
-Dialogue: 0,0:00:18.62,0:00:18.86,Cap,,0,0,0,,Am nächsten Morgen wacht er\Nauf, sein Körper {\c&H0047D4FF\fscx118\fscy118}hat{\c&H00FFFFFF\fscx100\fscy100} sich
-Dialogue: 0,0:00:18.88,0:00:19.04,Cap,,0,0,0,,Am nächsten Morgen wacht er\Nauf, sein Körper hat {\c&H0047D4FF\fscx118\fscy118}sich{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:00:19.06,0:00:19.58,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}geweigert{\c&H00FFFFFF\fscx100\fscy100} zu sterben.
-Dialogue: 0,0:00:19.60,0:00:19.82,Cap,,0,0,0,,geweigert {\c&H0047D4FF\fscx118\fscy118}zu{\c&H00FFFFFF\fscx100\fscy100} sterben.
-Dialogue: 0,0:00:19.84,0:00:20.38,Cap,,0,0,0,,geweigert zu {\c&H0047D4FF\fscx118\fscy118}sterben.{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:00:20.92,0:00:21.20,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Er{\c&H00FFFFFF\fscx100\fscy100} heißt Mauro Prosperi,\NPolizist in Rom, Pentatlet, 39\NJahre
-Dialogue: 0,0:00:21.22,0:00:21.46,Cap,,0,0,0,,Er {\c&H0047D4FF\fscx118\fscy118}heißt{\c&H00FFFFFF\fscx100\fscy100} Mauro Prosperi,\NPolizist in Rom, Pentatlet, 39\NJahre
-Dialogue: 0,0:00:21.48,0:00:21.88,Cap,,0,0,0,,Er heißt {\c&H0047D4FF\fscx118\fscy118}Mauro{\c&H00FFFFFF\fscx100\fscy100} Prosperi,\NPolizist in Rom, Pentatlet, 39\NJahre
-Dialogue: 0,0:00:21.90,0:00:22.90,Cap,,0,0,0,,Er heißt Mauro {\c&H0047D4FF\fscx118\fscy118}Prosperi,{\c&H00FFFFFF\fscx100\fscy100}\NPolizist in Rom, Pentatlet, 39\NJahre
-Dialogue: 0,0:00:22.92,0:00:23.50,Cap,,0,0,0,,Er heißt Mauro Prosperi,\N{\c&H0047D4FF\fscx118\fscy118}Polizist{\c&H00FFFFFF\fscx100\fscy100} in Rom, Pentatlet, 39\NJahre
-Dialogue: 0,0:00:23.52,0:00:23.66,Cap,,0,0,0,,Er heißt Mauro Prosperi,\NPolizist {\c&H0047D4FF\fscx118\fscy118}in{\c&H00FFFFFF\fscx100\fscy100} Rom, Pentatlet, 39\NJahre
-Dialogue: 0,0:00:23.68,0:00:24.26,Cap,,0,0,0,,Er heißt Mauro Prosperi,\NPolizist in {\c&H0047D4FF\fscx118\fscy118}Rom,{\c&H00FFFFFF\fscx100\fscy100} Pentatlet, 39\NJahre
-Dialogue: 0,0:00:24.28,0:00:25.08,Cap,,0,0,0,,Er heißt Mauro Prosperi,\NPolizist in Rom, {\c&H0047D4FF\fscx118\fscy118}Pentatlet,{\c&H00FFFFFF\fscx100\fscy100} 39\NJahre
-Dialogue: 0,0:00:25.10,0:00:25.46,Cap,,0,0,0,,Er heißt Mauro Prosperi,\NPolizist in Rom, Pentatlet, {\c&H0047D4FF\fscx118\fscy118}39{\c&H00FFFFFF\fscx100\fscy100}\NJahre
-Dialogue: 0,0:00:25.48,0:00:26.30,Cap,,0,0,0,,Er heißt Mauro Prosperi,\NPolizist in Rom, Pentatlet, 39\N{\c&H0047D4FF\fscx118\fscy118}Jahre{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:00:26.32,0:00:27.18,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}alt.{\c&H00FFFFFF\fscx100\fscy100} Seine Frau Kincea lernte\Ner bei einem Sportwettkampf\Nkennen,
-Dialogue: 0,0:00:27.20,0:00:27.40,Cap,,0,0,0,,alt. {\c&H0047D4FF\fscx118\fscy118}Seine{\c&H00FFFFFF\fscx100\fscy100} Frau Kincea lernte\Ner bei einem Sportwettkampf\Nkennen,
-Dialogue: 0,0:00:27.42,0:00:27.60,Cap,,0,0,0,,alt. Seine {\c&H0047D4FF\fscx118\fscy118}Frau{\c&H00FFFFFF\fscx100\fscy100} Kincea lernte\Ner bei einem Sportwettkampf\Nkennen,
-Dialogue: 0,0:00:27.62,0:00:28.14,Cap,,0,0,0,,alt. Seine Frau {\c&H0047D4FF\fscx118\fscy118}Kincea{\c&H00FFFFFF\fscx100\fscy100} lernte\Ner bei einem Sportwettkampf\Nkennen,
-Dialogue: 0,0:00:28.16,0:00:28.48,Cap,,0,0,0,,alt. Seine Frau Kincea {\c&H0047D4FF\fscx118\fscy118}lernte{\c&H00FFFFFF\fscx100\fscy100}\Ner bei einem Sportwettkampf\Nkennen,
-Dialogue: 0,0:00:28.50,0:00:28.66,Cap,,0,0,0,,alt. Seine Frau Kincea lernte\N{\c&H0047D4FF\fscx118\fscy118}er{\c&H00FFFFFF\fscx100\fscy100} bei einem Sportwettkampf\Nkennen,
-Dialogue: 0,0:00:28.68,0:00:28.80,Cap,,0,0,0,,alt. Seine Frau Kincea lernte\Ner {\c&H0047D4FF\fscx118\fscy118}bei{\c&H00FFFFFF\fscx100\fscy100} einem Sportwettkampf\Nkennen,
-Dialogue: 0,0:00:28.82,0:00:28.96,Cap,,0,0,0,,alt. Seine Frau Kincea lernte\Ner bei {\c&H0047D4FF\fscx118\fscy118}einem{\c&H00FFFFFF\fscx100\fscy100} Sportwettkampf\Nkennen,
-Dialogue: 0,0:00:28.98,0:00:29.70,Cap,,0,0,0,,alt. Seine Frau Kincea lernte\Ner bei einem {\c&H0047D4FF\fscx118\fscy118}Sportwettkampf{\c&H00FFFFFF\fscx100\fscy100}\Nkennen,
-Dialogue: 0,0:00:29.72,0:00:30.16,Cap,,0,0,0,,alt. Seine Frau Kincea lernte\Ner bei einem Sportwettkampf\N{\c&H0047D4FF\fscx118\fscy118}kennen,{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:00:30.28,0:00:30.34,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}sie{\c&H00FFFFFF\fscx100\fscy100} sagte, er sah aus\Nwie ein Ritter. Sechs Monate
-Dialogue: 0,0:00:30.36,0:00:31.00,Cap,,0,0,0,,sie {\c&H0047D4FF\fscx118\fscy118}sagte,{\c&H00FFFFFF\fscx100\fscy100} er sah aus\Nwie ein Ritter. Sechs Monate
-Dialogue: 0,0:00:31.02,0:00:31.10,Cap,,0,0,0,,sie sagte, {\c&H0047D4FF\fscx118\fscy118}er{\c&H00FFFFFF\fscx100\fscy100} sah aus\Nwie ein Ritter. Sechs Monate
-Dialogue: 0,0:00:31.12,0:00:31.30,Cap,,0,0,0,,sie sagte, er {\c&H0047D4FF\fscx118\fscy118}sah{\c&H00FFFFFF\fscx100\fscy100} aus\Nwie ein Ritter. Sechs Monate
-Dialogue: 0,0:00:31.32,0:00:31.50,Cap,,0,0,0,,sie sagte, er sah {\c&H0047D4FF\fscx118\fscy118}aus{\c&H00FFFFFF\fscx100\fscy100}\Nwie ein Ritter. Sechs Monate
-Dialogue: 0,0:00:31.52,0:00:31.64,Cap,,0,0,0,,sie sagte, er sah aus\N{\c&H0047D4FF\fscx118\fscy118}wie{\c&H00FFFFFF\fscx100\fscy100} ein Ritter. Sechs Monate
-Dialogue: 0,0:00:31.66,0:00:31.78,Cap,,0,0,0,,sie sagte, er sah aus\Nwie {\c&H0047D4FF\fscx118\fscy118}ein{\c&H00FFFFFF\fscx100\fscy100} Ritter. Sechs Monate
-Dialogue: 0,0:00:31.80,0:00:32.50,Cap,,0,0,0,,sie sagte, er sah aus\Nwie ein {\c&H0047D4FF\fscx118\fscy118}Ritter.{\c&H00FFFFFF\fscx100\fscy100} Sechs Monate
-Dialogue: 0,0:00:32.52,0:00:32.76,Cap,,0,0,0,,sie sagte, er sah aus\Nwie ein Ritter. {\c&H0047D4FF\fscx118\fscy118}Sechs{\c&H00FFFFFF\fscx100\fscy100} Monate
-Dialogue: 0,0:00:32.78,0:00:33.00,Cap,,0,0,0,,sie sagte, er sah aus\Nwie ein Ritter. Sechs {\c&H0047D4FF\fscx118\fscy118}Monate{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:00:33.02,0:00:33.48,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}später{\c&H00FFFFFF\fscx100\fscy100} waren sie verheiratet.\NDrei Kinder. Sein enger Freund
-Dialogue: 0,0:00:33.50,0:00:33.82,Cap,,0,0,0,,später {\c&H0047D4FF\fscx118\fscy118}waren{\c&H00FFFFFF\fscx100\fscy100} sie verheiratet.\NDrei Kinder. Sein enger Freund
-Dialogue: 0,0:00:33.84,0:00:34.04,Cap,,0,0,0,,später waren {\c&H0047D4FF\fscx118\fscy118}sie{\c&H00FFFFFF\fscx100\fscy100} verheiratet.\NDrei Kinder. Sein enger Freund
-Dialogue: 0,0:00:34.06,0:00:35.02,Cap,,0,0,0,,später waren sie {\c&H0047D4FF\fscx118\fscy118}verheiratet.{\c&H00FFFFFF\fscx100\fscy100}\NDrei Kinder. Sein enger Freund
-Dialogue: 0,0:00:35.04,0:00:35.32,Cap,,0,0,0,,später waren sie verheiratet.\N{\c&H0047D4FF\fscx118\fscy118}Drei{\c&H00FFFFFF\fscx100\fscy100} Kinder. Sein enger Freund
-Dialogue: 0,0:00:35.34,0:00:36.16,Cap,,0,0,0,,später waren sie verheiratet.\NDrei {\c&H0047D4FF\fscx118\fscy118}Kinder.{\c&H00FFFFFF\fscx100\fscy100} Sein enger Freund
-Dialogue: 0,0:00:36.18,0:00:36.38,Cap,,0,0,0,,später waren sie verheiratet.\NDrei Kinder. {\c&H0047D4FF\fscx118\fscy118}Sein{\c&H00FFFFFF\fscx100\fscy100} enger Freund
-Dialogue: 0,0:00:36.40,0:00:36.66,Cap,,0,0,0,,später waren sie verheiratet.\NDrei Kinder. Sein {\c&H0047D4FF\fscx118\fscy118}enger{\c&H00FFFFFF\fscx100\fscy100} Freund
-Dialogue: 0,0:00:36.68,0:00:36.96,Cap,,0,0,0,,später waren sie verheiratet.\NDrei Kinder. Sein enger {\c&H0047D4FF\fscx118\fscy118}Freund{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:00:36.98,0:00:37.42,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Giovanni{\c&H00FFFFFF\fscx100\fscy100} let ihn ein, Marathon\Ndes Sables Morocco.
-Dialogue: 0,0:00:37.44,0:00:37.60,Cap,,0,0,0,,Giovanni {\c&H0047D4FF\fscx118\fscy118}let{\c&H00FFFFFF\fscx100\fscy100} ihn ein, Marathon\Ndes Sables Morocco.
-Dialogue: 0,0:00:37.62,0:00:37.78,Cap,,0,0,0,,Giovanni let {\c&H0047D4FF\fscx118\fscy118}ihn{\c&H00FFFFFF\fscx100\fscy100} ein, Marathon\Ndes Sables Morocco.
-Dialogue: 0,0:00:37.80,0:00:38.46,Cap,,0,0,0,,Giovanni let ihn {\c&H0047D4FF\fscx118\fscy118}ein,{\c&H00FFFFFF\fscx100\fscy100} Marathon\Ndes Sables Morocco.
-Dialogue: 0,0:00:38.48,0:00:38.80,Cap,,0,0,0,,Giovanni let ihn ein, {\c&H0047D4FF\fscx118\fscy118}Marathon{\c&H00FFFFFF\fscx100\fscy100}\Ndes Sables Morocco.
-Dialogue: 0,0:00:38.82,0:00:38.98,Cap,,0,0,0,,Giovanni let ihn ein, Marathon\N{\c&H0047D4FF\fscx118\fscy118}des{\c&H00FFFFFF\fscx100\fscy100} Sables Morocco.
-Dialogue: 0,0:00:39.00,0:00:39.30,Cap,,0,0,0,,Giovanni let ihn ein, Marathon\Ndes {\c&H0047D4FF\fscx118\fscy118}Sables{\c&H00FFFFFF\fscx100\fscy100} Morocco.
-Dialogue: 0,0:00:39.32,0:00:39.90,Cap,,0,0,0,,Giovanni let ihn ein, Marathon\Ndes Sables {\c&H0047D4FF\fscx118\fscy118}Morocco.{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:00:40.30,0:00:40.46,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Er{\c&H00FFFFFF\fscx100\fscy100} sagt ja. Kincea fragt\Ner nicht.
-Dialogue: 0,0:00:40.48,0:00:40.70,Cap,,0,0,0,,Er {\c&H0047D4FF\fscx118\fscy118}sagt{\c&H00FFFFFF\fscx100\fscy100} ja. Kincea fragt\Ner nicht.
-Dialogue: 0,0:00:40.72,0:00:41.46,Cap,,0,0,0,,Er sagt {\c&H0047D4FF\fscx118\fscy118}ja.{\c&H00FFFFFF\fscx100\fscy100} Kincea fragt\Ner nicht.
-Dialogue: 0,0:00:41.48,0:00:41.98,Cap,,0,0,0,,Er sagt ja. {\c&H0047D4FF\fscx118\fscy118}Kincea{\c&H00FFFFFF\fscx100\fscy100} fragt\Ner nicht.
-Dialogue: 0,0:00:42.00,0:00:42.42,Cap,,0,0,0,,Er sagt ja. Kincea {\c&H0047D4FF\fscx118\fscy118}fragt{\c&H00FFFFFF\fscx100\fscy100}\Ner nicht.
-Dialogue: 0,0:00:42.50,0:00:42.86,Cap,,0,0,0,,Er sagt ja. Kincea fragt\Ner {\c&H0047D4FF\fscx118\fscy118}nicht.{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:00:43.42,0:00:43.94,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Marathon{\c&H00FFFFFF\fscx100\fscy100} des Apples Übersetzt –\NMarathon der Sande 250 km
-Dialogue: 0,0:00:43.96,0:00:44.16,Cap,,0,0,0,,Marathon {\c&H0047D4FF\fscx118\fscy118}des{\c&H00FFFFFF\fscx100\fscy100} Apples Übersetzt –\NMarathon der Sande 250 km
-Dialogue: 0,0:00:44.18,0:00:44.52,Cap,,0,0,0,,Marathon des {\c&H0047D4FF\fscx118\fscy118}Apples{\c&H00FFFFFF\fscx100\fscy100} Übersetzt –\NMarathon der Sande 250 km
-Dialogue: 0,0:00:44.54,0:00:45.38,Cap,,0,0,0,,Marathon des Apples {\c&H0047D4FF\fscx118\fscy118}Übersetzt{\c&H00FFFFFF\fscx100\fscy100} –\NMarathon der Sande 250 km
-Dialogue: 0,0:00:45.40,0:00:45.66,Cap,,0,0,0,,Marathon des Apples Übersetzt {\c&H0047D4FF\fscx118\fscy118}–{\c&H00FFFFFF\fscx100\fscy100}\NMarathon der Sande 250 km
-Dialogue: 0,0:00:45.68,0:00:46.06,Cap,,0,0,0,,Marathon des Apples Übersetzt –\N{\c&H0047D4FF\fscx118\fscy118}Marathon{\c&H00FFFFFF\fscx100\fscy100} der Sande 250 km
-Dialogue: 0,0:00:46.08,0:00:46.22,Cap,,0,0,0,,Marathon des Apples Übersetzt –\NMarathon {\c&H0047D4FF\fscx118\fscy118}der{\c&H00FFFFFF\fscx100\fscy100} Sande 250 km
-Dialogue: 0,0:00:46.24,0:00:46.64,Cap,,0,0,0,,Marathon des Apples Übersetzt –\NMarathon der {\c&H0047D4FF\fscx118\fscy118}Sande{\c&H00FFFFFF\fscx100\fscy100} 250 km
-Dialogue: 0,0:00:46.66,0:00:47.62,Cap,,0,0,0,,Marathon des Apples Übersetzt –\NMarathon der Sande {\c&H0047D4FF\fscx118\fscy118}250{\c&H00FFFFFF\fscx100\fscy100} km
-Dialogue: 0,0:00:47.64,0:00:48.48,Cap,,0,0,0,,Marathon des Apples Übersetzt –\NMarathon der Sande 250 {\c&H0047D4FF\fscx118\fscy118}km{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:00:48.50,0:00:48.98,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}durch{\c&H00FFFFFF\fscx100\fscy100} die Marokkanische Wüste 6\NEtappen – 7 Tage
-Dialogue: 0,0:00:49.00,0:00:49.16,Cap,,0,0,0,,durch {\c&H0047D4FF\fscx118\fscy118}die{\c&H00FFFFFF\fscx100\fscy100} Marokkanische Wüste 6\NEtappen – 7 Tage
-Dialogue: 0,0:00:49.18,0:00:49.74,Cap,,0,0,0,,durch die {\c&H0047D4FF\fscx118\fscy118}Marokkanische{\c&H00FFFFFF\fscx100\fscy100} Wüste 6\NEtappen – 7 Tage
-Dialogue: 0,0:00:49.76,0:00:50.12,Cap,,0,0,0,,durch die Marokkanische {\c&H0047D4FF\fscx118\fscy118}Wüste{\c&H00FFFFFF\fscx100\fscy100} 6\NEtappen – 7 Tage
-Dialogue: 0,0:00:50.14,0:00:50.84,Cap,,0,0,0,,durch die Marokkanische Wüste {\c&H0047D4FF\fscx118\fscy118}6{\c&H00FFFFFF\fscx100\fscy100}\NEtappen – 7 Tage
-Dialogue: 0,0:00:50.86,0:00:51.42,Cap,,0,0,0,,durch die Marokkanische Wüste 6\N{\c&H0047D4FF\fscx118\fscy118}Etappen{\c&H00FFFFFF\fscx100\fscy100} – 7 Tage
-Dialogue: 0,0:00:51.44,0:00:51.76,Cap,,0,0,0,,durch die Marokkanische Wüste 6\NEtappen {\c&H0047D4FF\fscx118\fscy118}–{\c&H00FFFFFF\fscx100\fscy100} 7 Tage
-Dialogue: 0,0:00:51.78,0:00:51.98,Cap,,0,0,0,,durch die Marokkanische Wüste 6\NEtappen – {\c&H0047D4FF\fscx118\fscy118}7{\c&H00FFFFFF\fscx100\fscy100} Tage
-Dialogue: 0,0:00:52.00,0:00:52.62,Cap,,0,0,0,,durch die Marokkanische Wüste 6\NEtappen – 7 {\c&H0047D4FF\fscx118\fscy118}Tage{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:00:53.06,0:00:53.44,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Hartrigt{\c&H00FFFFFF\fscx100\fscy100} Bauer ein\Nfranzösischer Veranstalter,\Nlief 1984 allein
-Dialogue: 0,0:00:53.46,0:00:54.06,Cap,,0,0,0,,Hartrigt {\c&H0047D4FF\fscx118\fscy118}Bauer{\c&H00FFFFFF\fscx100\fscy100} ein\Nfranzösischer Veranstalter,\Nlief 1984 allein
-Dialogue: 0,0:00:54.08,0:00:54.16,Cap,,0,0,0,,Hartrigt Bauer {\c&H0047D4FF\fscx118\fscy118}ein{\c&H00FFFFFF\fscx100\fscy100}\Nfranzösischer Veranstalter,\Nlief 1984 allein
-Dialogue: 0,0:00:54.18,0:00:54.88,Cap,,0,0,0,,Hartrigt Bauer ein\N{\c&H0047D4FF\fscx118\fscy118}französischer{\c&H00FFFFFF\fscx100\fscy100} Veranstalter,\Nlief 1984 allein
-Dialogue: 0,0:00:54.90,0:00:55.94,Cap,,0,0,0,,Hartrigt Bauer ein\Nfranzösischer {\c&H0047D4FF\fscx118\fscy118}Veranstalter,{\c&H00FFFFFF\fscx100\fscy100}\Nlief 1984 allein
-Dialogue: 0,0:00:55.96,0:00:56.14,Cap,,0,0,0,,Hartrigt Bauer ein\Nfranzösischer Veranstalter,\N{\c&H0047D4FF\fscx118\fscy118}lief{\c&H00FFFFFF\fscx100\fscy100} 1984 allein
-Dialogue: 0,0:00:56.16,0:00:57.32,Cap,,0,0,0,,Hartrigt Bauer ein\Nfranzösischer Veranstalter,\Nlief {\c&H0047D4FF\fscx118\fscy118}1984{\c&H00FFFFFF\fscx100\fscy100} allein
-Dialogue: 0,0:00:57.34,0:00:58.52,Cap,,0,0,0,,Hartrigt Bauer ein\Nfranzösischer Veranstalter,\Nlief 1984 {\c&H0047D4FF\fscx118\fscy118}allein{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:00:58.54,0:00:59.22,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}320{\c&H00FFFFFF\fscx100\fscy100} km durch die Sahara\Nund startete dieses Rennen. Die
-Dialogue: 0,0:00:59.24,0:01:00.06,Cap,,0,0,0,,320 {\c&H0047D4FF\fscx118\fscy118}km{\c&H00FFFFFF\fscx100\fscy100} durch die Sahara\Nund startete dieses Rennen. Die
-Dialogue: 0,0:01:00.08,0:01:00.42,Cap,,0,0,0,,320 km {\c&H0047D4FF\fscx118\fscy118}durch{\c&H00FFFFFF\fscx100\fscy100} die Sahara\Nund startete dieses Rennen. Die
-Dialogue: 0,0:01:00.44,0:01:00.64,Cap,,0,0,0,,320 km durch {\c&H0047D4FF\fscx118\fscy118}die{\c&H00FFFFFF\fscx100\fscy100} Sahara\Nund startete dieses Rennen. Die
-Dialogue: 0,0:01:00.66,0:01:01.00,Cap,,0,0,0,,320 km durch die {\c&H0047D4FF\fscx118\fscy118}Sahara{\c&H00FFFFFF\fscx100\fscy100}\Nund startete dieses Rennen. Die
-Dialogue: 0,0:01:01.02,0:01:01.58,Cap,,0,0,0,,320 km durch die Sahara\N{\c&H0047D4FF\fscx118\fscy118}und{\c&H00FFFFFF\fscx100\fscy100} startete dieses Rennen. Die
-Dialogue: 0,0:01:01.60,0:01:02.12,Cap,,0,0,0,,320 km durch die Sahara\Nund {\c&H0047D4FF\fscx118\fscy118}startete{\c&H00FFFFFF\fscx100\fscy100} dieses Rennen. Die
-Dialogue: 0,0:01:02.14,0:01:02.38,Cap,,0,0,0,,320 km durch die Sahara\Nund startete {\c&H0047D4FF\fscx118\fscy118}dieses{\c&H00FFFFFF\fscx100\fscy100} Rennen. Die
-Dialogue: 0,0:01:02.40,0:01:03.14,Cap,,0,0,0,,320 km durch die Sahara\Nund startete dieses {\c&H0047D4FF\fscx118\fscy118}Rennen.{\c&H00FFFFFF\fscx100\fscy100} Die
-Dialogue: 0,0:01:03.16,0:01:03.22,Cap,,0,0,0,,320 km durch die Sahara\Nund startete dieses Rennen. {\c&H0047D4FF\fscx118\fscy118}Die{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:01:03.24,0:01:03.68,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Versicherung{\c&H00FFFFFF\fscx100\fscy100} deckt\NVerletzungen ab und tote. Es\Ngibt eine
-Dialogue: 0,0:01:03.70,0:01:04.06,Cap,,0,0,0,,Versicherung {\c&H0047D4FF\fscx118\fscy118}deckt{\c&H00FFFFFF\fscx100\fscy100}\NVerletzungen ab und tote. Es\Ngibt eine
-Dialogue: 0,0:01:04.08,0:01:04.54,Cap,,0,0,0,,Versicherung deckt\N{\c&H0047D4FF\fscx118\fscy118}Verletzungen{\c&H00FFFFFF\fscx100\fscy100} ab und tote. Es\Ngibt eine
-Dialogue: 0,0:01:04.56,0:01:04.84,Cap,,0,0,0,,Versicherung deckt\NVerletzungen {\c&H0047D4FF\fscx118\fscy118}ab{\c&H00FFFFFF\fscx100\fscy100} und tote. Es\Ngibt eine
-Dialogue: 0,0:01:04.86,0:01:05.16,Cap,,0,0,0,,Versicherung deckt\NVerletzungen ab {\c&H0047D4FF\fscx118\fscy118}und{\c&H00FFFFFF\fscx100\fscy100} tote. Es\Ngibt eine
-Dialogue: 0,0:01:05.18,0:01:05.86,Cap,,0,0,0,,Versicherung deckt\NVerletzungen ab und {\c&H0047D4FF\fscx118\fscy118}tote.{\c&H00FFFFFF\fscx100\fscy100} Es\Ngibt eine
-Dialogue: 0,0:01:05.88,0:01:05.96,Cap,,0,0,0,,Versicherung deckt\NVerletzungen ab und tote. {\c&H0047D4FF\fscx118\fscy118}Es{\c&H00FFFFFF\fscx100\fscy100}\Ngibt eine
-Dialogue: 0,0:01:05.98,0:01:06.16,Cap,,0,0,0,,Versicherung deckt\NVerletzungen ab und tote. Es\N{\c&H0047D4FF\fscx118\fscy118}gibt{\c&H00FFFFFF\fscx100\fscy100} eine
-Dialogue: 0,0:01:06.18,0:01:06.40,Cap,,0,0,0,,Versicherung deckt\NVerletzungen ab und tote. Es\Ngibt {\c&H0047D4FF\fscx118\fscy118}eine{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:01:06.42,0:01:07.12,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Klausel,{\c&H00FFFFFF\fscx100\fscy100} wohin soll die Leiche\Ngesendet werden. Marathon des
-Dialogue: 0,0:01:07.14,0:01:07.38,Cap,,0,0,0,,Klausel, {\c&H0047D4FF\fscx118\fscy118}wohin{\c&H00FFFFFF\fscx100\fscy100} soll die Leiche\Ngesendet werden. Marathon des
-Dialogue: 0,0:01:07.40,0:01:07.56,Cap,,0,0,0,,Klausel, wohin {\c&H0047D4FF\fscx118\fscy118}soll{\c&H00FFFFFF\fscx100\fscy100} die Leiche\Ngesendet werden. Marathon des
-Dialogue: 0,0:01:07.58,0:01:07.70,Cap,,0,0,0,,Klausel, wohin soll {\c&H0047D4FF\fscx118\fscy118}die{\c&H00FFFFFF\fscx100\fscy100} Leiche\Ngesendet werden. Marathon des
-Dialogue: 0,0:01:07.72,0:01:07.92,Cap,,0,0,0,,Klausel, wohin soll die {\c&H0047D4FF\fscx118\fscy118}Leiche{\c&H00FFFFFF\fscx100\fscy100}\Ngesendet werden. Marathon des
-Dialogue: 0,0:01:07.94,0:01:08.40,Cap,,0,0,0,,Klausel, wohin soll die Leiche\N{\c&H0047D4FF\fscx118\fscy118}gesendet{\c&H00FFFFFF\fscx100\fscy100} werden. Marathon des
-Dialogue: 0,0:01:08.42,0:01:08.60,Cap,,0,0,0,,Klausel, wohin soll die Leiche\Ngesendet {\c&H0047D4FF\fscx118\fscy118}werden.{\c&H00FFFFFF\fscx100\fscy100} Marathon des
-Dialogue: 0,0:01:08.62,0:01:08.72,Cap,,0,0,0,,Klausel, wohin soll die Leiche\Ngesendet werden. {\c&H0047D4FF\fscx118\fscy118}Marathon{\c&H00FFFFFF\fscx100\fscy100} des
-Dialogue: 0,0:01:08.74,0:01:08.90,Cap,,0,0,0,,Klausel, wohin soll die Leiche\Ngesendet werden. Marathon {\c&H0047D4FF\fscx118\fscy118}des{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:01:08.92,0:01:09.43,Cap,,0,0,0,,Apples Übersetzt – Marathon der\N{\c&H0047D4FF\fscx118\fscy118}Sande{\c&H00FFFFFF\fscx100\fscy100} April 1994 Etappe 4
-Dialogue: 0,0:01:09.45,0:01:09.77,Cap,,0,0,0,,Apples Übersetzt – Marathon der\NSande {\c&H0047D4FF\fscx118\fscy118}April{\c&H00FFFFFF\fscx100\fscy100} 1994 Etappe 4
-Dialogue: 0,0:01:09.79,0:01:11.11,Cap,,0,0,0,,Apples Übersetzt – Marathon der\NSande April {\c&H0047D4FF\fscx118\fscy118}1994{\c&H00FFFFFF\fscx100\fscy100} Etappe 4
-Dialogue: 0,0:01:11.13,0:01:13.09,Cap,,0,0,0,,Apples Übersetzt – Marathon der\NSande April 1994 {\c&H0047D4FF\fscx118\fscy118}Etappe{\c&H00FFFFFF\fscx100\fscy100} 4
-Dialogue: 0,0:01:13.11,0:01:13.31,Cap,,0,0,0,,Apples Übersetzt – Marathon der\NSande April 1994 Etappe {\c&H0047D4FF\fscx118\fscy118}4{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:01:13.33,0:01:13.87,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Die{\c&H00FFFFFF\fscx100\fscy100} längste 85 km
-Dialogue: 0,0:01:13.89,0:01:14.35,Cap,,0,0,0,,Die {\c&H0047D4FF\fscx118\fscy118}längste{\c&H00FFFFFF\fscx100\fscy100} 85 km
-Dialogue: 0,0:01:14.37,0:01:15.15,Cap,,0,0,0,,Die längste {\c&H0047D4FF\fscx118\fscy118}85{\c&H00FFFFFF\fscx100\fscy100} km
-Dialogue: 0,0:01:15.17,0:01:15.91,Cap,,0,0,0,,Die längste 85 {\c&H0047D4FF\fscx118\fscy118}km{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:01:16.27,0:01:16.73,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Mauro{\c&H00FFFFFF\fscx100\fscy100} schneidet durch die Dünen,\Num Zeit zu sparen. Der
-Dialogue: 0,0:01:16.75,0:01:17.09,Cap,,0,0,0,,Mauro {\c&H0047D4FF\fscx118\fscy118}schneidet{\c&H00FFFFFF\fscx100\fscy100} durch die Dünen,\Num Zeit zu sparen. Der
-Dialogue: 0,0:01:17.11,0:01:17.27,Cap,,0,0,0,,Mauro schneidet {\c&H0047D4FF\fscx118\fscy118}durch{\c&H00FFFFFF\fscx100\fscy100} die Dünen,\Num Zeit zu sparen. Der
-Dialogue: 0,0:01:17.29,0:01:17.39,Cap,,0,0,0,,Mauro schneidet durch {\c&H0047D4FF\fscx118\fscy118}die{\c&H00FFFFFF\fscx100\fscy100} Dünen,\Num Zeit zu sparen. Der
-Dialogue: 0,0:01:17.41,0:01:17.93,Cap,,0,0,0,,Mauro schneidet durch die {\c&H0047D4FF\fscx118\fscy118}Dünen,{\c&H00FFFFFF\fscx100\fscy100}\Num Zeit zu sparen. Der
-Dialogue: 0,0:01:17.95,0:01:17.99,Cap,,0,0,0,,Mauro schneidet durch die Dünen,\N{\c&H0047D4FF\fscx118\fscy118}um{\c&H00FFFFFF\fscx100\fscy100} Zeit zu sparen. Der
-Dialogue: 0,0:01:18.01,0:01:18.23,Cap,,0,0,0,,Mauro schneidet durch die Dünen,\Num {\c&H0047D4FF\fscx118\fscy118}Zeit{\c&H00FFFFFF\fscx100\fscy100} zu sparen. Der
-Dialogue: 0,0:01:18.25,0:01:18.43,Cap,,0,0,0,,Mauro schneidet durch die Dünen,\Num Zeit {\c&H0047D4FF\fscx118\fscy118}zu{\c&H00FFFFFF\fscx100\fscy100} sparen. Der
-Dialogue: 0,0:01:18.45,0:01:19.23,Cap,,0,0,0,,Mauro schneidet durch die Dünen,\Num Zeit zu {\c&H0047D4FF\fscx118\fscy118}sparen.{\c&H00FFFFFF\fscx100\fscy100} Der
-Dialogue: 0,0:01:19.25,0:01:19.33,Cap,,0,0,0,,Mauro schneidet durch die Dünen,\Num Zeit zu sparen. {\c&H0047D4FF\fscx118\fscy118}Der{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:01:19.35,0:01:19.55,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Wind{\c&H00FFFFFF\fscx100\fscy100} nimmt zu.
-Dialogue: 0,0:01:19.57,0:01:19.71,Cap,,0,0,0,,Wind {\c&H0047D4FF\fscx118\fscy118}nimmt{\c&H00FFFFFF\fscx100\fscy100} zu.
-Dialogue: 0,0:01:19.73,0:01:20.25,Cap,,0,0,0,,Wind nimmt {\c&H0047D4FF\fscx118\fscy118}zu.{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:01:20.63,0:01:20.79,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Dann{\c&H00FFFFFF\fscx100\fscy100} kommt der Sturm 8\NStunden. Als er nachlässt,\Nschaut
-Dialogue: 0,0:01:20.81,0:01:21.03,Cap,,0,0,0,,Dann {\c&H0047D4FF\fscx118\fscy118}kommt{\c&H00FFFFFF\fscx100\fscy100} der Sturm 8\NStunden. Als er nachlässt,\Nschaut
-Dialogue: 0,0:01:21.05,0:01:21.15,Cap,,0,0,0,,Dann kommt {\c&H0047D4FF\fscx118\fscy118}der{\c&H00FFFFFF\fscx100\fscy100} Sturm 8\NStunden. Als er nachlässt,\Nschaut
-Dialogue: 0,0:01:21.17,0:01:21.39,Cap,,0,0,0,,Dann kommt der {\c&H0047D4FF\fscx118\fscy118}Sturm{\c&H00FFFFFF\fscx100\fscy100} 8\NStunden. Als er nachlässt,\Nschaut
-Dialogue: 0,0:01:21.41,0:01:21.89,Cap,,0,0,0,,Dann kommt der Sturm {\c&H0047D4FF\fscx118\fscy118}8{\c&H00FFFFFF\fscx100\fscy100}\NStunden. Als er nachlässt,\Nschaut
-Dialogue: 0,0:01:21.91,0:01:22.73,Cap,,0,0,0,,Dann kommt der Sturm 8\N{\c&H0047D4FF\fscx118\fscy118}Stunden.{\c&H00FFFFFF\fscx100\fscy100} Als er nachlässt,\Nschaut
-Dialogue: 0,0:01:22.75,0:01:22.87,Cap,,0,0,0,,Dann kommt der Sturm 8\NStunden. {\c&H0047D4FF\fscx118\fscy118}Als{\c&H00FFFFFF\fscx100\fscy100} er nachlässt,\Nschaut
-Dialogue: 0,0:01:22.89,0:01:23.03,Cap,,0,0,0,,Dann kommt der Sturm 8\NStunden. Als {\c&H0047D4FF\fscx118\fscy118}er{\c&H00FFFFFF\fscx100\fscy100} nachlässt,\Nschaut
-Dialogue: 0,0:01:23.05,0:01:23.81,Cap,,0,0,0,,Dann kommt der Sturm 8\NStunden. Als er {\c&H0047D4FF\fscx118\fscy118}nachlässt,{\c&H00FFFFFF\fscx100\fscy100}\Nschaut
-Dialogue: 0,0:01:23.83,0:01:23.93,Cap,,0,0,0,,Dann kommt der Sturm 8\NStunden. Als er nachlässt,\N{\c&H0047D4FF\fscx118\fscy118}schaut{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:01:23.95,0:01:24.11,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}er{\c&H00FFFFFF\fscx100\fscy100} sich um. Alles, was\Ner kannte, Spuren, Zelte,\NStraßen,
-Dialogue: 0,0:01:24.13,0:01:24.23,Cap,,0,0,0,,er {\c&H0047D4FF\fscx118\fscy118}sich{\c&H00FFFFFF\fscx100\fscy100} um. Alles, was\Ner kannte, Spuren, Zelte,\NStraßen,
-Dialogue: 0,0:01:24.25,0:01:24.83,Cap,,0,0,0,,er sich {\c&H0047D4FF\fscx118\fscy118}um.{\c&H00FFFFFF\fscx100\fscy100} Alles, was\Ner kannte, Spuren, Zelte,\NStraßen,
-Dialogue: 0,0:01:24.85,0:01:25.35,Cap,,0,0,0,,er sich um. {\c&H0047D4FF\fscx118\fscy118}Alles,{\c&H00FFFFFF\fscx100\fscy100} was\Ner kannte, Spuren, Zelte,\NStraßen,
-Dialogue: 0,0:01:25.37,0:01:25.45,Cap,,0,0,0,,er sich um. Alles, {\c&H0047D4FF\fscx118\fscy118}was{\c&H00FFFFFF\fscx100\fscy100}\Ner kannte, Spuren, Zelte,\NStraßen,
-Dialogue: 0,0:01:25.47,0:01:25.59,Cap,,0,0,0,,er sich um. Alles, was\N{\c&H0047D4FF\fscx118\fscy118}er{\c&H00FFFFFF\fscx100\fscy100} kannte, Spuren, Zelte,\NStraßen,
-Dialogue: 0,0:01:25.61,0:01:26.21,Cap,,0,0,0,,er sich um. Alles, was\Ner {\c&H0047D4FF\fscx118\fscy118}kannte,{\c&H00FFFFFF\fscx100\fscy100} Spuren, Zelte,\NStraßen,
-Dialogue: 0,0:01:26.23,0:01:26.87,Cap,,0,0,0,,er sich um. Alles, was\Ner kannte, {\c&H0047D4FF\fscx118\fscy118}Spuren,{\c&H00FFFFFF\fscx100\fscy100} Zelte,\NStraßen,
-Dialogue: 0,0:01:26.89,0:01:27.55,Cap,,0,0,0,,er sich um. Alles, was\Ner kannte, Spuren, {\c&H0047D4FF\fscx118\fscy118}Zelte,{\c&H00FFFFFF\fscx100\fscy100}\NStraßen,
-Dialogue: 0,0:01:27.57,0:01:28.07,Cap,,0,0,0,,er sich um. Alles, was\Ner kannte, Spuren, Zelte,\N{\c&H0047D4FF\fscx118\fscy118}Straßen,{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:01:28.25,0:01:28.33,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}ist{\c&H00FFFFFF\fscx100\fscy100} weg. Der Sand hat\Ndie Wüste neu gezeichnet. In
-Dialogue: 0,0:01:28.35,0:01:29.07,Cap,,0,0,0,,ist {\c&H0047D4FF\fscx118\fscy118}weg.{\c&H00FFFFFF\fscx100\fscy100} Der Sand hat\Ndie Wüste neu gezeichnet. In
-Dialogue: 0,0:01:29.09,0:01:29.19,Cap,,0,0,0,,ist weg. {\c&H0047D4FF\fscx118\fscy118}Der{\c&H00FFFFFF\fscx100\fscy100} Sand hat\Ndie Wüste neu gezeichnet. In
-Dialogue: 0,0:01:29.21,0:01:29.43,Cap,,0,0,0,,ist weg. Der {\c&H0047D4FF\fscx118\fscy118}Sand{\c&H00FFFFFF\fscx100\fscy100} hat\Ndie Wüste neu gezeichnet. In
-Dialogue: 0,0:01:29.45,0:01:29.63,Cap,,0,0,0,,ist weg. Der Sand {\c&H0047D4FF\fscx118\fscy118}hat{\c&H00FFFFFF\fscx100\fscy100}\Ndie Wüste neu gezeichnet. In
-Dialogue: 0,0:01:29.65,0:01:29.73,Cap,,0,0,0,,ist weg. Der Sand hat\N{\c&H0047D4FF\fscx118\fscy118}die{\c&H00FFFFFF\fscx100\fscy100} Wüste neu gezeichnet. In
-Dialogue: 0,0:01:29.75,0:01:29.91,Cap,,0,0,0,,ist weg. Der Sand hat\Ndie {\c&H0047D4FF\fscx118\fscy118}Wüste{\c&H00FFFFFF\fscx100\fscy100} neu gezeichnet. In
-Dialogue: 0,0:01:29.93,0:01:30.13,Cap,,0,0,0,,ist weg. Der Sand hat\Ndie Wüste {\c&H0047D4FF\fscx118\fscy118}neu{\c&H00FFFFFF\fscx100\fscy100} gezeichnet. In
-Dialogue: 0,0:01:30.15,0:01:31.17,Cap,,0,0,0,,ist weg. Der Sand hat\Ndie Wüste neu {\c&H0047D4FF\fscx118\fscy118}gezeichnet.{\c&H00FFFFFF\fscx100\fscy100} In
-Dialogue: 0,0:01:31.19,0:01:31.29,Cap,,0,0,0,,ist weg. Der Sand hat\Ndie Wüste neu gezeichnet. {\c&H0047D4FF\fscx118\fscy118}In{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:01:31.31,0:01:31.39,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}der{\c&H00FFFFFF\fscx100\fscy100} Flasche noch eine\Nfingerbreite Wasser.
-Dialogue: 0,0:01:31.41,0:01:31.83,Cap,,0,0,0,,der {\c&H0047D4FF\fscx118\fscy118}Flasche{\c&H00FFFFFF\fscx100\fscy100} noch eine\Nfingerbreite Wasser.
-Dialogue: 0,0:01:31.85,0:01:32.29,Cap,,0,0,0,,der Flasche {\c&H0047D4FF\fscx118\fscy118}noch{\c&H00FFFFFF\fscx100\fscy100} eine\Nfingerbreite Wasser.
-Dialogue: 0,0:01:32.31,0:01:32.51,Cap,,0,0,0,,der Flasche noch {\c&H0047D4FF\fscx118\fscy118}eine{\c&H00FFFFFF\fscx100\fscy100}\Nfingerbreite Wasser.
-Dialogue: 0,0:01:32.53,0:01:33.17,Cap,,0,0,0,,der Flasche noch eine\N{\c&H0047D4FF\fscx118\fscy118}fingerbreite{\c&H00FFFFFF\fscx100\fscy100} Wasser.
-Dialogue: 0,0:01:33.19,0:01:33.61,Cap,,0,0,0,,der Flasche noch eine\Nfingerbreite {\c&H0047D4FF\fscx118\fscy118}Wasser.{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:01:34.30,0:01:34.50,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Am{\c&H00FFFFFF\fscx100\fscy100} Nachmittag hört er Rotor\NGeräusche. Er zieht die\NLeuchttrakete
-Dialogue: 0,0:01:34.52,0:01:35.10,Cap,,0,0,0,,Am {\c&H0047D4FF\fscx118\fscy118}Nachmittag{\c&H00FFFFFF\fscx100\fscy100} hört er Rotor\NGeräusche. Er zieht die\NLeuchttrakete
-Dialogue: 0,0:01:35.12,0:01:35.28,Cap,,0,0,0,,Am Nachmittag {\c&H0047D4FF\fscx118\fscy118}hört{\c&H00FFFFFF\fscx100\fscy100} er Rotor\NGeräusche. Er zieht die\NLeuchttrakete
-Dialogue: 0,0:01:35.30,0:01:35.48,Cap,,0,0,0,,Am Nachmittag hört {\c&H0047D4FF\fscx118\fscy118}er{\c&H00FFFFFF\fscx100\fscy100} Rotor\NGeräusche. Er zieht die\NLeuchttrakete
-Dialogue: 0,0:01:35.50,0:01:35.76,Cap,,0,0,0,,Am Nachmittag hört er {\c&H0047D4FF\fscx118\fscy118}Rotor{\c&H00FFFFFF\fscx100\fscy100}\NGeräusche. Er zieht die\NLeuchttrakete
-Dialogue: 0,0:01:35.78,0:01:36.68,Cap,,0,0,0,,Am Nachmittag hört er Rotor\N{\c&H0047D4FF\fscx118\fscy118}Geräusche.{\c&H00FFFFFF\fscx100\fscy100} Er zieht die\NLeuchttrakete
-Dialogue: 0,0:01:36.70,0:01:36.80,Cap,,0,0,0,,Am Nachmittag hört er Rotor\NGeräusche. {\c&H0047D4FF\fscx118\fscy118}Er{\c&H00FFFFFF\fscx100\fscy100} zieht die\NLeuchttrakete
-Dialogue: 0,0:01:36.82,0:01:37.04,Cap,,0,0,0,,Am Nachmittag hört er Rotor\NGeräusche. Er {\c&H0047D4FF\fscx118\fscy118}zieht{\c&H00FFFFFF\fscx100\fscy100} die\NLeuchttrakete
-Dialogue: 0,0:01:37.06,0:01:37.14,Cap,,0,0,0,,Am Nachmittag hört er Rotor\NGeräusche. Er zieht {\c&H0047D4FF\fscx118\fscy118}die{\c&H00FFFFFF\fscx100\fscy100}\NLeuchttrakete
-Dialogue: 0,0:01:37.16,0:01:37.82,Cap,,0,0,0,,Am Nachmittag hört er Rotor\NGeräusche. Er zieht die\N{\c&H0047D4FF\fscx118\fscy118}Leuchttrakete{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:01:37.84,0:01:37.98,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}aus{\c&H00FFFFFF\fscx100\fscy100} dem Rucksack, so klein\Nwie ein Kugelschreiber. Er\Nzündet
-Dialogue: 0,0:01:38.00,0:01:38.12,Cap,,0,0,0,,aus {\c&H0047D4FF\fscx118\fscy118}dem{\c&H00FFFFFF\fscx100\fscy100} Rucksack, so klein\Nwie ein Kugelschreiber. Er\Nzündet
-Dialogue: 0,0:01:38.14,0:01:38.86,Cap,,0,0,0,,aus dem {\c&H0047D4FF\fscx118\fscy118}Rucksack,{\c&H00FFFFFF\fscx100\fscy100} so klein\Nwie ein Kugelschreiber. Er\Nzündet
-Dialogue: 0,0:01:38.88,0:01:38.98,Cap,,0,0,0,,aus dem Rucksack, {\c&H0047D4FF\fscx118\fscy118}so{\c&H00FFFFFF\fscx100\fscy100} klein\Nwie ein Kugelschreiber. Er\Nzündet
-Dialogue: 0,0:01:39.00,0:01:39.24,Cap,,0,0,0,,aus dem Rucksack, so {\c&H0047D4FF\fscx118\fscy118}klein{\c&H00FFFFFF\fscx100\fscy100}\Nwie ein Kugelschreiber. Er\Nzündet
-Dialogue: 0,0:01:39.26,0:01:39.40,Cap,,0,0,0,,aus dem Rucksack, so klein\N{\c&H0047D4FF\fscx118\fscy118}wie{\c&H00FFFFFF\fscx100\fscy100} ein Kugelschreiber. Er\Nzündet
-Dialogue: 0,0:01:39.42,0:01:39.56,Cap,,0,0,0,,aus dem Rucksack, so klein\Nwie {\c&H0047D4FF\fscx118\fscy118}ein{\c&H00FFFFFF\fscx100\fscy100} Kugelschreiber. Er\Nzündet
-Dialogue: 0,0:01:39.58,0:01:40.60,Cap,,0,0,0,,aus dem Rucksack, so klein\Nwie ein {\c&H0047D4FF\fscx118\fscy118}Kugelschreiber.{\c&H00FFFFFF\fscx100\fscy100} Er\Nzündet
-Dialogue: 0,0:01:40.62,0:01:40.76,Cap,,0,0,0,,aus dem Rucksack, so klein\Nwie ein Kugelschreiber. {\c&H0047D4FF\fscx118\fscy118}Er{\c&H00FFFFFF\fscx100\fscy100}\Nzündet
-Dialogue: 0,0:01:40.78,0:01:41.12,Cap,,0,0,0,,aus dem Rucksack, so klein\Nwie ein Kugelschreiber. Er\N{\c&H0047D4FF\fscx118\fscy118}zündet{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:01:41.14,0:01:41.50,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}sie.{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:01:41.92,0:01:42.10,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Der{\c&H00FFFFFF\fscx100\fscy100} Hubschrauber dreht nichts\Nab. Er schaut ihn nach,\Nbis
-Dialogue: 0,0:01:42.12,0:01:42.68,Cap,,0,0,0,,Der {\c&H0047D4FF\fscx118\fscy118}Hubschrauber{\c&H00FFFFFF\fscx100\fscy100} dreht nichts\Nab. Er schaut ihn nach,\Nbis
-Dialogue: 0,0:01:42.70,0:01:42.96,Cap,,0,0,0,,Der Hubschrauber {\c&H0047D4FF\fscx118\fscy118}dreht{\c&H00FFFFFF\fscx100\fscy100} nichts\Nab. Er schaut ihn nach,\Nbis
-Dialogue: 0,0:01:42.98,0:01:43.10,Cap,,0,0,0,,Der Hubschrauber dreht {\c&H0047D4FF\fscx118\fscy118}nichts{\c&H00FFFFFF\fscx100\fscy100}\Nab. Er schaut ihn nach,\Nbis
-Dialogue: 0,0:01:43.12,0:01:43.76,Cap,,0,0,0,,Der Hubschrauber dreht nichts\N{\c&H0047D4FF\fscx118\fscy118}ab.{\c&H00FFFFFF\fscx100\fscy100} Er schaut ihn nach,\Nbis
-Dialogue: 0,0:01:43.78,0:01:43.86,Cap,,0,0,0,,Der Hubschrauber dreht nichts\Nab. {\c&H0047D4FF\fscx118\fscy118}Er{\c&H00FFFFFF\fscx100\fscy100} schaut ihn nach,\Nbis
-Dialogue: 0,0:01:43.88,0:01:44.10,Cap,,0,0,0,,Der Hubschrauber dreht nichts\Nab. Er {\c&H0047D4FF\fscx118\fscy118}schaut{\c&H00FFFFFF\fscx100\fscy100} ihn nach,\Nbis
-Dialogue: 0,0:01:44.12,0:01:44.34,Cap,,0,0,0,,Der Hubschrauber dreht nichts\Nab. Er schaut {\c&H0047D4FF\fscx118\fscy118}ihn{\c&H00FFFFFF\fscx100\fscy100} nach,\Nbis
-Dialogue: 0,0:01:44.36,0:01:44.94,Cap,,0,0,0,,Der Hubschrauber dreht nichts\Nab. Er schaut ihn {\c&H0047D4FF\fscx118\fscy118}nach,{\c&H00FFFFFF\fscx100\fscy100}\Nbis
-Dialogue: 0,0:01:44.96,0:01:45.08,Cap,,0,0,0,,Der Hubschrauber dreht nichts\Nab. Er schaut ihn nach,\N{\c&H0047D4FF\fscx118\fscy118}bis{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:01:45.10,0:01:45.24,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}er{\c&H00FFFFFF\fscx100\fscy100} nur noch ein Punkt\Nist. Dann ruft er in
-Dialogue: 0,0:01:45.26,0:01:45.38,Cap,,0,0,0,,er {\c&H0047D4FF\fscx118\fscy118}nur{\c&H00FFFFFF\fscx100\fscy100} noch ein Punkt\Nist. Dann ruft er in
-Dialogue: 0,0:01:45.40,0:01:45.50,Cap,,0,0,0,,er nur {\c&H0047D4FF\fscx118\fscy118}noch{\c&H00FFFFFF\fscx100\fscy100} ein Punkt\Nist. Dann ruft er in
-Dialogue: 0,0:01:45.52,0:01:45.66,Cap,,0,0,0,,er nur noch {\c&H0047D4FF\fscx118\fscy118}ein{\c&H00FFFFFF\fscx100\fscy100} Punkt\Nist. Dann ruft er in
-Dialogue: 0,0:01:45.68,0:01:45.84,Cap,,0,0,0,,er nur noch ein {\c&H0047D4FF\fscx118\fscy118}Punkt{\c&H00FFFFFF\fscx100\fscy100}\Nist. Dann ruft er in
-Dialogue: 0,0:01:45.86,0:01:46.58,Cap,,0,0,0,,er nur noch ein Punkt\N{\c&H0047D4FF\fscx118\fscy118}ist.{\c&H00FFFFFF\fscx100\fscy100} Dann ruft er in
-Dialogue: 0,0:01:46.60,0:01:46.72,Cap,,0,0,0,,er nur noch ein Punkt\Nist. {\c&H0047D4FF\fscx118\fscy118}Dann{\c&H00FFFFFF\fscx100\fscy100} ruft er in
-Dialogue: 0,0:01:46.74,0:01:46.96,Cap,,0,0,0,,er nur noch ein Punkt\Nist. Dann {\c&H0047D4FF\fscx118\fscy118}ruft{\c&H00FFFFFF\fscx100\fscy100} er in
-Dialogue: 0,0:01:46.98,0:01:47.06,Cap,,0,0,0,,er nur noch ein Punkt\Nist. Dann ruft {\c&H0047D4FF\fscx118\fscy118}er{\c&H00FFFFFF\fscx100\fscy100} in
-Dialogue: 0,0:01:47.08,0:01:47.16,Cap,,0,0,0,,er nur noch ein Punkt\Nist. Dann ruft er {\c&H0047D4FF\fscx118\fscy118}in{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:01:47.18,0:01:47.24,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}die{\c&H00FFFFFF\fscx100\fscy100} Stille. Warum verlässt du\Nmich? Die Giovanni wartet am
-Dialogue: 0,0:01:47.26,0:01:47.96,Cap,,0,0,0,,die {\c&H0047D4FF\fscx118\fscy118}Stille.{\c&H00FFFFFF\fscx100\fscy100} Warum verlässt du\Nmich? Die Giovanni wartet am
-Dialogue: 0,0:01:47.98,0:01:48.14,Cap,,0,0,0,,die Stille. {\c&H0047D4FF\fscx118\fscy118}Warum{\c&H00FFFFFF\fscx100\fscy100} verlässt du\Nmich? Die Giovanni wartet am
-Dialogue: 0,0:01:48.16,0:01:48.52,Cap,,0,0,0,,die Stille. Warum {\c&H0047D4FF\fscx118\fscy118}verlässt{\c&H00FFFFFF\fscx100\fscy100} du\Nmich? Die Giovanni wartet am
-Dialogue: 0,0:01:48.54,0:01:48.60,Cap,,0,0,0,,die Stille. Warum verlässt {\c&H0047D4FF\fscx118\fscy118}du{\c&H00FFFFFF\fscx100\fscy100}\Nmich? Die Giovanni wartet am
-Dialogue: 0,0:01:48.62,0:01:49.22,Cap,,0,0,0,,die Stille. Warum verlässt du\N{\c&H0047D4FF\fscx118\fscy118}mich?{\c&H00FFFFFF\fscx100\fscy100} Die Giovanni wartet am
-Dialogue: 0,0:01:49.24,0:01:49.34,Cap,,0,0,0,,die Stille. Warum verlässt du\Nmich? {\c&H0047D4FF\fscx118\fscy118}Die{\c&H00FFFFFF\fscx100\fscy100} Giovanni wartet am
-Dialogue: 0,0:01:49.36,0:01:49.64,Cap,,0,0,0,,die Stille. Warum verlässt du\Nmich? Die {\c&H0047D4FF\fscx118\fscy118}Giovanni{\c&H00FFFFFF\fscx100\fscy100} wartet am
-Dialogue: 0,0:01:49.66,0:01:50.02,Cap,,0,0,0,,die Stille. Warum verlässt du\Nmich? Die Giovanni {\c&H0047D4FF\fscx118\fscy118}wartet{\c&H00FFFFFF\fscx100\fscy100} am
-Dialogue: 0,0:01:50.04,0:01:50.18,Cap,,0,0,0,,die Stille. Warum verlässt du\Nmich? Die Giovanni wartet {\c&H0047D4FF\fscx118\fscy118}am{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:01:50.20,0:01:51.16,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Zielstrich.{\c&H00FFFFFF\fscx100\fscy100} Er wartet und\Nwartet.
-Dialogue: 0,0:01:51.18,0:01:51.28,Cap,,0,0,0,,Zielstrich. {\c&H0047D4FF\fscx118\fscy118}Er{\c&H00FFFFFF\fscx100\fscy100} wartet und\Nwartet.
-Dialogue: 0,0:01:51.30,0:01:51.62,Cap,,0,0,0,,Zielstrich. Er {\c&H0047D4FF\fscx118\fscy118}wartet{\c&H00FFFFFF\fscx100\fscy100} und\Nwartet.
-Dialogue: 0,0:01:51.64,0:01:51.82,Cap,,0,0,0,,Zielstrich. Er wartet {\c&H0047D4FF\fscx118\fscy118}und{\c&H00FFFFFF\fscx100\fscy100}\Nwartet.
-Dialogue: 0,0:01:51.84,0:01:52.42,Cap,,0,0,0,,Zielstrich. Er wartet und\N{\c&H0047D4FF\fscx118\fscy118}wartet.{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:01:52.99,0:01:53.23,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Drei{\c&H00FFFFFF\fscx100\fscy100} Gebäude in der Leere.\NEr geht hinein, das Grab
-Dialogue: 0,0:01:53.25,0:01:53.65,Cap,,0,0,0,,Drei {\c&H0047D4FF\fscx118\fscy118}Gebäude{\c&H00FFFFFF\fscx100\fscy100} in der Leere.\NEr geht hinein, das Grab
-Dialogue: 0,0:01:53.67,0:01:53.77,Cap,,0,0,0,,Drei Gebäude {\c&H0047D4FF\fscx118\fscy118}in{\c&H00FFFFFF\fscx100\fscy100} der Leere.\NEr geht hinein, das Grab
-Dialogue: 0,0:01:53.79,0:01:53.87,Cap,,0,0,0,,Drei Gebäude in {\c&H0047D4FF\fscx118\fscy118}der{\c&H00FFFFFF\fscx100\fscy100} Leere.\NEr geht hinein, das Grab
-Dialogue: 0,0:01:53.89,0:01:54.61,Cap,,0,0,0,,Drei Gebäude in der {\c&H0047D4FF\fscx118\fscy118}Leere.{\c&H00FFFFFF\fscx100\fscy100}\NEr geht hinein, das Grab
-Dialogue: 0,0:01:54.63,0:01:54.75,Cap,,0,0,0,,Drei Gebäude in der Leere.\N{\c&H0047D4FF\fscx118\fscy118}Er{\c&H00FFFFFF\fscx100\fscy100} geht hinein, das Grab
-Dialogue: 0,0:01:54.77,0:01:54.95,Cap,,0,0,0,,Drei Gebäude in der Leere.\NEr {\c&H0047D4FF\fscx118\fscy118}geht{\c&H00FFFFFF\fscx100\fscy100} hinein, das Grab
-Dialogue: 0,0:01:54.97,0:01:55.67,Cap,,0,0,0,,Drei Gebäude in der Leere.\NEr geht {\c&H0047D4FF\fscx118\fscy118}hinein,{\c&H00FFFFFF\fscx100\fscy100} das Grab
-Dialogue: 0,0:01:55.69,0:01:55.79,Cap,,0,0,0,,Drei Gebäude in der Leere.\NEr geht hinein, {\c&H0047D4FF\fscx118\fscy118}das{\c&H00FFFFFF\fscx100\fscy100} Grab
-Dialogue: 0,0:01:55.81,0:01:56.01,Cap,,0,0,0,,Drei Gebäude in der Leere.\NEr geht hinein, das {\c&H0047D4FF\fscx118\fscy118}Grab{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:01:56.03,0:01:56.25,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}eines{\c&H00FFFFFF\fscx100\fscy100} muslimischen Leeres. Es\Nriecht nach Ratten, aber es\Nist
-Dialogue: 0,0:01:56.27,0:01:56.87,Cap,,0,0,0,,eines {\c&H0047D4FF\fscx118\fscy118}muslimischen{\c&H00FFFFFF\fscx100\fscy100} Leeres. Es\Nriecht nach Ratten, aber es\Nist
-Dialogue: 0,0:01:56.89,0:01:57.61,Cap,,0,0,0,,eines muslimischen {\c&H0047D4FF\fscx118\fscy118}Leeres.{\c&H00FFFFFF\fscx100\fscy100} Es\Nriecht nach Ratten, aber es\Nist
-Dialogue: 0,0:01:57.63,0:01:57.77,Cap,,0,0,0,,eines muslimischen Leeres. {\c&H0047D4FF\fscx118\fscy118}Es{\c&H00FFFFFF\fscx100\fscy100}\Nriecht nach Ratten, aber es\Nist
-Dialogue: 0,0:01:57.79,0:01:58.09,Cap,,0,0,0,,eines muslimischen Leeres. Es\N{\c&H0047D4FF\fscx118\fscy118}riecht{\c&H00FFFFFF\fscx100\fscy100} nach Ratten, aber es\Nist
-Dialogue: 0,0:01:58.11,0:01:58.29,Cap,,0,0,0,,eines muslimischen Leeres. Es\Nriecht {\c&H0047D4FF\fscx118\fscy118}nach{\c&H00FFFFFF\fscx100\fscy100} Ratten, aber es\Nist
-Dialogue: 0,0:01:58.31,0:01:58.85,Cap,,0,0,0,,eines muslimischen Leeres. Es\Nriecht nach {\c&H0047D4FF\fscx118\fscy118}Ratten,{\c&H00FFFFFF\fscx100\fscy100} aber es\Nist
-Dialogue: 0,0:01:58.87,0:01:59.05,Cap,,0,0,0,,eines muslimischen Leeres. Es\Nriecht nach Ratten, {\c&H0047D4FF\fscx118\fscy118}aber{\c&H00FFFFFF\fscx100\fscy100} es\Nist
-Dialogue: 0,0:01:59.07,0:01:59.17,Cap,,0,0,0,,eines muslimischen Leeres. Es\Nriecht nach Ratten, aber {\c&H0047D4FF\fscx118\fscy118}es{\c&H00FFFFFF\fscx100\fscy100}\Nist
-Dialogue: 0,0:01:59.19,0:01:59.29,Cap,,0,0,0,,eines muslimischen Leeres. Es\Nriecht nach Ratten, aber es\N{\c&H0047D4FF\fscx118\fscy118}ist{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:01:59.31,0:02:00.01,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}sauber.{\c&H00FFFFFF\fscx100\fscy100} Tiefdrehen hört er\Nflattern. Er leuchtet rein, eine
-Dialogue: 0,0:02:00.03,0:02:00.53,Cap,,0,0,0,,sauber. {\c&H0047D4FF\fscx118\fscy118}Tiefdrehen{\c&H00FFFFFF\fscx100\fscy100} hört er\Nflattern. Er leuchtet rein, eine
-Dialogue: 0,0:02:00.55,0:02:00.65,Cap,,0,0,0,,sauber. Tiefdrehen {\c&H0047D4FF\fscx118\fscy118}hört{\c&H00FFFFFF\fscx100\fscy100} er\Nflattern. Er leuchtet rein, eine
-Dialogue: 0,0:02:00.67,0:02:00.83,Cap,,0,0,0,,sauber. Tiefdrehen hört {\c&H0047D4FF\fscx118\fscy118}er{\c&H00FFFFFF\fscx100\fscy100}\Nflattern. Er leuchtet rein, eine
-Dialogue: 0,0:02:00.85,0:02:01.67,Cap,,0,0,0,,sauber. Tiefdrehen hört er\N{\c&H0047D4FF\fscx118\fscy118}flattern.{\c&H00FFFFFF\fscx100\fscy100} Er leuchtet rein, eine
-Dialogue: 0,0:02:01.69,0:02:01.83,Cap,,0,0,0,,sauber. Tiefdrehen hört er\Nflattern. {\c&H0047D4FF\fscx118\fscy118}Er{\c&H00FFFFFF\fscx100\fscy100} leuchtet rein, eine
-Dialogue: 0,0:02:01.85,0:02:02.23,Cap,,0,0,0,,sauber. Tiefdrehen hört er\Nflattern. Er {\c&H0047D4FF\fscx118\fscy118}leuchtet{\c&H00FFFFFF\fscx100\fscy100} rein, eine
-Dialogue: 0,0:02:02.25,0:02:02.81,Cap,,0,0,0,,sauber. Tiefdrehen hört er\Nflattern. Er leuchtet {\c&H0047D4FF\fscx118\fscy118}rein,{\c&H00FFFFFF\fscx100\fscy100} eine
-Dialogue: 0,0:02:02.83,0:02:02.95,Cap,,0,0,0,,sauber. Tiefdrehen hört er\Nflattern. Er leuchtet rein, {\c&H0047D4FF\fscx118\fscy118}eine{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:02:02.97,0:02:03.35,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Kolonie{\c&H00FFFFFF\fscx100\fscy100} Fledermäuse, recklos an\Nder Wand.
-Dialogue: 0,0:02:03.37,0:02:04.29,Cap,,0,0,0,,Kolonie {\c&H0047D4FF\fscx118\fscy118}Fledermäuse,{\c&H00FFFFFF\fscx100\fscy100} recklos an\Nder Wand.
-Dialogue: 0,0:02:04.31,0:02:04.61,Cap,,0,0,0,,Kolonie Fledermäuse, {\c&H0047D4FF\fscx118\fscy118}recklos{\c&H00FFFFFF\fscx100\fscy100} an\Nder Wand.
-Dialogue: 0,0:02:04.63,0:02:04.81,Cap,,0,0,0,,Kolonie Fledermäuse, recklos {\c&H0047D4FF\fscx118\fscy118}an{\c&H00FFFFFF\fscx100\fscy100}\Nder Wand.
-Dialogue: 0,0:02:04.83,0:02:04.91,Cap,,0,0,0,,Kolonie Fledermäuse, recklos an\N{\c&H0047D4FF\fscx118\fscy118}der{\c&H00FFFFFF\fscx100\fscy100} Wand.
-Dialogue: 0,0:02:04.93,0:02:05.31,Cap,,0,0,0,,Kolonie Fledermäuse, recklos an\Nder {\c&H0047D4FF\fscx118\fscy118}Wand.{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:02:05.67,0:02:05.89,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Was{\c&H00FFFFFF\fscx100\fscy100} er dann tut, fühlt\Nsich für ihn vollkommen\Nnatürlich
-Dialogue: 0,0:02:05.91,0:02:06.03,Cap,,0,0,0,,Was {\c&H0047D4FF\fscx118\fscy118}er{\c&H00FFFFFF\fscx100\fscy100} dann tut, fühlt\Nsich für ihn vollkommen\Nnatürlich
-Dialogue: 0,0:02:06.05,0:02:06.17,Cap,,0,0,0,,Was er {\c&H0047D4FF\fscx118\fscy118}dann{\c&H00FFFFFF\fscx100\fscy100} tut, fühlt\Nsich für ihn vollkommen\Nnatürlich
-Dialogue: 0,0:02:06.19,0:02:06.63,Cap,,0,0,0,,Was er dann {\c&H0047D4FF\fscx118\fscy118}tut,{\c&H00FFFFFF\fscx100\fscy100} fühlt\Nsich für ihn vollkommen\Nnatürlich
-Dialogue: 0,0:02:06.65,0:02:06.81,Cap,,0,0,0,,Was er dann tut, {\c&H0047D4FF\fscx118\fscy118}fühlt{\c&H00FFFFFF\fscx100\fscy100}\Nsich für ihn vollkommen\Nnatürlich
-Dialogue: 0,0:02:06.83,0:02:06.97,Cap,,0,0,0,,Was er dann tut, fühlt\N{\c&H0047D4FF\fscx118\fscy118}sich{\c&H00FFFFFF\fscx100\fscy100} für ihn vollkommen\Nnatürlich
-Dialogue: 0,0:02:06.99,0:02:07.15,Cap,,0,0,0,,Was er dann tut, fühlt\Nsich {\c&H0047D4FF\fscx118\fscy118}für{\c&H00FFFFFF\fscx100\fscy100} ihn vollkommen\Nnatürlich
-Dialogue: 0,0:02:07.17,0:02:07.29,Cap,,0,0,0,,Was er dann tut, fühlt\Nsich für {\c&H0047D4FF\fscx118\fscy118}ihn{\c&H00FFFFFF\fscx100\fscy100} vollkommen\Nnatürlich
-Dialogue: 0,0:02:07.31,0:02:07.77,Cap,,0,0,0,,Was er dann tut, fühlt\Nsich für ihn {\c&H0047D4FF\fscx118\fscy118}vollkommen{\c&H00FFFFFF\fscx100\fscy100}\Nnatürlich
-Dialogue: 0,0:02:07.79,0:02:08.07,Cap,,0,0,0,,Was er dann tut, fühlt\Nsich für ihn vollkommen\N{\c&H0047D4FF\fscx118\fscy118}natürlich{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:02:08.09,0:02:08.79,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}an.{\c&H00FFFFFF\fscx100\fscy100} Er greift einer, köpft\Nsie, trinkt das Innere. 20
-Dialogue: 0,0:02:08.81,0:02:08.93,Cap,,0,0,0,,an. {\c&H0047D4FF\fscx118\fscy118}Er{\c&H00FFFFFF\fscx100\fscy100} greift einer, köpft\Nsie, trinkt das Innere. 20
-Dialogue: 0,0:02:08.95,0:02:09.27,Cap,,0,0,0,,an. Er {\c&H0047D4FF\fscx118\fscy118}greift{\c&H00FFFFFF\fscx100\fscy100} einer, köpft\Nsie, trinkt das Innere. 20
-Dialogue: 0,0:02:09.29,0:02:09.77,Cap,,0,0,0,,an. Er greift {\c&H0047D4FF\fscx118\fscy118}einer,{\c&H00FFFFFF\fscx100\fscy100} köpft\Nsie, trinkt das Innere. 20
-Dialogue: 0,0:02:09.79,0:02:10.05,Cap,,0,0,0,,an. Er greift einer, {\c&H0047D4FF\fscx118\fscy118}köpft{\c&H00FFFFFF\fscx100\fscy100}\Nsie, trinkt das Innere. 20
-Dialogue: 0,0:02:10.07,0:02:10.43,Cap,,0,0,0,,an. Er greift einer, köpft\N{\c&H0047D4FF\fscx118\fscy118}sie,{\c&H00FFFFFF\fscx100\fscy100} trinkt das Innere. 20
-Dialogue: 0,0:02:10.45,0:02:10.71,Cap,,0,0,0,,an. Er greift einer, köpft\Nsie, {\c&H0047D4FF\fscx118\fscy118}trinkt{\c&H00FFFFFF\fscx100\fscy100} das Innere. 20
-Dialogue: 0,0:02:10.73,0:02:10.81,Cap,,0,0,0,,an. Er greift einer, köpft\Nsie, trinkt {\c&H0047D4FF\fscx118\fscy118}das{\c&H00FFFFFF\fscx100\fscy100} Innere. 20
-Dialogue: 0,0:02:10.83,0:02:11.55,Cap,,0,0,0,,an. Er greift einer, köpft\Nsie, trinkt das {\c&H0047D4FF\fscx118\fscy118}Innere.{\c&H00FFFFFF\fscx100\fscy100} 20
-Dialogue: 0,0:02:11.57,0:02:11.93,Cap,,0,0,0,,an. Er greift einer, köpft\Nsie, trinkt das Innere. {\c&H0047D4FF\fscx118\fscy118}20{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:02:11.95,0:02:12.47,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Stück.{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:02:13.12,0:02:13.46,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Tag{\c&H00FFFFFF\fscx100\fscy100} 6 Ein Flugzeug zieht\Nüber ihn hinweg. Er verbrennt
-Dialogue: 0,0:02:13.48,0:02:13.82,Cap,,0,0,0,,Tag {\c&H0047D4FF\fscx118\fscy118}6{\c&H00FFFFFF\fscx100\fscy100} Ein Flugzeug zieht\Nüber ihn hinweg. Er verbrennt
-Dialogue: 0,0:02:13.84,0:02:14.34,Cap,,0,0,0,,Tag 6 {\c&H0047D4FF\fscx118\fscy118}Ein{\c&H00FFFFFF\fscx100\fscy100} Flugzeug zieht\Nüber ihn hinweg. Er verbrennt
-Dialogue: 0,0:02:14.36,0:02:14.86,Cap,,0,0,0,,Tag 6 Ein {\c&H0047D4FF\fscx118\fscy118}Flugzeug{\c&H00FFFFFF\fscx100\fscy100} zieht\Nüber ihn hinweg. Er verbrennt
-Dialogue: 0,0:02:14.88,0:02:15.18,Cap,,0,0,0,,Tag 6 Ein Flugzeug {\c&H0047D4FF\fscx118\fscy118}zieht{\c&H00FFFFFF\fscx100\fscy100}\Nüber ihn hinweg. Er verbrennt
-Dialogue: 0,0:02:15.20,0:02:15.32,Cap,,0,0,0,,Tag 6 Ein Flugzeug zieht\N{\c&H0047D4FF\fscx118\fscy118}über{\c&H00FFFFFF\fscx100\fscy100} ihn hinweg. Er verbrennt
-Dialogue: 0,0:02:15.34,0:02:15.44,Cap,,0,0,0,,Tag 6 Ein Flugzeug zieht\Nüber {\c&H0047D4FF\fscx118\fscy118}ihn{\c&H00FFFFFF\fscx100\fscy100} hinweg. Er verbrennt
-Dialogue: 0,0:02:15.46,0:02:16.28,Cap,,0,0,0,,Tag 6 Ein Flugzeug zieht\Nüber ihn {\c&H0047D4FF\fscx118\fscy118}hinweg.{\c&H00FFFFFF\fscx100\fscy100} Er verbrennt
-Dialogue: 0,0:02:16.30,0:02:16.40,Cap,,0,0,0,,Tag 6 Ein Flugzeug zieht\Nüber ihn hinweg. {\c&H0047D4FF\fscx118\fscy118}Er{\c&H00FFFFFF\fscx100\fscy100} verbrennt
-Dialogue: 0,0:02:16.42,0:02:16.86,Cap,,0,0,0,,Tag 6 Ein Flugzeug zieht\Nüber ihn hinweg. Er {\c&H0047D4FF\fscx118\fscy118}verbrennt{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:02:16.88,0:02:17.28,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Rucksack{\c&H00FFFFFF\fscx100\fscy100} und Schlafsack für\NRauch, das Flugzeug sieht ihn\Nnicht.
-Dialogue: 0,0:02:17.30,0:02:17.48,Cap,,0,0,0,,Rucksack {\c&H0047D4FF\fscx118\fscy118}und{\c&H00FFFFFF\fscx100\fscy100} Schlafsack für\NRauch, das Flugzeug sieht ihn\Nnicht.
-Dialogue: 0,0:02:17.50,0:02:18.04,Cap,,0,0,0,,Rucksack und {\c&H0047D4FF\fscx118\fscy118}Schlafsack{\c&H00FFFFFF\fscx100\fscy100} für\NRauch, das Flugzeug sieht ihn\Nnicht.
-Dialogue: 0,0:02:18.06,0:02:18.20,Cap,,0,0,0,,Rucksack und Schlafsack {\c&H0047D4FF\fscx118\fscy118}für{\c&H00FFFFFF\fscx100\fscy100}\NRauch, das Flugzeug sieht ihn\Nnicht.
-Dialogue: 0,0:02:18.22,0:02:18.74,Cap,,0,0,0,,Rucksack und Schlafsack für\N{\c&H0047D4FF\fscx118\fscy118}Rauch,{\c&H00FFFFFF\fscx100\fscy100} das Flugzeug sieht ihn\Nnicht.
-Dialogue: 0,0:02:18.76,0:02:18.84,Cap,,0,0,0,,Rucksack und Schlafsack für\NRauch, {\c&H0047D4FF\fscx118\fscy118}das{\c&H00FFFFFF\fscx100\fscy100} Flugzeug sieht ihn\Nnicht.
-Dialogue: 0,0:02:18.86,0:02:19.34,Cap,,0,0,0,,Rucksack und Schlafsack für\NRauch, das {\c&H0047D4FF\fscx118\fscy118}Flugzeug{\c&H00FFFFFF\fscx100\fscy100} sieht ihn\Nnicht.
-Dialogue: 0,0:02:19.36,0:02:19.52,Cap,,0,0,0,,Rucksack und Schlafsack für\NRauch, das Flugzeug {\c&H0047D4FF\fscx118\fscy118}sieht{\c&H00FFFFFF\fscx100\fscy100} ihn\Nnicht.
-Dialogue: 0,0:02:19.54,0:02:19.70,Cap,,0,0,0,,Rucksack und Schlafsack für\NRauch, das Flugzeug sieht {\c&H0047D4FF\fscx118\fscy118}ihn{\c&H00FFFFFF\fscx100\fscy100}\Nnicht.
-Dialogue: 0,0:02:19.72,0:02:20.16,Cap,,0,0,0,,Rucksack und Schlafsack für\NRauch, das Flugzeug sieht ihn\N{\c&H0047D4FF\fscx118\fscy118}nicht.{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:02:20.34,0:02:20.46,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Er{\c&H00FFFFFF\fscx100\fscy100} nimmt ein Stück Kohle\Nund schreibt auf einen Fetzen,
-Dialogue: 0,0:02:20.48,0:02:20.64,Cap,,0,0,0,,Er {\c&H0047D4FF\fscx118\fscy118}nimmt{\c&H00FFFFFF\fscx100\fscy100} ein Stück Kohle\Nund schreibt auf einen Fetzen,
-Dialogue: 0,0:02:20.66,0:02:20.84,Cap,,0,0,0,,Er nimmt {\c&H0047D4FF\fscx118\fscy118}ein{\c&H00FFFFFF\fscx100\fscy100} Stück Kohle\Nund schreibt auf einen Fetzen,
-Dialogue: 0,0:02:20.86,0:02:21.02,Cap,,0,0,0,,Er nimmt ein {\c&H0047D4FF\fscx118\fscy118}Stück{\c&H00FFFFFF\fscx100\fscy100} Kohle\Nund schreibt auf einen Fetzen,
-Dialogue: 0,0:02:21.04,0:02:21.48,Cap,,0,0,0,,Er nimmt ein Stück {\c&H0047D4FF\fscx118\fscy118}Kohle{\c&H00FFFFFF\fscx100\fscy100}\Nund schreibt auf einen Fetzen,
-Dialogue: 0,0:02:21.50,0:02:21.62,Cap,,0,0,0,,Er nimmt ein Stück Kohle\N{\c&H0047D4FF\fscx118\fscy118}und{\c&H00FFFFFF\fscx100\fscy100} schreibt auf einen Fetzen,
-Dialogue: 0,0:02:21.64,0:02:21.94,Cap,,0,0,0,,Er nimmt ein Stück Kohle\Nund {\c&H0047D4FF\fscx118\fscy118}schreibt{\c&H00FFFFFF\fscx100\fscy100} auf einen Fetzen,
-Dialogue: 0,0:02:21.96,0:02:22.12,Cap,,0,0,0,,Er nimmt ein Stück Kohle\Nund schreibt {\c&H0047D4FF\fscx118\fscy118}auf{\c&H00FFFFFF\fscx100\fscy100} einen Fetzen,
-Dialogue: 0,0:02:22.14,0:02:22.28,Cap,,0,0,0,,Er nimmt ein Stück Kohle\Nund schreibt auf {\c&H0047D4FF\fscx118\fscy118}einen{\c&H00FFFFFF\fscx100\fscy100} Fetzen,
-Dialogue: 0,0:02:22.30,0:02:22.88,Cap,,0,0,0,,Er nimmt ein Stück Kohle\Nund schreibt auf einen {\c&H0047D4FF\fscx118\fscy118}Fetzen,{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:02:22.96,0:02:23.18,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}vergib{\c&H00FFFFFF\fscx100\fscy100} mir. Vergib mir, wenn\Nich dich verletzt habe, wenn
-Dialogue: 0,0:02:23.20,0:02:23.78,Cap,,0,0,0,,vergib {\c&H0047D4FF\fscx118\fscy118}mir.{\c&H00FFFFFF\fscx100\fscy100} Vergib mir, wenn\Nich dich verletzt habe, wenn
-Dialogue: 0,0:02:23.80,0:02:24.16,Cap,,0,0,0,,vergib mir. {\c&H0047D4FF\fscx118\fscy118}Vergib{\c&H00FFFFFF\fscx100\fscy100} mir, wenn\Nich dich verletzt habe, wenn
-Dialogue: 0,0:02:24.18,0:02:24.66,Cap,,0,0,0,,vergib mir. Vergib {\c&H0047D4FF\fscx118\fscy118}mir,{\c&H00FFFFFF\fscx100\fscy100} wenn\Nich dich verletzt habe, wenn
-Dialogue: 0,0:02:24.68,0:02:24.74,Cap,,0,0,0,,vergib mir. Vergib mir, {\c&H0047D4FF\fscx118\fscy118}wenn{\c&H00FFFFFF\fscx100\fscy100}\Nich dich verletzt habe, wenn
-Dialogue: 0,0:02:24.76,0:02:24.86,Cap,,0,0,0,,vergib mir. Vergib mir, wenn\N{\c&H0047D4FF\fscx118\fscy118}ich{\c&H00FFFFFF\fscx100\fscy100} dich verletzt habe, wenn
-Dialogue: 0,0:02:24.88,0:02:24.98,Cap,,0,0,0,,vergib mir. Vergib mir, wenn\Nich {\c&H0047D4FF\fscx118\fscy118}dich{\c&H00FFFFFF\fscx100\fscy100} verletzt habe, wenn
-Dialogue: 0,0:02:25.00,0:02:25.40,Cap,,0,0,0,,vergib mir. Vergib mir, wenn\Nich dich {\c&H0047D4FF\fscx118\fscy118}verletzt{\c&H00FFFFFF\fscx100\fscy100} habe, wenn
-Dialogue: 0,0:02:25.42,0:02:26.06,Cap,,0,0,0,,vergib mir. Vergib mir, wenn\Nich dich verletzt {\c&H0047D4FF\fscx118\fscy118}habe,{\c&H00FFFFFF\fscx100\fscy100} wenn
-Dialogue: 0,0:02:26.08,0:02:26.16,Cap,,0,0,0,,vergib mir. Vergib mir, wenn\Nich dich verletzt habe, {\c&H0047D4FF\fscx118\fscy118}wenn{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:02:26.18,0:02:26.28,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}ich{\c&H00FFFFFF\fscx100\fscy100} nicht da war für\Ndich und die Kinder.
-Dialogue: 0,0:02:26.30,0:02:26.40,Cap,,0,0,0,,ich {\c&H0047D4FF\fscx118\fscy118}nicht{\c&H00FFFFFF\fscx100\fscy100} da war für\Ndich und die Kinder.
-Dialogue: 0,0:02:26.42,0:02:26.62,Cap,,0,0,0,,ich nicht {\c&H0047D4FF\fscx118\fscy118}da{\c&H00FFFFFF\fscx100\fscy100} war für\Ndich und die Kinder.
-Dialogue: 0,0:02:26.64,0:02:26.78,Cap,,0,0,0,,ich nicht da {\c&H0047D4FF\fscx118\fscy118}war{\c&H00FFFFFF\fscx100\fscy100} für\Ndich und die Kinder.
-Dialogue: 0,0:02:26.80,0:02:27.00,Cap,,0,0,0,,ich nicht da war {\c&H0047D4FF\fscx118\fscy118}für{\c&H00FFFFFF\fscx100\fscy100}\Ndich und die Kinder.
-Dialogue: 0,0:02:27.02,0:02:27.18,Cap,,0,0,0,,ich nicht da war für\N{\c&H0047D4FF\fscx118\fscy118}dich{\c&H00FFFFFF\fscx100\fscy100} und die Kinder.
-Dialogue: 0,0:02:27.20,0:02:27.40,Cap,,0,0,0,,ich nicht da war für\Ndich {\c&H0047D4FF\fscx118\fscy118}und{\c&H00FFFFFF\fscx100\fscy100} die Kinder.
-Dialogue: 0,0:02:27.42,0:02:27.52,Cap,,0,0,0,,ich nicht da war für\Ndich und {\c&H0047D4FF\fscx118\fscy118}die{\c&H00FFFFFF\fscx100\fscy100} Kinder.
-Dialogue: 0,0:02:27.54,0:02:27.96,Cap,,0,0,0,,ich nicht da war für\Ndich und die {\c&H0047D4FF\fscx118\fscy118}Kinder.{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:02:28.36,0:02:28.62,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Dann{\c&H00FFFFFF\fscx100\fscy100} ritzt er sich die\NHandgelenke auf. Er setzt sich
-Dialogue: 0,0:02:28.64,0:02:28.98,Cap,,0,0,0,,Dann {\c&H0047D4FF\fscx118\fscy118}ritzt{\c&H00FFFFFF\fscx100\fscy100} er sich die\NHandgelenke auf. Er setzt sich
-Dialogue: 0,0:02:29.00,0:02:29.08,Cap,,0,0,0,,Dann ritzt {\c&H0047D4FF\fscx118\fscy118}er{\c&H00FFFFFF\fscx100\fscy100} sich die\NHandgelenke auf. Er setzt sich
-Dialogue: 0,0:02:29.10,0:02:29.18,Cap,,0,0,0,,Dann ritzt er {\c&H0047D4FF\fscx118\fscy118}sich{\c&H00FFFFFF\fscx100\fscy100} die\NHandgelenke auf. Er setzt sich
-Dialogue: 0,0:02:29.20,0:02:29.34,Cap,,0,0,0,,Dann ritzt er sich {\c&H0047D4FF\fscx118\fscy118}die{\c&H00FFFFFF\fscx100\fscy100}\NHandgelenke auf. Er setzt sich
-Dialogue: 0,0:02:29.36,0:02:29.92,Cap,,0,0,0,,Dann ritzt er sich die\N{\c&H0047D4FF\fscx118\fscy118}Handgelenke{\c&H00FFFFFF\fscx100\fscy100} auf. Er setzt sich
-Dialogue: 0,0:02:29.94,0:02:30.48,Cap,,0,0,0,,Dann ritzt er sich die\NHandgelenke {\c&H0047D4FF\fscx118\fscy118}auf.{\c&H00FFFFFF\fscx100\fscy100} Er setzt sich
-Dialogue: 0,0:02:30.50,0:02:30.62,Cap,,0,0,0,,Dann ritzt er sich die\NHandgelenke auf. {\c&H0047D4FF\fscx118\fscy118}Er{\c&H00FFFFFF\fscx100\fscy100} setzt sich
-Dialogue: 0,0:02:30.64,0:02:30.80,Cap,,0,0,0,,Dann ritzt er sich die\NHandgelenke auf. Er {\c&H0047D4FF\fscx118\fscy118}setzt{\c&H00FFFFFF\fscx100\fscy100} sich
-Dialogue: 0,0:02:30.82,0:02:31.06,Cap,,0,0,0,,Dann ritzt er sich die\NHandgelenke auf. Er setzt {\c&H0047D4FF\fscx118\fscy118}sich{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:02:31.08,0:02:31.70,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}hin.{\c&H00FFFFFF\fscx100\fscy100} Er hat keine Angst\Nvor dem Tod, nur vor
-Dialogue: 0,0:02:31.72,0:02:31.80,Cap,,0,0,0,,hin. {\c&H0047D4FF\fscx118\fscy118}Er{\c&H00FFFFFF\fscx100\fscy100} hat keine Angst\Nvor dem Tod, nur vor
-Dialogue: 0,0:02:31.82,0:02:31.94,Cap,,0,0,0,,hin. Er {\c&H0047D4FF\fscx118\fscy118}hat{\c&H00FFFFFF\fscx100\fscy100} keine Angst\Nvor dem Tod, nur vor
-Dialogue: 0,0:02:31.96,0:02:32.14,Cap,,0,0,0,,hin. Er hat {\c&H0047D4FF\fscx118\fscy118}keine{\c&H00FFFFFF\fscx100\fscy100} Angst\Nvor dem Tod, nur vor
-Dialogue: 0,0:02:32.16,0:02:32.42,Cap,,0,0,0,,hin. Er hat keine {\c&H0047D4FF\fscx118\fscy118}Angst{\c&H00FFFFFF\fscx100\fscy100}\Nvor dem Tod, nur vor
-Dialogue: 0,0:02:32.44,0:02:32.60,Cap,,0,0,0,,hin. Er hat keine Angst\N{\c&H0047D4FF\fscx118\fscy118}vor{\c&H00FFFFFF\fscx100\fscy100} dem Tod, nur vor
-Dialogue: 0,0:02:32.62,0:02:32.70,Cap,,0,0,0,,hin. Er hat keine Angst\Nvor {\c&H0047D4FF\fscx118\fscy118}dem{\c&H00FFFFFF\fscx100\fscy100} Tod, nur vor
-Dialogue: 0,0:02:32.72,0:02:33.34,Cap,,0,0,0,,hin. Er hat keine Angst\Nvor dem {\c&H0047D4FF\fscx118\fscy118}Tod,{\c&H00FFFFFF\fscx100\fscy100} nur vor
-Dialogue: 0,0:02:33.36,0:02:33.46,Cap,,0,0,0,,hin. Er hat keine Angst\Nvor dem Tod, {\c&H0047D4FF\fscx118\fscy118}nur{\c&H00FFFFFF\fscx100\fscy100} vor
-Dialogue: 0,0:02:33.48,0:02:33.60,Cap,,0,0,0,,hin. Er hat keine Angst\Nvor dem Tod, nur {\c&H0047D4FF\fscx118\fscy118}vor{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:02:33.62,0:02:33.72,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}dem{\c&H00FFFFFF\fscx100\fscy100} Neiden.
-Dialogue: 0,0:02:33.74,0:02:34.26,Cap,,0,0,0,,dem {\c&H0047D4FF\fscx118\fscy118}Neiden.{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:02:34.83,0:02:34.99,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Er{\c&H00FFFFFF\fscx100\fscy100} wacht auf. Das war\Nnicht geplant. Der Sand hatte
-Dialogue: 0,0:02:35.01,0:02:35.25,Cap,,0,0,0,,Er {\c&H0047D4FF\fscx118\fscy118}wacht{\c&H00FFFFFF\fscx100\fscy100} auf. Das war\Nnicht geplant. Der Sand hatte
-Dialogue: 0,0:02:35.27,0:02:35.95,Cap,,0,0,0,,Er wacht {\c&H0047D4FF\fscx118\fscy118}auf.{\c&H00FFFFFF\fscx100\fscy100} Das war\Nnicht geplant. Der Sand hatte
-Dialogue: 0,0:02:35.97,0:02:36.09,Cap,,0,0,0,,Er wacht auf. {\c&H0047D4FF\fscx118\fscy118}Das{\c&H00FFFFFF\fscx100\fscy100} war\Nnicht geplant. Der Sand hatte
-Dialogue: 0,0:02:36.11,0:02:36.27,Cap,,0,0,0,,Er wacht auf. Das {\c&H0047D4FF\fscx118\fscy118}war{\c&H00FFFFFF\fscx100\fscy100}\Nnicht geplant. Der Sand hatte
-Dialogue: 0,0:02:36.29,0:02:36.41,Cap,,0,0,0,,Er wacht auf. Das war\N{\c&H0047D4FF\fscx118\fscy118}nicht{\c&H00FFFFFF\fscx100\fscy100} geplant. Der Sand hatte
-Dialogue: 0,0:02:36.43,0:02:37.21,Cap,,0,0,0,,Er wacht auf. Das war\Nnicht {\c&H0047D4FF\fscx118\fscy118}geplant.{\c&H00FFFFFF\fscx100\fscy100} Der Sand hatte
-Dialogue: 0,0:02:37.23,0:02:37.37,Cap,,0,0,0,,Er wacht auf. Das war\Nnicht geplant. {\c&H0047D4FF\fscx118\fscy118}Der{\c&H00FFFFFF\fscx100\fscy100} Sand hatte
-Dialogue: 0,0:02:37.39,0:02:37.61,Cap,,0,0,0,,Er wacht auf. Das war\Nnicht geplant. Der {\c&H0047D4FF\fscx118\fscy118}Sand{\c&H00FFFFFF\fscx100\fscy100} hatte
-Dialogue: 0,0:02:37.63,0:02:37.83,Cap,,0,0,0,,Er wacht auf. Das war\Nnicht geplant. Der Sand {\c&H0047D4FF\fscx118\fscy118}hatte{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:02:37.85,0:02:37.97,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}die{\c&H00FFFFFF\fscx100\fscy100} Wunden verschlossen. Er\Ndenkt, gleich ist es noch\Nnicht
-Dialogue: 0,0:02:37.99,0:02:38.21,Cap,,0,0,0,,die {\c&H0047D4FF\fscx118\fscy118}Wunden{\c&H00FFFFFF\fscx100\fscy100} verschlossen. Er\Ndenkt, gleich ist es noch\Nnicht
-Dialogue: 0,0:02:38.23,0:02:39.17,Cap,,0,0,0,,die Wunden {\c&H0047D4FF\fscx118\fscy118}verschlossen.{\c&H00FFFFFF\fscx100\fscy100} Er\Ndenkt, gleich ist es noch\Nnicht
-Dialogue: 0,0:02:39.19,0:02:39.27,Cap,,0,0,0,,die Wunden verschlossen. {\c&H0047D4FF\fscx118\fscy118}Er{\c&H00FFFFFF\fscx100\fscy100}\Ndenkt, gleich ist es noch\Nnicht
-Dialogue: 0,0:02:39.29,0:02:39.77,Cap,,0,0,0,,die Wunden verschlossen. Er\N{\c&H0047D4FF\fscx118\fscy118}denkt,{\c&H00FFFFFF\fscx100\fscy100} gleich ist es noch\Nnicht
-Dialogue: 0,0:02:39.79,0:02:39.99,Cap,,0,0,0,,die Wunden verschlossen. Er\Ndenkt, {\c&H0047D4FF\fscx118\fscy118}gleich{\c&H00FFFFFF\fscx100\fscy100} ist es noch\Nnicht
-Dialogue: 0,0:02:40.01,0:02:40.25,Cap,,0,0,0,,die Wunden verschlossen. Er\Ndenkt, gleich {\c&H0047D4FF\fscx118\fscy118}ist{\c&H00FFFFFF\fscx100\fscy100} es noch\Nnicht
-Dialogue: 0,0:02:40.27,0:02:40.37,Cap,,0,0,0,,die Wunden verschlossen. Er\Ndenkt, gleich ist {\c&H0047D4FF\fscx118\fscy118}es{\c&H00FFFFFF\fscx100\fscy100} noch\Nnicht
-Dialogue: 0,0:02:40.39,0:02:40.51,Cap,,0,0,0,,die Wunden verschlossen. Er\Ndenkt, gleich ist es {\c&H0047D4FF\fscx118\fscy118}noch{\c&H00FFFFFF\fscx100\fscy100}\Nnicht
-Dialogue: 0,0:02:40.53,0:02:40.65,Cap,,0,0,0,,die Wunden verschlossen. Er\Ndenkt, gleich ist es noch\N{\c&H0047D4FF\fscx118\fscy118}nicht{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:02:40.67,0:02:40.87,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}meine{\c&H00FFFFFF\fscx100\fscy100} Zeit. Er steht auf.
-Dialogue: 0,0:02:40.89,0:02:41.67,Cap,,0,0,0,,meine {\c&H0047D4FF\fscx118\fscy118}Zeit.{\c&H00FFFFFF\fscx100\fscy100} Er steht auf.
-Dialogue: 0,0:02:41.69,0:02:41.81,Cap,,0,0,0,,meine Zeit. {\c&H0047D4FF\fscx118\fscy118}Er{\c&H00FFFFFF\fscx100\fscy100} steht auf.
-Dialogue: 0,0:02:41.83,0:02:41.99,Cap,,0,0,0,,meine Zeit. Er {\c&H0047D4FF\fscx118\fscy118}steht{\c&H00FFFFFF\fscx100\fscy100} auf.
-Dialogue: 0,0:02:42.01,0:02:42.51,Cap,,0,0,0,,meine Zeit. Er steht {\c&H0047D4FF\fscx118\fscy118}auf.{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:02:42.91,0:02:43.03,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Die{\c&H00FFFFFF\fscx100\fscy100} Uhr klappert locker am\NHandgelenk. Er hatte sie auf
-Dialogue: 0,0:02:43.05,0:02:43.25,Cap,,0,0,0,,Die {\c&H0047D4FF\fscx118\fscy118}Uhr{\c&H00FFFFFF\fscx100\fscy100} klappert locker am\NHandgelenk. Er hatte sie auf
-Dialogue: 0,0:02:43.27,0:02:43.69,Cap,,0,0,0,,Die Uhr {\c&H0047D4FF\fscx118\fscy118}klappert{\c&H00FFFFFF\fscx100\fscy100} locker am\NHandgelenk. Er hatte sie auf
-Dialogue: 0,0:02:43.71,0:02:43.91,Cap,,0,0,0,,Die Uhr klappert {\c&H0047D4FF\fscx118\fscy118}locker{\c&H00FFFFFF\fscx100\fscy100} am\NHandgelenk. Er hatte sie auf
-Dialogue: 0,0:02:43.93,0:02:44.15,Cap,,0,0,0,,Die Uhr klappert locker {\c&H0047D4FF\fscx118\fscy118}am{\c&H00FFFFFF\fscx100\fscy100}\NHandgelenk. Er hatte sie auf
-Dialogue: 0,0:02:44.17,0:02:44.95,Cap,,0,0,0,,Die Uhr klappert locker am\N{\c&H0047D4FF\fscx118\fscy118}Handgelenk.{\c&H00FFFFFF\fscx100\fscy100} Er hatte sie auf
-Dialogue: 0,0:02:44.97,0:02:45.05,Cap,,0,0,0,,Die Uhr klappert locker am\NHandgelenk. {\c&H0047D4FF\fscx118\fscy118}Er{\c&H00FFFFFF\fscx100\fscy100} hatte sie auf
-Dialogue: 0,0:02:45.07,0:02:45.23,Cap,,0,0,0,,Die Uhr klappert locker am\NHandgelenk. Er {\c&H0047D4FF\fscx118\fscy118}hatte{\c&H00FFFFFF\fscx100\fscy100} sie auf
-Dialogue: 0,0:02:45.25,0:02:45.37,Cap,,0,0,0,,Die Uhr klappert locker am\NHandgelenk. Er hatte {\c&H0047D4FF\fscx118\fscy118}sie{\c&H00FFFFFF\fscx100\fscy100} auf
-Dialogue: 0,0:02:45.39,0:02:45.53,Cap,,0,0,0,,Die Uhr klappert locker am\NHandgelenk. Er hatte sie {\c&H0047D4FF\fscx118\fscy118}auf{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:02:45.55,0:02:45.97,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Anschlag{\c&H00FFFFFF\fscx100\fscy100} gestellt.
-Dialogue: 0,0:02:45.99,0:02:46.49,Cap,,0,0,0,,Anschlag {\c&H0047D4FF\fscx118\fscy118}gestellt.{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:02:47.05,0:02:47.17,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Die{\c&H00FFFFFF\fscx100\fscy100} Knochen seiner Hände\Nzeichnen sich durch die Haut.\NEr
-Dialogue: 0,0:02:47.19,0:02:47.55,Cap,,0,0,0,,Die {\c&H0047D4FF\fscx118\fscy118}Knochen{\c&H00FFFFFF\fscx100\fscy100} seiner Hände\Nzeichnen sich durch die Haut.\NEr
-Dialogue: 0,0:02:47.57,0:02:47.75,Cap,,0,0,0,,Die Knochen {\c&H0047D4FF\fscx118\fscy118}seiner{\c&H00FFFFFF\fscx100\fscy100} Hände\Nzeichnen sich durch die Haut.\NEr
-Dialogue: 0,0:02:47.77,0:02:48.01,Cap,,0,0,0,,Die Knochen seiner {\c&H0047D4FF\fscx118\fscy118}Hände{\c&H00FFFFFF\fscx100\fscy100}\Nzeichnen sich durch die Haut.\NEr
-Dialogue: 0,0:02:48.03,0:02:48.47,Cap,,0,0,0,,Die Knochen seiner Hände\N{\c&H0047D4FF\fscx118\fscy118}zeichnen{\c&H00FFFFFF\fscx100\fscy100} sich durch die Haut.\NEr
-Dialogue: 0,0:02:48.49,0:02:48.65,Cap,,0,0,0,,Die Knochen seiner Hände\Nzeichnen {\c&H0047D4FF\fscx118\fscy118}sich{\c&H00FFFFFF\fscx100\fscy100} durch die Haut.\NEr
-Dialogue: 0,0:02:48.67,0:02:48.81,Cap,,0,0,0,,Die Knochen seiner Hände\Nzeichnen sich {\c&H0047D4FF\fscx118\fscy118}durch{\c&H00FFFFFF\fscx100\fscy100} die Haut.\NEr
-Dialogue: 0,0:02:48.83,0:02:48.97,Cap,,0,0,0,,Die Knochen seiner Hände\Nzeichnen sich durch {\c&H0047D4FF\fscx118\fscy118}die{\c&H00FFFFFF\fscx100\fscy100} Haut.\NEr
-Dialogue: 0,0:02:48.99,0:02:49.61,Cap,,0,0,0,,Die Knochen seiner Hände\Nzeichnen sich durch die {\c&H0047D4FF\fscx118\fscy118}Haut.{\c&H00FFFFFF\fscx100\fscy100}\NEr
-Dialogue: 0,0:02:49.63,0:02:49.71,Cap,,0,0,0,,Die Knochen seiner Hände\Nzeichnen sich durch die Haut.\N{\c&H0047D4FF\fscx118\fscy118}Er{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:02:49.73,0:02:50.07,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}folgt{\c&H00FFFFFF\fscx100\fscy100} dem Rat eines\NTuareknomaden, die in Richtung\Nder Wolken
-Dialogue: 0,0:02:50.09,0:02:50.19,Cap,,0,0,0,,folgt {\c&H0047D4FF\fscx118\fscy118}dem{\c&H00FFFFFF\fscx100\fscy100} Rat eines\NTuareknomaden, die in Richtung\Nder Wolken
-Dialogue: 0,0:02:50.21,0:02:50.41,Cap,,0,0,0,,folgt dem {\c&H0047D4FF\fscx118\fscy118}Rat{\c&H00FFFFFF\fscx100\fscy100} eines\NTuareknomaden, die in Richtung\Nder Wolken
-Dialogue: 0,0:02:50.43,0:02:50.65,Cap,,0,0,0,,folgt dem Rat {\c&H0047D4FF\fscx118\fscy118}eines{\c&H00FFFFFF\fscx100\fscy100}\NTuareknomaden, die in Richtung\Nder Wolken
-Dialogue: 0,0:02:50.67,0:02:52.01,Cap,,0,0,0,,folgt dem Rat eines\N{\c&H0047D4FF\fscx118\fscy118}Tuareknomaden,{\c&H00FFFFFF\fscx100\fscy100} die in Richtung\Nder Wolken
-Dialogue: 0,0:02:52.03,0:02:52.13,Cap,,0,0,0,,folgt dem Rat eines\NTuareknomaden, {\c&H0047D4FF\fscx118\fscy118}die{\c&H00FFFFFF\fscx100\fscy100} in Richtung\Nder Wolken
-Dialogue: 0,0:02:52.15,0:02:52.27,Cap,,0,0,0,,folgt dem Rat eines\NTuareknomaden, die {\c&H0047D4FF\fscx118\fscy118}in{\c&H00FFFFFF\fscx100\fscy100} Richtung\Nder Wolken
-Dialogue: 0,0:02:52.29,0:02:52.57,Cap,,0,0,0,,folgt dem Rat eines\NTuareknomaden, die in {\c&H0047D4FF\fscx118\fscy118}Richtung{\c&H00FFFFFF\fscx100\fscy100}\Nder Wolken
-Dialogue: 0,0:02:52.59,0:02:52.81,Cap,,0,0,0,,folgt dem Rat eines\NTuareknomaden, die in Richtung\N{\c&H0047D4FF\fscx118\fscy118}der{\c&H00FFFFFF\fscx100\fscy100} Wolken
-Dialogue: 0,0:02:52.83,0:02:53.17,Cap,,0,0,0,,folgt dem Rat eines\NTuareknomaden, die in Richtung\Nder {\c&H0047D4FF\fscx118\fscy118}Wolken{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:02:53.19,0:02:53.29,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}im{\c&H00FFFFFF\fscx100\fscy100} Morgengrauen.
-Dialogue: 0,0:02:53.31,0:02:54.03,Cap,,0,0,0,,im {\c&H0047D4FF\fscx118\fscy118}Morgengrauen.{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:02:54.69,0:02:55.01,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Tag{\c&H00FFFFFF\fscx100\fscy100} 9 – Ziegen –\NZiegen bedeuten Menschen. Er\Nfolgt
-Dialogue: 0,0:02:55.03,0:02:55.31,Cap,,0,0,0,,Tag {\c&H0047D4FF\fscx118\fscy118}9{\c&H00FFFFFF\fscx100\fscy100} – Ziegen –\NZiegen bedeuten Menschen. Er\Nfolgt
-Dialogue: 0,0:02:55.33,0:02:55.93,Cap,,0,0,0,,Tag 9 {\c&H0047D4FF\fscx118\fscy118}–{\c&H00FFFFFF\fscx100\fscy100} Ziegen –\NZiegen bedeuten Menschen. Er\Nfolgt
-Dialogue: 0,0:02:55.95,0:02:56.17,Cap,,0,0,0,,Tag 9 – {\c&H0047D4FF\fscx118\fscy118}Ziegen{\c&H00FFFFFF\fscx100\fscy100} –\NZiegen bedeuten Menschen. Er\Nfolgt
-Dialogue: 0,0:02:56.19,0:02:56.63,Cap,,0,0,0,,Tag 9 – Ziegen {\c&H0047D4FF\fscx118\fscy118}–{\c&H00FFFFFF\fscx100\fscy100}\NZiegen bedeuten Menschen. Er\Nfolgt
-Dialogue: 0,0:02:56.65,0:02:57.03,Cap,,0,0,0,,Tag 9 – Ziegen –\N{\c&H0047D4FF\fscx118\fscy118}Ziegen{\c&H00FFFFFF\fscx100\fscy100} bedeuten Menschen. Er\Nfolgt
-Dialogue: 0,0:02:57.05,0:02:57.41,Cap,,0,0,0,,Tag 9 – Ziegen –\NZiegen {\c&H0047D4FF\fscx118\fscy118}bedeuten{\c&H00FFFFFF\fscx100\fscy100} Menschen. Er\Nfolgt
-Dialogue: 0,0:02:57.43,0:02:58.21,Cap,,0,0,0,,Tag 9 – Ziegen –\NZiegen bedeuten {\c&H0047D4FF\fscx118\fscy118}Menschen.{\c&H00FFFFFF\fscx100\fscy100} Er\Nfolgt
-Dialogue: 0,0:02:58.23,0:02:58.35,Cap,,0,0,0,,Tag 9 – Ziegen –\NZiegen bedeuten Menschen. {\c&H0047D4FF\fscx118\fscy118}Er{\c&H00FFFFFF\fscx100\fscy100}\Nfolgt
-Dialogue: 0,0:02:58.37,0:02:58.73,Cap,,0,0,0,,Tag 9 – Ziegen –\NZiegen bedeuten Menschen. Er\N{\c&H0047D4FF\fscx118\fscy118}folgt{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:02:58.75,0:02:58.95,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}ihnen{\c&H00FFFFFF\fscx100\fscy100} und sieht ein kleines\NMädchen, das wegläuft. Dann\Nzählt
-Dialogue: 0,0:02:58.97,0:02:59.53,Cap,,0,0,0,,ihnen {\c&H0047D4FF\fscx118\fscy118}und{\c&H00FFFFFF\fscx100\fscy100} sieht ein kleines\NMädchen, das wegläuft. Dann\Nzählt
-Dialogue: 0,0:02:59.55,0:02:59.67,Cap,,0,0,0,,ihnen und {\c&H0047D4FF\fscx118\fscy118}sieht{\c&H00FFFFFF\fscx100\fscy100} ein kleines\NMädchen, das wegläuft. Dann\Nzählt
-Dialogue: 0,0:02:59.69,0:02:59.85,Cap,,0,0,0,,ihnen und sieht {\c&H0047D4FF\fscx118\fscy118}ein{\c&H00FFFFFF\fscx100\fscy100} kleines\NMädchen, das wegläuft. Dann\Nzählt
-Dialogue: 0,0:02:59.87,0:03:00.15,Cap,,0,0,0,,ihnen und sieht ein {\c&H0047D4FF\fscx118\fscy118}kleines{\c&H00FFFFFF\fscx100\fscy100}\NMädchen, das wegläuft. Dann\Nzählt
-Dialogue: 0,0:03:00.17,0:03:00.71,Cap,,0,0,0,,ihnen und sieht ein kleines\N{\c&H0047D4FF\fscx118\fscy118}Mädchen,{\c&H00FFFFFF\fscx100\fscy100} das wegläuft. Dann\Nzählt
-Dialogue: 0,0:03:00.73,0:03:00.81,Cap,,0,0,0,,ihnen und sieht ein kleines\NMädchen, {\c&H0047D4FF\fscx118\fscy118}das{\c&H00FFFFFF\fscx100\fscy100} wegläuft. Dann\Nzählt
-Dialogue: 0,0:03:00.83,0:03:01.83,Cap,,0,0,0,,ihnen und sieht ein kleines\NMädchen, das {\c&H0047D4FF\fscx118\fscy118}wegläuft.{\c&H00FFFFFF\fscx100\fscy100} Dann\Nzählt
-Dialogue: 0,0:03:01.85,0:03:01.97,Cap,,0,0,0,,ihnen und sieht ein kleines\NMädchen, das wegläuft. {\c&H0047D4FF\fscx118\fscy118}Dann{\c&H00FFFFFF\fscx100\fscy100}\Nzählt
-Dialogue: 0,0:03:01.99,0:03:02.37,Cap,,0,0,0,,ihnen und sieht ein kleines\NMädchen, das wegläuft. Dann\N{\c&H0047D4FF\fscx118\fscy118}zählt{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:03:02.39,0:03:03.05,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}er.{\c&H00FFFFFF\fscx100\fscy100} Raun kommen heraus, geben\Nihnen Ziegenmilch. Er kann sie
-Dialogue: 0,0:03:03.07,0:03:03.45,Cap,,0,0,0,,er. {\c&H0047D4FF\fscx118\fscy118}Raun{\c&H00FFFFFF\fscx100\fscy100} kommen heraus, geben\Nihnen Ziegenmilch. Er kann sie
-Dialogue: 0,0:03:03.47,0:03:03.69,Cap,,0,0,0,,er. Raun {\c&H0047D4FF\fscx118\fscy118}kommen{\c&H00FFFFFF\fscx100\fscy100} heraus, geben\Nihnen Ziegenmilch. Er kann sie
-Dialogue: 0,0:03:03.71,0:03:04.55,Cap,,0,0,0,,er. Raun kommen {\c&H0047D4FF\fscx118\fscy118}heraus,{\c&H00FFFFFF\fscx100\fscy100} geben\Nihnen Ziegenmilch. Er kann sie
-Dialogue: 0,0:03:04.57,0:03:04.69,Cap,,0,0,0,,er. Raun kommen heraus, {\c&H0047D4FF\fscx118\fscy118}geben{\c&H00FFFFFF\fscx100\fscy100}\Nihnen Ziegenmilch. Er kann sie
-Dialogue: 0,0:03:04.71,0:03:04.89,Cap,,0,0,0,,er. Raun kommen heraus, geben\N{\c&H0047D4FF\fscx118\fscy118}ihnen{\c&H00FFFFFF\fscx100\fscy100} Ziegenmilch. Er kann sie
-Dialogue: 0,0:03:04.91,0:03:05.95,Cap,,0,0,0,,er. Raun kommen heraus, geben\Nihnen {\c&H0047D4FF\fscx118\fscy118}Ziegenmilch.{\c&H00FFFFFF\fscx100\fscy100} Er kann sie
-Dialogue: 0,0:03:05.97,0:03:06.05,Cap,,0,0,0,,er. Raun kommen heraus, geben\Nihnen Ziegenmilch. {\c&H0047D4FF\fscx118\fscy118}Er{\c&H00FFFFFF\fscx100\fscy100} kann sie
-Dialogue: 0,0:03:06.07,0:03:06.23,Cap,,0,0,0,,er. Raun kommen heraus, geben\Nihnen Ziegenmilch. Er {\c&H0047D4FF\fscx118\fscy118}kann{\c&H00FFFFFF\fscx100\fscy100} sie
-Dialogue: 0,0:03:06.25,0:03:06.37,Cap,,0,0,0,,er. Raun kommen heraus, geben\Nihnen Ziegenmilch. Er kann {\c&H0047D4FF\fscx118\fscy118}sie{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:03:06.39,0:03:06.53,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}nicht{\c&H00FFFFFF\fscx100\fscy100} halten. Später kommt ein\NJeb. Zwei Soldaten drücken ihn
-Dialogue: 0,0:03:06.55,0:03:07.41,Cap,,0,0,0,,nicht {\c&H0047D4FF\fscx118\fscy118}halten.{\c&H00FFFFFF\fscx100\fscy100} Später kommt ein\NJeb. Zwei Soldaten drücken ihn
-Dialogue: 0,0:03:07.43,0:03:07.79,Cap,,0,0,0,,nicht halten. {\c&H0047D4FF\fscx118\fscy118}Später{\c&H00FFFFFF\fscx100\fscy100} kommt ein\NJeb. Zwei Soldaten drücken ihn
-Dialogue: 0,0:03:07.81,0:03:08.03,Cap,,0,0,0,,nicht halten. Später {\c&H0047D4FF\fscx118\fscy118}kommt{\c&H00FFFFFF\fscx100\fscy100} ein\NJeb. Zwei Soldaten drücken ihn
-Dialogue: 0,0:03:08.05,0:03:08.25,Cap,,0,0,0,,nicht halten. Später kommt {\c&H0047D4FF\fscx118\fscy118}ein{\c&H00FFFFFF\fscx100\fscy100}\NJeb. Zwei Soldaten drücken ihn
-Dialogue: 0,0:03:08.27,0:03:08.87,Cap,,0,0,0,,nicht halten. Später kommt ein\N{\c&H0047D4FF\fscx118\fscy118}Jeb.{\c&H00FFFFFF\fscx100\fscy100} Zwei Soldaten drücken ihn
-Dialogue: 0,0:03:08.89,0:03:09.11,Cap,,0,0,0,,nicht halten. Später kommt ein\NJeb. {\c&H0047D4FF\fscx118\fscy118}Zwei{\c&H00FFFFFF\fscx100\fscy100} Soldaten drücken ihn
-Dialogue: 0,0:03:09.13,0:03:09.65,Cap,,0,0,0,,nicht halten. Später kommt ein\NJeb. Zwei {\c&H0047D4FF\fscx118\fscy118}Soldaten{\c&H00FFFFFF\fscx100\fscy100} drücken ihn
-Dialogue: 0,0:03:09.67,0:03:09.99,Cap,,0,0,0,,nicht halten. Später kommt ein\NJeb. Zwei Soldaten {\c&H0047D4FF\fscx118\fscy118}drücken{\c&H00FFFFFF\fscx100\fscy100} ihn
-Dialogue: 0,0:03:10.01,0:03:10.21,Cap,,0,0,0,,nicht halten. Später kommt ein\NJeb. Zwei Soldaten drücken {\c&H0047D4FF\fscx118\fscy118}ihn{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:03:10.23,0:03:10.41,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}auf{\c&H00FFFFFF\fscx100\fscy100} den Boden, binden ihn\Ndie Augen.
-Dialogue: 0,0:03:10.43,0:03:10.55,Cap,,0,0,0,,auf {\c&H0047D4FF\fscx118\fscy118}den{\c&H00FFFFFF\fscx100\fscy100} Boden, binden ihn\Ndie Augen.
-Dialogue: 0,0:03:10.57,0:03:11.15,Cap,,0,0,0,,auf den {\c&H0047D4FF\fscx118\fscy118}Boden,{\c&H00FFFFFF\fscx100\fscy100} binden ihn\Ndie Augen.
-Dialogue: 0,0:03:11.17,0:03:11.29,Cap,,0,0,0,,auf den Boden, {\c&H0047D4FF\fscx118\fscy118}binden{\c&H00FFFFFF\fscx100\fscy100} ihn\Ndie Augen.
-Dialogue: 0,0:03:11.31,0:03:11.47,Cap,,0,0,0,,auf den Boden, binden {\c&H0047D4FF\fscx118\fscy118}ihn{\c&H00FFFFFF\fscx100\fscy100}\Ndie Augen.
-Dialogue: 0,0:03:11.49,0:03:11.61,Cap,,0,0,0,,auf den Boden, binden ihn\N{\c&H0047D4FF\fscx118\fscy118}die{\c&H00FFFFFF\fscx100\fscy100} Augen.
-Dialogue: 0,0:03:11.63,0:03:12.07,Cap,,0,0,0,,auf den Boden, binden ihn\Ndie {\c&H0047D4FF\fscx118\fscy118}Augen.{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:03:12.47,0:03:12.63,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Das{\c&H00FFFFFF\fscx100\fscy100} ist sein erster echter\NMoment der Angst. In 10
-Dialogue: 0,0:03:12.65,0:03:12.81,Cap,,0,0,0,,Das {\c&H0047D4FF\fscx118\fscy118}ist{\c&H00FFFFFF\fscx100\fscy100} sein erster echter\NMoment der Angst. In 10
-Dialogue: 0,0:03:12.83,0:03:13.03,Cap,,0,0,0,,Das ist {\c&H0047D4FF\fscx118\fscy118}sein{\c&H00FFFFFF\fscx100\fscy100} erster echter\NMoment der Angst. In 10
-Dialogue: 0,0:03:13.05,0:03:13.35,Cap,,0,0,0,,Das ist sein {\c&H0047D4FF\fscx118\fscy118}erster{\c&H00FFFFFF\fscx100\fscy100} echter\NMoment der Angst. In 10
-Dialogue: 0,0:03:13.37,0:03:13.61,Cap,,0,0,0,,Das ist sein erster {\c&H0047D4FF\fscx118\fscy118}echter{\c&H00FFFFFF\fscx100\fscy100}\NMoment der Angst. In 10
-Dialogue: 0,0:03:13.63,0:03:13.93,Cap,,0,0,0,,Das ist sein erster echter\N{\c&H0047D4FF\fscx118\fscy118}Moment{\c&H00FFFFFF\fscx100\fscy100} der Angst. In 10
-Dialogue: 0,0:03:13.95,0:03:14.15,Cap,,0,0,0,,Das ist sein erster echter\NMoment {\c&H0047D4FF\fscx118\fscy118}der{\c&H00FFFFFF\fscx100\fscy100} Angst. In 10
-Dialogue: 0,0:03:14.17,0:03:14.75,Cap,,0,0,0,,Das ist sein erster echter\NMoment der {\c&H0047D4FF\fscx118\fscy118}Angst.{\c&H00FFFFFF\fscx100\fscy100} In 10
-Dialogue: 0,0:03:14.77,0:03:14.87,Cap,,0,0,0,,Das ist sein erster echter\NMoment der Angst. {\c&H0047D4FF\fscx118\fscy118}In{\c&H00FFFFFF\fscx100\fscy100} 10
-Dialogue: 0,0:03:14.89,0:03:15.13,Cap,,0,0,0,,Das ist sein erster echter\NMoment der Angst. In {\c&H0047D4FF\fscx118\fscy118}10{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:03:15.15,0:03:15.51,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Tagen{\c&H00FFFFFF\fscx100\fscy100} hat er 291 Kilometer\Nzurückgelegt nach Algerien.\NZwei
-Dialogue: 0,0:03:15.53,0:03:15.69,Cap,,0,0,0,,Tagen {\c&H0047D4FF\fscx118\fscy118}hat{\c&H00FFFFFF\fscx100\fscy100} er 291 Kilometer\Nzurückgelegt nach Algerien.\NZwei
-Dialogue: 0,0:03:15.71,0:03:15.79,Cap,,0,0,0,,Tagen hat {\c&H0047D4FF\fscx118\fscy118}er{\c&H00FFFFFF\fscx100\fscy100} 291 Kilometer\Nzurückgelegt nach Algerien.\NZwei
-Dialogue: 0,0:03:15.81,0:03:17.39,Cap,,0,0,0,,Tagen hat er {\c&H0047D4FF\fscx118\fscy118}291{\c&H00FFFFFF\fscx100\fscy100} Kilometer\Nzurückgelegt nach Algerien.\NZwei
-Dialogue: 0,0:03:17.41,0:03:17.87,Cap,,0,0,0,,Tagen hat er 291 {\c&H0047D4FF\fscx118\fscy118}Kilometer{\c&H00FFFFFF\fscx100\fscy100}\Nzurückgelegt nach Algerien.\NZwei
-Dialogue: 0,0:03:17.89,0:03:18.61,Cap,,0,0,0,,Tagen hat er 291 Kilometer\N{\c&H0047D4FF\fscx118\fscy118}zurückgelegt{\c&H00FFFFFF\fscx100\fscy100} nach Algerien.\NZwei
-Dialogue: 0,0:03:18.63,0:03:19.05,Cap,,0,0,0,,Tagen hat er 291 Kilometer\Nzurückgelegt {\c&H0047D4FF\fscx118\fscy118}nach{\c&H00FFFFFF\fscx100\fscy100} Algerien.\NZwei
-Dialogue: 0,0:03:19.07,0:03:19.59,Cap,,0,0,0,,Tagen hat er 291 Kilometer\Nzurückgelegt nach {\c&H0047D4FF\fscx118\fscy118}Algerien.{\c&H00FFFFFF\fscx100\fscy100}\NZwei
-Dialogue: 0,0:03:19.73,0:03:19.93,Cap,,0,0,0,,Soldaten drücken ihn auf den\N{\c&H0047D4FF\fscx118\fscy118}Boden.{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:03:20.33,0:03:20.77,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Kindsjahr{\c&H00FFFFFF\fscx100\fscy100} hörte seinen Namen im\NRadio in der\NVergangenheitsform.
-Dialogue: 0,0:03:20.79,0:03:21.05,Cap,,0,0,0,,Kindsjahr {\c&H0047D4FF\fscx118\fscy118}hörte{\c&H00FFFFFF\fscx100\fscy100} seinen Namen im\NRadio in der\NVergangenheitsform.
-Dialogue: 0,0:03:21.07,0:03:21.23,Cap,,0,0,0,,Kindsjahr hörte {\c&H0047D4FF\fscx118\fscy118}seinen{\c&H00FFFFFF\fscx100\fscy100} Namen im\NRadio in der\NVergangenheitsform.
-Dialogue: 0,0:03:21.25,0:03:21.51,Cap,,0,0,0,,Kindsjahr hörte seinen {\c&H0047D4FF\fscx118\fscy118}Namen{\c&H00FFFFFF\fscx100\fscy100} im\NRadio in der\NVergangenheitsform.
-Dialogue: 0,0:03:21.53,0:03:21.65,Cap,,0,0,0,,Kindsjahr hörte seinen Namen {\c&H0047D4FF\fscx118\fscy118}im{\c&H00FFFFFF\fscx100\fscy100}\NRadio in der\NVergangenheitsform.
-Dialogue: 0,0:03:21.67,0:03:22.11,Cap,,0,0,0,,Kindsjahr hörte seinen Namen im\N{\c&H0047D4FF\fscx118\fscy118}Radio{\c&H00FFFFFF\fscx100\fscy100} in der\NVergangenheitsform.
-Dialogue: 0,0:03:22.13,0:03:22.51,Cap,,0,0,0,,Kindsjahr hörte seinen Namen im\NRadio {\c&H0047D4FF\fscx118\fscy118}in{\c&H00FFFFFF\fscx100\fscy100} der\NVergangenheitsform.
-Dialogue: 0,0:03:22.53,0:03:22.61,Cap,,0,0,0,,Kindsjahr hörte seinen Namen im\NRadio in {\c&H0047D4FF\fscx118\fscy118}der{\c&H00FFFFFF\fscx100\fscy100}\NVergangenheitsform.
-Dialogue: 0,0:03:22.63,0:03:23.69,Cap,,0,0,0,,Kindsjahr hörte seinen Namen im\NRadio in der\N{\c&H0047D4FF\fscx118\fscy118}Vergangenheitsform.{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:03:23.95,0:03:24.09,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Als{\c&H00FFFFFF\fscx100\fscy100} das Telefon klingelte,\Nfragte ihre Mutter, Mauro, bist\Ndu
-Dialogue: 0,0:03:24.11,0:03:24.29,Cap,,0,0,0,,Als {\c&H0047D4FF\fscx118\fscy118}das{\c&H00FFFFFF\fscx100\fscy100} Telefon klingelte,\Nfragte ihre Mutter, Mauro, bist\Ndu
-Dialogue: 0,0:03:24.31,0:03:24.69,Cap,,0,0,0,,Als das {\c&H0047D4FF\fscx118\fscy118}Telefon{\c&H00FFFFFF\fscx100\fscy100} klingelte,\Nfragte ihre Mutter, Mauro, bist\Ndu
-Dialogue: 0,0:03:24.71,0:03:25.43,Cap,,0,0,0,,Als das Telefon {\c&H0047D4FF\fscx118\fscy118}klingelte,{\c&H00FFFFFF\fscx100\fscy100}\Nfragte ihre Mutter, Mauro, bist\Ndu
-Dialogue: 0,0:03:25.45,0:03:25.73,Cap,,0,0,0,,Als das Telefon klingelte,\N{\c&H0047D4FF\fscx118\fscy118}fragte{\c&H00FFFFFF\fscx100\fscy100} ihre Mutter, Mauro, bist\Ndu
-Dialogue: 0,0:03:25.75,0:03:25.89,Cap,,0,0,0,,Als das Telefon klingelte,\Nfragte {\c&H0047D4FF\fscx118\fscy118}ihre{\c&H00FFFFFF\fscx100\fscy100} Mutter, Mauro, bist\Ndu
-Dialogue: 0,0:03:25.91,0:03:26.57,Cap,,0,0,0,,Als das Telefon klingelte,\Nfragte ihre {\c&H0047D4FF\fscx118\fscy118}Mutter,{\c&H00FFFFFF\fscx100\fscy100} Mauro, bist\Ndu
-Dialogue: 0,0:03:26.59,0:03:27.45,Cap,,0,0,0,,Als das Telefon klingelte,\Nfragte ihre Mutter, {\c&H0047D4FF\fscx118\fscy118}Mauro,{\c&H00FFFFFF\fscx100\fscy100} bist\Ndu
-Dialogue: 0,0:03:27.47,0:03:27.59,Cap,,0,0,0,,Als das Telefon klingelte,\Nfragte ihre Mutter, Mauro, {\c&H0047D4FF\fscx118\fscy118}bist{\c&H00FFFFFF\fscx100\fscy100}\Ndu
-Dialogue: 0,0:03:27.61,0:03:27.75,Cap,,0,0,0,,Als das Telefon klingelte,\Nfragte ihre Mutter, Mauro, bist\N{\c&H0047D4FF\fscx118\fscy118}du{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:03:27.77,0:03:27.87,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}am{\c&H00FFFFFF\fscx100\fscy100} Leben?
-Dialogue: 0,0:03:27.89,0:03:28.33,Cap,,0,0,0,,am {\c&H0047D4FF\fscx118\fscy118}Leben?{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:03:28.71,0:03:28.85,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Sie{\c&H00FFFFFF\fscx100\fscy100} warf ihr den Hörer\Nzu. Seine erste Frage habt
-Dialogue: 0,0:03:28.87,0:03:29.21,Cap,,0,0,0,,Sie {\c&H0047D4FF\fscx118\fscy118}warf{\c&H00FFFFFF\fscx100\fscy100} ihr den Hörer\Nzu. Seine erste Frage habt
-Dialogue: 0,0:03:29.23,0:03:29.33,Cap,,0,0,0,,Sie warf {\c&H0047D4FF\fscx118\fscy118}ihr{\c&H00FFFFFF\fscx100\fscy100} den Hörer\Nzu. Seine erste Frage habt
-Dialogue: 0,0:03:29.35,0:03:29.45,Cap,,0,0,0,,Sie warf ihr {\c&H0047D4FF\fscx118\fscy118}den{\c&H00FFFFFF\fscx100\fscy100} Hörer\Nzu. Seine erste Frage habt
-Dialogue: 0,0:03:29.47,0:03:29.83,Cap,,0,0,0,,Sie warf ihr den {\c&H0047D4FF\fscx118\fscy118}Hörer{\c&H00FFFFFF\fscx100\fscy100}\Nzu. Seine erste Frage habt
-Dialogue: 0,0:03:29.85,0:03:30.47,Cap,,0,0,0,,Sie warf ihr den Hörer\N{\c&H0047D4FF\fscx118\fscy118}zu.{\c&H00FFFFFF\fscx100\fscy100} Seine erste Frage habt
-Dialogue: 0,0:03:30.49,0:03:30.67,Cap,,0,0,0,,Sie warf ihr den Hörer\Nzu. {\c&H0047D4FF\fscx118\fscy118}Seine{\c&H00FFFFFF\fscx100\fscy100} erste Frage habt
-Dialogue: 0,0:03:30.69,0:03:30.91,Cap,,0,0,0,,Sie warf ihr den Hörer\Nzu. Seine {\c&H0047D4FF\fscx118\fscy118}erste{\c&H00FFFFFF\fscx100\fscy100} Frage habt
-Dialogue: 0,0:03:30.93,0:03:31.33,Cap,,0,0,0,,Sie warf ihr den Hörer\Nzu. Seine erste {\c&H0047D4FF\fscx118\fscy118}Frage{\c&H00FFFFFF\fscx100\fscy100} habt
-Dialogue: 0,0:03:31.35,0:03:31.83,Cap,,0,0,0,,Sie warf ihr den Hörer\Nzu. Seine erste Frage {\c&H0047D4FF\fscx118\fscy118}habt{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:03:31.85,0:03:31.97,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}ihr{\c&H00FFFFFF\fscx100\fscy100} die Beerdigung schon\Ngeplant.
-Dialogue: 0,0:03:31.99,0:03:32.07,Cap,,0,0,0,,ihr {\c&H0047D4FF\fscx118\fscy118}die{\c&H00FFFFFF\fscx100\fscy100} Beerdigung schon\Ngeplant.
-Dialogue: 0,0:03:32.09,0:03:32.45,Cap,,0,0,0,,ihr die {\c&H0047D4FF\fscx118\fscy118}Beerdigung{\c&H00FFFFFF\fscx100\fscy100} schon\Ngeplant.
-Dialogue: 0,0:03:32.47,0:03:32.63,Cap,,0,0,0,,ihr die Beerdigung {\c&H0047D4FF\fscx118\fscy118}schon{\c&H00FFFFFF\fscx100\fscy100}\Ngeplant.
-Dialogue: 0,0:03:32.65,0:03:33.31,Cap,,0,0,0,,ihr die Beerdigung schon\N{\c&H0047D4FF\fscx118\fscy118}geplant.{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:03:33.83,0:03:33.99,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Ihre{\c&H00FFFFFF\fscx100\fscy100} Antwort für eine Beerdigung\Nbraucht man eine Leiche.
-Dialogue: 0,0:03:34.01,0:03:34.45,Cap,,0,0,0,,Ihre {\c&H0047D4FF\fscx118\fscy118}Antwort{\c&H00FFFFFF\fscx100\fscy100} für eine Beerdigung\Nbraucht man eine Leiche.
-Dialogue: 0,0:03:34.47,0:03:34.83,Cap,,0,0,0,,Ihre Antwort {\c&H0047D4FF\fscx118\fscy118}für{\c&H00FFFFFF\fscx100\fscy100} eine Beerdigung\Nbraucht man eine Leiche.
-Dialogue: 0,0:03:34.85,0:03:34.95,Cap,,0,0,0,,Ihre Antwort für {\c&H0047D4FF\fscx118\fscy118}eine{\c&H00FFFFFF\fscx100\fscy100} Beerdigung\Nbraucht man eine Leiche.
-Dialogue: 0,0:03:34.97,0:03:35.41,Cap,,0,0,0,,Ihre Antwort für eine {\c&H0047D4FF\fscx118\fscy118}Beerdigung{\c&H00FFFFFF\fscx100\fscy100}\Nbraucht man eine Leiche.
-Dialogue: 0,0:03:35.43,0:03:35.69,Cap,,0,0,0,,Ihre Antwort für eine Beerdigung\N{\c&H0047D4FF\fscx118\fscy118}braucht{\c&H00FFFFFF\fscx100\fscy100} man eine Leiche.
-Dialogue: 0,0:03:35.71,0:03:35.87,Cap,,0,0,0,,Ihre Antwort für eine Beerdigung\Nbraucht {\c&H0047D4FF\fscx118\fscy118}man{\c&H00FFFFFF\fscx100\fscy100} eine Leiche.
-Dialogue: 0,0:03:35.89,0:03:36.05,Cap,,0,0,0,,Ihre Antwort für eine Beerdigung\Nbraucht man {\c&H0047D4FF\fscx118\fscy118}eine{\c&H00FFFFFF\fscx100\fscy100} Leiche.
-Dialogue: 0,0:03:36.07,0:03:36.61,Cap,,0,0,0,,Ihre Antwort für eine Beerdigung\Nbraucht man eine {\c&H0047D4FF\fscx118\fscy118}Leiche.{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:03:36.97,0:03:37.09,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Was{\c&H00FFFFFF\fscx100\fscy100} hätten wir denn tun\Nsollen?
-Dialogue: 0,0:03:37.11,0:03:37.31,Cap,,0,0,0,,Was {\c&H0047D4FF\fscx118\fscy118}hätten{\c&H00FFFFFF\fscx100\fscy100} wir denn tun\Nsollen?
-Dialogue: 0,0:03:37.33,0:03:37.49,Cap,,0,0,0,,Was hätten {\c&H0047D4FF\fscx118\fscy118}wir{\c&H00FFFFFF\fscx100\fscy100} denn tun\Nsollen?
-Dialogue: 0,0:03:37.51,0:03:37.65,Cap,,0,0,0,,Was hätten wir {\c&H0047D4FF\fscx118\fscy118}denn{\c&H00FFFFFF\fscx100\fscy100} tun\Nsollen?
-Dialogue: 0,0:03:37.67,0:03:37.87,Cap,,0,0,0,,Was hätten wir denn {\c&H0047D4FF\fscx118\fscy118}tun{\c&H00FFFFFF\fscx100\fscy100}\Nsollen?
-Dialogue: 0,0:03:37.89,0:03:38.35,Cap,,0,0,0,,Was hätten wir denn tun\N{\c&H0047D4FF\fscx118\fscy118}sollen?{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:03:38.81,0:03:39.05,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Seine{\c&H00FFFFFF\fscx100\fscy100} Mutter rannte auf die\NStraße. Er lebt. Er lebt.
-Dialogue: 0,0:03:39.07,0:03:39.23,Cap,,0,0,0,,Seine {\c&H0047D4FF\fscx118\fscy118}Mutter{\c&H00FFFFFF\fscx100\fscy100} rannte auf die\NStraße. Er lebt. Er lebt.
-Dialogue: 0,0:03:39.25,0:03:39.59,Cap,,0,0,0,,Seine Mutter {\c&H0047D4FF\fscx118\fscy118}rannte{\c&H00FFFFFF\fscx100\fscy100} auf die\NStraße. Er lebt. Er lebt.
-Dialogue: 0,0:03:39.61,0:03:39.73,Cap,,0,0,0,,Seine Mutter rannte {\c&H0047D4FF\fscx118\fscy118}auf{\c&H00FFFFFF\fscx100\fscy100} die\NStraße. Er lebt. Er lebt.
-Dialogue: 0,0:03:39.75,0:03:39.85,Cap,,0,0,0,,Seine Mutter rannte auf {\c&H0047D4FF\fscx118\fscy118}die{\c&H00FFFFFF\fscx100\fscy100}\NStraße. Er lebt. Er lebt.
-Dialogue: 0,0:03:39.87,0:03:40.59,Cap,,0,0,0,,Seine Mutter rannte auf die\N{\c&H0047D4FF\fscx118\fscy118}Straße.{\c&H00FFFFFF\fscx100\fscy100} Er lebt. Er lebt.
-Dialogue: 0,0:03:40.61,0:03:40.67,Cap,,0,0,0,,Seine Mutter rannte auf die\NStraße. {\c&H0047D4FF\fscx118\fscy118}Er{\c&H00FFFFFF\fscx100\fscy100} lebt. Er lebt.
-Dialogue: 0,0:03:40.69,0:03:41.35,Cap,,0,0,0,,Seine Mutter rannte auf die\NStraße. Er {\c&H0047D4FF\fscx118\fscy118}lebt.{\c&H00FFFFFF\fscx100\fscy100} Er lebt.
-Dialogue: 0,0:03:41.37,0:03:41.71,Cap,,0,0,0,,Seine Mutter rannte auf die\NStraße. Er lebt. {\c&H0047D4FF\fscx118\fscy118}Er{\c&H00FFFFFF\fscx100\fscy100} lebt.
-Dialogue: 0,0:03:41.73,0:03:42.25,Cap,,0,0,0,,Seine Mutter rannte auf die\NStraße. Er lebt. Er {\c&H0047D4FF\fscx118\fscy118}lebt.{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:03:42.37,0:03:42.51,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Er{\c&H00FFFFFF\fscx100\fscy100} wog 45 kg.
-Dialogue: 0,0:03:42.53,0:03:42.71,Cap,,0,0,0,,Er {\c&H0047D4FF\fscx118\fscy118}wog{\c&H00FFFFFF\fscx100\fscy100} 45 kg.
-Dialogue: 0,0:03:42.73,0:03:43.47,Cap,,0,0,0,,Er wog {\c&H0047D4FF\fscx118\fscy118}45{\c&H00FFFFFF\fscx100\fscy100} kg.
-Dialogue: 0,0:03:43.49,0:03:44.07,Cap,,0,0,0,,Er wog 45 {\c&H0047D4FF\fscx118\fscy118}kg.{\c&H00FFFFFF\fscx100\fscy100}
-Dialogue: 0,0:03:44.59,0:03:44.81,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Er{\c&H00FFFFFF\fscx100\fscy100} hatte überlebt. Sie warf\Nihr den Hörer zu. Sie
-Dialogue: 0,0:03:44.83,0:03:45.01,Cap,,0,0,0,,Er {\c&H0047D4FF\fscx118\fscy118}hatte{\c&H00FFFFFF\fscx100\fscy100} überlebt. Sie warf\Nihr den Hörer zu. Sie
-Dialogue: 0,0:03:45.03,0:03:45.47,Cap,,0,0,0,,Er hatte {\c&H0047D4FF\fscx118\fscy118}überlebt.{\c&H00FFFFFF\fscx100\fscy100} Sie warf\Nihr den Hörer zu. Sie
-Dialogue: 0,0:03:45.49,0:03:45.75,Cap,,0,0,0,,schon {\c&H0047D4FF\fscx118\fscy118}geplant.{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:00:00.00,0:00:00.40,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Ein{\c&H00FFFFFF\fscx100\fscy100} Hubschrauber ist\Nvorbeigekommen Er hat ihn nicht\Ngesehen
+Dialogue: 0,0:00:00.42,0:00:00.92,Cap,,0,0,0,,Ein {\c&H0047D4FF\fscx118\fscy118}Hubschrauber{\c&H00FFFFFF\fscx100\fscy100} ist\Nvorbeigekommen Er hat ihn nicht\Ngesehen
+Dialogue: 0,0:00:00.94,0:00:01.08,Cap,,0,0,0,,Ein Hubschrauber {\c&H0047D4FF\fscx118\fscy118}ist{\c&H00FFFFFF\fscx100\fscy100}\Nvorbeigekommen Er hat ihn nicht\Ngesehen
+Dialogue: 0,0:00:01.10,0:00:02.14,Cap,,0,0,0,,Ein Hubschrauber ist\N{\c&H0047D4FF\fscx118\fscy118}vorbeigekommen{\c&H00FFFFFF\fscx100\fscy100} Er hat ihn nicht\Ngesehen
+Dialogue: 0,0:00:02.16,0:00:02.24,Cap,,0,0,0,,Ein Hubschrauber ist\Nvorbeigekommen {\c&H0047D4FF\fscx118\fscy118}Er{\c&H00FFFFFF\fscx100\fscy100} hat ihn nicht\Ngesehen
+Dialogue: 0,0:00:02.26,0:00:02.40,Cap,,0,0,0,,Ein Hubschrauber ist\Nvorbeigekommen Er {\c&H0047D4FF\fscx118\fscy118}hat{\c&H00FFFFFF\fscx100\fscy100} ihn nicht\Ngesehen
+Dialogue: 0,0:00:02.42,0:00:02.50,Cap,,0,0,0,,Ein Hubschrauber ist\Nvorbeigekommen Er hat {\c&H0047D4FF\fscx118\fscy118}ihn{\c&H00FFFFFF\fscx100\fscy100} nicht\Ngesehen
+Dialogue: 0,0:00:02.52,0:00:02.66,Cap,,0,0,0,,Ein Hubschrauber ist\Nvorbeigekommen Er hat ihn {\c&H0047D4FF\fscx118\fscy118}nicht{\c&H00FFFFFF\fscx100\fscy100}\Ngesehen
+Dialogue: 0,0:00:02.68,0:00:03.26,Cap,,0,0,0,,Ein Hubschrauber ist\Nvorbeigekommen Er hat ihn nicht\N{\c&H0047D4FF\fscx118\fscy118}gesehen{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:00:03.64,0:00:03.70,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Er{\c&H00FFFFFF\fscx100\fscy100} verbrennt seine Kleider\Nseinen Schlafsack seinen\NRucksack
+Dialogue: 0,0:00:03.72,0:00:04.12,Cap,,0,0,0,,Er {\c&H0047D4FF\fscx118\fscy118}verbrennt{\c&H00FFFFFF\fscx100\fscy100} seine Kleider\Nseinen Schlafsack seinen\NRucksack
+Dialogue: 0,0:00:04.14,0:00:04.22,Cap,,0,0,0,,Er verbrennt {\c&H0047D4FF\fscx118\fscy118}seine{\c&H00FFFFFF\fscx100\fscy100} Kleider\Nseinen Schlafsack seinen\NRucksack
+Dialogue: 0,0:00:04.24,0:00:05.00,Cap,,0,0,0,,Er verbrennt seine {\c&H0047D4FF\fscx118\fscy118}Kleider{\c&H00FFFFFF\fscx100\fscy100}\Nseinen Schlafsack seinen\NRucksack
+Dialogue: 0,0:00:05.02,0:00:05.16,Cap,,0,0,0,,Er verbrennt seine Kleider\N{\c&H0047D4FF\fscx118\fscy118}seinen{\c&H00FFFFFF\fscx100\fscy100} Schlafsack seinen\NRucksack
+Dialogue: 0,0:00:05.18,0:00:06.08,Cap,,0,0,0,,Er verbrennt seine Kleider\Nseinen {\c&H0047D4FF\fscx118\fscy118}Schlafsack{\c&H00FFFFFF\fscx100\fscy100} seinen\NRucksack
+Dialogue: 0,0:00:06.10,0:00:06.26,Cap,,0,0,0,,Er verbrennt seine Kleider\Nseinen Schlafsack {\c&H0047D4FF\fscx118\fscy118}seinen{\c&H00FFFFFF\fscx100\fscy100}\NRucksack
+Dialogue: 0,0:00:06.28,0:00:06.98,Cap,,0,0,0,,Er verbrennt seine Kleider\Nseinen Schlafsack seinen\N{\c&H0047D4FF\fscx118\fscy118}Rucksack{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:00:07.08,0:00:07.62,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}alles{\c&H00FFFFFF\fscx100\fscy100} um ein Zeichen zu\Nsetzen Kein Wasser
+Dialogue: 0,0:00:07.64,0:00:07.70,Cap,,0,0,0,,alles {\c&H0047D4FF\fscx118\fscy118}um{\c&H00FFFFFF\fscx100\fscy100} ein Zeichen zu\Nsetzen Kein Wasser
+Dialogue: 0,0:00:07.72,0:00:07.86,Cap,,0,0,0,,alles um {\c&H0047D4FF\fscx118\fscy118}ein{\c&H00FFFFFF\fscx100\fscy100} Zeichen zu\Nsetzen Kein Wasser
+Dialogue: 0,0:00:07.88,0:00:08.24,Cap,,0,0,0,,alles um ein {\c&H0047D4FF\fscx118\fscy118}Zeichen{\c&H00FFFFFF\fscx100\fscy100} zu\Nsetzen Kein Wasser
+Dialogue: 0,0:00:08.26,0:00:08.42,Cap,,0,0,0,,alles um ein Zeichen {\c&H0047D4FF\fscx118\fscy118}zu{\c&H00FFFFFF\fscx100\fscy100}\Nsetzen Kein Wasser
+Dialogue: 0,0:00:08.44,0:00:09.18,Cap,,0,0,0,,alles um ein Zeichen zu\N{\c&H0047D4FF\fscx118\fscy118}setzen{\c&H00FFFFFF\fscx100\fscy100} Kein Wasser
+Dialogue: 0,0:00:09.20,0:00:09.44,Cap,,0,0,0,,alles um ein Zeichen zu\Nsetzen {\c&H0047D4FF\fscx118\fscy118}Kein{\c&H00FFFFFF\fscx100\fscy100} Wasser
+Dialogue: 0,0:00:09.46,0:00:09.84,Cap,,0,0,0,,alles um ein Zeichen zu\Nsetzen Kein {\c&H0047D4FF\fscx118\fscy118}Wasser{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:00:10.30,0:00:10.58,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Kein{\c&H00FFFFFF\fscx100\fscy100} Essen Seit Tagen Er\Nschreibt einen Abschiedsbrief\Nan seine
+Dialogue: 0,0:00:10.60,0:00:11.34,Cap,,0,0,0,,Kein {\c&H0047D4FF\fscx118\fscy118}Essen{\c&H00FFFFFF\fscx100\fscy100} Seit Tagen Er\Nschreibt einen Abschiedsbrief\Nan seine
+Dialogue: 0,0:00:11.36,0:00:11.48,Cap,,0,0,0,,Kein Essen {\c&H0047D4FF\fscx118\fscy118}Seit{\c&H00FFFFFF\fscx100\fscy100} Tagen Er\Nschreibt einen Abschiedsbrief\Nan seine
+Dialogue: 0,0:00:11.50,0:00:12.34,Cap,,0,0,0,,Kein Essen Seit {\c&H0047D4FF\fscx118\fscy118}Tagen{\c&H00FFFFFF\fscx100\fscy100} Er\Nschreibt einen Abschiedsbrief\Nan seine
+Dialogue: 0,0:00:12.36,0:00:12.42,Cap,,0,0,0,,Kein Essen Seit Tagen {\c&H0047D4FF\fscx118\fscy118}Er{\c&H00FFFFFF\fscx100\fscy100}\Nschreibt einen Abschiedsbrief\Nan seine
+Dialogue: 0,0:00:12.44,0:00:12.78,Cap,,0,0,0,,Kein Essen Seit Tagen Er\N{\c&H0047D4FF\fscx118\fscy118}schreibt{\c&H00FFFFFF\fscx100\fscy100} einen Abschiedsbrief\Nan seine
+Dialogue: 0,0:00:12.80,0:00:12.98,Cap,,0,0,0,,Kein Essen Seit Tagen Er\Nschreibt {\c&H0047D4FF\fscx118\fscy118}einen{\c&H00FFFFFF\fscx100\fscy100} Abschiedsbrief\Nan seine
+Dialogue: 0,0:00:13.00,0:00:13.66,Cap,,0,0,0,,Kein Essen Seit Tagen Er\Nschreibt einen {\c&H0047D4FF\fscx118\fscy118}Abschiedsbrief{\c&H00FFFFFF\fscx100\fscy100}\Nan seine
+Dialogue: 0,0:00:13.68,0:00:13.76,Cap,,0,0,0,,Kein Essen Seit Tagen Er\Nschreibt einen Abschiedsbrief\N{\c&H0047D4FF\fscx118\fscy118}an{\c&H00FFFFFF\fscx100\fscy100} seine
+Dialogue: 0,0:00:13.78,0:00:13.90,Cap,,0,0,0,,Kein Essen Seit Tagen Er\Nschreibt einen Abschiedsbrief\Nan {\c&H0047D4FF\fscx118\fscy118}seine{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:00:13.92,0:00:14.66,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Frau{\c&H00FFFFFF\fscx100\fscy100} Seine Augen fallen zu
+Dialogue: 0,0:00:14.68,0:00:14.82,Cap,,0,0,0,,Frau {\c&H0047D4FF\fscx118\fscy118}Seine{\c&H00FFFFFF\fscx100\fscy100} Augen fallen zu
+Dialogue: 0,0:00:14.84,0:00:15.10,Cap,,0,0,0,,Frau Seine {\c&H0047D4FF\fscx118\fscy118}Augen{\c&H00FFFFFF\fscx100\fscy100} fallen zu
+Dialogue: 0,0:00:15.12,0:00:15.36,Cap,,0,0,0,,Frau Seine Augen {\c&H0047D4FF\fscx118\fscy118}fallen{\c&H00FFFFFF\fscx100\fscy100} zu
+Dialogue: 0,0:00:15.38,0:00:15.84,Cap,,0,0,0,,Frau Seine Augen fallen {\c&H0047D4FF\fscx118\fscy118}zu{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:00:16.26,0:00:16.38,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Am{\c&H00FFFFFF\fscx100\fscy100} nächsten Morgen wacht er\Nauf Sein Körper hat sich
+Dialogue: 0,0:00:16.40,0:00:16.62,Cap,,0,0,0,,Am {\c&H0047D4FF\fscx118\fscy118}nächsten{\c&H00FFFFFF\fscx100\fscy100} Morgen wacht er\Nauf Sein Körper hat sich
+Dialogue: 0,0:00:16.64,0:00:17.04,Cap,,0,0,0,,Am nächsten {\c&H0047D4FF\fscx118\fscy118}Morgen{\c&H00FFFFFF\fscx100\fscy100} wacht er\Nauf Sein Körper hat sich
+Dialogue: 0,0:00:17.06,0:00:17.34,Cap,,0,0,0,,Am nächsten Morgen {\c&H0047D4FF\fscx118\fscy118}wacht{\c&H00FFFFFF\fscx100\fscy100} er\Nauf Sein Körper hat sich
+Dialogue: 0,0:00:17.36,0:00:17.50,Cap,,0,0,0,,Am nächsten Morgen wacht {\c&H0047D4FF\fscx118\fscy118}er{\c&H00FFFFFF\fscx100\fscy100}\Nauf Sein Körper hat sich
+Dialogue: 0,0:00:17.52,0:00:18.18,Cap,,0,0,0,,Am nächsten Morgen wacht er\N{\c&H0047D4FF\fscx118\fscy118}auf{\c&H00FFFFFF\fscx100\fscy100} Sein Körper hat sich
+Dialogue: 0,0:00:18.20,0:00:18.32,Cap,,0,0,0,,Am nächsten Morgen wacht er\Nauf {\c&H0047D4FF\fscx118\fscy118}Sein{\c&H00FFFFFF\fscx100\fscy100} Körper hat sich
+Dialogue: 0,0:00:18.34,0:00:18.60,Cap,,0,0,0,,Am nächsten Morgen wacht er\Nauf Sein {\c&H0047D4FF\fscx118\fscy118}Körper{\c&H00FFFFFF\fscx100\fscy100} hat sich
+Dialogue: 0,0:00:18.62,0:00:18.86,Cap,,0,0,0,,Am nächsten Morgen wacht er\Nauf Sein Körper {\c&H0047D4FF\fscx118\fscy118}hat{\c&H00FFFFFF\fscx100\fscy100} sich
+Dialogue: 0,0:00:18.88,0:00:19.04,Cap,,0,0,0,,Am nächsten Morgen wacht er\Nauf Sein Körper hat {\c&H0047D4FF\fscx118\fscy118}sich{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:00:19.06,0:00:19.58,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}geweigert{\c&H00FFFFFF\fscx100\fscy100} zu sterben
+Dialogue: 0,0:00:19.60,0:00:19.82,Cap,,0,0,0,,geweigert {\c&H0047D4FF\fscx118\fscy118}zu{\c&H00FFFFFF\fscx100\fscy100} sterben
+Dialogue: 0,0:00:19.84,0:00:20.38,Cap,,0,0,0,,geweigert zu {\c&H0047D4FF\fscx118\fscy118}sterben{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:00:20.92,0:00:21.20,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Er{\c&H00FFFFFF\fscx100\fscy100} heißt Mauro Prosperi Polizist\Nin Rom Pentathlet 39 Jahre
+Dialogue: 0,0:00:21.22,0:00:21.46,Cap,,0,0,0,,Er {\c&H0047D4FF\fscx118\fscy118}heißt{\c&H00FFFFFF\fscx100\fscy100} Mauro Prosperi Polizist\Nin Rom Pentathlet 39 Jahre
+Dialogue: 0,0:00:21.48,0:00:21.88,Cap,,0,0,0,,Er heißt {\c&H0047D4FF\fscx118\fscy118}Mauro{\c&H00FFFFFF\fscx100\fscy100} Prosperi Polizist\Nin Rom Pentathlet 39 Jahre
+Dialogue: 0,0:00:21.90,0:00:22.90,Cap,,0,0,0,,Er heißt Mauro {\c&H0047D4FF\fscx118\fscy118}Prosperi{\c&H00FFFFFF\fscx100\fscy100} Polizist\Nin Rom Pentathlet 39 Jahre
+Dialogue: 0,0:00:22.92,0:00:23.50,Cap,,0,0,0,,Er heißt Mauro Prosperi {\c&H0047D4FF\fscx118\fscy118}Polizist{\c&H00FFFFFF\fscx100\fscy100}\Nin Rom Pentathlet 39 Jahre
+Dialogue: 0,0:00:23.52,0:00:23.66,Cap,,0,0,0,,Er heißt Mauro Prosperi Polizist\N{\c&H0047D4FF\fscx118\fscy118}in{\c&H00FFFFFF\fscx100\fscy100} Rom Pentathlet 39 Jahre
+Dialogue: 0,0:00:23.68,0:00:24.26,Cap,,0,0,0,,Er heißt Mauro Prosperi Polizist\Nin {\c&H0047D4FF\fscx118\fscy118}Rom{\c&H00FFFFFF\fscx100\fscy100} Pentathlet 39 Jahre
+Dialogue: 0,0:00:24.28,0:00:25.08,Cap,,0,0,0,,Er heißt Mauro Prosperi Polizist\Nin Rom {\c&H0047D4FF\fscx118\fscy118}Pentathlet{\c&H00FFFFFF\fscx100\fscy100} 39 Jahre
+Dialogue: 0,0:00:25.10,0:00:25.46,Cap,,0,0,0,,Er heißt Mauro Prosperi Polizist\Nin Rom Pentathlet {\c&H0047D4FF\fscx118\fscy118}39{\c&H00FFFFFF\fscx100\fscy100} Jahre
+Dialogue: 0,0:00:25.48,0:00:26.30,Cap,,0,0,0,,Er heißt Mauro Prosperi Polizist\Nin Rom Pentathlet 39 {\c&H0047D4FF\fscx118\fscy118}Jahre{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:00:26.32,0:00:27.18,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}alt{\c&H00FFFFFF\fscx100\fscy100} Seine Frau Cinzia lernte\Ner bei einem Sportwettkampf\Nkennen
+Dialogue: 0,0:00:27.20,0:00:27.40,Cap,,0,0,0,,alt {\c&H0047D4FF\fscx118\fscy118}Seine{\c&H00FFFFFF\fscx100\fscy100} Frau Cinzia lernte\Ner bei einem Sportwettkampf\Nkennen
+Dialogue: 0,0:00:27.42,0:00:27.60,Cap,,0,0,0,,alt Seine {\c&H0047D4FF\fscx118\fscy118}Frau{\c&H00FFFFFF\fscx100\fscy100} Cinzia lernte\Ner bei einem Sportwettkampf\Nkennen
+Dialogue: 0,0:00:27.62,0:00:28.14,Cap,,0,0,0,,alt Seine Frau {\c&H0047D4FF\fscx118\fscy118}Cinzia{\c&H00FFFFFF\fscx100\fscy100} lernte\Ner bei einem Sportwettkampf\Nkennen
+Dialogue: 0,0:00:28.16,0:00:28.48,Cap,,0,0,0,,alt Seine Frau Cinzia {\c&H0047D4FF\fscx118\fscy118}lernte{\c&H00FFFFFF\fscx100\fscy100}\Ner bei einem Sportwettkampf\Nkennen
+Dialogue: 0,0:00:28.50,0:00:28.66,Cap,,0,0,0,,alt Seine Frau Cinzia lernte\N{\c&H0047D4FF\fscx118\fscy118}er{\c&H00FFFFFF\fscx100\fscy100} bei einem Sportwettkampf\Nkennen
+Dialogue: 0,0:00:28.68,0:00:28.80,Cap,,0,0,0,,alt Seine Frau Cinzia lernte\Ner {\c&H0047D4FF\fscx118\fscy118}bei{\c&H00FFFFFF\fscx100\fscy100} einem Sportwettkampf\Nkennen
+Dialogue: 0,0:00:28.82,0:00:28.96,Cap,,0,0,0,,alt Seine Frau Cinzia lernte\Ner bei {\c&H0047D4FF\fscx118\fscy118}einem{\c&H00FFFFFF\fscx100\fscy100} Sportwettkampf\Nkennen
+Dialogue: 0,0:00:28.98,0:00:29.70,Cap,,0,0,0,,alt Seine Frau Cinzia lernte\Ner bei einem {\c&H0047D4FF\fscx118\fscy118}Sportwettkampf{\c&H00FFFFFF\fscx100\fscy100}\Nkennen
+Dialogue: 0,0:00:29.72,0:00:30.16,Cap,,0,0,0,,alt Seine Frau Cinzia lernte\Ner bei einem Sportwettkampf\N{\c&H0047D4FF\fscx118\fscy118}kennen{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:00:30.28,0:00:30.34,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}sie{\c&H00FFFFFF\fscx100\fscy100} sagte er sah aus\Nwie ein Ritter Sechs Monate
+Dialogue: 0,0:00:30.36,0:00:31.00,Cap,,0,0,0,,sie {\c&H0047D4FF\fscx118\fscy118}sagte{\c&H00FFFFFF\fscx100\fscy100} er sah aus\Nwie ein Ritter Sechs Monate
+Dialogue: 0,0:00:31.02,0:00:31.10,Cap,,0,0,0,,sie sagte {\c&H0047D4FF\fscx118\fscy118}er{\c&H00FFFFFF\fscx100\fscy100} sah aus\Nwie ein Ritter Sechs Monate
+Dialogue: 0,0:00:31.12,0:00:31.30,Cap,,0,0,0,,sie sagte er {\c&H0047D4FF\fscx118\fscy118}sah{\c&H00FFFFFF\fscx100\fscy100} aus\Nwie ein Ritter Sechs Monate
+Dialogue: 0,0:00:31.32,0:00:31.50,Cap,,0,0,0,,sie sagte er sah {\c&H0047D4FF\fscx118\fscy118}aus{\c&H00FFFFFF\fscx100\fscy100}\Nwie ein Ritter Sechs Monate
+Dialogue: 0,0:00:31.52,0:00:31.64,Cap,,0,0,0,,sie sagte er sah aus\N{\c&H0047D4FF\fscx118\fscy118}wie{\c&H00FFFFFF\fscx100\fscy100} ein Ritter Sechs Monate
+Dialogue: 0,0:00:31.66,0:00:31.78,Cap,,0,0,0,,sie sagte er sah aus\Nwie {\c&H0047D4FF\fscx118\fscy118}ein{\c&H00FFFFFF\fscx100\fscy100} Ritter Sechs Monate
+Dialogue: 0,0:00:31.80,0:00:32.50,Cap,,0,0,0,,sie sagte er sah aus\Nwie ein {\c&H0047D4FF\fscx118\fscy118}Ritter{\c&H00FFFFFF\fscx100\fscy100} Sechs Monate
+Dialogue: 0,0:00:32.52,0:00:32.76,Cap,,0,0,0,,sie sagte er sah aus\Nwie ein Ritter {\c&H0047D4FF\fscx118\fscy118}Sechs{\c&H00FFFFFF\fscx100\fscy100} Monate
+Dialogue: 0,0:00:32.78,0:00:33.00,Cap,,0,0,0,,sie sagte er sah aus\Nwie ein Ritter Sechs {\c&H0047D4FF\fscx118\fscy118}Monate{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:00:33.02,0:00:33.48,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}später{\c&H00FFFFFF\fscx100\fscy100} waren sie verheiratet\NDrei Kinder Sein enger Freund
+Dialogue: 0,0:00:33.50,0:00:33.82,Cap,,0,0,0,,später {\c&H0047D4FF\fscx118\fscy118}waren{\c&H00FFFFFF\fscx100\fscy100} sie verheiratet\NDrei Kinder Sein enger Freund
+Dialogue: 0,0:00:33.84,0:00:34.04,Cap,,0,0,0,,später waren {\c&H0047D4FF\fscx118\fscy118}sie{\c&H00FFFFFF\fscx100\fscy100} verheiratet\NDrei Kinder Sein enger Freund
+Dialogue: 0,0:00:34.06,0:00:35.02,Cap,,0,0,0,,später waren sie {\c&H0047D4FF\fscx118\fscy118}verheiratet{\c&H00FFFFFF\fscx100\fscy100}\NDrei Kinder Sein enger Freund
+Dialogue: 0,0:00:35.04,0:00:35.32,Cap,,0,0,0,,später waren sie verheiratet\N{\c&H0047D4FF\fscx118\fscy118}Drei{\c&H00FFFFFF\fscx100\fscy100} Kinder Sein enger Freund
+Dialogue: 0,0:00:35.34,0:00:36.16,Cap,,0,0,0,,später waren sie verheiratet\NDrei {\c&H0047D4FF\fscx118\fscy118}Kinder{\c&H00FFFFFF\fscx100\fscy100} Sein enger Freund
+Dialogue: 0,0:00:36.18,0:00:36.38,Cap,,0,0,0,,später waren sie verheiratet\NDrei Kinder {\c&H0047D4FF\fscx118\fscy118}Sein{\c&H00FFFFFF\fscx100\fscy100} enger Freund
+Dialogue: 0,0:00:36.40,0:00:36.66,Cap,,0,0,0,,später waren sie verheiratet\NDrei Kinder Sein {\c&H0047D4FF\fscx118\fscy118}enger{\c&H00FFFFFF\fscx100\fscy100} Freund
+Dialogue: 0,0:00:36.68,0:00:36.96,Cap,,0,0,0,,später waren sie verheiratet\NDrei Kinder Sein enger {\c&H0047D4FF\fscx118\fscy118}Freund{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:00:36.98,0:00:37.42,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Giovanni{\c&H00FFFFFF\fscx100\fscy100} lädt ihn ein Marathon\Ndes Sables Marokko
+Dialogue: 0,0:00:37.44,0:00:37.60,Cap,,0,0,0,,Giovanni {\c&H0047D4FF\fscx118\fscy118}lädt{\c&H00FFFFFF\fscx100\fscy100} ihn ein Marathon\Ndes Sables Marokko
+Dialogue: 0,0:00:37.62,0:00:37.78,Cap,,0,0,0,,Giovanni lädt {\c&H0047D4FF\fscx118\fscy118}ihn{\c&H00FFFFFF\fscx100\fscy100} ein Marathon\Ndes Sables Marokko
+Dialogue: 0,0:00:37.80,0:00:38.46,Cap,,0,0,0,,Giovanni lädt ihn {\c&H0047D4FF\fscx118\fscy118}ein{\c&H00FFFFFF\fscx100\fscy100} Marathon\Ndes Sables Marokko
+Dialogue: 0,0:00:38.48,0:00:38.80,Cap,,0,0,0,,Giovanni lädt ihn ein {\c&H0047D4FF\fscx118\fscy118}Marathon{\c&H00FFFFFF\fscx100\fscy100}\Ndes Sables Marokko
+Dialogue: 0,0:00:38.82,0:00:38.98,Cap,,0,0,0,,Giovanni lädt ihn ein Marathon\N{\c&H0047D4FF\fscx118\fscy118}des{\c&H00FFFFFF\fscx100\fscy100} Sables Marokko
+Dialogue: 0,0:00:39.00,0:00:39.30,Cap,,0,0,0,,Giovanni lädt ihn ein Marathon\Ndes {\c&H0047D4FF\fscx118\fscy118}Sables{\c&H00FFFFFF\fscx100\fscy100} Marokko
+Dialogue: 0,0:00:39.32,0:00:39.90,Cap,,0,0,0,,Giovanni lädt ihn ein Marathon\Ndes Sables {\c&H0047D4FF\fscx118\fscy118}Marokko{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:00:40.30,0:00:40.46,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Er{\c&H00FFFFFF\fscx100\fscy100} sagt ja Cinzia fragt\Ner nicht
+Dialogue: 0,0:00:40.48,0:00:40.70,Cap,,0,0,0,,Er {\c&H0047D4FF\fscx118\fscy118}sagt{\c&H00FFFFFF\fscx100\fscy100} ja Cinzia fragt\Ner nicht
+Dialogue: 0,0:00:40.72,0:00:41.46,Cap,,0,0,0,,Er sagt {\c&H0047D4FF\fscx118\fscy118}ja{\c&H00FFFFFF\fscx100\fscy100} Cinzia fragt\Ner nicht
+Dialogue: 0,0:00:41.48,0:00:41.98,Cap,,0,0,0,,Er sagt ja {\c&H0047D4FF\fscx118\fscy118}Cinzia{\c&H00FFFFFF\fscx100\fscy100} fragt\Ner nicht
+Dialogue: 0,0:00:42.00,0:00:42.42,Cap,,0,0,0,,Er sagt ja Cinzia {\c&H0047D4FF\fscx118\fscy118}fragt{\c&H00FFFFFF\fscx100\fscy100}\Ner nicht
+Dialogue: 0,0:00:42.50,0:00:42.86,Cap,,0,0,0,,Er sagt ja Cinzia fragt\Ner {\c&H0047D4FF\fscx118\fscy118}nicht{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:00:43.42,0:00:43.94,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Marathon{\c&H00FFFFFF\fscx100\fscy100} des Sables Übersetzt\NMarathon der Sande 250 Kilometer
+Dialogue: 0,0:00:43.96,0:00:44.16,Cap,,0,0,0,,Marathon {\c&H0047D4FF\fscx118\fscy118}des{\c&H00FFFFFF\fscx100\fscy100} Sables Übersetzt\NMarathon der Sande 250 Kilometer
+Dialogue: 0,0:00:44.18,0:00:44.52,Cap,,0,0,0,,Marathon des {\c&H0047D4FF\fscx118\fscy118}Sables{\c&H00FFFFFF\fscx100\fscy100} Übersetzt\NMarathon der Sande 250 Kilometer
+Dialogue: 0,0:00:44.54,0:00:45.66,Cap,,0,0,0,,Marathon des Sables {\c&H0047D4FF\fscx118\fscy118}Übersetzt{\c&H00FFFFFF\fscx100\fscy100}\NMarathon der Sande 250 Kilometer
+Dialogue: 0,0:00:45.68,0:00:46.06,Cap,,0,0,0,,Marathon des Sables Übersetzt\N{\c&H0047D4FF\fscx118\fscy118}Marathon{\c&H00FFFFFF\fscx100\fscy100} der Sande 250 Kilometer
+Dialogue: 0,0:00:46.08,0:00:46.22,Cap,,0,0,0,,Marathon des Sables Übersetzt\NMarathon {\c&H0047D4FF\fscx118\fscy118}der{\c&H00FFFFFF\fscx100\fscy100} Sande 250 Kilometer
+Dialogue: 0,0:00:46.24,0:00:46.64,Cap,,0,0,0,,Marathon des Sables Übersetzt\NMarathon der {\c&H0047D4FF\fscx118\fscy118}Sande{\c&H00FFFFFF\fscx100\fscy100} 250 Kilometer
+Dialogue: 0,0:00:46.66,0:00:47.62,Cap,,0,0,0,,Marathon des Sables Übersetzt\NMarathon der Sande {\c&H0047D4FF\fscx118\fscy118}250{\c&H00FFFFFF\fscx100\fscy100} Kilometer
+Dialogue: 0,0:00:47.64,0:00:48.48,Cap,,0,0,0,,Marathon des Sables Übersetzt\NMarathon der Sande 250 {\c&H0047D4FF\fscx118\fscy118}Kilometer{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:00:48.50,0:00:48.98,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}durch{\c&H00FFFFFF\fscx100\fscy100} die marokkanische Wüste\NSechs Etappen Sieben Tage
+Dialogue: 0,0:00:49.00,0:00:49.16,Cap,,0,0,0,,durch {\c&H0047D4FF\fscx118\fscy118}die{\c&H00FFFFFF\fscx100\fscy100} marokkanische Wüste\NSechs Etappen Sieben Tage
+Dialogue: 0,0:00:49.18,0:00:49.74,Cap,,0,0,0,,durch die {\c&H0047D4FF\fscx118\fscy118}marokkanische{\c&H00FFFFFF\fscx100\fscy100} Wüste\NSechs Etappen Sieben Tage
+Dialogue: 0,0:00:49.76,0:00:50.12,Cap,,0,0,0,,durch die marokkanische {\c&H0047D4FF\fscx118\fscy118}Wüste{\c&H00FFFFFF\fscx100\fscy100}\NSechs Etappen Sieben Tage
+Dialogue: 0,0:00:50.14,0:00:50.84,Cap,,0,0,0,,durch die marokkanische Wüste\N{\c&H0047D4FF\fscx118\fscy118}Sechs{\c&H00FFFFFF\fscx100\fscy100} Etappen Sieben Tage
+Dialogue: 0,0:00:50.86,0:00:51.42,Cap,,0,0,0,,durch die marokkanische Wüste\NSechs {\c&H0047D4FF\fscx118\fscy118}Etappen{\c&H00FFFFFF\fscx100\fscy100} Sieben Tage
+Dialogue: 0,0:00:51.44,0:00:51.98,Cap,,0,0,0,,durch die marokkanische Wüste\NSechs Etappen {\c&H0047D4FF\fscx118\fscy118}Sieben{\c&H00FFFFFF\fscx100\fscy100} Tage
+Dialogue: 0,0:00:52.00,0:00:52.62,Cap,,0,0,0,,durch die marokkanische Wüste\NSechs Etappen Sieben {\c&H0047D4FF\fscx118\fscy118}Tage{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:00:53.06,0:00:53.44,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Patrick{\c&H00FFFFFF\fscx100\fscy100} Bauer ein französischer\NVeranstalter lief 1984 allein
+Dialogue: 0,0:00:53.46,0:00:54.06,Cap,,0,0,0,,Patrick {\c&H0047D4FF\fscx118\fscy118}Bauer{\c&H00FFFFFF\fscx100\fscy100} ein französischer\NVeranstalter lief 1984 allein
+Dialogue: 0,0:00:54.08,0:00:54.16,Cap,,0,0,0,,Patrick Bauer {\c&H0047D4FF\fscx118\fscy118}ein{\c&H00FFFFFF\fscx100\fscy100} französischer\NVeranstalter lief 1984 allein
+Dialogue: 0,0:00:54.18,0:00:54.88,Cap,,0,0,0,,Patrick Bauer ein {\c&H0047D4FF\fscx118\fscy118}französischer{\c&H00FFFFFF\fscx100\fscy100}\NVeranstalter lief 1984 allein
+Dialogue: 0,0:00:54.90,0:00:55.94,Cap,,0,0,0,,Patrick Bauer ein französischer\N{\c&H0047D4FF\fscx118\fscy118}Veranstalter{\c&H00FFFFFF\fscx100\fscy100} lief 1984 allein
+Dialogue: 0,0:00:55.96,0:00:56.14,Cap,,0,0,0,,Patrick Bauer ein französischer\NVeranstalter {\c&H0047D4FF\fscx118\fscy118}lief{\c&H00FFFFFF\fscx100\fscy100} 1984 allein
+Dialogue: 0,0:00:56.16,0:00:57.32,Cap,,0,0,0,,Patrick Bauer ein französischer\NVeranstalter lief {\c&H0047D4FF\fscx118\fscy118}1984{\c&H00FFFFFF\fscx100\fscy100} allein
+Dialogue: 0,0:00:57.34,0:00:58.52,Cap,,0,0,0,,Patrick Bauer ein französischer\NVeranstalter lief 1984 {\c&H0047D4FF\fscx118\fscy118}allein{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:00:58.54,0:00:59.22,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}320{\c&H00FFFFFF\fscx100\fscy100} Kilometer durch die Sahara\Nund startete dieses Rennen Die
+Dialogue: 0,0:00:59.24,0:01:00.06,Cap,,0,0,0,,320 {\c&H0047D4FF\fscx118\fscy118}Kilometer{\c&H00FFFFFF\fscx100\fscy100} durch die Sahara\Nund startete dieses Rennen Die
+Dialogue: 0,0:01:00.08,0:01:00.42,Cap,,0,0,0,,320 Kilometer {\c&H0047D4FF\fscx118\fscy118}durch{\c&H00FFFFFF\fscx100\fscy100} die Sahara\Nund startete dieses Rennen Die
+Dialogue: 0,0:01:00.44,0:01:00.64,Cap,,0,0,0,,320 Kilometer durch {\c&H0047D4FF\fscx118\fscy118}die{\c&H00FFFFFF\fscx100\fscy100} Sahara\Nund startete dieses Rennen Die
+Dialogue: 0,0:01:00.66,0:01:01.00,Cap,,0,0,0,,320 Kilometer durch die {\c&H0047D4FF\fscx118\fscy118}Sahara{\c&H00FFFFFF\fscx100\fscy100}\Nund startete dieses Rennen Die
+Dialogue: 0,0:01:01.02,0:01:01.58,Cap,,0,0,0,,320 Kilometer durch die Sahara\N{\c&H0047D4FF\fscx118\fscy118}und{\c&H00FFFFFF\fscx100\fscy100} startete dieses Rennen Die
+Dialogue: 0,0:01:01.60,0:01:02.12,Cap,,0,0,0,,320 Kilometer durch die Sahara\Nund {\c&H0047D4FF\fscx118\fscy118}startete{\c&H00FFFFFF\fscx100\fscy100} dieses Rennen Die
+Dialogue: 0,0:01:02.14,0:01:02.38,Cap,,0,0,0,,320 Kilometer durch die Sahara\Nund startete {\c&H0047D4FF\fscx118\fscy118}dieses{\c&H00FFFFFF\fscx100\fscy100} Rennen Die
+Dialogue: 0,0:01:02.40,0:01:03.14,Cap,,0,0,0,,320 Kilometer durch die Sahara\Nund startete dieses {\c&H0047D4FF\fscx118\fscy118}Rennen{\c&H00FFFFFF\fscx100\fscy100} Die
+Dialogue: 0,0:01:03.16,0:01:03.22,Cap,,0,0,0,,320 Kilometer durch die Sahara\Nund startete dieses Rennen {\c&H0047D4FF\fscx118\fscy118}Die{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:01:03.24,0:01:03.68,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Versicherung{\c&H00FFFFFF\fscx100\fscy100} deckt\NVerletzungen ab und Tode Es\Ngibt eine Klausel
+Dialogue: 0,0:01:03.70,0:01:04.06,Cap,,0,0,0,,Versicherung {\c&H0047D4FF\fscx118\fscy118}deckt{\c&H00FFFFFF\fscx100\fscy100}\NVerletzungen ab und Tode Es\Ngibt eine Klausel
+Dialogue: 0,0:01:04.08,0:01:04.54,Cap,,0,0,0,,Versicherung deckt\N{\c&H0047D4FF\fscx118\fscy118}Verletzungen{\c&H00FFFFFF\fscx100\fscy100} ab und Tode Es\Ngibt eine Klausel
+Dialogue: 0,0:01:04.56,0:01:04.84,Cap,,0,0,0,,Versicherung deckt\NVerletzungen {\c&H0047D4FF\fscx118\fscy118}ab{\c&H00FFFFFF\fscx100\fscy100} und Tode Es\Ngibt eine Klausel
+Dialogue: 0,0:01:04.86,0:01:05.16,Cap,,0,0,0,,Versicherung deckt\NVerletzungen ab {\c&H0047D4FF\fscx118\fscy118}und{\c&H00FFFFFF\fscx100\fscy100} Tode Es\Ngibt eine Klausel
+Dialogue: 0,0:01:05.18,0:01:05.86,Cap,,0,0,0,,Versicherung deckt\NVerletzungen ab und {\c&H0047D4FF\fscx118\fscy118}Tode{\c&H00FFFFFF\fscx100\fscy100} Es\Ngibt eine Klausel
+Dialogue: 0,0:01:05.88,0:01:05.96,Cap,,0,0,0,,Versicherung deckt\NVerletzungen ab und Tode {\c&H0047D4FF\fscx118\fscy118}Es{\c&H00FFFFFF\fscx100\fscy100}\Ngibt eine Klausel
+Dialogue: 0,0:01:05.98,0:01:06.16,Cap,,0,0,0,,Versicherung deckt\NVerletzungen ab und Tode Es\N{\c&H0047D4FF\fscx118\fscy118}gibt{\c&H00FFFFFF\fscx100\fscy100} eine Klausel
+Dialogue: 0,0:01:06.18,0:01:06.40,Cap,,0,0,0,,Versicherung deckt\NVerletzungen ab und Tode Es\Ngibt {\c&H0047D4FF\fscx118\fscy118}eine{\c&H00FFFFFF\fscx100\fscy100} Klausel
+Dialogue: 0,0:01:06.42,0:01:07.12,Cap,,0,0,0,,Versicherung deckt\NVerletzungen ab und Tode Es\Ngibt eine {\c&H0047D4FF\fscx118\fscy118}Klausel{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:01:07.14,0:01:07.38,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Wohin{\c&H00FFFFFF\fscx100\fscy100} soll die Leiche gesendet\Nwerden
+Dialogue: 0,0:01:07.40,0:01:07.56,Cap,,0,0,0,,Wohin {\c&H0047D4FF\fscx118\fscy118}soll{\c&H00FFFFFF\fscx100\fscy100} die Leiche gesendet\Nwerden
+Dialogue: 0,0:01:07.58,0:01:07.70,Cap,,0,0,0,,Wohin soll {\c&H0047D4FF\fscx118\fscy118}die{\c&H00FFFFFF\fscx100\fscy100} Leiche gesendet\Nwerden
+Dialogue: 0,0:01:07.72,0:01:07.92,Cap,,0,0,0,,Wohin soll die {\c&H0047D4FF\fscx118\fscy118}Leiche{\c&H00FFFFFF\fscx100\fscy100} gesendet\Nwerden
+Dialogue: 0,0:01:07.94,0:01:08.40,Cap,,0,0,0,,Wohin soll die Leiche {\c&H0047D4FF\fscx118\fscy118}gesendet{\c&H00FFFFFF\fscx100\fscy100}\Nwerden
+Dialogue: 0,0:01:08.42,0:01:08.82,Cap,,0,0,0,,Wohin soll die Leiche gesendet\N{\c&H0047D4FF\fscx118\fscy118}werden{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:01:09.45,0:01:09.77,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}April{\c&H00FFFFFF\fscx100\fscy100} 1994 Etappe vier Die\Nlängste 85 Kilometer
+Dialogue: 0,0:01:09.79,0:01:11.11,Cap,,0,0,0,,April {\c&H0047D4FF\fscx118\fscy118}1994{\c&H00FFFFFF\fscx100\fscy100} Etappe vier Die\Nlängste 85 Kilometer
+Dialogue: 0,0:01:11.13,0:01:13.09,Cap,,0,0,0,,April 1994 {\c&H0047D4FF\fscx118\fscy118}Etappe{\c&H00FFFFFF\fscx100\fscy100} vier Die\Nlängste 85 Kilometer
+Dialogue: 0,0:01:13.11,0:01:13.31,Cap,,0,0,0,,April 1994 Etappe {\c&H0047D4FF\fscx118\fscy118}vier{\c&H00FFFFFF\fscx100\fscy100} Die\Nlängste 85 Kilometer
+Dialogue: 0,0:01:13.33,0:01:13.87,Cap,,0,0,0,,April 1994 Etappe vier {\c&H0047D4FF\fscx118\fscy118}Die{\c&H00FFFFFF\fscx100\fscy100}\Nlängste 85 Kilometer
+Dialogue: 0,0:01:13.89,0:01:14.35,Cap,,0,0,0,,April 1994 Etappe vier Die\N{\c&H0047D4FF\fscx118\fscy118}längste{\c&H00FFFFFF\fscx100\fscy100} 85 Kilometer
+Dialogue: 0,0:01:14.37,0:01:15.15,Cap,,0,0,0,,April 1994 Etappe vier Die\Nlängste {\c&H0047D4FF\fscx118\fscy118}85{\c&H00FFFFFF\fscx100\fscy100} Kilometer
+Dialogue: 0,0:01:15.17,0:01:15.91,Cap,,0,0,0,,April 1994 Etappe vier Die\Nlängste 85 {\c&H0047D4FF\fscx118\fscy118}Kilometer{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:01:16.27,0:01:16.73,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Mauro{\c&H00FFFFFF\fscx100\fscy100} schneidet durch die Dünen\Num Zeit zu sparen Der
+Dialogue: 0,0:01:16.75,0:01:17.09,Cap,,0,0,0,,Mauro {\c&H0047D4FF\fscx118\fscy118}schneidet{\c&H00FFFFFF\fscx100\fscy100} durch die Dünen\Num Zeit zu sparen Der
+Dialogue: 0,0:01:17.11,0:01:17.27,Cap,,0,0,0,,Mauro schneidet {\c&H0047D4FF\fscx118\fscy118}durch{\c&H00FFFFFF\fscx100\fscy100} die Dünen\Num Zeit zu sparen Der
+Dialogue: 0,0:01:17.29,0:01:17.39,Cap,,0,0,0,,Mauro schneidet durch {\c&H0047D4FF\fscx118\fscy118}die{\c&H00FFFFFF\fscx100\fscy100} Dünen\Num Zeit zu sparen Der
+Dialogue: 0,0:01:17.41,0:01:17.93,Cap,,0,0,0,,Mauro schneidet durch die {\c&H0047D4FF\fscx118\fscy118}Dünen{\c&H00FFFFFF\fscx100\fscy100}\Num Zeit zu sparen Der
+Dialogue: 0,0:01:17.95,0:01:17.99,Cap,,0,0,0,,Mauro schneidet durch die Dünen\N{\c&H0047D4FF\fscx118\fscy118}um{\c&H00FFFFFF\fscx100\fscy100} Zeit zu sparen Der
+Dialogue: 0,0:01:18.01,0:01:18.23,Cap,,0,0,0,,Mauro schneidet durch die Dünen\Num {\c&H0047D4FF\fscx118\fscy118}Zeit{\c&H00FFFFFF\fscx100\fscy100} zu sparen Der
+Dialogue: 0,0:01:18.25,0:01:18.43,Cap,,0,0,0,,Mauro schneidet durch die Dünen\Num Zeit {\c&H0047D4FF\fscx118\fscy118}zu{\c&H00FFFFFF\fscx100\fscy100} sparen Der
+Dialogue: 0,0:01:18.45,0:01:19.23,Cap,,0,0,0,,Mauro schneidet durch die Dünen\Num Zeit zu {\c&H0047D4FF\fscx118\fscy118}sparen{\c&H00FFFFFF\fscx100\fscy100} Der
+Dialogue: 0,0:01:19.25,0:01:19.33,Cap,,0,0,0,,Mauro schneidet durch die Dünen\Num Zeit zu sparen {\c&H0047D4FF\fscx118\fscy118}Der{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:01:19.35,0:01:19.55,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Wind{\c&H00FFFFFF\fscx100\fscy100} nimmt zu
+Dialogue: 0,0:01:19.57,0:01:19.71,Cap,,0,0,0,,Wind {\c&H0047D4FF\fscx118\fscy118}nimmt{\c&H00FFFFFF\fscx100\fscy100} zu
+Dialogue: 0,0:01:19.73,0:01:20.25,Cap,,0,0,0,,Wind nimmt {\c&H0047D4FF\fscx118\fscy118}zu{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:01:20.63,0:01:20.79,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Dann{\c&H00FFFFFF\fscx100\fscy100} kommt der Sturm acht\NStunden Als er nachlässt schaut
+Dialogue: 0,0:01:20.81,0:01:21.03,Cap,,0,0,0,,Dann {\c&H0047D4FF\fscx118\fscy118}kommt{\c&H00FFFFFF\fscx100\fscy100} der Sturm acht\NStunden Als er nachlässt schaut
+Dialogue: 0,0:01:21.05,0:01:21.15,Cap,,0,0,0,,Dann kommt {\c&H0047D4FF\fscx118\fscy118}der{\c&H00FFFFFF\fscx100\fscy100} Sturm acht\NStunden Als er nachlässt schaut
+Dialogue: 0,0:01:21.17,0:01:21.39,Cap,,0,0,0,,Dann kommt der {\c&H0047D4FF\fscx118\fscy118}Sturm{\c&H00FFFFFF\fscx100\fscy100} acht\NStunden Als er nachlässt schaut
+Dialogue: 0,0:01:21.41,0:01:21.89,Cap,,0,0,0,,Dann kommt der Sturm {\c&H0047D4FF\fscx118\fscy118}acht{\c&H00FFFFFF\fscx100\fscy100}\NStunden Als er nachlässt schaut
+Dialogue: 0,0:01:21.91,0:01:22.73,Cap,,0,0,0,,Dann kommt der Sturm acht\N{\c&H0047D4FF\fscx118\fscy118}Stunden{\c&H00FFFFFF\fscx100\fscy100} Als er nachlässt schaut
+Dialogue: 0,0:01:22.75,0:01:22.87,Cap,,0,0,0,,Dann kommt der Sturm acht\NStunden {\c&H0047D4FF\fscx118\fscy118}Als{\c&H00FFFFFF\fscx100\fscy100} er nachlässt schaut
+Dialogue: 0,0:01:22.89,0:01:23.03,Cap,,0,0,0,,Dann kommt der Sturm acht\NStunden Als {\c&H0047D4FF\fscx118\fscy118}er{\c&H00FFFFFF\fscx100\fscy100} nachlässt schaut
+Dialogue: 0,0:01:23.05,0:01:23.81,Cap,,0,0,0,,Dann kommt der Sturm acht\NStunden Als er {\c&H0047D4FF\fscx118\fscy118}nachlässt{\c&H00FFFFFF\fscx100\fscy100} schaut
+Dialogue: 0,0:01:23.83,0:01:23.93,Cap,,0,0,0,,Dann kommt der Sturm acht\NStunden Als er nachlässt {\c&H0047D4FF\fscx118\fscy118}schaut{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:01:23.95,0:01:24.11,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}er{\c&H00FFFFFF\fscx100\fscy100} sich um Alles was\Ner kannte Spuren Zelte Straßen
+Dialogue: 0,0:01:24.13,0:01:24.23,Cap,,0,0,0,,er {\c&H0047D4FF\fscx118\fscy118}sich{\c&H00FFFFFF\fscx100\fscy100} um Alles was\Ner kannte Spuren Zelte Straßen
+Dialogue: 0,0:01:24.25,0:01:24.83,Cap,,0,0,0,,er sich {\c&H0047D4FF\fscx118\fscy118}um{\c&H00FFFFFF\fscx100\fscy100} Alles was\Ner kannte Spuren Zelte Straßen
+Dialogue: 0,0:01:24.85,0:01:25.35,Cap,,0,0,0,,er sich um {\c&H0047D4FF\fscx118\fscy118}Alles{\c&H00FFFFFF\fscx100\fscy100} was\Ner kannte Spuren Zelte Straßen
+Dialogue: 0,0:01:25.37,0:01:25.45,Cap,,0,0,0,,er sich um Alles {\c&H0047D4FF\fscx118\fscy118}was{\c&H00FFFFFF\fscx100\fscy100}\Ner kannte Spuren Zelte Straßen
+Dialogue: 0,0:01:25.47,0:01:25.59,Cap,,0,0,0,,er sich um Alles was\N{\c&H0047D4FF\fscx118\fscy118}er{\c&H00FFFFFF\fscx100\fscy100} kannte Spuren Zelte Straßen
+Dialogue: 0,0:01:25.61,0:01:26.21,Cap,,0,0,0,,er sich um Alles was\Ner {\c&H0047D4FF\fscx118\fscy118}kannte{\c&H00FFFFFF\fscx100\fscy100} Spuren Zelte Straßen
+Dialogue: 0,0:01:26.23,0:01:26.87,Cap,,0,0,0,,er sich um Alles was\Ner kannte {\c&H0047D4FF\fscx118\fscy118}Spuren{\c&H00FFFFFF\fscx100\fscy100} Zelte Straßen
+Dialogue: 0,0:01:26.89,0:01:27.55,Cap,,0,0,0,,er sich um Alles was\Ner kannte Spuren {\c&H0047D4FF\fscx118\fscy118}Zelte{\c&H00FFFFFF\fscx100\fscy100} Straßen
+Dialogue: 0,0:01:27.57,0:01:28.07,Cap,,0,0,0,,er sich um Alles was\Ner kannte Spuren Zelte {\c&H0047D4FF\fscx118\fscy118}Straßen{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:01:28.25,0:01:28.33,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}ist{\c&H00FFFFFF\fscx100\fscy100} weg Der Sand hat\Ndie Wüste neu gezeichnet In
+Dialogue: 0,0:01:28.35,0:01:29.07,Cap,,0,0,0,,ist {\c&H0047D4FF\fscx118\fscy118}weg{\c&H00FFFFFF\fscx100\fscy100} Der Sand hat\Ndie Wüste neu gezeichnet In
+Dialogue: 0,0:01:29.09,0:01:29.19,Cap,,0,0,0,,ist weg {\c&H0047D4FF\fscx118\fscy118}Der{\c&H00FFFFFF\fscx100\fscy100} Sand hat\Ndie Wüste neu gezeichnet In
+Dialogue: 0,0:01:29.21,0:01:29.43,Cap,,0,0,0,,ist weg Der {\c&H0047D4FF\fscx118\fscy118}Sand{\c&H00FFFFFF\fscx100\fscy100} hat\Ndie Wüste neu gezeichnet In
+Dialogue: 0,0:01:29.45,0:01:29.63,Cap,,0,0,0,,ist weg Der Sand {\c&H0047D4FF\fscx118\fscy118}hat{\c&H00FFFFFF\fscx100\fscy100}\Ndie Wüste neu gezeichnet In
+Dialogue: 0,0:01:29.65,0:01:29.73,Cap,,0,0,0,,ist weg Der Sand hat\N{\c&H0047D4FF\fscx118\fscy118}die{\c&H00FFFFFF\fscx100\fscy100} Wüste neu gezeichnet In
+Dialogue: 0,0:01:29.75,0:01:29.91,Cap,,0,0,0,,ist weg Der Sand hat\Ndie {\c&H0047D4FF\fscx118\fscy118}Wüste{\c&H00FFFFFF\fscx100\fscy100} neu gezeichnet In
+Dialogue: 0,0:01:29.93,0:01:30.13,Cap,,0,0,0,,ist weg Der Sand hat\Ndie Wüste {\c&H0047D4FF\fscx118\fscy118}neu{\c&H00FFFFFF\fscx100\fscy100} gezeichnet In
+Dialogue: 0,0:01:30.15,0:01:31.17,Cap,,0,0,0,,ist weg Der Sand hat\Ndie Wüste neu {\c&H0047D4FF\fscx118\fscy118}gezeichnet{\c&H00FFFFFF\fscx100\fscy100} In
+Dialogue: 0,0:01:31.19,0:01:31.29,Cap,,0,0,0,,ist weg Der Sand hat\Ndie Wüste neu gezeichnet {\c&H0047D4FF\fscx118\fscy118}In{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:01:31.31,0:01:31.39,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}der{\c&H00FFFFFF\fscx100\fscy100} Flasche noch eine\NFingerbreite Wasser
+Dialogue: 0,0:01:31.41,0:01:31.83,Cap,,0,0,0,,der {\c&H0047D4FF\fscx118\fscy118}Flasche{\c&H00FFFFFF\fscx100\fscy100} noch eine\NFingerbreite Wasser
+Dialogue: 0,0:01:31.85,0:01:32.29,Cap,,0,0,0,,der Flasche {\c&H0047D4FF\fscx118\fscy118}noch{\c&H00FFFFFF\fscx100\fscy100} eine\NFingerbreite Wasser
+Dialogue: 0,0:01:32.31,0:01:32.51,Cap,,0,0,0,,der Flasche noch {\c&H0047D4FF\fscx118\fscy118}eine{\c&H00FFFFFF\fscx100\fscy100}\NFingerbreite Wasser
+Dialogue: 0,0:01:32.53,0:01:33.17,Cap,,0,0,0,,der Flasche noch eine\N{\c&H0047D4FF\fscx118\fscy118}Fingerbreite{\c&H00FFFFFF\fscx100\fscy100} Wasser
+Dialogue: 0,0:01:33.19,0:01:33.61,Cap,,0,0,0,,der Flasche noch eine\NFingerbreite {\c&H0047D4FF\fscx118\fscy118}Wasser{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:01:34.30,0:01:34.50,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Am{\c&H00FFFFFF\fscx100\fscy100} Nachmittag hört er\NRotorgeräusche Er zieht die\NLeuchtrakete
+Dialogue: 0,0:01:34.52,0:01:35.10,Cap,,0,0,0,,Am {\c&H0047D4FF\fscx118\fscy118}Nachmittag{\c&H00FFFFFF\fscx100\fscy100} hört er\NRotorgeräusche Er zieht die\NLeuchtrakete
+Dialogue: 0,0:01:35.12,0:01:35.28,Cap,,0,0,0,,Am Nachmittag {\c&H0047D4FF\fscx118\fscy118}hört{\c&H00FFFFFF\fscx100\fscy100} er\NRotorgeräusche Er zieht die\NLeuchtrakete
+Dialogue: 0,0:01:35.30,0:01:35.48,Cap,,0,0,0,,Am Nachmittag hört {\c&H0047D4FF\fscx118\fscy118}er{\c&H00FFFFFF\fscx100\fscy100}\NRotorgeräusche Er zieht die\NLeuchtrakete
+Dialogue: 0,0:01:35.50,0:01:36.68,Cap,,0,0,0,,Am Nachmittag hört er\N{\c&H0047D4FF\fscx118\fscy118}Rotorgeräusche{\c&H00FFFFFF\fscx100\fscy100} Er zieht die\NLeuchtrakete
+Dialogue: 0,0:01:36.70,0:01:36.80,Cap,,0,0,0,,Am Nachmittag hört er\NRotorgeräusche {\c&H0047D4FF\fscx118\fscy118}Er{\c&H00FFFFFF\fscx100\fscy100} zieht die\NLeuchtrakete
+Dialogue: 0,0:01:36.82,0:01:37.04,Cap,,0,0,0,,Am Nachmittag hört er\NRotorgeräusche Er {\c&H0047D4FF\fscx118\fscy118}zieht{\c&H00FFFFFF\fscx100\fscy100} die\NLeuchtrakete
+Dialogue: 0,0:01:37.06,0:01:37.14,Cap,,0,0,0,,Am Nachmittag hört er\NRotorgeräusche Er zieht {\c&H0047D4FF\fscx118\fscy118}die{\c&H00FFFFFF\fscx100\fscy100}\NLeuchtrakete
+Dialogue: 0,0:01:37.16,0:01:37.82,Cap,,0,0,0,,Am Nachmittag hört er\NRotorgeräusche Er zieht die\N{\c&H0047D4FF\fscx118\fscy118}Leuchtrakete{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:01:37.84,0:01:37.98,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}aus{\c&H00FFFFFF\fscx100\fscy100} dem Rucksack so klein\Nwie ein Kugelschreiber Er zündet
+Dialogue: 0,0:01:38.00,0:01:38.12,Cap,,0,0,0,,aus {\c&H0047D4FF\fscx118\fscy118}dem{\c&H00FFFFFF\fscx100\fscy100} Rucksack so klein\Nwie ein Kugelschreiber Er zündet
+Dialogue: 0,0:01:38.14,0:01:38.86,Cap,,0,0,0,,aus dem {\c&H0047D4FF\fscx118\fscy118}Rucksack{\c&H00FFFFFF\fscx100\fscy100} so klein\Nwie ein Kugelschreiber Er zündet
+Dialogue: 0,0:01:38.88,0:01:38.98,Cap,,0,0,0,,aus dem Rucksack {\c&H0047D4FF\fscx118\fscy118}so{\c&H00FFFFFF\fscx100\fscy100} klein\Nwie ein Kugelschreiber Er zündet
+Dialogue: 0,0:01:39.00,0:01:39.24,Cap,,0,0,0,,aus dem Rucksack so {\c&H0047D4FF\fscx118\fscy118}klein{\c&H00FFFFFF\fscx100\fscy100}\Nwie ein Kugelschreiber Er zündet
+Dialogue: 0,0:01:39.26,0:01:39.40,Cap,,0,0,0,,aus dem Rucksack so klein\N{\c&H0047D4FF\fscx118\fscy118}wie{\c&H00FFFFFF\fscx100\fscy100} ein Kugelschreiber Er zündet
+Dialogue: 0,0:01:39.42,0:01:39.56,Cap,,0,0,0,,aus dem Rucksack so klein\Nwie {\c&H0047D4FF\fscx118\fscy118}ein{\c&H00FFFFFF\fscx100\fscy100} Kugelschreiber Er zündet
+Dialogue: 0,0:01:39.58,0:01:40.60,Cap,,0,0,0,,aus dem Rucksack so klein\Nwie ein {\c&H0047D4FF\fscx118\fscy118}Kugelschreiber{\c&H00FFFFFF\fscx100\fscy100} Er zündet
+Dialogue: 0,0:01:40.62,0:01:40.76,Cap,,0,0,0,,aus dem Rucksack so klein\Nwie ein Kugelschreiber {\c&H0047D4FF\fscx118\fscy118}Er{\c&H00FFFFFF\fscx100\fscy100} zündet
+Dialogue: 0,0:01:40.78,0:01:41.12,Cap,,0,0,0,,aus dem Rucksack so klein\Nwie ein Kugelschreiber Er {\c&H0047D4FF\fscx118\fscy118}zündet{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:01:41.14,0:01:41.50,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}sie{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:01:41.92,0:01:42.10,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Der{\c&H00FFFFFF\fscx100\fscy100} Hubschrauber dreht nicht ab\NEr schaut ihm nach bis
+Dialogue: 0,0:01:42.12,0:01:42.68,Cap,,0,0,0,,Der {\c&H0047D4FF\fscx118\fscy118}Hubschrauber{\c&H00FFFFFF\fscx100\fscy100} dreht nicht ab\NEr schaut ihm nach bis
+Dialogue: 0,0:01:42.70,0:01:42.96,Cap,,0,0,0,,Der Hubschrauber {\c&H0047D4FF\fscx118\fscy118}dreht{\c&H00FFFFFF\fscx100\fscy100} nicht ab\NEr schaut ihm nach bis
+Dialogue: 0,0:01:42.98,0:01:43.10,Cap,,0,0,0,,Der Hubschrauber dreht {\c&H0047D4FF\fscx118\fscy118}nicht{\c&H00FFFFFF\fscx100\fscy100} ab\NEr schaut ihm nach bis
+Dialogue: 0,0:01:43.12,0:01:43.76,Cap,,0,0,0,,Der Hubschrauber dreht nicht {\c&H0047D4FF\fscx118\fscy118}ab{\c&H00FFFFFF\fscx100\fscy100}\NEr schaut ihm nach bis
+Dialogue: 0,0:01:43.78,0:01:43.86,Cap,,0,0,0,,Der Hubschrauber dreht nicht ab\N{\c&H0047D4FF\fscx118\fscy118}Er{\c&H00FFFFFF\fscx100\fscy100} schaut ihm nach bis
+Dialogue: 0,0:01:43.88,0:01:44.10,Cap,,0,0,0,,Der Hubschrauber dreht nicht ab\NEr {\c&H0047D4FF\fscx118\fscy118}schaut{\c&H00FFFFFF\fscx100\fscy100} ihm nach bis
+Dialogue: 0,0:01:44.12,0:01:44.34,Cap,,0,0,0,,Der Hubschrauber dreht nicht ab\NEr schaut {\c&H0047D4FF\fscx118\fscy118}ihm{\c&H00FFFFFF\fscx100\fscy100} nach bis
+Dialogue: 0,0:01:44.36,0:01:44.94,Cap,,0,0,0,,Der Hubschrauber dreht nicht ab\NEr schaut ihm {\c&H0047D4FF\fscx118\fscy118}nach{\c&H00FFFFFF\fscx100\fscy100} bis
+Dialogue: 0,0:01:44.96,0:01:45.08,Cap,,0,0,0,,Der Hubschrauber dreht nicht ab\NEr schaut ihm nach {\c&H0047D4FF\fscx118\fscy118}bis{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:01:45.10,0:01:45.24,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}er{\c&H00FFFFFF\fscx100\fscy100} nur noch ein Punkt\Nist Dann ruft er in
+Dialogue: 0,0:01:45.26,0:01:45.38,Cap,,0,0,0,,er {\c&H0047D4FF\fscx118\fscy118}nur{\c&H00FFFFFF\fscx100\fscy100} noch ein Punkt\Nist Dann ruft er in
+Dialogue: 0,0:01:45.40,0:01:45.50,Cap,,0,0,0,,er nur {\c&H0047D4FF\fscx118\fscy118}noch{\c&H00FFFFFF\fscx100\fscy100} ein Punkt\Nist Dann ruft er in
+Dialogue: 0,0:01:45.52,0:01:45.66,Cap,,0,0,0,,er nur noch {\c&H0047D4FF\fscx118\fscy118}ein{\c&H00FFFFFF\fscx100\fscy100} Punkt\Nist Dann ruft er in
+Dialogue: 0,0:01:45.68,0:01:45.84,Cap,,0,0,0,,er nur noch ein {\c&H0047D4FF\fscx118\fscy118}Punkt{\c&H00FFFFFF\fscx100\fscy100}\Nist Dann ruft er in
+Dialogue: 0,0:01:45.86,0:01:46.58,Cap,,0,0,0,,er nur noch ein Punkt\N{\c&H0047D4FF\fscx118\fscy118}ist{\c&H00FFFFFF\fscx100\fscy100} Dann ruft er in
+Dialogue: 0,0:01:46.60,0:01:46.72,Cap,,0,0,0,,er nur noch ein Punkt\Nist {\c&H0047D4FF\fscx118\fscy118}Dann{\c&H00FFFFFF\fscx100\fscy100} ruft er in
+Dialogue: 0,0:01:46.74,0:01:46.96,Cap,,0,0,0,,er nur noch ein Punkt\Nist Dann {\c&H0047D4FF\fscx118\fscy118}ruft{\c&H00FFFFFF\fscx100\fscy100} er in
+Dialogue: 0,0:01:46.98,0:01:47.06,Cap,,0,0,0,,er nur noch ein Punkt\Nist Dann ruft {\c&H0047D4FF\fscx118\fscy118}er{\c&H00FFFFFF\fscx100\fscy100} in
+Dialogue: 0,0:01:47.08,0:01:47.16,Cap,,0,0,0,,er nur noch ein Punkt\Nist Dann ruft er {\c&H0047D4FF\fscx118\fscy118}in{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:01:47.18,0:01:47.24,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}die{\c&H00FFFFFF\fscx100\fscy100} Stille Warum verlässt du\Nmich
+Dialogue: 0,0:01:47.26,0:01:47.96,Cap,,0,0,0,,die {\c&H0047D4FF\fscx118\fscy118}Stille{\c&H00FFFFFF\fscx100\fscy100} Warum verlässt du\Nmich
+Dialogue: 0,0:01:47.98,0:01:48.14,Cap,,0,0,0,,die Stille {\c&H0047D4FF\fscx118\fscy118}Warum{\c&H00FFFFFF\fscx100\fscy100} verlässt du\Nmich
+Dialogue: 0,0:01:48.16,0:01:48.52,Cap,,0,0,0,,die Stille Warum {\c&H0047D4FF\fscx118\fscy118}verlässt{\c&H00FFFFFF\fscx100\fscy100} du\Nmich
+Dialogue: 0,0:01:48.54,0:01:48.60,Cap,,0,0,0,,die Stille Warum verlässt {\c&H0047D4FF\fscx118\fscy118}du{\c&H00FFFFFF\fscx100\fscy100}\Nmich
+Dialogue: 0,0:01:48.62,0:01:48.94,Cap,,0,0,0,,die Stille Warum verlässt du\N{\c&H0047D4FF\fscx118\fscy118}mich{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:01:49.36,0:01:49.64,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Giovanni{\c&H00FFFFFF\fscx100\fscy100} wartet am Zielstrich Er\Nwartet und wartet
+Dialogue: 0,0:01:49.66,0:01:50.02,Cap,,0,0,0,,Giovanni {\c&H0047D4FF\fscx118\fscy118}wartet{\c&H00FFFFFF\fscx100\fscy100} am Zielstrich Er\Nwartet und wartet
+Dialogue: 0,0:01:50.04,0:01:50.18,Cap,,0,0,0,,Giovanni wartet {\c&H0047D4FF\fscx118\fscy118}am{\c&H00FFFFFF\fscx100\fscy100} Zielstrich Er\Nwartet und wartet
+Dialogue: 0,0:01:50.20,0:01:51.16,Cap,,0,0,0,,Giovanni wartet am {\c&H0047D4FF\fscx118\fscy118}Zielstrich{\c&H00FFFFFF\fscx100\fscy100} Er\Nwartet und wartet
+Dialogue: 0,0:01:51.18,0:01:51.28,Cap,,0,0,0,,Giovanni wartet am Zielstrich {\c&H0047D4FF\fscx118\fscy118}Er{\c&H00FFFFFF\fscx100\fscy100}\Nwartet und wartet
+Dialogue: 0,0:01:51.30,0:01:51.62,Cap,,0,0,0,,Giovanni wartet am Zielstrich Er\N{\c&H0047D4FF\fscx118\fscy118}wartet{\c&H00FFFFFF\fscx100\fscy100} und wartet
+Dialogue: 0,0:01:51.64,0:01:51.82,Cap,,0,0,0,,Giovanni wartet am Zielstrich Er\Nwartet {\c&H0047D4FF\fscx118\fscy118}und{\c&H00FFFFFF\fscx100\fscy100} wartet
+Dialogue: 0,0:01:51.84,0:01:52.42,Cap,,0,0,0,,Giovanni wartet am Zielstrich Er\Nwartet und {\c&H0047D4FF\fscx118\fscy118}wartet{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:01:52.99,0:01:53.23,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Drei{\c&H00FFFFFF\fscx100\fscy100} Gebäude in der Leere\NEr geht hinein das Grab
+Dialogue: 0,0:01:53.25,0:01:53.65,Cap,,0,0,0,,Drei {\c&H0047D4FF\fscx118\fscy118}Gebäude{\c&H00FFFFFF\fscx100\fscy100} in der Leere\NEr geht hinein das Grab
+Dialogue: 0,0:01:53.67,0:01:53.77,Cap,,0,0,0,,Drei Gebäude {\c&H0047D4FF\fscx118\fscy118}in{\c&H00FFFFFF\fscx100\fscy100} der Leere\NEr geht hinein das Grab
+Dialogue: 0,0:01:53.79,0:01:53.87,Cap,,0,0,0,,Drei Gebäude in {\c&H0047D4FF\fscx118\fscy118}der{\c&H00FFFFFF\fscx100\fscy100} Leere\NEr geht hinein das Grab
+Dialogue: 0,0:01:53.89,0:01:54.61,Cap,,0,0,0,,Drei Gebäude in der {\c&H0047D4FF\fscx118\fscy118}Leere{\c&H00FFFFFF\fscx100\fscy100}\NEr geht hinein das Grab
+Dialogue: 0,0:01:54.63,0:01:54.75,Cap,,0,0,0,,Drei Gebäude in der Leere\N{\c&H0047D4FF\fscx118\fscy118}Er{\c&H00FFFFFF\fscx100\fscy100} geht hinein das Grab
+Dialogue: 0,0:01:54.77,0:01:54.95,Cap,,0,0,0,,Drei Gebäude in der Leere\NEr {\c&H0047D4FF\fscx118\fscy118}geht{\c&H00FFFFFF\fscx100\fscy100} hinein das Grab
+Dialogue: 0,0:01:54.97,0:01:55.67,Cap,,0,0,0,,Drei Gebäude in der Leere\NEr geht {\c&H0047D4FF\fscx118\fscy118}hinein{\c&H00FFFFFF\fscx100\fscy100} das Grab
+Dialogue: 0,0:01:55.69,0:01:55.79,Cap,,0,0,0,,Drei Gebäude in der Leere\NEr geht hinein {\c&H0047D4FF\fscx118\fscy118}das{\c&H00FFFFFF\fscx100\fscy100} Grab
+Dialogue: 0,0:01:55.81,0:01:56.01,Cap,,0,0,0,,Drei Gebäude in der Leere\NEr geht hinein das {\c&H0047D4FF\fscx118\fscy118}Grab{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:01:56.03,0:01:56.25,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}eines{\c&H00FFFFFF\fscx100\fscy100} muslimischen Lehrers Es\Nriecht nach Ratten aber es\Nist
+Dialogue: 0,0:01:56.27,0:01:56.87,Cap,,0,0,0,,eines {\c&H0047D4FF\fscx118\fscy118}muslimischen{\c&H00FFFFFF\fscx100\fscy100} Lehrers Es\Nriecht nach Ratten aber es\Nist
+Dialogue: 0,0:01:56.89,0:01:57.61,Cap,,0,0,0,,eines muslimischen {\c&H0047D4FF\fscx118\fscy118}Lehrers{\c&H00FFFFFF\fscx100\fscy100} Es\Nriecht nach Ratten aber es\Nist
+Dialogue: 0,0:01:57.63,0:01:57.77,Cap,,0,0,0,,eines muslimischen Lehrers {\c&H0047D4FF\fscx118\fscy118}Es{\c&H00FFFFFF\fscx100\fscy100}\Nriecht nach Ratten aber es\Nist
+Dialogue: 0,0:01:57.79,0:01:58.09,Cap,,0,0,0,,eines muslimischen Lehrers Es\N{\c&H0047D4FF\fscx118\fscy118}riecht{\c&H00FFFFFF\fscx100\fscy100} nach Ratten aber es\Nist
+Dialogue: 0,0:01:58.11,0:01:58.29,Cap,,0,0,0,,eines muslimischen Lehrers Es\Nriecht {\c&H0047D4FF\fscx118\fscy118}nach{\c&H00FFFFFF\fscx100\fscy100} Ratten aber es\Nist
+Dialogue: 0,0:01:58.31,0:01:58.85,Cap,,0,0,0,,eines muslimischen Lehrers Es\Nriecht nach {\c&H0047D4FF\fscx118\fscy118}Ratten{\c&H00FFFFFF\fscx100\fscy100} aber es\Nist
+Dialogue: 0,0:01:58.87,0:01:59.05,Cap,,0,0,0,,eines muslimischen Lehrers Es\Nriecht nach Ratten {\c&H0047D4FF\fscx118\fscy118}aber{\c&H00FFFFFF\fscx100\fscy100} es\Nist
+Dialogue: 0,0:01:59.07,0:01:59.17,Cap,,0,0,0,,eines muslimischen Lehrers Es\Nriecht nach Ratten aber {\c&H0047D4FF\fscx118\fscy118}es{\c&H00FFFFFF\fscx100\fscy100}\Nist
+Dialogue: 0,0:01:59.19,0:01:59.29,Cap,,0,0,0,,eines muslimischen Lehrers Es\Nriecht nach Ratten aber es\N{\c&H0047D4FF\fscx118\fscy118}ist{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:01:59.31,0:02:00.01,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}sauber{\c&H00FFFFFF\fscx100\fscy100} Tief drin hört er\NFlattern Er leuchtet rein eine
+Dialogue: 0,0:02:00.03,0:02:00.27,Cap,,0,0,0,,sauber {\c&H0047D4FF\fscx118\fscy118}Tief{\c&H00FFFFFF\fscx100\fscy100} drin hört er\NFlattern Er leuchtet rein eine
+Dialogue: 0,0:02:00.29,0:02:00.53,Cap,,0,0,0,,sauber Tief {\c&H0047D4FF\fscx118\fscy118}drin{\c&H00FFFFFF\fscx100\fscy100} hört er\NFlattern Er leuchtet rein eine
+Dialogue: 0,0:02:00.55,0:02:00.65,Cap,,0,0,0,,sauber Tief drin {\c&H0047D4FF\fscx118\fscy118}hört{\c&H00FFFFFF\fscx100\fscy100} er\NFlattern Er leuchtet rein eine
+Dialogue: 0,0:02:00.67,0:02:00.83,Cap,,0,0,0,,sauber Tief drin hört {\c&H0047D4FF\fscx118\fscy118}er{\c&H00FFFFFF\fscx100\fscy100}\NFlattern Er leuchtet rein eine
+Dialogue: 0,0:02:00.85,0:02:01.67,Cap,,0,0,0,,sauber Tief drin hört er\N{\c&H0047D4FF\fscx118\fscy118}Flattern{\c&H00FFFFFF\fscx100\fscy100} Er leuchtet rein eine
+Dialogue: 0,0:02:01.69,0:02:01.83,Cap,,0,0,0,,sauber Tief drin hört er\NFlattern {\c&H0047D4FF\fscx118\fscy118}Er{\c&H00FFFFFF\fscx100\fscy100} leuchtet rein eine
+Dialogue: 0,0:02:01.85,0:02:02.23,Cap,,0,0,0,,sauber Tief drin hört er\NFlattern Er {\c&H0047D4FF\fscx118\fscy118}leuchtet{\c&H00FFFFFF\fscx100\fscy100} rein eine
+Dialogue: 0,0:02:02.25,0:02:02.81,Cap,,0,0,0,,sauber Tief drin hört er\NFlattern Er leuchtet {\c&H0047D4FF\fscx118\fscy118}rein{\c&H00FFFFFF\fscx100\fscy100} eine
+Dialogue: 0,0:02:02.83,0:02:02.95,Cap,,0,0,0,,sauber Tief drin hört er\NFlattern Er leuchtet rein {\c&H0047D4FF\fscx118\fscy118}eine{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:02:02.97,0:02:03.35,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Kolonie{\c&H00FFFFFF\fscx100\fscy100} Fledermäuse reglos an\Nder Wand
+Dialogue: 0,0:02:03.37,0:02:04.29,Cap,,0,0,0,,Kolonie {\c&H0047D4FF\fscx118\fscy118}Fledermäuse{\c&H00FFFFFF\fscx100\fscy100} reglos an\Nder Wand
+Dialogue: 0,0:02:04.31,0:02:04.61,Cap,,0,0,0,,Kolonie Fledermäuse {\c&H0047D4FF\fscx118\fscy118}reglos{\c&H00FFFFFF\fscx100\fscy100} an\Nder Wand
+Dialogue: 0,0:02:04.63,0:02:04.81,Cap,,0,0,0,,Kolonie Fledermäuse reglos {\c&H0047D4FF\fscx118\fscy118}an{\c&H00FFFFFF\fscx100\fscy100}\Nder Wand
+Dialogue: 0,0:02:04.83,0:02:04.91,Cap,,0,0,0,,Kolonie Fledermäuse reglos an\N{\c&H0047D4FF\fscx118\fscy118}der{\c&H00FFFFFF\fscx100\fscy100} Wand
+Dialogue: 0,0:02:04.93,0:02:05.31,Cap,,0,0,0,,Kolonie Fledermäuse reglos an\Nder {\c&H0047D4FF\fscx118\fscy118}Wand{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:02:05.67,0:02:05.89,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Was{\c&H00FFFFFF\fscx100\fscy100} er dann tut fühlt\Nsich für ihn vollkommen\Nnatürlich
+Dialogue: 0,0:02:05.91,0:02:06.03,Cap,,0,0,0,,Was {\c&H0047D4FF\fscx118\fscy118}er{\c&H00FFFFFF\fscx100\fscy100} dann tut fühlt\Nsich für ihn vollkommen\Nnatürlich
+Dialogue: 0,0:02:06.05,0:02:06.17,Cap,,0,0,0,,Was er {\c&H0047D4FF\fscx118\fscy118}dann{\c&H00FFFFFF\fscx100\fscy100} tut fühlt\Nsich für ihn vollkommen\Nnatürlich
+Dialogue: 0,0:02:06.19,0:02:06.63,Cap,,0,0,0,,Was er dann {\c&H0047D4FF\fscx118\fscy118}tut{\c&H00FFFFFF\fscx100\fscy100} fühlt\Nsich für ihn vollkommen\Nnatürlich
+Dialogue: 0,0:02:06.65,0:02:06.81,Cap,,0,0,0,,Was er dann tut {\c&H0047D4FF\fscx118\fscy118}fühlt{\c&H00FFFFFF\fscx100\fscy100}\Nsich für ihn vollkommen\Nnatürlich
+Dialogue: 0,0:02:06.83,0:02:06.97,Cap,,0,0,0,,Was er dann tut fühlt\N{\c&H0047D4FF\fscx118\fscy118}sich{\c&H00FFFFFF\fscx100\fscy100} für ihn vollkommen\Nnatürlich
+Dialogue: 0,0:02:06.99,0:02:07.15,Cap,,0,0,0,,Was er dann tut fühlt\Nsich {\c&H0047D4FF\fscx118\fscy118}für{\c&H00FFFFFF\fscx100\fscy100} ihn vollkommen\Nnatürlich
+Dialogue: 0,0:02:07.17,0:02:07.29,Cap,,0,0,0,,Was er dann tut fühlt\Nsich für {\c&H0047D4FF\fscx118\fscy118}ihn{\c&H00FFFFFF\fscx100\fscy100} vollkommen\Nnatürlich
+Dialogue: 0,0:02:07.31,0:02:07.77,Cap,,0,0,0,,Was er dann tut fühlt\Nsich für ihn {\c&H0047D4FF\fscx118\fscy118}vollkommen{\c&H00FFFFFF\fscx100\fscy100}\Nnatürlich
+Dialogue: 0,0:02:07.79,0:02:08.07,Cap,,0,0,0,,Was er dann tut fühlt\Nsich für ihn vollkommen\N{\c&H0047D4FF\fscx118\fscy118}natürlich{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:02:08.09,0:02:08.79,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}an{\c&H00FFFFFF\fscx100\fscy100} Er greift eine köpft\Nsie trinkt das Innere Zwanzig
+Dialogue: 0,0:02:08.81,0:02:08.93,Cap,,0,0,0,,an {\c&H0047D4FF\fscx118\fscy118}Er{\c&H00FFFFFF\fscx100\fscy100} greift eine köpft\Nsie trinkt das Innere Zwanzig
+Dialogue: 0,0:02:08.95,0:02:09.27,Cap,,0,0,0,,an Er {\c&H0047D4FF\fscx118\fscy118}greift{\c&H00FFFFFF\fscx100\fscy100} eine köpft\Nsie trinkt das Innere Zwanzig
+Dialogue: 0,0:02:09.29,0:02:09.77,Cap,,0,0,0,,an Er greift {\c&H0047D4FF\fscx118\fscy118}eine{\c&H00FFFFFF\fscx100\fscy100} köpft\Nsie trinkt das Innere Zwanzig
+Dialogue: 0,0:02:09.79,0:02:10.05,Cap,,0,0,0,,an Er greift eine {\c&H0047D4FF\fscx118\fscy118}köpft{\c&H00FFFFFF\fscx100\fscy100}\Nsie trinkt das Innere Zwanzig
+Dialogue: 0,0:02:10.07,0:02:10.43,Cap,,0,0,0,,an Er greift eine köpft\N{\c&H0047D4FF\fscx118\fscy118}sie{\c&H00FFFFFF\fscx100\fscy100} trinkt das Innere Zwanzig
+Dialogue: 0,0:02:10.45,0:02:10.71,Cap,,0,0,0,,an Er greift eine köpft\Nsie {\c&H0047D4FF\fscx118\fscy118}trinkt{\c&H00FFFFFF\fscx100\fscy100} das Innere Zwanzig
+Dialogue: 0,0:02:10.73,0:02:10.81,Cap,,0,0,0,,an Er greift eine köpft\Nsie trinkt {\c&H0047D4FF\fscx118\fscy118}das{\c&H00FFFFFF\fscx100\fscy100} Innere Zwanzig
+Dialogue: 0,0:02:10.83,0:02:11.55,Cap,,0,0,0,,an Er greift eine köpft\Nsie trinkt das {\c&H0047D4FF\fscx118\fscy118}Innere{\c&H00FFFFFF\fscx100\fscy100} Zwanzig
+Dialogue: 0,0:02:11.57,0:02:11.93,Cap,,0,0,0,,an Er greift eine köpft\Nsie trinkt das Innere {\c&H0047D4FF\fscx118\fscy118}Zwanzig{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:02:11.95,0:02:12.47,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Stück{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:02:13.12,0:02:13.46,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Tag{\c&H00FFFFFF\fscx100\fscy100} sechs Ein Flugzeug zieht\Nüber ihn hinweg Er verbrennt
+Dialogue: 0,0:02:13.48,0:02:13.82,Cap,,0,0,0,,Tag {\c&H0047D4FF\fscx118\fscy118}sechs{\c&H00FFFFFF\fscx100\fscy100} Ein Flugzeug zieht\Nüber ihn hinweg Er verbrennt
+Dialogue: 0,0:02:13.84,0:02:14.34,Cap,,0,0,0,,Tag sechs {\c&H0047D4FF\fscx118\fscy118}Ein{\c&H00FFFFFF\fscx100\fscy100} Flugzeug zieht\Nüber ihn hinweg Er verbrennt
+Dialogue: 0,0:02:14.36,0:02:14.86,Cap,,0,0,0,,Tag sechs Ein {\c&H0047D4FF\fscx118\fscy118}Flugzeug{\c&H00FFFFFF\fscx100\fscy100} zieht\Nüber ihn hinweg Er verbrennt
+Dialogue: 0,0:02:14.88,0:02:15.18,Cap,,0,0,0,,Tag sechs Ein Flugzeug {\c&H0047D4FF\fscx118\fscy118}zieht{\c&H00FFFFFF\fscx100\fscy100}\Nüber ihn hinweg Er verbrennt
+Dialogue: 0,0:02:15.20,0:02:15.32,Cap,,0,0,0,,Tag sechs Ein Flugzeug zieht\N{\c&H0047D4FF\fscx118\fscy118}über{\c&H00FFFFFF\fscx100\fscy100} ihn hinweg Er verbrennt
+Dialogue: 0,0:02:15.34,0:02:15.44,Cap,,0,0,0,,Tag sechs Ein Flugzeug zieht\Nüber {\c&H0047D4FF\fscx118\fscy118}ihn{\c&H00FFFFFF\fscx100\fscy100} hinweg Er verbrennt
+Dialogue: 0,0:02:15.46,0:02:16.28,Cap,,0,0,0,,Tag sechs Ein Flugzeug zieht\Nüber ihn {\c&H0047D4FF\fscx118\fscy118}hinweg{\c&H00FFFFFF\fscx100\fscy100} Er verbrennt
+Dialogue: 0,0:02:16.30,0:02:16.40,Cap,,0,0,0,,Tag sechs Ein Flugzeug zieht\Nüber ihn hinweg {\c&H0047D4FF\fscx118\fscy118}Er{\c&H00FFFFFF\fscx100\fscy100} verbrennt
+Dialogue: 0,0:02:16.42,0:02:16.86,Cap,,0,0,0,,Tag sechs Ein Flugzeug zieht\Nüber ihn hinweg Er {\c&H0047D4FF\fscx118\fscy118}verbrennt{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:02:16.88,0:02:17.28,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Rucksack{\c&H00FFFFFF\fscx100\fscy100} und Schlafsack für\NRauch das Flugzeug sieht ihn\Nnicht
+Dialogue: 0,0:02:17.30,0:02:17.48,Cap,,0,0,0,,Rucksack {\c&H0047D4FF\fscx118\fscy118}und{\c&H00FFFFFF\fscx100\fscy100} Schlafsack für\NRauch das Flugzeug sieht ihn\Nnicht
+Dialogue: 0,0:02:17.50,0:02:18.04,Cap,,0,0,0,,Rucksack und {\c&H0047D4FF\fscx118\fscy118}Schlafsack{\c&H00FFFFFF\fscx100\fscy100} für\NRauch das Flugzeug sieht ihn\Nnicht
+Dialogue: 0,0:02:18.06,0:02:18.20,Cap,,0,0,0,,Rucksack und Schlafsack {\c&H0047D4FF\fscx118\fscy118}für{\c&H00FFFFFF\fscx100\fscy100}\NRauch das Flugzeug sieht ihn\Nnicht
+Dialogue: 0,0:02:18.22,0:02:18.74,Cap,,0,0,0,,Rucksack und Schlafsack für\N{\c&H0047D4FF\fscx118\fscy118}Rauch{\c&H00FFFFFF\fscx100\fscy100} das Flugzeug sieht ihn\Nnicht
+Dialogue: 0,0:02:18.76,0:02:18.84,Cap,,0,0,0,,Rucksack und Schlafsack für\NRauch {\c&H0047D4FF\fscx118\fscy118}das{\c&H00FFFFFF\fscx100\fscy100} Flugzeug sieht ihn\Nnicht
+Dialogue: 0,0:02:18.86,0:02:19.34,Cap,,0,0,0,,Rucksack und Schlafsack für\NRauch das {\c&H0047D4FF\fscx118\fscy118}Flugzeug{\c&H00FFFFFF\fscx100\fscy100} sieht ihn\Nnicht
+Dialogue: 0,0:02:19.36,0:02:19.52,Cap,,0,0,0,,Rucksack und Schlafsack für\NRauch das Flugzeug {\c&H0047D4FF\fscx118\fscy118}sieht{\c&H00FFFFFF\fscx100\fscy100} ihn\Nnicht
+Dialogue: 0,0:02:19.54,0:02:19.70,Cap,,0,0,0,,Rucksack und Schlafsack für\NRauch das Flugzeug sieht {\c&H0047D4FF\fscx118\fscy118}ihn{\c&H00FFFFFF\fscx100\fscy100}\Nnicht
+Dialogue: 0,0:02:19.72,0:02:20.16,Cap,,0,0,0,,Rucksack und Schlafsack für\NRauch das Flugzeug sieht ihn\N{\c&H0047D4FF\fscx118\fscy118}nicht{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:02:20.34,0:02:20.46,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Er{\c&H00FFFFFF\fscx100\fscy100} nimmt ein Stück Kohle\Nund schreibt auf einen Fetzen
+Dialogue: 0,0:02:20.48,0:02:20.64,Cap,,0,0,0,,Er {\c&H0047D4FF\fscx118\fscy118}nimmt{\c&H00FFFFFF\fscx100\fscy100} ein Stück Kohle\Nund schreibt auf einen Fetzen
+Dialogue: 0,0:02:20.66,0:02:20.84,Cap,,0,0,0,,Er nimmt {\c&H0047D4FF\fscx118\fscy118}ein{\c&H00FFFFFF\fscx100\fscy100} Stück Kohle\Nund schreibt auf einen Fetzen
+Dialogue: 0,0:02:20.86,0:02:21.02,Cap,,0,0,0,,Er nimmt ein {\c&H0047D4FF\fscx118\fscy118}Stück{\c&H00FFFFFF\fscx100\fscy100} Kohle\Nund schreibt auf einen Fetzen
+Dialogue: 0,0:02:21.04,0:02:21.48,Cap,,0,0,0,,Er nimmt ein Stück {\c&H0047D4FF\fscx118\fscy118}Kohle{\c&H00FFFFFF\fscx100\fscy100}\Nund schreibt auf einen Fetzen
+Dialogue: 0,0:02:21.50,0:02:21.62,Cap,,0,0,0,,Er nimmt ein Stück Kohle\N{\c&H0047D4FF\fscx118\fscy118}und{\c&H00FFFFFF\fscx100\fscy100} schreibt auf einen Fetzen
+Dialogue: 0,0:02:21.64,0:02:21.94,Cap,,0,0,0,,Er nimmt ein Stück Kohle\Nund {\c&H0047D4FF\fscx118\fscy118}schreibt{\c&H00FFFFFF\fscx100\fscy100} auf einen Fetzen
+Dialogue: 0,0:02:21.96,0:02:22.12,Cap,,0,0,0,,Er nimmt ein Stück Kohle\Nund schreibt {\c&H0047D4FF\fscx118\fscy118}auf{\c&H00FFFFFF\fscx100\fscy100} einen Fetzen
+Dialogue: 0,0:02:22.14,0:02:22.28,Cap,,0,0,0,,Er nimmt ein Stück Kohle\Nund schreibt auf {\c&H0047D4FF\fscx118\fscy118}einen{\c&H00FFFFFF\fscx100\fscy100} Fetzen
+Dialogue: 0,0:02:22.30,0:02:22.88,Cap,,0,0,0,,Er nimmt ein Stück Kohle\Nund schreibt auf einen {\c&H0047D4FF\fscx118\fscy118}Fetzen{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:02:22.96,0:02:23.18,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Vergib{\c&H00FFFFFF\fscx100\fscy100} mir Vergib mir wenn\Nich dich verletzt habe Wenn
+Dialogue: 0,0:02:23.20,0:02:23.78,Cap,,0,0,0,,Vergib {\c&H0047D4FF\fscx118\fscy118}mir{\c&H00FFFFFF\fscx100\fscy100} Vergib mir wenn\Nich dich verletzt habe Wenn
+Dialogue: 0,0:02:23.80,0:02:24.16,Cap,,0,0,0,,Vergib mir {\c&H0047D4FF\fscx118\fscy118}Vergib{\c&H00FFFFFF\fscx100\fscy100} mir wenn\Nich dich verletzt habe Wenn
+Dialogue: 0,0:02:24.18,0:02:24.66,Cap,,0,0,0,,Vergib mir Vergib {\c&H0047D4FF\fscx118\fscy118}mir{\c&H00FFFFFF\fscx100\fscy100} wenn\Nich dich verletzt habe Wenn
+Dialogue: 0,0:02:24.68,0:02:24.74,Cap,,0,0,0,,Vergib mir Vergib mir {\c&H0047D4FF\fscx118\fscy118}wenn{\c&H00FFFFFF\fscx100\fscy100}\Nich dich verletzt habe Wenn
+Dialogue: 0,0:02:24.76,0:02:24.86,Cap,,0,0,0,,Vergib mir Vergib mir wenn\N{\c&H0047D4FF\fscx118\fscy118}ich{\c&H00FFFFFF\fscx100\fscy100} dich verletzt habe Wenn
+Dialogue: 0,0:02:24.88,0:02:24.98,Cap,,0,0,0,,Vergib mir Vergib mir wenn\Nich {\c&H0047D4FF\fscx118\fscy118}dich{\c&H00FFFFFF\fscx100\fscy100} verletzt habe Wenn
+Dialogue: 0,0:02:25.00,0:02:25.40,Cap,,0,0,0,,Vergib mir Vergib mir wenn\Nich dich {\c&H0047D4FF\fscx118\fscy118}verletzt{\c&H00FFFFFF\fscx100\fscy100} habe Wenn
+Dialogue: 0,0:02:25.42,0:02:26.06,Cap,,0,0,0,,Vergib mir Vergib mir wenn\Nich dich verletzt {\c&H0047D4FF\fscx118\fscy118}habe{\c&H00FFFFFF\fscx100\fscy100} Wenn
+Dialogue: 0,0:02:26.08,0:02:26.16,Cap,,0,0,0,,Vergib mir Vergib mir wenn\Nich dich verletzt habe {\c&H0047D4FF\fscx118\fscy118}Wenn{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:02:26.18,0:02:26.28,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}ich{\c&H00FFFFFF\fscx100\fscy100} nicht da war für\Ndich und die Kinder
+Dialogue: 0,0:02:26.30,0:02:26.40,Cap,,0,0,0,,ich {\c&H0047D4FF\fscx118\fscy118}nicht{\c&H00FFFFFF\fscx100\fscy100} da war für\Ndich und die Kinder
+Dialogue: 0,0:02:26.42,0:02:26.62,Cap,,0,0,0,,ich nicht {\c&H0047D4FF\fscx118\fscy118}da{\c&H00FFFFFF\fscx100\fscy100} war für\Ndich und die Kinder
+Dialogue: 0,0:02:26.64,0:02:26.78,Cap,,0,0,0,,ich nicht da {\c&H0047D4FF\fscx118\fscy118}war{\c&H00FFFFFF\fscx100\fscy100} für\Ndich und die Kinder
+Dialogue: 0,0:02:26.80,0:02:27.00,Cap,,0,0,0,,ich nicht da war {\c&H0047D4FF\fscx118\fscy118}für{\c&H00FFFFFF\fscx100\fscy100}\Ndich und die Kinder
+Dialogue: 0,0:02:27.02,0:02:27.18,Cap,,0,0,0,,ich nicht da war für\N{\c&H0047D4FF\fscx118\fscy118}dich{\c&H00FFFFFF\fscx100\fscy100} und die Kinder
+Dialogue: 0,0:02:27.20,0:02:27.40,Cap,,0,0,0,,ich nicht da war für\Ndich {\c&H0047D4FF\fscx118\fscy118}und{\c&H00FFFFFF\fscx100\fscy100} die Kinder
+Dialogue: 0,0:02:27.42,0:02:27.52,Cap,,0,0,0,,ich nicht da war für\Ndich und {\c&H0047D4FF\fscx118\fscy118}die{\c&H00FFFFFF\fscx100\fscy100} Kinder
+Dialogue: 0,0:02:27.54,0:02:27.96,Cap,,0,0,0,,ich nicht da war für\Ndich und die {\c&H0047D4FF\fscx118\fscy118}Kinder{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:02:28.36,0:02:28.62,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Dann{\c&H00FFFFFF\fscx100\fscy100} ritzt er sich die\NHandgelenke auf Er setzt sich
+Dialogue: 0,0:02:28.64,0:02:28.98,Cap,,0,0,0,,Dann {\c&H0047D4FF\fscx118\fscy118}ritzt{\c&H00FFFFFF\fscx100\fscy100} er sich die\NHandgelenke auf Er setzt sich
+Dialogue: 0,0:02:29.00,0:02:29.08,Cap,,0,0,0,,Dann ritzt {\c&H0047D4FF\fscx118\fscy118}er{\c&H00FFFFFF\fscx100\fscy100} sich die\NHandgelenke auf Er setzt sich
+Dialogue: 0,0:02:29.10,0:02:29.18,Cap,,0,0,0,,Dann ritzt er {\c&H0047D4FF\fscx118\fscy118}sich{\c&H00FFFFFF\fscx100\fscy100} die\NHandgelenke auf Er setzt sich
+Dialogue: 0,0:02:29.20,0:02:29.34,Cap,,0,0,0,,Dann ritzt er sich {\c&H0047D4FF\fscx118\fscy118}die{\c&H00FFFFFF\fscx100\fscy100}\NHandgelenke auf Er setzt sich
+Dialogue: 0,0:02:29.36,0:02:29.92,Cap,,0,0,0,,Dann ritzt er sich die\N{\c&H0047D4FF\fscx118\fscy118}Handgelenke{\c&H00FFFFFF\fscx100\fscy100} auf Er setzt sich
+Dialogue: 0,0:02:29.94,0:02:30.48,Cap,,0,0,0,,Dann ritzt er sich die\NHandgelenke {\c&H0047D4FF\fscx118\fscy118}auf{\c&H00FFFFFF\fscx100\fscy100} Er setzt sich
+Dialogue: 0,0:02:30.50,0:02:30.62,Cap,,0,0,0,,Dann ritzt er sich die\NHandgelenke auf {\c&H0047D4FF\fscx118\fscy118}Er{\c&H00FFFFFF\fscx100\fscy100} setzt sich
+Dialogue: 0,0:02:30.64,0:02:30.80,Cap,,0,0,0,,Dann ritzt er sich die\NHandgelenke auf Er {\c&H0047D4FF\fscx118\fscy118}setzt{\c&H00FFFFFF\fscx100\fscy100} sich
+Dialogue: 0,0:02:30.82,0:02:31.06,Cap,,0,0,0,,Dann ritzt er sich die\NHandgelenke auf Er setzt {\c&H0047D4FF\fscx118\fscy118}sich{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:02:31.08,0:02:31.70,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}hin{\c&H00FFFFFF\fscx100\fscy100} Er hat keine Angst\Nvor dem Tod nur vor
+Dialogue: 0,0:02:31.72,0:02:31.80,Cap,,0,0,0,,hin {\c&H0047D4FF\fscx118\fscy118}Er{\c&H00FFFFFF\fscx100\fscy100} hat keine Angst\Nvor dem Tod nur vor
+Dialogue: 0,0:02:31.82,0:02:31.94,Cap,,0,0,0,,hin Er {\c&H0047D4FF\fscx118\fscy118}hat{\c&H00FFFFFF\fscx100\fscy100} keine Angst\Nvor dem Tod nur vor
+Dialogue: 0,0:02:31.96,0:02:32.14,Cap,,0,0,0,,hin Er hat {\c&H0047D4FF\fscx118\fscy118}keine{\c&H00FFFFFF\fscx100\fscy100} Angst\Nvor dem Tod nur vor
+Dialogue: 0,0:02:32.16,0:02:32.42,Cap,,0,0,0,,hin Er hat keine {\c&H0047D4FF\fscx118\fscy118}Angst{\c&H00FFFFFF\fscx100\fscy100}\Nvor dem Tod nur vor
+Dialogue: 0,0:02:32.44,0:02:32.60,Cap,,0,0,0,,hin Er hat keine Angst\N{\c&H0047D4FF\fscx118\fscy118}vor{\c&H00FFFFFF\fscx100\fscy100} dem Tod nur vor
+Dialogue: 0,0:02:32.62,0:02:32.70,Cap,,0,0,0,,hin Er hat keine Angst\Nvor {\c&H0047D4FF\fscx118\fscy118}dem{\c&H00FFFFFF\fscx100\fscy100} Tod nur vor
+Dialogue: 0,0:02:32.72,0:02:33.34,Cap,,0,0,0,,hin Er hat keine Angst\Nvor dem {\c&H0047D4FF\fscx118\fscy118}Tod{\c&H00FFFFFF\fscx100\fscy100} nur vor
+Dialogue: 0,0:02:33.36,0:02:33.46,Cap,,0,0,0,,hin Er hat keine Angst\Nvor dem Tod {\c&H0047D4FF\fscx118\fscy118}nur{\c&H00FFFFFF\fscx100\fscy100} vor
+Dialogue: 0,0:02:33.48,0:02:33.60,Cap,,0,0,0,,hin Er hat keine Angst\Nvor dem Tod nur {\c&H0047D4FF\fscx118\fscy118}vor{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:02:33.62,0:02:33.72,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}dem{\c&H00FFFFFF\fscx100\fscy100} Leiden
+Dialogue: 0,0:02:33.74,0:02:34.26,Cap,,0,0,0,,dem {\c&H0047D4FF\fscx118\fscy118}Leiden{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:02:34.83,0:02:34.99,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Er{\c&H00FFFFFF\fscx100\fscy100} wacht auf Das war\Nnicht geplant Der Sand hatte
+Dialogue: 0,0:02:35.01,0:02:35.25,Cap,,0,0,0,,Er {\c&H0047D4FF\fscx118\fscy118}wacht{\c&H00FFFFFF\fscx100\fscy100} auf Das war\Nnicht geplant Der Sand hatte
+Dialogue: 0,0:02:35.27,0:02:35.95,Cap,,0,0,0,,Er wacht {\c&H0047D4FF\fscx118\fscy118}auf{\c&H00FFFFFF\fscx100\fscy100} Das war\Nnicht geplant Der Sand hatte
+Dialogue: 0,0:02:35.97,0:02:36.09,Cap,,0,0,0,,Er wacht auf {\c&H0047D4FF\fscx118\fscy118}Das{\c&H00FFFFFF\fscx100\fscy100} war\Nnicht geplant Der Sand hatte
+Dialogue: 0,0:02:36.11,0:02:36.27,Cap,,0,0,0,,Er wacht auf Das {\c&H0047D4FF\fscx118\fscy118}war{\c&H00FFFFFF\fscx100\fscy100}\Nnicht geplant Der Sand hatte
+Dialogue: 0,0:02:36.29,0:02:36.41,Cap,,0,0,0,,Er wacht auf Das war\N{\c&H0047D4FF\fscx118\fscy118}nicht{\c&H00FFFFFF\fscx100\fscy100} geplant Der Sand hatte
+Dialogue: 0,0:02:36.43,0:02:37.21,Cap,,0,0,0,,Er wacht auf Das war\Nnicht {\c&H0047D4FF\fscx118\fscy118}geplant{\c&H00FFFFFF\fscx100\fscy100} Der Sand hatte
+Dialogue: 0,0:02:37.23,0:02:37.37,Cap,,0,0,0,,Er wacht auf Das war\Nnicht geplant {\c&H0047D4FF\fscx118\fscy118}Der{\c&H00FFFFFF\fscx100\fscy100} Sand hatte
+Dialogue: 0,0:02:37.39,0:02:37.61,Cap,,0,0,0,,Er wacht auf Das war\Nnicht geplant Der {\c&H0047D4FF\fscx118\fscy118}Sand{\c&H00FFFFFF\fscx100\fscy100} hatte
+Dialogue: 0,0:02:37.63,0:02:37.83,Cap,,0,0,0,,Er wacht auf Das war\Nnicht geplant Der Sand {\c&H0047D4FF\fscx118\fscy118}hatte{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:02:37.85,0:02:37.97,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}die{\c&H00FFFFFF\fscx100\fscy100} Wunden verschlossen Er denkt\NVielleicht ist es noch nicht
+Dialogue: 0,0:02:37.99,0:02:38.21,Cap,,0,0,0,,die {\c&H0047D4FF\fscx118\fscy118}Wunden{\c&H00FFFFFF\fscx100\fscy100} verschlossen Er denkt\NVielleicht ist es noch nicht
+Dialogue: 0,0:02:38.23,0:02:39.17,Cap,,0,0,0,,die Wunden {\c&H0047D4FF\fscx118\fscy118}verschlossen{\c&H00FFFFFF\fscx100\fscy100} Er denkt\NVielleicht ist es noch nicht
+Dialogue: 0,0:02:39.19,0:02:39.27,Cap,,0,0,0,,die Wunden verschlossen {\c&H0047D4FF\fscx118\fscy118}Er{\c&H00FFFFFF\fscx100\fscy100} denkt\NVielleicht ist es noch nicht
+Dialogue: 0,0:02:39.29,0:02:39.77,Cap,,0,0,0,,die Wunden verschlossen Er {\c&H0047D4FF\fscx118\fscy118}denkt{\c&H00FFFFFF\fscx100\fscy100}\NVielleicht ist es noch nicht
+Dialogue: 0,0:02:39.79,0:02:39.99,Cap,,0,0,0,,die Wunden verschlossen Er denkt\N{\c&H0047D4FF\fscx118\fscy118}Vielleicht{\c&H00FFFFFF\fscx100\fscy100} ist es noch nicht
+Dialogue: 0,0:02:40.01,0:02:40.25,Cap,,0,0,0,,die Wunden verschlossen Er denkt\NVielleicht {\c&H0047D4FF\fscx118\fscy118}ist{\c&H00FFFFFF\fscx100\fscy100} es noch nicht
+Dialogue: 0,0:02:40.27,0:02:40.37,Cap,,0,0,0,,die Wunden verschlossen Er denkt\NVielleicht ist {\c&H0047D4FF\fscx118\fscy118}es{\c&H00FFFFFF\fscx100\fscy100} noch nicht
+Dialogue: 0,0:02:40.39,0:02:40.51,Cap,,0,0,0,,die Wunden verschlossen Er denkt\NVielleicht ist es {\c&H0047D4FF\fscx118\fscy118}noch{\c&H00FFFFFF\fscx100\fscy100} nicht
+Dialogue: 0,0:02:40.53,0:02:40.65,Cap,,0,0,0,,die Wunden verschlossen Er denkt\NVielleicht ist es noch {\c&H0047D4FF\fscx118\fscy118}nicht{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:02:40.67,0:02:40.87,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}meine{\c&H00FFFFFF\fscx100\fscy100} Zeit Er steht auf
+Dialogue: 0,0:02:40.89,0:02:41.67,Cap,,0,0,0,,meine {\c&H0047D4FF\fscx118\fscy118}Zeit{\c&H00FFFFFF\fscx100\fscy100} Er steht auf
+Dialogue: 0,0:02:41.69,0:02:41.81,Cap,,0,0,0,,meine Zeit {\c&H0047D4FF\fscx118\fscy118}Er{\c&H00FFFFFF\fscx100\fscy100} steht auf
+Dialogue: 0,0:02:41.83,0:02:41.99,Cap,,0,0,0,,meine Zeit Er {\c&H0047D4FF\fscx118\fscy118}steht{\c&H00FFFFFF\fscx100\fscy100} auf
+Dialogue: 0,0:02:42.01,0:02:42.51,Cap,,0,0,0,,meine Zeit Er steht {\c&H0047D4FF\fscx118\fscy118}auf{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:02:42.91,0:02:43.03,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Die{\c&H00FFFFFF\fscx100\fscy100} Uhr klappert locker am\NHandgelenk er hatte sie auf
+Dialogue: 0,0:02:43.05,0:02:43.25,Cap,,0,0,0,,Die {\c&H0047D4FF\fscx118\fscy118}Uhr{\c&H00FFFFFF\fscx100\fscy100} klappert locker am\NHandgelenk er hatte sie auf
+Dialogue: 0,0:02:43.27,0:02:43.69,Cap,,0,0,0,,Die Uhr {\c&H0047D4FF\fscx118\fscy118}klappert{\c&H00FFFFFF\fscx100\fscy100} locker am\NHandgelenk er hatte sie auf
+Dialogue: 0,0:02:43.71,0:02:43.91,Cap,,0,0,0,,Die Uhr klappert {\c&H0047D4FF\fscx118\fscy118}locker{\c&H00FFFFFF\fscx100\fscy100} am\NHandgelenk er hatte sie auf
+Dialogue: 0,0:02:43.93,0:02:44.15,Cap,,0,0,0,,Die Uhr klappert locker {\c&H0047D4FF\fscx118\fscy118}am{\c&H00FFFFFF\fscx100\fscy100}\NHandgelenk er hatte sie auf
+Dialogue: 0,0:02:44.17,0:02:44.95,Cap,,0,0,0,,Die Uhr klappert locker am\N{\c&H0047D4FF\fscx118\fscy118}Handgelenk{\c&H00FFFFFF\fscx100\fscy100} er hatte sie auf
+Dialogue: 0,0:02:44.97,0:02:45.05,Cap,,0,0,0,,Die Uhr klappert locker am\NHandgelenk {\c&H0047D4FF\fscx118\fscy118}er{\c&H00FFFFFF\fscx100\fscy100} hatte sie auf
+Dialogue: 0,0:02:45.07,0:02:45.23,Cap,,0,0,0,,Die Uhr klappert locker am\NHandgelenk er {\c&H0047D4FF\fscx118\fscy118}hatte{\c&H00FFFFFF\fscx100\fscy100} sie auf
+Dialogue: 0,0:02:45.25,0:02:45.37,Cap,,0,0,0,,Die Uhr klappert locker am\NHandgelenk er hatte {\c&H0047D4FF\fscx118\fscy118}sie{\c&H00FFFFFF\fscx100\fscy100} auf
+Dialogue: 0,0:02:45.39,0:02:45.53,Cap,,0,0,0,,Die Uhr klappert locker am\NHandgelenk er hatte sie {\c&H0047D4FF\fscx118\fscy118}auf{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:02:45.55,0:02:45.97,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Anschlag{\c&H00FFFFFF\fscx100\fscy100} gestellt
+Dialogue: 0,0:02:45.99,0:02:46.49,Cap,,0,0,0,,Anschlag {\c&H0047D4FF\fscx118\fscy118}gestellt{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:02:47.05,0:02:47.17,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Die{\c&H00FFFFFF\fscx100\fscy100} Knochen seiner Hände\Nzeichnen sich durch die Haut\NEr
+Dialogue: 0,0:02:47.19,0:02:47.55,Cap,,0,0,0,,Die {\c&H0047D4FF\fscx118\fscy118}Knochen{\c&H00FFFFFF\fscx100\fscy100} seiner Hände\Nzeichnen sich durch die Haut\NEr
+Dialogue: 0,0:02:47.57,0:02:47.75,Cap,,0,0,0,,Die Knochen {\c&H0047D4FF\fscx118\fscy118}seiner{\c&H00FFFFFF\fscx100\fscy100} Hände\Nzeichnen sich durch die Haut\NEr
+Dialogue: 0,0:02:47.77,0:02:48.01,Cap,,0,0,0,,Die Knochen seiner {\c&H0047D4FF\fscx118\fscy118}Hände{\c&H00FFFFFF\fscx100\fscy100}\Nzeichnen sich durch die Haut\NEr
+Dialogue: 0,0:02:48.03,0:02:48.47,Cap,,0,0,0,,Die Knochen seiner Hände\N{\c&H0047D4FF\fscx118\fscy118}zeichnen{\c&H00FFFFFF\fscx100\fscy100} sich durch die Haut\NEr
+Dialogue: 0,0:02:48.49,0:02:48.65,Cap,,0,0,0,,Die Knochen seiner Hände\Nzeichnen {\c&H0047D4FF\fscx118\fscy118}sich{\c&H00FFFFFF\fscx100\fscy100} durch die Haut\NEr
+Dialogue: 0,0:02:48.67,0:02:48.81,Cap,,0,0,0,,Die Knochen seiner Hände\Nzeichnen sich {\c&H0047D4FF\fscx118\fscy118}durch{\c&H00FFFFFF\fscx100\fscy100} die Haut\NEr
+Dialogue: 0,0:02:48.83,0:02:48.97,Cap,,0,0,0,,Die Knochen seiner Hände\Nzeichnen sich durch {\c&H0047D4FF\fscx118\fscy118}die{\c&H00FFFFFF\fscx100\fscy100} Haut\NEr
+Dialogue: 0,0:02:48.99,0:02:49.61,Cap,,0,0,0,,Die Knochen seiner Hände\Nzeichnen sich durch die {\c&H0047D4FF\fscx118\fscy118}Haut{\c&H00FFFFFF\fscx100\fscy100}\NEr
+Dialogue: 0,0:02:49.63,0:02:49.71,Cap,,0,0,0,,Die Knochen seiner Hände\Nzeichnen sich durch die Haut\N{\c&H0047D4FF\fscx118\fscy118}Er{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:02:49.73,0:02:50.07,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}folgt{\c&H00FFFFFF\fscx100\fscy100} dem Rat eines\NTuareg-Nomaden Geh in Richtung\Nder Wolken
+Dialogue: 0,0:02:50.09,0:02:50.19,Cap,,0,0,0,,folgt {\c&H0047D4FF\fscx118\fscy118}dem{\c&H00FFFFFF\fscx100\fscy100} Rat eines\NTuareg-Nomaden Geh in Richtung\Nder Wolken
+Dialogue: 0,0:02:50.21,0:02:50.41,Cap,,0,0,0,,folgt dem {\c&H0047D4FF\fscx118\fscy118}Rat{\c&H00FFFFFF\fscx100\fscy100} eines\NTuareg-Nomaden Geh in Richtung\Nder Wolken
+Dialogue: 0,0:02:50.43,0:02:50.65,Cap,,0,0,0,,folgt dem Rat {\c&H0047D4FF\fscx118\fscy118}eines{\c&H00FFFFFF\fscx100\fscy100}\NTuareg-Nomaden Geh in Richtung\Nder Wolken
+Dialogue: 0,0:02:50.67,0:02:51.39,Cap,,0,0,0,,folgt dem Rat eines\N{\c&H0047D4FF\fscx118\fscy118}Tuareg-Nomaden{\c&H00FFFFFF\fscx100\fscy100} Geh in Richtung\Nder Wolken
+Dialogue: 0,0:02:51.41,0:02:52.13,Cap,,0,0,0,,folgt dem Rat eines\NTuareg-Nomaden {\c&H0047D4FF\fscx118\fscy118}Geh{\c&H00FFFFFF\fscx100\fscy100} in Richtung\Nder Wolken
+Dialogue: 0,0:02:52.15,0:02:52.27,Cap,,0,0,0,,folgt dem Rat eines\NTuareg-Nomaden Geh {\c&H0047D4FF\fscx118\fscy118}in{\c&H00FFFFFF\fscx100\fscy100} Richtung\Nder Wolken
+Dialogue: 0,0:02:52.29,0:02:52.57,Cap,,0,0,0,,folgt dem Rat eines\NTuareg-Nomaden Geh in {\c&H0047D4FF\fscx118\fscy118}Richtung{\c&H00FFFFFF\fscx100\fscy100}\Nder Wolken
+Dialogue: 0,0:02:52.59,0:02:52.81,Cap,,0,0,0,,folgt dem Rat eines\NTuareg-Nomaden Geh in Richtung\N{\c&H0047D4FF\fscx118\fscy118}der{\c&H00FFFFFF\fscx100\fscy100} Wolken
+Dialogue: 0,0:02:52.83,0:02:53.17,Cap,,0,0,0,,folgt dem Rat eines\NTuareg-Nomaden Geh in Richtung\Nder {\c&H0047D4FF\fscx118\fscy118}Wolken{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:02:53.19,0:02:53.29,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}im{\c&H00FFFFFF\fscx100\fscy100} Morgengrauen
+Dialogue: 0,0:02:53.31,0:02:54.03,Cap,,0,0,0,,im {\c&H0047D4FF\fscx118\fscy118}Morgengrauen{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:02:54.69,0:02:55.01,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Tag{\c&H00FFFFFF\fscx100\fscy100} neun Ziegen Ziegen bedeuten\NMenschen Er folgt ihnen und
+Dialogue: 0,0:02:55.03,0:02:55.93,Cap,,0,0,0,,Tag {\c&H0047D4FF\fscx118\fscy118}neun{\c&H00FFFFFF\fscx100\fscy100} Ziegen Ziegen bedeuten\NMenschen Er folgt ihnen und
+Dialogue: 0,0:02:55.95,0:02:56.63,Cap,,0,0,0,,Tag neun {\c&H0047D4FF\fscx118\fscy118}Ziegen{\c&H00FFFFFF\fscx100\fscy100} Ziegen bedeuten\NMenschen Er folgt ihnen und
+Dialogue: 0,0:02:56.65,0:02:57.03,Cap,,0,0,0,,Tag neun Ziegen {\c&H0047D4FF\fscx118\fscy118}Ziegen{\c&H00FFFFFF\fscx100\fscy100} bedeuten\NMenschen Er folgt ihnen und
+Dialogue: 0,0:02:57.05,0:02:57.41,Cap,,0,0,0,,Tag neun Ziegen Ziegen {\c&H0047D4FF\fscx118\fscy118}bedeuten{\c&H00FFFFFF\fscx100\fscy100}\NMenschen Er folgt ihnen und
+Dialogue: 0,0:02:57.43,0:02:58.21,Cap,,0,0,0,,Tag neun Ziegen Ziegen bedeuten\N{\c&H0047D4FF\fscx118\fscy118}Menschen{\c&H00FFFFFF\fscx100\fscy100} Er folgt ihnen und
+Dialogue: 0,0:02:58.23,0:02:58.35,Cap,,0,0,0,,Tag neun Ziegen Ziegen bedeuten\NMenschen {\c&H0047D4FF\fscx118\fscy118}Er{\c&H00FFFFFF\fscx100\fscy100} folgt ihnen und
+Dialogue: 0,0:02:58.37,0:02:58.73,Cap,,0,0,0,,Tag neun Ziegen Ziegen bedeuten\NMenschen Er {\c&H0047D4FF\fscx118\fscy118}folgt{\c&H00FFFFFF\fscx100\fscy100} ihnen und
+Dialogue: 0,0:02:58.75,0:02:58.95,Cap,,0,0,0,,Tag neun Ziegen Ziegen bedeuten\NMenschen Er folgt {\c&H0047D4FF\fscx118\fscy118}ihnen{\c&H00FFFFFF\fscx100\fscy100} und
+Dialogue: 0,0:02:58.97,0:02:59.53,Cap,,0,0,0,,Tag neun Ziegen Ziegen bedeuten\NMenschen Er folgt ihnen {\c&H0047D4FF\fscx118\fscy118}und{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:02:59.55,0:02:59.67,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}sieht{\c&H00FFFFFF\fscx100\fscy100} ein kleines Mädchen das\Nwegläuft Dann Zelte Frauen\Nkommen
+Dialogue: 0,0:02:59.69,0:02:59.85,Cap,,0,0,0,,sieht {\c&H0047D4FF\fscx118\fscy118}ein{\c&H00FFFFFF\fscx100\fscy100} kleines Mädchen das\Nwegläuft Dann Zelte Frauen\Nkommen
+Dialogue: 0,0:02:59.87,0:03:00.15,Cap,,0,0,0,,sieht ein {\c&H0047D4FF\fscx118\fscy118}kleines{\c&H00FFFFFF\fscx100\fscy100} Mädchen das\Nwegläuft Dann Zelte Frauen\Nkommen
+Dialogue: 0,0:03:00.17,0:03:00.71,Cap,,0,0,0,,sieht ein kleines {\c&H0047D4FF\fscx118\fscy118}Mädchen{\c&H00FFFFFF\fscx100\fscy100} das\Nwegläuft Dann Zelte Frauen\Nkommen
+Dialogue: 0,0:03:00.73,0:03:00.81,Cap,,0,0,0,,sieht ein kleines Mädchen {\c&H0047D4FF\fscx118\fscy118}das{\c&H00FFFFFF\fscx100\fscy100}\Nwegläuft Dann Zelte Frauen\Nkommen
+Dialogue: 0,0:03:00.83,0:03:01.83,Cap,,0,0,0,,sieht ein kleines Mädchen das\N{\c&H0047D4FF\fscx118\fscy118}wegläuft{\c&H00FFFFFF\fscx100\fscy100} Dann Zelte Frauen\Nkommen
+Dialogue: 0,0:03:01.85,0:03:01.97,Cap,,0,0,0,,sieht ein kleines Mädchen das\Nwegläuft {\c&H0047D4FF\fscx118\fscy118}Dann{\c&H00FFFFFF\fscx100\fscy100} Zelte Frauen\Nkommen
+Dialogue: 0,0:03:01.99,0:03:02.71,Cap,,0,0,0,,sieht ein kleines Mädchen das\Nwegläuft Dann {\c&H0047D4FF\fscx118\fscy118}Zelte{\c&H00FFFFFF\fscx100\fscy100} Frauen\Nkommen
+Dialogue: 0,0:03:02.73,0:03:03.45,Cap,,0,0,0,,sieht ein kleines Mädchen das\Nwegläuft Dann Zelte {\c&H0047D4FF\fscx118\fscy118}Frauen{\c&H00FFFFFF\fscx100\fscy100}\Nkommen
+Dialogue: 0,0:03:03.47,0:03:03.69,Cap,,0,0,0,,sieht ein kleines Mädchen das\Nwegläuft Dann Zelte Frauen\N{\c&H0047D4FF\fscx118\fscy118}kommen{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:03:03.71,0:03:04.55,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}heraus{\c&H00FFFFFF\fscx100\fscy100} geben ihm Ziegenmilch Er\Nkann sie nicht halten Später
+Dialogue: 0,0:03:04.57,0:03:04.69,Cap,,0,0,0,,heraus {\c&H0047D4FF\fscx118\fscy118}geben{\c&H00FFFFFF\fscx100\fscy100} ihm Ziegenmilch Er\Nkann sie nicht halten Später
+Dialogue: 0,0:03:04.71,0:03:04.89,Cap,,0,0,0,,heraus geben {\c&H0047D4FF\fscx118\fscy118}ihm{\c&H00FFFFFF\fscx100\fscy100} Ziegenmilch Er\Nkann sie nicht halten Später
+Dialogue: 0,0:03:04.91,0:03:05.95,Cap,,0,0,0,,heraus geben ihm {\c&H0047D4FF\fscx118\fscy118}Ziegenmilch{\c&H00FFFFFF\fscx100\fscy100} Er\Nkann sie nicht halten Später
+Dialogue: 0,0:03:05.97,0:03:06.05,Cap,,0,0,0,,heraus geben ihm Ziegenmilch {\c&H0047D4FF\fscx118\fscy118}Er{\c&H00FFFFFF\fscx100\fscy100}\Nkann sie nicht halten Später
+Dialogue: 0,0:03:06.07,0:03:06.23,Cap,,0,0,0,,heraus geben ihm Ziegenmilch Er\N{\c&H0047D4FF\fscx118\fscy118}kann{\c&H00FFFFFF\fscx100\fscy100} sie nicht halten Später
+Dialogue: 0,0:03:06.25,0:03:06.37,Cap,,0,0,0,,heraus geben ihm Ziegenmilch Er\Nkann {\c&H0047D4FF\fscx118\fscy118}sie{\c&H00FFFFFF\fscx100\fscy100} nicht halten Später
+Dialogue: 0,0:03:06.39,0:03:06.53,Cap,,0,0,0,,heraus geben ihm Ziegenmilch Er\Nkann sie {\c&H0047D4FF\fscx118\fscy118}nicht{\c&H00FFFFFF\fscx100\fscy100} halten Später
+Dialogue: 0,0:03:06.55,0:03:07.41,Cap,,0,0,0,,heraus geben ihm Ziegenmilch Er\Nkann sie nicht {\c&H0047D4FF\fscx118\fscy118}halten{\c&H00FFFFFF\fscx100\fscy100} Später
+Dialogue: 0,0:03:07.43,0:03:07.79,Cap,,0,0,0,,heraus geben ihm Ziegenmilch Er\Nkann sie nicht halten {\c&H0047D4FF\fscx118\fscy118}Später{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:03:07.81,0:03:08.03,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}kommt{\c&H00FFFFFF\fscx100\fscy100} ein Jeep Zwei Soldaten\Ndrücken ihn auf den Boden
+Dialogue: 0,0:03:08.05,0:03:08.25,Cap,,0,0,0,,kommt {\c&H0047D4FF\fscx118\fscy118}ein{\c&H00FFFFFF\fscx100\fscy100} Jeep Zwei Soldaten\Ndrücken ihn auf den Boden
+Dialogue: 0,0:03:08.27,0:03:08.87,Cap,,0,0,0,,kommt ein {\c&H0047D4FF\fscx118\fscy118}Jeep{\c&H00FFFFFF\fscx100\fscy100} Zwei Soldaten\Ndrücken ihn auf den Boden
+Dialogue: 0,0:03:08.89,0:03:09.11,Cap,,0,0,0,,kommt ein Jeep {\c&H0047D4FF\fscx118\fscy118}Zwei{\c&H00FFFFFF\fscx100\fscy100} Soldaten\Ndrücken ihn auf den Boden
+Dialogue: 0,0:03:09.13,0:03:09.65,Cap,,0,0,0,,kommt ein Jeep Zwei {\c&H0047D4FF\fscx118\fscy118}Soldaten{\c&H00FFFFFF\fscx100\fscy100}\Ndrücken ihn auf den Boden
+Dialogue: 0,0:03:09.67,0:03:09.99,Cap,,0,0,0,,kommt ein Jeep Zwei Soldaten\N{\c&H0047D4FF\fscx118\fscy118}drücken{\c&H00FFFFFF\fscx100\fscy100} ihn auf den Boden
+Dialogue: 0,0:03:10.01,0:03:10.21,Cap,,0,0,0,,kommt ein Jeep Zwei Soldaten\Ndrücken {\c&H0047D4FF\fscx118\fscy118}ihn{\c&H00FFFFFF\fscx100\fscy100} auf den Boden
+Dialogue: 0,0:03:10.23,0:03:10.41,Cap,,0,0,0,,kommt ein Jeep Zwei Soldaten\Ndrücken ihn {\c&H0047D4FF\fscx118\fscy118}auf{\c&H00FFFFFF\fscx100\fscy100} den Boden
+Dialogue: 0,0:03:10.43,0:03:10.55,Cap,,0,0,0,,kommt ein Jeep Zwei Soldaten\Ndrücken ihn auf {\c&H0047D4FF\fscx118\fscy118}den{\c&H00FFFFFF\fscx100\fscy100} Boden
+Dialogue: 0,0:03:10.57,0:03:11.03,Cap,,0,0,0,,kommt ein Jeep Zwei Soldaten\Ndrücken ihn auf den {\c&H0047D4FF\fscx118\fscy118}Boden{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:03:11.17,0:03:11.29,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}binden{\c&H00FFFFFF\fscx100\fscy100} ihm die Augen
+Dialogue: 0,0:03:11.31,0:03:11.47,Cap,,0,0,0,,binden {\c&H0047D4FF\fscx118\fscy118}ihm{\c&H00FFFFFF\fscx100\fscy100} die Augen
+Dialogue: 0,0:03:11.49,0:03:11.61,Cap,,0,0,0,,binden ihm {\c&H0047D4FF\fscx118\fscy118}die{\c&H00FFFFFF\fscx100\fscy100} Augen
+Dialogue: 0,0:03:11.63,0:03:12.07,Cap,,0,0,0,,binden ihm die {\c&H0047D4FF\fscx118\fscy118}Augen{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:03:12.47,0:03:12.63,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Das{\c&H00FFFFFF\fscx100\fscy100} ist sein erster echter\NMoment der Angst In zehn
+Dialogue: 0,0:03:12.65,0:03:12.81,Cap,,0,0,0,,Das {\c&H0047D4FF\fscx118\fscy118}ist{\c&H00FFFFFF\fscx100\fscy100} sein erster echter\NMoment der Angst In zehn
+Dialogue: 0,0:03:12.83,0:03:13.03,Cap,,0,0,0,,Das ist {\c&H0047D4FF\fscx118\fscy118}sein{\c&H00FFFFFF\fscx100\fscy100} erster echter\NMoment der Angst In zehn
+Dialogue: 0,0:03:13.05,0:03:13.35,Cap,,0,0,0,,Das ist sein {\c&H0047D4FF\fscx118\fscy118}erster{\c&H00FFFFFF\fscx100\fscy100} echter\NMoment der Angst In zehn
+Dialogue: 0,0:03:13.37,0:03:13.61,Cap,,0,0,0,,Das ist sein erster {\c&H0047D4FF\fscx118\fscy118}echter{\c&H00FFFFFF\fscx100\fscy100}\NMoment der Angst In zehn
+Dialogue: 0,0:03:13.63,0:03:13.93,Cap,,0,0,0,,Das ist sein erster echter\N{\c&H0047D4FF\fscx118\fscy118}Moment{\c&H00FFFFFF\fscx100\fscy100} der Angst In zehn
+Dialogue: 0,0:03:13.95,0:03:14.15,Cap,,0,0,0,,Das ist sein erster echter\NMoment {\c&H0047D4FF\fscx118\fscy118}der{\c&H00FFFFFF\fscx100\fscy100} Angst In zehn
+Dialogue: 0,0:03:14.17,0:03:14.75,Cap,,0,0,0,,Das ist sein erster echter\NMoment der {\c&H0047D4FF\fscx118\fscy118}Angst{\c&H00FFFFFF\fscx100\fscy100} In zehn
+Dialogue: 0,0:03:14.77,0:03:14.87,Cap,,0,0,0,,Das ist sein erster echter\NMoment der Angst {\c&H0047D4FF\fscx118\fscy118}In{\c&H00FFFFFF\fscx100\fscy100} zehn
+Dialogue: 0,0:03:14.89,0:03:15.13,Cap,,0,0,0,,Das ist sein erster echter\NMoment der Angst In {\c&H0047D4FF\fscx118\fscy118}zehn{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:03:15.15,0:03:15.51,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Tagen{\c&H00FFFFFF\fscx100\fscy100} hat er 291 Kilometer\Nzurückgelegt nach Algerien
+Dialogue: 0,0:03:15.53,0:03:15.69,Cap,,0,0,0,,Tagen {\c&H0047D4FF\fscx118\fscy118}hat{\c&H00FFFFFF\fscx100\fscy100} er 291 Kilometer\Nzurückgelegt nach Algerien
+Dialogue: 0,0:03:15.71,0:03:15.79,Cap,,0,0,0,,Tagen hat {\c&H0047D4FF\fscx118\fscy118}er{\c&H00FFFFFF\fscx100\fscy100} 291 Kilometer\Nzurückgelegt nach Algerien
+Dialogue: 0,0:03:15.81,0:03:17.39,Cap,,0,0,0,,Tagen hat er {\c&H0047D4FF\fscx118\fscy118}291{\c&H00FFFFFF\fscx100\fscy100} Kilometer\Nzurückgelegt nach Algerien
+Dialogue: 0,0:03:17.41,0:03:17.87,Cap,,0,0,0,,Tagen hat er 291 {\c&H0047D4FF\fscx118\fscy118}Kilometer{\c&H00FFFFFF\fscx100\fscy100}\Nzurückgelegt nach Algerien
+Dialogue: 0,0:03:17.89,0:03:18.61,Cap,,0,0,0,,Tagen hat er 291 Kilometer\N{\c&H0047D4FF\fscx118\fscy118}zurückgelegt{\c&H00FFFFFF\fscx100\fscy100} nach Algerien
+Dialogue: 0,0:03:18.63,0:03:19.05,Cap,,0,0,0,,Tagen hat er 291 Kilometer\Nzurückgelegt {\c&H0047D4FF\fscx118\fscy118}nach{\c&H00FFFFFF\fscx100\fscy100} Algerien
+Dialogue: 0,0:03:19.07,0:03:19.81,Cap,,0,0,0,,Tagen hat er 291 Kilometer\Nzurückgelegt nach {\c&H0047D4FF\fscx118\fscy118}Algerien{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:03:20.33,0:03:20.77,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Cinzia{\c&H00FFFFFF\fscx100\fscy100} hörte seinen Namen im\NRadio in der Vergangenheitsform\NAls
+Dialogue: 0,0:03:20.79,0:03:21.05,Cap,,0,0,0,,Cinzia {\c&H0047D4FF\fscx118\fscy118}hörte{\c&H00FFFFFF\fscx100\fscy100} seinen Namen im\NRadio in der Vergangenheitsform\NAls
+Dialogue: 0,0:03:21.07,0:03:21.23,Cap,,0,0,0,,Cinzia hörte {\c&H0047D4FF\fscx118\fscy118}seinen{\c&H00FFFFFF\fscx100\fscy100} Namen im\NRadio in der Vergangenheitsform\NAls
+Dialogue: 0,0:03:21.25,0:03:21.51,Cap,,0,0,0,,Cinzia hörte seinen {\c&H0047D4FF\fscx118\fscy118}Namen{\c&H00FFFFFF\fscx100\fscy100} im\NRadio in der Vergangenheitsform\NAls
+Dialogue: 0,0:03:21.53,0:03:21.65,Cap,,0,0,0,,Cinzia hörte seinen Namen {\c&H0047D4FF\fscx118\fscy118}im{\c&H00FFFFFF\fscx100\fscy100}\NRadio in der Vergangenheitsform\NAls
+Dialogue: 0,0:03:21.67,0:03:22.11,Cap,,0,0,0,,Cinzia hörte seinen Namen im\N{\c&H0047D4FF\fscx118\fscy118}Radio{\c&H00FFFFFF\fscx100\fscy100} in der Vergangenheitsform\NAls
+Dialogue: 0,0:03:22.13,0:03:22.51,Cap,,0,0,0,,Cinzia hörte seinen Namen im\NRadio {\c&H0047D4FF\fscx118\fscy118}in{\c&H00FFFFFF\fscx100\fscy100} der Vergangenheitsform\NAls
+Dialogue: 0,0:03:22.53,0:03:22.61,Cap,,0,0,0,,Cinzia hörte seinen Namen im\NRadio in {\c&H0047D4FF\fscx118\fscy118}der{\c&H00FFFFFF\fscx100\fscy100} Vergangenheitsform\NAls
+Dialogue: 0,0:03:22.63,0:03:23.93,Cap,,0,0,0,,Cinzia hörte seinen Namen im\NRadio in der {\c&H0047D4FF\fscx118\fscy118}Vergangenheitsform{\c&H00FFFFFF\fscx100\fscy100}\NAls
+Dialogue: 0,0:03:23.95,0:03:24.09,Cap,,0,0,0,,Cinzia hörte seinen Namen im\NRadio in der Vergangenheitsform\N{\c&H0047D4FF\fscx118\fscy118}Als{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:03:24.11,0:03:24.29,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}das{\c&H00FFFFFF\fscx100\fscy100} Telefon klingelte fragte\Nihre Mutter Mauro Bist du\Nam
+Dialogue: 0,0:03:24.31,0:03:24.69,Cap,,0,0,0,,das {\c&H0047D4FF\fscx118\fscy118}Telefon{\c&H00FFFFFF\fscx100\fscy100} klingelte fragte\Nihre Mutter Mauro Bist du\Nam
+Dialogue: 0,0:03:24.71,0:03:25.43,Cap,,0,0,0,,das Telefon {\c&H0047D4FF\fscx118\fscy118}klingelte{\c&H00FFFFFF\fscx100\fscy100} fragte\Nihre Mutter Mauro Bist du\Nam
+Dialogue: 0,0:03:25.45,0:03:25.73,Cap,,0,0,0,,das Telefon klingelte {\c&H0047D4FF\fscx118\fscy118}fragte{\c&H00FFFFFF\fscx100\fscy100}\Nihre Mutter Mauro Bist du\Nam
+Dialogue: 0,0:03:25.75,0:03:25.89,Cap,,0,0,0,,das Telefon klingelte fragte\N{\c&H0047D4FF\fscx118\fscy118}ihre{\c&H00FFFFFF\fscx100\fscy100} Mutter Mauro Bist du\Nam
+Dialogue: 0,0:03:25.91,0:03:26.57,Cap,,0,0,0,,das Telefon klingelte fragte\Nihre {\c&H0047D4FF\fscx118\fscy118}Mutter{\c&H00FFFFFF\fscx100\fscy100} Mauro Bist du\Nam
+Dialogue: 0,0:03:26.59,0:03:27.45,Cap,,0,0,0,,das Telefon klingelte fragte\Nihre Mutter {\c&H0047D4FF\fscx118\fscy118}Mauro{\c&H00FFFFFF\fscx100\fscy100} Bist du\Nam
+Dialogue: 0,0:03:27.47,0:03:27.59,Cap,,0,0,0,,das Telefon klingelte fragte\Nihre Mutter Mauro {\c&H0047D4FF\fscx118\fscy118}Bist{\c&H00FFFFFF\fscx100\fscy100} du\Nam
+Dialogue: 0,0:03:27.61,0:03:27.75,Cap,,0,0,0,,das Telefon klingelte fragte\Nihre Mutter Mauro Bist {\c&H0047D4FF\fscx118\fscy118}du{\c&H00FFFFFF\fscx100\fscy100}\Nam
+Dialogue: 0,0:03:27.77,0:03:27.87,Cap,,0,0,0,,das Telefon klingelte fragte\Nihre Mutter Mauro Bist du\N{\c&H0047D4FF\fscx118\fscy118}am{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:03:27.89,0:03:28.33,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Leben{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:03:28.71,0:03:28.85,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Sie{\c&H00FFFFFF\fscx100\fscy100} warf ihr den Hörer\Nzu Seine erste Frage Habt
+Dialogue: 0,0:03:28.87,0:03:29.21,Cap,,0,0,0,,Sie {\c&H0047D4FF\fscx118\fscy118}warf{\c&H00FFFFFF\fscx100\fscy100} ihr den Hörer\Nzu Seine erste Frage Habt
+Dialogue: 0,0:03:29.23,0:03:29.33,Cap,,0,0,0,,Sie warf {\c&H0047D4FF\fscx118\fscy118}ihr{\c&H00FFFFFF\fscx100\fscy100} den Hörer\Nzu Seine erste Frage Habt
+Dialogue: 0,0:03:29.35,0:03:29.45,Cap,,0,0,0,,Sie warf ihr {\c&H0047D4FF\fscx118\fscy118}den{\c&H00FFFFFF\fscx100\fscy100} Hörer\Nzu Seine erste Frage Habt
+Dialogue: 0,0:03:29.47,0:03:29.83,Cap,,0,0,0,,Sie warf ihr den {\c&H0047D4FF\fscx118\fscy118}Hörer{\c&H00FFFFFF\fscx100\fscy100}\Nzu Seine erste Frage Habt
+Dialogue: 0,0:03:29.85,0:03:30.47,Cap,,0,0,0,,Sie warf ihr den Hörer\N{\c&H0047D4FF\fscx118\fscy118}zu{\c&H00FFFFFF\fscx100\fscy100} Seine erste Frage Habt
+Dialogue: 0,0:03:30.49,0:03:30.67,Cap,,0,0,0,,Sie warf ihr den Hörer\Nzu {\c&H0047D4FF\fscx118\fscy118}Seine{\c&H00FFFFFF\fscx100\fscy100} erste Frage Habt
+Dialogue: 0,0:03:30.69,0:03:30.91,Cap,,0,0,0,,Sie warf ihr den Hörer\Nzu Seine {\c&H0047D4FF\fscx118\fscy118}erste{\c&H00FFFFFF\fscx100\fscy100} Frage Habt
+Dialogue: 0,0:03:30.93,0:03:31.33,Cap,,0,0,0,,Sie warf ihr den Hörer\Nzu Seine erste {\c&H0047D4FF\fscx118\fscy118}Frage{\c&H00FFFFFF\fscx100\fscy100} Habt
+Dialogue: 0,0:03:31.35,0:03:31.83,Cap,,0,0,0,,Sie warf ihr den Hörer\Nzu Seine erste Frage {\c&H0047D4FF\fscx118\fscy118}Habt{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:03:31.85,0:03:31.97,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}ihr{\c&H00FFFFFF\fscx100\fscy100} die Beerdigung schon geplant
+Dialogue: 0,0:03:31.99,0:03:32.07,Cap,,0,0,0,,ihr {\c&H0047D4FF\fscx118\fscy118}die{\c&H00FFFFFF\fscx100\fscy100} Beerdigung schon geplant
+Dialogue: 0,0:03:32.09,0:03:32.45,Cap,,0,0,0,,ihr die {\c&H0047D4FF\fscx118\fscy118}Beerdigung{\c&H00FFFFFF\fscx100\fscy100} schon geplant
+Dialogue: 0,0:03:32.47,0:03:32.63,Cap,,0,0,0,,ihr die Beerdigung {\c&H0047D4FF\fscx118\fscy118}schon{\c&H00FFFFFF\fscx100\fscy100} geplant
+Dialogue: 0,0:03:32.65,0:03:33.31,Cap,,0,0,0,,ihr die Beerdigung schon {\c&H0047D4FF\fscx118\fscy118}geplant{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:03:33.83,0:03:33.99,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Ihre{\c&H00FFFFFF\fscx100\fscy100} Antwort Für eine Beerdigung\Nbraucht man eine Leiche
+Dialogue: 0,0:03:34.01,0:03:34.45,Cap,,0,0,0,,Ihre {\c&H0047D4FF\fscx118\fscy118}Antwort{\c&H00FFFFFF\fscx100\fscy100} Für eine Beerdigung\Nbraucht man eine Leiche
+Dialogue: 0,0:03:34.47,0:03:34.83,Cap,,0,0,0,,Ihre Antwort {\c&H0047D4FF\fscx118\fscy118}Für{\c&H00FFFFFF\fscx100\fscy100} eine Beerdigung\Nbraucht man eine Leiche
+Dialogue: 0,0:03:34.85,0:03:34.95,Cap,,0,0,0,,Ihre Antwort Für {\c&H0047D4FF\fscx118\fscy118}eine{\c&H00FFFFFF\fscx100\fscy100} Beerdigung\Nbraucht man eine Leiche
+Dialogue: 0,0:03:34.97,0:03:35.41,Cap,,0,0,0,,Ihre Antwort Für eine {\c&H0047D4FF\fscx118\fscy118}Beerdigung{\c&H00FFFFFF\fscx100\fscy100}\Nbraucht man eine Leiche
+Dialogue: 0,0:03:35.43,0:03:35.69,Cap,,0,0,0,,Ihre Antwort Für eine Beerdigung\N{\c&H0047D4FF\fscx118\fscy118}braucht{\c&H00FFFFFF\fscx100\fscy100} man eine Leiche
+Dialogue: 0,0:03:35.71,0:03:35.87,Cap,,0,0,0,,Ihre Antwort Für eine Beerdigung\Nbraucht {\c&H0047D4FF\fscx118\fscy118}man{\c&H00FFFFFF\fscx100\fscy100} eine Leiche
+Dialogue: 0,0:03:35.89,0:03:36.05,Cap,,0,0,0,,Ihre Antwort Für eine Beerdigung\Nbraucht man {\c&H0047D4FF\fscx118\fscy118}eine{\c&H00FFFFFF\fscx100\fscy100} Leiche
+Dialogue: 0,0:03:36.07,0:03:36.61,Cap,,0,0,0,,Ihre Antwort Für eine Beerdigung\Nbraucht man eine {\c&H0047D4FF\fscx118\fscy118}Leiche{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:03:36.97,0:03:37.09,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Was{\c&H00FFFFFF\fscx100\fscy100} hätten wir denn tun\Nsollen
+Dialogue: 0,0:03:37.11,0:03:37.31,Cap,,0,0,0,,Was {\c&H0047D4FF\fscx118\fscy118}hätten{\c&H00FFFFFF\fscx100\fscy100} wir denn tun\Nsollen
+Dialogue: 0,0:03:37.33,0:03:37.49,Cap,,0,0,0,,Was hätten {\c&H0047D4FF\fscx118\fscy118}wir{\c&H00FFFFFF\fscx100\fscy100} denn tun\Nsollen
+Dialogue: 0,0:03:37.51,0:03:37.65,Cap,,0,0,0,,Was hätten wir {\c&H0047D4FF\fscx118\fscy118}denn{\c&H00FFFFFF\fscx100\fscy100} tun\Nsollen
+Dialogue: 0,0:03:37.67,0:03:37.87,Cap,,0,0,0,,Was hätten wir denn {\c&H0047D4FF\fscx118\fscy118}tun{\c&H00FFFFFF\fscx100\fscy100}\Nsollen
+Dialogue: 0,0:03:37.89,0:03:38.35,Cap,,0,0,0,,Was hätten wir denn tun\N{\c&H0047D4FF\fscx118\fscy118}sollen{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:03:38.81,0:03:39.05,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Seine{\c&H00FFFFFF\fscx100\fscy100} Mutter rannte auf die\NStraße Er lebt Er lebt
+Dialogue: 0,0:03:39.07,0:03:39.23,Cap,,0,0,0,,Seine {\c&H0047D4FF\fscx118\fscy118}Mutter{\c&H00FFFFFF\fscx100\fscy100} rannte auf die\NStraße Er lebt Er lebt
+Dialogue: 0,0:03:39.25,0:03:39.59,Cap,,0,0,0,,Seine Mutter {\c&H0047D4FF\fscx118\fscy118}rannte{\c&H00FFFFFF\fscx100\fscy100} auf die\NStraße Er lebt Er lebt
+Dialogue: 0,0:03:39.61,0:03:39.73,Cap,,0,0,0,,Seine Mutter rannte {\c&H0047D4FF\fscx118\fscy118}auf{\c&H00FFFFFF\fscx100\fscy100} die\NStraße Er lebt Er lebt
+Dialogue: 0,0:03:39.75,0:03:39.85,Cap,,0,0,0,,Seine Mutter rannte auf {\c&H0047D4FF\fscx118\fscy118}die{\c&H00FFFFFF\fscx100\fscy100}\NStraße Er lebt Er lebt
+Dialogue: 0,0:03:39.87,0:03:40.59,Cap,,0,0,0,,Seine Mutter rannte auf die\N{\c&H0047D4FF\fscx118\fscy118}Straße{\c&H00FFFFFF\fscx100\fscy100} Er lebt Er lebt
+Dialogue: 0,0:03:40.61,0:03:40.67,Cap,,0,0,0,,Seine Mutter rannte auf die\NStraße {\c&H0047D4FF\fscx118\fscy118}Er{\c&H00FFFFFF\fscx100\fscy100} lebt Er lebt
+Dialogue: 0,0:03:40.69,0:03:41.35,Cap,,0,0,0,,Seine Mutter rannte auf die\NStraße Er {\c&H0047D4FF\fscx118\fscy118}lebt{\c&H00FFFFFF\fscx100\fscy100} Er lebt
+Dialogue: 0,0:03:41.37,0:03:41.71,Cap,,0,0,0,,Seine Mutter rannte auf die\NStraße Er lebt {\c&H0047D4FF\fscx118\fscy118}Er{\c&H00FFFFFF\fscx100\fscy100} lebt
+Dialogue: 0,0:03:41.73,0:03:42.25,Cap,,0,0,0,,Seine Mutter rannte auf die\NStraße Er lebt Er {\c&H0047D4FF\fscx118\fscy118}lebt{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:03:42.37,0:03:42.51,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Er{\c&H00FFFFFF\fscx100\fscy100} wog 45 Kilogramm
+Dialogue: 0,0:03:42.53,0:03:42.71,Cap,,0,0,0,,Er {\c&H0047D4FF\fscx118\fscy118}wog{\c&H00FFFFFF\fscx100\fscy100} 45 Kilogramm
+Dialogue: 0,0:03:42.73,0:03:43.47,Cap,,0,0,0,,Er wog {\c&H0047D4FF\fscx118\fscy118}45{\c&H00FFFFFF\fscx100\fscy100} Kilogramm
+Dialogue: 0,0:03:43.49,0:03:44.07,Cap,,0,0,0,,Er wog 45 {\c&H0047D4FF\fscx118\fscy118}Kilogramm{\c&H00FFFFFF\fscx100\fscy100}
+Dialogue: 0,0:03:44.59,0:03:44.81,Cap,,0,0,0,,{\c&H0047D4FF\fscx118\fscy118}Er{\c&H00FFFFFF\fscx100\fscy100} hatte überlebt
+Dialogue: 0,0:03:44.83,0:03:45.01,Cap,,0,0,0,,Er {\c&H0047D4FF\fscx118\fscy118}hatte{\c&H00FFFFFF\fscx100\fscy100} überlebt
+Dialogue: 0,0:03:45.03,0:03:45.69,Cap,,0,0,0,,Er hatte {\c&H0047D4FF\fscx118\fscy118}überlebt{\c&H00FFFFFF\fscx100\fscy100}
