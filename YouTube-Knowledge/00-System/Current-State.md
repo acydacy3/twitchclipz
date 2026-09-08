@@ -74,9 +74,11 @@ Snapshots am 29.08. aufhörten — nicht nachholbar.
 - **Der ganze Kanal lief 8 dB zu leise** (−22 statt −14 LUFS, F-V9-G).
   Gefunden von der neu gebauten Regel R18, nicht durch Hinhören.
   Tonkette korrigiert, alle 10 Ralston-Shorts liegen jetzt bei −15 LUFS.
-- **Alle 10 Ralston-Shorts neu gerendert.** 01–05 ausgetauscht,
-  **06–10 offen** (YouTube-Tageslimit) — als `austausch_offen` im
-  `upload_log.json` vermerkt, `kp.py status` meldet es von selbst.
+- **Alle 10 Ralston-Shorts neu gerendert und ausgetauscht.** 01–05 am
+  07.09., 06–10 am 08.09. (Tageslimit abgewartet). Sendeplan sauber:
+  7 terminiert, keine Dubletten, Termine unverändert. Die Marke
+  `austausch_offen` hat den offenen Rest über den Container-Neustart
+  getragen — der Nutzer musste nichts ansprechen.
 - Zwei Messfehler in meinen eigenen Prüfwerkzeugen gefunden und behoben
   (F-V9-H): falsche Helligkeitsschwelle, unterdrückte ffmpeg-Ausgabe.
 
