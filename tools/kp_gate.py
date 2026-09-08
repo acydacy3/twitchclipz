@@ -49,9 +49,10 @@ def shorts_einer_serie(serie):
     return sorted(nums)
 
 
-def pruefe_short(serie, num, phase, bauart=None):
+def pruefe_short(serie, num, phase, bauart=None, ohne_text=False):
     m = R.Material(serie, num)
-    return [regel["pruefung"](m) for regel in R.regeln_der_phase(phase, bauart)]
+    return [regel["pruefung"](m)
+            for regel in R.regeln_der_phase(phase, bauart, ohne_text)]
 
 
 def pruefe_system():
@@ -69,6 +70,10 @@ def main():
                     help="welche Bauart geprueft wird (Vorher-Phase)")
     ap.add_argument("--langform", action="store_true",
                     help="das Langvideo der Serie pruefen (render/long.mp4)")
+    ap.add_argument("--ohne-captions", dest="ohne_captions", action="store_true",
+                    help="Bau ohne eingebrannte Untertitel: Regeln ueber den Text im "
+                         "Bild entfallen (R01, R02). Kein Freibrief — R30 misst am "
+                         "fertigen Langvideo nach, dass wirklich kein Text drin ist.")
     ap.add_argument("--system", action="store_true", help="nur den Systemzustand pruefen")
     ap.add_argument("--json", action="store_true")
     a = ap.parse_args()
@@ -110,7 +115,8 @@ def main():
     else:
         phase = "nachher" if a.nachher else "vorher"
         bauart = None if phase == "nachher" else a.fuer
-        alle = {n: pruefe_short(serie, n, phase, bauart) for n in nums}
+        alle = {n: pruefe_short(serie, n, phase, bauart, a.ohne_captions)
+                for n in nums}
     verstoesse = [(n, b) for n, bs in alle.items() for b in bs if not b.ok and b.hart]
     warnungen = [(n, b) for n, bs in alle.items() for b in bs if not b.ok and not b.hart]
 

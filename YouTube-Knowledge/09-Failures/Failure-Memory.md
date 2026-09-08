@@ -426,6 +426,39 @@ Entscheidung neben das Material geschrieben werden.** Ein Blick, der nicht
 festgehalten wird, muss beim nächsten Container noch einmal geworfen werden —
 und wird es nicht.
 
+### F-V9-U: Die richtige Regel am falschen Gegenstand — und wie eine Ausnahme trotzdem kein Freibrief wird (`fixed`)
+
+**Was**: R01 (Skript-Herkunft) hielt den Bau des **Lengede**-Langvideos an.
+Für Lengede und Okene gibt es kein belegtes Nutzer-Skript — nur
+Voiceover-Dateien aus dem Drive. Der Bau läuft deshalb mit
+`nb_lang.py --ohne-captions`: **es kommt kein Text ins Bild.**
+**Warum das eine echte Frage war**: R01 hatte recht — rohe Spracherkennung
+einzubrennen hat V6 und V7 ruiniert, das ist F-V9-A. Sie zielte nur am
+Gegenstand vorbei: R01 schützt nicht das Skript, sondern **den Text im Bild**.
+Wo keiner ins Bild kommt, kann keiner falsch sein.
+**Die Versuchung, der nicht nachgegeben wurde**: `--ohne-captions` einfach als
+Ausnahme durchzuwinken. Damit wäre das Flag eine Hintertür — einmal angehängt,
+und R01 schweigt für immer, auch dort, wo sie gebraucht wird. Genau so werden
+Riegel wertlos (vgl. F-V9-P: Fehlalarme führen zum Abschalten, Freibriefe zum
+Aushöhlen — beide Wege enden am selben Punkt).
+**Fix**: Die Ausnahme wird zu einer **Behauptung mit Preis**.
+1. R01/R02 tragen `betrifft="text"`. `--ohne-captions` überspringt genau diese
+   zwei — keine anderen.
+2. `nb_lang.py --ohne-captions` legt `<serie>/render/long.ohne-captions.json`
+   ab, mit Grund und dem Hinweis, wer das nachmisst. Ein späterer Bau **mit**
+   Untertiteln löscht die Marke wieder.
+3. **Neue Regel R30**: Liegt die Marke, misst sie am fertigen Langvideo die
+   Helligkeit im Untertitel-Band — dieselbe Messung wie R15, mit umgekehrtem
+   Vorzeichen. Steht dort Schrift, ist das Gate rot.
+4. Der Riegel reicht `--ohne-captions` an das Gate durch.
+**Gegenprobe**: `kp_gate.py lengede --fuer longform` = rot (10 Verstöße),
+mit `--ohne-captions` = grün; ralston (mit Untertiteln gebaut) meldet R30 als
+„nicht zutreffend"; ein untertitelloses Video mit Schrift im Band wäre rot.
+**Rule**: **Eine Ausnahme von einer Regel muss selbst eine prüfbare Behauptung
+sein.** Wer sich auf sie beruft, muss am Ergebnis belegen, dass die Bedingung
+wirklich vorlag. Sonst ist die Ausnahme nur ein Schalter, mit dem man die Regel
+abstellt.
+
 ## Failure Memory auf Agentenebene
 Wenn ein Agent wiederholt denselben Fehler produziert:
 ```
