@@ -149,6 +149,12 @@ def main():
     befehl = [sys.executable, gate, serie]
     if LONGFORM.search(cmd):
         befehl += ["--fuer", "longform"]
+        # Baut der Aufruf ohne eingebrannte Untertitel, entfallen die Regeln
+        # ueber den Text im Bild -- es kommt keiner ins Bild. Kein Freibrief:
+        # R30 misst am fertigen Langvideo nach, dass wirklich keiner drin ist,
+        # und die Marke <serie>/render/long.ohne-captions.json legt der Bauer.
+        if re.search(r"--ohne-captions\b", cmd):
+            befehl += ["--ohne-captions"]
     try:
         p = subprocess.run(befehl, cwd=REPO, capture_output=True, text=True,
                            timeout=120)

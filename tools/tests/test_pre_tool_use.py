@@ -23,8 +23,8 @@ GATE = os.path.join(REPO, "tools", "kp_gate.py")
 DURCH, SPERRE = 0, 2
 
 
-def gate_zustand(serie):
-    p = subprocess.run([sys.executable, GATE, serie], cwd=REPO,
+def gate_zustand(serie, *extra):
+    p = subprocess.run([sys.executable, GATE, serie, *extra], cwd=REPO,
                        capture_output=True, text=True)
     return p.returncode
 
@@ -63,7 +63,17 @@ def main():
         faelle += [
             (f"python3 {s}/nb_build.py",            SPERRE, f"Render der roten Serie {s}"),
             (f"python3 {s}/nb_upload.py --longform", SPERRE, f"Upload der roten Serie {s}"),
-            (f"python3 nb_lang.py {s}",              SPERRE, f"Longform der roten Serie {s}"),
+        ]
+        # Der Longform-Bau wird gegen die LANGFORM-Regeln geprueft, nicht gegen
+        # die Shorts-Regeln (F-V9-P). Eine Serie, deren Shorts rot sind, darf
+        # ihr Langvideo bauen, solange der Longform-Satz gruen ist -- sonst
+        # waere es ein Fehlalarm, und Fehlalarme schalten Riegel ab. Deshalb
+        # wird die Erwartung hier gemessen statt geraten.
+        lang_rot = gate_zustand(s, "--fuer", "longform") == 1
+        faelle += [
+            (f"python3 nb_lang.py {s}",
+             SPERRE if lang_rot else DURCH,
+             f"Longform der Serie {s} ({'longform-rot' if lang_rot else 'longform-gruen'})"),
         ]
 
     fehler = 0

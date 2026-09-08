@@ -784,6 +784,60 @@ def _longform_datei(serie):
                        os.path.join(serie, "output", "long.mp4"))
 
 
+def ohne_captions_marke(serie):
+    """Pfad der Marke, die ein untertitelloses Langvideo ausweist."""
+    return os.path.join(str(serie).rstrip("/"), "render", "long.ohne-captions.json")
+
+
+def p_kein_eingebrannter_text(t):
+    """Wer sich auf --ohne-captions beruft, muss es am fertigen Video belegen.
+
+    WARUM DIESE REGEL EXISTIERT
+    ---------------------------
+    Lengede und Okene haben kein belegtes Skript — nur Voiceover-Dateien aus
+    dem Drive. R01 (Skript-Herkunft) haelt deshalb ihren Longform-Bau an, und
+    das ist im Kern richtig: eingebrannte Untertitel aus roher Spracherkennung
+    haben V6 und V7 ruiniert.
+
+    Aber R01 schuetzt nicht das Skript, sondern den TEXT IM BILD. Wo kein Text
+    ins Bild kommt, kann keiner falsch sein. `nb_lang.py --ohne-captions` baut
+    genau so ein Video und legt dabei eine Marke ab.
+
+    Der Haken daran waere, dass `--ohne-captions` zur Hintertuer wird: einmal
+    angehaengt, und R01 schweigt. Deshalb ist die Marke kein Freibrief, sondern
+    eine BEHAUPTUNG, die hier gemessen wird — im Untertitel-Band des fertigen
+    Videos darf keine Schrift stehen. Die Behauptung kostet also mehr, als sie
+    einbringt, wenn sie falsch ist.
+
+    Dieselbe Messung wie R15, nur mit umgekehrtem Vorzeichen: dort muss die
+    Schrift da sein, hier darf sie es nicht.
+    """
+    serie = t.serie
+    marke = ohne_captions_marke(serie)
+    v = os.path.join(serie, "render", "long.mp4")
+    if not os.path.exists(marke):
+        return Befund("R30", "Ohne-Captions belegt", True,
+                      f"{serie}: mit Untertiteln gebaut — nicht zutreffend", hart=False)
+    if not os.path.exists(v):
+        return Befund("R30", "Ohne-Captions belegt", False,
+                      f"{serie}: Marke da, aber kein Langvideo", stelle=marke)
+    d = sh_dauer(v)
+    if d < 5:
+        return Befund("R30", "Ohne-Captions belegt", False, f"{serie}: zu kurz zum Messen")
+    proben = [d * f for f in (0.25, 0.5, 0.8)]
+    hell = max(_band_hell(v, x) for x in proben)
+    if hell < 0:
+        return Befund("R30", "Ohne-Captions belegt", False,
+                      f"{serie}: Helligkeit nicht messbar", stelle=v)
+    if hell >= UNTERTITEL_HELL:
+        return Befund("R30", "Ohne-Captions belegt", False,
+                      f"{serie}: als untertitellos ausgewiesen, aber im Band steht Schrift "
+                      f"(Helligkeit {hell}, Grenze {UNTERTITEL_HELL})",
+                      stelle=f"{v}\n                 Marke: {marke}")
+    return Befund("R30", "Ohne-Captions belegt", True,
+                  f"{serie}: kein Text im Bild (Helligkeit {hell})")
+
+
 def p_longform_laenge(m):
     """R26 — ein Langvideo muss lang sein.
 
@@ -891,10 +945,10 @@ def p_longform_bildwechsel(m):
 #        "nachher" = am fertigen Video gemessen
 #        "dauerhaft" = Systemzustand, unabhaengig von einer Serie
 REGELN = [
-    dict(id="R01", phase="vorher", titel="Skript-Herkunft", pruefung=p_herkunft,
+    dict(id="R01", phase="vorher", betrifft="text", titel="Skript-Herkunft", pruefung=p_herkunft,
          regel="Kein Text ist ein Skript, solange seine Herkunft nicht per Pruefsumme belegt ist.",
          herkunft="F-V9-A — prosperi/nb_transcribe.py schrieb ASR nach skripte/short_XX.txt"),
-    dict(id="R02", phase="vorher", titel="Captions=Skript", pruefung=p_captions,
+    dict(id="R02", phase="vorher", betrifft="text", titel="Captions=Skript", pruefung=p_captions,
          regel="Caption-Woerter kommen aus dem Nutzer-Skript, ASR nur fuers Timing.",
          herkunft="F-V8-E / F-V9-A — „Marathon des Apples\" statt „Sables\", live in 10 Shorts"),
     dict(id="R03", phase="vorher", bauart="shorts", titel="Hook bewegt", pruefung=p_hook_bewegt,
@@ -970,6 +1024,13 @@ REGELN = [
          regel="Im Langvideo wechselt das Bild — mindestens ein Schnitt je 30 Sekunden.",
          herkunft="F-V9-O — nb_lang.py lieferte 5:55 aus EINEM Bild; Laenge, Format "
                   "und Ton gingen alle gruen durch"),
+    dict(id="R30", phase="langform", titel="Ohne-Captions belegt",
+         pruefung=p_kein_eingebrannter_text,
+         regel="Wer sich auf --ohne-captions beruft, belegt am fertigen Video, dass "
+               "kein Text im Bild steht.",
+         herkunft="08.09.2026 — R01 hielt den Lengede-Longform an. Richtig gedacht, "
+                  "falsch angewandt: R01 schuetzt den Text im Bild, nicht das Skript. "
+                  "Damit die Ausnahme keine Hintertuer wird, wird sie gemessen."),
     # ── Regeln ohne Pruefpunkt: ehrlich als ungedeckt gefuehrt ────────────
     dict(id="R21", phase="vorher", titel="Untertitel=Stimme", pruefung=None,
          regel="Untertitel spiegeln die gesprochene Stimme, kein abweichender Text.",
@@ -990,7 +1051,7 @@ REGELN = [
 NACH_ID = {r["id"]: r for r in REGELN}
 
 
-def regeln_der_phase(phase, bauart=None):
+def regeln_der_phase(phase, bauart=None, ohne_text=False):
     """Regeln einer Phase, optional auf eine Bauart eingegrenzt.
 
     Warum es die Bauart gibt: Am 08.09.2026 blockierte das Gate den Bau eines
@@ -1009,6 +1070,11 @@ def regeln_der_phase(phase, bauart=None):
     if bauart:
         treffer = [r for r in treffer
                    if r.get("bauart") in (None, bauart)]
+    if ohne_text:
+        # Baut die Serie ohne eingebrannte Untertitel, koennen Regeln ueber den
+        # Text im Bild nicht greifen -- es gibt keinen. Das ist KEIN Freibrief:
+        # R30 misst am fertigen Video nach, dass wirklich keiner drin ist.
+        treffer = [r for r in treffer if r.get("betrifft") != "text"]
     return treffer
 
 

@@ -26,6 +26,7 @@ import math
 import os
 import subprocess
 import sys
+import datetime as _dt
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "tools"))
 try:
@@ -344,6 +345,24 @@ def bauen(serie, order, gap, shot_len, ohne_captions=False):
     print(f"  {len(shots)} Einstellungen, Schnitt ~{total/len(shots):.1f}s, "
           f"Länge {total:.1f}s → rendere …")
     sh(cmd)
+
+    # Marke fuer R30. Wer ohne eingebrannte Untertitel baut, muss das ausweisen
+    # -- und die Behauptung wird am fertigen Video gemessen (kein Freibrief,
+    # sondern eine Behauptung mit Preis). Baut jemand SPAETER mit Untertiteln
+    # neu, verschwindet die Marke wieder, sonst wuerde R30 falsch schweigen.
+    marke = os.path.join(serie, "render", "long.ohne-captions.json")
+    if ohne_captions:
+        json.dump({"gebaut": _dt.datetime.now().isoformat(timespec="seconds"),
+                   "grund": "Fuer diese Serie existiert kein belegtes Nutzer-Skript. "
+                            "Rohe Spracherkennung einzubrennen hat V6 und V7 ruiniert; "
+                            "keine Untertitel koennen nicht falsch sein.",
+                   "geprueft_von": "R30 (Untertitel-Band muss dunkel bleiben)"},
+                  open(marke, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+        print(f"  Marke gesetzt: {marke}  (R30 misst das nach)")
+    elif os.path.exists(marke):
+        os.remove(marke)
+        print(f"  Marke entfernt: {marke}  (jetzt mit Untertiteln gebaut)")
+
     print(f"fertig: {out}")
     return out
 
