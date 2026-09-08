@@ -29,11 +29,11 @@ import sys
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "tools"))
 try:
-    from kp_regeln import ist_fremdmaterial
+    from kp_regeln import bild_ausgeschlossen
 except Exception:                       # Werkzeug fehlt -> lieber streng sein
-    def ist_fremdmaterial(name):
+    def bild_ausgeschlossen(serie, name):
         n = os.path.basename(str(name or "")).lower()
-        return n.startswith("ref_") or "presse" in n
+        return "Fremdmaterial" if (n.startswith("ref_") or "presse" in n) else None
 
 W, H = 1920, 1080
 FPS = 30
@@ -154,7 +154,17 @@ def find_images(serie, nn):
     # Fremdmaterial raus, BEVOR dedupliziert wird. nb_lang.py zog hier
     # ref_01..ref_04 heran -- echte Pressefotos, die nur Vorlage fuer die
     # Bildgenerierung waren. Regel R24 deckte nur die Shorts ab.
-    imgs = [p for p in imgs if not ist_fremdmaterial(p)]
+    # Fremdmaterial UND begruendet aussortierte Bilder raus, BEVOR dedupliziert
+    # wird. Beides entscheidet eine einzige Funktion in tools/kp_regeln.py --
+    # zwei Pruefungen an zwei Stellen sind das Muster hinter F-V9-B/K/Q.
+    behalten = []
+    for p in imgs:
+        grund = bild_ausgeschlossen(serie, p)
+        if grund:
+            print(f"  - {p}: {grund}")
+        else:
+            behalten.append(p)
+    imgs = behalten
     imgs.sort(key=lambda p: (os.path.splitext(p)[0], 0 if p.lower().endswith(".jpg") else 1))
     seen, out = set(), []
     for p in imgs:

@@ -164,7 +164,9 @@ python3 analyse.py                       # Detailbericht (Uploads, Termine)
 
 **Bilder (Reihenfolge einhalten — kostenlos zuerst):**
 - [ ] **HF Z-Image** (`mcp__huggingface__gr1_z_image_turbo_generate`) — gratis, ~8/Tag → IMMER zuerst ausschöpfen
+- [ ] **Commons-Kategorien** (`tools/nb_commons.py "<Kategorie>" <dir>`) — echte Fotos; Kategorie finden mit `--suche-kategorie "<begriff>"`. Freitextsuche auf Commons liefert eingescannte Bücher, Kategorien liefern Fotos.
 - [ ] **Openverse** (`tools/nb_openverse.py "<q>" <dir>`) — CC-Pool für Stock/Broll
+- [ ] **Jedes gelieferte Bild ansehen, bevor es in den Schnitt geht.** Themenfremdes nach `<serie>/bilder/AUSSORTIERT.json` mit Grund — nicht löschen. Regeln messen Dateien, nicht Bildinhalt (F-V9-T).
 - [ ] **Wikimedia Commons** (`tools/nb_fetch_broll*.py`) — spezifische Kategorien, globaler Dedup-Set
 - [ ] **Higgsfield Z-Image** (0,15 Cr) — nur für echte Schlüsselszenen wenn HF-Quota erschöpft
 - [ ] **Higgsfield Cinematic** (teuer) — nur auf expliziten Nutzer-Wunsch

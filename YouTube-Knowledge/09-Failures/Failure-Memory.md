@@ -323,6 +323,109 @@ Messung geben.** Länge, Format und Pegel sind Datei-Eigenschaften; ob ein Video
 etwas zeigt, ist keine. Nach jeder neuen Erzeugungsart gehört ein Kontaktabzug
 angesehen — die Regeln fangen das Messbare, der Blick fängt den Rest.
 
+### F-V9-P: Das Gate blockierte den falschen Bau — Regeln brauchen Geltungsbereich (`fixed`)
+
+**Was**: Der Riegel hielt den Bau eines **Langvideos** an, weil die **Shorts**
+derselben Serie die Bewegtbild- und Titel-Regeln verletzen. Diese Shorts sind
+seit dem 04.09. veröffentlicht und wurden gar nicht angefasst — der
+Longform-Bauer nutzt nur Voiceover und Bilder, nicht die Shot-Konfiguration.
+**Warum das gefährlich ist**: Ein Fehlalarm ist nicht bloß lästig. Er ist der
+Weg, auf dem ein Riegel abgeschaltet wird — und danach schützt er nichts mehr.
+Dasselbe Muster wie F-V9-I (Blockade beim Schreiben von Dokumentation).
+**Fix**: Regeln tragen ein Feld `bauart`. Ohne Angabe gelten sie für alles
+(R01 Herkunft, R02 Captions, R24 Fremdmaterial). Nur wer ausdrücklich
+`"shorts"` trägt, wird beim Longform-Bau übersprungen (R03/R04 Bewegtbild,
+R05–R09, R11). `kp_gate.py --fuer shorts|longform` wählt den Satz; der Riegel
+setzt ihn bei `nb_lang.py` automatisch.
+**Gegenprobe**: prosperi als Shorts geprüft = rot, als Longform = grün.
+**Rule**: **Eine Regel ohne Geltungsbereich ist entweder zu eng oder zu weit.**
+Präzisieren, wo sie gilt — nicht abschwächen, wo sie stört.
+
+### F-V9-Q: Zum vierten Mal — ein Werkzeug je Serie kopiert (`superseded`)
+
+**Was**: `ralston/nb_upload.py` kann Langvideos hochladen, `prosperi/nb_upload.py`
+nicht, `nuttyputty/nb_upload.py` wieder anders. Für das Prosperi-Langvideo hätte
+man ein viertes Skript kopieren müssen.
+**Zusammenhang**: Das ist derselbe Befund wie F-V9-B (Caption-Fix nur in einer
+von drei Kopien) und F-V9-K (Fremdmaterial-Regel nur an einer von zwei Stellen).
+Innerhalb von zwei Tagen viermal dieselbe Ursache.
+**Fix**: `tools/kp_longform.py` — **ein** Werkzeug für alle Serien. Es liest die
+Metadaten aus `<serie>/metadata.json` unter `longform`, lässt immer erst das
+Langform-Gate laufen und lädt nur bei grünem Ergebnis hoch.
+**Rule**: **Ein neues Werkzeug gehört nach `tools/`, nie in einen Serien-Ordner.**
+Serien-Ordner enthalten Material und Konfiguration, keine Logik. Was in einem
+Serien-Ordner liegt, wandert nicht — und ein Fix, der nicht wandert, ist keiner.
+
+### F-V9-R: Das Bildwerkzeug lieferte seit Monaten nichts — und nannte das ein Ergebnis (`fixed`)
+
+**Was**: `tools/nb_openverse.py` ist seit Wochen in CLAUDE.md als autonome
+Bildquelle geführt („Broll autonom sourcing, Nutzer sucht nie selbst"). Es hat
+**nie ein einziges Bild geliefert**. Jeder Aufruf endete mit `Openverse: 0 Bilder`
+und **Exit-Code 0**.
+**Root Cause**: Das Werkzeug lud die Datei als `ov_1.raw` und rief dann
+`convert` auf. ImageMagick entscheidet nach der Endung: `.raw` heißt
+Kamera-RAW, also DNG. Der Decoder brach ab, `rr.returncode != 0` wurde still
+übersprungen, die Zählung blieb bei 0.
+**Warum es niemandem auffiel**: Weil „0 Bilder" wie ein Suchergebnis aussieht
+und nicht wie ein Absturz. Das ist dieselbe Bauart wie F-V9-D — ein Schritt
+meldet Erfolg, während er nichts produziert.
+**Fix**: Endung aus der URL ableiten. Und: **ein Werkzeug, das nichts liefert,
+beendet sich mit Exit-Code ≠ 0.** Zusätzlich schreibt es jetzt `HERKUNFT.json`
+mit Lizenz, Urheber und Quellseite je Bild.
+**Rule**: **Ein Werkzeug, das leer zurückkommt, muss das als Fehler melden.**
+Ein leeres Ergebnis und ein kaputtes Werkzeug sehen von außen gleich aus —
+also muss das Werkzeug den Unterschied sagen.
+
+### F-V9-S: Eine Regel nannte eine Quelle, für die es kein Werkzeug gab (`fixed`)
+
+**Was**: CLAUDE.md Kernregel 8 verlangt Bildbeschaffung über
+„Commons-Kategorien + Openverse". Für Openverse gab es ein (kaputtes)
+Werkzeug, für Commons-Kategorien **gar keins**. Die halbe Regel war seit ihrer
+Niederschrift unausführbar.
+**Folge**: Das Bildmaterial kam faktisch aus unbelegten Beständen — mit dem
+Ergebnis in F-V9-T.
+**Fix**: `tools/nb_commons.py` — Kategoriesuche, Dateiliste inkl. einer Ebene
+Unterkategorien, Download mit Lizenz-Eintrag in `HERKUNFT.json`. Die
+Drosselung der Wikimedia-API wird abgewartet und, wenn sie bleibt, **genannt**
+statt als „0 Bilder" verkauft (Lehre aus F-V9-R).
+**Rule**: **Eine Regel, die eine Quelle nennt, braucht ein Werkzeug für diese
+Quelle.** Sonst ist sie Prosa — derselbe Befund wie beim Gate, nur eine Ebene
+früher: nicht „Regel ohne Prüfpunkt", sondern „Regel ohne Ausführungspunkt".
+
+### F-V9-T: Acht themenfremde Bilder liefen durch jede Prüfung (`fixed`)
+
+**Was**: Im fertigen Nutty-Putty-Langvideo liefen mit:
+- ein Höhlen-**Zeltlager** mit lachenden Menschen in rosa Schlafsäcken und
+  Einkaufstüten — unter dem Satz, dass die Reibung im Fels jeden Zug auffraß
+  (`short_06/03,04`, `short_07/02,03`),
+- drei **historische Schwarzweißfotos** von Soldaten mit Tragen auf
+  Feldbahngleisen — das Unglück ist von 2009 in Utah (`short_08/01–03`),
+- ein **Straßen-Schrein** mit Figur hinter Gitter — unter dem Satz, dass die
+  Höhle mit Beton versiegelt wurde (`short_10/02`).
+**Alle Regeln waren grün.** R26 Länge, R27 Format, R28 Ton, R29 Bildwechsel —
+das Video erfüllte jede messbare Eigenschaft und war trotzdem falsch.
+**Root Cause**: Die Regeln messen **Dateieigenschaften**. Kein Prüfpunkt kann
+sagen, wovon ein Bild handelt. Das ist keine Lücke, die man mit einer weiteren
+Schwelle schließt — es ist die Grenze der Bauart. Gefunden wurde es durch
+Hinsehen (Kontaktabzug), nicht durch Messen. Vgl. F-V9-O, gleiche Lehre.
+**Fix (drei Teile, weil ein Teil nicht reicht)**:
+1. `<serie>/bilder/AUSSORTIERT.json` — Bild → **Grund**. Nichts wird gelöscht
+   (Guardrail #1); ein Bild wird ausgetragen und seine Begründung liegt daneben.
+2. `bild_ausgeschlossen(serie, pfad)` in `tools/kp_regeln.py` — **eine**
+   Funktion, die Fremdmaterial UND Aussortiertes entscheidet. `nb_lang.py` ruft
+   nur noch sie auf und **druckt jedes ausgeschlossene Bild mit Grund**.
+3. `.gitignore` der Serie: `bilder/` ist weiterhin ignoriert, aber
+   `AUSSORTIERT.json` und `HERKUNFT.json` sind **ausgenommen**. Sonst wäre die
+   Entscheidung mit dem Container weg und die Bilder beim nächsten Bau zurück.
+**Ersatz**: 2 Bilder aus Wikimedia Commons (Kategorie *Caving*, CC BY / CC BY-SA)
+und 3 selbst erzeugte (Hugging Face Z-Image, gratis) — Seilabstieg im Spalt,
+Flaschenzug im Fels, betonversiegelter Eingang mit Gedenktafel. Prompts und
+Seeds stehen in `nuttyputty/bilder/HERKUNFT.json`.
+**Rule**: **Was ein Riegel nicht messen kann, muss angesehen und die
+Entscheidung neben das Material geschrieben werden.** Ein Blick, der nicht
+festgehalten wird, muss beim nächsten Container noch einmal geworfen werden —
+und wird es nicht.
+
 ## Failure Memory auf Agentenebene
 Wenn ein Agent wiederholt denselben Fehler produziert:
 ```

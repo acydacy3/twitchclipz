@@ -1,0 +1,37 @@
+[
+ {
+  "datei": "short_06/hf_seilabstieg.jpg",
+  "quelle": "Hugging Face Z-Image Turbo (gratis)",
+  "seed": 88400,
+  "prompt": "narrow limestone cave passage in Utah, single climbing rope descending into a dark vertical slot",
+  "ersetzt": "short_06/03.jpg, short_06/04.jpg (Zeltlager)"
+ },
+ {
+  "datei": "short_08/hf_flaschenzug.jpg",
+  "quelle": "Hugging Face Z-Image Turbo (gratis)",
+  "seed": 378572,
+  "prompt": "cave rescue haul system, rope through a metal pulley bolted into wet limestone",
+  "ersetzt": "short_08/01-03.jpg (historisches Schwarzweiss)"
+ },
+ {
+  "datei": "short_10/hf_versiegelt.jpg",
+  "quelle": "Hugging Face Z-Image Turbo (gratis)",
+  "seed": 373982,
+  "prompt": "cave entrance on a Utah desert hillside sealed with poured concrete, memorial plaque",
+  "ersetzt": "short_10/02.jpg (Strassen-Schrein)"
+ },
+ {
+  "datei": "short_07/cm_helm_wasser.jpg",
+  "quelle": "Wikimedia Commons, Kategorie Caving",
+  "titel": "Back-crawling through a cave in Okayama.jpg",
+  "lizenz": "CC BY-SA 4.0",
+  "ersetzt": "short_07/02.jpg, short_07/03.jpg (Zeltlager)"
+ },
+ {
+  "datei": "short_08/cm_hoehlenwand.jpg",
+  "quelle": "Wikimedia Commons, Kategorie Caving",
+  "titel": "001 Pohl Avenue 1 (8321976408).jpg",
+  "lizenz": "CC BY 2.0",
+  "ersetzt": "short_08/01-03.jpg"
+ }
+]

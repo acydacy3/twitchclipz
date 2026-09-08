@@ -583,6 +583,66 @@ def ist_fremdmaterial(dateiname):
     return name.startswith("ref_") or "presse" in name or "getty" in name
 
 
+_AUSSORTIERT_CACHE = {}
+
+
+def aussortierte_bilder(serie):
+    """Bilder, die eine Serie ausdruecklich NICHT verwenden soll — mit Grund.
+
+    Datei: <serie>/bilder/AUSSORTIERT.json
+        {"short_08/01.jpg": "Historisches Schwarzweiss, Soldaten — 1917, nicht 2009"}
+
+    WARUM NICHT LOESCHEN
+    --------------------
+    Guardrail #1 schuetzt bestehendes Material. Ein geloeschtes Bild ist eine
+    Entscheidung ohne Begruendung und ohne Rueckweg. Ein ausgetragenes Bild
+    bleibt liegen, traegt seinen Grund neben sich und kann jederzeit wieder
+    aufgenommen werden — indem die Zeile verschwindet.
+
+    HERKUNFT
+    --------
+    Im Nutty-Putty-Langvideo (08.09.2026) liefen acht themenfremde Bilder mit:
+    ein lachendes Hoehlen-Zeltlager mit rosa Schlafsaecken waehrend der Satz
+    lief, dass die Reibung im Fels jeden Zug auffrass; drei historische
+    Schwarzweissfotos von Soldaten mit Tragen; ein Strassen-Schrein zu dem Satz,
+    dass die Hoehle mit Beton versiegelt wurde. Keine Regel und kein Riegel hat
+    das gesehen — Regeln messen Dateieigenschaften, nicht Bildinhalt. Der Blick
+    bleibt hier zustaendig; was der Blick entscheidet, wird hier festgehalten,
+    damit er es nur einmal entscheiden muss.
+    """
+    serie = str(serie or "").rstrip("/")
+    if serie in _AUSSORTIERT_CACHE:
+        return _AUSSORTIERT_CACHE[serie]
+    pfad = os.path.join(serie, "bilder", "AUSSORTIERT.json")
+    daten = {}
+    if os.path.exists(pfad):
+        try:
+            daten = json.load(open(pfad, encoding="utf-8"))
+        except Exception as e:
+            print(f"  ! {pfad} ist unlesbar ({e}) — kein Bild ausgeschlossen")
+    _AUSSORTIERT_CACHE[serie] = daten
+    return daten
+
+
+def bild_ausgeschlossen(serie, pfad):
+    """Zusammengefasste Pruefung: Fremdmaterial ODER begruendet aussortiert.
+
+    Jeder Bauer ruft NUR diese Funktion auf. Zwei getrennte Pruefungen an zwei
+    Stellen sind genau das Muster, das F-V9-B/K/Q erzeugt hat.
+    """
+    if ist_fremdmaterial(pfad):
+        return "Fremdmaterial (ref_/presse/getty)"
+    aus = aussortierte_bilder(serie)
+    if not aus:
+        return None
+    p = str(pfad).replace(os.sep, "/")
+    for schluessel, grund in aus.items():
+        k = str(schluessel).replace(os.sep, "/").lstrip("./")
+        if p == k or p.endswith("/" + k) or os.path.basename(p) == k:
+            return grund
+    return None
+
+
 def p_fremdmaterial(m):
     """Referenzfotos duerfen nie im Video landen.
 

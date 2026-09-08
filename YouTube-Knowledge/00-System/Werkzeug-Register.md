@@ -45,7 +45,7 @@ Jedes Video baut auf allen vorherigen auf; nichts vergessen, jeder Schritt tägl
 
 ## C) Lokale Pipeline (Repo-Root) + `tools/`
 - **Kern:** `transcribe_all`/`nb_transcribe` → `align` → `pauses` → `bildcheck` → `karaoke` → `musik` → `build_configs`/`nb_build` → `short` → `serie`/`lang` → `videocheck`; Upload: `youtube_upload`/`nb_upload`; Analyse: `analyse.py`.
-- **Bild autonom:** `nuttyputty/nb_fetch_broll.py` (Commons-Kategorien) · `tools/nb_openverse.py` (CC-Pool) · `tools/nb_upscale.py` (schärfen/`--cutout` freistellen, rembg).
+- **Bild autonom:** `tools/nb_commons.py` (Commons-Kategorien, mit Lizenz-Beleg) · `tools/nb_openverse.py` (CC-Pool, seit 08.09. funktionsfähig — vorher stets 0 Bilder, F-V9-R) · `tools/nb_upscale.py` (schärfen/`--cutout` freistellen, rembg).
 - **SEO:** `tools/nb_suggest.py` (YT-Keywords) · `tools/nb_trends.py` (Google Trends).
 - **Animation:** `tools/manim_scenes.py`/`manim_demo.py` (Manim) · `nuttyputty/animation/` (SVG+Playwright→ffmpeg) · **Remotion** (Node) — **jetzt real über `video-shotcraft`-Template getestet, §H**.
 - **VO:** `tools/nb_tts.py` (**Piper de = gratis Default**). · **Ziel:** `tools/nb_views90.py`.
