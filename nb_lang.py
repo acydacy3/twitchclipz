@@ -9,6 +9,7 @@ Shorts zu einer durchlaufenden Karaoke-Spur mergt und ein Musikbett unterlegt.
     python3 nb_lang.py <serie>                # z.B. prosperi
     python3 nb_lang.py <serie> --order 2,3,4,5,6,7,8,9,10,1   # eigene Reihenfolge
     python3 nb_lang.py <serie> --gap 0.35 --shot 6.0
+    python3 nb_lang.py <serie> --ohne-captions   # ohne eingebrannte Untertitel
 
 Erwartet je Serie (autom. gefunden):
   <serie>/voiceover/short_NN.mp3      VO-Segmente (echte Stimme der Shorts)
@@ -171,7 +172,7 @@ CY_CYCLE = [0.46, 0.52, 0.42, 0.56, 0.48, 0.50]
 Z_CYCLE = [(1.05, 1.14), (1.12, 1.21), (1.08, 1.17), (1.15, 1.24), (1.06, 1.15)]
 
 
-def bauen(serie, order, gap, shot_len):
+def bauen(serie, order, gap, shot_len, ohne_captions=False):
     serie = serie.rstrip("/")
     tmp = f"{serie}/_lang"
     os.makedirs(tmp, exist_ok=True)
@@ -309,7 +310,19 @@ def bauen(serie, order, gap, shot_len):
         labels.append(f"[v{i}]")
     chain = ";".join(filters)
     chain += f";{''.join(labels)}concat=n={len(shots)}:v=1:a=0[cat]"
-    chain += f";[cat]subtitles={ass}:fontsdir=/usr/share/fonts[vout]"
+    if ohne_captions:
+        # Bewusst ohne eingebrannte Untertitel.
+        #
+        # Ein Langvideo braucht sie nicht — das Vorbild des Kanals
+        # (Fascinating Horror) faehrt ohne. Vor allem aber: Untertitel duerfen
+        # NUR aus dem belegten Nutzer-Skript kommen (R01/R02). Fuer Serien
+        # ohne Herkunftsnachweis waere die Alternative, die Spracherkennung
+        # einzubrennen — und genau das hat V6 und V7 ruiniert ("Marathon des
+        # Apples", "zwenkt"). Keine Untertitel koennen nicht falsch sein.
+        chain += ";[cat]copy[vout]"
+        print("  (ohne eingebrannte Untertitel — kein belegtes Skript)")
+    else:
+        chain += f";[cat]subtitles={ass}:fontsdir=/usr/share/fonts[vout]"
 
     cmd = (["ffmpeg", "-y", "-loglevel", "error"] + inputs +
            ["-i", mix, "-filter_complex", chain,
@@ -338,7 +351,8 @@ def main():
         gap = float(sys.argv[sys.argv.index("--gap") + 1])
     if "--shot" in sys.argv:
         shot_len = float(sys.argv[sys.argv.index("--shot") + 1])
-    bauen(serie, order, gap, shot_len)
+    bauen(serie, order, gap, shot_len,
+          ohne_captions="--ohne-captions" in sys.argv)
 
 
 if __name__ == "__main__":

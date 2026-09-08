@@ -10,6 +10,7 @@ dass es auffiel — genau so blieben fuenf Regeln monatelang wirkungslos.
     python3 tools/kp_gate.py <serie>              vor dem Render
     python3 tools/kp_gate.py <serie> --nachher    am fertigen Video
     python3 tools/kp_gate.py <serie> --short 03   ein einzelner Short
+    python3 tools/kp_gate.py <serie> --fuer longform  vor einem Longform-Bau
     python3 tools/kp_gate.py <serie> --langform   das Langvideo der Serie
     python3 tools/kp_gate.py --system             nur der Systemzustand
     python3 tools/kp_gate.py <serie> --json       maschinenlesbar
@@ -48,9 +49,9 @@ def shorts_einer_serie(serie):
     return sorted(nums)
 
 
-def pruefe_short(serie, num, phase):
+def pruefe_short(serie, num, phase, bauart=None):
     m = R.Material(serie, num)
-    return [regel["pruefung"](m) for regel in R.regeln_der_phase(phase)]
+    return [regel["pruefung"](m) for regel in R.regeln_der_phase(phase, bauart)]
 
 
 def pruefe_system():
@@ -64,6 +65,8 @@ def main():
     ap.add_argument("--short", help="nur dieser Short, z. B. 03")
     ap.add_argument("--nachher", action="store_true",
                     help="das FERTIGE Video pruefen statt der Absicht")
+    ap.add_argument("--fuer", choices=["shorts", "longform"], default="shorts",
+                    help="welche Bauart geprueft wird (Vorher-Phase)")
     ap.add_argument("--langform", action="store_true",
                     help="das Langvideo der Serie pruefen (render/long.mp4)")
     ap.add_argument("--system", action="store_true", help="nur den Systemzustand pruefen")
@@ -106,7 +109,8 @@ def main():
         phase = "langform"
     else:
         phase = "nachher" if a.nachher else "vorher"
-        alle = {n: pruefe_short(serie, n, phase) for n in nums}
+        bauart = None if phase == "nachher" else a.fuer
+        alle = {n: pruefe_short(serie, n, phase, bauart) for n in nums}
     verstoesse = [(n, b) for n, bs in alle.items() for b in bs if not b.ok and b.hart]
     warnungen = [(n, b) for n, bs in alle.items() for b in bs if not b.ok and not b.hart]
 
@@ -119,7 +123,9 @@ def main():
 
     g, ges = R.deckung()
     print("=" * 74)
-    wo = "LANGFORM" if a.langform else ("NACHHER" if a.nachher else "VORHER ")
+    wo = ("LANGFORM" if a.langform else
+          ("NACHHER" if a.nachher else
+           f"VORHER/{a.fuer}"))
     print(f"  KP-GATE {wo} —  {serie}  "
           f"({len(alle)} Einheit(en), {g}/{ges} Regeln erzwungen)")
     print("=" * 74)

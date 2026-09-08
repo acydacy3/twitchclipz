@@ -26,14 +26,14 @@ tags: [system, regeln, durchsetzung, generiert]
 |---|---|---|---|
 | R01 | Kein Text ist ein Skript, solange seine Herkunft nicht per Pruefsumme belegt ist. | `p_herkunft()` | F-V9-A — prosperi/nb_transcribe.py schrieb ASR nach skripte/short_XX.txt |
 | R02 | Caption-Woerter kommen aus dem Nutzer-Skript, ASR nur fuers Timing. | `p_captions()` | F-V8-E / F-V9-A — „Marathon des Apples" statt „Sables", live in 10 Shorts |
-| R03 | Sekunde 1 ist bewegt. Ken-Burns ueber ein Standbild zaehlt nicht. | `p_hook_bewegt()` | Short-Konzept-Blueprint 31.08. — virale Hits fahren ~90 % Bewegtbild |
-| R04 | Mindestens ein echter Bewegtshot je Short (Manim/Remotion/I2V). | `p_bewegtshot()` | Bewegtbild-Pflicht 31.08. — 5 von 10 Ralston-Shorts verletzten sie unbemerkt |
-| R05 | Mindestens 2 Bilder je Short, nie ein einzelnes Standbild. | `p_multishot()` | F-V8-A — alle 10 Shorts bestanden aus EINEM Ken-Burns-Clip |
-| R06 | Musikbett db >= -18 (Ziel -16), sonst unhoerbar. | `p_musik()` | Nutzer-Befund 25.08. — V1-V5 hatten ein unhoerbares Bett |
-| R07 | Kein Bild zweimal direkt hintereinander im selben Short. | `p_bild_dedup()` | Learning-Bilder-Prompts — globaler Dedup-Set je Produktion |
-| R08 | Titel hoechstens 60 Zeichen, Aussage bis Zeichen 35 fertig. | `p_titel()` | Learning-Titel — CTR-Beleg |
-| R09 | Kein Genre-Label („| Doku") und kein Emoji im Titel. | `p_titel_sauber()` | Competitor-Analyse 27.08. — kein Top-Performer nutzt Genre-Labels |
-| R11 | Zielzone 19-49 s (intern belegt 19-39, A/B bis 49). | `p_laenge()` | Learning-Retention — n=44 intern belegt; Competitor-Zone nur Hypothese |
+| R03 | Sekunde 1 ist bewegt. Ken-Burns ueber ein Standbild zaehlt nicht. *(nur Shorts)* | `p_hook_bewegt()` | Short-Konzept-Blueprint 31.08. — virale Hits fahren ~90 % Bewegtbild |
+| R04 | Mindestens ein echter Bewegtshot je Short (Manim/Remotion/I2V). *(nur Shorts)* | `p_bewegtshot()` | Bewegtbild-Pflicht 31.08. — 5 von 10 Ralston-Shorts verletzten sie unbemerkt |
+| R05 | Mindestens 2 Bilder je Short, nie ein einzelnes Standbild. *(nur Shorts)* | `p_multishot()` | F-V8-A — alle 10 Shorts bestanden aus EINEM Ken-Burns-Clip |
+| R06 | Musikbett db >= -18 (Ziel -16), sonst unhoerbar. *(nur Shorts)* | `p_musik()` | Nutzer-Befund 25.08. — V1-V5 hatten ein unhoerbares Bett |
+| R07 | Kein Bild zweimal direkt hintereinander im selben Short. *(nur Shorts)* | `p_bild_dedup()` | Learning-Bilder-Prompts — globaler Dedup-Set je Produktion |
+| R08 | Titel hoechstens 60 Zeichen, Aussage bis Zeichen 35 fertig. *(nur Shorts)* | `p_titel()` | Learning-Titel — CTR-Beleg |
+| R09 | Kein Genre-Label („| Doku") und kein Emoji im Titel. *(nur Shorts)* | `p_titel_sauber()` | Competitor-Analyse 27.08. — kein Top-Performer nutzt Genre-Labels |
+| R11 | Zielzone 19-49 s (intern belegt 19-39, A/B bis 49). *(nur Shorts)* | `p_laenge()` | Learning-Retention — n=44 intern belegt; Competitor-Zone nur Hypothese |
 | R12 | Jede Serie hinterlegt ein Longform in metadata.json. | `p_longform()` | Pflichtliste §6 — 6 von 8 Serien haben bis heute keines |
 | R21 | Untertitel spiegeln die gesprochene Stimme, kein abweichender Text. | **— ungedeckt** | Learning-Captions — abweichender Hook-Banner nur als Experiment |
 | R22 | Schluesselmomente werden erzeugt, Establishing kommt aus Stock. | **— ungedeckt** | Learning-Bilder-Prompts |
