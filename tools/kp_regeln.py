@@ -788,6 +788,43 @@ def p_longform_ton(m):
                   f"{serie}: {lufs:.1f} LUFS — ausserhalb {lo}…{hi}", stelle=v)
 
 
+def p_longform_bildwechsel(m):
+    """R29 — wechselt im Langvideo ueberhaupt das Bild?
+
+    Am 08.09.2026 lieferte nb_lang.py ein 5:55 langes Video, das ueber die
+    volle Laenge EIN Bild zeigte — sanft geschwenkt, aber nie gewechselt.
+    R26 (Laenge), R27 (Format) und R28 (Ton) gingen alle gruen durch: die
+    Datei war 5:55 lang, 1920x1080 und bei -14,1 LUFS. Kein Messwert sagte,
+    dass sechs Minuten lang dasselbe Motiv laeuft.
+
+    Gemessen wird mit ffmpeg-Szenenerkennung. Ein Langvideo aus 60 geplanten
+    Einstellungen muss deutlich mehr als eine Handvoll harter Schnitte haben;
+    bei einem Ein-Bild-Video sind es null.
+    """
+    serie = m.serie if hasattr(m, "serie") else str(m)
+    v = _longform_datei(serie)
+    if not v:
+        return Befund("R29", "Bildwechsel", True, f"{serie}: kein Langvideo", hart=False)
+    d = sh_dauer(v)
+    if d < 30:
+        return Befund("R29", "Bildwechsel", True, f"{serie}: zu kurz zum Messen", hart=False)
+    r = subprocess.run(
+        ["ffmpeg", "-v", "info", "-i", v, "-vf",
+         "select='gt(scene,0.25)',metadata=print", "-an", "-f", "null", "-"],
+        capture_output=True, text=True)
+    wechsel = len(re.findall(r"pts_time", r.stderr + r.stdout))
+    # Faustregel: mindestens ein Schnitt je 30 Sekunden.
+    noetig = max(3, int(d // 30))
+    if wechsel < noetig:
+        return Befund("R29", "Bildwechsel", False,
+                      f"{serie}: nur {wechsel} Bildwechsel in "
+                      f"{int(d)//60}:{int(d)%60:02d} (noetig >= {noetig})",
+                      stelle=f"{v}\n                 Ein Video aus einem einzigen "
+                             f"Bild besteht jede andere Pruefung (F-V9-O).")
+    return Befund("R29", "Bildwechsel", True,
+                  f"{serie}: {wechsel} Bildwechsel in {int(d)//60}:{int(d)%60:02d}")
+
+
 # ═══════════════════════════════════════════════ Das Register
 
 # phase: "vorher"  = vor dem Render, aus Skript/Konfig/Metadaten
@@ -869,6 +906,10 @@ REGELN = [
     dict(id="R28", phase="langform", titel="Langvideo-Ton", pruefung=p_longform_ton,
          regel="Langvideo im selben Lautheitsband wie die Shorts (-20 bis -11 LUFS).",
          herkunft="F-V9-G — der ganze Kanal lief bei -22 LUFS"),
+    dict(id="R29", phase="langform", titel="Bildwechsel", pruefung=p_longform_bildwechsel,
+         regel="Im Langvideo wechselt das Bild — mindestens ein Schnitt je 30 Sekunden.",
+         herkunft="F-V9-O — nb_lang.py lieferte 5:55 aus EINEM Bild; Laenge, Format "
+                  "und Ton gingen alle gruen durch"),
     # ── Regeln ohne Pruefpunkt: ehrlich als ungedeckt gefuehrt ────────────
     dict(id="R21", phase="vorher", titel="Untertitel=Stimme", pruefung=None,
          regel="Untertitel spiegeln die gesprochene Stimme, kein abweichender Text.",

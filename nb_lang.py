@@ -295,7 +295,16 @@ def bauen(serie, order, gap, shot_len):
 
     inputs, filters, labels = [], [], []
     for i, s in enumerate(shots):
-        inputs += ["-loop", "1", "-t", f"{s['end']-s['start']:.3f}", "-i", s["img"]]
+        # KEIN "-loop 1 -t <dauer>" hier. zoompan mit d=<frames> erzeugt aus
+        # EINEM Eingangsbild bereits genau so viele Ausgabeframes. Mit -loop
+        # liefert der Eingang unendlich viele Frames, und jeder davon wird
+        # nochmals zu d Frames aufgeblasen: die erste Einstellung fuellt dann
+        # das ganze Video, -shortest schneidet am Ton ab, und heraus kommt ein
+        # Film aus einem einzigen Bild. Genau das passierte am 08.09. — 5:55
+        # Ralston-Langvideo, 62 geplante Einstellungen, null Szenenwechsel.
+        # lang.py (das Original) machte es richtig; der Fehler kam erst mit der
+        # Verallgemeinerung zu nb_lang.py am 06.09. hinein und wurde nie geprueft.
+        inputs += ["-i", s["img"]]
         filters.append(shot_filter(i, s, s["src_w"], s["src_h"]))
         labels.append(f"[v{i}]")
     chain = ";".join(filters)

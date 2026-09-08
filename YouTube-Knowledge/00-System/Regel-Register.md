@@ -16,7 +16,7 @@ tags: [system, regeln, durchsetzung, generiert]
 > ohne eine Zeile Code zu aendern. Jetzt ist die Liste ein Abbild des Codes —
 > sie kann nicht mehr behaupten, was das Programm nicht tut.
 
-**Deckungsgrad: 22 von 24 Regeln haben einen Pruefpunkt (92%).**
+**Deckungsgrad: 26 von 28 Regeln haben einen Pruefpunkt (93%).**
 
 ## Vor dem Render
 
@@ -51,6 +51,17 @@ tags: [system, regeln, durchsetzung, generiert]
 | R16 | Fortschrittsleiste sichtbar: >=18 px, gelb, kein Alpha. | `p_progressbar()` | F-V8-C — 10 px halbtransparent war auf dem Handy unsichtbar |
 | R17 | „Kanal folgen" steht in den letzten Sekunden im Bild. | `p_cta()` | CTA-Overlay 27.08. |
 | R18 | Gesamtlautheit im Band -20 bis -11 LUFS. | `p_lautheit()` | Learning-Editing-Ton — YouTube normalisiert auf ~-14 |
+
+## Am Langvideo
+
+*Gemessen an <serie>/render/long.mp4. Blockiert per `kp_gate.py <serie> --langform`.*
+
+| ID | Regel | Prüfpunkt | Entstanden aus |
+|---|---|---|---|
+| R26 | Ein Langvideo ist mindestens 3 Minuten lang. | `p_longform_laenge()` | 6 von 8 Serien hatten am 07.09. gar keines; die zwei vorhandenen sind 4:29 und 5:39 lang |
+| R27 | Ein Langvideo ist Querformat — Hochformat wertet YouTube als Short. | `p_longform_format()` | Longform bedient den Suchtraffic, nicht den Shorts-Feed |
+| R28 | Langvideo im selben Lautheitsband wie die Shorts (-20 bis -11 LUFS). | `p_longform_ton()` | F-V9-G — der ganze Kanal lief bei -22 LUFS |
+| R29 | Im Langvideo wechselt das Bild — mindestens ein Schnitt je 30 Sekunden. | `p_longform_bildwechsel()` | F-V9-O — nb_lang.py lieferte 5:55 aus EINEM Bild; Laenge, Format und Ton gingen alle gruen durch |
 
 ## Systemzustand
 

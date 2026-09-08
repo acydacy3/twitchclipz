@@ -286,6 +286,43 @@ ffmpeg-Zeile, die sagt warum**. Debuggen war Raten.
 Zeilen aus.
 **Rule**: Ein Werkzeug, das abbricht, muss den Grund zeigen, nicht den Befehl.
 
+### F-V9-O: Ein Langvideo aus EINEM Bild — und alle Regeln gingen grün durch (`fixed`)
+
+**Was**: `nb_lang.py` lieferte für Ralston ein 5:55 langes Video, das über die
+volle Länge **ein einziges Motiv** zeigte — sanft geschwenkt, aber nie
+gewechselt. Geplant waren 62 Einstellungen aus 8 verschiedenen Bildern; der
+Schnittplan war nachweislich korrekt.
+
+**Root Cause**: Die Eingaben wurden als `-loop 1 -t <dauer> -i bild` gebaut,
+während `zoompan` zusätzlich `d=<frames>` bekam. `zoompan` erzeugt aus **einem**
+Eingangsbild bereits genau `d` Ausgabeframes. Mit `-loop` liefert der Eingang
+unendlich viele Frames, und jeder davon wird nochmals zu `d` Frames aufgeblasen.
+Die erste Einstellung füllt damit das ganze Video, `-shortest` schneidet am Ton
+ab — heraus kommt ein Film aus dem ersten Bild.
+
+**Woher der Fehler kam**: `lang.py`, das Original, macht es richtig (`-i bild`,
+kein `-loop`). Der Fehler entstand am 06.09. bei der Verallgemeinerung zu
+`nb_lang.py` (Commit `e153bdd`, „generischer Longform-Builder") und wurde nie
+geprüft — bis heute hatte die Serie, für die er gebaut wurde, gar kein
+Langvideo, an dem es aufgefallen wäre.
+*(Die 4,4 % Haltequote des V1-Langvideos hat damit NICHTS zu tun — V1 wurde
+mit `lang.py` gebaut. Erst geprüft, dann behauptet.)*
+
+**Warum keine Regel es fing**: R26 Länge (5:55 ✓), R27 Format (1920×1080 ✓),
+R28 Ton (−14,1 LUFS ✓) — **alle drei grün**. Kein Messwert sagte etwas darüber,
+ob sich das Bild jemals ändert. Ein Ein-Bild-Video besteht jede Prüfung, die
+Datei-Eigenschaften misst statt Inhalt.
+
+**Fix**: `-loop 1 -t` entfernt. Neue Regel **R29 Bildwechsel**: ffmpeg-
+Szenenerkennung zählt die harten Schnitte, gefordert ist mindestens einer je
+30 Sekunden. Gegen das kaputte Video gemessen: 0 Bildwechsel, nötig ≥ 11 —
+sofort blockiert.
+
+**Rule**: **Für jede Eigenschaft, die ein Zuschauer sofort sieht, muss es eine
+Messung geben.** Länge, Format und Pegel sind Datei-Eigenschaften; ob ein Video
+etwas zeigt, ist keine. Nach jeder neuen Erzeugungsart gehört ein Kontaktabzug
+angesehen — die Regeln fangen das Messbare, der Blick fängt den Rest.
+
 ## Failure Memory auf Agentenebene
 Wenn ein Agent wiederholt denselben Fehler produziert:
 ```
