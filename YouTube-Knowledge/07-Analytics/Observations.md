@@ -1,7 +1,7 @@
 ---
 type: analytics
 title: Observations
-updated: 2026-09-07
+updated: 2026-09-08
 tags: [analytics, observations, auto, kausal]
 ---
 
@@ -25,6 +25,37 @@ Observation (gemessen) → Muster erkannt → Hypothese formuliert
 - `[Muster]` — mehrfach gesehen, Hypothese sinnvoll
 - `[bestätigt]` — Experiment hat es bewiesen (Learning-Status)
 - `[widerlegt]` — Counter-Evidence, alte Annahme korrigieren
+
+---
+
+## 2026-09-08
+
+- [2026-09-08] **V7 Prosperi korrigiert sich nach unten: AVP 69,3 % → 61,7 %.**
+  Gestern waren erst 3 von 10 Videos in den Analytics, heute 9 von 10. Damit
+  ist Prosperi die **zweitschwächste** Serie nach V6 Nutty Putty (53,5 %).
+  Reihenfolge nach gesehenem Anteil: V1 76,4 · V3 71,4 · V5 64,9 · V4 64,3 ·
+  V2 61,7 · V7 61,7 · V6 53,5. `[Muster]`
+  **Lehre zur Methode:** Ein AVP-Wert mit weniger als etwa 7 von 10 gemessenen
+  Videos ist noch keine Aussage — der Analytics-Verzug verschiebt ihn um bis zu
+  8 Punkte. Der Serienvergleich braucht Tag 4–5, nicht Tag 1.
+
+- [2026-09-08] **Der automatische Messpunkt hat zum ersten Mal von selbst
+  gegriffen.** `snapshots/2026-09-08.json` entstand ohne Zutun im
+  Sitzungsstart-Hook. Das ist die Gegenprobe zu Befund 4: die Snapshot-Pflicht
+  stand seit dem 26.08. in der Pflichtliste und lief dreimal. Als Automatik
+  läuft sie. `[bestätigt]`
+  **Kleiner Schönheitsfehler:** Der Statusbericht liest die Snapshot-Liste,
+  bevor der Hintergrund-Snapshot fertig ist, und meldet deshalb beim Start noch
+  den Vortag. Kein Fehlverhalten — die Regel R19 erlaubt bis zu einem Tag
+  Rückstand. Nur beim Lesen wissen.
+
+- [2026-09-08] **V8 Ralston, erste drei Shorts live** (die korrigierten
+  Fassungen mit Bewegung, Untertiteln aus dem Skript und −15 LUFS).
+  Stand wenige Stunden nach Veröffentlichung: Short 01 = 745 Aufrufe,
+  Short 03 = 21, Short 02 = 6. `[beobachtet]`
+  **Ausdrücklich noch keine Aussage.** Bei wenigen Stunden Alter sagt die
+  Streuung nichts. Belastbar wird das an Tag 4–5 (12./13.09.) — dann gegen
+  V4 Okene (bestes AVP der jüngeren Serien, 64,3 %) prüfen.
 
 ---
 
@@ -85,6 +116,7 @@ Observation (gemessen) → Muster erkannt → Hypothese formuliert
 | 2026-08-31 | Bewegtbild-Pflicht als Regel eingeführt (15:17 Uhr) | 0 Videos bis 06.09.; Ralston (10:17 gerendert) blieb zu 50 % Standbild | [bestätigt] |
 | 2026-09-07 | Harte Gates + PreToolUse-Riegel eingeführt | Fing sofort 29 Verstöße in Prosperi + 5 Standbild-Shorts in Ralston | [beobachtet] |
 | 2026-09-07 | Manim-Bühne im Hochformat korrigiert (F-V9-E) | Alle Animationen füllen erstmals das Bild | [beobachtet] |
+| 2026-09-08 | V8 Ralston vollständig ausgetauscht (Bewegung + Untertitel + −15 LUFS) | Ergebnis ab Tag 4–5 (12.09.) messbar | [offen] |
 
 *Diese Tabelle wächst mit jeder Session. Nach 5+ Einträgen: Muster suchen → Hypothese.*
 
