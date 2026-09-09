@@ -54,10 +54,16 @@ def serien():
         p = os.path.join(ROOT, name)
         if not os.path.isdir(p) or name.startswith(".") or name in KEIN_SERIENORDNER:
             continue
-        # Eine Serie erkennt man an Voiceover oder Skript
+        # Eine Serie erkennt man an Voiceover, Skript ODER an ihren
+        # Langvideo-Metadaten. Der letzte Fall ist San Jose: dort liegen nur
+        # die fertigen Shorts aus dem Drive. Ohne diese Zeile taucht die Serie
+        # im Ablauf gar nicht auf -- und ein gebautes, noch nicht
+        # hochgeladenes Langvideo waere unsichtbar (09.09., YouTube-Tageslimit
+        # brach den Upload ab).
         if os.path.isdir(os.path.join(p, "voiceover")) or \
            os.path.isdir(os.path.join(p, "skript")) or \
-           os.path.isdir(os.path.join(p, "skripte")):
+           os.path.isdir(os.path.join(p, "skripte")) or \
+           os.path.exists(os.path.join(p, "metadata.json")):
             out.append(name)
     return out
 
@@ -161,6 +167,16 @@ def zustand_serie(name):
 def naechster_schritt(z):
     """Genau EINE Handlung — die erste offene in der Reihenfolge."""
     n = z["serie"]
+    # Ein fertiges, noch nicht hochgeladenes Langvideo kommt VOR allem anderen.
+    # San Jose hat keine Voiceover-Dateien (nur die fertigen Shorts aus dem
+    # Drive) und waere sonst als "wartet auf Material" abgetan worden --
+    # waehrend sein Langvideo gebaut auf Platte liegt. Am 09.09. war genau das
+    # der Fall, nachdem das YouTube-Tageslimit den Upload abbrach: der Dirigent
+    # haette den offenen Upload gar nicht mehr erwaehnt.
+    if z["longform"] and not z["longform_hoch"]:
+        return ("8 LONGFORM",
+                f"Langvideo gebaut, noch nicht hochgeladen: "
+                f"python3 tools/kp_longform.py {n} --wirklich")
     if z["shorts"] == 0:
         return None, "keine Voiceover-Dateien — wartet auf Material"
     if not z["skript"]:
@@ -279,6 +295,22 @@ def status(nur=None, kurz=False):
         if sys_offen[0].stelle:
             z(f"    {sys_offen[0].stelle.splitlines()[0]}")
     if offene:
+        # Reihenfolge nach Ausfuehrbarkeit, nicht nach Alphabet. "2 SKRIPT"
+        # wartet auf eine Datei vom Nutzer -- solange die fehlt, ist der
+        # Schritt nicht ausfuehrbar und darf nicht als naechster Schritt oben
+        # stehen, waehrend anderswo ein fertiges Langvideo auf den Upload
+        # wartet. Am 09.09. stand genau so ein offener Upload hinter zwei
+        # Serien, die auf Nutzer-Material warten.
+        def dringlichkeit(eintrag):
+            schritt = eintrag[1]
+            if schritt.startswith("8 LONGFORM") and "hochgeladen" in eintrag[2]:
+                return 0        # fertig gebaut, wartet nur auf den Upload
+            if schritt.startswith("7"):
+                return 1        # Auslieferung
+            if schritt.startswith("2 SKRIPT"):
+                return 9        # blockiert auf den Nutzer
+            return 5
+        offene.sort(key=dringlichkeit)
         name, schritt, text = offene[0]
         z(f"  NAECHSTER SCHRITT: [{name}] {schritt}")
         z(f"    {text}")

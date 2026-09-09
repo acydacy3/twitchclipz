@@ -595,6 +595,37 @@ an beiden Formen nachrechnen. Das ist innerhalb von zwei Tagen der dritte
 Fall derselben Art — anim-QC-Schwelle (150 statt 130), R30 (Bandhelligkeit),
 jetzt R29. Alle drei maßen etwas Benachbartes statt der Sache selbst.
 
+### F-V9-Z: Das YouTube-Tageslimit trifft, und der Dirigent verschwieg den offenen Upload (`fixed`)
+
+**Was**: Nach fünf hochgeladenen Langvideos brach der sechste Upload ab:
+`uploadLimitExceeded — The user has exceeded the number of videos they may
+upload.` San José liegt gebaut auf Platte, terminiert für den 17.09., aber
+nicht bei YouTube. Zweites Mal innerhalb von zwei Tagen (nach F-V9-J).
+**Der eigentliche Befund ist nicht das Limit, sondern was danach passierte**:
+`kp.py status` erwähnte San José **gar nicht**. Zwei getrennte Gründe:
+1. Die Serie wurde nicht als Serie erkannt — die Erkennung verlangte
+   `voiceover/`, `skript/` oder `skripte/`. San José hat nichts davon, nur die
+   fertigen Shorts aus dem Drive.
+2. Selbst erkannt hätte der Ablauf zuerst `shorts == 0` gesehen und
+   „wartet auf Material" gemeldet — während ein fertiges Langvideo dalag.
+Ein Tageslimit ist eine normale, wiederkehrende Bedingung. Sie darf keinen
+Arbeitsstand verschlucken.
+**Fix (drei Stellen)**:
+- Eine Serie wird auch an ihrer `metadata.json` erkannt.
+- Ein **gebautes, nicht hochgeladenes Langvideo** ist der erste geprüfte
+  Zustand — vor „keine Voiceover-Dateien".
+- Der genannte nächste Schritt wird nach **Ausführbarkeit** sortiert, nicht
+  alphabetisch: ein offener Upload steht vor „2 SKRIPT", das auf eine Datei
+  vom Nutzer wartet und ohne sie gar nicht ausführbar ist.
+**Gegenprobe**: `kp.py status` nennt jetzt
+`[sanjose] 8 LONGFORM — Langvideo gebaut, noch nicht hochgeladen`, obwohl
+zwei andere Serien alphabetisch davor stehen und offene Schritte haben.
+**Rule**: **Was an einer äußeren Grenze scheitert, muss als Zustand
+überleben.** Ein abgebrochener Upload ist kein Fehler, der weggeht — er ist
+Arbeit, die noch offen ist, und der Ablauf muss sie beim nächsten Start von
+selbst nennen. Und: **der genannte nächste Schritt muss der ausführbarste
+sein**, nicht der erste in der Liste.
+
 ## Failure Memory auf Agentenebene
 Wenn ein Agent wiederholt denselben Fehler produziert:
 ```
