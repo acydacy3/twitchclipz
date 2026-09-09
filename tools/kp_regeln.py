@@ -790,27 +790,40 @@ def ohne_captions_marke(serie):
 
 
 def p_kein_eingebrannter_text(t):
-    """Wer sich auf --ohne-captions beruft, muss es am fertigen Video belegen.
+    """Wer sich auf --ohne-captions beruft, muss es belegen.
 
     WARUM DIESE REGEL EXISTIERT
     ---------------------------
-    Lengede und Okene haben kein belegtes Skript — nur Voiceover-Dateien aus
-    dem Drive. R01 (Skript-Herkunft) haelt deshalb ihren Longform-Bau an, und
-    das ist im Kern richtig: eingebrannte Untertitel aus roher Spracherkennung
-    haben V6 und V7 ruiniert.
+    Lengede und Okene haben kein belegtes Skript — nur Voiceover aus dem Drive.
+    R01 (Skript-Herkunft) hielt deshalb ihren Longform-Bau an, im Kern richtig:
+    rohe Spracherkennung einzubrennen hat V6 und V7 ruiniert. Sie zielte nur am
+    Gegenstand vorbei — R01 schuetzt den TEXT IM BILD, nicht das Skript. Wo
+    keiner ins Bild kommt, kann keiner falsch sein.
 
-    Aber R01 schuetzt nicht das Skript, sondern den TEXT IM BILD. Wo kein Text
-    ins Bild kommt, kann keiner falsch sein. `nb_lang.py --ohne-captions` baut
-    genau so ein Video und legt dabei eine Marke ab.
+    Damit `--ohne-captions` keine Hintertuer wird, ist die Ausnahme eine
+    BEHAUPTUNG, die hier geprueft wird.
 
-    Der Haken daran waere, dass `--ohne-captions` zur Hintertuer wird: einmal
-    angehaengt, und R01 schweigt. Deshalb ist die Marke kein Freibrief, sondern
-    eine BEHAUPTUNG, die hier gemessen wird — im Untertitel-Band des fertigen
-    Videos darf keine Schrift stehen. Die Behauptung kostet also mehr, als sie
-    einbringt, wenn sie falsch ist.
+    WOMIT SIE GEPRUEFT WIRD — UND WOMIT NICHT
+    -----------------------------------------
+    Erste Fassung (08.09., 20 Minuten alt) mass die Spitzenhelligkeit im
+    Untertitel-Band und verlangte, dass sie unter der Schwelle bleibt. Sie
+    blockierte sofort das Lengede-Langvideo mit "im Band steht Schrift" —
+    und im Band stand keine Schrift, sondern Grubenlampen und Gesichter mit
+    Helligkeit 237. **Die Messung war falsch, nicht das Video.**
 
-    Dieselbe Messung wie R15, nur mit umgekehrtem Vorzeichen: dort muss die
-    Schrift da sein, hier darf sie es nicht.
+    Der Denkfehler ist derselbe, den R15 nicht hat: "Untertitel da" macht das
+    Band hell, aber "Band hell" macht keine Untertitel. Die Richtung laesst
+    sich nicht umdrehen. Eine Spitzenhelligkeit kann weisse Schrift nicht von
+    einem hellen Bild unterscheiden — sie misst nicht, was sie behauptet.
+
+    Geprueft wird deshalb der BELEG statt des Pixels: die Marke enthaelt die
+    Filterkette, die wirklich an ffmpeg ging. Enthaelt sie einen Textfilter
+    (subtitles=, ass=, drawtext=), war die Behauptung falsch. Das ist
+    deterministisch und kennt keinen Fehlalarm.
+
+    Die Helligkeit bleibt als WARNUNG stehen, ausdruecklich mit dem Hinweis,
+    was sie nicht kann. Eine Messung, deren Grenze danebensteht, ist brauchbar;
+    eine, die ihre Grenze verschweigt, ist gefaehrlich.
     """
     serie = t.serie
     marke = ohne_captions_marke(serie)
@@ -821,21 +834,50 @@ def p_kein_eingebrannter_text(t):
     if not os.path.exists(v):
         return Befund("R30", "Ohne-Captions belegt", False,
                       f"{serie}: Marke da, aber kein Langvideo", stelle=marke)
+    try:
+        daten = json.load(open(marke, encoding="utf-8"))
+    except Exception as e:
+        return Befund("R30", "Ohne-Captions belegt", False,
+                      f"{serie}: Marke unlesbar ({e})", stelle=marke)
+    kette = daten.get("filterkette")
+    if not kette:
+        return Befund("R30", "Ohne-Captions belegt", False,
+                      f"{serie}: Marke ohne Filterkette — die Behauptung ist unbelegt",
+                      stelle=f"{marke}\n                 neu bauen: "
+                             f"python3 nb_lang.py {serie} --ohne-captions")
+    TEXTFILTER = ("subtitles=", "ass=", "drawtext=", "subtitles ", "ass ")
+    gefunden = [f for f in TEXTFILTER if f in kette]
+    if gefunden:
+        return Befund("R30", "Ohne-Captions belegt", False,
+                      f"{serie}: als untertitellos ausgewiesen, aber die Filterkette "
+                      f"enthaelt {', '.join(gefunden)}",
+                      stelle=marke)
+    return Befund("R30", "Ohne-Captions belegt", True,
+                  f"{serie}: Filterkette ohne Textfilter belegt")
+
+
+def p_bandhelligkeit_hinweis(t):
+    """Weicher Hinweis auf Helligkeit im Untertitel-Band eines Langvideos.
+
+    ACHTUNG, GRENZE DIESER MESSUNG: Ein heller Wert bedeutet NICHT, dass dort
+    Schrift steht. Grubenlampen, Gesichter, Himmel — alles erreicht dieselben
+    Werte. Beim Lengede-Langvideo waren es 237 ohne eine einzige Buchstabe.
+    Diese Zahl taugt als Anlass hinzusehen, nie als Urteil. Deshalb `hart=False`
+    und deshalb steht dieser Satz hier und nicht nur im Failure-Memory.
+    """
+    serie = t.serie
+    v = os.path.join(serie, "render", "long.mp4")
+    if not os.path.exists(v):
+        return Befund("R31", "Band-Helligkeit", True, f"{serie}: kein Langvideo",
+                      hart=False)
     d = sh_dauer(v)
     if d < 5:
-        return Befund("R30", "Ohne-Captions belegt", False, f"{serie}: zu kurz zum Messen")
-    proben = [d * f for f in (0.25, 0.5, 0.8)]
-    hell = max(_band_hell(v, x) for x in proben)
-    if hell < 0:
-        return Befund("R30", "Ohne-Captions belegt", False,
-                      f"{serie}: Helligkeit nicht messbar", stelle=v)
-    if hell >= UNTERTITEL_HELL:
-        return Befund("R30", "Ohne-Captions belegt", False,
-                      f"{serie}: als untertitellos ausgewiesen, aber im Band steht Schrift "
-                      f"(Helligkeit {hell}, Grenze {UNTERTITEL_HELL})",
-                      stelle=f"{v}\n                 Marke: {marke}")
-    return Befund("R30", "Ohne-Captions belegt", True,
-                  f"{serie}: kein Text im Bild (Helligkeit {hell})")
+        return Befund("R31", "Band-Helligkeit", True, f"{serie}: zu kurz", hart=False)
+    hell = max(_band_hell(v, d * f) for f in (0.25, 0.5, 0.8))
+    return Befund("R31", "Band-Helligkeit", True,
+                  f"{serie}: Spitze {hell} im Untertitel-Band "
+                  f"(sagt NICHT, ob dort Schrift steht — nur wo hinzusehen waere)",
+                  hart=False)
 
 
 def p_longform_laenge(m):
@@ -1024,10 +1066,18 @@ REGELN = [
          regel="Im Langvideo wechselt das Bild — mindestens ein Schnitt je 30 Sekunden.",
          herkunft="F-V9-O — nb_lang.py lieferte 5:55 aus EINEM Bild; Laenge, Format "
                   "und Ton gingen alle gruen durch"),
+    dict(id="R31", phase="langform", titel="Band-Helligkeit",
+         pruefung=p_bandhelligkeit_hinweis,
+         regel="Hinweis, keine Regel: Spitzenhelligkeit im Untertitel-Band. Sagt NICHT, "
+               "ob dort Schrift steht — ein helles Bild sieht genauso aus.",
+         herkunft="08.09.2026 — die erste Fassung von R30 mass genau das und blockierte "
+                  "das Lengede-Langvideo mit \"im Band steht Schrift\". Es stand keine "
+                  "da: Grubenlampen, Helligkeit 237. Die Messung war falsch, nicht das "
+                  "Video. Sie bleibt als Hinweis, mit ihrer Grenze daneben."),
     dict(id="R30", phase="langform", titel="Ohne-Captions belegt",
          pruefung=p_kein_eingebrannter_text,
-         regel="Wer sich auf --ohne-captions beruft, belegt am fertigen Video, dass "
-               "kein Text im Bild steht.",
+         regel="Wer sich auf --ohne-captions beruft, belegt es mit der Filterkette, die "
+               "wirklich an ffmpeg ging — sie darf keinen Textfilter enthalten.",
          herkunft="08.09.2026 — R01 hielt den Lengede-Longform an. Richtig gedacht, "
                   "falsch angewandt: R01 schuetzt den Text im Bild, nicht das Skript. "
                   "Damit die Ausnahme keine Hintertuer wird, wird sie gemessen."),

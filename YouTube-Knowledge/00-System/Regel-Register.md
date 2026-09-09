@@ -16,7 +16,7 @@ tags: [system, regeln, durchsetzung, generiert]
 > ohne eine Zeile Code zu aendern. Jetzt ist die Liste ein Abbild des Codes —
 > sie kann nicht mehr behaupten, was das Programm nicht tut.
 
-**Deckungsgrad: 27 von 29 Regeln haben einen Pruefpunkt (93%).**
+**Deckungsgrad: 28 von 30 Regeln haben einen Pruefpunkt (93%).**
 
 ## Vor dem Render
 
@@ -62,7 +62,8 @@ tags: [system, regeln, durchsetzung, generiert]
 | R27 | Ein Langvideo ist Querformat — Hochformat wertet YouTube als Short. | `p_longform_format()` | Longform bedient den Suchtraffic, nicht den Shorts-Feed |
 | R28 | Langvideo im selben Lautheitsband wie die Shorts (-20 bis -11 LUFS). | `p_longform_ton()` | F-V9-G — der ganze Kanal lief bei -22 LUFS |
 | R29 | Im Langvideo wechselt das Bild — mindestens ein Schnitt je 30 Sekunden. | `p_longform_bildwechsel()` | F-V9-O — nb_lang.py lieferte 5:55 aus EINEM Bild; Laenge, Format und Ton gingen alle gruen durch |
-| R30 | Wer sich auf --ohne-captions beruft, belegt am fertigen Video, dass kein Text im Bild steht. | `p_kein_eingebrannter_text()` | 08.09.2026 — R01 hielt den Lengede-Longform an. Richtig gedacht, falsch angewandt: R01 schuetzt den Text im Bild, nicht das Skript. Damit die Ausnahme keine Hintertuer wird, wird sie gemessen. |
+| R31 | Hinweis, keine Regel: Spitzenhelligkeit im Untertitel-Band. Sagt NICHT, ob dort Schrift steht — ein helles Bild sieht genauso aus. | `p_bandhelligkeit_hinweis()` | 08.09.2026 — die erste Fassung von R30 mass genau das und blockierte das Lengede-Langvideo mit "im Band steht Schrift". Es stand keine da: Grubenlampen, Helligkeit 237. Die Messung war falsch, nicht das Video. Sie bleibt als Hinweis, mit ihrer Grenze daneben. |
+| R30 | Wer sich auf --ohne-captions beruft, belegt es mit der Filterkette, die wirklich an ffmpeg ging — sie darf keinen Textfilter enthalten. | `p_kein_eingebrannter_text()` | 08.09.2026 — R01 hielt den Lengede-Longform an. Richtig gedacht, falsch angewandt: R01 schuetzt den Text im Bild, nicht das Skript. Damit die Ausnahme keine Hintertuer wird, wird sie gemessen. |
 
 ## Systemzustand
 

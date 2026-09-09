@@ -59,6 +59,51 @@ for serie in ("ralston", "nuttyputty"):
     finally:
         os.chdir(alt)
 
+# 3b) R30 prueft den BELEG, nicht die Pixel-Helligkeit (F-V9-W)
+import json as _json
+import tempfile as _tmp
+
+
+class _T:
+    pass
+
+
+with _tmp.TemporaryDirectory() as d:
+    os.makedirs(os.path.join(d, "s", "render"))
+    v = os.path.join(d, "s", "render", "long.mp4")
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "lavfi",
+                    "-i", "color=c=white:s=320x180:d=6", "-f", "lavfi",
+                    "-i", "anullsrc=r=48000:cl=mono", "-t", "6",
+                    "-c:v", "libx264", "-pix_fmt", "yuv420p", "-c:a", "aac", v],
+                   capture_output=True)
+    marke = os.path.join(d, "s", "render", "long.ohne-captions.json")
+    alt = os.getcwd()
+    os.chdir(d)
+    try:
+        t = _T()
+        t.serie = "s"
+        # WEISSES Bild, also maximale Bandhelligkeit -- die alte Fassung haette
+        # hier blockiert. Ohne Textfilter in der Kette ist es trotzdem in Ordnung.
+        _json.dump({"filterkette": "[0:v]scale=1920:1080[v0];[v0]concat=n=1[cat];[cat]copy[vout]"},
+                   open(marke, "w"))
+        b1 = R.p_kein_eingebrannter_text(t)
+        pruefe("weisses Bild ohne Textfilter ist in Ordnung", b1.ok, b1.text[:60])
+
+        _json.dump({"filterkette": "[cat]subtitles=x.ass:fontsdir=/usr/share/fonts[vout]"},
+                   open(marke, "w"))
+        b2 = R.p_kein_eingebrannter_text(t)
+        pruefe("Textfilter in der Kette wird erwischt", not b2.ok, b2.text[:60])
+
+        _json.dump({"grund": "irgendwas"}, open(marke, "w"))
+        b3 = R.p_kein_eingebrannter_text(t)
+        pruefe("Marke ohne Filterkette gilt als unbelegt", not b3.ok, b3.text[:60])
+
+        # R31 ist ein HINWEIS und darf nie blockieren
+        b4 = R.p_bandhelligkeit_hinweis(t)
+        pruefe("R31 blockiert nie", b4.ok and not b4.hart, b4.text[:60])
+    finally:
+        os.chdir(alt)
+
 # 4) Der Riegel reicht das Flag durch
 hook = open(os.path.join(ROOT, ".claude", "hooks", "pre-tool-use.py"), encoding="utf-8").read()
 pruefe("Riegel reicht --ohne-captions ans Gate durch",
