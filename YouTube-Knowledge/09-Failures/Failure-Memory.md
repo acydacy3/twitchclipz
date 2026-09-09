@@ -563,6 +563,38 @@ Absicht bewerten. Und: **ein Riegel, der den einzigen möglichen Weg versperrt,
 wird abgeschaltet** — dann schützt er nichts mehr (dritte Ausprägung nach
 F-V9-I und F-V9-P).
 
+### F-V9-Y: R29 zählte 1 statt 23 — ein schwarzer Rand zerstört die Szenenerkennung (`fixed`)
+
+**Was**: Das San-José-Langvideo besteht aus zehn aneinandergesetzten Shorts —
+unstreitig voller Schnitte. R29 zählte **einen** Bildwechsel in 4:32 und
+blockierte den Upload.
+**Root Cause**: Die ffmpeg-Szenenerkennung vergleicht **ganze Bilder**. Bei
+einer Montage von 9:16-Material auf einen 16:9-Rahmen sind links und rechts
+zwei Drittel der Fläche unveränderlich schwarz. Bei jedem Schnitt bleibt der
+größte Teil des Bildes identisch, der Unterschied fällt unter die Schwelle.
+**Die Regel maß nicht das Video, sondern meinen eigenen Rand.**
+**Kalibrierung** (09.09., dieselben Dateien, voller Rahmen → mittlere Hälfte
+`crop=iw/2:ih:iw/4:0`):
+
+| Serie | voller Rahmen | Bildmitte |
+|---|---|---|
+| sanjose | **1** | **23** |
+| ralston | 46 | 52 |
+| nuttyputty | 44 | 45 |
+| lengede | 37 | 42 |
+| okene | 28 | 29 |
+
+Bei vollformatigem Material ändert der Ausschnitt praktisch nichts; bei
+gerahmtem rettet er die Messung.
+**Fix**: R29 misst auf der Bildmitte. Die Tabelle steht als Kommentar neben
+der Messung. **Die Schwelle bleibt unverändert** — „mindestens ein Schnitt je
+30 Sekunden". Präzisiert wurde die Messung, nicht die Anforderung.
+**Rule**: **Eine Messung, die ganze Bilder vergleicht, misst auch den Rahmen
+mit.** Vor der Übernahme einer Schwelle aus einer Materialform in eine andere:
+an beiden Formen nachrechnen. Das ist innerhalb von zwei Tagen der dritte
+Fall derselben Art — anim-QC-Schwelle (150 statt 130), R30 (Bandhelligkeit),
+jetzt R29. Alle drei maßen etwas Benachbartes statt der Sache selbst.
+
 ## Failure Memory auf Agentenebene
 Wenn ein Agent wiederholt denselben Fehler produziert:
 ```
