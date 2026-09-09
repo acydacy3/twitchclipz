@@ -100,7 +100,14 @@ def main():
         serie = alt
 
     nums = [a.short] if a.short else shorts_einer_serie(serie)
-    if not nums:
+    if not nums and not a.langform:
+        # Bei --langform ist das kein Hindernis: die Langform-Regeln gelten je
+        # SERIE. San Jose hat gar keine Voiceover-Dateien mehr, nur die
+        # fertigen Shorts aus dem Drive -- sein Langvideo ist eine Montage
+        # daraus. Waere hier Schluss, koennte ausgerechnet die Serie, die den
+        # pragmatischen Weg geht, ihr Gate nie durchlaufen und nie
+        # hochgeladen werden. Ein Riegel, der den einzigen moeglichen Weg
+        # versperrt, wird abgeschaltet -- und schuetzt danach nichts mehr.
         print(f"Keine Shorts in '{serie}' gefunden.", file=sys.stderr)
         return 2
 

@@ -523,6 +523,36 @@ Wenn A ⇒ B gemessen wird, aber B ⇒ A gebraucht wird, ist die Messung falsch.
 Und: **Wo ein Beleg über den Bauvorgang möglich ist, schlägt er die Messung am
 Ergebnis** — der Bauvorgang weiß, was er getan hat; das Pixel muss es raten.
 
+### F-V9-X: Weichzeichnen löscht Schrift nicht — es macht sie groß (`fixed`)
+
+**Was**: Das San-José-Langvideo entsteht als Montage der fertigen 9:16-Shorts
+auf einen 16:9-Rahmen; daneben stand bisher ein weichgezeichneter, gezoomter
+Ausschnitt desselben Bildes. Die Shorts tragen **eingebrannte Untertitel** —
+der Zoom vergrößerte sie mit und legte sie als lesbare Geisterschrift an
+beide Bildränder. Im Kontaktabzug standen dort „Die", „aufgeteilt", „zuerst",
+„verst…" in halber Bildhöhe.
+**Warum der Reflex falsch war**: Weichzeichnen wirkt wie Unkenntlichmachen. Es
+ist aber nur ein Tiefpass — und ein um den Faktor 1,8 vergrößerter Buchstabe
+bleibt nach `sigma=28` gut lesbar. Was die Schrift unlesbar macht, ist nicht
+der Weichzeichner, sondern der Verzicht darauf, sie überhaupt zu vergrößern.
+**Fix**: `nb_concat_shorts.py --hintergrund dunkel|blur`.
+- `dunkel` legt eine ruhige, fast schwarze Fläche neben das Bild. Für Shorts
+  mit eingebrannten Untertiteln ist das die richtige Wahl — und es passt zur
+  nüchternen Anmutung des Kanals besser als ein Farbmatsch.
+- `blur` bleibt für Material ohne eingebrannten Text, jetzt mit `sigma=48`
+  und abgedunkelt, damit derselbe Effekt dort schwächer ausfällt.
+**Nebenbefund, im selben Zug behoben**: `kp_gate.py --langform` brach mit
+„Keine Shorts gefunden" ab, weil es zuerst Voiceover-Dateien suchte. San José
+hat keine mehr — nur die fertigen Shorts aus dem Drive. Ausgerechnet die
+Serie, die den einzig möglichen Weg geht, hätte ihr Gate nie durchlaufen und
+nie hochgeladen werden können. Die Langform-Regeln gelten je Serie; die
+Short-Suche entfällt jetzt bei `--langform`.
+**Rule**: **Was ein Effekt verspricht, ist nicht, was er tut.** Vor dem
+Einsatz eines Filters als Schutzmaßnahme: das Ergebnis ansehen, nicht die
+Absicht bewerten. Und: **ein Riegel, der den einzigen möglichen Weg versperrt,
+wird abgeschaltet** — dann schützt er nichts mehr (dritte Ausprägung nach
+F-V9-I und F-V9-P).
+
 ## Failure Memory auf Agentenebene
 Wenn ein Agent wiederholt denselben Fehler produziert:
 ```
