@@ -6,11 +6,17 @@ Standbildern, sondern die bereits gebauten Shorts (mit ihrer Bewegung, ihren
 Schnitten und Captions) in Erzählreihenfolge aneinanderfügen.
 
     python3 nb_concat_shorts.py <serie> [--order 2,3,4,...,1] [--wide]
+                                [--kopf-weg 9]   Kopfzeile oben abschneiden
 
 Liest <serie>/output/*.mp4 (aufsteigend sortiert = 01..10) und schreibt
 <serie>/render/long.mp4. Re-Encode für einheitliche Parameter (die Shorts
 können minimal driften). Standard 9:16 (wie die Shorts); --wide legt sie
 mittig auf einen 16:9-Rahmen mit weichem, gezoomtem Hintergrund.
+
+--kopf-weg <prozent> schneidet oben ab, BEVOR montiert wird. Grund: die
+San-Jose-Shorts tragen oben ein eingebranntes "TEIL 2", "TEIL 9" — in einem
+Langvideo liest sich das als aneinandergeklebte Shorts-Rolle, nicht als
+Dokumentation. Was im Short die Reihe zusammenhält, zerlegt das Langvideo.
 """
 import glob
 import os
@@ -45,6 +51,11 @@ def main():
     if "--order" in sys.argv:
         order = [int(x) for x in sys.argv[sys.argv.index("--order") + 1].split(",")]
     wide = "--wide" in sys.argv
+    kopf = 0.0
+    if "--kopf-weg" in sys.argv:
+        kopf = float(sys.argv[sys.argv.index("--kopf-weg") + 1]) / 100.0
+        if not 0 <= kopf < 0.4:
+            sys.exit("--kopf-weg erwartet 0 bis 39 (Prozent der Bildhöhe)")
 
     shorts = find_shorts(serie, order)
     os.makedirs(f"{serie}/render", exist_ok=True)
@@ -59,14 +70,21 @@ def main():
     for s in shorts:
         inputs += ["-i", s]
     n = len(shorts)
+    # Kopfzeile wegschneiden, bevor irgendetwas skaliert wird: sonst waere sie
+    # im weichgezeichneten Hintergrund noch als Streifen zu erkennen.
+    schnitt = (f"crop=iw:ih*{1 - kopf:.4f}:0:ih*{kopf:.4f}," if kopf else "")
+    if kopf:
+        print(f"  Kopfzeile: obere {kopf*100:.0f} % abgeschnitten")
+
     if wide:
         # jeder Clip: 9:16 mittig auf 1920x1080, dahinter geblurrter Zoom
         per = []
         for i in range(n):
             per.append(
-                f"[{i}:v]scale=1920:1080:force_original_aspect_ratio=increase,"
+                f"[{i}:v]{schnitt}split=2[a{i}][b{i}];"
+                f"[a{i}]scale=1920:1080:force_original_aspect_ratio=increase,"
                 f"crop=1920:1080,gblur=sigma=28[bg{i}];"
-                f"[{i}:v]scale=-1:1080[fg{i}];"
+                f"[b{i}]scale=-1:1080[fg{i}];"
                 f"[bg{i}][fg{i}]overlay=(W-w)/2:0,setsar=1,fps=30[v{i}]"
             )
         vchain = ";".join(per)
@@ -75,7 +93,7 @@ def main():
     else:
         # 9:16 direkt aneinander (Shorts sind bereits 1080x1920)
         norm = ";".join(
-            f"[{i}:v]scale=1080:1920:force_original_aspect_ratio=decrease,"
+            f"[{i}:v]{schnitt}scale=1080:1920:force_original_aspect_ratio=decrease,"
             f"pad=1080:1920:(ow-iw)/2:(oh-ih)/2,setsar=1,fps=30[v{i}]"
             for i in range(n))
         concat_in = "".join(f"[v{i}][{i}:a]" for i in range(n))
