@@ -133,13 +133,28 @@ def zustand_serie(name):
             if z["austausch_offen"]:
                 break
 
-    # 8 LONGFORM
+    # 8 LONGFORM — gebaut und hochgeladen sind zwei verschiedene Dinge.
+    # Bis 08.09. galt eine Serie als fertig, sobald long.mp4 auf Platte lag;
+    # das Video konnte terminlos herumliegen und niemand erfuhr davon.
     meta = os.path.join(p, "metadata.json")
-    z["longform"] = False
+    z["longform_meta"] = False
+    z["longform"] = False          # gebaut
+    z["longform_hoch"] = False     # hochgeladen
     if os.path.exists(meta):
         m = json.load(open(meta, encoding="utf-8"))
-        z["longform"] = bool(m.get("longform")) and \
+        z["longform_meta"] = bool(m.get("longform"))
+        z["longform"] = z["longform_meta"] and \
             os.path.exists(os.path.join(p, "render", "long.mp4"))
+    log = os.path.join(p, "upload_log.json")
+    if os.path.exists(log):
+        try:
+            lf = json.load(open(log, encoding="utf-8")).get("longform")
+            z["longform_hoch"] = bool(isinstance(lf, dict) and lf.get("video_id"))
+        except Exception:
+            pass
+    # Ohne belegtes Skript ist der Shorts-Weg zu, der Longform-Weg aber offen:
+    # nb_lang.py --ohne-captions brennt keinen Text ein, R30 misst das nach.
+    z["ohne_captions"] = z["skript_n"] == 0 and z["shorts"] > 0
     return z
 
 
@@ -149,6 +164,21 @@ def naechster_schritt(z):
     if z["shorts"] == 0:
         return None, "keine Voiceover-Dateien — wartet auf Material"
     if not z["skript"]:
+        # Kein einziges belegtes Skript: die Shorts warten auf Material vom
+        # Nutzer, das Langvideo nicht. Es kommt ohne eingebrannte Untertitel
+        # aus -- und R30 misst am fertigen Video nach, dass wirklich keiner
+        # drin ist. Vorher schickte diese Zeile die naechste Sitzung auf die
+        # Suche nach einem Skript, das es nicht gibt, und das Langvideo blieb
+        # ungebaut liegen.
+        if z.get("ohne_captions") and not z["longform"] and z.get("longform_meta"):
+            return ("8 LONGFORM",
+                    f"kein belegtes Skript ({z['skript_n']}/{z['shorts']}) — "
+                    f"Langvideo geht trotzdem, ohne Untertitel: "
+                    f"python3 nb_lang.py {n} --ohne-captions")
+        if z.get("ohne_captions") and z["longform"] and not z["longform_hoch"]:
+            return ("8 LONGFORM",
+                    f"Langvideo gebaut, noch nicht hochgeladen: "
+                    f"python3 tools/kp_longform.py {n} --wirklich")
         return ("2 SKRIPT",
                 f"Skript-Herkunft belegen: python3 tools/kp_skript.py {n} "
                 f"--aus <datei-vom-nutzer>   ({z['skript_n']}/{z['shorts']} belegt)")
@@ -175,6 +205,10 @@ def naechster_schritt(z):
         return ("8 LONGFORM",
                 f"kein Langvideo: python3 nb_lang.py {n}   "
                 f"(6 von 8 Serien haben bis heute keines)")
+    if not z["longform_hoch"]:
+        return ("8 LONGFORM",
+                f"Langvideo gebaut, noch nicht hochgeladen: "
+                f"python3 tools/kp_longform.py {n} --wirklich")
     return None, "fertig"
 
 
@@ -224,7 +258,8 @@ def status(nur=None, kurz=False):
             f"Gate {'gruen' if zu['vorher'] else 'ROT'}",
             f"Render {zu['gerendert']}/{zu['shorts']}",
             f"Upload {zu['hochgeladen']}/{zu['shorts']}",
-            f"Longform {'ja' if zu['longform'] else 'nein'}",
+            "Longform " + ("hoch" if zu.get("longform_hoch")
+                           else ("gebaut" if zu["longform"] else "nein")),
         ] + ([f"AUSTAUSCH OFFEN: {','.join(zu['austausch_offen'])}"]
              if zu.get("austausch_offen") else []) + [
         ]
