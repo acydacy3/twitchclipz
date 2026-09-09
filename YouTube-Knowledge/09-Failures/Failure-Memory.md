@@ -547,6 +547,16 @@ hat keine mehr — nur die fertigen Shorts aus dem Drive. Ausgerechnet die
 Serie, die den einzig möglichen Weg geht, hätte ihr Gate nie durchlaufen und
 nie hochgeladen werden können. Die Langform-Regeln gelten je Serie; die
 Short-Suche entfällt jetzt bei `--langform`.
+**Zweiter Anlauf, zweiter Fehler**: Die erste Umsetzung des dunklen
+Hintergrunds erzeugte **je Short einen eigenen `color`-Generator** und legte
+das Bild per `overlay` darauf. Bei zehn Shorts sind das zehn Dekoder plus
+zehn Generatoren — der Kernel schoss ffmpeg mit SIGKILL ab, und übrig blieb
+eine abgeschnittene Datei ohne `moov`-Atom. **Das Gate fing genau das**:
+„R26 nur 0:00 — unter 3 Minuten", „R27 Bildmaße nicht lesbar". Ein
+halbgeschriebenes Video wäre sonst hochgeladen worden.
+Richtig ist `pad=1920:1080:(ow-iw)/2:0:color=…` — ein Filter, kein zweiter
+Eingang, kein Puffer.
+
 **Rule**: **Was ein Effekt verspricht, ist nicht, was er tut.** Vor dem
 Einsatz eines Filters als Schutzmaßnahme: das Ergebnis ansehen, nicht die
 Absicht bewerten. Und: **ein Riegel, der den einzigen möglichen Weg versperrt,
