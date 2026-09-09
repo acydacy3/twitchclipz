@@ -7,11 +7,21 @@ Schnitten und Captions) in Erzählreihenfolge aneinanderfügen.
 
     python3 nb_concat_shorts.py <serie> [--order 2,3,4,...,1] [--wide]
                                 [--kopf-weg 9]   Kopfzeile oben abschneiden
+                                [--hintergrund dunkel|blur]
 
 Liest <serie>/output/*.mp4 (aufsteigend sortiert = 01..10) und schreibt
 <serie>/render/long.mp4. Re-Encode für einheitliche Parameter (die Shorts
 können minimal driften). Standard 9:16 (wie die Shorts); --wide legt sie
 mittig auf einen 16:9-Rahmen mit weichem, gezoomtem Hintergrund.
+
+--hintergrund waehlt, was neben dem 9:16-Bild steht:
+  blur    (Standard) weichgezeichneter Zoom desselben Bildes
+  dunkel  ruhige, fast schwarze Flaeche
+Fuer Shorts mit EINGEBRANNTEN Untertiteln ist "dunkel" die richtige Wahl. Der
+weichgezeichnete Zoom vergroessert die Untertitel mit und legt sie als
+lesbare Geisterschrift an beide Bildraender -- bei San Jose standen dort
+"Die", "aufgeteilt", "zuerst" in halber Bildhoehe. Weichzeichnen loescht
+Schrift nicht, es macht sie nur gross.
 
 --kopf-weg <prozent> schneidet oben ab, BEVOR montiert wird. Grund: die
 San-Jose-Shorts tragen oben ein eingebranntes "TEIL 2", "TEIL 9" — in einem
@@ -51,6 +61,11 @@ def main():
     if "--order" in sys.argv:
         order = [int(x) for x in sys.argv[sys.argv.index("--order") + 1].split(",")]
     wide = "--wide" in sys.argv
+    hintergrund = "blur"
+    if "--hintergrund" in sys.argv:
+        hintergrund = sys.argv[sys.argv.index("--hintergrund") + 1]
+        if hintergrund not in ("blur", "dunkel"):
+            sys.exit("--hintergrund erwartet blur oder dunkel")
     kopf = 0.0
     if "--kopf-weg" in sys.argv:
         kopf = float(sys.argv[sys.argv.index("--kopf-weg") + 1]) / 100.0
@@ -61,7 +76,7 @@ def main():
     os.makedirs(f"{serie}/render", exist_ok=True)
     os.makedirs(f"{serie}/_lang", exist_ok=True)
     out = f"{serie}/render/long.mp4"
-    print(f"{len(shorts)} Shorts → {out}")
+    print(f"{len(shorts)} Shorts → {out}" + (f"   [16:9, Hintergrund {hintergrund}]" if wide else ""))
     for s in shorts:
         print("  +", os.path.basename(s))
 
@@ -80,13 +95,21 @@ def main():
         # jeder Clip: 9:16 mittig auf 1920x1080, dahinter geblurrter Zoom
         per = []
         for i in range(n):
-            per.append(
-                f"[{i}:v]{schnitt}split=2[a{i}][b{i}];"
-                f"[a{i}]scale=1920:1080:force_original_aspect_ratio=increase,"
-                f"crop=1920:1080,gblur=sigma=28[bg{i}];"
-                f"[b{i}]scale=-1:1080[fg{i}];"
-                f"[bg{i}][fg{i}]overlay=(W-w)/2:0,setsar=1,fps=30[v{i}]"
-            )
+            if hintergrund == "dunkel":
+                per.append(
+                    f"[{i}:v]{schnitt}scale=-1:1080,setsar=1[fg{i}];"
+                    f"color=c=0x0B0D10:s=1920x1080:d=1[bg{i}];"
+                    f"[bg{i}][fg{i}]overlay=(W-w)/2:0:shortest=1,setsar=1,fps=30[v{i}]"
+                )
+            else:
+                per.append(
+                    f"[{i}:v]{schnitt}split=2[a{i}][b{i}];"
+                    f"[a{i}]scale=1920:1080:force_original_aspect_ratio=increase,"
+                    f"crop=1920:1080,gblur=sigma=48,eq=brightness=-0.22:saturation=0.7"
+                    f"[bg{i}];"
+                    f"[b{i}]scale=-1:1080[fg{i}];"
+                    f"[bg{i}][fg{i}]overlay=(W-w)/2:0,setsar=1,fps=30[v{i}]"
+                )
         vchain = ";".join(per)
         concat_in = "".join(f"[v{i}][{i}:a]" for i in range(n))
         chain = f"{vchain};{concat_in}concat=n={n}:v=1:a=1[vout][aout]"
