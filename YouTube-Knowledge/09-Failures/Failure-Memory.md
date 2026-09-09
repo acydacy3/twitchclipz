@@ -459,6 +459,35 @@ sein.** Wer sich auf sie beruft, muss am Ergebnis belegen, dass die Bedingung
 wirklich vorlag. Sonst ist die Ausnahme nur ein Schalter, mit dem man die Regel
 abstellt.
 
+### F-V9-V: Der Dirigent schickte die nächste Sitzung auf eine Sackgasse (`fixed`)
+
+**Was**: `kp.py status` nannte für **Lengede** und **Okene** als nächsten
+Schritt „2 SKRIPT — Skript-Herkunft belegen: `kp_skript.py <serie> --aus
+<datei-vom-nutzer>`". Für beide Serien existiert kein Nutzer-Skript und wird
+keins existieren; es gibt nur Voiceover-Dateien aus dem Drive. Der Schritt war
+also nicht bloß der falsche — er war unerfüllbar, und der **mögliche** Schritt
+(das Langvideo ohne Untertitel) kam gar nicht vor.
+**Zweiter Befund am selben Ort**: Eine Serie galt als fertig, sobald
+`render/long.mp4` auf Platte lag. Ob das Video jemals hochgeladen wurde, hat
+niemand geprüft. Ein gebautes, nie hochgeladenes Langvideo war unsichtbar.
+**Warum das zählt**: `kp.py status` läuft bei **jedem** Sitzungsstart und ist
+für die nächste Sitzung die einzige Ansage, was zu tun ist. Ein Dirigent, der
+in eine Sackgasse zeigt, kostet eine ganze Sitzung — und der Nutzer müsste es
+ansprechen, genau das soll er nicht müssen.
+**Fix**:
+- `longform` zerfällt in **gebaut** und **hochgeladen** (aus
+  `upload_log.json`). Die Zeile zeigt jetzt `nein` / `gebaut` / `hoch`, und
+  „gebaut, noch nicht hochgeladen" ist ein eigener nächster Schritt
+  (`kp_longform.py <serie> --wirklich`).
+- Sind **0** Skripte belegt, ist der Shorts-Weg zu, der Longform-Weg offen:
+  der nächste Schritt ist `nb_lang.py <serie> --ohne-captions`. Das ist keine
+  Umgehung von R01 — R30 misst am fertigen Video nach (F-V9-U).
+**Gegenprobe**: Okene → „Langvideo geht trotzdem, ohne Untertitel"; Lengede →
+„gebaut, noch nicht hochgeladen"; Ralston (hochgeladen) → „fertig".
+**Rule**: **Der nächste Schritt muss ausführbar sein.** Ein Schritt, der auf
+etwas wartet, das es nicht gibt, ist keine Anweisung, sondern eine Blockade —
+und blockiert die Schritte, die möglich wären, gleich mit.
+
 ## Failure Memory auf Agentenebene
 Wenn ein Agent wiederholt denselben Fehler produziert:
 ```
