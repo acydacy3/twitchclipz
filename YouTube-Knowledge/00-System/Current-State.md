@@ -82,6 +82,29 @@ Snapshots am 29.08. aufhörten — nicht nachholbar.
 - Zwei Messfehler in meinen eigenen Prüfwerkzeugen gefunden und behoben
   (F-V9-H): falsche Helligkeitsschwelle, unterdrückte ffmpeg-Ausgabe.
 
+**Langvideos vollstaendig (09.09.):** Alle acht Serien haben jetzt eines.
+Neu hochgeladen und terminiert:
+
+| Serie | Video-ID | Termin | Laenge | Bemerkung |
+|---|---|---|---|---|
+| Ralston | `m5YYT5FNrgk` | 12.09. | 5:51 | mit Untertiteln |
+| Prosperi | `DgYMVuBmzCM` | 13.09. | 3:42 | mit Untertiteln |
+| Nutty Putty | `SKJBkU36eoY` | 14.09. | 4:28 | 5 Bilder ersetzt (F-V9-T) |
+| Lengede | `b_icXtDy-Vw` | 15.09. | 4:31 | ohne Untertitel (kein belegtes Skript) |
+| Okene | `hU_H2POHxJE` | 16.09. | 4:16 | ohne Untertitel (kein belegtes Skript) |
+| San José | s. `sanjose/upload_log.json` | 17.09. | 4:32 | **Montage, sichtbar schwaecher** |
+
+**San José ist der schwaechste der sechs, und das ist bekannt, nicht
+uebersehen.** Im Drive liegen fuer diese Serie nur die fertigen 9:16-Shorts —
+kein Voiceover, keine Bilder. Ein echter Querformat-Neubau ist damit
+unmoeglich; es bleibt die Montage auf einen 16:9-Rahmen. Das Bild steht als
+schmaler Streifen in der Mitte, links und rechts ist dunkle Flaeche, und die
+Hook-Banner der Shorts („EINER MUSSTE FÜHREN") laufen mit. Der weich
+gezeichnete Hintergrund, der die Flaeche fuellen wuerde, scheidet aus: er
+vergroessert die eingebrannten Untertitel zu lesbarer Geisterschrift
+(F-V9-X). Wenn diese Serie ein richtiges Langvideo bekommen soll, braucht es
+Voiceover-Dateien vom Nutzer — dann laeuft sie wie die anderen.
+
 **Bildherkunft (08.09.):** `nb_openverse.py` war seit jeher wirkungslos und
 meldete das nicht (F-V9-R) — repariert, meldet jetzt Fehler mit Exit-Code.
 Neu: `tools/nb_commons.py` für Wikimedia-Commons-Kategorien; die Regel nannte
