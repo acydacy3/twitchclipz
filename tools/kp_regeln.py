@@ -956,6 +956,29 @@ def p_longform_bildwechsel(m):
     Gemessen wird mit ffmpeg-Szenenerkennung. Ein Langvideo aus 60 geplanten
     Einstellungen muss deutlich mehr als eine Handvoll harter Schnitte haben;
     bei einem Ein-Bild-Video sind es null.
+
+    GEMESSEN WIRD DIE BILDMITTE, NICHT DER GANZE RAHMEN
+    ---------------------------------------------------
+    Die Szenenerkennung vergleicht ganze Frames. Steht links und rechts ein
+    unveraenderlicher Rand — wie bei einer Montage aus 9:16-Shorts auf einen
+    16:9-Rahmen —, sind zwei Drittel der Bildflaeche bei jedem Schnitt
+    identisch, und der Unterschied faellt unter die Schwelle. Das San-Jose-
+    Langvideo (10 aneinandergesetzte Shorts, unstreitig voller Schnitte) kam
+    im vollen Rahmen auf EINEN gezaehlten Wechsel.
+
+    Kalibrierung 09.09.2026, dieselben Dateien, voller Rahmen vs. mittlere
+    Haelfte (`crop=iw/2:ih:iw/4:0`):
+
+        sanjose      1  ->  23     <- Pillarbox, Messung war zerstoert
+        ralston     46  ->  52
+        nuttyputty  44  ->  45
+        lengede     37  ->  42
+        okene       28  ->  29
+
+    Bei vollformatigem Material aendert der Ausschnitt praktisch nichts; bei
+    gerahmtem rettet er die Messung. Deshalb wird auf der Bildmitte gemessen.
+    Das ist eine Praezisierung der Messung, keine Absenkung der Schwelle —
+    "mindestens ein Schnitt je 30 Sekunden" gilt unveraendert.
     """
     serie = m.serie if hasattr(m, "serie") else str(m)
     v = _longform_datei(serie)
@@ -966,7 +989,8 @@ def p_longform_bildwechsel(m):
         return Befund("R29", "Bildwechsel", True, f"{serie}: zu kurz zum Messen", hart=False)
     r = subprocess.run(
         ["ffmpeg", "-v", "info", "-i", v, "-vf",
-         "select='gt(scene,0.25)',metadata=print", "-an", "-f", "null", "-"],
+         "crop=iw/2:ih:iw/4:0,select='gt(scene,0.25)',metadata=print",
+         "-an", "-f", "null", "-"],
         capture_output=True, text=True)
     wechsel = len(re.findall(r"pts_time", r.stderr + r.stdout))
     # Faustregel: mindestens ein Schnitt je 30 Sekunden.
