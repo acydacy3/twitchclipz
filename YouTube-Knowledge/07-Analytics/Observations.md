@@ -28,6 +28,25 @@ Observation (gemessen) → Muster erkannt → Hypothese formuliert
 
 ---
 
+## 2026-09-09 (Messgrenzen)
+
+- [2026-09-09] **Ein Langvideo ohne einen einzigen Buchstaben erreicht im
+  Untertitel-Band Spitzenhelligkeit 237.** Gemessen an
+  `lengede/render/long.mp4` (Grubenlampen, Gesichter); Okene kommt auf 236
+  (Taucherlampen). Die Schwelle, ab der R15 „Untertitel sichtbar" meldet,
+  liegt bei 200. `[bestätigt]` → F-V9-W.
+  **Was daraus folgt:** Die Bandhelligkeit taugt, um *fehlende* Untertitel zu
+  finden (R15: Untertitel da ⇒ Band hell). Sie taugt **nicht**, um
+  *vorhandene* auszuschließen — dieselbe Zahl entsteht ohne jede Schrift. Die
+  Messung läuft weiter als R31, ausdrücklich als Hinweis ohne Urteil.
+
+- [2026-09-09] **Alle acht Serien haben jetzt ein Langvideo.** Am 07.09. waren
+  es zwei bei 86 Videos. `[beobachtet]` — ob Langvideos auf diesem Kanal
+  tragen, bleibt unbelegt; frühestens ab dem 16.09. gegen die Shorts derselben
+  Serie bewertbar.
+
+---
+
 ## 2026-09-08 (Bildherkunft)
 
 - [2026-09-08] **Das autonome Bildwerkzeug hat noch nie ein Bild geliefert.**
