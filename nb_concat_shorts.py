@@ -96,10 +96,14 @@ def main():
         per = []
         for i in range(n):
             if hintergrund == "dunkel":
+                # pad statt overlay auf einer color-Quelle: die erste Fassung
+                # erzeugte je Short einen eigenen Farbgenerator und wurde vom
+                # Kernel abgeschossen (SIGKILL, 10 Dekoder + 10 Generatoren).
+                # pad braucht keinen zweiten Eingang und keinen Puffer.
                 per.append(
-                    f"[{i}:v]{schnitt}scale=-1:1080,setsar=1[fg{i}];"
-                    f"color=c=0x0B0D10:s=1920x1080:d=1[bg{i}];"
-                    f"[bg{i}][fg{i}]overlay=(W-w)/2:0:shortest=1,setsar=1,fps=30[v{i}]"
+                    f"[{i}:v]{schnitt}scale=-1:1080,"
+                    f"pad=1920:1080:(ow-iw)/2:0:color=0x0B0D10,"
+                    f"setsar=1,fps=30[v{i}]"
                 )
             else:
                 per.append(
