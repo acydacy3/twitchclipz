@@ -38,6 +38,7 @@ from kp_regeln import ist_fremdmaterial            # noqa: E402
 
 BILD_ENDUNGEN = (".jpg", ".jpeg", ".png", ".webp")
 TON_ENDUNGEN = (".mp3", ".wav", ".m4a")
+VIDEO_ENDUNGEN = (".mp4", ".mov", ".webm")
 
 
 def nummer(name):
@@ -59,6 +60,15 @@ def ziel_fuer(serie, datei):
         if not nr:
             return None, "Tondatei ohne erkennbare Nummer"
         return os.path.join(serie, "voiceover", f"short_{nr}.mp3"), None
+    if low.endswith(VIDEO_ENDUNGEN):
+        # Fertige Shorts. Fuer San Jose liegt im Drive NUR das -- kein
+        # Voiceover, keine Bilder. Damit ist kein echter 16:9-Neubau moeglich,
+        # nur die Montage der fertigen Shorts (nb_concat_shorts.py --wide).
+        # Die tragen ihre eingebrannte Fortschrittsleiste und ihr CTA mit;
+        # das ist ein sichtbarer Nachteil und wird nicht verschwiegen.
+        if not nr:
+            return None, "Video ohne erkennbare Nummer"
+        return os.path.join(serie, "output", f"short_{nr}.mp4"), None
     if low.endswith(BILD_ENDUNGEN):
         if ist_fremdmaterial(name):
             return None, "Fremdmaterial (R24) — nie ins Sendematerial"
@@ -68,7 +78,7 @@ def ziel_fuer(serie, datei):
                                 f"{os.path.splitext(name)[0]}{endung}"), None
         sicher = re.sub(r"[^A-Za-z0-9._-]+", "_", name)
         return os.path.join(serie, "bilder", "broll", sicher), None
-    return None, "kein Ton, kein Bild"
+    return None, "kein Ton, kein Bild, kein Video"
 
 
 def drive_liste(ordner_id):

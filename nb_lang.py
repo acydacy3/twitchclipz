@@ -356,9 +356,14 @@ def bauen(serie, order, gap, shot_len, ohne_captions=False):
                    "grund": "Fuer diese Serie existiert kein belegtes Nutzer-Skript. "
                             "Rohe Spracherkennung einzubrennen hat V6 und V7 ruiniert; "
                             "keine Untertitel koennen nicht falsch sein.",
-                   "geprueft_von": "R30 (Untertitel-Band muss dunkel bleiben)"},
+                   # Die Filterkette ist der BELEG. R30 liest sie und verlangt,
+                   # dass kein Textfilter darin vorkommt. Sie wird nicht
+                   # behauptet, sondern aus dem Befehl genommen, der wirklich
+                   # gelaufen ist -- was ffmpeg bekommen hat, steht hier.
+                   "filterkette": chain,
+                   "geprueft_von": "R30 (Filterkette darf keinen Textfilter enthalten)"},
                   open(marke, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
-        print(f"  Marke gesetzt: {marke}  (R30 misst das nach)")
+        print(f"  Marke gesetzt: {marke}  (R30 liest die Filterkette)")
     elif os.path.exists(marke):
         os.remove(marke)
         print(f"  Marke entfernt: {marke}  (jetzt mit Untertiteln gebaut)")

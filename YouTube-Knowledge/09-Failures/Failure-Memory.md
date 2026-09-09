@@ -488,6 +488,41 @@ ansprechen, genau das soll er nicht müssen.
 etwas wartet, das es nicht gibt, ist keine Anweisung, sondern eine Blockade —
 und blockiert die Schritte, die möglich wären, gleich mit.
 
+### F-V9-W: Meine eigene neue Regel war nach 20 Minuten falsch (`fixed`)
+
+**Was**: R30 sollte belegen, dass ein als untertitellos ausgewiesenes Langvideo
+wirklich keinen Text trägt. Erste Fassung: Spitzenhelligkeit im
+Untertitel-Band messen, unter der Schwelle bleiben. Der erste Einsatz
+blockierte das Lengede-Langvideo mit „als untertitellos ausgewiesen, aber im
+Band steht Schrift (Helligkeit 237)".
+**Im Band stand keine Schrift.** Dort waren Grubenlampen und Gesichter aus
+dem Spielfilmmaterial. Nachgesehen an drei Einzelbildern (68 s, 137 s, 220 s):
+kein einziger Buchstabe im ganzen Video.
+**Der Denkfehler**: R15 misst richtig herum — *Untertitel vorhanden* macht das
+Band hell. Die Umkehrung gilt nicht: *Band hell* heißt nicht *Untertitel*. Eine
+Spitzenhelligkeit kann weiße Schrift nicht von einem hellen Bild
+unterscheiden. **Die Messung maß nicht, was sie behauptete** — derselbe Fehler,
+den ich am selben Tag an der anim-QC-Schwelle und an der `-v error`-Messung
+korrigiert habe, nur diesmal in einer Regel, die ich gerade erst geschrieben
+hatte.
+**Warum es trotzdem gut ausging**: Der Fehlalarm kam am ersten Video, an dem
+die Regel lief, und wurde nachgesehen statt weggeschaltet. Wäre er beim
+zwanzigsten aufgetreten, wäre die naheliegende Reaktion gewesen, R30
+abzuschalten — und danach hätte sie nichts mehr geschützt (F-V9-P).
+**Fix**: R30 prüft jetzt den **Beleg statt des Pixels**. Die Marke enthält die
+**Filterkette, die wirklich an ffmpeg ging**; enthält sie einen Textfilter
+(`subtitles=`, `ass=`, `drawtext=`), ist die Behauptung falsch. Deterministisch,
+ohne Fehlalarm. Die Helligkeit bleibt als **R31 — Hinweis, keine Regel**
+(`hart=False`), mit ihrer Grenze im Regeltext und im Code daneben.
+**Preis**: Das fertige Lengede-Video musste neu gebaut werden, weil seine Marke
+noch keine Filterkette trug. Die Alternative wäre gewesen, das Feld von Hand
+nachzutragen — also die Behauptung aufzuschreiben, statt sie zu belegen. Genau
+das soll die Regel verhindern.
+**Rule**: **Vor jeder neuen Messung: Gilt sie auch in der Gegenrichtung?**
+Wenn A ⇒ B gemessen wird, aber B ⇒ A gebraucht wird, ist die Messung falsch.
+Und: **Wo ein Beleg über den Bauvorgang möglich ist, schlägt er die Messung am
+Ergebnis** — der Bauvorgang weiß, was er getan hat; das Pixel muss es raten.
+
 ## Failure Memory auf Agentenebene
 Wenn ein Agent wiederholt denselben Fehler produziert:
 ```
